@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PROTO_sfx_footstep_carpet" ID="{30A7E7E2-5850-4E77-90CF-A43B249E3F2F}">
+					<ChildrenList>
+						<Action Name="" ID="{8D451DA9-EC97-4239-88F6-D4A9A4BB0809}" ShortID="506687232">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PROTO_sfx_footstep_carpet" ID="{DE8434CF-2FE2-4822-8B07-6A60363FE4BF}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PROTO_sfx_footstep_floorboards" ID="{DE52443B-9C74-4D86-A5DB-CCD37E46C5B7}">
+					<ChildrenList>
+						<Action Name="" ID="{498CA968-6A11-452A-960F-67F16717F7A3}" ShortID="276429886">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PROTO_sfx_footstep_floorboards" ID="{A89C1678-268A-4405-935E-DAB823C4D25B}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PROTO_music_generic" ID="{2CAC2604-9D89-4485-BF80-EDFBD7B45DB7}">
+					<ChildrenList>
+						<Action Name="" ID="{C119BE74-1E41-4B4D-9758-1D116DCF79E1}" ShortID="365425485">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PROTO_music_generic_01" ID="{5F7E64BC-41D2-4595-8717-D2B13BE086B4}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

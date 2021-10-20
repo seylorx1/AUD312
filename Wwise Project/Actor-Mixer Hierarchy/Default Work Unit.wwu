@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="PROTO_sfx_footstep_carpet" ID="{DE8434CF-2FE2-4822-8B07-6A60363FE4BF}" ShortID="829675698">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="PROTO_sfx_footstep_carpet_02" ID="{BAD1DB59-2286-4909-99C0-B4B796160890}" ShortID="953825908">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PROTO_sfx_footstep_carpet_02" ID="{F442F845-B312-4945-AD26-6D21FD674109}">
+									<Language>SFX</Language>
+									<AudioFile>PROTO_sfx_footstep_carpet_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="659131425"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="PROTO_sfx_footstep_carpet_02" ID="{F442F845-B312-4945-AD26-6D21FD674109}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PROTO_sfx_footstep_carpet_03" ID="{3DEB03D3-4A68-4E3A-AA49-F5DB165B7D72}" ShortID="198106780">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PROTO_sfx_footstep_carpet_03" ID="{D4894A60-B4B5-4121-9182-08F6B8072D13}">
+									<Language>SFX</Language>
+									<AudioFile>PROTO_sfx_footstep_carpet_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="705070774"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="PROTO_sfx_footstep_carpet_03" ID="{D4894A60-B4B5-4121-9182-08F6B8072D13}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PROTO_sfx_footstep_carpet_01" ID="{F26E2E15-969C-46CB-8D80-ED75E69056FF}" ShortID="740482441">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PROTO_sfx_footstep_carpet_01" ID="{EE2F29B5-CE6D-487D-A23E-EDDA9760DC34}">
+									<Language>SFX</Language>
+									<AudioFile>PROTO_sfx_footstep_carpet_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="46343155"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="PROTO_sfx_footstep_carpet_01" ID="{EE2F29B5-CE6D-487D-A23E-EDDA9760DC34}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="PROTO_sfx_footstep_floorboards" ID="{A89C1678-268A-4405-935E-DAB823C4D25B}" ShortID="334444935">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>20</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="PROTO_sfx_footstep_floorboards_02" ID="{FB2837BC-61B5-4807-8FD9-076D2A978527}" ShortID="804148689">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PROTO_sfx_footstep_floorboards_02" ID="{A87DC248-C348-425B-B683-5B13156D6077}">
+									<Language>SFX</Language>
+									<AudioFile>PROTO_sfx_footstep_floorboards_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="798052728"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="PROTO_sfx_footstep_floorboards_02" ID="{A87DC248-C348-425B-B683-5B13156D6077}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PROTO_sfx_footstep_floorboards_01" ID="{0E664CB3-B632-4623-AC31-2FA7BDB065E8}" ShortID="137273554">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PROTO_sfx_footstep_floorboards_01" ID="{EEC9C27D-B935-420C-B26C-E238E285DB0E}">
+									<Language>SFX</Language>
+									<AudioFile>PROTO_sfx_footstep_floorboards_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="812262133"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="PROTO_sfx_footstep_floorboards_01" ID="{EEC9C27D-B935-420C-B26C-E238E285DB0E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PROTO_sfx_footstep_floorboards_03" ID="{B313CE91-7E46-49FF-A267-F959A1187D49}" ShortID="186694246">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PROTO_sfx_footstep_floorboards_03" ID="{5120D5D2-771F-4672-91A3-DAD15BC3B516}">
+									<Language>SFX</Language>
+									<AudioFile>PROTO_sfx_footstep_floorboards_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="360352746"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="PROTO_sfx_footstep_floorboards_03" ID="{5120D5D2-771F-4672-91A3-DAD15BC3B516}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<Sound Name="PROTO_music_generic_01" ID="{5F7E64BC-41D2-4595-8717-D2B13BE086B4}" ShortID="625477529">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PROTO_music_generic_01" ID="{07C5ABD0-479A-4191-8EAA-7EB26C5A3E05}">
+							<Language>SFX</Language>
+							<AudioFile>PROTO_music_generic_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="104883396"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="PROTO_music_generic_01" ID="{07C5ABD0-479A-4191-8EAA-7EB26C5A3E05}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>X:\Coursework\AUD312\Assignment\Wwise Project\</ProjectRoot>
+		<SourceFilesRoot>X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>X:\Coursework\AUD312\Assignment\Wwise Project\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>X:\Coursework\AUD312\Assignment\Wwise Project\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1958929096">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="213103979">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2902858375" Name="PROTO_music_generic" ObjectPath="\Events\Default Work Unit\PROTO_music_generic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="104883396" Language="SFX">
+							<ShortName>PROTO_music_generic_01.wav</ShortName>
+							<Path>SFX\PROTO_music_generic_01_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2674483148" Name="PROTO_sfx_footstep_carpet" ObjectPath="\Events\Default Work Unit\PROTO_sfx_footstep_carpet" DurationType="OneShot" DurationMin="0.285510" DurationMax="0.341905">
+					<IncludedMemoryFiles>
+						<File Id="46343155" Language="SFX">
+							<ShortName>PROTO_sfx_footstep_carpet_01.wav</ShortName>
+							<Path>SFX\PROTO_sfx_footstep_carpet_01_10C4C929.wem</Path>
+						</File>
+						<File Id="659131425" Language="SFX">
+							<ShortName>PROTO_sfx_footstep_carpet_02.wav</ShortName>
+							<Path>SFX\PROTO_sfx_footstep_carpet_02_10C4C929.wem</Path>
+						</File>
+						<File Id="705070774" Language="SFX">
+							<ShortName>PROTO_sfx_footstep_carpet_03.wav</ShortName>
+							<Path>SFX\PROTO_sfx_footstep_carpet_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3944690194" Name="PROTO_sfx_footstep_floorboards" ObjectPath="\Events\Default Work Unit\PROTO_sfx_footstep_floorboards" DurationType="OneShot" DurationMin="0.252517" DurationMax="0.326531">
+					<IncludedMemoryFiles>
+						<File Id="360352746" Language="SFX">
+							<ShortName>PROTO_sfx_footstep_floorboards_03.wav</ShortName>
+							<Path>SFX\PROTO_sfx_footstep_floorboards_03_10C4C929.wem</Path>
+						</File>
+						<File Id="798052728" Language="SFX">
+							<ShortName>PROTO_sfx_footstep_floorboards_02.wav</ShortName>
+							<Path>SFX\PROTO_sfx_footstep_floorboards_02_10C4C929.wem</Path>
+						</File>
+						<File Id="812262133" Language="SFX">
+							<ShortName>PROTO_sfx_footstep_floorboards_01.wav</ShortName>
+							<Path>SFX\PROTO_sfx_footstep_floorboards_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CE374B89-FF7F-446C-B0DC-D4B894060495}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{CE374B89-FF7F-446C-B0DC-D4B894060495}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{F8420254-3C05-45C1-8049-835C8ED6E27F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PROTO_music_generic" ID="{2CAC2604-9D89-4485-BF80-EDFBD7B45DB7}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PROTO_sfx_footstep_floorboards" ID="{DE52443B-9C74-4D86-A5DB-CCD37E46C5B7}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PROTO_sfx_footstep_carpet" ID="{30A7E7E2-5850-4E77-90CF-A43B249E3F2F}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

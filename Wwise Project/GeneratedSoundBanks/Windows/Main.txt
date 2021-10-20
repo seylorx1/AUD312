@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2674483148	PROTO_sfx_footstep_carpet			\Default Work Unit\PROTO_sfx_footstep_carpet	
+	2902858375	PROTO_music_generic			\Default Work Unit\PROTO_music_generic	
+	3944690194	PROTO_sfx_footstep_floorboards			\Default Work Unit\PROTO_sfx_footstep_floorboards	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	46343155	PROTO_sfx_footstep_carpet_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_carpet_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_carpet\PROTO_sfx_footstep_carpet_01		29728
+	104883396	PROTO_music_generic_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_music_generic_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_music_generic_01		1014364
+	360352746	PROTO_sfx_footstep_floorboards_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_floorboards_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_floorboards\PROTO_sfx_footstep_floorboards_03		24000
+	659131425	PROTO_sfx_footstep_carpet_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_carpet_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_carpet\PROTO_sfx_footstep_carpet_02		30220
+	705070774	PROTO_sfx_footstep_carpet_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_carpet_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_carpet\PROTO_sfx_footstep_carpet_03		25246
+	798052728	PROTO_sfx_footstep_floorboards_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_floorboards_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_floorboards\PROTO_sfx_footstep_floorboards_02		28864
+	812262133	PROTO_sfx_footstep_floorboards_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_floorboards_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_floorboards\PROTO_sfx_footstep_floorboards_01		22336
+
