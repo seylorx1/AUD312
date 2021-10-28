@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Interactions" ID="{730178FE-CB94-4AF1-A94B-4C596486F5A8}" ShortID="370933165">
+					<ChildrenList>
+						<StateGroup Name="BoxHeld" ID="{E5BC2A4F-6157-4166-9784-98765F3111E5}">
+							<ChildrenList>
+								<State Name="None" ID="{D75ABD57-E302-4DD1-8329-8D744F9467F3}"/>
+								<State Name="Box_IsHeld" ID="{07F48A43-9B67-464A-B543-3034968874C8}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="HarpoonHeld" ID="{B3B48258-D25F-4931-8CC3-FC069EC03744}">
+							<ChildrenList>
+								<State Name="None" ID="{C588DF7E-B70F-4E2A-9BBA-8BDBBAA976D1}"/>
+								<State Name="Harpoon_IsHeld" ID="{801A23EA-9585-4040-B632-EAA67C533806}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Rooms" ID="{A8340EB3-479E-4F41-88C0-19FFA33E7D37}" ShortID="58868778">
+					<ChildrenList>
+						<StateGroup Name="Room_C" ID="{0F51F7A7-DA4E-491F-97F6-EE94B00CB2F9}">
+							<ChildrenList>
+								<State Name="None" ID="{19496866-5461-430E-A457-14160955E205}"/>
+								<State Name="Passed" ID="{D06C60D8-9FF5-4474-897E-D7DD6F79A673}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Room_B" ID="{0F28CB9D-8E69-4152-BC69-50EE91E39FC8}">
+							<ChildrenList>
+								<State Name="None" ID="{E604430D-8069-4F71-9B77-F5EA3F936052}"/>
+								<State Name="Passed" ID="{5B851545-24BC-4022-8588-F9946FE0E763}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Room_Corridor" ID="{A38A273E-49DC-4123-A829-28F63C5ECB86}">
+							<ChildrenList>
+								<State Name="None" ID="{94F93BFE-1007-4D09-8F59-B0A0253031DB}"/>
+								<State Name="Entered" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

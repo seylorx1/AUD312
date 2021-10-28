@@ -13,10 +13,73 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BOX_DROP = 4002303308U;
+        static const AkUniqueID BOX_PICKUP = 2562895519U;
+        static const AkUniqueID HARPOON_PICKUP = 1351179785U;
+        static const AkUniqueID PROTO_MUSIC_DYNAMIC = 4238444291U;
         static const AkUniqueID PROTO_MUSIC_GENERIC = 2902858375U;
         static const AkUniqueID PROTO_SFX_FOOTSTEP_CARPET = 2674483148U;
         static const AkUniqueID PROTO_SFX_FOOTSTEP_FLOORBOARDS = 3944690194U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace BOXHELD
+        {
+            static const AkUniqueID GROUP = 2060468149U;
+
+            namespace STATE
+            {
+                static const AkUniqueID BOX_ISHELD = 1843189762U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace BOXHELD
+
+        namespace HARPOONHELD
+        {
+            static const AkUniqueID GROUP = 515864255U;
+
+            namespace STATE
+            {
+                static const AkUniqueID HARPOON_ISHELD = 1182553944U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace HARPOONHELD
+
+        namespace ROOM_B
+        {
+            static const AkUniqueID GROUP = 1941896135U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PASSED = 2764605217U;
+            } // namespace STATE
+        } // namespace ROOM_B
+
+        namespace ROOM_C
+        {
+            static const AkUniqueID GROUP = 1941896134U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PASSED = 2764605217U;
+            } // namespace STATE
+        } // namespace ROOM_C
+
+        namespace ROOM_CORRIDOR
+        {
+            static const AkUniqueID GROUP = 2968376717U;
+
+            namespace STATE
+            {
+                static const AkUniqueID ENTERED = 2066668302U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace ROOM_CORRIDOR
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {

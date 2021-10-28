@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585668615654930094
+    m_lastTime: -8585662629703016161
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 894b37ce7fff6c44b0dcd4b894060495
     GuidInternal: 
-    m_lastTime: -8585668601960946590
+    m_lastTime: -8585662682603583783
     List:
     - name: Main
       guid: 540242f8053cc1458049835c8ed6e27f
@@ -373,8 +373,139 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585668605281884381
+    m_lastTime: -8585662621802552706
     List:
+    - name: Box
+      guid: b522a989009d6a4fa7920d2b12634e88
+      id: 546945280
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Box
+        ObjectType: 4
+        guid: b522a989009d6a4fa7920d2b12634e88
+      Path: Events\Default Work Unit\Box
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Box_Drop
+      guid: 4751fdc290391f4fa57687a4ae697a0a
+      id: 4002303308
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Box
+        ObjectType: 4
+        guid: b522a989009d6a4fa7920d2b12634e88
+      - ElementName: Box_Drop
+        ObjectType: 3
+        guid: 4751fdc290391f4fa57687a4ae697a0a
+      Path: Events\Default Work Unit\Box\Box_Drop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Box_Pickup
+      guid: e97b8506c112ad43823359d8e87c3f90
+      id: 2562895519
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Box
+        ObjectType: 4
+        guid: b522a989009d6a4fa7920d2b12634e88
+      - ElementName: Box_Pickup
+        ObjectType: 3
+        guid: e97b8506c112ad43823359d8e87c3f90
+      Path: Events\Default Work Unit\Box\Box_Pickup
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Harpoon
+      guid: 997ce0413219b84190889666ec7dfd20
+      id: 302949338
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Harpoon
+        ObjectType: 4
+        guid: 997ce0413219b84190889666ec7dfd20
+      Path: Events\Default Work Unit\Harpoon
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Harpoon_Pickup
+      guid: 1cf8f263f320274e901d621bbcdd6afe
+      id: 1351179785
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Harpoon
+        ObjectType: 4
+        guid: 997ce0413219b84190889666ec7dfd20
+      - ElementName: Harpoon_Pickup
+        ObjectType: 3
+        guid: 1cf8f263f320274e901d621bbcdd6afe
+      Path: Events\Default Work Unit\Harpoon\Harpoon_Pickup
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: PROTO
+      guid: fe743bf964bb3e44bf5e7f5f90f4e4e8
+      id: 900899721
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: PROTO
+        ObjectType: 4
+        guid: fe743bf964bb3e44bf5e7f5f90f4e4e8
+      Path: Events\Default Work Unit\PROTO
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PROTO_music_dynamic
+      guid: be29e4d8b7bbd24487addc99071d2461
+      id: 4238444291
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: PROTO
+        ObjectType: 4
+        guid: fe743bf964bb3e44bf5e7f5f90f4e4e8
+      - ElementName: PROTO_music_dynamic
+        ObjectType: 3
+        guid: be29e4d8b7bbd24487addc99071d2461
+      Path: Events\Default Work Unit\PROTO\PROTO_music_dynamic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: PROTO_music_generic
       guid: 0426ac2c899d8544bf80edfbd7b45db7
       id: 2902858375
@@ -385,10 +516,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: PROTO
+        ObjectType: 4
+        guid: fe743bf964bb3e44bf5e7f5f90f4e4e8
       - ElementName: PROTO_music_generic
         ObjectType: 3
         guid: 0426ac2c899d8544bf80edfbd7b45db7
-      Path: Events\Default Work Unit\PROTO_music_generic
+      Path: Events\Default Work Unit\PROTO\PROTO_music_generic
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -402,10 +536,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: PROTO
+        ObjectType: 4
+        guid: fe743bf964bb3e44bf5e7f5f90f4e4e8
       - ElementName: PROTO_sfx_footstep_carpet
         ObjectType: 3
         guid: e2e7a7305058774e90cfa43b249e3f2f
-      Path: Events\Default Work Unit\PROTO_sfx_footstep_carpet
+      Path: Events\Default Work Unit\PROTO\PROTO_sfx_footstep_carpet
       maxAttenuation: 0
       maxDuration: 0.341905
       minDuration: 0.28551
@@ -419,10 +556,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: PROTO
+        ObjectType: 4
+        guid: fe743bf964bb3e44bf5e7f5f90f4e4e8
       - ElementName: PROTO_sfx_footstep_floorboards
         ObjectType: 3
         guid: 3b4452de749c864da5dbccd37e46c5b7
-      Path: Events\Default Work Unit\PROTO_sfx_footstep_floorboards
+      Path: Events\Default Work Unit\PROTO\PROTO_sfx_footstep_floorboards
       maxAttenuation: 0
       maxDuration: 0.326531
       minDuration: 0.252517
@@ -646,8 +786,339 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c226eeab13aa4f409e89c2a35c4216cc
     GuidInternal: 
-    m_lastTime: -8585668615828329134
-    List: []
+    m_lastTime: -8585662621802203303
+    List:
+    - name: BoxHeld
+      guid: 4f2abce557616641978498765f3111e5
+      id: 2060468149
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Interactions
+        ObjectType: 4
+        guid: fe78017394cbf14aa94b4c596486f5a8
+      - ElementName: BoxHeld
+        ObjectType: 9
+        guid: 4f2abce557616641978498765f3111e5
+      Path: States\Default Work Unit\Interactions\BoxHeld
+      values:
+      - name: Box_IsHeld
+        guid: 438af407679b4a46b5433034968874c8
+        id: 1843189762
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Interactions
+          ObjectType: 4
+          guid: fe78017394cbf14aa94b4c596486f5a8
+        - ElementName: BoxHeld
+          ObjectType: 9
+          guid: 4f2abce557616641978498765f3111e5
+        - ElementName: Box_IsHeld
+          ObjectType: 8
+          guid: 438af407679b4a46b5433034968874c8
+      - name: None
+        guid: 57bd5ad702e3d14d83298d744f9467f3
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Interactions
+          ObjectType: 4
+          guid: fe78017394cbf14aa94b4c596486f5a8
+        - ElementName: BoxHeld
+          ObjectType: 9
+          guid: 4f2abce557616641978498765f3111e5
+        - ElementName: None
+          ObjectType: 8
+          guid: 57bd5ad702e3d14d83298d744f9467f3
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: HarpoonHeld
+      guid: 5882b4b35fd231498cc3fc069ec03744
+      id: 515864255
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Interactions
+        ObjectType: 4
+        guid: fe78017394cbf14aa94b4c596486f5a8
+      - ElementName: HarpoonHeld
+        ObjectType: 9
+        guid: 5882b4b35fd231498cc3fc069ec03744
+      Path: States\Default Work Unit\Interactions\HarpoonHeld
+      values:
+      - name: Harpoon_IsHeld
+        guid: ea231a8085954040b632eaa67c533806
+        id: 1182553944
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Interactions
+          ObjectType: 4
+          guid: fe78017394cbf14aa94b4c596486f5a8
+        - ElementName: HarpoonHeld
+          ObjectType: 9
+          guid: 5882b4b35fd231498cc3fc069ec03744
+        - ElementName: Harpoon_IsHeld
+          ObjectType: 8
+          guid: ea231a8085954040b632eaa67c533806
+      - name: None
+        guid: 7edf88c50fb72a4e9bba8bdbbaa976d1
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Interactions
+          ObjectType: 4
+          guid: fe78017394cbf14aa94b4c596486f5a8
+        - ElementName: HarpoonHeld
+          ObjectType: 9
+          guid: 5882b4b35fd231498cc3fc069ec03744
+        - ElementName: None
+          ObjectType: 8
+          guid: 7edf88c50fb72a4e9bba8bdbbaa976d1
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Interactions
+      guid: fe78017394cbf14aa94b4c596486f5a8
+      id: 888201102
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Interactions
+        ObjectType: 4
+        guid: fe78017394cbf14aa94b4c596486f5a8
+      Path: States\Default Work Unit\Interactions
+      values: []
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Room_B
+      guid: 9dcb280f698e5241bc6950ee91e39fc8
+      id: 1941896135
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Rooms
+        ObjectType: 4
+        guid: b30e34a89e47414f88c019ffa33e7d37
+      - ElementName: Room_B
+        ObjectType: 9
+        guid: 9dcb280f698e5241bc6950ee91e39fc8
+      Path: States\Default Work Unit\Rooms\Room_B
+      values:
+      - name: None
+        guid: 0d4304e66980714f9b77f5ea3f936052
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Room_B
+          ObjectType: 9
+          guid: 9dcb280f698e5241bc6950ee91e39fc8
+        - ElementName: None
+          ObjectType: 8
+          guid: 0d4304e66980714f9b77f5ea3f936052
+      - name: Passed
+        guid: 4515855bbc2422408588f9946fe0e763
+        id: 2764605217
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Room_B
+          ObjectType: 9
+          guid: 9dcb280f698e5241bc6950ee91e39fc8
+        - ElementName: Passed
+          ObjectType: 8
+          guid: 4515855bbc2422408588f9946fe0e763
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Room_C
+      guid: a7f7510f4eda1f4997f6ee94b00cb2f9
+      id: 1941896134
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Rooms
+        ObjectType: 4
+        guid: b30e34a89e47414f88c019ffa33e7d37
+      - ElementName: Room_C
+        ObjectType: 9
+        guid: a7f7510f4eda1f4997f6ee94b00cb2f9
+      Path: States\Default Work Unit\Rooms\Room_C
+      values:
+      - name: None
+        guid: 6668491961540e43a45714160955e205
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Room_C
+          ObjectType: 9
+          guid: a7f7510f4eda1f4997f6ee94b00cb2f9
+        - ElementName: None
+          ObjectType: 8
+          guid: 6668491961540e43a45714160955e205
+      - name: Passed
+        guid: d8606cd0f59f7444897ed7dd6f79a673
+        id: 2764605217
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Room_C
+          ObjectType: 9
+          guid: a7f7510f4eda1f4997f6ee94b00cb2f9
+        - ElementName: Passed
+          ObjectType: 8
+          guid: d8606cd0f59f7444897ed7dd6f79a673
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Room_Corridor
+      guid: 3e278aa3dc492341a82928f63c5ecb86
+      id: 2968376717
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Rooms
+        ObjectType: 4
+        guid: b30e34a89e47414f88c019ffa33e7d37
+      - ElementName: Room_Corridor
+        ObjectType: 9
+        guid: 3e278aa3dc492341a82928f63c5ecb86
+      Path: States\Default Work Unit\Rooms\Room_Corridor
+      values:
+      - name: Entered
+        guid: 28f85cf6def97546b6e986bc56f7b96f
+        id: 2066668302
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Room_Corridor
+          ObjectType: 9
+          guid: 3e278aa3dc492341a82928f63c5ecb86
+        - ElementName: Entered
+          ObjectType: 8
+          guid: 28f85cf6def97546b6e986bc56f7b96f
+      - name: None
+        guid: fe3bf9940710094d8f59b0a0253031db
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Room_Corridor
+          ObjectType: 9
+          guid: 3e278aa3dc492341a82928f63c5ecb86
+        - ElementName: None
+          ObjectType: 8
+          guid: fe3bf9940710094d8f59b0a0253031db
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Rooms
+      guid: b30e34a89e47414f88c019ffa33e7d37
+      id: 1359360203
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Rooms
+        ObjectType: 4
+        guid: b30e34a89e47414f88c019ffa33e7d37
+      Path: States\Default Work Unit\Rooms
+      values: []
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -677,7 +1148,7 @@ MonoBehaviour:
     m_lastTime: -8585668615827287171
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 07000000080000000e0000000f000000
+  ExpandedWaapiItemIds: 0100000002000000030000000600000007000000080000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000150000001600000018000000220000002300000025000000260000002700000028000000290000002a0000003100000032000000490000002c0400002f040000320400003504000038040000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

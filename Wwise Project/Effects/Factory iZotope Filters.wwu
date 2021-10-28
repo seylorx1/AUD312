@@ -19,7 +19,7 @@
 					<PropertyList>
 						<Property Name="Filter1Frequency" Type="Real32" Value="500"/>
 						<Property Name="Filter1Resonance" Type="Real32" Value="0"/>
-						<Property Name="Filter1Type" Type="int32" Value="10"/>
+						<Property Name="Filter1Type" Type="int32" Value="4"/>
 						<Property Name="Filter2Type" Type="int32" Value="0"/>
 						<Property Name="Filter3Type" Type="int32" Value="0"/>
 					</PropertyList>

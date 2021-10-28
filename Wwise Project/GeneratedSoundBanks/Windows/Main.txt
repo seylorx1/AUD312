@@ -1,7 +1,37 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2674483148	PROTO_sfx_footstep_carpet			\Default Work Unit\PROTO_sfx_footstep_carpet	
-	2902858375	PROTO_music_generic			\Default Work Unit\PROTO_music_generic	
-	3944690194	PROTO_sfx_footstep_floorboards			\Default Work Unit\PROTO_sfx_footstep_floorboards	
+	1351179785	Harpoon_Pickup			\Default Work Unit\Harpoon\Harpoon_Pickup	
+	2562895519	Box_Pickup			\Default Work Unit\Box\Box_Pickup	
+	2674483148	PROTO_sfx_footstep_carpet			\Default Work Unit\PROTO\PROTO_sfx_footstep_carpet	
+	2902858375	PROTO_music_generic			\Default Work Unit\PROTO\PROTO_music_generic	
+	3944690194	PROTO_sfx_footstep_floorboards			\Default Work Unit\PROTO\PROTO_sfx_footstep_floorboards	
+	4002303308	Box_Drop			\Default Work Unit\Box\Box_Drop	
+	4238444291	PROTO_music_dynamic			\Default Work Unit\PROTO\PROTO_music_dynamic	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1941896134	Room_C			\Default Work Unit\Rooms\Room_C	
+	1941896135	Room_B			\Default Work Unit\Rooms\Room_B	
+	2060468149	BoxHeld			\Default Work Unit\Interactions\BoxHeld	
+	2968376717	Room_Corridor			\Default Work Unit\Rooms\Room_Corridor	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Room_C			
+	2764605217	Passed	Room_C			
+	748895195	None	Room_B			
+	2764605217	Passed	Room_B			
+	748895195	None	BoxHeld			
+	1843189762	Box_IsHeld	BoxHeld			
+	748895195	None	Room_Corridor			
+	2066668302	Entered	Room_Corridor			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	215143249	Entered	Room_Corridor	\Effects\Factory Effects\Wwise Matrix Reverb\Tunnel1		
+	287049138	Box_IsHeld	BoxHeld	\Effects\Factory Effects\Harmonizer\Secret_message		
+	1042296765	Box_IsHeld	BoxHeld	\Effects\Factory Effects\Pitch Shifter\Transpose\Chipmunk		
+
+Effect plug-ins	ID	Name	Type				Notes
+	654807232	Chipmunk	Wwise Pitch Shifter			
+	702543456	Tunnel1	Wwise Matrix Reverb			
+	2568359573	Secret_message	Wwise Harmonizer			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	46343155	PROTO_sfx_footstep_carpet_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_carpet_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_carpet\PROTO_sfx_footstep_carpet_01		29728
@@ -11,4 +41,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	705070774	PROTO_sfx_footstep_carpet_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_carpet_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_carpet\PROTO_sfx_footstep_carpet_03		25246
 	798052728	PROTO_sfx_footstep_floorboards_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_floorboards_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_floorboards\PROTO_sfx_footstep_floorboards_02		28864
 	812262133	PROTO_sfx_footstep_floorboards_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_floorboards_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_floorboards\PROTO_sfx_footstep_floorboards_01		22336
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	78447538	PROTO_track_lead_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\AUD Music Parts - Track 5_D79FB2B7.wem	78447538.wem	\Interactive Music Hierarchy\Default Work Unit\PROTO_music\Room_C (Loop)\Room_C\PROTO_track_lead_01	
+	656186590	PROTO_track_hh-clap_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\AUD Music Parts - Track 4_D79FB2B7.wem	656186590.wem	\Interactive Music Hierarchy\Default Work Unit\PROTO_music\Room_C (Loop)\Room_C\PROTO_track_hh-clap_01	
+	853184400	PROTO_track_subbass_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\AUD Music Parts - Track 1_D79FB2B7.wem	853184400.wem	\Interactive Music Hierarchy\Default Work Unit\PROTO_music\Room_B (Loop)\Room_B\PROTO_track_subbass_01	
+	954577201	PROTO_track_bass_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\AUD Music Parts - Track 2_D79FB2B7.wem	954577201.wem	\Interactive Music Hierarchy\Default Work Unit\PROTO_music\Room_C (Loop)\Room_C\PROTO_track_bass_01	
+	972500665	PROTO_track_synth_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\AUD Music Parts - Track 6_D79FB2B7.wem	972500665.wem	\Interactive Music Hierarchy\Default Work Unit\PROTO_music\Room_B (Loop)\Room_B\PROTO_track_synth_01	
+	999621958	PROTO_track_kick_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\AUD Music Parts - Track 3_D79FB2B7.wem	999621958.wem	\Interactive Music Hierarchy\Default Work Unit\PROTO_music\Room_A (Loop)\Room_A\PROTO_track_kick_01	
 

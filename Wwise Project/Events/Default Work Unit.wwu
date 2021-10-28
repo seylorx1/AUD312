@@ -3,39 +3,104 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="PROTO_sfx_footstep_carpet" ID="{30A7E7E2-5850-4E77-90CF-A43B249E3F2F}">
+				<Folder Name="Box" ID="{89A922B5-9D00-4F6A-A792-0D2B12634E88}" ShortID="213983789">
 					<ChildrenList>
-						<Action Name="" ID="{8D451DA9-EC97-4239-88F6-D4A9A4BB0809}" ShortID="506687232">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PROTO_sfx_footstep_carpet" ID="{DE8434CF-2FE2-4822-8B07-6A60363FE4BF}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Box_Pickup" ID="{06857BE9-12C1-43AD-8233-59D8E87C3F90}">
+							<ChildrenList>
+								<Action Name="" ID="{978A41DA-0B9E-4566-B83B-470DB2E641D0}" ShortID="1073130222">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Box_IsHeld" ID="{07F48A43-9B67-464A-B543-3034968874C8}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Box_Drop" ID="{C2FD5147-3990-4F1F-A576-87A4AE697A0A}">
+							<ChildrenList>
+								<Action Name="" ID="{54AE77F2-839E-410F-9E90-3210FD7D69CF}" ShortID="837019922">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="None" ID="{D75ABD57-E302-4DD1-8329-8D744F9467F3}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="PROTO_sfx_footstep_floorboards" ID="{DE52443B-9C74-4D86-A5DB-CCD37E46C5B7}">
+				</Folder>
+				<Folder Name="PROTO" ID="{F93B74FE-BB64-443E-BF5E-7F5F90F4E4E8}" ShortID="817489252">
 					<ChildrenList>
-						<Action Name="" ID="{498CA968-6A11-452A-960F-67F16717F7A3}" ShortID="276429886">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PROTO_sfx_footstep_floorboards" ID="{A89C1678-268A-4405-935E-DAB823C4D25B}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="PROTO_sfx_footstep_carpet" ID="{30A7E7E2-5850-4E77-90CF-A43B249E3F2F}">
+							<ChildrenList>
+								<Action Name="" ID="{8D451DA9-EC97-4239-88F6-D4A9A4BB0809}" ShortID="506687232">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PROTO_sfx_footstep_carpet" ID="{DE8434CF-2FE2-4822-8B07-6A60363FE4BF}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PROTO_music_generic" ID="{2CAC2604-9D89-4485-BF80-EDFBD7B45DB7}">
+							<ChildrenList>
+								<Action Name="" ID="{C119BE74-1E41-4B4D-9758-1D116DCF79E1}" ShortID="365425485">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PROTO_music_generic_01" ID="{5F7E64BC-41D2-4595-8717-D2B13BE086B4}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PROTO_sfx_footstep_floorboards" ID="{DE52443B-9C74-4D86-A5DB-CCD37E46C5B7}">
+							<ChildrenList>
+								<Action Name="" ID="{498CA968-6A11-452A-960F-67F16717F7A3}" ShortID="276429886">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PROTO_sfx_footstep_floorboards" ID="{A89C1678-268A-4405-935E-DAB823C4D25B}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PROTO_music_dynamic" ID="{D8E429BE-BBB7-44D2-87AD-DC99071D2461}">
+							<ChildrenList>
+								<Action Name="" ID="{7D523CBB-12B8-4158-8664-1B3684278BE1}" ShortID="468052219">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PROTO_music" ID="{65788AA7-08AC-4601-936F-2325AC5777CC}" WorkUnitID="{F25D41B2-87F8-4367-B70B-EA99533755FA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="PROTO_music_generic" ID="{2CAC2604-9D89-4485-BF80-EDFBD7B45DB7}">
+				</Folder>
+				<Folder Name="Harpoon" ID="{41E07C99-1932-41B8-9088-9666EC7DFD20}" ShortID="721530848">
 					<ChildrenList>
-						<Action Name="" ID="{C119BE74-1E41-4B4D-9758-1D116DCF79E1}" ShortID="365425485">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PROTO_music_generic_01" ID="{5F7E64BC-41D2-4595-8717-D2B13BE086B4}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Harpoon_Pickup" ID="{63F2F81C-20F3-4E27-901D-621BBCDD6AFE}">
+							<ChildrenList>
+								<Action Name="" ID="{D9ED6E64-8B98-4D29-A2B0-B42A69F071E4}" ShortID="319833822">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Harpoon_IsHeld" ID="{801A23EA-9585-4040-B632-EAA67C533806}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
