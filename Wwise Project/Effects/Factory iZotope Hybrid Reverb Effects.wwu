@@ -174,11 +174,11 @@
 				<Effect Name="Medium_Wood_Hall" ID="{897FF188-3EFE-45FC-A203-F1D69F999D9A}" PluginName="iZotope Hybrid Reverb" CompanyID="259" PluginID="2" PluginType="3">
 					<PropertyList>
 						<Property Name="DecayHighFrequency" Type="Real32" Value="8000"/>
-						<Property Name="DecayHighRatio" Type="Real32" Value="1.014952"/>
+						<Property Name="DecayHighRatio" Type="Real32" Value="1.76"/>
 						<Property Name="DecayLowFrequency" Type="Real32" Value="800"/>
-						<Property Name="DecayLowRatio" Type="Real32" Value="1.186363"/>
-						<Property Name="DecayMidRatio" Type="Real32" Value="0.7986856"/>
-						<Property Name="DecayTime" Type="Real32" Value="0.1786582"/>
+						<Property Name="DecayLowRatio" Type="Real32" Value="0.94"/>
+						<Property Name="DecayMidRatio" Type="Real32" Value="1.05"/>
+						<Property Name="DecayTime" Type="Real32" Value="0.125"/>
 					</PropertyList>
 					<ChildrenList>
 						<PluginMediaSource Name="Medium Wood Hall" ID="{CB8E33E3-5509-4FEC-80AC-456B0BB44FAC}">

@@ -36,12 +36,12 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2700834635">
+		<SoundBank Id="1355168291" Language="SFX" Hash="496426543">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1584002020">
+		<SoundBank Id="3161908922" Language="SFX" Hash="27543323">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -55,6 +55,130 @@
 					<ActionSetState>
 						<ActionSetStateEntry Id="1843189762" Name="Box_IsHeld" ObjectPath="\States\Default Work Unit\Interactions\BoxHeld\Box_IsHeld"/>
 					</ActionSetState>
+				</Event>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep\Footstep" DurationType="OneShot" DurationMin="0.216149" DurationMax="0.242619">
+					<IncludedMemoryFiles>
+						<File Id="3342881" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_03.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_03_10C4C929.wem</Path>
+						</File>
+						<File Id="40909859" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_01.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_01_10C4C929.wem</Path>
+						</File>
+						<File Id="71636352" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_03.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_03_10C4C929.wem</Path>
+						</File>
+						<File Id="87916936" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_01.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_01_10C4C929.wem</Path>
+						</File>
+						<File Id="95916828" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_02.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_02_10C4C929.wem</Path>
+						</File>
+						<File Id="106863624" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_15.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_15_10C4C929.wem</Path>
+						</File>
+						<File Id="134429121" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_14.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_14_10C4C929.wem</Path>
+						</File>
+						<File Id="149940528" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_13.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_13_10C4C929.wem</Path>
+						</File>
+						<File Id="231539839" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_13.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_13_10C4C929.wem</Path>
+						</File>
+						<File Id="298171059" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_10.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_10_10C4C929.wem</Path>
+						</File>
+						<File Id="360199625" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_08.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_08_10C4C929.wem</Path>
+						</File>
+						<File Id="373794033" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_12.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_12_10C4C929.wem</Path>
+						</File>
+						<File Id="382745418" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_12.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_12_10C4C929.wem</Path>
+						</File>
+						<File Id="541544103" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_08.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_08_10C4C929.wem</Path>
+						</File>
+						<File Id="542275199" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_06.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_06_10C4C929.wem</Path>
+						</File>
+						<File Id="560928270" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_05.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_05_10C4C929.wem</Path>
+						</File>
+						<File Id="564781057" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_04.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_04_10C4C929.wem</Path>
+						</File>
+						<File Id="600831764" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_09.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_09_10C4C929.wem</Path>
+						</File>
+						<File Id="624331642" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_07.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_07_10C4C929.wem</Path>
+						</File>
+						<File Id="684196659" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_11.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_11_10C4C929.wem</Path>
+						</File>
+						<File Id="728214015" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_04.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_04_10C4C929.wem</Path>
+						</File>
+						<File Id="743390839" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_16.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_16_10C4C929.wem</Path>
+						</File>
+						<File Id="766442040" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_07.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_07_10C4C929.wem</Path>
+						</File>
+						<File Id="813972385" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_10.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_10_10C4C929.wem</Path>
+						</File>
+						<File Id="913829077" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_11.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_11_10C4C929.wem</Path>
+						</File>
+						<File Id="919058543" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_06.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_06_10C4C929.wem</Path>
+						</File>
+						<File Id="946909325" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_14.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_14_10C4C929.wem</Path>
+						</File>
+						<File Id="952155238" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_09.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_09_10C4C929.wem</Path>
+						</File>
+						<File Id="1008776830" Language="SFX">
+							<ShortName>sfx_footstep_toe_concrete_02.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_concrete_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1068978669" Language="SFX">
+							<ShortName>sfx_footstep_heel_concrete_05.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_concrete_05_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1351179785" Name="Harpoon_Pickup" ObjectPath="\Events\Default Work Unit\Harpoon\Harpoon_Pickup" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
@@ -130,38 +254,6 @@
 						<File Id="104883396" Language="SFX">
 							<ShortName>PROTO_music_generic_01.wav</ShortName>
 							<Path>SFX\PROTO_music_generic_01_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2674483148" Name="PROTO_sfx_footstep_carpet" ObjectPath="\Events\Default Work Unit\PROTO\PROTO_sfx_footstep_carpet" DurationType="OneShot" DurationMin="0.285510" DurationMax="0.341905">
-					<IncludedMemoryFiles>
-						<File Id="46343155" Language="SFX">
-							<ShortName>PROTO_sfx_footstep_carpet_01.wav</ShortName>
-							<Path>SFX\PROTO_sfx_footstep_carpet_01_10C4C929.wem</Path>
-						</File>
-						<File Id="659131425" Language="SFX">
-							<ShortName>PROTO_sfx_footstep_carpet_02.wav</ShortName>
-							<Path>SFX\PROTO_sfx_footstep_carpet_02_10C4C929.wem</Path>
-						</File>
-						<File Id="705070774" Language="SFX">
-							<ShortName>PROTO_sfx_footstep_carpet_03.wav</ShortName>
-							<Path>SFX\PROTO_sfx_footstep_carpet_03_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3944690194" Name="PROTO_sfx_footstep_floorboards" ObjectPath="\Events\Default Work Unit\PROTO\PROTO_sfx_footstep_floorboards" DurationType="OneShot" DurationMin="0.252517" DurationMax="0.326531">
-					<IncludedMemoryFiles>
-						<File Id="360352746" Language="SFX">
-							<ShortName>PROTO_sfx_footstep_floorboards_03.wav</ShortName>
-							<Path>SFX\PROTO_sfx_footstep_floorboards_03_10C4C929.wem</Path>
-						</File>
-						<File Id="798052728" Language="SFX">
-							<ShortName>PROTO_sfx_footstep_floorboards_02.wav</ShortName>
-							<Path>SFX\PROTO_sfx_footstep_floorboards_02_10C4C929.wem</Path>
-						</File>
-						<File Id="812262133" Language="SFX">
-							<ShortName>PROTO_sfx_footstep_floorboards_01.wav</ShortName>
-							<Path>SFX\PROTO_sfx_footstep_floorboards_01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

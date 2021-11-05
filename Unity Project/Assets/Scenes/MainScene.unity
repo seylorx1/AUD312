@@ -15773,7 +15773,7 @@ MonoBehaviour:
   footstepSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bbd877d04d28e8a46a75a1816ea66a4d,
+    WwiseObjectReference: {fileID: 11400000, guid: 0c17bee0f09539f45b6b6664f8269b13,
       type: 2}
   jumpSound:
     idInternal: 0
@@ -23307,7 +23307,7 @@ GameObject:
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1747511955
 MonoBehaviour:
   m_ObjectHideFlags: 0

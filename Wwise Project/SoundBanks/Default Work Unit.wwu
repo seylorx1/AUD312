@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Harpoon" ID="{41E07C99-1932-41B8-9088-9666EC7DFD20}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PROTO" ID="{F93B74FE-BB64-443E-BF5E-7F5F90F4E4E8}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footstep" ID="{CA5EE528-6A8A-47D7-89F4-415D53397B3A}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Box" ID="{89A922B5-9D00-4F6A-A792-0D2B12634E88}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

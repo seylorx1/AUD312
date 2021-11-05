@@ -15,11 +15,10 @@ namespace AK
     {
         static const AkUniqueID BOX_DROP = 4002303308U;
         static const AkUniqueID BOX_PICKUP = 2562895519U;
+        static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID HARPOON_PICKUP = 1351179785U;
         static const AkUniqueID PROTO_MUSIC_DYNAMIC = 4238444291U;
         static const AkUniqueID PROTO_MUSIC_GENERIC = 2902858375U;
-        static const AkUniqueID PROTO_SFX_FOOTSTEP_CARPET = 2674483148U;
-        static const AkUniqueID PROTO_SFX_FOOTSTEP_FLOORBOARDS = 3944690194U;
     } // namespace EVENTS
 
     namespace STATES

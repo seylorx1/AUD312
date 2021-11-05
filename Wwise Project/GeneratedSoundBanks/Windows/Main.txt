@@ -1,9 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1351179785	Harpoon_Pickup			\Default Work Unit\Harpoon\Harpoon_Pickup	
+	1866025847	Footstep			\Default Work Unit\Footstep\Footstep	
 	2562895519	Box_Pickup			\Default Work Unit\Box\Box_Pickup	
-	2674483148	PROTO_sfx_footstep_carpet			\Default Work Unit\PROTO\PROTO_sfx_footstep_carpet	
 	2902858375	PROTO_music_generic			\Default Work Unit\PROTO\PROTO_music_generic	
-	3944690194	PROTO_sfx_footstep_floorboards			\Default Work Unit\PROTO\PROTO_sfx_footstep_floorboards	
 	4002303308	Box_Drop			\Default Work Unit\Box\Box_Drop	
 	4238444291	PROTO_music_dynamic			\Default Work Unit\PROTO\PROTO_music_dynamic	
 
@@ -32,15 +31,40 @@ Effect plug-ins	ID	Name	Type				Notes
 	654807232	Chipmunk	Wwise Pitch Shifter			
 	702543456	Tunnel1	Wwise Matrix Reverb			
 	2568359573	Secret_message	Wwise Harmonizer			
+	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	46343155	PROTO_sfx_footstep_carpet_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_carpet_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_carpet\PROTO_sfx_footstep_carpet_01		29728
+	3342881	sfx_footstep_toe_concrete_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_03		15852
+	40909859	sfx_footstep_heel_concrete_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_01		8884
+	71636352	sfx_footstep_heel_concrete_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_03		8884
+	87916936	sfx_footstep_toe_concrete_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_01		15852
+	95916828	sfx_footstep_heel_concrete_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_02		8884
 	104883396	PROTO_music_generic_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_music_generic_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_music_generic_01		1014364
-	360352746	PROTO_sfx_footstep_floorboards_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_floorboards_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_floorboards\PROTO_sfx_footstep_floorboards_03		24000
-	659131425	PROTO_sfx_footstep_carpet_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_carpet_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_carpet\PROTO_sfx_footstep_carpet_02		30220
-	705070774	PROTO_sfx_footstep_carpet_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_carpet_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_carpet\PROTO_sfx_footstep_carpet_03		25246
-	798052728	PROTO_sfx_footstep_floorboards_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_floorboards_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_floorboards\PROTO_sfx_footstep_floorboards_02		28864
-	812262133	PROTO_sfx_footstep_floorboards_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\PROTO_sfx_footstep_floorboards_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PROTO_sfx_footstep_floorboards\PROTO_sfx_footstep_floorboards_01		22336
+	106863624	sfx_footstep_toe_concrete_15	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_15_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_15		15852
+	134429121	sfx_footstep_heel_concrete_14	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_14		8884
+	149940528	sfx_footstep_heel_concrete_13	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_13		8884
+	231539839	sfx_footstep_toe_concrete_13	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_13		15852
+	298171059	sfx_footstep_toe_concrete_10	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_10		15852
+	360199625	sfx_footstep_toe_concrete_08	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_08		15852
+	373794033	sfx_footstep_toe_concrete_12	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_12		15852
+	382745418	sfx_footstep_heel_concrete_12	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_12		8884
+	541544103	sfx_footstep_heel_concrete_08	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_08		8884
+	542275199	sfx_footstep_toe_concrete_06	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_06		15852
+	560928270	sfx_footstep_toe_concrete_05	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_05		15852
+	564781057	sfx_footstep_toe_concrete_04	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_04		15852
+	600831764	sfx_footstep_heel_concrete_09	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_09		8884
+	624331642	sfx_footstep_heel_concrete_07	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_07		8884
+	684196659	sfx_footstep_toe_concrete_11	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_11		15852
+	728214015	sfx_footstep_heel_concrete_04	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_04		8884
+	743390839	sfx_footstep_toe_concrete_16	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_16_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_16		15852
+	766442040	sfx_footstep_toe_concrete_07	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_07		15852
+	813972385	sfx_footstep_heel_concrete_10	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_10		8884
+	913829077	sfx_footstep_heel_concrete_11	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_11		8884
+	919058543	sfx_footstep_heel_concrete_06	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_06		8884
+	946909325	sfx_footstep_toe_concrete_14	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_14		15852
+	952155238	sfx_footstep_toe_concrete_09	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_09		15852
+	1008776830	sfx_footstep_toe_concrete_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_02		15852
+	1068978669	sfx_footstep_heel_concrete_05	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_05		8884
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	78447538	PROTO_track_lead_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\AUD Music Parts - Track 5_D79FB2B7.wem	78447538.wem	\Interactive Music Hierarchy\Default Work Unit\PROTO_music\Room_C (Loop)\Room_C\PROTO_track_lead_01	

@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 894b37ce7fff6c44b0dcd4b894060495
     GuidInternal: 
-    m_lastTime: -8585662682603583783
+    m_lastTime: -8585654689494209748
     List:
     - name: Main
       guid: 540242f8053cc1458049835c8ed6e27f
@@ -373,7 +373,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585662621802552706
+    m_lastTime: -8585654678637290855
     List:
     - name: Box
       guid: b522a989009d6a4fa7920d2b12634e88
@@ -432,6 +432,43 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Footstep
+      guid: 28e55eca8a6ad74789f4415d53397b3a
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: 28e55eca8a6ad74789f4415d53397b3a
+      Path: Events\Default Work Unit\Footstep
+      maxAttenuation: 0
+      maxDuration: 0.242619
+      minDuration: 0.216149
+    - name: Footstep
+      guid: 09fd370eacf00c438ae2c527280491b3
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: 28e55eca8a6ad74789f4415d53397b3a
+      - ElementName: Footstep
+        ObjectType: 3
+        guid: 09fd370eacf00c438ae2c527280491b3
+      Path: Events\Default Work Unit\Footstep\Footstep
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Harpoon
       guid: 997ce0413219b84190889666ec7dfd20
       id: 302949338
@@ -526,46 +563,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: PROTO_sfx_footstep_carpet
-      guid: e2e7a7305058774e90cfa43b249e3f2f
-      id: 2674483148
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: PROTO
-        ObjectType: 4
-        guid: fe743bf964bb3e44bf5e7f5f90f4e4e8
-      - ElementName: PROTO_sfx_footstep_carpet
-        ObjectType: 3
-        guid: e2e7a7305058774e90cfa43b249e3f2f
-      Path: Events\Default Work Unit\PROTO\PROTO_sfx_footstep_carpet
-      maxAttenuation: 0
-      maxDuration: 0.341905
-      minDuration: 0.28551
-    - name: PROTO_sfx_footstep_floorboards
-      guid: 3b4452de749c864da5dbccd37e46c5b7
-      id: 3944690194
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: PROTO
-        ObjectType: 4
-        guid: fe743bf964bb3e44bf5e7f5f90f4e4e8
-      - ElementName: PROTO_sfx_footstep_floorboards
-        ObjectType: 3
-        guid: 3b4452de749c864da5dbccd37e46c5b7
-      Path: Events\Default Work Unit\PROTO\PROTO_sfx_footstep_floorboards
-      maxAttenuation: 0
-      maxDuration: 0.326531
-      minDuration: 0.252517
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -1148,7 +1145,7 @@ MonoBehaviour:
     m_lastTime: -8585668615827287171
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000600000007000000080000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000150000001600000018000000220000002300000025000000260000002700000028000000290000002a0000003100000032000000490000002c0400002f040000320400003504000038040000
+  ExpandedWaapiItemIds: 0100000002000000030000000600000007000000080000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000150000001600000018000000220000002300000025000000260000002700000028000000290000002a000000310000003200000049000000510000002c0400002f040000320400003504000038040000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
