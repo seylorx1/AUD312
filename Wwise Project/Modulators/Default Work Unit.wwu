@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AD1477EF-9B09-4D4A-8427-3C615EF0E314}" SchemaVersion="103">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{AD1477EF-9B09-4D4A-8427-3C615EF0E314}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AD1477EF-9B09-4D4A-8427-3C615EF0E314}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorTime Name="VampTime" ID="{24B22987-02E3-4875-B09D-98464477708A}" ShortID="733714132">
+					<PropertyList>
+						<Property Name="EnvelopeTriggerOn" Type="int32" Value="2"/>
+						<Property Name="TimeModDuration" Type="Real64" Value="0.5"/>
+						<Property Name="TimeModInitialDelay" Type="Real64" Value="0.5"/>
+					</PropertyList>
+				</ModulatorTime>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

@@ -1,8 +1,15 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1468846155	VampFootstep			\Default Work Unit\VampFootstep	
+
+Switch	ID	Name	Switch Group			Notes
+	3248502869	Disabled	VampFootstep			
+	4174102348	Enabled	VampFootstep			
+
 State Group	ID	Name			Wwise Object Path	Notes
 	515864255	HarpoonHeld			\Default Work Unit\Interactions\HarpoonHeld	
 	1941896134	Room_C			\Default Work Unit\Rooms\Room_C	
 	1941896135	Room_B			\Default Work Unit\Rooms\Room_B	
-	2060468149	BoxHeld			\Default Work Unit\Interactions\BoxHeld	
+	2782314781	ItemHeld			\Default Work Unit\Music\ItemHeld	
 	2968376717	Room_Corridor			\Default Work Unit\Rooms\Room_Corridor	
 
 State	ID	Name	State Group			Notes
@@ -12,8 +19,8 @@ State	ID	Name	State Group			Notes
 	2764605217	Passed	Room_C			
 	748895195	None	Room_B			
 	2764605217	Passed	Room_B			
-	748895195	None	BoxHeld			
-	1843189762	Box_IsHeld	BoxHeld			
+	748895195	None	ItemHeld			
+	1159598586	Item_IsHeld	ItemHeld			
 	748895195	None	Room_Corridor			
 	2066668302	Entered	Room_Corridor			
 
@@ -35,7 +42,9 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
+	1323876822	Backup Music			\Default Work Unit\Master Audio Bus\Backup Music	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

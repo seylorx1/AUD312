@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AD869DB5-765D-4E16-82A5-67934B58A9C5}" SchemaVersion="103">
 	<Triggers>
-		<WorkUnit Name="Default Work Unit" ID="{AD869DB5-765D-4E16-82A5-67934B58A9C5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AD869DB5-765D-4E16-82A5-67934B58A9C5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="BoxPickupStinger" ID="{40DDB438-E9B2-4C4B-9C9B-CE1AC9F941C2}"/>
+				<Trigger Name="BoxDropStinger" ID="{A2793689-B502-4218-9291-BC4674D43AF9}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Triggers>
 </WwiseDocument>

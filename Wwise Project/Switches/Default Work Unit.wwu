@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}" SchemaVersion="103">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="VampFootstep" ID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Enabled" ID="{556C6E51-2F20-435E-9A52-BDDC2426B7A9}"/>
+						<Switch Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="VampCooldown" ID="{55CD68A3-358D-4235-9001-F46651CA0321}"/>
+						<Curve Name="" ID="{8602B7FF-414D-4B78-BEF5-769B54BEC469}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>2</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.001</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

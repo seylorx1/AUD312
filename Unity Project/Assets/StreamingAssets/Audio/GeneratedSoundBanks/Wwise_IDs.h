@@ -13,27 +13,17 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID BOX_DROP = 4002303308U;
-        static const AkUniqueID BOX_PICKUP = 2562895519U;
+        static const AkUniqueID BOXDROP = 3810078911U;
+        static const AkUniqueID BOXPICKUP = 2671589300U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
-        static const AkUniqueID HARPOON_PICKUP = 1351179785U;
-        static const AkUniqueID PROTO_MUSIC_DYNAMIC = 4238444291U;
-        static const AkUniqueID PROTO_MUSIC_GENERIC = 2902858375U;
+        static const AkUniqueID HARPOONPICKUP = 2867011390U;
+        static const AkUniqueID ITEMDROP = 3684409175U;
+        static const AkUniqueID ITEMPICKUP = 1851462748U;
+        static const AkUniqueID MUSIC_BOAT = 1325856759U;
     } // namespace EVENTS
 
     namespace STATES
     {
-        namespace BOXHELD
-        {
-            static const AkUniqueID GROUP = 2060468149U;
-
-            namespace STATE
-            {
-                static const AkUniqueID BOX_ISHELD = 1843189762U;
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace BOXHELD
-
         namespace HARPOONHELD
         {
             static const AkUniqueID GROUP = 515864255U;
@@ -44,6 +34,17 @@ namespace AK
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace HARPOONHELD
+
+        namespace ITEMHELD
+        {
+            static const AkUniqueID GROUP = 2782314781U;
+
+            namespace STATE
+            {
+                static const AkUniqueID ITEM_ISHELD = 1159598586U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace ITEMHELD
 
         namespace ROOM_B
         {
@@ -80,6 +81,21 @@ namespace AK
 
     } // namespace STATES
 
+    namespace SWITCHES
+    {
+        namespace VAMPFOOTSTEP
+        {
+            static const AkUniqueID GROUP = 1468846155U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DISABLED = 3248502869U;
+                static const AkUniqueID ENABLED = 4174102348U;
+            } // namespace SWITCH
+        } // namespace VAMPFOOTSTEP
+
+    } // namespace SWITCHES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
@@ -94,7 +110,14 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID VAMPCOOLDOWN = 244091178U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID BOXDROPSTINGER = 556308635U;
+        static const AkUniqueID BOXPICKUPSTINGER = 3525814506U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {
@@ -104,8 +127,10 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID BACKUP_MUSIC = 1323876822U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
+        static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

@@ -3599,6 +3599,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5a96884d79625d54d8660cfc4e141fb1,
       type: 2}
+  dropSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   groundCollideSound:
     idInternal: 0
     valueGuidInternal: 
@@ -11579,6 +11583,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5a96884d79625d54d8660cfc4e141fb1,
       type: 2}
+  dropSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   groundCollideSound:
     idInternal: 0
     valueGuidInternal: 
@@ -17326,6 +17334,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5a96884d79625d54d8660cfc4e141fb1,
       type: 2}
+  dropSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   groundCollideSound:
     idInternal: 0
     valueGuidInternal: 
@@ -20144,6 +20156,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5a96884d79625d54d8660cfc4e141fb1,
       type: 2}
+  dropSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   groundCollideSound:
     idInternal: 0
     valueGuidInternal: 
@@ -23307,7 +23323,7 @@ GameObject:
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1747511955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23328,7 +23344,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b76bb87a899eec24e82ab7e031e864fe,
+    WwiseObjectReference: {fileID: 11400000, guid: a30b92be925c3e34091accb2f5f62354,
       type: 2}
   useCallbacks: 0
   Callbacks: []
@@ -24426,11 +24442,15 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5a96884d79625d54d8660cfc4e141fb1,
       type: 2}
-  groundCollideSound:
+  dropSound:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 477dfa9d58a3a0149846f2472e220060,
       type: 2}
+  groundCollideSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1793863389
 GameObject:
   m_ObjectHideFlags: 0

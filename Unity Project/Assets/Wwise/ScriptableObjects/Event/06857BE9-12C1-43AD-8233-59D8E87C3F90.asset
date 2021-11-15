@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3857155f990bfa43b3d23accebdd730, type: 3}
   m_Name: 06857BE9-12C1-43AD-8233-59D8E87C3F90
   m_EditorClassIdentifier: 
-  objectName: Box_Pickup
-  id: 2562895519
+  objectName: BoxPickup
+  id: 2671589300
   guid: 06857BE9-12C1-43AD-8233-59D8E87C3F90

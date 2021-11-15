@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3857155f990bfa43b3d23accebdd730, type: 3}
   m_Name: C2FD5147-3990-4F1F-A576-87A4AE697A0A
   m_EditorClassIdentifier: 
-  objectName: Box_Drop
-  id: 4002303308
+  objectName: BoxDrop
+  id: 3810078911
   guid: C2FD5147-3990-4F1F-A576-87A4AE697A0A

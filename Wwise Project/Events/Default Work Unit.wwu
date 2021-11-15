@@ -5,29 +5,31 @@
 			<ChildrenList>
 				<Folder Name="Box" ID="{89A922B5-9D00-4F6A-A792-0D2B12634E88}" ShortID="213983789">
 					<ChildrenList>
-						<Event Name="Box_Pickup" ID="{06857BE9-12C1-43AD-8233-59D8E87C3F90}">
+						<Event Name="BoxPickup" ID="{06857BE9-12C1-43AD-8233-59D8E87C3F90}">
 							<ChildrenList>
-								<Action Name="" ID="{978A41DA-0B9E-4566-B83B-470DB2E641D0}" ShortID="1073130222">
+								<Action Name="" ID="{F7B9B358-C3FB-489C-950B-598247DAA7B5}" ShortID="917480513">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Box_IsHeld" ID="{07F48A43-9B67-464A-B543-3034968874C8}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+											<ObjectRef Name="BoxPickupStinger" ID="{40DDB438-E9B2-4C4B-9C9B-CE1AC9F941C2}" WorkUnitID="{AD869DB5-765D-4E16-82A5-67934B58A9C5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Box_Drop" ID="{C2FD5147-3990-4F1F-A576-87A4AE697A0A}">
+						<Event Name="BoxDrop" ID="{C2FD5147-3990-4F1F-A576-87A4AE697A0A}">
 							<ChildrenList>
-								<Action Name="" ID="{54AE77F2-839E-410F-9E90-3210FD7D69CF}" ShortID="837019922">
+								<Action Name="" ID="{3933FF8C-6FE6-4DE2-B068-C97835999AAC}" ShortID="549507226">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="None" ID="{D75ABD57-E302-4DD1-8329-8D744F9467F3}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+											<ObjectRef Name="BoxDropStinger" ID="{A2793689-B502-4218-9291-BC4674D43AF9}" WorkUnitID="{AD869DB5-765D-4E16-82A5-67934B58A9C5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -63,7 +65,7 @@
 				</Folder>
 				<Folder Name="Harpoon" ID="{41E07C99-1932-41B8-9088-9666EC7DFD20}" ShortID="721530848">
 					<ChildrenList>
-						<Event Name="Harpoon_Pickup" ID="{63F2F81C-20F3-4E27-901D-621BBCDD6AFE}">
+						<Event Name="HarpoonPickup" ID="{63F2F81C-20F3-4E27-901D-621BBCDD6AFE}">
 							<ChildrenList>
 								<Action Name="" ID="{D9ED6E64-8B98-4D29-A2B0-B42A69F071E4}" ShortID="319833822">
 									<PropertyList>
@@ -90,8 +92,79 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{36331A1B-CEB1-4ED8-8F18-7CAEAA1CC27C}" ShortID="690529339">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VampCooldown" ID="{55CD68A3-358D-4235-9001-F46651CA0321}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DD49337D-7E6C-4A84-8A45-22CBC3A5DB5D}" ShortID="860956073">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="Delay" Type="Real64" Value="0.3"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VampCooldown" ID="{55CD68A3-358D-4235-9001-F46651CA0321}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{7DC76BA7-CF76-4D36-9933-B7AC263E0790}" ShortID="232227215">
+					<ChildrenList>
+						<Event Name="music_boat" ID="{F56B5F6D-980C-4666-A2BD-5C329DFEB6EE}">
+							<ChildrenList>
+								<Action Name="" ID="{99336DC5-8E53-46C7-89CD-6643490CCAF6}" ShortID="1044329988">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="music_boat" ID="{9F8FEDCA-36D2-432E-9677-C72F9ADBB1AB}" WorkUnitID="{F25D41B2-87F8-4367-B70B-EA99533755FA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Music Events" ID="{2EA76C2B-8D4D-4E22-A34C-CC7868F7E71B}" ShortID="572457018">
+							<ChildrenList>
+								<Event Name="ItemPickup" ID="{DB20F247-55FC-491F-9448-0635717F9AAE}">
+									<ChildrenList>
+										<Action Name="" ID="{BC74BE8C-101A-41EF-81C3-B3391EB96B06}" ShortID="832213281">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Item_IsHeld" ID="{94E017B8-3FE4-4797-B4BC-0C05027D3EBF}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="ItemDrop" ID="{96BAAF77-C06B-4F1D-8AD6-9817C6E0F9D9}">
+									<ChildrenList>
+										<Action Name="" ID="{F46BD5D6-F677-403C-A47C-DA1D56FFD307}" ShortID="464230318">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="None" ID="{13614821-ED25-4D07-8574-1DC55BCAE75A}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

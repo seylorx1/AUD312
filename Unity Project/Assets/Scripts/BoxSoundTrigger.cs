@@ -6,6 +6,10 @@ public class BoxSoundTrigger : MonoBehaviour
 {
 	/// The Wwise Event to trigger when the box is picked up and dropped (use a SequenceContainer).
 	public AK.Wwise.Event pickupSound = new AK.Wwise.Event();
+
+	//TODO speak to Christos about this!
+	public AK.Wwise.Event dropSound = new AK.Wwise.Event();
+
 	/// The Wwise Event to trigger when the box collides with the ground.
 	public AK.Wwise.Event groundCollideSound = new AK.Wwise.Event();
 
@@ -21,7 +25,8 @@ public class BoxSoundTrigger : MonoBehaviour
 	///	Called when the box is picked up.
 	public void DropBox()
 	{
-		pickupSound.Post(gameObject);
+		//pickupSound.Post(gameObject);
+		dropSound.Post(gameObject);
 	}
 
 	///	We use this to trigger a sound when the box collides with the ground.

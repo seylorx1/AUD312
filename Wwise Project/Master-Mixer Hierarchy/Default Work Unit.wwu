@@ -9,6 +9,28 @@
 							<ObjectRef Name="System" ID="{591779FD-6C86-4545-BA51-4DB897074C11}" WorkUnitID="{9BBCB4B9-024C-49B6-BBAA-3FE8FCFF6531}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}">
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Backup Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}">
+							<PropertyList>
+								<Property Name="RecoveryTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ObjectLists/>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 				<Bus Name="Motion Factory Bus" ID="{2AF9B9C6-6EF1-46E9-B5F2-E30C9E602C74}">

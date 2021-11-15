@@ -1791,22 +1791,6 @@
 									<Property Name="DryLevel"/>
 									<Property Name="WetLevel"/>
 								</StatePropertyList>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="BoxHeld" ID="{E5BC2A4F-6157-4166-9784-98765F3111E5}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="Box_IsHeld" ID="{07F48A43-9B67-464A-B543-3034968874C8}"/>
-										<CustomState Name="" ID="{10B6A7D7-365A-44A5-9D76-C34F4CE019BC}" ShortID="287049138">
-											<PropertyList>
-												<Property Name="DryLevel" Type="Real32" Value="-96"/>
-												<Property Name="WetLevel" Type="Real32" Value="96"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-								</CustomStateList>
 							</StateInfo>
 						</Effect>
 						<Effect Name="Secret_message_Distant" ID="{54C3F2D2-6B8D-4873-A383-2F6F7189C076}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
@@ -2085,21 +2069,6 @@
 										<StatePropertyList>
 											<Property Name="Pitch"/>
 										</StatePropertyList>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="BoxHeld" ID="{E5BC2A4F-6157-4166-9784-98765F3111E5}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList>
-											<CustomState>
-												<StateRef Name="Box_IsHeld" ID="{07F48A43-9B67-464A-B543-3034968874C8}"/>
-												<CustomState Name="" ID="{ED54BF37-62B1-43CB-A261-8E0B5673B8C4}" ShortID="1042296765">
-													<PropertyList>
-														<Property Name="Pitch" Type="Real32" Value="2400"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-										</CustomStateList>
 									</StateInfo>
 								</Effect>
 								<Effect Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">

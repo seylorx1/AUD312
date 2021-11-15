@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3857155f990bfa43b3d23accebdd730, type: 3}
   m_Name: 63F2F81C-20F3-4E27-901D-621BBCDD6AFE
   m_EditorClassIdentifier: 
-  objectName: Harpoon_Pickup
-  id: 1351179785
+  objectName: HarpoonPickup
+  id: 2867011390
   guid: 63F2F81C-20F3-4E27-901D-621BBCDD6AFE

@@ -8,53 +8,28 @@
 		<ExternalSourcesOutputRoot>X:\Coursework\AUD312\Assignment\Wwise Project\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles>
-		<File Id="78447538" Language="SFX">
-			<ShortName>AUD Music Parts - Track 5.wav</ShortName>
-			<Path>SFX\AUD Music Parts - Track 5_D79FB2B7.wem</Path>
-		</File>
-		<File Id="656186590" Language="SFX">
-			<ShortName>AUD Music Parts - Track 4.wav</ShortName>
-			<Path>SFX\AUD Music Parts - Track 4_D79FB2B7.wem</Path>
-		</File>
-		<File Id="853184400" Language="SFX">
-			<ShortName>AUD Music Parts - Track 1.wav</ShortName>
-			<Path>SFX\AUD Music Parts - Track 1_D79FB2B7.wem</Path>
-		</File>
-		<File Id="954577201" Language="SFX">
-			<ShortName>AUD Music Parts - Track 2.wav</ShortName>
-			<Path>SFX\AUD Music Parts - Track 2_D79FB2B7.wem</Path>
-		</File>
-		<File Id="972500665" Language="SFX">
-			<ShortName>AUD Music Parts - Track 6.wav</ShortName>
-			<Path>SFX\AUD Music Parts - Track 6_D79FB2B7.wem</Path>
-		</File>
-		<File Id="999621958" Language="SFX">
-			<ShortName>AUD Music Parts - Track 3.wav</ShortName>
-			<Path>SFX\AUD Music Parts - Track 3_D79FB2B7.wem</Path>
-		</File>
-	</StreamedFiles>
+	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="496426543">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3651565096">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="27543323">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1079639438">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4002303308" Name="Box_Drop" ObjectPath="\Events\Default Work Unit\Box\Box_Drop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\BoxHeld\None"/>
-					</ActionSetState>
+				<Event Id="3810078911" Name="BoxDrop" ObjectPath="\Events\Default Work Unit\Box\BoxDrop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="556308635" Name="BoxDropStinger" ObjectPath="\Triggers\Default Work Unit\BoxDropStinger"/>
+					</ActionTrigger>
 				</Event>
-				<Event Id="2562895519" Name="Box_Pickup" ObjectPath="\Events\Default Work Unit\Box\Box_Pickup" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="1843189762" Name="Box_IsHeld" ObjectPath="\States\Default Work Unit\Interactions\BoxHeld\Box_IsHeld"/>
-					</ActionSetState>
+				<Event Id="2671589300" Name="BoxPickup" ObjectPath="\Events\Default Work Unit\Box\BoxPickup" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="3525814506" Name="BoxPickupStinger" ObjectPath="\Triggers\Default Work Unit\BoxPickupStinger"/>
+					</ActionTrigger>
 				</Event>
 				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep\Footstep" DurationType="OneShot" DurationMin="0.216149" DurationMax="0.242619">
 					<IncludedMemoryFiles>
@@ -180,105 +155,148 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1351179785" Name="Harpoon_Pickup" ObjectPath="\Events\Default Work Unit\Harpoon\Harpoon_Pickup" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="2867011390" Name="HarpoonPickup" ObjectPath="\Events\Default Work Unit\Harpoon\HarpoonPickup" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="1182553944" Name="Harpoon_IsHeld" ObjectPath="\States\Default Work Unit\Interactions\HarpoonHeld\Harpoon_IsHeld"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="4238444291" Name="PROTO_music_dynamic" ObjectPath="\Events\Default Work Unit\PROTO\PROTO_music_dynamic" DurationType="Infinite">
-					<ReferencedStreamedFiles>
-						<File Id="78447538" Language="SFX">
-							<ShortName>AUD Music Parts - Track 5.wav</ShortName>
-							<Path>SFX\AUD Music Parts - Track 5_D79FB2B7.wem</Path>
+				<Event Id="3684409175" Name="ItemDrop" ObjectPath="\Events\Default Work Unit\Music\Music Events\ItemDrop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\ItemHeld\None"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1851462748" Name="ItemPickup" ObjectPath="\Events\Default Work Unit\Music\Music Events\ItemPickup" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1159598586" Name="Item_IsHeld" ObjectPath="\States\Default Work Unit\Music\ItemHeld\Item_IsHeld"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1325856759" Name="music_boat" ObjectPath="\Events\Default Work Unit\Music\music_boat" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="83555245" Language="SFX">
+							<ShortName>music_boat_boxdrop_1.wav</ShortName>
+							<Path>SFX\music_boat_boxdrop_1_D79FB2B7.wem</Path>
 						</File>
-						<File Id="656186590" Language="SFX">
-							<ShortName>AUD Music Parts - Track 4.wav</ShortName>
-							<Path>SFX\AUD Music Parts - Track 4_D79FB2B7.wem</Path>
+						<File Id="348634579" Language="SFX">
+							<ShortName>music_boat_blob_1.wav</ShortName>
+							<Path>SFX\music_boat_blob_1_D79FB2B7.wem</Path>
 						</File>
-						<File Id="853184400" Language="SFX">
-							<ShortName>AUD Music Parts - Track 1.wav</ShortName>
-							<Path>SFX\AUD Music Parts - Track 1_D79FB2B7.wem</Path>
+						<File Id="441135101" Language="SFX">
+							<ShortName>music_boat_bassline_1.wav</ShortName>
+							<Path>SFX\music_boat_bassline_1_D79FB2B7.wem</Path>
 						</File>
-						<File Id="954577201" Language="SFX">
-							<ShortName>AUD Music Parts - Track 2.wav</ShortName>
-							<Path>SFX\AUD Music Parts - Track 2_D79FB2B7.wem</Path>
+						<File Id="544473361" Language="SFX">
+							<ShortName>music_boat_vamp_1.wav</ShortName>
+							<Path>SFX\music_boat_vamp_1_D79FB2B7.wem</Path>
 						</File>
-						<File Id="972500665" Language="SFX">
-							<ShortName>AUD Music Parts - Track 6.wav</ShortName>
-							<Path>SFX\AUD Music Parts - Track 6_D79FB2B7.wem</Path>
+						<File Id="670314713" Language="SFX">
+							<ShortName>music_boat_boxpickup_1.wav</ShortName>
+							<Path>SFX\music_boat_boxpickup_1_D79FB2B7.wem</Path>
 						</File>
-						<File Id="999621958" Language="SFX">
-							<ShortName>AUD Music Parts - Track 3.wav</ShortName>
-							<Path>SFX\AUD Music Parts - Track 3_D79FB2B7.wem</Path>
+						<File Id="683807433" Language="SFX">
+							<ShortName>music_boat_boxholding_1.wav</ShortName>
+							<Path>SFX\music_boat_boxholding_1_D79FB2B7.wem</Path>
 						</File>
-					</ReferencedStreamedFiles>
+						<File Id="791546088" Language="SFX">
+							<ShortName>music_boat_boxholding_2.wav</ShortName>
+							<Path>SFX\music_boat_boxholding_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="813604374" Language="SFX">
+							<ShortName>music_boat_boxholding_3.wav</ShortName>
+							<Path>SFX\music_boat_boxholding_3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="843600277" Language="SFX">
+							<ShortName>music_boat_countermelody_1.wav</ShortName>
+							<Path>SFX\music_boat_countermelody_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="853425278" Language="SFX">
+							<ShortName>music_boat_countermelody_2.wav</ShortName>
+							<Path>SFX\music_boat_countermelody_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1046108589" Language="SFX">
+							<ShortName>music_boat_hats_1.wav</ShortName>
+							<Path>SFX\music_boat_hats_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1046767504" Language="SFX">
+							<ShortName>music_boat_counterblob_1.wav</ShortName>
+							<Path>SFX\music_boat_counterblob_1_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{E604430D-8069-4F71-9B77-F5EA3F936052}">
+						<SwitchContainer SwitchValue="{13614821-ED25-4D07-8574-1DC55BCAE75A}">
 							<Children>
-								<SwitchContainer SwitchValue="{19496866-5461-430E-A457-14160955E205}">
+								<SwitchContainer SwitchValue="{E604430D-8069-4F71-9B77-F5EA3F936052}">
 									<Media>
-										<File Id="999621958"/>
+										<File Id="348634579"/>
+										<File Id="544473361"/>
+										<File Id="1046108589"/>
+										<File Id="1046767504"/>
 									</Media>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{5B851545-24BC-4022-8588-F9946FE0E763}">
+						<SwitchContainer SwitchValue="{13614821-ED25-4D07-8574-1DC55BCAE75A}">
 							<Children>
-								<SwitchContainer SwitchValue="{19496866-5461-430E-A457-14160955E205}">
+								<SwitchContainer SwitchValue="{5B851545-24BC-4022-8588-F9946FE0E763}">
 									<Media>
-										<File Id="853184400"/>
-										<File Id="972500665"/>
-										<File Id="999621958"/>
+										<File Id="348634579"/>
+										<File Id="441135101"/>
+										<File Id="544473361"/>
+										<File Id="843600277"/>
+										<File Id="853425278"/>
+										<File Id="1046108589"/>
+										<File Id="1046767504"/>
 									</Media>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{5B851545-24BC-4022-8588-F9946FE0E763}">
+						<SwitchContainer SwitchValue="{94E017B8-3FE4-4797-B4BC-0C05027D3EBF}">
 							<Children>
-								<SwitchContainer SwitchValue="{D06C60D8-9FF5-4474-897E-D7DD6F79A673}">
+								<SwitchContainer SwitchValue="{E604430D-8069-4F71-9B77-F5EA3F936052}">
 									<Media>
-										<File Id="78447538"/>
-										<File Id="656186590"/>
-										<File Id="853184400"/>
-										<File Id="954577201"/>
-										<File Id="972500665"/>
-										<File Id="999621958"/>
+										<File Id="348634579"/>
+										<File Id="544473361"/>
+										<File Id="683807433"/>
+										<File Id="791546088"/>
+										<File Id="813604374"/>
+										<File Id="1046108589"/>
+										<File Id="1046767504"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{94E017B8-3FE4-4797-B4BC-0C05027D3EBF}">
+							<Children>
+								<SwitchContainer SwitchValue="{5B851545-24BC-4022-8588-F9946FE0E763}">
+									<Media>
+										<File Id="348634579"/>
+										<File Id="441135101"/>
+										<File Id="544473361"/>
+										<File Id="683807433"/>
+										<File Id="791546088"/>
+										<File Id="813604374"/>
+										<File Id="843600277"/>
+										<File Id="853425278"/>
+										<File Id="1046108589"/>
+										<File Id="1046767504"/>
 									</Media>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2902858375" Name="PROTO_music_generic" ObjectPath="\Events\Default Work Unit\PROTO\PROTO_music_generic" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="104883396" Language="SFX">
-							<ShortName>PROTO_music_generic_01.wav</ShortName>
-							<Path>SFX\PROTO_music_generic_01_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="244091178" Name="VampCooldown" ObjectPath="\Game Parameters\Default Work Unit\VampCooldown"/>
+			</GameParameters>
 			<StateGroups>
-				<StateGroup Id="515864255" Name="HarpoonHeld" ObjectPath="\States\Default Work Unit\Interactions\HarpoonHeld" GUID="{B3B48258-D25F-4931-8CC3-FC069EC03744}">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\HarpoonHeld\None" GUID="{C588DF7E-B70F-4E2A-9BBA-8BDBBAA976D1}"/>
-						<State Id="1182553944" Name="Harpoon_IsHeld" ObjectPath="\States\Default Work Unit\Interactions\HarpoonHeld\Harpoon_IsHeld" GUID="{801A23EA-9585-4040-B632-EAA67C533806}"/>
-					</States>
+				<StateGroup Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\ItemHeld\None" GUID="{13614821-ED25-4D07-8574-1DC55BCAE75A}">
+					<States/>
 				</StateGroup>
-				<StateGroup Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\BoxHeld\None" GUID="{D75ABD57-E302-4DD1-8329-8D744F9467F3}">
+				<StateGroup Id="1159598586" Name="Item_IsHeld" ObjectPath="\States\Default Work Unit\Music\ItemHeld\Item_IsHeld" GUID="{94E017B8-3FE4-4797-B4BC-0C05027D3EBF}">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="1182553944" Name="Harpoon_IsHeld" ObjectPath="\States\Default Work Unit\Interactions\HarpoonHeld\Harpoon_IsHeld" GUID="{801A23EA-9585-4040-B632-EAA67C533806}">
 					<States/>
-				</StateGroup>
-				<StateGroup Id="1843189762" Name="Box_IsHeld" ObjectPath="\States\Default Work Unit\Interactions\BoxHeld\Box_IsHeld" GUID="{07F48A43-9B67-464A-B543-3034968874C8}">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="1941896134" Name="Room_C" ObjectPath="\States\Default Work Unit\Rooms\Room_C" GUID="{0F51F7A7-DA4E-491F-97F6-EE94B00CB2F9}">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Rooms\Room_C\None" GUID="{19496866-5461-430E-A457-14160955E205}"/>
-						<State Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Rooms\Room_C\Passed" GUID="{D06C60D8-9FF5-4474-897E-D7DD6F79A673}"/>
-					</States>
 				</StateGroup>
 				<StateGroup Id="1941896135" Name="Room_B" ObjectPath="\States\Default Work Unit\Rooms\Room_B" GUID="{0F28CB9D-8E69-4152-BC69-50EE91E39FC8}">
 					<States>
@@ -286,7 +304,25 @@
 						<State Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Rooms\Room_B\Passed" GUID="{5B851545-24BC-4022-8588-F9946FE0E763}"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="2782314781" Name="ItemHeld" ObjectPath="\States\Default Work Unit\Music\ItemHeld" GUID="{B9FEF96A-821E-4310-89C5-9A21686C0FE7}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\ItemHeld\None" GUID="{13614821-ED25-4D07-8574-1DC55BCAE75A}"/>
+						<State Id="1159598586" Name="Item_IsHeld" ObjectPath="\States\Default Work Unit\Music\ItemHeld\Item_IsHeld" GUID="{94E017B8-3FE4-4797-B4BC-0C05027D3EBF}"/>
+					</States>
+				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="1468846155" Name="VampFootstep" ObjectPath="\Switches\Default Work Unit\VampFootstep" GUID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}">
+					<Switches>
+						<Switch Id="4174102348" Name="Enabled" ObjectPath="\Switches\Default Work Unit\VampFootstep\Enabled" GUID="{556C6E51-2F20-435E-9A52-BDDC2426B7A9}"/>
+						<Switch Id="3248502869" Name="Disabled" ObjectPath="\Switches\Default Work Unit\VampFootstep\Disabled" GUID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+			<Triggers>
+				<Trigger Id="556308635" Name="BoxDropStinger" ObjectPath="\Triggers\Default Work Unit\BoxDropStinger"/>
+				<Trigger Id="3525814506" Name="BoxPickupStinger" ObjectPath="\Triggers\Default Work Unit\BoxPickupStinger"/>
+			</Triggers>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

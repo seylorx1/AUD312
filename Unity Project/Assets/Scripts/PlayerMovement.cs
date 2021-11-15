@@ -73,6 +73,9 @@ public class PlayerMovement : MonoBehaviour
 	void Start()
 	{
 		Cursor.visible = false;
+
+		//LYES FIX - LOCKS MOUSE IN VIEWPORT
+		Cursor.lockState = CursorLockMode.Locked;
 	}
 	
 	/// This is where we move the Player object and Camera.
