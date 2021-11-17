@@ -3,46 +3,63 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}" PersistMode="Standalone">
 			<ChildrenList>
-				<RandomSequenceContainer Name="sfx_footstep_concrete" ID="{3903F517-E3BF-4FFF-8CCD-C0375319D391}" ShortID="149192459">
-					<PropertyList>
-						<Property Name="Pitch" Type="int32">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{38CDAC89-F6B4-46EB-81A1-D6773C79F375}"/>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
-						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Sound Effects Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-						</Reference>
-					</ReferenceList>
+				<Folder Name="Harpoon" ID="{756CA56F-9F6B-4049-BAD4-F27FBD89A9F8}" ShortID="416643311">
 					<ChildrenList>
-						<RandomSequenceContainer Name="heel" ID="{2D82A24C-20E3-4998-9161-D0D1EF849B08}" ShortID="359441334">
+						<Sound Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" ShortID="588461897">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{B2573CD0-CA9B-4B0A-A32F-AB16CA4096AF}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
 								</Property>
-								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="HarpoonAttentuation" ID="{13724D87-B25D-4061-9766-B41463305C86}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_harpoon_shoot_reel_air" ID="{AC810C49-0D91-4C40-8BE9-8019B184250E}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_harpoon_shoot_reel_air.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="117884843"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_harpoon_shoot_reel_air" ID="{AC810C49-0D91-4C40-8BE9-8019B184250E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" ShortID="269107861">
+							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -53,361 +70,74 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="sfx_footstep_heel_concrete_01" ID="{16D10D38-7D50-4B89-B366-AEA444BACA44}" ShortID="3818935">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_01" ID="{B4BFC16B-04B0-40EC-A64E-178B472813BB}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="40909859"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_01" ID="{B4BFC16B-04B0-40EC-A64E-178B472813BB}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_heel_concrete_02" ID="{759F3352-633D-42B0-930B-043CDD02420D}" ShortID="745263079">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_02" ID="{6E01FCA9-6BD6-4CF3-BA5A-505D2B68F863}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_02.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="95916828"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_02" ID="{6E01FCA9-6BD6-4CF3-BA5A-505D2B68F863}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_heel_concrete_03" ID="{7B5067AB-DF11-4B96-9156-6530628DB97B}" ShortID="165184463">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_03" ID="{D2E970B7-F3D2-4D72-B267-C926BBEFB799}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_03.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="71636352"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_03" ID="{D2E970B7-F3D2-4D72-B267-C926BBEFB799}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_heel_concrete_04" ID="{A6FDDC9B-108D-4EC6-9990-3CAF213C0A54}" ShortID="30040948">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_04" ID="{F2FD7F8A-1272-4D5F-8647-A1F0D3C0752B}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_04.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="728214015"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_04" ID="{F2FD7F8A-1272-4D5F-8647-A1F0D3C0752B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_heel_concrete_05" ID="{D27340C9-2555-4620-8426-1C05C137BD90}" ShortID="540340228">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_05" ID="{B3CE4A9B-47AA-4BC3-B7BD-EC5A5810042E}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_05.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1068978669"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_05" ID="{B3CE4A9B-47AA-4BC3-B7BD-EC5A5810042E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_heel_concrete_06" ID="{126CAF8B-F7CF-4C50-BA78-00E69DD97F0E}" ShortID="906869704">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_06" ID="{321CA3E3-0244-447E-A48E-AF8AB0BAC517}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_06.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="919058543"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_06" ID="{321CA3E3-0244-447E-A48E-AF8AB0BAC517}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_heel_concrete_07" ID="{F0B55CAA-CD1F-402C-81F7-2CD38947405F}" ShortID="158613218">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_07" ID="{FB9E38EC-1105-4D3C-B3F7-8FC3F714273F}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_07.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="624331642"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_07" ID="{FB9E38EC-1105-4D3C-B3F7-8FC3F714273F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_heel_concrete_08" ID="{8C4B2CDF-7613-4BB4-9014-04DB5991BD29}" ShortID="250469994">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_08" ID="{1CCE1A0C-2400-4B7F-ADCE-CF5A16E23B58}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_08.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="541544103"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_08" ID="{1CCE1A0C-2400-4B7F-ADCE-CF5A16E23B58}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_heel_concrete_09" ID="{103B81A9-11A1-47B9-AC29-C4257E6F6B2C}" ShortID="905195496">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_09" ID="{B077D36E-7531-4F15-B549-118FDE081766}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_09.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="600831764"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_09" ID="{B077D36E-7531-4F15-B549-118FDE081766}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_heel_concrete_10" ID="{AD941775-DFD6-4E81-9070-38BA651A298C}" ShortID="659113275">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_10" ID="{015CA272-25E7-4031-853F-4F8C341C161D}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_10.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="813972385"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_10" ID="{015CA272-25E7-4031-853F-4F8C341C161D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_heel_concrete_11" ID="{C9C080D5-F70A-4588-8C41-5E211C556BFB}" ShortID="563625296">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_11" ID="{0C551617-856E-4491-97C4-A284F3448125}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_11.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="913829077"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_11" ID="{0C551617-856E-4491-97C4-A284F3448125}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_heel_concrete_12" ID="{9ACAF7AB-EA7A-4E89-8D19-3C8928CED9B2}" ShortID="896958615">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_12" ID="{3CDBBE7D-D1B8-4D68-AF10-DBB4B6EF6702}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_12.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="382745418"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_12" ID="{3CDBBE7D-D1B8-4D68-AF10-DBB4B6EF6702}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_heel_concrete_13" ID="{7499F854-F448-432A-9E92-49B340C81A93}" ShortID="43542783">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_13" ID="{5B94FF3C-BE38-43C5-9109-913BB50522E8}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_13.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="149940528"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_13" ID="{5B94FF3C-BE38-43C5-9109-913BB50522E8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_heel_concrete_14" ID="{3B70CCB2-EBD7-49E3-8AA7-5E8FFEEC55D6}" ShortID="190827566">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_heel_concrete_14" ID="{EA669095-DD5B-480B-9BC3-7818C4CD0A27}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_heel_concrete_14.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="134429121"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_heel_concrete_14" ID="{EA669095-DD5B-480B-9BC3-7818C4CD0A27}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								<AudioFileSource Name="sfx_harpoon_shoot_reel_chain" ID="{3C6C5663-9C3F-4D6C-B3EA-7585EC3E6CFB}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_harpoon_shoot_reel_chain.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="570316296"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="toe" ID="{25702DEF-01F0-453B-8D5D-B143082944F4}" ShortID="818188977">
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_harpoon_shoot_reel_chain" ID="{3C6C5663-9C3F-4D6C-B3EA-7585EC3E6CFB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_harpoon_shoot_reel_heavyair" ID="{B020BC20-422A-4327-AFDA-A10B5A9FB672}" ShortID="1069022913">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{9D27EAE5-B417-4A24-B479-66905AECDB94}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
 								</Property>
-								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="HarpoonAttentuation" ID="{13724D87-B25D-4061-9766-B41463305C86}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_harpoon_shoot_reel_heavyair" ID="{036F17E7-0971-4744-9A4E-16BC6A747F00}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_harpoon_shoot_reel_heavyair.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="965794218"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_harpoon_shoot_reel_heavyair" ID="{036F17E7-0971-4744-9A4E-16BC6A747F00}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_harpoon_shoot_reel_heavychain" ID="{1499F79B-1435-444E-8F62-691B4ED378FE}" ShortID="933935352">
+							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -418,417 +148,837 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="sfx_footstep_toe_concrete_01" ID="{C94AC861-CD28-419C-8DB0-77A6ED1A0802}" ShortID="706379585">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_01" ID="{7243DCBB-54AF-49F1-9CCA-E22A967E5747}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="87916936"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_01" ID="{7243DCBB-54AF-49F1-9CCA-E22A967E5747}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_02" ID="{3B568D20-4ABF-486D-93A8-C897291377CF}" ShortID="1018186614">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_02" ID="{42BEED66-22A1-4D3E-BE7C-88E4A8704947}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_02.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1008776830"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_02" ID="{42BEED66-22A1-4D3E-BE7C-88E4A8704947}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_03" ID="{57A7BF65-0C9E-42C7-AB42-2D047F2BF6DD}" ShortID="470131617">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_03" ID="{B4C0EE92-C181-4F03-B219-167CC7FC2D06}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_03.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="3342881"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_03" ID="{B4C0EE92-C181-4F03-B219-167CC7FC2D06}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_04" ID="{91120649-9153-42DC-96C9-C3D41EE1D49D}" ShortID="645325882">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_04" ID="{7173B459-AF4C-46B7-A919-7FA6CB920714}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_04.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="564781057"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_04" ID="{7173B459-AF4C-46B7-A919-7FA6CB920714}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_05" ID="{975934B7-8156-4DD7-AED8-E167046960B1}" ShortID="901263943">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_05" ID="{74292560-10D8-404B-B836-2323CD24A181}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_05.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="560928270"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_05" ID="{74292560-10D8-404B-B836-2323CD24A181}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_06" ID="{486DDB6B-40FF-4977-B9C9-56CC633AE208}" ShortID="202710698">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_06" ID="{F5F75030-212A-46EA-9952-BC055B7FE4AC}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_06.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="542275199"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_06" ID="{F5F75030-212A-46EA-9952-BC055B7FE4AC}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_07" ID="{1615B31A-70AA-457B-8ACF-246EA1644F37}" ShortID="368921200">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_07" ID="{75C96F66-98EE-4C72-8ED6-8C8E6A6D57B8}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_07.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="766442040"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_07" ID="{75C96F66-98EE-4C72-8ED6-8C8E6A6D57B8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_08" ID="{A225474C-448A-46AB-9E21-531BB7D4A433}" ShortID="397666295">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_08" ID="{1DE95269-0A98-4E2C-BE8B-5793BA7B4A64}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_08.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="360199625"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_08" ID="{1DE95269-0A98-4E2C-BE8B-5793BA7B4A64}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_09" ID="{95DA39AE-2663-42B7-90B8-233E1AED8F1B}" ShortID="735806559">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_09" ID="{4610DE72-8513-49B5-8967-F0CF6E92FE45}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_09.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="952155238"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_09" ID="{4610DE72-8513-49B5-8967-F0CF6E92FE45}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_10" ID="{7B44EF3E-006B-491F-B3AA-7B14E6AC24C9}" ShortID="538742446">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_10" ID="{8E7D3940-36A9-48C0-A047-8D7BF043F5BC}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_10.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="298171059"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_10" ID="{8E7D3940-36A9-48C0-A047-8D7BF043F5BC}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_11" ID="{1307C5B8-1671-411D-A09C-21694D0725D4}" ShortID="198843369">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_11" ID="{A26CB51B-0482-4D15-85F0-1D287AF64F6C}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_11.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="684196659"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_11" ID="{A26CB51B-0482-4D15-85F0-1D287AF64F6C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_12" ID="{0176E0EC-43B8-4E3F-9343-44370C5DC63D}" ShortID="9510215">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_12" ID="{FF11D939-EA19-4085-98EE-2904FFF833CB}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_12.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="373794033"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_12" ID="{FF11D939-EA19-4085-98EE-2904FFF833CB}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_13" ID="{0629B1F7-C95A-4910-BEF1-1F6C1E89CA77}" ShortID="21022907">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_13" ID="{20E3D46E-FB31-43C0-951C-C04FE9D2D39E}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_13.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="231539839"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_13" ID="{20E3D46E-FB31-43C0-951C-C04FE9D2D39E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_14" ID="{D9A14F77-2CF6-4112-81F9-B7DD13F7FDD9}" ShortID="669220670">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_14" ID="{ECD07E5A-7894-492D-9436-9B32252FCEA6}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_14.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="946909325"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_14" ID="{ECD07E5A-7894-492D-9436-9B32252FCEA6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_15" ID="{549E59FF-A379-4CE4-A328-DABBA9AE400D}" ShortID="341776">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_15" ID="{93614291-504E-48E7-AB88-7AEB5BA7FA01}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_15.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="106863624"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_15" ID="{93614291-504E-48E7-AB88-7AEB5BA7FA01}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footstep_toe_concrete_16" ID="{10D7F75C-24A2-49A6-A32F-829989F4E896}" ShortID="586896785">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footstep_toe_concrete_16" ID="{7209DE19-46A4-4150-8495-96F08B7EE05A}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_footstep_toe_concrete_16.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="743390839"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footstep_toe_concrete_16" ID="{7209DE19-46A4-4150-8495-96F08B7EE05A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								<AudioFileSource Name="sfx_harpoon_shoot_reel_heavychain" ID="{6543A0FE-4E86-4422-9783-BCE5EDB2199C}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_harpoon_shoot_reel_heavychain.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="128127013"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_harpoon_shoot_reel_heavychain" ID="{6543A0FE-4E86-4422-9783-BCE5EDB2199C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Footsteps" ID="{CA78EC9D-CA92-478B-860E-3D11242515AD}" ShortID="1046173176">
+					<ChildrenList>
+						<RandomSequenceContainer Name="sfx_footstep_concrete" ID="{3903F517-E3BF-4FFF-8CCD-C0375319D391}" ShortID="149192459">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{38CDAC89-F6B4-46EB-81A1-D6773C79F375}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Sound Effects Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="heel" ID="{2D82A24C-20E3-4998-9161-D0D1EF849B08}" ShortID="359441334">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B2573CD0-CA9B-4B0A-A32F-AB16CA4096AF}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_footstep_heel_concrete_01" ID="{16D10D38-7D50-4B89-B366-AEA444BACA44}" ShortID="3818935">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_01" ID="{B4BFC16B-04B0-40EC-A64E-178B472813BB}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="40909859"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_01" ID="{B4BFC16B-04B0-40EC-A64E-178B472813BB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_heel_concrete_02" ID="{759F3352-633D-42B0-930B-043CDD02420D}" ShortID="745263079">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_02" ID="{6E01FCA9-6BD6-4CF3-BA5A-505D2B68F863}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="95916828"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_02" ID="{6E01FCA9-6BD6-4CF3-BA5A-505D2B68F863}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_heel_concrete_03" ID="{7B5067AB-DF11-4B96-9156-6530628DB97B}" ShortID="165184463">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_03" ID="{D2E970B7-F3D2-4D72-B267-C926BBEFB799}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="71636352"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_03" ID="{D2E970B7-F3D2-4D72-B267-C926BBEFB799}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_heel_concrete_04" ID="{A6FDDC9B-108D-4EC6-9990-3CAF213C0A54}" ShortID="30040948">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_04" ID="{F2FD7F8A-1272-4D5F-8647-A1F0D3C0752B}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="728214015"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_04" ID="{F2FD7F8A-1272-4D5F-8647-A1F0D3C0752B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_heel_concrete_05" ID="{D27340C9-2555-4620-8426-1C05C137BD90}" ShortID="540340228">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_05" ID="{B3CE4A9B-47AA-4BC3-B7BD-EC5A5810042E}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1068978669"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_05" ID="{B3CE4A9B-47AA-4BC3-B7BD-EC5A5810042E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_heel_concrete_06" ID="{126CAF8B-F7CF-4C50-BA78-00E69DD97F0E}" ShortID="906869704">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_06" ID="{321CA3E3-0244-447E-A48E-AF8AB0BAC517}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="919058543"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_06" ID="{321CA3E3-0244-447E-A48E-AF8AB0BAC517}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_heel_concrete_07" ID="{F0B55CAA-CD1F-402C-81F7-2CD38947405F}" ShortID="158613218">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_07" ID="{FB9E38EC-1105-4D3C-B3F7-8FC3F714273F}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="624331642"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_07" ID="{FB9E38EC-1105-4D3C-B3F7-8FC3F714273F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_heel_concrete_08" ID="{8C4B2CDF-7613-4BB4-9014-04DB5991BD29}" ShortID="250469994">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_08" ID="{1CCE1A0C-2400-4B7F-ADCE-CF5A16E23B58}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="541544103"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_08" ID="{1CCE1A0C-2400-4B7F-ADCE-CF5A16E23B58}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_heel_concrete_09" ID="{103B81A9-11A1-47B9-AC29-C4257E6F6B2C}" ShortID="905195496">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_09" ID="{B077D36E-7531-4F15-B549-118FDE081766}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="600831764"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_09" ID="{B077D36E-7531-4F15-B549-118FDE081766}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_heel_concrete_10" ID="{AD941775-DFD6-4E81-9070-38BA651A298C}" ShortID="659113275">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_10" ID="{015CA272-25E7-4031-853F-4F8C341C161D}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="813972385"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_10" ID="{015CA272-25E7-4031-853F-4F8C341C161D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_heel_concrete_11" ID="{C9C080D5-F70A-4588-8C41-5E211C556BFB}" ShortID="563625296">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_11" ID="{0C551617-856E-4491-97C4-A284F3448125}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_11.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="913829077"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_11" ID="{0C551617-856E-4491-97C4-A284F3448125}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_heel_concrete_12" ID="{9ACAF7AB-EA7A-4E89-8D19-3C8928CED9B2}" ShortID="896958615">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_12" ID="{3CDBBE7D-D1B8-4D68-AF10-DBB4B6EF6702}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_12.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="382745418"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_12" ID="{3CDBBE7D-D1B8-4D68-AF10-DBB4B6EF6702}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_heel_concrete_13" ID="{7499F854-F448-432A-9E92-49B340C81A93}" ShortID="43542783">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_13" ID="{5B94FF3C-BE38-43C5-9109-913BB50522E8}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_13.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="149940528"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_13" ID="{5B94FF3C-BE38-43C5-9109-913BB50522E8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_heel_concrete_14" ID="{3B70CCB2-EBD7-49E3-8AA7-5E8FFEEC55D6}" ShortID="190827566">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_heel_concrete_14" ID="{EA669095-DD5B-480B-9BC3-7818C4CD0A27}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_heel_concrete_14.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="134429121"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_heel_concrete_14" ID="{EA669095-DD5B-480B-9BC3-7818C4CD0A27}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="toe" ID="{25702DEF-01F0-453B-8D5D-B143082944F4}" ShortID="818188977">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9D27EAE5-B417-4A24-B479-66905AECDB94}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_footstep_toe_concrete_01" ID="{C94AC861-CD28-419C-8DB0-77A6ED1A0802}" ShortID="706379585">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_01" ID="{7243DCBB-54AF-49F1-9CCA-E22A967E5747}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="87916936"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_01" ID="{7243DCBB-54AF-49F1-9CCA-E22A967E5747}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_02" ID="{3B568D20-4ABF-486D-93A8-C897291377CF}" ShortID="1018186614">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_02" ID="{42BEED66-22A1-4D3E-BE7C-88E4A8704947}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1008776830"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_02" ID="{42BEED66-22A1-4D3E-BE7C-88E4A8704947}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_03" ID="{57A7BF65-0C9E-42C7-AB42-2D047F2BF6DD}" ShortID="470131617">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_03" ID="{B4C0EE92-C181-4F03-B219-167CC7FC2D06}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="3342881"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_03" ID="{B4C0EE92-C181-4F03-B219-167CC7FC2D06}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_04" ID="{91120649-9153-42DC-96C9-C3D41EE1D49D}" ShortID="645325882">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_04" ID="{7173B459-AF4C-46B7-A919-7FA6CB920714}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="564781057"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_04" ID="{7173B459-AF4C-46B7-A919-7FA6CB920714}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_05" ID="{975934B7-8156-4DD7-AED8-E167046960B1}" ShortID="901263943">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_05" ID="{74292560-10D8-404B-B836-2323CD24A181}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="560928270"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_05" ID="{74292560-10D8-404B-B836-2323CD24A181}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_06" ID="{486DDB6B-40FF-4977-B9C9-56CC633AE208}" ShortID="202710698">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_06" ID="{F5F75030-212A-46EA-9952-BC055B7FE4AC}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="542275199"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_06" ID="{F5F75030-212A-46EA-9952-BC055B7FE4AC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_07" ID="{1615B31A-70AA-457B-8ACF-246EA1644F37}" ShortID="368921200">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_07" ID="{75C96F66-98EE-4C72-8ED6-8C8E6A6D57B8}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="766442040"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_07" ID="{75C96F66-98EE-4C72-8ED6-8C8E6A6D57B8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_08" ID="{A225474C-448A-46AB-9E21-531BB7D4A433}" ShortID="397666295">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_08" ID="{1DE95269-0A98-4E2C-BE8B-5793BA7B4A64}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="360199625"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_08" ID="{1DE95269-0A98-4E2C-BE8B-5793BA7B4A64}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_09" ID="{95DA39AE-2663-42B7-90B8-233E1AED8F1B}" ShortID="735806559">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_09" ID="{4610DE72-8513-49B5-8967-F0CF6E92FE45}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="952155238"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_09" ID="{4610DE72-8513-49B5-8967-F0CF6E92FE45}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_10" ID="{7B44EF3E-006B-491F-B3AA-7B14E6AC24C9}" ShortID="538742446">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_10" ID="{8E7D3940-36A9-48C0-A047-8D7BF043F5BC}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="298171059"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_10" ID="{8E7D3940-36A9-48C0-A047-8D7BF043F5BC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_11" ID="{1307C5B8-1671-411D-A09C-21694D0725D4}" ShortID="198843369">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_11" ID="{A26CB51B-0482-4D15-85F0-1D287AF64F6C}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_11.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="684196659"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_11" ID="{A26CB51B-0482-4D15-85F0-1D287AF64F6C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_12" ID="{0176E0EC-43B8-4E3F-9343-44370C5DC63D}" ShortID="9510215">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_12" ID="{FF11D939-EA19-4085-98EE-2904FFF833CB}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_12.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="373794033"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_12" ID="{FF11D939-EA19-4085-98EE-2904FFF833CB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_13" ID="{0629B1F7-C95A-4910-BEF1-1F6C1E89CA77}" ShortID="21022907">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_13" ID="{20E3D46E-FB31-43C0-951C-C04FE9D2D39E}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_13.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="231539839"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_13" ID="{20E3D46E-FB31-43C0-951C-C04FE9D2D39E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_14" ID="{D9A14F77-2CF6-4112-81F9-B7DD13F7FDD9}" ShortID="669220670">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_14" ID="{ECD07E5A-7894-492D-9436-9B32252FCEA6}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_14.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="946909325"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_14" ID="{ECD07E5A-7894-492D-9436-9B32252FCEA6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_15" ID="{549E59FF-A379-4CE4-A328-DABBA9AE400D}" ShortID="341776">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_15" ID="{93614291-504E-48E7-AB88-7AEB5BA7FA01}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_15.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="106863624"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_15" ID="{93614291-504E-48E7-AB88-7AEB5BA7FA01}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_toe_concrete_16" ID="{10D7F75C-24A2-49A6-A32F-829989F4E896}" ShortID="586896785">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_toe_concrete_16" ID="{7209DE19-46A4-4150-8495-96F08B7EE05A}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_toe_concrete_16.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="743390839"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_toe_concrete_16" ID="{7209DE19-46A4-4150-8495-96F08B7EE05A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{A2539069-400C-4721-972E-0F8086B0A14A}"/>
+							</PositioningInfo>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="heel" ID="{2D82A24C-20E3-4998-9161-D0D1EF849B08}"/>
+								<ItemRef Name="toe" ID="{25702DEF-01F0-453B-8D5D-B143082944F4}"/>
+							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
-					<PositioningInfo>
-						<Panner Name="" ID="{A2539069-400C-4721-972E-0F8086B0A14A}"/>
-					</PositioningInfo>
-					<ObjectLists/>
-					<Playlist>
-						<ItemRef Name="heel" ID="{2D82A24C-20E3-4998-9161-D0D1EF849B08}"/>
-						<ItemRef Name="toe" ID="{25702DEF-01F0-453B-8D5D-B143082944F4}"/>
-					</Playlist>
-				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="sfx_harpoon" ID="{06189D0C-8FC5-45B3-9BBD-3015D97173B2}" ShortID="468084521">
-					<PropertyList>
-						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-						</Reference>
-					</ReferenceList>
-					<ObjectLists/>
-				</RandomSequenceContainer>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

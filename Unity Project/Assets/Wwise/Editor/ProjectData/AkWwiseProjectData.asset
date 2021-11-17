@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585646702107677496
+    m_lastTime: -8585644639782734867
     List:
     - name: Backup Music
       guid: 7178a0cb03d21c4b8c86f221ddc3b242
@@ -315,27 +315,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Master Audio Bus
+      - ElementName: Music Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       - ElementName: Backup Music
         ObjectType: 2
         guid: 7178a0cb03d21c4b8c86f221ddc3b242
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Backup Music
-    - name: Master Audio Bus
-      guid: d8a41415a61d2a41a17e75ca0c2149f3
-      id: 3803692087
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Backup Music
     - name: Motion Factory Bus
       guid: c6b9f92af16ee946b5f2e30c9e602c74
       id: 985987111
@@ -360,13 +346,41 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Master Audio Bus
+      - ElementName: Music Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       - ElementName: Music
         ObjectType: 2
         guid: f8400540ecc8c44394331a34a8a64f68
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Music
+    - name: Music Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3127962312
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus
+    - name: Sound Effects Bus
+      guid: 300defa1ec929e44b8c16c3eeedc7a43
+      id: 57144414
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Sound Effects Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -407,7 +421,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585646633563232787
+    m_lastTime: -8585644473266255966
     List:
     - name: Box
       guid: b522a989009d6a4fa7920d2b12634e88
@@ -467,23 +481,6 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: Footstep
-      guid: 28e55eca8a6ad74789f4415d53397b3a
-      id: 1866025847
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: Footstep
-        ObjectType: 4
-        guid: 28e55eca8a6ad74789f4415d53397b3a
-      Path: Events\Default Work Unit\Footstep
-      maxAttenuation: 0
-      maxDuration: 0.242619
-      minDuration: 0.216149
-    - name: Footstep
       guid: 09fd370eacf00c438ae2c527280491b3
       id: 1866025847
       PathAndIcons:
@@ -500,6 +497,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 09fd370eacf00c438ae2c527280491b3
       Path: Events\Default Work Unit\Footstep\Footstep
+      maxAttenuation: 0
+      maxDuration: 0.289646
+      minDuration: 0.268956
+    - name: Footstep
+      guid: 28e55eca8a6ad74789f4415d53397b3a
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: 28e55eca8a6ad74789f4415d53397b3a
+      Path: Events\Default Work Unit\Footstep
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -520,6 +534,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: HarpoonGrabSuccess
+      guid: a522c185f18d8a4bb9601d4f57bff71b
+      id: 2837856117
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Harpoon
+        ObjectType: 4
+        guid: 997ce0413219b84190889666ec7dfd20
+      - ElementName: HarpoonGrabSuccess
+        ObjectType: 3
+        guid: a522c185f18d8a4bb9601d4f57bff71b
+      Path: Events\Default Work Unit\Harpoon\HarpoonGrabSuccess
+      maxAttenuation: 0
+      maxDuration: 2.138458
+      minDuration: 2.138458
+    - name: HarpoonLoopStart
+      guid: c725cede3901724f9a708d27ef952a14
+      id: 1976912264
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Harpoon
+        ObjectType: 4
+        guid: 997ce0413219b84190889666ec7dfd20
+      - ElementName: HarpoonLoopStart
+        ObjectType: 3
+        guid: c725cede3901724f9a708d27ef952a14
+      Path: Events\Default Work Unit\Harpoon\HarpoonLoopStart
+      maxAttenuation: 0
+      maxDuration: 3.7
+      minDuration: 3.7
+    - name: HarpoonLoopStop
+      guid: 3f953257b2808147b9684e50eec5c759
+      id: 1264241620
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Harpoon
+        ObjectType: 4
+        guid: 997ce0413219b84190889666ec7dfd20
+      - ElementName: HarpoonLoopStop
+        ObjectType: 3
+        guid: 3f953257b2808147b9684e50eec5c759
+      Path: Events\Default Work Unit\Harpoon\HarpoonLoopStop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: HarpoonPickup
       guid: 1cf8f263f320274e901d621bbcdd6afe
       id: 2867011390

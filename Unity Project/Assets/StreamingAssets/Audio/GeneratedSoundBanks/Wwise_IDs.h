@@ -16,6 +16,9 @@ namespace AK
         static const AkUniqueID BOXDROP = 3810078911U;
         static const AkUniqueID BOXPICKUP = 2671589300U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID HARPOONGRABSUCCESS = 2837856117U;
+        static const AkUniqueID HARPOONLOOPSTART = 1976912264U;
+        static const AkUniqueID HARPOONLOOPSTOP = 1264241620U;
         static const AkUniqueID HARPOONPICKUP = 2867011390U;
         static const AkUniqueID ITEMDROP = 3684409175U;
         static const AkUniqueID ITEMPICKUP = 1851462748U;

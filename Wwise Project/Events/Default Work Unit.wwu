@@ -79,6 +79,106 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="HarpoonLoopStart" ID="{DECE25C7-0139-4F72-9A70-8D27EF952A14}">
+							<ChildrenList>
+								<Action Name="" ID="{08F3D848-2B7E-4423-8540-819210892F11}" ShortID="309122942">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D9ED3B48-0F24-442E-A7AE-4018BBCA05F0}" ShortID="238544720">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HarpoonLoopStop" ID="{5732953F-80B2-4781-B968-4E50EEC5C759}">
+							<ChildrenList>
+								<Action Name="" ID="{C9B09BE3-559F-4563-80C2-107D40206BF7}" ShortID="576005387">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AABE5F6F-18A1-4674-AED1-AB7E65F8D0A8}" ShortID="237573487">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{251D2580-CE22-486E-82FB-897DC6C3B6F3}" ShortID="459085329">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_harpoon_shoot_reel_heavyair" ID="{B020BC20-422A-4327-AFDA-A10B5A9FB672}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5C477FCE-DD21-4D82-9C9E-440096949CD9}" ShortID="368791237">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{1499F79B-1435-444E-8F62-691B4ED378FE}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HarpoonGrabSuccess" ID="{85C122A5-8DF1-4B8A-B960-1D4F57BFF71B}">
+							<ChildrenList>
+								<Action Name="" ID="{F144EBFC-632B-470A-86E6-714D1F735E3A}" ShortID="720835279">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8869AD1B-6222-4CBF-85D6-4FB287F16F9E}" ShortID="364468449">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D00B95FD-7500-42BE-8317-9B1D4BC46850}" ShortID="369946007">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_harpoon_shoot_reel_heavyair" ID="{B020BC20-422A-4327-AFDA-A10B5A9FB672}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{112226F4-92E8-4102-8EA5-6E0BF0D5F5C5}" ShortID="884086851">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{1499F79B-1435-444E-8F62-691B4ED378FE}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Footstep" ID="{CA5EE528-6A8A-47D7-89F4-415D53397B3A}" ShortID="282057399">

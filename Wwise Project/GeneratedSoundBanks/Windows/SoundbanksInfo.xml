@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2216426326">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2969181493">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -155,6 +155,31 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2837856117" Name="HarpoonGrabSuccess" ObjectPath="\Events\Default Work Unit\Harpoon\HarpoonGrabSuccess" DurationType="OneShot" DurationMin="2.138458" DurationMax="2.138458">
+					<IncludedMemoryFiles>
+						<File Id="128127013" Language="SFX">
+							<ShortName>sfx_harpoon_shoot_reel_heavychain.wav</ShortName>
+							<Path>SFX\sfx_harpoon_shoot_reel_heavychain_10C4C929.wem</Path>
+						</File>
+						<File Id="965794218" Language="SFX">
+							<ShortName>sfx_harpoon_shoot_reel_heavyair.wav</ShortName>
+							<Path>SFX\sfx_harpoon_shoot_reel_heavyair_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1976912264" Name="HarpoonLoopStart" ObjectPath="\Events\Default Work Unit\Harpoon\HarpoonLoopStart" DurationType="OneShot" DurationMin="3.700000" DurationMax="3.700000">
+					<IncludedMemoryFiles>
+						<File Id="117884843" Language="SFX">
+							<ShortName>sfx_harpoon_shoot_reel_air.wav</ShortName>
+							<Path>SFX\sfx_harpoon_shoot_reel_air_10C4C929.wem</Path>
+						</File>
+						<File Id="570316296" Language="SFX">
+							<ShortName>sfx_harpoon_shoot_reel_chain.wav</ShortName>
+							<Path>SFX\sfx_harpoon_shoot_reel_chain_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1264241620" Name="HarpoonLoopStop" ObjectPath="\Events\Default Work Unit\Harpoon\HarpoonLoopStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2867011390" Name="HarpoonPickup" ObjectPath="\Events\Default Work Unit\Harpoon\HarpoonPickup" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="1182553944" Name="Harpoon_IsHeld" ObjectPath="\States\Default Work Unit\Interactions\HarpoonHeld\Harpoon_IsHeld"/>
