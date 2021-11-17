@@ -15,7 +15,7 @@
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
-Assets/AssetStoreTools*
+Unity\ Project/Assets/AssetStoreTools*
 
 # Visual Studio cache directory
 .vs/
@@ -42,7 +42,7 @@ ExportedObj/
 *.pdb.meta
 
 # Unity3D Generated File On Crash Reports
-sysinfo.txt
+Unity\ Project/sysinfo.txt
 
 # Builds
 *.apk
@@ -54,28 +54,30 @@ sysinfo.txt
 ## ---------------- ##
 
 # project stuff
-WWiseProject/.cache/
-WWiseProject/*.prof
-WwiseProject/*_WwiseProject.*.validationcache
-WwiseProject/*_WwiseProject.*.wsettings
-WwiseProject/**/*.akd
+Wwise\ Project/.cache/
+Wwise\ Project/*.prof
+Wwise\ Project/*_WwiseProject.*.validationcache
+Wwise\ Project/*_WwiseProject.*.wsettings
+Wwise\ Project/**/*.akd
+
+Audio\ Files/
 
 # build stuff (unsure?)
-# Assets/Wwise/Deployment/Plugins/Windows/**/*.meta
+# Unity\ Project/Assets/Wwise/Deployment/Plugins/Windows/**/*.meta
 
 # WWise Picker (editor)
 # from https://www.audiokinetic.com/library/edge/?source=Unity&id=unity__troubleshooting.html
 # >> Do not keep AkWwiseProjectData.asset under version control! 
 # >> This is a temporary cache file for the Wwise project data, 
 # >> so as to avoid having the Wwise Picker continuously parse the Work Unit files.
-Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
+Unity\ Project/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
 
 # notes:
 # 1) if any other files go in Assets/Wwise/Editor/ProjectData/ besides AkWwiseProjectData.asset*,
 #    then don't ignore Assets/Wwise/Editor/ProjectData.meta. If AkWwiseProjectData.asset is the only item in there,
 #    then, it's OK to ignore this file.
 # 
-# Assets/Wwise/Editor/ProjectData.meta
+# Unity\ Project/Assets/Wwise/Editor/ProjectData.meta
 
 ## --------------- ##
 ## End WWise Stuff ##
@@ -88,7 +90,8 @@ WwiseUnityIntegration_*_Src.zip
 .DS_store
 
 # Jetbrains Rider IDE (C# IDE), adds a plugin to Unity
-# Assets/Plugins/Editor.meta
-# Assets/Plugins/Editor/Jetbrains.meta
-# Assets/Plugins/Editor/Jetbrains/
+# Unity\ Project/Assets/Plugins/Editor.meta
+# Unity\ Project/Assets/Plugins/Editor/Jetbrains.meta
+# Unity\ Project/Assets/Plugins/Editor/Jetbrains/
 # .idea
+
