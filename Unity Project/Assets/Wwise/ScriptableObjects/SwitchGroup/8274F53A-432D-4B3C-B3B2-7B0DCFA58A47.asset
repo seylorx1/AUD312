@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3857155f990bfa43b3d23accebdd730, type: 3}
-  m_Name: 0E37FD09-F0AC-430C-8AE2-C527280491B3
+  m_Script: {fileID: 11500000, guid: 4da3dfa2e19d2e64eac7bf2e6e43704a, type: 3}
+  m_Name: 8274F53A-432D-4B3C-B3B2-7B0DCFA58A47
   m_EditorClassIdentifier: 
-  objectName: FootstepPlay
-  id: 4039405217
-  guid: 0E37FD09-F0AC-430C-8AE2-C527280491B3
+  objectName: FootstepType
+  id: 1458816175
+  guid: 8274F53A-432D-4B3C-B3B2-7B0DCFA58A47

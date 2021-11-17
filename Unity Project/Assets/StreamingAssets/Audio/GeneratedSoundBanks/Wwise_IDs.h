@@ -15,7 +15,9 @@ namespace AK
     {
         static const AkUniqueID BOXDROP = 3810078911U;
         static const AkUniqueID BOXPICKUP = 2671589300U;
-        static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID FOOTSTEPCHANGE_CONCRETE = 963962511U;
+        static const AkUniqueID FOOTSTEPCHANGE_GRAVEL = 1670615683U;
+        static const AkUniqueID FOOTSTEPPLAY = 4039405217U;
         static const AkUniqueID HARPOONGRABSUCCESS = 2837856117U;
         static const AkUniqueID HARPOONLOOPSTART = 1976912264U;
         static const AkUniqueID HARPOONLOOPSTOP = 1264241620U;
@@ -86,6 +88,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace FOOTSTEPTYPE
+        {
+            static const AkUniqueID GROUP = 1458816175U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CONCRETE = 841620460U;
+                static const AkUniqueID GRAVEL = 2185786256U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEPTYPE
+
         namespace VAMPFOOTSTEP
         {
             static const AkUniqueID GROUP = 1468846155U;

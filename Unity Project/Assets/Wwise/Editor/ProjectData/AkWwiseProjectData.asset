@@ -421,7 +421,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585644473266255966
+    m_lastTime: -8585644243102702178
     List:
     - name: Box
       guid: b522a989009d6a4fa7920d2b12634e88
@@ -481,26 +481,6 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: Footstep
-      guid: 09fd370eacf00c438ae2c527280491b3
-      id: 1866025847
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: Footstep
-        ObjectType: 4
-        guid: 28e55eca8a6ad74789f4415d53397b3a
-      - ElementName: Footstep
-        ObjectType: 3
-        guid: 09fd370eacf00c438ae2c527280491b3
-      Path: Events\Default Work Unit\Footstep\Footstep
-      maxAttenuation: 0
-      maxDuration: 0.289646
-      minDuration: 0.268956
-    - name: Footstep
       guid: 28e55eca8a6ad74789f4415d53397b3a
       id: 1866025847
       PathAndIcons:
@@ -515,8 +495,68 @@ MonoBehaviour:
         guid: 28e55eca8a6ad74789f4415d53397b3a
       Path: Events\Default Work Unit\Footstep
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.289646
+      minDuration: 0.268956
+    - name: FootstepChange_Concrete
+      guid: 3886043eb48f9040a260c6ec5d385d27
+      id: 963962511
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: 28e55eca8a6ad74789f4415d53397b3a
+      - ElementName: FootstepChange_Concrete
+        ObjectType: 3
+        guid: 3886043eb48f9040a260c6ec5d385d27
+      Path: Events\Default Work Unit\Footstep\FootstepChange_Concrete
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FootstepChange_Gravel
+      guid: 533a2a8ce52bb042927db2f47f12dcc9
+      id: 1670615683
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: 28e55eca8a6ad74789f4415d53397b3a
+      - ElementName: FootstepChange_Gravel
+        ObjectType: 3
+        guid: 533a2a8ce52bb042927db2f47f12dcc9
+      Path: Events\Default Work Unit\Footstep\FootstepChange_Gravel
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FootstepPlay
+      guid: 09fd370eacf00c438ae2c527280491b3
+      id: 4039405217
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: 28e55eca8a6ad74789f4415d53397b3a
+      - ElementName: FootstepPlay
+        ObjectType: 3
+        guid: 09fd370eacf00c438ae2c527280491b3
+      Path: Events\Default Work Unit\Footstep\FootstepPlay
+      maxAttenuation: 0
+      maxDuration: 0.84
+      minDuration: 0.268956
     - name: Harpoon
       guid: 997ce0413219b84190889666ec7dfd20
       id: 302949338
@@ -786,7 +826,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: fe13d60f855213448d27601edd0d77e4
     GuidInternal: 
-    m_lastTime: -8585646757953276022
+    m_lastTime: -8585644243102522653
     List:
     - name: VampCooldown
       guid: a368cd558d3535429001f46651ca0321
@@ -1371,8 +1411,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6603d6ba8e055f4caa446aab326e99e9
     GuidInternal: 
-    m_lastTime: -8585646765081884152
+    m_lastTime: -8585644243102383042
     List:
+    - name: FootstepType
+      guid: 3af574822d433c4bb3b27b0dcfa58a47
+      id: 1458816175
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6603d6ba8e055f4caa446aab326e99e9
+      - ElementName: FootstepType
+        ObjectType: 11
+        guid: 3af574822d433c4bb3b27b0dcfa58a47
+      Path: Switches\Default Work Unit\FootstepType
+      values:
+      - name: Concrete
+        guid: 090905f6fcd30b4ab34bced6bb085408
+        id: 841620460
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: FootstepType
+          ObjectType: 11
+          guid: 3af574822d433c4bb3b27b0dcfa58a47
+        - ElementName: Concrete
+          ObjectType: 10
+          guid: 090905f6fcd30b4ab34bced6bb085408
+      - name: Gravel
+        guid: e4c6a10dc6917a46a8dc8c1509316fb7
+        id: 2185786256
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: FootstepType
+          ObjectType: 11
+          guid: 3af574822d433c4bb3b27b0dcfa58a47
+        - ElementName: Gravel
+          ObjectType: 10
+          guid: e4c6a10dc6917a46a8dc8c1509316fb7
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: VampFootstep
       guid: 31b2a545a0b42a428f8a9c8963baba9f
       id: 1468846155
@@ -1466,7 +1556,7 @@ MonoBehaviour:
         guid: 38b4dd40b2e94b4c9c9bce1ac9f941c2
       Path: Triggers\Default Work Unit\BoxPickupStinger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000014000000150000001600000018000000220000002300000025000000260000002700000028000000290000002a0000002d00000031000000320000003a00000049000000510000002c0400002f040000320400003504000038040000
+  ExpandedWaapiItemIds: 010000000200000003000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e00000031000000320000003a00000049000000510000002c0400002f040000320400003504000038040000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

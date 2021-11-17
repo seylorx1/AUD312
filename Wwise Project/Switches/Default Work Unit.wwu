@@ -37,6 +37,12 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="FootstepType" ID="{8274F53A-432D-4B3C-B3B2-7B0DCFA58A47}">
+					<ChildrenList>
+						<Switch Name="Concrete" ID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}"/>
+						<Switch Name="Gravel" ID="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
