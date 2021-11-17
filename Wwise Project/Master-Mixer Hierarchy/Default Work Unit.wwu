@@ -3,7 +3,7 @@
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}" PersistMode="Standalone">
 			<ChildrenList>
-				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+				<Bus Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{591779FD-6C86-4545-BA51-4DB897074C11}" WorkUnitID="{9BBCB4B9-024C-49B6-BBAA-3FE8FCFF6531}"/>
@@ -37,6 +37,17 @@
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="Default_Motion_Device" ID="{DEDC1226-98EA-4C78-BEB4-4F5827E71916}" WorkUnitID="{9BBCB4B9-024C-49B6-BBAA-3FE8FCFF6531}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</Bus>
+				<Bus Name="Sound Effects Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{591779FD-6C86-4545-BA51-4DB897074C11}" WorkUnitID="{9BBCB4B9-024C-49B6-BBAA-3FE8FCFF6531}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Room_Medium_High_Absorbtion" ID="{E22DBBB6-7656-4B93-A28D-C003FD416889}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 					</ReferenceList>
 					<ObjectLists/>

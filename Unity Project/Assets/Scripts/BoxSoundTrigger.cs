@@ -22,10 +22,9 @@ public class BoxSoundTrigger : MonoBehaviour
 		pickupSound.Post(gameObject);
 	}
 
-	///	Called when the box is picked up.
+	///	Called when the box is dropped.
 	public void DropBox()
 	{
-		//pickupSound.Post(gameObject);
 		dropSound.Post(gameObject);
 	}
 

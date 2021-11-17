@@ -128,9 +128,10 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID BACKUP_MUSIC = 1323876822U;
-        static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID MUSIC_BUS = 3127962312U;
+        static const AkUniqueID SOUND_EFFECTS_BUS = 57144414U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

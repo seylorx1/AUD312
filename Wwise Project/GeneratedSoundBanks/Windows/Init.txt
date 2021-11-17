@@ -41,10 +41,14 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	57144414	Sound Effects Bus			\Default Work Unit\Sound Effects Bus	
 	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
-	1323876822	Backup Music			\Default Work Unit\Master Audio Bus\Backup Music	
-	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
-	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+	1323876822	Backup Music			\Default Work Unit\Music Bus\Backup Music	
+	3127962312	Music Bus			\Default Work Unit\Music Bus	
+	3991942870	Music			\Default Work Unit\Music Bus\Music	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

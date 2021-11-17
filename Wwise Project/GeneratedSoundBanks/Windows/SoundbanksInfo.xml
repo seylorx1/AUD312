@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3651565096">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2614230027">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1079639438">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2216426326">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -31,7 +31,7 @@
 						<ActionTriggerEntry Id="3525814506" Name="BoxPickupStinger" ObjectPath="\Triggers\Default Work Unit\BoxPickupStinger"/>
 					</ActionTrigger>
 				</Event>
-				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep\Footstep" DurationType="OneShot" DurationMin="0.216149" DurationMax="0.242619">
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep\Footstep" DurationType="OneShot" DurationMin="0.268956" DurationMax="0.289646">
 					<IncludedMemoryFiles>
 						<File Id="3342881" Language="SFX">
 							<ShortName>sfx_footstep_toe_concrete_03.wav</ShortName>
@@ -176,9 +176,17 @@
 							<ShortName>music_boat_boxdrop_1.wav</ShortName>
 							<Path>SFX\music_boat_boxdrop_1_D79FB2B7.wem</Path>
 						</File>
+						<File Id="256195239" Language="SFX">
+							<ShortName>music_boat_vamp_bridge_2.wav</ShortName>
+							<Path>SFX\music_boat_vamp_bridge_2_D79FB2B7.wem</Path>
+						</File>
 						<File Id="348634579" Language="SFX">
 							<ShortName>music_boat_blob_1.wav</ShortName>
 							<Path>SFX\music_boat_blob_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="411610687" Language="SFX">
+							<ShortName>music_boat_vamp_bridge_1.wav</ShortName>
+							<Path>SFX\music_boat_vamp_bridge_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="441135101" Language="SFX">
 							<ShortName>music_boat_bassline_1.wav</ShortName>
@@ -199,6 +207,10 @@
 						<File Id="791546088" Language="SFX">
 							<ShortName>music_boat_boxholding_2.wav</ShortName>
 							<Path>SFX\music_boat_boxholding_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="801151112" Language="SFX">
+							<ShortName>music_boat_hats_bridge.wav</ShortName>
+							<Path>SFX\music_boat_hats_bridge_D79FB2B7.wem</Path>
 						</File>
 						<File Id="813604374" Language="SFX">
 							<ShortName>music_boat_boxholding_3.wav</ShortName>
@@ -226,8 +238,11 @@
 							<Children>
 								<SwitchContainer SwitchValue="{E604430D-8069-4F71-9B77-F5EA3F936052}">
 									<Media>
+										<File Id="256195239"/>
 										<File Id="348634579"/>
+										<File Id="411610687"/>
 										<File Id="544473361"/>
+										<File Id="801151112"/>
 										<File Id="1046108589"/>
 										<File Id="1046767504"/>
 									</Media>
@@ -238,9 +253,12 @@
 							<Children>
 								<SwitchContainer SwitchValue="{5B851545-24BC-4022-8588-F9946FE0E763}">
 									<Media>
+										<File Id="256195239"/>
 										<File Id="348634579"/>
+										<File Id="411610687"/>
 										<File Id="441135101"/>
 										<File Id="544473361"/>
+										<File Id="801151112"/>
 										<File Id="843600277"/>
 										<File Id="853425278"/>
 										<File Id="1046108589"/>
@@ -253,10 +271,13 @@
 							<Children>
 								<SwitchContainer SwitchValue="{E604430D-8069-4F71-9B77-F5EA3F936052}">
 									<Media>
+										<File Id="256195239"/>
 										<File Id="348634579"/>
+										<File Id="411610687"/>
 										<File Id="544473361"/>
 										<File Id="683807433"/>
 										<File Id="791546088"/>
+										<File Id="801151112"/>
 										<File Id="813604374"/>
 										<File Id="1046108589"/>
 										<File Id="1046767504"/>
@@ -268,11 +289,14 @@
 							<Children>
 								<SwitchContainer SwitchValue="{5B851545-24BC-4022-8588-F9946FE0E763}">
 									<Media>
+										<File Id="256195239"/>
 										<File Id="348634579"/>
+										<File Id="411610687"/>
 										<File Id="441135101"/>
 										<File Id="544473361"/>
 										<File Id="683807433"/>
 										<File Id="791546088"/>
+										<File Id="801151112"/>
 										<File Id="813604374"/>
 										<File Id="843600277"/>
 										<File Id="853425278"/>
