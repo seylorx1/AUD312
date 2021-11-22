@@ -14,7 +14,11 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BOXDROP = 3810078911U;
+        static const AkUniqueID BOXDROPCUE = 241339208U;
         static const AkUniqueID BOXPICKUP = 2671589300U;
+        static const AkUniqueID BOXPICKUPCUE = 4115829741U;
+        static const AkUniqueID BOXSEGMENTDOWNCUE = 3547374172U;
+        static const AkUniqueID BOXSEGMENTUPCUE = 1360996149U;
         static const AkUniqueID FOOTSTEPCHANGE_CONCRETE = 963962511U;
         static const AkUniqueID FOOTSTEPCHANGE_GRAVEL = 1670615683U;
         static const AkUniqueID FOOTSTEPPLAY = 4039405217U;
@@ -22,34 +26,43 @@ namespace AK
         static const AkUniqueID HARPOONLOOPSTART = 1976912264U;
         static const AkUniqueID HARPOONLOOPSTOP = 1264241620U;
         static const AkUniqueID HARPOONPICKUP = 2867011390U;
-        static const AkUniqueID ITEMDROP = 3684409175U;
-        static const AkUniqueID ITEMPICKUP = 1851462748U;
-        static const AkUniqueID MUSIC_BOAT = 1325856759U;
+        static const AkUniqueID MUSICBOATPLAY = 3164150550U;
     } // namespace EVENTS
 
     namespace STATES
     {
-        namespace HARPOONHELD
+        namespace BOXOPENINGSTINGERSTATE
         {
-            static const AkUniqueID GROUP = 515864255U;
+            static const AkUniqueID GROUP = 1038281861U;
 
             namespace STATE
             {
-                static const AkUniqueID HARPOON_ISHELD = 1182553944U;
+                static const AkUniqueID MUTED = 3791155954U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
-        } // namespace HARPOONHELD
+        } // namespace BOXOPENINGSTINGERSTATE
 
-        namespace ITEMHELD
+        namespace BOXSTATE
         {
-            static const AkUniqueID GROUP = 2782314781U;
+            static const AkUniqueID GROUP = 2558423223U;
 
             namespace STATE
             {
-                static const AkUniqueID ITEM_ISHELD = 1159598586U;
+                static const AkUniqueID BOXHELD = 2060468149U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
-        } // namespace ITEMHELD
+        } // namespace BOXSTATE
+
+        namespace HARPOONSTATE
+        {
+            static const AkUniqueID GROUP = 1363879777U;
+
+            namespace STATE
+            {
+                static const AkUniqueID HARPOONHELD = 515864255U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace HARPOONSTATE
 
         namespace ROOM_B
         {
@@ -114,6 +127,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID BOXSEGMENT = 3762319931U;
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
         static const AkUniqueID RPM = 796049864U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
@@ -143,7 +157,7 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID BACKUP_MUSIC = 1323876822U;
+        static const AkUniqueID BOX_HOLDING_MUSIC = 628250272U;
         static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID MUSIC_BUS = 3127962312U;

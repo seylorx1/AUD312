@@ -5,10 +5,10 @@
 			<ChildrenList>
 				<Folder Name="Interactions" ID="{730178FE-CB94-4AF1-A94B-4C596486F5A8}" ShortID="370933165">
 					<ChildrenList>
-						<StateGroup Name="HarpoonHeld" ID="{B3B48258-D25F-4931-8CC3-FC069EC03744}">
+						<StateGroup Name="HarpoonState" ID="{B3B48258-D25F-4931-8CC3-FC069EC03744}">
 							<ChildrenList>
 								<State Name="None" ID="{C588DF7E-B70F-4E2A-9BBA-8BDBBAA976D1}"/>
-								<State Name="Harpoon_IsHeld" ID="{801A23EA-9585-4040-B632-EAA67C533806}"/>
+								<State Name="HarpoonHeld" ID="{801A23EA-9585-4040-B632-EAA67C533806}"/>
 							</ChildrenList>
 						</StateGroup>
 					</ChildrenList>
@@ -37,10 +37,19 @@
 				</Folder>
 				<Folder Name="Music" ID="{A582CD80-97C9-456D-BF25-13F583649848}" ShortID="950931932">
 					<ChildrenList>
-						<StateGroup Name="ItemHeld" ID="{B9FEF96A-821E-4310-89C5-9A21686C0FE7}">
+						<StateGroup Name="BoxState" ID="{54C47F18-4243-4FC9-91BF-C729E3ADD7FB}">
 							<ChildrenList>
-								<State Name="None" ID="{13614821-ED25-4D07-8574-1DC55BCAE75A}"/>
-								<State Name="Item_IsHeld" ID="{94E017B8-3FE4-4797-B4BC-0C05027D3EBF}"/>
+								<State Name="None" ID="{8717C20B-71BC-4F3A-81F3-657F374E86E2}"/>
+								<State Name="BoxHeld" ID="{DA60839B-344D-45C3-9134-81D0EECBFB60}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="BoxOpeningStingerState" ID="{DC926237-FAB3-4C02-806A-6CAC862BB21F}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{4AE4BC50-E22D-4B68-ABCD-A676538D3845}"/>
+								<State Name="Muted" ID="{4D12F6FF-B7BE-42A8-AE76-49832BECE1DA}"/>
 							</ChildrenList>
 						</StateGroup>
 					</ChildrenList>

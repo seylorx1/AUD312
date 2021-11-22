@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3857155f990bfa43b3d23accebdd730, type: 3}
   m_Name: F56B5F6D-980C-4666-A2BD-5C329DFEB6EE
   m_EditorClassIdentifier: 
-  objectName: music_boat
-  id: 1325856759
+  objectName: MusicBoatPlay
+  id: 3164150550
   guid: F56B5F6D-980C-4666-A2BD-5C329DFEB6EE

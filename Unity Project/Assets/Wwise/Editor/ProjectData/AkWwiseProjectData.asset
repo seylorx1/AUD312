@@ -303,11 +303,11 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585644639782734867
+    m_lastTime: -8585640190570244031
     List:
-    - name: Backup Music
+    - name: Box Holding Music
       guid: 7178a0cb03d21c4b8c86f221ddc3b242
-      id: 1323876822
+      id: 628250272
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -318,10 +318,10 @@ MonoBehaviour:
       - ElementName: Music Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Backup Music
+      - ElementName: Box Holding Music
         ObjectType: 2
         guid: 7178a0cb03d21c4b8c86f221ddc3b242
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Backup Music
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Box Holding Music
     - name: Motion Factory Bus
       guid: c6b9f92af16ee946b5f2e30c9e602c74
       id: 985987111
@@ -421,7 +421,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585644243102702178
+    m_lastTime: -8585640194585237708
     List:
     - name: Box
       guid: b522a989009d6a4fa7920d2b12634e88
@@ -460,6 +460,32 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: BoxDropCue
+      guid: c69d2011ecf0fa4b9f32c505cddd5960
+      id: 241339208
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Music
+        ObjectType: 4
+        guid: a76bc77d76cf364d9933b7ac263e0790
+      - ElementName: Cue Events
+        ObjectType: 4
+        guid: 71304b28e3413343811bbee75e4d5fd4
+      - ElementName: Stingers
+        ObjectType: 4
+        guid: 8e09c0297be6b8418069ac2fe41f5cfa
+      - ElementName: BoxDropCue
+        ObjectType: 3
+        guid: c69d2011ecf0fa4b9f32c505cddd5960
+      Path: Events\Default Work Unit\Music\Cue Events\Stingers\BoxDropCue
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: BoxPickup
       guid: e97b8506c112ad43823359d8e87c3f90
       id: 2671589300
@@ -480,6 +506,104 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: BoxPickupCue
+      guid: ec831f31e088b745a0e7266e951b7c50
+      id: 4115829741
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Music
+        ObjectType: 4
+        guid: a76bc77d76cf364d9933b7ac263e0790
+      - ElementName: Cue Events
+        ObjectType: 4
+        guid: 71304b28e3413343811bbee75e4d5fd4
+      - ElementName: Stingers
+        ObjectType: 4
+        guid: 8e09c0297be6b8418069ac2fe41f5cfa
+      - ElementName: BoxPickupCue
+        ObjectType: 3
+        guid: ec831f31e088b745a0e7266e951b7c50
+      Path: Events\Default Work Unit\Music\Cue Events\Stingers\BoxPickupCue
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: BoxSegmentDownCue
+      guid: 7b848afd6f9f4b4cac3bebc1c75644e6
+      id: 3547374172
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Music
+        ObjectType: 4
+        guid: a76bc77d76cf364d9933b7ac263e0790
+      - ElementName: Cue Events
+        ObjectType: 4
+        guid: 71304b28e3413343811bbee75e4d5fd4
+      - ElementName: Stingers
+        ObjectType: 4
+        guid: 8e09c0297be6b8418069ac2fe41f5cfa
+      - ElementName: BoxSegmentDownCue
+        ObjectType: 3
+        guid: 7b848afd6f9f4b4cac3bebc1c75644e6
+      Path: Events\Default Work Unit\Music\Cue Events\Stingers\BoxSegmentDownCue
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: BoxSegmentUpCue
+      guid: 27f22112971f2c4295153f444af70b7e
+      id: 1360996149
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Music
+        ObjectType: 4
+        guid: a76bc77d76cf364d9933b7ac263e0790
+      - ElementName: Cue Events
+        ObjectType: 4
+        guid: 71304b28e3413343811bbee75e4d5fd4
+      - ElementName: Stingers
+        ObjectType: 4
+        guid: 8e09c0297be6b8418069ac2fe41f5cfa
+      - ElementName: BoxSegmentUpCue
+        ObjectType: 3
+        guid: 27f22112971f2c4295153f444af70b7e
+      Path: Events\Default Work Unit\Music\Cue Events\Stingers\BoxSegmentUpCue
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Cue Events
+      guid: 71304b28e3413343811bbee75e4d5fd4
+      id: 753433889
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Music
+        ObjectType: 4
+        guid: a76bc77d76cf364d9933b7ac263e0790
+      - ElementName: Cue Events
+        ObjectType: 4
+        guid: 71304b28e3413343811bbee75e4d5fd4
+      Path: Events\Default Work Unit\Music\Cue Events
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Footstep
       guid: 28e55eca8a6ad74789f4415d53397b3a
       id: 1866025847
@@ -495,8 +619,8 @@ MonoBehaviour:
         guid: 28e55eca8a6ad74789f4415d53397b3a
       Path: Events\Default Work Unit\Footstep
       maxAttenuation: 0
-      maxDuration: 0.289646
-      minDuration: 0.268956
+      maxDuration: -1
+      minDuration: -1
     - name: FootstepChange_Concrete
       guid: 3886043eb48f9040a260c6ec5d385d27
       id: 963962511
@@ -654,52 +778,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: ItemDrop
-      guid: 77afba966bc01d4f8ad69817c6e0f9d9
-      id: 3684409175
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: Music
-        ObjectType: 4
-        guid: a76bc77d76cf364d9933b7ac263e0790
-      - ElementName: Music Events
-        ObjectType: 4
-        guid: 2b6ca72e4d8d224ea34ccc7868f7e71b
-      - ElementName: ItemDrop
-        ObjectType: 3
-        guid: 77afba966bc01d4f8ad69817c6e0f9d9
-      Path: Events\Default Work Unit\Music\Music Events\ItemDrop
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: ItemPickup
-      guid: 47f220dbfc551f4994480635717f9aae
-      id: 1851462748
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: Music
-        ObjectType: 4
-        guid: a76bc77d76cf364d9933b7ac263e0790
-      - ElementName: Music Events
-        ObjectType: 4
-        guid: 2b6ca72e4d8d224ea34ccc7868f7e71b
-      - ElementName: ItemPickup
-        ObjectType: 3
-        guid: 47f220dbfc551f4994480635717f9aae
-      Path: Events\Default Work Unit\Music\Music Events\ItemPickup
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: Music
       guid: a76bc77d76cf364d9933b7ac263e0790
       id: 3991942870
@@ -717,29 +795,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Music Events
-      guid: 2b6ca72e4d8d224ea34ccc7868f7e71b
-      id: 3264800193
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: Music
-        ObjectType: 4
-        guid: a76bc77d76cf364d9933b7ac263e0790
-      - ElementName: Music Events
-        ObjectType: 4
-        guid: 2b6ca72e4d8d224ea34ccc7868f7e71b
-      Path: Events\Default Work Unit\Music\Music Events
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: music_boat
+    - name: MusicBoatPlay
       guid: 6d5f6bf50c986646a2bd5c329dfeb6ee
-      id: 1325856759
+      id: 3164150550
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -750,10 +808,10 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 4
         guid: a76bc77d76cf364d9933b7ac263e0790
-      - ElementName: music_boat
+      - ElementName: MusicBoatPlay
         ObjectType: 3
         guid: 6d5f6bf50c986646a2bd5c329dfeb6ee
-      Path: Events\Default Work Unit\Music\music_boat
+      Path: Events\Default Work Unit\Music\MusicBoatPlay
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -814,6 +872,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stingers
+      guid: 8e09c0297be6b8418069ac2fe41f5cfa
+      id: 2940432316
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Music
+        ObjectType: 4
+        guid: a76bc77d76cf364d9933b7ac263e0790
+      - ElementName: Cue Events
+        ObjectType: 4
+        guid: 71304b28e3413343811bbee75e4d5fd4
+      - ElementName: Stingers
+        ObjectType: 4
+        guid: 8e09c0297be6b8418069ac2fe41f5cfa
+      Path: Events\Default Work Unit\Music\Cue Events\Stingers
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -826,8 +907,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: fe13d60f855213448d27601edd0d77e4
     GuidInternal: 
-    m_lastTime: -8585644243102522653
+    m_lastTime: -8585640198892519903
     List:
+    - name: BoxSegment
+      guid: 94d513563ed65e45983bc1fcd29df7d4
+      id: 3762319931
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fe13d60f855213448d27601edd0d77e4
+      - ElementName: BoxSegment
+        ObjectType: 13
+        guid: 94d513563ed65e45983bc1fcd29df7d4
+      Path: Game Parameters\Default Work Unit\BoxSegment
     - name: VampCooldown
       guid: a368cd558d3535429001f46651ca0321
       id: 244091178
@@ -1048,11 +1143,129 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c226eeab13aa4f409e89c2a35c4216cc
     GuidInternal: 
-    m_lastTime: -8585646672972445763
+    m_lastTime: -8585640194116318172
     List:
-    - name: HarpoonHeld
+    - name: BoxOpeningStingerState
+      guid: 376292dcb3fa024c806a6cac862bb21f
+      id: 1038281861
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Music
+        ObjectType: 4
+        guid: 80cd82a5c9976d45bf2513f583649848
+      - ElementName: BoxOpeningStingerState
+        ObjectType: 9
+        guid: 376292dcb3fa024c806a6cac862bb21f
+      Path: States\Default Work Unit\Music\BoxOpeningStingerState
+      values:
+      - name: Muted
+        guid: fff6124dbeb7a842ae7649832bece1da
+        id: 3791155954
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Music
+          ObjectType: 4
+          guid: 80cd82a5c9976d45bf2513f583649848
+        - ElementName: BoxOpeningStingerState
+          ObjectType: 9
+          guid: 376292dcb3fa024c806a6cac862bb21f
+        - ElementName: Muted
+          ObjectType: 8
+          guid: fff6124dbeb7a842ae7649832bece1da
+      - name: None
+        guid: 50bce44a2de2684babcda676538d3845
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Music
+          ObjectType: 4
+          guid: 80cd82a5c9976d45bf2513f583649848
+        - ElementName: BoxOpeningStingerState
+          ObjectType: 9
+          guid: 376292dcb3fa024c806a6cac862bb21f
+        - ElementName: None
+          ObjectType: 8
+          guid: 50bce44a2de2684babcda676538d3845
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: BoxState
+      guid: 187fc4544342c94f91bfc729e3add7fb
+      id: 2558423223
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Music
+        ObjectType: 4
+        guid: 80cd82a5c9976d45bf2513f583649848
+      - ElementName: BoxState
+        ObjectType: 9
+        guid: 187fc4544342c94f91bfc729e3add7fb
+      Path: States\Default Work Unit\Music\BoxState
+      values:
+      - name: BoxHeld
+        guid: 9b8360da4d34c345913481d0eecbfb60
+        id: 2060468149
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Music
+          ObjectType: 4
+          guid: 80cd82a5c9976d45bf2513f583649848
+        - ElementName: BoxState
+          ObjectType: 9
+          guid: 187fc4544342c94f91bfc729e3add7fb
+        - ElementName: BoxHeld
+          ObjectType: 8
+          guid: 9b8360da4d34c345913481d0eecbfb60
+      - name: None
+        guid: 0bc21787bc713a4f81f3657f374e86e2
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Music
+          ObjectType: 4
+          guid: 80cd82a5c9976d45bf2513f583649848
+        - ElementName: BoxState
+          ObjectType: 9
+          guid: 187fc4544342c94f91bfc729e3add7fb
+        - ElementName: None
+          ObjectType: 8
+          guid: 0bc21787bc713a4f81f3657f374e86e2
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: HarpoonState
       guid: 5882b4b35fd231498cc3fc069ec03744
-      id: 515864255
+      id: 1363879777
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
@@ -1063,14 +1276,14 @@ MonoBehaviour:
       - ElementName: Interactions
         ObjectType: 4
         guid: fe78017394cbf14aa94b4c596486f5a8
-      - ElementName: HarpoonHeld
+      - ElementName: HarpoonState
         ObjectType: 9
         guid: 5882b4b35fd231498cc3fc069ec03744
-      Path: States\Default Work Unit\Interactions\HarpoonHeld
+      Path: States\Default Work Unit\Interactions\HarpoonState
       values:
-      - name: Harpoon_IsHeld
+      - name: HarpoonHeld
         guid: ea231a8085954040b632eaa67c533806
-        id: 1182553944
+        id: 515864255
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -1081,10 +1294,10 @@ MonoBehaviour:
         - ElementName: Interactions
           ObjectType: 4
           guid: fe78017394cbf14aa94b4c596486f5a8
-        - ElementName: HarpoonHeld
+        - ElementName: HarpoonState
           ObjectType: 9
           guid: 5882b4b35fd231498cc3fc069ec03744
-        - ElementName: Harpoon_IsHeld
+        - ElementName: HarpoonHeld
           ObjectType: 8
           guid: ea231a8085954040b632eaa67c533806
       - name: None
@@ -1100,7 +1313,7 @@ MonoBehaviour:
         - ElementName: Interactions
           ObjectType: 4
           guid: fe78017394cbf14aa94b4c596486f5a8
-        - ElementName: HarpoonHeld
+        - ElementName: HarpoonState
           ObjectType: 9
           guid: 5882b4b35fd231498cc3fc069ec03744
         - ElementName: None
@@ -1124,65 +1337,6 @@ MonoBehaviour:
         guid: fe78017394cbf14aa94b4c596486f5a8
       Path: States\Default Work Unit\Interactions
       values: []
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: ItemHeld
-      guid: 6af9feb91e82104389c59a21686c0fe7
-      id: 2782314781
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c226eeab13aa4f409e89c2a35c4216cc
-      - ElementName: Music
-        ObjectType: 4
-        guid: 80cd82a5c9976d45bf2513f583649848
-      - ElementName: ItemHeld
-        ObjectType: 9
-        guid: 6af9feb91e82104389c59a21686c0fe7
-      Path: States\Default Work Unit\Music\ItemHeld
-      values:
-      - name: Item_IsHeld
-        guid: b817e094e43f9747b4bc0c05027d3ebf
-        id: 1159598586
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: c226eeab13aa4f409e89c2a35c4216cc
-        - ElementName: Music
-          ObjectType: 4
-          guid: 80cd82a5c9976d45bf2513f583649848
-        - ElementName: ItemHeld
-          ObjectType: 9
-          guid: 6af9feb91e82104389c59a21686c0fe7
-        - ElementName: Item_IsHeld
-          ObjectType: 8
-          guid: b817e094e43f9747b4bc0c05027d3ebf
-      - name: None
-        guid: 2148611325ed074d85741dc55bcae75a
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: c226eeab13aa4f409e89c2a35c4216cc
-        - ElementName: Music
-          ObjectType: 4
-          guid: 80cd82a5c9976d45bf2513f583649848
-        - ElementName: ItemHeld
-          ObjectType: 9
-          guid: 6af9feb91e82104389c59a21686c0fe7
-        - ElementName: None
-          ObjectType: 8
-          guid: 2148611325ed074d85741dc55bcae75a
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1411,7 +1565,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6603d6ba8e055f4caa446aab326e99e9
     GuidInternal: 
-    m_lastTime: -8585644243102383042
+    m_lastTime: -8585640198892081402
     List:
     - name: FootstepType
       guid: 3af574822d433c4bb3b27b0dcfa58a47

@@ -11,24 +11,65 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="BusVolume"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="BoxState" ID="{54C47F18-4243-4FC9-91BF-C729E3ADD7FB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="BoxHeld" ID="{DA60839B-344D-45C3-9134-81D0EECBFB60}"/>
+										<CustomState Name="" ID="{8A13A7FC-438D-4409-B1B0-5360E46B2202}" ShortID="376481985">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-6"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 						</Bus>
-						<Bus Name="Backup Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}">
+						<Bus Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
 								<Property Name="RecoveryTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="BusVolume"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="BoxState" ID="{54C47F18-4243-4FC9-91BF-C729E3ADD7FB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="BoxHeld" ID="{DA60839B-344D-45C3-9134-81D0EECBFB60}"/>
+										<CustomState Name="" ID="{23E5AFDB-2697-4D07-B6AF-856270ABF5D7}" ShortID="683257782">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="90"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
-							<DuckingList>
-								<DuckItem>
-									<BusRef Name="Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}"/>
-									<DuckingParam>
-										<Volume>-6</Volume>
-										<FadeInTime>1</FadeInTime>
-										<FadeOutTime>1</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-									</DuckingParam>
-								</DuckItem>
-							</DuckingList>
 						</Bus>
 					</ChildrenList>
 					<ObjectLists/>

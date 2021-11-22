@@ -73,7 +73,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Harpoon_IsHeld" ID="{801A23EA-9585-4040-B632-EAA67C533806}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+											<ObjectRef Name="HarpoonHeld" ID="{801A23EA-9585-4040-B632-EAA67C533806}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -261,36 +261,102 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Folder Name="Music Events" ID="{2EA76C2B-8D4D-4E22-A34C-CC7868F7E71B}" ShortID="572457018">
+						<Folder Name="Cue Events" ID="{284B3071-41E3-4333-811B-BEE75E4D5FD4}" ShortID="145017923">
 							<ChildrenList>
-								<Event Name="ItemPickup" ID="{DB20F247-55FC-491F-9448-0635717F9AAE}">
+								<Folder Name="Stingers" ID="{29C0098E-E67B-41B8-8069-AC2FE41F5CFA}" ShortID="525623447">
 									<ChildrenList>
-										<Action Name="" ID="{BC74BE8C-101A-41EF-81C3-B3391EB96B06}" ShortID="832213281">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="22"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Item_IsHeld" ID="{94E017B8-3FE4-4797-B4BC-0C05027D3EBF}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
+										<Event Name="BoxPickupCue" ID="{311F83EC-88E0-45B7-A0E7-266E951B7C50}">
+											<ChildrenList>
+												<Action Name="" ID="{EEBE4611-0242-4531-B33D-E4FA6954F015}" ShortID="516357087">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="22"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BoxHeld" ID="{DA60839B-344D-45C3-9134-81D0EECBFB60}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="BoxDropCue" ID="{11209DC6-F0EC-4BFA-9F32-C505CDDD5960}">
+											<ChildrenList>
+												<Action Name="" ID="{DD6CAAFB-EB78-40CC-8504-F88DED36A7FB}" ShortID="724008433">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="22"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="None" ID="{8717C20B-71BC-4F3A-81F3-657F374E86E2}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="BoxSegmentDownCue" ID="{FD8A847B-9F6F-4C4B-AC3B-EBC1C75644E6}">
+											<ChildrenList>
+												<Action Name="" ID="{843CD7B6-AB6C-49A8-A29F-B392E0FCD640}" ShortID="374531402">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="38"/>
+														<Property Name="Scope" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BoxSegment" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{A2CB4479-3009-4536-96DD-6BB428960617}" ShortID="489201670">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="22"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Muted" ID="{4D12F6FF-B7BE-42A8-AE76-49832BECE1DA}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="BoxSegmentUpCue" ID="{1221F227-1F97-422C-9515-3F444AF70B7E}">
+											<ChildrenList>
+												<Action Name="" ID="{3B6F5CC1-604D-4F54-A399-E72F4A0EF94A}" ShortID="78462453">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="22"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="None" ID="{4AE4BC50-E22D-4B68-ABCD-A676538D3845}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{AC2C4E3F-5966-4708-990D-0F4D2795A466}" ShortID="395434067">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="38"/>
+														<Property Name="Scope" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BoxSegment" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{22BE664F-ABDD-46B8-92BF-1A524534B5CA}" ShortID="1049989652">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="38"/>
+														<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+														<Property Name="Scope" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="BoxSegment" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
 									</ChildrenList>
-								</Event>
-								<Event Name="ItemDrop" ID="{96BAAF77-C06B-4F1D-8AD6-9817C6E0F9D9}">
-									<ChildrenList>
-										<Action Name="" ID="{F46BD5D6-F677-403C-A47C-DA1D56FFD307}" ShortID="464230318">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="22"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="None" ID="{13614821-ED25-4D07-8574-1DC55BCAE75A}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
