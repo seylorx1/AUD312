@@ -250,7 +250,7 @@
 				</Folder>
 				<Folder Name="Music" ID="{7DC76BA7-CF76-4D36-9933-B7AC263E0790}" ShortID="232227215">
 					<ChildrenList>
-						<Event Name="music_boat" ID="{F56B5F6D-980C-4666-A2BD-5C329DFEB6EE}">
+						<Event Name="MusicBoatPlay" ID="{F56B5F6D-980C-4666-A2BD-5C329DFEB6EE}">
 							<ChildrenList>
 								<Action Name="" ID="{99336DC5-8E53-46C7-89CD-6643490CCAF6}" ShortID="1044329988">
 									<ReferenceList>
