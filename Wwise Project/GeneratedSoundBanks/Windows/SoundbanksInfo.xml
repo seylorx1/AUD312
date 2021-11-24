@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1823812667">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1312091034">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -24,11 +24,19 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3987984544">
+		<SoundBank Id="3161908922" Language="SFX" Hash="771259970">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="829164566" Name="BoxAmbiencePlay" ObjectPath="\Events\Default Work Unit\Box\BoxAmbiencePlay" MaxAttenuation="20.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="117760886" Language="SFX">
+							<ShortName>music_boat_cube.wav</ShortName>
+							<Path>SFX\music_boat_cube_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3810078911" Name="BoxDrop" ObjectPath="\Events\Default Work Unit\Box\BoxDrop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionTrigger>
 						<ActionTriggerEntry Id="556308635" Name="BoxDropStinger" ObjectPath="\Triggers\Default Work Unit\BoxDropStinger"/>
@@ -271,9 +279,17 @@
 				</Event>
 				<Event Id="3164150550" Name="MusicBoatPlay" ObjectPath="\Events\Default Work Unit\Music\MusicBoatPlay" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="47062023" Language="SFX">
+							<ShortName>music_boat_kicksnare_1.wav</ShortName>
+							<Path>SFX\music_boat_kicksnare_1_D79FB2B7.wem</Path>
+						</File>
 						<File Id="83555245" Language="SFX">
 							<ShortName>music_boat_boxdrop_1.wav</ShortName>
 							<Path>SFX\music_boat_boxdrop_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="229936893" Language="SFX">
+							<ShortName>music_boat_kicksnare_chorus.wav</ShortName>
+							<Path>SFX\music_boat_kicksnare_chorus_D79FB2B7.wem</Path>
 						</File>
 						<File Id="256195239" Language="SFX">
 							<ShortName>music_boat_vamp_bridge_2.wav</ShortName>
@@ -294,6 +310,10 @@
 						<File Id="544473361" Language="SFX">
 							<ShortName>music_boat_vamp_1.wav</ShortName>
 							<Path>SFX\music_boat_vamp_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="552614302" Language="SFX">
+							<ShortName>music_boat_kicksnare_2.wav</ShortName>
+							<Path>SFX\music_boat_kicksnare_2_D79FB2B7.wem</Path>
 						</File>
 						<File Id="670314713" Language="SFX">
 							<ShortName>music_boat_boxpickup_1.wav</ShortName>
@@ -334,32 +354,67 @@
 					</IncludedMemoryFiles>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{E604430D-8069-4F71-9B77-F5EA3F936052}">
-							<Media>
-								<File Id="256195239"/>
-								<File Id="348634579"/>
-								<File Id="411610687"/>
-								<File Id="544473361"/>
-								<File Id="801151112"/>
-								<File Id="1046108589"/>
-								<File Id="1046767504"/>
-							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{19496866-5461-430E-A457-14160955E205}">
+									<Media>
+										<File Id="256195239"/>
+										<File Id="348634579"/>
+										<File Id="411610687"/>
+										<File Id="544473361"/>
+										<File Id="683807433"/>
+										<File Id="791546088"/>
+										<File Id="801151112"/>
+										<File Id="813604374"/>
+										<File Id="1046108589"/>
+										<File Id="1046767504"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{5B851545-24BC-4022-8588-F9946FE0E763}">
-							<Media>
-								<File Id="256195239"/>
-								<File Id="348634579"/>
-								<File Id="411610687"/>
-								<File Id="441135101"/>
-								<File Id="544473361"/>
-								<File Id="683807433"/>
-								<File Id="791546088"/>
-								<File Id="801151112"/>
-								<File Id="813604374"/>
-								<File Id="843600277"/>
-								<File Id="853425278"/>
-								<File Id="1046108589"/>
-								<File Id="1046767504"/>
-							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{19496866-5461-430E-A457-14160955E205}">
+									<Media>
+										<File Id="256195239"/>
+										<File Id="348634579"/>
+										<File Id="411610687"/>
+										<File Id="441135101"/>
+										<File Id="544473361"/>
+										<File Id="683807433"/>
+										<File Id="791546088"/>
+										<File Id="801151112"/>
+										<File Id="813604374"/>
+										<File Id="843600277"/>
+										<File Id="853425278"/>
+										<File Id="1046108589"/>
+										<File Id="1046767504"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{5B851545-24BC-4022-8588-F9946FE0E763}">
+							<Children>
+								<SwitchContainer SwitchValue="{D06C60D8-9FF5-4474-897E-D7DD6F79A673}">
+									<Media>
+										<File Id="47062023"/>
+										<File Id="229936893"/>
+										<File Id="256195239"/>
+										<File Id="348634579"/>
+										<File Id="411610687"/>
+										<File Id="441135101"/>
+										<File Id="544473361"/>
+										<File Id="552614302"/>
+										<File Id="683807433"/>
+										<File Id="791546088"/>
+										<File Id="801151112"/>
+										<File Id="813604374"/>
+										<File Id="843600277"/>
+										<File Id="853425278"/>
+										<File Id="1046108589"/>
+										<File Id="1046767504"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -374,6 +429,12 @@
 				</StateGroup>
 				<StateGroup Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\BoxOpeningStingerState\None" GUID="{4AE4BC50-E22D-4B68-ABCD-A676538D3845}">
 					<States/>
+				</StateGroup>
+				<StateGroup Id="1941896134" Name="Room_C" ObjectPath="\States\Default Work Unit\Rooms\Room_C" GUID="{0F51F7A7-DA4E-491F-97F6-EE94B00CB2F9}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Rooms\Room_C\None" GUID="{19496866-5461-430E-A457-14160955E205}"/>
+						<State Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Rooms\Room_C\Passed" GUID="{D06C60D8-9FF5-4474-897E-D7DD6F79A673}"/>
+					</States>
 				</StateGroup>
 				<StateGroup Id="1941896135" Name="Room_B" ObjectPath="\States\Default Work Unit\Rooms\Room_B" GUID="{0F28CB9D-8E69-4152-BC69-50EE91E39FC8}">
 					<States>

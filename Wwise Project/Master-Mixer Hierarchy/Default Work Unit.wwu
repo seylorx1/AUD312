@@ -10,7 +10,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}">
+						<Bus Name="_Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
@@ -40,37 +40,58 @@
 							</StateInfo>
 							<ObjectLists/>
 						</Bus>
-						<Bus Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}">
-							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
-									<ValueList>
-										<Value>-96</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RecoveryTime" Type="Real64" Value="0.5"/>
-							</PropertyList>
-							<StateInfo>
-								<StatePropertyList>
-									<Property Name="BusVolume"/>
-								</StatePropertyList>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="BoxState" ID="{54C47F18-4243-4FC9-91BF-C729E3ADD7FB}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="BoxHeld" ID="{DA60839B-344D-45C3-9134-81D0EECBFB60}"/>
-										<CustomState Name="" ID="{23E5AFDB-2697-4D07-B6AF-856270ABF5D7}" ShortID="683257782">
-											<PropertyList>
-												<Property Name="BusVolume" Type="Real64" Value="90"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-								</CustomStateList>
-							</StateInfo>
-							<ObjectLists/>
-						</Bus>
+						<Folder Name="Boat" ID="{C32CD2D2-3AA1-4FFE-977F-7873B1DFBEE8}" ShortID="710346650">
+							<ChildrenList>
+								<Bus Name="Boat Vamp Music" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Interactions" ID="{8E9D3ACB-D12C-4752-BA59-CAA62A044962}" ShortID="78413416">
+							<ChildrenList>
+								<Bus Name="Box Ambience Music" ID="{5DF6543C-5507-4289-A3AE-62861DEEF030}">
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RecoveryTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="BusVolume"/>
+										</StatePropertyList>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BoxState" ID="{54C47F18-4243-4FC9-91BF-C729E3ADD7FB}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="BoxHeld" ID="{DA60839B-344D-45C3-9134-81D0EECBFB60}"/>
+												<CustomState Name="" ID="{23E5AFDB-2697-4D07-B6AF-856270ABF5D7}" ShortID="683257782">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="90"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 					<ObjectLists/>
 				</Bus>

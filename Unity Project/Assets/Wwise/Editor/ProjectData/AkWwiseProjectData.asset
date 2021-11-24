@@ -303,8 +303,83 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585640190570244031
+    m_lastTime: -8585638425056676337
     List:
+    - name: _Music
+      guid: f8400540ecc8c44394331a34a8a64f68
+      id: 873411281
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: _Music
+        ObjectType: 2
+        guid: f8400540ecc8c44394331a34a8a64f68
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\_Music
+    - name: Boat
+      guid: d2d22cc3a13afe4f977f7873b1dfbee8
+      id: 1795056175
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Boat
+        ObjectType: 4
+        guid: d2d22cc3a13afe4f977f7873b1dfbee8
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Boat
+    - name: Boat Vamp Music
+      guid: 3642d45a92ab3c49ba1479793c94f2c9
+      id: 2023061728
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Boat
+        ObjectType: 4
+        guid: d2d22cc3a13afe4f977f7873b1dfbee8
+      - ElementName: Boat Vamp Music
+        ObjectType: 2
+        guid: 3642d45a92ab3c49ba1479793c94f2c9
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Boat\Boat Vamp Music
+    - name: Box Ambience Music
+      guid: 3c54f65d07558942a3ae62861deef030
+      id: 2544947825
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Interactions
+        ObjectType: 4
+        guid: cb3a9d8e2cd15247ba59caa62a044962
+      - ElementName: Box Ambience Music
+        ObjectType: 2
+        guid: 3c54f65d07558942a3ae62861deef030
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Ambience
+        Music
     - name: Box Holding Music
       guid: 7178a0cb03d21c4b8c86f221ddc3b242
       id: 628250272
@@ -318,10 +393,31 @@ MonoBehaviour:
       - ElementName: Music Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Interactions
+        ObjectType: 4
+        guid: cb3a9d8e2cd15247ba59caa62a044962
       - ElementName: Box Holding Music
         ObjectType: 2
         guid: 7178a0cb03d21c4b8c86f221ddc3b242
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Box Holding Music
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Holding
+        Music
+    - name: Interactions
+      guid: cb3a9d8e2cd15247ba59caa62a044962
+      id: 888201102
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Interactions
+        ObjectType: 4
+        guid: cb3a9d8e2cd15247ba59caa62a044962
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions
     - name: Motion Factory Bus
       guid: c6b9f92af16ee946b5f2e30c9e602c74
       id: 985987111
@@ -336,23 +432,6 @@ MonoBehaviour:
         ObjectType: 2
         guid: c6b9f92af16ee946b5f2e30c9e602c74
       Path: Master-Mixer Hierarchy\Default Work Unit\Motion Factory Bus
-    - name: Music
-      guid: f8400540ecc8c44394331a34a8a64f68
-      id: 3991942870
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Music Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Music
-        ObjectType: 2
-        guid: f8400540ecc8c44394331a34a8a64f68
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Music
     - name: Music Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3127962312
@@ -393,7 +472,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 894b37ce7fff6c44b0dcd4b894060495
     GuidInternal: 
-    m_lastTime: -8585646647287675044
+    m_lastTime: -8585638451972650798
     List:
     - name: Main
       guid: 540242f8053cc1458049835c8ed6e27f
@@ -421,7 +500,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585640194585237708
+    m_lastTime: -8585638443838943897
     List:
     - name: Box
       guid: b522a989009d6a4fa7920d2b12634e88
@@ -438,6 +517,26 @@ MonoBehaviour:
         guid: b522a989009d6a4fa7920d2b12634e88
       Path: Events\Default Work Unit\Box
       maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BoxAmbiencePlay
+      guid: 75bd92f19ccc40498ba3367206f95208
+      id: 829164566
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Box
+        ObjectType: 4
+        guid: b522a989009d6a4fa7920d2b12634e88
+      - ElementName: BoxAmbiencePlay
+        ObjectType: 3
+        guid: 75bd92f19ccc40498ba3367206f95208
+      Path: Events\Default Work Unit\Box\BoxAmbiencePlay
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: BoxDrop
@@ -907,7 +1006,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: fe13d60f855213448d27601edd0d77e4
     GuidInternal: 
-    m_lastTime: -8585640198892519903
+    m_lastTime: -8585639220286649871
     List:
     - name: BoxSegment
       guid: 94d513563ed65e45983bc1fcd29df7d4
@@ -1143,7 +1242,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c226eeab13aa4f409e89c2a35c4216cc
     GuidInternal: 
-    m_lastTime: -8585640194116318172
+    m_lastTime: -8585638454071158488
     List:
     - name: BoxOpeningStingerState
       guid: 376292dcb3fa024c806a6cac862bb21f

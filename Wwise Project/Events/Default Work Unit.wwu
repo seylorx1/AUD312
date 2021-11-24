@@ -35,6 +35,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="BoxAmbiencePlay" ID="{F192BD75-CC9C-4940-8BA3-367206F95208}">
+							<ChildrenList>
+								<Action Name="" ID="{A92D4835-02BB-426C-81DF-870608BBBB70}" ShortID="439033250">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="music_boat_cube (Loop)" ID="{726A473F-F8FC-4D8B-9644-812599B48325}" WorkUnitID="{F25D41B2-87F8-4367-B70B-EA99533755FA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="PROTO" ID="{F93B74FE-BB64-443E-BF5E-7F5F90F4E4E8}" ShortID="817489252">

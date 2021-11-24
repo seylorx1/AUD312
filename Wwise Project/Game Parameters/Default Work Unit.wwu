@@ -16,7 +16,7 @@
 				<GameParameter Name="BoxSegment" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="11"/>
-						<Property Name="FilterTimeUp" Type="Real64" Value="2.4"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="2.3"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>

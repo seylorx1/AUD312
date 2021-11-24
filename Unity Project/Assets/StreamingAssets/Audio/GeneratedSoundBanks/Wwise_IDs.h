@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BOXAMBIENCEPLAY = 829164566U;
         static const AkUniqueID BOXDROP = 3810078911U;
         static const AkUniqueID BOXDROPCUE = 241339208U;
         static const AkUniqueID BOXPICKUP = 2671589300U;
@@ -157,9 +158,11 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID _MUSIC = 873411281U;
+        static const AkUniqueID BOAT_VAMP_MUSIC = 2023061728U;
+        static const AkUniqueID BOX_AMBIENCE_MUSIC = 2544947825U;
         static const AkUniqueID BOX_HOLDING_MUSIC = 628250272U;
         static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
-        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID MUSIC_BUS = 3127962312U;
         static const AkUniqueID SOUND_EFFECTS_BUS = 57144414U;
     } // namespace BUSSES

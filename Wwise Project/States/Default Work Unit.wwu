@@ -51,6 +51,14 @@
 								<State Name="None" ID="{4AE4BC50-E22D-4B68-ABCD-A676538D3845}"/>
 								<State Name="Muted" ID="{4D12F6FF-B7BE-42A8-AE76-49832BECE1DA}"/>
 							</ChildrenList>
+							<TransitionList>
+								<Transition>
+									<StartState Name="Muted" ID="{4D12F6FF-B7BE-42A8-AE76-49832BECE1DA}"/>
+									<EndState Name="None" ID="{4AE4BC50-E22D-4B68-ABCD-A676538D3845}"/>
+									<Time>0</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+							</TransitionList>
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
