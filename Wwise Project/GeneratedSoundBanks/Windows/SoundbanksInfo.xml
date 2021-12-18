@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1312091034">
+		<SoundBank Id="1355168291" Language="SFX" Hash="818096873">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -24,7 +24,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="771259970">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2913727104">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -303,6 +303,10 @@
 							<ShortName>music_boat_vamp_bridge_1.wav</ShortName>
 							<Path>SFX\music_boat_vamp_bridge_1_D79FB2B7.wem</Path>
 						</File>
+						<File Id="421281352" Language="SFX">
+							<ShortName>music_boat_alberti_chorus_1.wav</ShortName>
+							<Path>SFX\music_boat_alberti_chorus_1_D79FB2B7.wem</Path>
+						</File>
 						<File Id="441135101" Language="SFX">
 							<ShortName>music_boat_bassline_1.wav</ShortName>
 							<Path>SFX\music_boat_bassline_1_D79FB2B7.wem</Path>
@@ -339,6 +343,10 @@
 							<ShortName>music_boat_countermelody_1.wav</ShortName>
 							<Path>SFX\music_boat_countermelody_1_D79FB2B7.wem</Path>
 						</File>
+						<File Id="847061519" Language="SFX">
+							<ShortName>music_boat_alberti_1.wav</ShortName>
+							<Path>SFX\music_boat_alberti_1_D79FB2B7.wem</Path>
+						</File>
 						<File Id="853425278" Language="SFX">
 							<ShortName>music_boat_countermelody_2.wav</ShortName>
 							<Path>SFX\music_boat_countermelody_2_D79FB2B7.wem</Path>
@@ -360,11 +368,13 @@
 										<File Id="256195239"/>
 										<File Id="348634579"/>
 										<File Id="411610687"/>
+										<File Id="421281352"/>
 										<File Id="544473361"/>
 										<File Id="683807433"/>
 										<File Id="791546088"/>
 										<File Id="801151112"/>
 										<File Id="813604374"/>
+										<File Id="847061519"/>
 										<File Id="1046108589"/>
 										<File Id="1046767504"/>
 									</Media>
@@ -378,6 +388,7 @@
 										<File Id="256195239"/>
 										<File Id="348634579"/>
 										<File Id="411610687"/>
+										<File Id="421281352"/>
 										<File Id="441135101"/>
 										<File Id="544473361"/>
 										<File Id="683807433"/>
@@ -385,6 +396,7 @@
 										<File Id="801151112"/>
 										<File Id="813604374"/>
 										<File Id="843600277"/>
+										<File Id="847061519"/>
 										<File Id="853425278"/>
 										<File Id="1046108589"/>
 										<File Id="1046767504"/>
@@ -401,6 +413,7 @@
 										<File Id="256195239"/>
 										<File Id="348634579"/>
 										<File Id="411610687"/>
+										<File Id="421281352"/>
 										<File Id="441135101"/>
 										<File Id="544473361"/>
 										<File Id="552614302"/>
@@ -409,6 +422,7 @@
 										<File Id="801151112"/>
 										<File Id="813604374"/>
 										<File Id="843600277"/>
+										<File Id="847061519"/>
 										<File Id="853425278"/>
 										<File Id="1046108589"/>
 										<File Id="1046767504"/>

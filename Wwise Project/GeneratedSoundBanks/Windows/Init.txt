@@ -28,7 +28,7 @@ State	ID	Name	State Group			Notes
 	2066668302	Entered	Room_Corridor			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	376481985	BoxHeld	BoxState	\Master-Mixer Hierarchy\Default Work Unit\Music Bus\_Music		
+	376481985	BoxHeld	BoxState	\Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base Music		
 	683257782	BoxHeld	BoxState	\Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Holding Music		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -50,13 +50,15 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	57144414	Sound Effects Bus			\Default Work Unit\Sound Effects Bus	
 	628250272	Box Holding Music			\Default Work Unit\Music Bus\Interactions\Box Holding Music	
-	873411281	_Music			\Default Work Unit\Music Bus\_Music	
 	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
+	1315736911	Base Music			\Default Work Unit\Music Bus\Base Music	
 	2023061728	Boat Vamp Music			\Default Work Unit\Music Bus\Boat\Boat Vamp Music	
 	2544947825	Box Ambience Music			\Default Work Unit\Music Bus\Interactions\Box Ambience Music	
+	2916495418	KicksnareEQ Bus			\Default Work Unit\Music Bus\Base Music\KicksnareEQ Bus	
 	3127962312	Music Bus			\Default Work Unit\Music Bus	
 
 Effect plug-ins	ID	Name	Type				Notes
+	2688083296	KicksnareEQ	Wwise Parametric EQ			
 	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes

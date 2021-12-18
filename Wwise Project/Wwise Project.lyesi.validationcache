@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="103">
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Wwise Project.wproj" DateLow="1634746562" DateHigh="0"/>
-	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Wwise Project.lyesi.wsettings" DateLow="1637686654" DateHigh="0"/>
+	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Wwise Project.lyesi.wsettings" DateLow="1639861893" DateHigh="0"/>
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Virtual Acoustics\Factory Acoustic Textures.wwu" DateLow="1634548296" DateHigh="0"/>
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Virtual Acoustics\Default Work Unit.wwu" DateLow="1634745302" DateHigh="0"/>
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Triggers\Default Work Unit.wwu" DateLow="1636938770" DateHigh="0"/>
@@ -18,7 +18,7 @@
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Mixing Sessions\Default Work Unit.wwu" DateLow="1634745302" DateHigh="0"/>
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Metadata\Default Work Unit.wwu" DateLow="1634745302" DateHigh="0"/>
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1637764379" DateHigh="0"/>
-	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1637764674" DateHigh="0"/>
+	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1639854658" DateHigh="0"/>
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1634548322" DateHigh="0"/>
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Game Parameters\Factory Motion.wwu" DateLow="1634548323" DateHigh="0"/>
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Game Parameters\Default Work Unit.wwu" DateLow="1637684856" DateHigh="0"/>

@@ -303,11 +303,11 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585638425056676337
+    m_lastTime: -8585617432546484265
     List:
-    - name: _Music
+    - name: Base Music
       guid: f8400540ecc8c44394331a34a8a64f68
-      id: 873411281
+      id: 1315736911
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -318,10 +318,10 @@ MonoBehaviour:
       - ElementName: Music Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: _Music
+      - ElementName: Base Music
         ObjectType: 2
         guid: f8400540ecc8c44394331a34a8a64f68
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\_Music
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base Music
     - name: Boat
       guid: d2d22cc3a13afe4f977f7873b1dfbee8
       id: 1795056175
@@ -401,6 +401,23 @@ MonoBehaviour:
         guid: 7178a0cb03d21c4b8c86f221ddc3b242
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Holding
         Music
+    - name: Instruments
+      guid: 600451862cb6874bbbc59562f60a3c21
+      id: 559901361
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Instruments
+        ObjectType: 4
+        guid: 600451862cb6874bbbc59562f60a3c21
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Instruments
     - name: Interactions
       guid: cb3a9d8e2cd15247ba59caa62a044962
       id: 888201102
@@ -418,6 +435,27 @@ MonoBehaviour:
         ObjectType: 4
         guid: cb3a9d8e2cd15247ba59caa62a044962
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions
+    - name: KicksnareEQ Bus
+      guid: 22d7906c0b44b44891074f218307cba6
+      id: 2916495418
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Base Music
+        ObjectType: 2
+        guid: f8400540ecc8c44394331a34a8a64f68
+      - ElementName: KicksnareEQ Bus
+        ObjectType: 2
+        guid: 22d7906c0b44b44891074f218307cba6
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base Music\KicksnareEQ
+        Bus
     - name: Motion Factory Bus
       guid: c6b9f92af16ee946b5f2e30c9e602c74
       id: 985987111

@@ -1499,7 +1499,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="_Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+							<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1906,7 +1906,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="_Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+											<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2439,6 +2439,13 @@
 																<MediaID ID="544473361"/>
 															</MediaIDList>
 														</AudioFileSource>
+														<AudioFileSource Name="music_boat_alberti_1" ID="{7A52B3E9-EFFD-4EAC-BDA0-192468CB2057}">
+															<Language>SFX</Language>
+															<AudioFile>music_boat_alberti_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="847061519"/>
+															</MediaIDList>
+														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
 														<MusicTransition Name="Root" ID="{FEEA2DF1-4B55-4CC5-A4D7-CD0A6E9AA38C}">
@@ -2479,6 +2486,33 @@
 															<Reference>
 																<Local>
 																	<MusicTrackSequence Name="" ID="{CD2D6BFB-D8AB-4C48-ACBA-9DA6DE44C4A3}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="music_boat_alberti_1" ID="{A37C7A9A-36D3-4B48-80A8-A4A3E034912A}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11006.2585034014"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="music_boat_alberti_1" ID="{7A52B3E9-EFFD-4EAC-BDA0-192468CB2057}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																		<ReferenceList>
+																			<Reference Name="TrackSequenceSwitch">
+																				<ObjectRef Name="Enabled" ID="{556C6E51-2F20-435E-9A52-BDDC2426B7A9}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{D48BC3CF-9911-4501-ABB9-971B66C7687E}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
@@ -2553,18 +2587,6 @@
 																				</Reference>
 																			</ObjectList>
 																		</ObjectLists>
-																		<ReferenceList>
-																			<Reference Name="TrackSequenceSwitch">
-																				<ObjectRef Name="Enabled" ID="{556C6E51-2F20-435E-9A52-BDDC2426B7A9}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
-																			</Reference>
-																		</ReferenceList>
-																	</MusicTrackSequence>
-																</Local>
-															</Reference>
-															<Reference>
-																<Local>
-																	<MusicTrackSequence Name="" ID="{D48BC3CF-9911-4501-ABB9-971B66C7687E}">
-																		<ObjectLists/>
 																		<ReferenceList>
 																			<Reference Name="TrackSequenceSwitch">
 																				<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -2820,7 +2842,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="_Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -3147,6 +3169,13 @@
 																<MediaID ID="411610687"/>
 															</MediaIDList>
 														</AudioFileSource>
+														<AudioFileSource Name="music_boat_alberti_chorus_1" ID="{41BD68A9-906C-4A0C-A4F6-FA330C32F172}">
+															<Language>SFX</Language>
+															<AudioFile>music_boat_alberti_chorus_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="421281352"/>
+															</MediaIDList>
+														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
 														<MusicTransition Name="Root" ID="{4DA3E51A-4F7D-4EF7-8477-0C2CB8851802}">
@@ -3191,13 +3220,13 @@
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="music_boat_vamp_bridge_1" ID="{0306C0EA-1303-4C7A-A7DB-E06E5EB03A73}">
+																						<MusicClip Name="music_boat_alberti_chorus_1" ID="{E898F7D1-722F-4530-BDB9-75B547D9C188}">
 																							<PropertyList>
-																								<Property Name="EndTrimOffset" Type="Real64" Value="11524.9886621315"/>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11550"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
 																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="music_boat_vamp_bridge_1" ID="{00EE55C4-E4B6-4864-93C1-D97FC9CFB948}"/>
+																							<AudioSourceRef Name="music_boat_alberti_chorus_1" ID="{41BD68A9-906C-4A0C-A4F6-FA330C32F172}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -3214,7 +3243,22 @@
 															<Reference>
 																<Local>
 																	<MusicTrackSequence Name="" ID="{6C924CE0-EE2F-4116-A271-C3F4CB4D60C3}">
-																		<ObjectLists/>
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="music_boat_vamp_bridge_1" ID="{0306C0EA-1303-4C7A-A7DB-E06E5EB03A73}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11524.9886621315"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="music_boat_vamp_bridge_1" ID="{00EE55C4-E4B6-4864-93C1-D97FC9CFB948}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
 																		<ReferenceList>
 																			<Reference Name="TrackSequenceSwitch">
 																				<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -3470,7 +3514,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="_Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -3797,6 +3841,13 @@
 																<MediaID ID="256195239"/>
 															</MediaIDList>
 														</AudioFileSource>
+														<AudioFileSource Name="music_boat_alberti_chorus_1" ID="{8FE9E6CB-7398-4E5E-B9F2-205D4C2A0FBF}">
+															<Language>SFX</Language>
+															<AudioFile>music_boat_alberti_chorus_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="421281352"/>
+															</MediaIDList>
+														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
 														<MusicTransition Name="Root" ID="{425537E8-A2E4-4C4E-AB8F-3D1BDBD59D5B}">
@@ -3841,13 +3892,13 @@
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="music_boat_vamp_bridge_2" ID="{E547097F-09C5-4601-9C7B-81D6178A8EA5}">
+																						<MusicClip Name="music_boat_alberti_chorus_1" ID="{5C9F1674-FE05-4D02-958A-EE5E8054CE74}">
 																							<PropertyList>
 																								<Property Name="EndTrimOffset" Type="Real64" Value="11550"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
 																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="music_boat_vamp_bridge_2" ID="{C91A5B63-3C4C-44EA-A2E1-A08B39658654}"/>
+																							<AudioSourceRef Name="music_boat_alberti_chorus_1" ID="{8FE9E6CB-7398-4E5E-B9F2-205D4C2A0FBF}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -3864,7 +3915,22 @@
 															<Reference>
 																<Local>
 																	<MusicTrackSequence Name="" ID="{4A508FD8-9057-4DA8-9C8A-7D4057A10A01}">
-																		<ObjectLists/>
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="music_boat_vamp_bridge_2" ID="{E547097F-09C5-4601-9C7B-81D6178A8EA5}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11550"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="music_boat_vamp_bridge_2" ID="{C91A5B63-3C4C-44EA-A2E1-A08B39658654}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
 																		<ReferenceList>
 																			<Reference Name="TrackSequenceSwitch">
 																				<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -4170,7 +4236,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="_Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+											<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -4209,6 +4275,13 @@
 															<AudioFile>music_boat_vamp_1.wav</AudioFile>
 															<MediaIDList>
 																<MediaID ID="544473361"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="music_boat_alberti_1" ID="{DD22A236-11EF-4E12-B12F-0CF8628C30A6}">
+															<Language>SFX</Language>
+															<AudioFile>music_boat_alberti_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="847061519"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -4251,6 +4324,33 @@
 															<Reference>
 																<Local>
 																	<MusicTrackSequence Name="" ID="{6C720D3A-5DC3-4C05-965A-55B78521FCA1}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="music_boat_alberti_1" ID="{59851FD4-A682-4F9D-9477-F0215B41B89A}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11006.2585034014"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="music_boat_alberti_1" ID="{DD22A236-11EF-4E12-B12F-0CF8628C30A6}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																		<ReferenceList>
+																			<Reference Name="TrackSequenceSwitch">
+																				<ObjectRef Name="Enabled" ID="{556C6E51-2F20-435E-9A52-BDDC2426B7A9}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{DB79561F-98A8-47FC-BD9B-129C0A0EEA45}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
@@ -4325,18 +4425,6 @@
 																				</Reference>
 																			</ObjectList>
 																		</ObjectLists>
-																		<ReferenceList>
-																			<Reference Name="TrackSequenceSwitch">
-																				<ObjectRef Name="Enabled" ID="{556C6E51-2F20-435E-9A52-BDDC2426B7A9}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
-																			</Reference>
-																		</ReferenceList>
-																	</MusicTrackSequence>
-																</Local>
-															</Reference>
-															<Reference>
-																<Local>
-																	<MusicTrackSequence Name="" ID="{DB79561F-98A8-47FC-BD9B-129C0A0EEA45}">
-																		<ObjectLists/>
 																		<ReferenceList>
 																			<Reference Name="TrackSequenceSwitch">
 																				<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -4934,7 +5022,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="_Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -4960,6 +5048,13 @@
 															<AudioFile>music_boat_vamp_bridge_1.wav</AudioFile>
 															<MediaIDList>
 																<MediaID ID="411610687"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="music_boat_alberti_chorus_1" ID="{347DFD83-5D34-468F-B3C5-63768F8EE0D5}">
+															<Language>SFX</Language>
+															<AudioFile>music_boat_alberti_chorus_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="421281352"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -5006,13 +5101,13 @@
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="music_boat_vamp_bridge_1" ID="{74A615CA-E758-4A1A-BF8A-807A0154E8A8}">
+																						<MusicClip Name="music_boat_alberti_chorus_1" ID="{5CDB608F-C0FB-47A7-86C5-DA35C11B92A1}">
 																							<PropertyList>
-																								<Property Name="EndTrimOffset" Type="Real64" Value="11524.9886621315"/>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11550"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
 																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="music_boat_vamp_bridge_1" ID="{69BD0601-E40D-4B9E-ADF8-7B4E715100BA}"/>
+																							<AudioSourceRef Name="music_boat_alberti_chorus_1" ID="{347DFD83-5D34-468F-B3C5-63768F8EE0D5}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -5029,7 +5124,22 @@
 															<Reference>
 																<Local>
 																	<MusicTrackSequence Name="" ID="{87202B0A-61D6-4D2C-9996-D223548C042F}">
-																		<ObjectLists/>
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="music_boat_vamp_bridge_1" ID="{74A615CA-E758-4A1A-BF8A-807A0154E8A8}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11524.9886621315"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="music_boat_vamp_bridge_1" ID="{69BD0601-E40D-4B9E-ADF8-7B4E715100BA}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
 																		<ReferenceList>
 																			<Reference Name="TrackSequenceSwitch">
 																				<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -5443,7 +5553,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="_Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -5469,6 +5579,13 @@
 															<AudioFile>music_boat_vamp_bridge_2.wav</AudioFile>
 															<MediaIDList>
 																<MediaID ID="256195239"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="music_boat_alberti_chorus_1" ID="{EE7458EC-D1EE-4E58-AD24-5A1D5F2FA386}">
+															<Language>SFX</Language>
+															<AudioFile>music_boat_alberti_chorus_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="421281352"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -5515,13 +5632,13 @@
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="music_boat_vamp_bridge_2" ID="{18558671-9004-4E0E-AE4B-DF21BFD9E27D}">
+																						<MusicClip Name="music_boat_alberti_chorus_1" ID="{82502613-4A23-446E-905E-ABE7929FDF30}">
 																							<PropertyList>
 																								<Property Name="EndTrimOffset" Type="Real64" Value="11550"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
 																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="music_boat_vamp_bridge_2" ID="{C5E23EEB-48DD-46D5-AE02-9BA46D4D9D2E}"/>
+																							<AudioSourceRef Name="music_boat_alberti_chorus_1" ID="{EE7458EC-D1EE-4E58-AD24-5A1D5F2FA386}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -5538,7 +5655,22 @@
 															<Reference>
 																<Local>
 																	<MusicTrackSequence Name="" ID="{E322747A-A702-42FB-977A-EF453C403F1B}">
-																		<ObjectLists/>
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="music_boat_vamp_bridge_2" ID="{18558671-9004-4E0E-AE4B-DF21BFD9E27D}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11550"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="music_boat_vamp_bridge_2" ID="{C5E23EEB-48DD-46D5-AE02-9BA46D4D9D2E}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
 																		<ReferenceList>
 																			<Reference Name="TrackSequenceSwitch">
 																				<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -6002,7 +6134,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="_Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+											<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -6535,6 +6667,13 @@
 																<MediaID ID="544473361"/>
 															</MediaIDList>
 														</AudioFileSource>
+														<AudioFileSource Name="music_boat_alberti_1" ID="{E778F07D-F892-4E09-BF9C-86C37194C506}">
+															<Language>SFX</Language>
+															<AudioFile>music_boat_alberti_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="847061519"/>
+															</MediaIDList>
+														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
 														<MusicTransition Name="Root" ID="{D68F45B6-55E7-4836-B4C4-70F84063597E}">
@@ -6575,6 +6714,33 @@
 															<Reference>
 																<Local>
 																	<MusicTrackSequence Name="" ID="{655C49F5-C27B-45EE-8B06-408B26E261AD}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="music_boat_alberti_1" ID="{3C4189D9-E0C0-43B5-B7C2-3D16AC7CBF47}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11006.2585034014"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="music_boat_alberti_1" ID="{E778F07D-F892-4E09-BF9C-86C37194C506}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																		<ReferenceList>
+																			<Reference Name="TrackSequenceSwitch">
+																				<ObjectRef Name="Enabled" ID="{556C6E51-2F20-435E-9A52-BDDC2426B7A9}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{FFB997FA-245C-4050-BEE7-CB7CC1E4C29C}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
@@ -6649,18 +6815,6 @@
 																				</Reference>
 																			</ObjectList>
 																		</ObjectLists>
-																		<ReferenceList>
-																			<Reference Name="TrackSequenceSwitch">
-																				<ObjectRef Name="Enabled" ID="{556C6E51-2F20-435E-9A52-BDDC2426B7A9}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
-																			</Reference>
-																		</ReferenceList>
-																	</MusicTrackSequence>
-																</Local>
-															</Reference>
-															<Reference>
-																<Local>
-																	<MusicTrackSequence Name="" ID="{FFB997FA-245C-4050-BEE7-CB7CC1E4C29C}">
-																		<ObjectLists/>
 																		<ReferenceList>
 																			<Reference Name="TrackSequenceSwitch">
 																				<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -6888,10 +7042,11 @@
 												<MusicTrack Name="music_boat_kicksnare_1" ID="{E4E8ABA3-5263-4254-9803-F0B44A73F999}" ShortID="951066661">
 													<PropertyList>
 														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="KicksnareEQ Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -7201,7 +7356,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="_Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -7528,6 +7683,13 @@
 																<MediaID ID="411610687"/>
 															</MediaIDList>
 														</AudioFileSource>
+														<AudioFileSource Name="music_boat_alberti_chorus_1" ID="{DF0D9866-6993-4F7F-A3E3-AD39E1F6ABD2}">
+															<Language>SFX</Language>
+															<AudioFile>music_boat_alberti_chorus_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="421281352"/>
+															</MediaIDList>
+														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
 														<MusicTransition Name="Root" ID="{731AD138-886D-48CE-B882-2313A4286B5C}">
@@ -7572,13 +7734,13 @@
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="music_boat_vamp_bridge_1" ID="{D4068D49-57DC-40A5-92FC-A68AD11B6AF2}">
+																						<MusicClip Name="music_boat_alberti_chorus_1" ID="{D8E2F975-2EAD-4416-ADAF-2DCB0852675A}">
 																							<PropertyList>
-																								<Property Name="EndTrimOffset" Type="Real64" Value="11524.9886621315"/>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11550"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
 																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="music_boat_vamp_bridge_1" ID="{3A69100A-FD7C-4416-BC8B-EE96EFA3E7DF}"/>
+																							<AudioSourceRef Name="music_boat_alberti_chorus_1" ID="{DF0D9866-6993-4F7F-A3E3-AD39E1F6ABD2}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -7595,7 +7757,22 @@
 															<Reference>
 																<Local>
 																	<MusicTrackSequence Name="" ID="{D68340B0-043B-427A-AA35-0124B68FB25A}">
-																		<ObjectLists/>
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="music_boat_vamp_bridge_1" ID="{D4068D49-57DC-40A5-92FC-A68AD11B6AF2}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11524.9886621315"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="music_boat_vamp_bridge_1" ID="{3A69100A-FD7C-4416-BC8B-EE96EFA3E7DF}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
 																		<ReferenceList>
 																			<Reference Name="TrackSequenceSwitch">
 																				<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -7821,9 +7998,12 @@
 													</ObjectLists>
 												</MusicTrack>
 												<MusicTrack Name="music_boat_kicksnare_chorus" ID="{DB79F06B-8E9F-4A3B-B955-E4AC3FA9C110}" ShortID="976069627">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="KicksnareEQ Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -7901,7 +8081,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="_Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -8228,6 +8408,13 @@
 																<MediaID ID="256195239"/>
 															</MediaIDList>
 														</AudioFileSource>
+														<AudioFileSource Name="music_boat_alberti_chorus_1" ID="{BFCB801F-9B22-4BE2-9B0E-C637D1CFC9C5}">
+															<Language>SFX</Language>
+															<AudioFile>music_boat_alberti_chorus_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="421281352"/>
+															</MediaIDList>
+														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
 														<MusicTransition Name="Root" ID="{CD1DC086-99FA-4660-B9EE-13AC6C830123}">
@@ -8272,13 +8459,13 @@
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="music_boat_vamp_bridge_2" ID="{FF9DB8D3-A0B0-4F98-A8D5-4B6867F5DF0E}">
+																						<MusicClip Name="music_boat_alberti_chorus_1" ID="{F0E28A3C-5E67-496B-BCA9-55B2C3299DA3}">
 																							<PropertyList>
 																								<Property Name="EndTrimOffset" Type="Real64" Value="11550"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
 																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="music_boat_vamp_bridge_2" ID="{1E2ECD33-618C-4D8B-9896-10A1540DE6A9}"/>
+																							<AudioSourceRef Name="music_boat_alberti_chorus_1" ID="{BFCB801F-9B22-4BE2-9B0E-C637D1CFC9C5}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -8295,7 +8482,22 @@
 															<Reference>
 																<Local>
 																	<MusicTrackSequence Name="" ID="{31DE84C9-4433-44C4-B044-F13537EBE9D9}">
-																		<ObjectLists/>
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="music_boat_vamp_bridge_2" ID="{FF9DB8D3-A0B0-4F98-A8D5-4B6867F5DF0E}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11550"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="music_boat_vamp_bridge_2" ID="{1E2ECD33-618C-4D8B-9896-10A1540DE6A9}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
 																		<ReferenceList>
 																			<Reference Name="TrackSequenceSwitch">
 																				<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -8521,12 +8723,15 @@
 													</ObjectLists>
 												</MusicTrack>
 												<MusicTrack Name="music_boat_kicksnare_chorus" ID="{64B80F17-BD50-4EE3-90C0-B99C53A38295}" ShortID="299740393">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="_Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="KicksnareEQ Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -8681,7 +8886,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="_Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
