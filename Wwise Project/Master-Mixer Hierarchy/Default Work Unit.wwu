@@ -18,16 +18,6 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
-							<ChildrenList>
-								<Bus Name="KicksnareEQ Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}">
-									<ReferenceList>
-										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-											<ObjectRef Name="KicksnareEQ" ID="{60DBC306-4A10-41A6-89C9-3D479A0DCADA}" WorkUnitID="{F5841E83-69EA-445F-86D8-2C3991F90FE3}"/>
-										</Reference>
-									</ReferenceList>
-									<ObjectLists/>
-								</Bus>
-							</ChildrenList>
 							<StateInfo>
 								<StatePropertyList>
 									<Property Name="BusVolume"/>
@@ -62,6 +52,14 @@
 									</PropertyList>
 									<ObjectLists/>
 								</Bus>
+								<Bus Name="KicksnareEQ Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="KicksnareEQ" ID="{60DBC306-4A10-41A6-89C9-3D479A0DCADA}" WorkUnitID="{F5841E83-69EA-445F-86D8-2C3991F90FE3}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Bus>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Interactions" ID="{8E9D3ACB-D12C-4752-BA59-CAA62A044962}" ShortID="78413416">
@@ -70,7 +68,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

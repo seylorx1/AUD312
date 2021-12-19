@@ -54,7 +54,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1315736911	Base Music			\Default Work Unit\Music Bus\Base Music	
 	2023061728	Boat Vamp Music			\Default Work Unit\Music Bus\Boat\Boat Vamp Music	
 	2544947825	Box Ambience Music			\Default Work Unit\Music Bus\Interactions\Box Ambience Music	
-	2916495418	KicksnareEQ Bus			\Default Work Unit\Music Bus\Base Music\KicksnareEQ Bus	
+	2916495418	KicksnareEQ Bus			\Default Work Unit\Music Bus\Boat\KicksnareEQ Bus	
 	3127962312	Music Bus			\Default Work Unit\Music Bus	
 
 Effect plug-ins	ID	Name	Type				Notes

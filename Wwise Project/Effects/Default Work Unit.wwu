@@ -6,7 +6,6 @@
 				<Effect Name="KicksnareEQ" ID="{60DBC306-4A10-41A6-89C9-3D479A0DCADA}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 					<PropertyList>
 						<Property Name="GainBand1" Type="Real32" Value="4"/>
-						<Property Name="OutputLevel" Type="Real32" Value="6"/>
 					</PropertyList>
 				</Effect>
 			</ChildrenList>

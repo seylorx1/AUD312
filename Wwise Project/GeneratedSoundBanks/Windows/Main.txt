@@ -24,12 +24,15 @@ Switch	ID	Name	Switch Group			Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1038281861	BoxOpeningStingerState			\Default Work Unit\Music\BoxOpeningStingerState	
+	1363879777	HarpoonState			\Default Work Unit\Interactions\HarpoonState	
 	1941896134	Room_C			\Default Work Unit\Rooms\Room_C	
 	1941896135	Room_B			\Default Work Unit\Rooms\Room_B	
 
 State	ID	Name	State Group			Notes
 	748895195	None	BoxOpeningStingerState			
 	3791155954	Muted	BoxOpeningStingerState			
+	515864255	HarpoonHeld	HarpoonState			
+	748895195	None	HarpoonState			
 	748895195	None	Room_C			
 	2764605217	Passed	Room_C			
 	748895195	None	Room_B			
@@ -102,5 +105,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1008776830	sfx_footstep_toe_concrete_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\sfx_footstep_concrete\toe\sfx_footstep_toe_concrete_02		15852
 	1046108589	music_boat_hats_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_hats_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\Room_A (Loop)\Room_A\music_boat_hats_1		872204
 	1046767504	music_boat_counterblob_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_counterblob_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\Room_A (Loop)\Room_A\music_boat_counterblob_1		3842340
+	1048122433	music_boat_melody_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_melody_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\Room_C (Loop)\Room_C\music_boat_melody_1		1297772
 	1068978669	sfx_footstep_heel_concrete_05	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\sfx_footstep_concrete\heel\sfx_footstep_heel_concrete_05		8884
 
