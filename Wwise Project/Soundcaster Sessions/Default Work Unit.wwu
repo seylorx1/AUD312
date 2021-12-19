@@ -67,7 +67,7 @@
 						<CurrentStateRef Name="Passed" ID="{5B851545-24BC-4022-8588-F9946FE0E763}"/>
 						<CurrentStateRef Name="Passed" ID="{D06C60D8-9FF5-4474-897E-D7DD6F79A673}"/>
 						<CurrentStateRef Name="HarpoonHeld" ID="{801A23EA-9585-4040-B632-EAA67C533806}"/>
-						<CurrentStateRef Name="None" ID="{4AE4BC50-E22D-4B68-ABCD-A676538D3845}"/>
+						<CurrentStateRef Name="Muted" ID="{4D12F6FF-B7BE-42A8-AE76-49832BECE1DA}"/>
 						<CurrentStateRef Name="None" ID="{8717C20B-71BC-4F3A-81F3-657F374E86E2}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

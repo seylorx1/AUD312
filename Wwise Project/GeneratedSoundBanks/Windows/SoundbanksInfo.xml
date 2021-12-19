@@ -24,7 +24,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="276301147">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2129861796">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -291,17 +291,9 @@
 							<ShortName>music_boat_kicksnare_chorus.wav</ShortName>
 							<Path>SFX\music_boat_kicksnare_chorus_D79FB2B7.wem</Path>
 						</File>
-						<File Id="256195239" Language="SFX">
-							<ShortName>music_boat_vamp_bridge_2.wav</ShortName>
-							<Path>SFX\music_boat_vamp_bridge_2_D79FB2B7.wem</Path>
-						</File>
 						<File Id="348634579" Language="SFX">
 							<ShortName>music_boat_blob_1.wav</ShortName>
 							<Path>SFX\music_boat_blob_1_D79FB2B7.wem</Path>
-						</File>
-						<File Id="411610687" Language="SFX">
-							<ShortName>music_boat_vamp_bridge_1.wav</ShortName>
-							<Path>SFX\music_boat_vamp_bridge_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="421281352" Language="SFX">
 							<ShortName>music_boat_alberti_chorus_1.wav</ShortName>
@@ -331,10 +323,6 @@
 							<ShortName>music_boat_boxholding_2.wav</ShortName>
 							<Path>SFX\music_boat_boxholding_2_D79FB2B7.wem</Path>
 						</File>
-						<File Id="801151112" Language="SFX">
-							<ShortName>music_boat_hats_bridge.wav</ShortName>
-							<Path>SFX\music_boat_hats_bridge_D79FB2B7.wem</Path>
-						</File>
 						<File Id="813604374" Language="SFX">
 							<ShortName>music_boat_boxholding_3.wav</ShortName>
 							<Path>SFX\music_boat_boxholding_3_D79FB2B7.wem</Path>
@@ -351,6 +339,14 @@
 							<ShortName>music_boat_countermelody_2.wav</ShortName>
 							<Path>SFX\music_boat_countermelody_2_D79FB2B7.wem</Path>
 						</File>
+						<File Id="913142023" Language="SFX">
+							<ShortName>music_boat_vamp_chorus_1.wav</ShortName>
+							<Path>SFX\music_boat_vamp_chorus_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="966247712" Language="SFX">
+							<ShortName>music_boat_hats_chorus.wav</ShortName>
+							<Path>SFX\music_boat_hats_chorus_D79FB2B7.wem</Path>
+						</File>
 						<File Id="1046108589" Language="SFX">
 							<ShortName>music_boat_hats_1.wav</ShortName>
 							<Path>SFX\music_boat_hats_1_D79FB2B7.wem</Path>
@@ -363,6 +359,10 @@
 							<ShortName>music_boat_melody_1.wav</ShortName>
 							<Path>SFX\music_boat_melody_1_D79FB2B7.wem</Path>
 						</File>
+						<File Id="1055394232" Language="SFX">
+							<ShortName>music_boat_vamp_chorus_2.wav</ShortName>
+							<Path>SFX\music_boat_vamp_chorus_2_D79FB2B7.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{E604430D-8069-4F71-9B77-F5EA3F936052}">
@@ -371,18 +371,18 @@
 									<Children>
 										<SwitchContainer SwitchValue="{C588DF7E-B70F-4E2A-9BBA-8BDBBAA976D1}">
 											<Media>
-												<File Id="256195239"/>
 												<File Id="348634579"/>
-												<File Id="411610687"/>
 												<File Id="421281352"/>
 												<File Id="544473361"/>
 												<File Id="683807433"/>
 												<File Id="791546088"/>
-												<File Id="801151112"/>
 												<File Id="813604374"/>
 												<File Id="847061519"/>
+												<File Id="913142023"/>
+												<File Id="966247712"/>
 												<File Id="1046108589"/>
 												<File Id="1046767504"/>
+												<File Id="1055394232"/>
 											</Media>
 										</SwitchContainer>
 									</Children>
@@ -395,21 +395,21 @@
 									<Children>
 										<SwitchContainer SwitchValue="{C588DF7E-B70F-4E2A-9BBA-8BDBBAA976D1}">
 											<Media>
-												<File Id="256195239"/>
 												<File Id="348634579"/>
-												<File Id="411610687"/>
 												<File Id="421281352"/>
 												<File Id="441135101"/>
 												<File Id="544473361"/>
 												<File Id="683807433"/>
 												<File Id="791546088"/>
-												<File Id="801151112"/>
 												<File Id="813604374"/>
 												<File Id="843600277"/>
 												<File Id="847061519"/>
 												<File Id="853425278"/>
+												<File Id="913142023"/>
+												<File Id="966247712"/>
 												<File Id="1046108589"/>
 												<File Id="1046767504"/>
+												<File Id="1055394232"/>
 											</Media>
 										</SwitchContainer>
 									</Children>
@@ -424,23 +424,23 @@
 											<Media>
 												<File Id="47062023"/>
 												<File Id="229936893"/>
-												<File Id="256195239"/>
 												<File Id="348634579"/>
-												<File Id="411610687"/>
 												<File Id="421281352"/>
 												<File Id="441135101"/>
 												<File Id="544473361"/>
 												<File Id="552614302"/>
 												<File Id="683807433"/>
 												<File Id="791546088"/>
-												<File Id="801151112"/>
 												<File Id="813604374"/>
 												<File Id="843600277"/>
 												<File Id="847061519"/>
 												<File Id="853425278"/>
+												<File Id="913142023"/>
+												<File Id="966247712"/>
 												<File Id="1046108589"/>
 												<File Id="1046767504"/>
 												<File Id="1048122433"/>
+												<File Id="1055394232"/>
 											</Media>
 										</SwitchContainer>
 									</Children>
@@ -455,22 +455,23 @@
 											<Media>
 												<File Id="47062023"/>
 												<File Id="229936893"/>
-												<File Id="256195239"/>
 												<File Id="348634579"/>
-												<File Id="411610687"/>
 												<File Id="421281352"/>
 												<File Id="441135101"/>
 												<File Id="544473361"/>
 												<File Id="552614302"/>
 												<File Id="683807433"/>
 												<File Id="791546088"/>
-												<File Id="801151112"/>
 												<File Id="813604374"/>
 												<File Id="843600277"/>
 												<File Id="847061519"/>
 												<File Id="853425278"/>
+												<File Id="913142023"/>
+												<File Id="966247712"/>
 												<File Id="1046108589"/>
 												<File Id="1046767504"/>
+												<File Id="1048122433"/>
+												<File Id="1055394232"/>
 											</Media>
 										</SwitchContainer>
 									</Children>
