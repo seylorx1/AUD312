@@ -12,6 +12,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	1941896135	Room_B			\Default Work Unit\Rooms\Room_B	
 	2558423223	BoxState			\Default Work Unit\Music\BoxState	
 	2968376717	Room_Corridor			\Default Work Unit\Rooms\Room_Corridor	
+	3156432362	WorldKeysEnabled			\Default Work Unit\Interactions\WorldKeysEnabled	
 
 State	ID	Name	State Group			Notes
 	748895195	None	BoxOpeningStingerState			
@@ -26,9 +27,12 @@ State	ID	Name	State Group			Notes
 	2060468149	BoxHeld	BoxState			
 	748895195	None	Room_Corridor			
 	2066668302	Entered	Room_Corridor			
+	748895195	None	WorldKeysEnabled			
+	4174102348	Enabled	WorldKeysEnabled			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	376481985	BoxHeld	BoxState	\Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base Music		
+	424739837	Enabled	WorldKeysEnabled	\Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\WorldKeys		
 	683257782	BoxHeld	BoxState	\Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Holding Music		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -51,6 +55,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	57144414	Sound Effects Bus			\Default Work Unit\Sound Effects Bus	
 	628250272	Box Holding Music			\Default Work Unit\Music Bus\Interactions\Box Holding Music	
 	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
+	1310325127	WorldKeys			\Default Work Unit\Sound Effects Bus\WorldKeys	
 	1315736911	Base Music			\Default Work Unit\Music Bus\Base Music	
 	2023061728	Boat Vamp Music			\Default Work Unit\Music Bus\Boat\Boat Vamp Music	
 	2544947825	Box Ambience Music			\Default Work Unit\Music Bus\Interactions\Box Ambience Music	
@@ -58,6 +63,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3127962312	Music Bus			\Default Work Unit\Music Bus	
 
 Effect plug-ins	ID	Name	Type				Notes
+	1588715066	Echoes_Linear	Wwise Delay			
 	2688083296	KicksnareEQ	Wwise Parametric EQ			
 	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
 

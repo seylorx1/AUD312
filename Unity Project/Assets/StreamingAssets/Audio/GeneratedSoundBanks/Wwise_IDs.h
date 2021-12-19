@@ -28,6 +28,21 @@ namespace AK
         static const AkUniqueID HARPOONLOOPSTOP = 1264241620U;
         static const AkUniqueID HARPOONPICKUP = 2867011390U;
         static const AkUniqueID MUSICBOATPLAY = 3164150550U;
+        static const AkUniqueID WORLDKEY_A5 = 3724088773U;
+        static const AkUniqueID WORLDKEY_A6 = 3724088774U;
+        static const AkUniqueID WORLDKEY_B5 = 3774421660U;
+        static const AkUniqueID WORLDKEY_B6 = 3774421663U;
+        static const AkUniqueID WORLDKEY_C5 = 3757644067U;
+        static const AkUniqueID WORLDKEY_C6 = 3757644064U;
+        static const AkUniqueID WORLDKEY_D5 = 3807976954U;
+        static const AkUniqueID WORLDKEY_D6 = 3807976953U;
+        static const AkUniqueID WORLDKEY_E5 = 3791199241U;
+        static const AkUniqueID WORLDKEY_E6 = 3791199242U;
+        static const AkUniqueID WORLDKEY_F4 = 3841532097U;
+        static const AkUniqueID WORLDKEY_F5 = 3841532096U;
+        static const AkUniqueID WORLDKEY_F6 = 3841532099U;
+        static const AkUniqueID WORLDKEY_G4 = 3824754518U;
+        static const AkUniqueID WORLDKEY_G5 = 3824754519U;
     } // namespace EVENTS
 
     namespace STATES
@@ -98,6 +113,17 @@ namespace AK
             } // namespace STATE
         } // namespace ROOM_CORRIDOR
 
+        namespace WORLDKEYSENABLED
+        {
+            static const AkUniqueID GROUP = 3156432362U;
+
+            namespace STATE
+            {
+                static const AkUniqueID ENABLED = 4174102348U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace WORLDKEYSENABLED
+
     } // namespace STATES
 
     namespace SWITCHES
@@ -166,6 +192,7 @@ namespace AK
         static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
         static const AkUniqueID MUSIC_BUS = 3127962312U;
         static const AkUniqueID SOUND_EFFECTS_BUS = 57144414U;
+        static const AkUniqueID WORLDKEYS = 1310325127U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

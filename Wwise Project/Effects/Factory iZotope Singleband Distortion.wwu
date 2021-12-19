@@ -102,10 +102,11 @@
 				</Effect>
 				<Effect Name="Big_Guns_01" ID="{6AEE724E-CDA4-4A67-8CD8-DF1903F78ECC}" PluginName="iZotope Trash Distortion" CompanyID="259" PluginID="3" PluginType="3">
 					<PropertyList>
+						<Property Name="Distortion1InputGain" Type="Real32" Value="3"/>
 						<Property Name="Distortion1OutputGain" Type="Real32" Value="-3"/>
 						<Property Name="Distortion1Overdrive" Type="Real32" Value="8.5"/>
 						<Property Name="Distortion1Type" Type="int32" Value="3"/>
-						<Property Name="Distortion2Overdrive" Type="Real32" Value="4.5"/>
+						<Property Name="Distortion2Overdrive" Type="Real32" Value="10"/>
 						<Property Name="Distortion2Trash" Type="Real32" Value="0"/>
 						<Property Name="Distortion2Type" Type="int32" Value="19"/>
 					</PropertyList>

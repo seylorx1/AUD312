@@ -64,10 +64,11 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{94F93BFE-1007-4D09-8F59-B0A0253031DB}"/>
-						<CurrentStateRef Name="Passed" ID="{5B851545-24BC-4022-8588-F9946FE0E763}"/>
-						<CurrentStateRef Name="Passed" ID="{D06C60D8-9FF5-4474-897E-D7DD6F79A673}"/>
-						<CurrentStateRef Name="HarpoonHeld" ID="{801A23EA-9585-4040-B632-EAA67C533806}"/>
-						<CurrentStateRef Name="Muted" ID="{4D12F6FF-B7BE-42A8-AE76-49832BECE1DA}"/>
+						<CurrentStateRef Name="None" ID="{E604430D-8069-4F71-9B77-F5EA3F936052}"/>
+						<CurrentStateRef Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}"/>
+						<CurrentStateRef Name="None" ID="{19496866-5461-430E-A457-14160955E205}"/>
+						<CurrentStateRef Name="None" ID="{C588DF7E-B70F-4E2A-9BBA-8BDBBAA976D1}"/>
+						<CurrentStateRef Name="None" ID="{4AE4BC50-E22D-4B68-ABCD-A676538D3845}"/>
 						<CurrentStateRef Name="None" ID="{8717C20B-71BC-4F3A-81F3-657F374E86E2}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

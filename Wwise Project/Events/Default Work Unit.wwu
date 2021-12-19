@@ -3,51 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Box" ID="{89A922B5-9D00-4F6A-A792-0D2B12634E88}" ShortID="213983789">
-					<ChildrenList>
-						<Event Name="BoxPickup" ID="{06857BE9-12C1-43AD-8233-59D8E87C3F90}">
-							<ChildrenList>
-								<Action Name="" ID="{F7B9B358-C3FB-489C-950B-598247DAA7B5}" ShortID="917480513">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="35"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="BoxPickupStinger" ID="{40DDB438-E9B2-4C4B-9C9B-CE1AC9F941C2}" WorkUnitID="{AD869DB5-765D-4E16-82A5-67934B58A9C5}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="BoxDrop" ID="{C2FD5147-3990-4F1F-A576-87A4AE697A0A}">
-							<ChildrenList>
-								<Action Name="" ID="{3933FF8C-6FE6-4DE2-B068-C97835999AAC}" ShortID="549507226">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="35"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="BoxDropStinger" ID="{A2793689-B502-4218-9291-BC4674D43AF9}" WorkUnitID="{AD869DB5-765D-4E16-82A5-67934B58A9C5}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="BoxAmbiencePlay" ID="{F192BD75-CC9C-4940-8BA3-367206F95208}">
-							<ChildrenList>
-								<Action Name="" ID="{A92D4835-02BB-426C-81DF-870608BBBB70}" ShortID="439033250">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="music_boat_cube (Loop)" ID="{726A473F-F8FC-4D8B-9644-812599B48325}" WorkUnitID="{F25D41B2-87F8-4367-B70B-EA99533755FA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="PROTO" ID="{F93B74FE-BB64-443E-BF5E-7F5F90F4E4E8}" ShortID="817489252">
 					<ChildrenList>
 						<Event Name="PROTO_music_generic" ID="{2CAC2604-9D89-4485-BF80-EDFBD7B45DB7}">
@@ -67,191 +22,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="PROTO_music" ID="{65788AA7-08AC-4601-936F-2325AC5777CC}" WorkUnitID="{F25D41B2-87F8-4367-B70B-EA99533755FA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Harpoon" ID="{41E07C99-1932-41B8-9088-9666EC7DFD20}" ShortID="721530848">
-					<ChildrenList>
-						<Event Name="HarpoonPickup" ID="{63F2F81C-20F3-4E27-901D-621BBCDD6AFE}">
-							<ChildrenList>
-								<Action Name="" ID="{D9ED6E64-8B98-4D29-A2B0-B42A69F071E4}" ShortID="319833822">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="HarpoonHeld" ID="{801A23EA-9585-4040-B632-EAA67C533806}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="HarpoonLoopStart" ID="{DECE25C7-0139-4F72-9A70-8D27EF952A14}">
-							<ChildrenList>
-								<Action Name="" ID="{08F3D848-2B7E-4423-8540-819210892F11}" ShortID="309122942">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{D9ED3B48-0F24-442E-A7AE-4018BBCA05F0}" ShortID="238544720">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="HarpoonLoopStop" ID="{5732953F-80B2-4781-B968-4E50EEC5C759}">
-							<ChildrenList>
-								<Action Name="" ID="{C9B09BE3-559F-4563-80C2-107D40206BF7}" ShortID="576005387">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{AABE5F6F-18A1-4674-AED1-AB7E65F8D0A8}" ShortID="237573487">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{251D2580-CE22-486E-82FB-897DC6C3B6F3}" ShortID="459085329">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_harpoon_shoot_reel_heavyair" ID="{B020BC20-422A-4327-AFDA-A10B5A9FB672}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{5C477FCE-DD21-4D82-9C9E-440096949CD9}" ShortID="368791237">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{1499F79B-1435-444E-8F62-691B4ED378FE}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="HarpoonGrabSuccess" ID="{85C122A5-8DF1-4B8A-B960-1D4F57BFF71B}">
-							<ChildrenList>
-								<Action Name="" ID="{F144EBFC-632B-470A-86E6-714D1F735E3A}" ShortID="720835279">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{8869AD1B-6222-4CBF-85D6-4FB287F16F9E}" ShortID="364468449">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{D00B95FD-7500-42BE-8317-9B1D4BC46850}" ShortID="369946007">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_harpoon_shoot_reel_heavyair" ID="{B020BC20-422A-4327-AFDA-A10B5A9FB672}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{112226F4-92E8-4102-8EA5-6E0BF0D5F5C5}" ShortID="884086851">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{1499F79B-1435-444E-8F62-691B4ED378FE}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Footstep" ID="{CA5EE528-6A8A-47D7-89F4-415D53397B3A}" ShortID="282057399">
-					<ChildrenList>
-						<Event Name="FootstepPlay" ID="{0E37FD09-F0AC-430C-8AE2-C527280491B3}">
-							<ChildrenList>
-								<Action Name="" ID="{3CB983A9-C8D7-47F0-967B-C43547B68CB6}" ShortID="856770221">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Footsteps" ID="{D7D90EA6-372B-478E-8088-4DDC39B7F87B}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{36331A1B-CEB1-4ED8-8F18-7CAEAA1CC27C}" ShortID="690529339">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="VampCooldown" ID="{55CD68A3-358D-4235-9001-F46651CA0321}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{DD49337D-7E6C-4A84-8A45-22CBC3A5DB5D}" ShortID="860956073">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="Delay" Type="Real64" Value="0.3"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="VampCooldown" ID="{55CD68A3-358D-4235-9001-F46651CA0321}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="FootstepChange_Concrete" ID="{3E048638-8FB4-4090-A260-C6EC5D385D27}">
-							<ChildrenList>
-								<Action Name="" ID="{E23271E5-0B7D-4CC9-92AB-7C06AB5DCBD4}" ShortID="259661425">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="23"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Concrete" ID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="FootstepChange_Gravel" ID="{8C2A3A53-2BE5-42B0-927D-B2F47F12DCC9}">
-							<ChildrenList>
-								<Action Name="" ID="{1515F30A-8684-4BB9-95F5-D0288F396658}" ShortID="279565199">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="23"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Gravel" ID="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -368,6 +138,420 @@
 										</Event>
 									</ChildrenList>
 								</Folder>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{2F5C342C-D6B2-42A7-8F26-1EB6E1C6970A}" ShortID="168930370">
+					<ChildrenList>
+						<Folder Name="Harpoon" ID="{41E07C99-1932-41B8-9088-9666EC7DFD20}" ShortID="721530848">
+							<ChildrenList>
+								<Event Name="HarpoonPickup" ID="{63F2F81C-20F3-4E27-901D-621BBCDD6AFE}">
+									<ChildrenList>
+										<Action Name="" ID="{D9ED6E64-8B98-4D29-A2B0-B42A69F071E4}" ShortID="319833822">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HarpoonHeld" ID="{801A23EA-9585-4040-B632-EAA67C533806}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="HarpoonLoopStart" ID="{DECE25C7-0139-4F72-9A70-8D27EF952A14}">
+									<ChildrenList>
+										<Action Name="" ID="{08F3D848-2B7E-4423-8540-819210892F11}" ShortID="309122942">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{D9ED3B48-0F24-442E-A7AE-4018BBCA05F0}" ShortID="238544720">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="HarpoonLoopStop" ID="{5732953F-80B2-4781-B968-4E50EEC5C759}">
+									<ChildrenList>
+										<Action Name="" ID="{C9B09BE3-559F-4563-80C2-107D40206BF7}" ShortID="576005387">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{AABE5F6F-18A1-4674-AED1-AB7E65F8D0A8}" ShortID="237573487">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{251D2580-CE22-486E-82FB-897DC6C3B6F3}" ShortID="459085329">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_harpoon_shoot_reel_heavyair" ID="{B020BC20-422A-4327-AFDA-A10B5A9FB672}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{5C477FCE-DD21-4D82-9C9E-440096949CD9}" ShortID="368791237">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{1499F79B-1435-444E-8F62-691B4ED378FE}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="HarpoonGrabSuccess" ID="{85C122A5-8DF1-4B8A-B960-1D4F57BFF71B}">
+									<ChildrenList>
+										<Action Name="" ID="{F144EBFC-632B-470A-86E6-714D1F735E3A}" ShortID="720835279">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{8869AD1B-6222-4CBF-85D6-4FB287F16F9E}" ShortID="364468449">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{D00B95FD-7500-42BE-8317-9B1D4BC46850}" ShortID="369946007">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_harpoon_shoot_reel_heavyair" ID="{B020BC20-422A-4327-AFDA-A10B5A9FB672}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{112226F4-92E8-4102-8EA5-6E0BF0D5F5C5}" ShortID="884086851">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{1499F79B-1435-444E-8F62-691B4ED378FE}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Footstep" ID="{CA5EE528-6A8A-47D7-89F4-415D53397B3A}" ShortID="282057399">
+							<ChildrenList>
+								<Event Name="FootstepPlay" ID="{0E37FD09-F0AC-430C-8AE2-C527280491B3}">
+									<ChildrenList>
+										<Action Name="" ID="{3CB983A9-C8D7-47F0-967B-C43547B68CB6}" ShortID="856770221">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Footsteps" ID="{D7D90EA6-372B-478E-8088-4DDC39B7F87B}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{36331A1B-CEB1-4ED8-8F18-7CAEAA1CC27C}" ShortID="690529339">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VampCooldown" ID="{55CD68A3-358D-4235-9001-F46651CA0321}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{DD49337D-7E6C-4A84-8A45-22CBC3A5DB5D}" ShortID="860956073">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="Delay" Type="Real64" Value="0.3"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VampCooldown" ID="{55CD68A3-358D-4235-9001-F46651CA0321}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{22ABD07F-17D0-4FED-8E03-4C583FC25E1E}" ShortID="606999547">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+												<Property Name="Delay" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="FootstepChange_Concrete" ID="{3E048638-8FB4-4090-A260-C6EC5D385D27}">
+									<ChildrenList>
+										<Action Name="" ID="{E23271E5-0B7D-4CC9-92AB-7C06AB5DCBD4}" ShortID="259661425">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Concrete" ID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="FootstepChange_Gravel" ID="{8C2A3A53-2BE5-42B0-927D-B2F47F12DCC9}">
+									<ChildrenList>
+										<Action Name="" ID="{1515F30A-8684-4BB9-95F5-D0288F396658}" ShortID="279565199">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Gravel" ID="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Box" ID="{89A922B5-9D00-4F6A-A792-0D2B12634E88}" ShortID="213983789">
+							<ChildrenList>
+								<Event Name="BoxPickup" ID="{06857BE9-12C1-43AD-8233-59D8E87C3F90}">
+									<ChildrenList>
+										<Action Name="" ID="{F7B9B358-C3FB-489C-950B-598247DAA7B5}" ShortID="917480513">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="35"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BoxPickupStinger" ID="{40DDB438-E9B2-4C4B-9C9B-CE1AC9F941C2}" WorkUnitID="{AD869DB5-765D-4E16-82A5-67934B58A9C5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="BoxDrop" ID="{C2FD5147-3990-4F1F-A576-87A4AE697A0A}">
+									<ChildrenList>
+										<Action Name="" ID="{3933FF8C-6FE6-4DE2-B068-C97835999AAC}" ShortID="549507226">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="35"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BoxDropStinger" ID="{A2793689-B502-4218-9291-BC4674D43AF9}" WorkUnitID="{AD869DB5-765D-4E16-82A5-67934B58A9C5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="BoxAmbiencePlay" ID="{F192BD75-CC9C-4940-8BA3-367206F95208}">
+									<ChildrenList>
+										<Action Name="" ID="{A92D4835-02BB-426C-81DF-870608BBBB70}" ShortID="439033250">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="music_boat_cube (Loop)" ID="{726A473F-F8FC-4D8B-9644-812599B48325}" WorkUnitID="{F25D41B2-87F8-4367-B70B-EA99533755FA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="WorldKeys" ID="{398C8C9A-9058-4C7E-A335-7064B1A17648}" ShortID="846575601">
+							<ChildrenList>
+								<Event Name="WorldKey_F4" ID="{4FD662FB-161E-428B-AC44-B82D7505BC9A}">
+									<ChildrenList>
+										<Action Name="" ID="{C0C6D12F-5294-4B87-83CD-AC660FB3B87F}" ShortID="947933318">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_f4" ID="{B0039DDF-90D4-44B8-AD78-F5199386DABC}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_G4" ID="{372788A3-1DC2-46B9-B6E3-E9F6696C766A}">
+									<ChildrenList>
+										<Action Name="" ID="{B07C5FD2-12AF-46AB-8952-87C5D0F83F70}" ShortID="649038725">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_g4" ID="{BD881AB9-8F36-4E9E-A990-6FDA422B93E4}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_A5" ID="{776F4C77-0FE1-4CB4-AB30-8F6E34E6652E}">
+									<ChildrenList>
+										<Action Name="" ID="{C10BFE58-F15B-49AC-BFD4-0CB378E3E2E9}" ShortID="727924444">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_a5" ID="{BA4386E1-B27D-43A3-A443-67AB588794A7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_B5" ID="{04F56A5D-3113-44F3-8C02-2F7BCA9C0ABD}">
+									<ChildrenList>
+										<Action Name="" ID="{28E885EB-3132-4816-B383-C936E06FD4B0}" ShortID="965348002">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_b5" ID="{2044D457-47FD-4CD6-BF45-B4226B6BFD02}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_C5" ID="{7EFB9376-AC08-4942-AA26-A5CE5562B1BC}">
+									<ChildrenList>
+										<Action Name="" ID="{52807891-F27B-4BA0-A6DB-7775308E8B1B}" ShortID="829091760">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_c5" ID="{7803F16F-DE4A-4C8A-AB4A-911B1D771970}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_D5" ID="{614CC7CA-5015-4756-AAF7-0D4F526FC477}">
+									<ChildrenList>
+										<Action Name="" ID="{169C1E6C-470F-4072-BE44-EDA55CA9152F}" ShortID="538306530">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_d5" ID="{43554192-1D86-4A3F-B71E-03154ACA336C}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_E5" ID="{7B51615A-BED5-4157-A851-0BC6E4532FAD}">
+									<ChildrenList>
+										<Action Name="" ID="{ACC42795-A963-4E59-9191-8CC397BE6847}" ShortID="996428939">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_e5" ID="{458D1484-89F3-48D7-8D79-46105E5B4FE7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_F5" ID="{6C44FDD9-BA78-411D-BDDB-AC893DBDC0CA}">
+									<ChildrenList>
+										<Action Name="" ID="{CA19672D-B6B4-4F5F-A044-0550B80956FC}" ShortID="862756078">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_f5" ID="{C4CD7296-D6D4-4722-9C54-1F5F63F8831E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_G5" ID="{EE475BC5-6004-47F8-8BEE-AEEF254A4BFC}">
+									<ChildrenList>
+										<Action Name="" ID="{4998CCCD-9BA3-4FB3-A01E-A6EB77BBEAEF}" ShortID="481543197">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_g5" ID="{4848B163-6B50-428E-A0C9-F5BAB69AD647}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_A6" ID="{C070A0A9-4897-418F-A09C-D195522EB360}">
+									<ChildrenList>
+										<Action Name="" ID="{09F4A18D-F093-4B07-A966-7C281874381E}" ShortID="713258265">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_a6" ID="{7E25E32C-F927-488B-B321-45F64DA839FD}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_B6" ID="{89517DDA-900E-4EF0-8B91-4DA2CC2BF5E9}">
+									<ChildrenList>
+										<Action Name="" ID="{2BBFB44C-318F-4550-A6B0-393A9C45F7B6}" ShortID="686838844">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_b6" ID="{9449FC9F-D997-4AB5-8019-1CB50528DD13}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_C6" ID="{CAEC057E-D866-45EC-80E0-0245D07EC6BE}">
+									<ChildrenList>
+										<Action Name="" ID="{822A936C-1814-4AEB-AEE9-31AE8728F13D}" ShortID="445008561">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_c6" ID="{EC29FB65-B272-4CFB-B084-0FDB0A192C7A}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_D6" ID="{F8B5AFFD-6208-47C3-AC53-49F846445D42}">
+									<ChildrenList>
+										<Action Name="" ID="{AA9C5BD5-B5C5-4371-B3DA-854B9CD71350}" ShortID="826627647">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_d6" ID="{3BA7C23D-D795-473B-81C4-6C3F22F4E706}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_E6" ID="{BA586DA8-E241-40E8-92C4-9AE8C6A9AF18}">
+									<ChildrenList>
+										<Action Name="" ID="{4FF31177-D328-442C-81E4-9F34DAECFFE4}" ShortID="200541967">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_e6" ID="{BA5AF36E-7AD2-4E73-A01F-C1B9AC76384A}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WorldKey_F6" ID="{BAE9A784-7298-471A-A22A-8129B3C48C7D}">
+									<ChildrenList>
+										<Action Name="" ID="{FCB77C96-6018-4A55-817F-44C57B92C7A4}" ShortID="131073811">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_worldkeys_fmaj_f6" ID="{A5867A42-081A-440C-AA9C-65D7434E682D}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

@@ -128,6 +128,43 @@
 							<ObjectRef Name="Room_Medium_High_Absorbtion" ID="{E22DBBB6-7656-4B93-A28D-C003FD416889}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+									<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="BusVolume"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="WorldKeysEnabled" ID="{3D9DDB20-C64A-41E8-AB49-B2F23F8A3894}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}"/>
+										<CustomState Name="" ID="{B3DC4352-4D00-473C-B51E-8AFB444D9943}" ShortID="424739837">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="94"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

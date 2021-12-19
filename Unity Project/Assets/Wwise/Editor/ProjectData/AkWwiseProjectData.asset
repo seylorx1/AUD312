@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585617432546484265
+    m_lastTime: -8585616603965548912
     List:
     - name: Base Music
       guid: f8400540ecc8c44394331a34a8a64f68
@@ -448,14 +448,13 @@ MonoBehaviour:
       - ElementName: Music Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Base Music
-        ObjectType: 2
-        guid: f8400540ecc8c44394331a34a8a64f68
+      - ElementName: Boat
+        ObjectType: 4
+        guid: d2d22cc3a13afe4f977f7873b1dfbee8
       - ElementName: KicksnareEQ Bus
         ObjectType: 2
         guid: 22d7906c0b44b44891074f218307cba6
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base Music\KicksnareEQ
-        Bus
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Boat\KicksnareEQ Bus
     - name: Motion Factory Bus
       guid: c6b9f92af16ee946b5f2e30c9e602c74
       id: 985987111
@@ -498,6 +497,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus
+    - name: WorldKeys
+      guid: 10f5d4cef72269499f9954a15d3b71cd
+      id: 1310325127
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Sound Effects Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: WorldKeys
+        ObjectType: 2
+        guid: 10f5d4cef72269499f9954a15d3b71cd
+      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\WorldKeys
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -510,7 +526,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 894b37ce7fff6c44b0dcd4b894060495
     GuidInternal: 
-    m_lastTime: -8585638451972650798
+    m_lastTime: -8585616766033129226
     List:
     - name: Main
       guid: 540242f8053cc1458049835c8ed6e27f
@@ -538,7 +554,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585638443838943897
+    m_lastTime: -8585616608375620937
     List:
     - name: Box
       guid: b522a989009d6a4fa7920d2b12634e88
@@ -550,10 +566,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       - ElementName: Box
         ObjectType: 4
         guid: b522a989009d6a4fa7920d2b12634e88
-      Path: Events\Default Work Unit\Box
+      Path: Events\Default Work Unit\SFX\Box
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -567,13 +586,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       - ElementName: Box
         ObjectType: 4
         guid: b522a989009d6a4fa7920d2b12634e88
       - ElementName: BoxAmbiencePlay
         ObjectType: 3
         guid: 75bd92f19ccc40498ba3367206f95208
-      Path: Events\Default Work Unit\Box\BoxAmbiencePlay
+      Path: Events\Default Work Unit\SFX\Box\BoxAmbiencePlay
       maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
@@ -587,13 +609,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       - ElementName: Box
         ObjectType: 4
         guid: b522a989009d6a4fa7920d2b12634e88
       - ElementName: BoxDrop
         ObjectType: 3
         guid: 4751fdc290391f4fa57687a4ae697a0a
-      Path: Events\Default Work Unit\Box\BoxDrop
+      Path: Events\Default Work Unit\SFX\Box\BoxDrop
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -633,13 +658,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       - ElementName: Box
         ObjectType: 4
         guid: b522a989009d6a4fa7920d2b12634e88
       - ElementName: BoxPickup
         ObjectType: 3
         guid: e97b8506c112ad43823359d8e87c3f90
-      Path: Events\Default Work Unit\Box\BoxPickup
+      Path: Events\Default Work Unit\SFX\Box\BoxPickup
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -751,10 +779,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       - ElementName: Footstep
         ObjectType: 4
         guid: 28e55eca8a6ad74789f4415d53397b3a
-      Path: Events\Default Work Unit\Footstep
+      Path: Events\Default Work Unit\SFX\Footstep
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -768,13 +799,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       - ElementName: Footstep
         ObjectType: 4
         guid: 28e55eca8a6ad74789f4415d53397b3a
       - ElementName: FootstepChange_Concrete
         ObjectType: 3
         guid: 3886043eb48f9040a260c6ec5d385d27
-      Path: Events\Default Work Unit\Footstep\FootstepChange_Concrete
+      Path: Events\Default Work Unit\SFX\Footstep\FootstepChange_Concrete
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -788,13 +822,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       - ElementName: Footstep
         ObjectType: 4
         guid: 28e55eca8a6ad74789f4415d53397b3a
       - ElementName: FootstepChange_Gravel
         ObjectType: 3
         guid: 533a2a8ce52bb042927db2f47f12dcc9
-      Path: Events\Default Work Unit\Footstep\FootstepChange_Gravel
+      Path: Events\Default Work Unit\SFX\Footstep\FootstepChange_Gravel
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -808,13 +845,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       - ElementName: Footstep
         ObjectType: 4
         guid: 28e55eca8a6ad74789f4415d53397b3a
       - ElementName: FootstepPlay
         ObjectType: 3
         guid: 09fd370eacf00c438ae2c527280491b3
-      Path: Events\Default Work Unit\Footstep\FootstepPlay
+      Path: Events\Default Work Unit\SFX\Footstep\FootstepPlay
       maxAttenuation: 0
       maxDuration: 0.84
       minDuration: 0.268956
@@ -828,10 +868,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       - ElementName: Harpoon
         ObjectType: 4
         guid: 997ce0413219b84190889666ec7dfd20
-      Path: Events\Default Work Unit\Harpoon
+      Path: Events\Default Work Unit\SFX\Harpoon
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -845,13 +888,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       - ElementName: Harpoon
         ObjectType: 4
         guid: 997ce0413219b84190889666ec7dfd20
       - ElementName: HarpoonGrabSuccess
         ObjectType: 3
         guid: a522c185f18d8a4bb9601d4f57bff71b
-      Path: Events\Default Work Unit\Harpoon\HarpoonGrabSuccess
+      Path: Events\Default Work Unit\SFX\Harpoon\HarpoonGrabSuccess
       maxAttenuation: 0
       maxDuration: 2.138458
       minDuration: 2.138458
@@ -865,13 +911,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       - ElementName: Harpoon
         ObjectType: 4
         guid: 997ce0413219b84190889666ec7dfd20
       - ElementName: HarpoonLoopStart
         ObjectType: 3
         guid: c725cede3901724f9a708d27ef952a14
-      Path: Events\Default Work Unit\Harpoon\HarpoonLoopStart
+      Path: Events\Default Work Unit\SFX\Harpoon\HarpoonLoopStart
       maxAttenuation: 0
       maxDuration: 3.7
       minDuration: 3.7
@@ -885,13 +934,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       - ElementName: Harpoon
         ObjectType: 4
         guid: 997ce0413219b84190889666ec7dfd20
       - ElementName: HarpoonLoopStop
         ObjectType: 3
         guid: 3f953257b2808147b9684e50eec5c759
-      Path: Events\Default Work Unit\Harpoon\HarpoonLoopStop
+      Path: Events\Default Work Unit\SFX\Harpoon\HarpoonLoopStop
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -905,13 +957,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       - ElementName: Harpoon
         ObjectType: 4
         guid: 997ce0413219b84190889666ec7dfd20
       - ElementName: HarpoonPickup
         ObjectType: 3
         guid: 1cf8f263f320274e901d621bbcdd6afe
-      Path: Events\Default Work Unit\Harpoon\HarpoonPickup
+      Path: Events\Default Work Unit\SFX\Harpoon\HarpoonPickup
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1009,6 +1064,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: SFX
+      guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      Path: Events\Default Work Unit\SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stingers
       guid: 8e09c0297be6b8418069ac2fe41f5cfa
       id: 2940432316
@@ -1029,6 +1101,371 @@ MonoBehaviour:
         ObjectType: 4
         guid: 8e09c0297be6b8418069ac2fe41f5cfa
       Path: Events\Default Work Unit\Music\Cue Events\Stingers
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: WorldKey_A5
+      guid: 774c6f77e10fb44cab308f6e34e6652e
+      id: 3724088773
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_A5
+        ObjectType: 3
+        guid: 774c6f77e10fb44cab308f6e34e6652e
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_A5
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_A6
+      guid: a9a070c097488f41a09cd195522eb360
+      id: 3724088774
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_A6
+        ObjectType: 3
+        guid: a9a070c097488f41a09cd195522eb360
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_A6
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_B5
+      guid: 5d6af5041331f3448c022f7bca9c0abd
+      id: 3774421660
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_B5
+        ObjectType: 3
+        guid: 5d6af5041331f3448c022f7bca9c0abd
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_B5
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_B6
+      guid: da7d51890e90f04e8b914da2cc2bf5e9
+      id: 3774421663
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_B6
+        ObjectType: 3
+        guid: da7d51890e90f04e8b914da2cc2bf5e9
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_B6
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_C5
+      guid: 7693fb7e08ac4249aa26a5ce5562b1bc
+      id: 3757644067
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_C5
+        ObjectType: 3
+        guid: 7693fb7e08ac4249aa26a5ce5562b1bc
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_C5
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_C6
+      guid: 7e05ecca66d8ec4580e00245d07ec6be
+      id: 3757644064
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_C6
+        ObjectType: 3
+        guid: 7e05ecca66d8ec4580e00245d07ec6be
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_C6
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_D5
+      guid: cac74c6115505647aaf70d4f526fc477
+      id: 3807976954
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_D5
+        ObjectType: 3
+        guid: cac74c6115505647aaf70d4f526fc477
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_D5
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_D6
+      guid: fdafb5f80862c347ac5349f846445d42
+      id: 3807976953
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_D6
+        ObjectType: 3
+        guid: fdafb5f80862c347ac5349f846445d42
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_D6
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_E5
+      guid: 5a61517bd5be5741a8510bc6e4532fad
+      id: 3791199241
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_E5
+        ObjectType: 3
+        guid: 5a61517bd5be5741a8510bc6e4532fad
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_E5
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_E6
+      guid: a86d58ba41e2e84092c49ae8c6a9af18
+      id: 3791199242
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_E6
+        ObjectType: 3
+        guid: a86d58ba41e2e84092c49ae8c6a9af18
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_E6
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_F4
+      guid: fb62d64f1e168b42ac44b82d7505bc9a
+      id: 3841532097
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_F4
+        ObjectType: 3
+        guid: fb62d64f1e168b42ac44b82d7505bc9a
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_F4
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_F5
+      guid: d9fd446c78ba1d41bddbac893dbdc0ca
+      id: 3841532096
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_F5
+        ObjectType: 3
+        guid: d9fd446c78ba1d41bddbac893dbdc0ca
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_F5
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_F6
+      guid: 84a7e9ba98721a47a22a8129b3c48c7d
+      id: 3841532099
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_F6
+        ObjectType: 3
+        guid: 84a7e9ba98721a47a22a8129b3c48c7d
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_F6
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_G4
+      guid: a3882737c21db946b6e3e9f6696c766a
+      id: 3824754518
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_G4
+        ObjectType: 3
+        guid: a3882737c21db946b6e3e9f6696c766a
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_G4
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKey_G5
+      guid: c55b47ee0460f8478beeaeef254a4bfc
+      id: 3824754519
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      - ElementName: WorldKey_G5
+        ObjectType: 3
+        guid: c55b47ee0460f8478beeaeef254a4bfc
+      Path: Events\Default Work Unit\SFX\WorldKeys\WorldKey_G5
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.15
+    - name: WorldKeys
+      guid: 9a8c8c3958907e4ca3357064b1a17648
+      id: 1310325127
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: WorldKeys
+        ObjectType: 4
+        guid: 9a8c8c3958907e4ca3357064b1a17648
+      Path: Events\Default Work Unit\SFX\WorldKeys
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1280,7 +1717,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c226eeab13aa4f409e89c2a35c4216cc
     GuidInternal: 
-    m_lastTime: -8585638454071158488
+    m_lastTime: -8585616607644995520
     List:
     - name: BoxOpeningStingerState
       guid: 376292dcb3fa024c806a6cac862bb21f
@@ -1690,6 +2127,65 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: WorldKeysEnabled
+      guid: 20db9d3d4ac6e841ab49b2f23f8a3894
+      id: 3156432362
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Interactions
+        ObjectType: 4
+        guid: fe78017394cbf14aa94b4c596486f5a8
+      - ElementName: WorldKeysEnabled
+        ObjectType: 9
+        guid: 20db9d3d4ac6e841ab49b2f23f8a3894
+      Path: States\Default Work Unit\Interactions\WorldKeysEnabled
+      values:
+      - name: Enabled
+        guid: f12888876814404fa5e94d39491d6b11
+        id: 4174102348
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Interactions
+          ObjectType: 4
+          guid: fe78017394cbf14aa94b4c596486f5a8
+        - ElementName: WorldKeysEnabled
+          ObjectType: 9
+          guid: 20db9d3d4ac6e841ab49b2f23f8a3894
+        - ElementName: Enabled
+          ObjectType: 8
+          guid: f12888876814404fa5e94d39491d6b11
+      - name: None
+        guid: ca876373d455f8409e179a74c12a83da
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Interactions
+          ObjectType: 4
+          guid: fe78017394cbf14aa94b4c596486f5a8
+        - ElementName: WorldKeysEnabled
+          ObjectType: 9
+          guid: 20db9d3d4ac6e841ab49b2f23f8a3894
+        - ElementName: None
+          ObjectType: 8
+          guid: ca876373d455f8409e179a74c12a83da
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -1847,7 +2343,7 @@ MonoBehaviour:
         guid: 38b4dd40b2e94b4c9c9bce1ac9f941c2
       Path: Triggers\Default Work Unit\BoxPickupStinger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e00000031000000320000003a00000049000000510000002c0400002f040000320400003504000038040000
+  ExpandedWaapiItemIds: 010000000200000003000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e00000031000000320000003a0000004900000051000000b60000002c0400002f040000320400003504000038040000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

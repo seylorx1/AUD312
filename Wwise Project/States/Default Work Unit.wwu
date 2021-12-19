@@ -11,6 +11,15 @@
 								<State Name="HarpoonHeld" ID="{801A23EA-9585-4040-B632-EAA67C533806}"/>
 							</ChildrenList>
 						</StateGroup>
+						<StateGroup Name="WorldKeysEnabled" ID="{3D9DDB20-C64A-41E8-AB49-B2F23F8A3894}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{736387CA-55D4-40F8-9E17-9A74C12A83DA}"/>
+								<State Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}"/>
+							</ChildrenList>
+						</StateGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Rooms" ID="{A8340EB3-479E-4F41-88C0-19FFA33E7D37}" ShortID="58868778">
