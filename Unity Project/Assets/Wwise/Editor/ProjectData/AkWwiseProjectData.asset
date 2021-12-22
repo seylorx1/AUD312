@@ -931,7 +931,7 @@ MonoBehaviour:
         guid: 09fd370eacf00c438ae2c527280491b3
       Path: Events\Default Work Unit\SFX\Footstep\FootstepPlay
       maxAttenuation: 0
-      maxDuration: 0.84
+      maxDuration: 0.641615
       minDuration: 0.268956
     - name: Harpoon
       guid: 997ce0413219b84190889666ec7dfd20

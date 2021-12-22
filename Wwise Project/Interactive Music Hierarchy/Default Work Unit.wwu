@@ -9811,6 +9811,11 @@
 												<MusicTrack Name="music_boat_countermelody_1" ID="{6BE27622-A50E-4C62-A7B5-8924C436AF66}" ShortID="718877730">
 													<PropertyList>
 														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -11151,6 +11156,11 @@
 												<MusicTrack Name="music_boat_countermelody_1" ID="{7D70DF22-1479-46C6-9A37-1A9E3451EE7A}" ShortID="412029193">
 													<PropertyList>
 														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
