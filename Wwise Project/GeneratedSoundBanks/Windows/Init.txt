@@ -53,11 +53,15 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	57144414	Sound Effects Bus			\Default Work Unit\Sound Effects Bus	
+	302949338	Harpoon			\Default Work Unit\Sound Effects Bus\Harpoon	
 	628250272	Box Holding Music			\Default Work Unit\Music Bus\Interactions\Box Holding Music	
 	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
+	1174992302	HarpoonAir			\Default Work Unit\Sound Effects Bus\Harpoon\HarpoonAir	
 	1310325127	WorldKeys			\Default Work Unit\Sound Effects Bus\WorldKeys	
 	1315736911	Base Music			\Default Work Unit\Music Bus\Base Music	
+	1478843139	Harpoon Ambience Music			\Default Work Unit\Music Bus\Interactions\Harpoon Ambience Music	
 	2023061728	Boat Vamp Music			\Default Work Unit\Music Bus\Boat\Boat Vamp Music	
+	2385628198	Footsteps			\Default Work Unit\Sound Effects Bus\Footsteps	
 	2544947825	Box Ambience Music			\Default Work Unit\Music Bus\Interactions\Box Ambience Music	
 	2916495418	KicksnareEQ Bus			\Default Work Unit\Music Bus\Boat\KicksnareEQ Bus	
 	3127962312	Music Bus			\Default Work Unit\Music Bus	

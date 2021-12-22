@@ -23,6 +23,8 @@ namespace AK
         static const AkUniqueID FOOTSTEPCHANGE_CONCRETE = 963962511U;
         static const AkUniqueID FOOTSTEPCHANGE_GRAVEL = 1670615683U;
         static const AkUniqueID FOOTSTEPPLAY = 4039405217U;
+        static const AkUniqueID HARPOONAMBIENCEPLAY = 561183332U;
+        static const AkUniqueID HARPOONAMBIENCESTOP = 3333733726U;
         static const AkUniqueID HARPOONGRABSUCCESS = 2837856117U;
         static const AkUniqueID HARPOONLOOPSTART = 1976912264U;
         static const AkUniqueID HARPOONLOOPSTOP = 1264241620U;
@@ -188,6 +190,10 @@ namespace AK
         static const AkUniqueID BOAT_VAMP_MUSIC = 2023061728U;
         static const AkUniqueID BOX_AMBIENCE_MUSIC = 2544947825U;
         static const AkUniqueID BOX_HOLDING_MUSIC = 628250272U;
+        static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID HARPOON = 302949338U;
+        static const AkUniqueID HARPOON_AMBIENCE_MUSIC = 1478843139U;
+        static const AkUniqueID HARPOONAIR = 1174992302U;
         static const AkUniqueID KICKSNAREEQ_BUS = 2916495418U;
         static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
         static const AkUniqueID MUSIC_BUS = 3127962312U;

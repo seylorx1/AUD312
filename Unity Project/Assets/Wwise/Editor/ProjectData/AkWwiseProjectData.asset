@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585616603965548912
+    m_lastTime: -8585614760046667523
     List:
     - name: Base Music
       guid: f8400540ecc8c44394331a34a8a64f68
@@ -401,6 +401,81 @@ MonoBehaviour:
         guid: 7178a0cb03d21c4b8c86f221ddc3b242
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Holding
         Music
+    - name: Footsteps
+      guid: c13f11b0aaeda240a557fe73afab7937
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Sound Effects Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Footsteps
+        ObjectType: 2
+        guid: c13f11b0aaeda240a557fe73afab7937
+      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Footsteps
+    - name: Harpoon
+      guid: c90cbab9b22223439a36e007c7ce5a65
+      id: 302949338
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Sound Effects Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Harpoon
+        ObjectType: 2
+        guid: c90cbab9b22223439a36e007c7ce5a65
+      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Harpoon
+    - name: Harpoon Ambience Music
+      guid: 62cf7f29753cca498fa3d705b6c0848c
+      id: 1478843139
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Interactions
+        ObjectType: 4
+        guid: cb3a9d8e2cd15247ba59caa62a044962
+      - ElementName: Harpoon Ambience Music
+        ObjectType: 2
+        guid: 62cf7f29753cca498fa3d705b6c0848c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Harpoon
+        Ambience Music
+    - name: HarpoonAir
+      guid: b5202d48d69f0e448eede17be5ccf386
+      id: 1174992302
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Sound Effects Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Harpoon
+        ObjectType: 2
+        guid: c90cbab9b22223439a36e007c7ce5a65
+      - ElementName: HarpoonAir
+        ObjectType: 2
+        guid: b5202d48d69f0e448eede17be5ccf386
+      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Harpoon\HarpoonAir
     - name: Instruments
       guid: 600451862cb6874bbbc59562f60a3c21
       id: 559901361
@@ -554,7 +629,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585616608375620937
+    m_lastTime: -8585614765596284292
     List:
     - name: Box
       guid: b522a989009d6a4fa7920d2b12634e88
@@ -878,6 +953,52 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: HarpoonAmbiencePlay
+      guid: 1ade0f3dc5f40945ae12cb7980074c2c
+      id: 561183332
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Harpoon
+        ObjectType: 4
+        guid: 997ce0413219b84190889666ec7dfd20
+      - ElementName: HarpoonAmbiencePlay
+        ObjectType: 3
+        guid: 1ade0f3dc5f40945ae12cb7980074c2c
+      Path: Events\Default Work Unit\SFX\Harpoon\HarpoonAmbiencePlay
+      maxAttenuation: 20
+      maxDuration: -1
+      minDuration: -1
+    - name: HarpoonAmbienceStop
+      guid: e81260d903d30441883a09013df7020d
+      id: 3333733726
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Harpoon
+        ObjectType: 4
+        guid: 997ce0413219b84190889666ec7dfd20
+      - ElementName: HarpoonAmbienceStop
+        ObjectType: 3
+        guid: e81260d903d30441883a09013df7020d
+      Path: Events\Default Work Unit\SFX\Harpoon\HarpoonAmbienceStop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: HarpoonGrabSuccess
       guid: a522c185f18d8a4bb9601d4f57bff71b
       id: 2837856117
@@ -2343,7 +2464,7 @@ MonoBehaviour:
         guid: 38b4dd40b2e94b4c9c9bce1ac9f941c2
       Path: Triggers\Default Work Unit\BoxPickupStinger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e00000031000000320000003a0000004900000051000000b60000002c0400002f040000320400003504000038040000
+  ExpandedWaapiItemIds: 010000000200000003000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e0000003100000032000000360000003a0000004900000051000000b60000002c0400002f040000320400003504000038040000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

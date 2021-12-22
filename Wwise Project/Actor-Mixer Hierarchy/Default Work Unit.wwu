@@ -21,6 +21,11 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -30,7 +35,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Sound Effects Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+									<ObjectRef Name="HarpoonAir" ID="{482D20B5-9FD6-440E-8EED-E17BE5CCF386}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -73,7 +78,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Sound Effects Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+									<ObjectRef Name="Harpoon" ID="{B9BA0CC9-22B2-4323-9A36-E007C7CE5A65}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -106,6 +111,11 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -115,7 +125,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Sound Effects Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+									<ObjectRef Name="HarpoonAir" ID="{482D20B5-9FD6-440E-8EED-E17BE5CCF386}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -158,7 +168,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Sound Effects Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+									<ObjectRef Name="Harpoon" ID="{B9BA0CC9-22B2-4323-9A36-E007C7CE5A65}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -188,7 +198,7 @@
 									<ObjectRef Name="Concrete" ID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Sound Effects Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+									<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="FootstepType" ID="{8274F53A-432D-4B3C-B3B2-7B0DCFA58A47}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>

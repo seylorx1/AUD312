@@ -68,7 +68,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -103,6 +103,16 @@
 											</CustomState>
 										</CustomStateList>
 									</StateInfo>
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Harpoon Ambience Music" ID="{297FCF62-3C75-49CA-8FA3-D705B6C0848C}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ObjectLists/>
 								</Bus>
 							</ChildrenList>
@@ -156,12 +166,37 @@
 										<StateRef Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}"/>
 										<CustomState Name="" ID="{B3DC4352-4D00-473C-B51E-8AFB444D9943}" ShortID="424739837">
 											<PropertyList>
-												<Property Name="BusVolume" Type="Real64" Value="94"/>
+												<Property Name="BusVolume" Type="Real64" Value="97"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Harpoon" ID="{B9BA0CC9-22B2-4323-9A36-E007C7CE5A65}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="HarpoonAir" ID="{482D20B5-9FD6-440E-8EED-E17BE5CCF386}">
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
 							<ObjectLists/>
 						</Bus>
 					</ChildrenList>

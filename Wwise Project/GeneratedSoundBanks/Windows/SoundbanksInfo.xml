@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="91239625">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2234224844">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -30,7 +30,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="99261079">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1062153301">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -256,6 +256,15 @@
 						<ActionSetStateEntry Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\Interactions\WorldKeysEnabled\Enabled"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="561183332" Name="HarpoonAmbiencePlay" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonAmbiencePlay" MaxAttenuation="20.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="195979884" Language="SFX">
+							<ShortName>music_boat_harpoon.wav</ShortName>
+							<Path>SFX\music_boat_harpoon_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3333733726" Name="HarpoonAmbienceStop" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonAmbienceStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2837856117" Name="HarpoonGrabSuccess" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonGrabSuccess" DurationType="OneShot" DurationMin="2.138458" DurationMax="2.138458">
 					<IncludedMemoryFiles>
 						<File Id="128127013" Language="SFX">
@@ -292,13 +301,25 @@
 							<ShortName>music_boat_kicksnare_1.wav</ShortName>
 							<Path>SFX\music_boat_kicksnare_1_D79FB2B7.wem</Path>
 						</File>
+						<File Id="78535861" Language="SFX">
+							<ShortName>music_boat_fantasychords_chorus.wav</ShortName>
+							<Path>SFX\music_boat_fantasychords_chorus_D79FB2B7.wem</Path>
+						</File>
 						<File Id="83555245" Language="SFX">
 							<ShortName>music_boat_boxdrop_1.wav</ShortName>
 							<Path>SFX\music_boat_boxdrop_1_D79FB2B7.wem</Path>
 						</File>
+						<File Id="154507780" Language="SFX">
+							<ShortName>music_boat_intensebass_4.wav</ShortName>
+							<Path>SFX\music_boat_intensebass_4_D79FB2B7.wem</Path>
+						</File>
 						<File Id="229936893" Language="SFX">
 							<ShortName>music_boat_kicksnare_chorus.wav</ShortName>
 							<Path>SFX\music_boat_kicksnare_chorus_D79FB2B7.wem</Path>
+						</File>
+						<File Id="268973021" Language="SFX">
+							<ShortName>music_boat_intensebass_3.wav</ShortName>
+							<Path>SFX\music_boat_intensebass_3_D79FB2B7.wem</Path>
 						</File>
 						<File Id="348634579" Language="SFX">
 							<ShortName>music_boat_blob_1.wav</ShortName>
@@ -312,6 +333,10 @@
 							<ShortName>music_boat_bassline_1.wav</ShortName>
 							<Path>SFX\music_boat_bassline_1_D79FB2B7.wem</Path>
 						</File>
+						<File Id="500195945" Language="SFX">
+							<ShortName>music_boat_aggressivekicksnare_1.wav</ShortName>
+							<Path>SFX\music_boat_aggressivekicksnare_1_D79FB2B7.wem</Path>
+						</File>
 						<File Id="544473361" Language="SFX">
 							<ShortName>music_boat_vamp_1.wav</ShortName>
 							<Path>SFX\music_boat_vamp_1_D79FB2B7.wem</Path>
@@ -319,6 +344,14 @@
 						<File Id="552614302" Language="SFX">
 							<ShortName>music_boat_kicksnare_2.wav</ShortName>
 							<Path>SFX\music_boat_kicksnare_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="621386646" Language="SFX">
+							<ShortName>music_boat_aggressivekicksnare_2.wav</ShortName>
+							<Path>SFX\music_boat_aggressivekicksnare_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="664813967" Language="SFX">
+							<ShortName>music_boat_intensebass_chorus.wav</ShortName>
+							<Path>SFX\music_boat_intensebass_chorus_D79FB2B7.wem</Path>
 						</File>
 						<File Id="670314713" Language="SFX">
 							<ShortName>music_boat_boxpickup_1.wav</ShortName>
@@ -328,6 +361,14 @@
 							<ShortName>music_boat_boxholding_1.wav</ShortName>
 							<Path>SFX\music_boat_boxholding_1_D79FB2B7.wem</Path>
 						</File>
+						<File Id="718091025" Language="SFX">
+							<ShortName>music_boat_intensebass_1.wav</ShortName>
+							<Path>SFX\music_boat_intensebass_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="727411136" Language="SFX">
+							<ShortName>music_boat_intensevamp_chorus_1.wav</ShortName>
+							<Path>SFX\music_boat_intensevamp_chorus_1_D79FB2B7.wem</Path>
+						</File>
 						<File Id="791546088" Language="SFX">
 							<ShortName>music_boat_boxholding_2.wav</ShortName>
 							<Path>SFX\music_boat_boxholding_2_D79FB2B7.wem</Path>
@@ -335,6 +376,10 @@
 						<File Id="813604374" Language="SFX">
 							<ShortName>music_boat_boxholding_3.wav</ShortName>
 							<Path>SFX\music_boat_boxholding_3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="837806047" Language="SFX">
+							<ShortName>music_boat_aggressivekicksnare_chorus.wav</ShortName>
+							<Path>SFX\music_boat_aggressivekicksnare_chorus_D79FB2B7.wem</Path>
 						</File>
 						<File Id="843600277" Language="SFX">
 							<ShortName>music_boat_countermelody_1.wav</ShortName>
@@ -352,9 +397,17 @@
 							<ShortName>music_boat_vamp_chorus_1.wav</ShortName>
 							<Path>SFX\music_boat_vamp_chorus_1_D79FB2B7.wem</Path>
 						</File>
+						<File Id="931555717" Language="SFX">
+							<ShortName>music_boat_intensealberti_chorus_1.wav</ShortName>
+							<Path>SFX\music_boat_intensealberti_chorus_1_D79FB2B7.wem</Path>
+						</File>
 						<File Id="966247712" Language="SFX">
 							<ShortName>music_boat_hats_chorus.wav</ShortName>
 							<Path>SFX\music_boat_hats_chorus_D79FB2B7.wem</Path>
+						</File>
+						<File Id="981262424" Language="SFX">
+							<ShortName>music_boat_intensebass_2.wav</ShortName>
+							<Path>SFX\music_boat_intensebass_2_D79FB2B7.wem</Path>
 						</File>
 						<File Id="1046108589" Language="SFX">
 							<ShortName>music_boat_hats_1.wav</ShortName>
@@ -368,9 +421,9 @@
 							<ShortName>music_boat_melody_1.wav</ShortName>
 							<Path>SFX\music_boat_melody_1_D79FB2B7.wem</Path>
 						</File>
-						<File Id="1055394232" Language="SFX">
-							<ShortName>music_boat_vamp_chorus_2.wav</ShortName>
-							<Path>SFX\music_boat_vamp_chorus_2_D79FB2B7.wem</Path>
+						<File Id="1049002355" Language="SFX">
+							<ShortName>music_boat_fantasychords_1.wav</ShortName>
+							<Path>SFX\music_boat_fantasychords_1_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
