@@ -160,8 +160,18 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="HarpoonLoopStart" ID="{DECE25C7-0139-4F72-9A70-8D27EF952A14}">
+								<Event Name="HarpoonFireReturn" ID="{DECE25C7-0139-4F72-9A70-8D27EF952A14}">
 									<ChildrenList>
+										<Action Name="" ID="{9B9811D8-A0EB-4567-BB62-58306431B5A8}" ShortID="506031121">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_harpoon_shoot_b" ID="{B4814B0F-9481-4E3F-A962-2914F0E062C5}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{08F3D848-2B7E-4423-8540-819210892F11}" ShortID="309122942">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -176,9 +186,26 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{F1704D6A-FD9B-4A1C-A812-E60C07AB66BF}" ShortID="919505112">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Fire Once" ID="{A21134A1-CFDC-43D6-9665-9BB53D0E22DD}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EECC9F75-3A30-45CE-81FF-674DBABA491C}" ShortID="352508210">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HasFired" ID="{47EC628F-C044-4F20-B62D-21B04E2A5BD3}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="HarpoonLoopStop" ID="{5732953F-80B2-4781-B968-4E50EEC5C759}">
+								<Event Name="HarpoonReceived" ID="{5732953F-80B2-4781-B968-4E50EEC5C759}">
 									<ChildrenList>
 										<Action Name="" ID="{C9B09BE3-559F-4563-80C2-107D40206BF7}" ShortID="576005387">
 											<PropertyList>
@@ -217,6 +244,16 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{1499F79B-1435-444E-8F62-691B4ED378FE}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A7319C35-2221-42F4-B112-0561804E1F0C}" ShortID="860177364">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="None" ID="{4B9FB557-3308-4BF4-9ECA-486659E8A285}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

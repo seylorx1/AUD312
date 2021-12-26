@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585614760046667523
+    m_lastTime: -8585610721030638229
     List:
     - name: Base Music
       guid: f8400540ecc8c44394331a34a8a64f68
@@ -629,7 +629,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585614765596284292
+    m_lastTime: -8585612271985817917
     List:
     - name: Box
       guid: b522a989009d6a4fa7920d2b12634e88
@@ -999,6 +999,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: HarpoonFireReturn
+      guid: c725cede3901724f9a708d27ef952a14
+      id: 2421633396
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Harpoon
+        ObjectType: 4
+        guid: 997ce0413219b84190889666ec7dfd20
+      - ElementName: HarpoonFireReturn
+        ObjectType: 3
+        guid: c725cede3901724f9a708d27ef952a14
+      Path: Events\Default Work Unit\SFX\Harpoon\HarpoonFireReturn
+      maxAttenuation: 0
+      maxDuration: 3.7
+      minDuration: 3.7
     - name: HarpoonGrabSuccess
       guid: a522c185f18d8a4bb9601d4f57bff71b
       id: 2837856117
@@ -1022,52 +1045,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.138458
       minDuration: 2.138458
-    - name: HarpoonLoopStart
-      guid: c725cede3901724f9a708d27ef952a14
-      id: 1976912264
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: SFX
-        ObjectType: 4
-        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
-      - ElementName: Harpoon
-        ObjectType: 4
-        guid: 997ce0413219b84190889666ec7dfd20
-      - ElementName: HarpoonLoopStart
-        ObjectType: 3
-        guid: c725cede3901724f9a708d27ef952a14
-      Path: Events\Default Work Unit\SFX\Harpoon\HarpoonLoopStart
-      maxAttenuation: 0
-      maxDuration: 3.7
-      minDuration: 3.7
-    - name: HarpoonLoopStop
-      guid: 3f953257b2808147b9684e50eec5c759
-      id: 1264241620
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: SFX
-        ObjectType: 4
-        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
-      - ElementName: Harpoon
-        ObjectType: 4
-        guid: 997ce0413219b84190889666ec7dfd20
-      - ElementName: HarpoonLoopStop
-        ObjectType: 3
-        guid: 3f953257b2808147b9684e50eec5c759
-      Path: Events\Default Work Unit\SFX\Harpoon\HarpoonLoopStop
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: HarpoonPickup
       guid: 1cf8f263f320274e901d621bbcdd6afe
       id: 2867011390
@@ -1088,6 +1065,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1cf8f263f320274e901d621bbcdd6afe
       Path: Events\Default Work Unit\SFX\Harpoon\HarpoonPickup
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: HarpoonReceived
+      guid: 3f953257b2808147b9684e50eec5c759
+      id: 757170495
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Harpoon
+        ObjectType: 4
+        guid: 997ce0413219b84190889666ec7dfd20
+      - ElementName: HarpoonReceived
+        ObjectType: 3
+        guid: 3f953257b2808147b9684e50eec5c759
+      Path: Events\Default Work Unit\SFX\Harpoon\HarpoonReceived
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1838,7 +1838,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c226eeab13aa4f409e89c2a35c4216cc
     GuidInternal: 
-    m_lastTime: -8585616607644995520
+    m_lastTime: -8585613094940325159
     List:
     - name: BoxOpeningStingerState
       guid: 376292dcb3fa024c806a6cac862bb21f
@@ -1955,6 +1955,65 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: 0bc21787bc713a4f81f3657f374e86e2
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: HarpoonFired
+      guid: ff5a73734df4c64597a0d344484f219b
+      id: 379189110
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Interactions
+        ObjectType: 4
+        guid: fe78017394cbf14aa94b4c596486f5a8
+      - ElementName: HarpoonFired
+        ObjectType: 9
+        guid: ff5a73734df4c64597a0d344484f219b
+      Path: States\Default Work Unit\Interactions\HarpoonFired
+      values:
+      - name: HasFired
+        guid: 8f62ec4744c0204fb62d21b04e2a5bd3
+        id: 2378879461
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Interactions
+          ObjectType: 4
+          guid: fe78017394cbf14aa94b4c596486f5a8
+        - ElementName: HarpoonFired
+          ObjectType: 9
+          guid: ff5a73734df4c64597a0d344484f219b
+        - ElementName: HasFired
+          ObjectType: 8
+          guid: 8f62ec4744c0204fb62d21b04e2a5bd3
+      - name: None
+        guid: 57b59f4b0833f44b9eca486659e8a285
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Interactions
+          ObjectType: 4
+          guid: fe78017394cbf14aa94b4c596486f5a8
+        - ElementName: HarpoonFired
+          ObjectType: 9
+          guid: ff5a73734df4c64597a0d344484f219b
+        - ElementName: None
+          ObjectType: 8
+          guid: 57b59f4b0833f44b9eca486659e8a285
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -2319,7 +2378,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6603d6ba8e055f4caa446aab326e99e9
     GuidInternal: 
-    m_lastTime: -8585640198892081402
+    m_lastTime: -8585613094940013252
     List:
     - name: FootstepType
       guid: 3af574822d433c4bb3b27b0dcfa58a47

@@ -25,10 +25,10 @@ namespace AK
         static const AkUniqueID FOOTSTEPPLAY = 4039405217U;
         static const AkUniqueID HARPOONAMBIENCEPLAY = 561183332U;
         static const AkUniqueID HARPOONAMBIENCESTOP = 3333733726U;
+        static const AkUniqueID HARPOONFIRERETURN = 2421633396U;
         static const AkUniqueID HARPOONGRABSUCCESS = 2837856117U;
-        static const AkUniqueID HARPOONLOOPSTART = 1976912264U;
-        static const AkUniqueID HARPOONLOOPSTOP = 1264241620U;
         static const AkUniqueID HARPOONPICKUP = 2867011390U;
+        static const AkUniqueID HARPOONRECEIVED = 757170495U;
         static const AkUniqueID MUSICBOATPLAY = 3164150550U;
         static const AkUniqueID WORLDKEY_A5 = 3724088773U;
         static const AkUniqueID WORLDKEY_A6 = 3724088774U;
@@ -70,6 +70,17 @@ namespace AK
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace BOXSTATE
+
+        namespace HARPOONFIRED
+        {
+            static const AkUniqueID GROUP = 379189110U;
+
+            namespace STATE
+            {
+                static const AkUniqueID HASFIRED = 2378879461U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace HARPOONFIRED
 
         namespace HARPOONSTATE
         {

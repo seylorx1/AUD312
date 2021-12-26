@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2234224844">
+		<SoundBank Id="1355168291" Language="SFX" Hash="594969351">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -30,7 +30,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3600775712">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1003686892">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -300,6 +300,42 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3333733726" Name="HarpoonAmbienceStop" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonAmbienceStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2421633396" Name="HarpoonFireReturn" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonFireReturn" DurationType="OneShot" DurationMin="3.700000" DurationMax="3.700000">
+					<IncludedMemoryFiles>
+						<File Id="117884843" Language="SFX">
+							<ShortName>sfx_harpoon_shoot_reel_air.wav</ShortName>
+							<Path>SFX\sfx_harpoon_shoot_reel_air_BFB259A6.wem</Path>
+						</File>
+						<File Id="570316296" Language="SFX">
+							<ShortName>sfx_harpoon_shoot_reel_chain.wav</ShortName>
+							<Path>SFX\sfx_harpoon_shoot_reel_chain_BFB259A6.wem</Path>
+						</File>
+						<File Id="604781409" Language="SFX">
+							<ShortName>sfx_harpoon_shoot_a.wav</ShortName>
+							<Path>SFX\sfx_harpoon_shoot_a_10C4C929.wem</Path>
+						</File>
+						<File Id="845357093" Language="SFX">
+							<ShortName>sfx_harpoon_shoot_b.wav</ShortName>
+							<Path>SFX\sfx_harpoon_shoot_b_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{4B9FB557-3308-4BF4-9ECA-486659E8A285}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4B9FB557-3308-4BF4-9ECA-486659E8A285}">
+							<Media>
+								<File Id="604781409"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4B9FB557-3308-4BF4-9ECA-486659E8A285}">
+							<Media>
+								<File Id="845357093"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2378879461" Name="HasFired" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\HasFired"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="2837856117" Name="HarpoonGrabSuccess" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonGrabSuccess" DurationType="OneShot" DurationMin="2.138458" DurationMax="2.138458">
 					<IncludedMemoryFiles>
 						<File Id="128127013" Language="SFX">
@@ -312,22 +348,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1976912264" Name="HarpoonLoopStart" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonLoopStart" DurationType="OneShot" DurationMin="3.700000" DurationMax="3.700000">
-					<IncludedMemoryFiles>
-						<File Id="117884843" Language="SFX">
-							<ShortName>sfx_harpoon_shoot_reel_air.wav</ShortName>
-							<Path>SFX\sfx_harpoon_shoot_reel_air_BFB259A6.wem</Path>
-						</File>
-						<File Id="570316296" Language="SFX">
-							<ShortName>sfx_harpoon_shoot_reel_chain.wav</ShortName>
-							<Path>SFX\sfx_harpoon_shoot_reel_chain_BFB259A6.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1264241620" Name="HarpoonLoopStop" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonLoopStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2867011390" Name="HarpoonPickup" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonPickup" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="515864255" Name="HarpoonHeld" ObjectPath="\States\Default Work Unit\Interactions\HarpoonState\HarpoonHeld"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="757170495" Name="HarpoonReceived" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonReceived" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\None"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="3164150550" Name="MusicBoatPlay" ObjectPath="\Events\Default Work Unit\Music\MusicBoatPlay" DurationType="Infinite">
@@ -588,10 +616,16 @@
 				<GameParameter Id="3762319931" Name="BoxSegment" ObjectPath="\Game Parameters\Default Work Unit\BoxSegment"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="379189110" Name="HarpoonFired" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired" GUID="{73735AFF-F44D-45C6-97A0-D344484F219B}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\None" GUID="{4B9FB557-3308-4BF4-9ECA-486659E8A285}"/>
+						<State Id="2378879461" Name="HasFired" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\HasFired" GUID="{47EC628F-C044-4F20-B62D-21B04E2A5BD3}"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="515864255" Name="HarpoonHeld" ObjectPath="\States\Default Work Unit\Interactions\HarpoonState\HarpoonHeld" GUID="{801A23EA-9585-4040-B632-EAA67C533806}">
 					<States/>
 				</StateGroup>
-				<StateGroup Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\BoxOpeningStingerState\None" GUID="{4AE4BC50-E22D-4B68-ABCD-A676538D3845}">
+				<StateGroup Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\None" GUID="{4B9FB557-3308-4BF4-9ECA-486659E8A285}">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="1363879777" Name="HarpoonState" ObjectPath="\States\Default Work Unit\Interactions\HarpoonState" GUID="{B3B48258-D25F-4931-8CC3-FC069EC03744}">
@@ -613,6 +647,9 @@
 					</States>
 				</StateGroup>
 				<StateGroup Id="2060468149" Name="BoxHeld" ObjectPath="\States\Default Work Unit\Music\BoxState\BoxHeld" GUID="{DA60839B-344D-45C3-9134-81D0EECBFB60}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2378879461" Name="HasFired" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\HasFired" GUID="{47EC628F-C044-4F20-B62D-21B04E2A5BD3}">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="3791155954" Name="Muted" ObjectPath="\States\Default Work Unit\Music\BoxOpeningStingerState\Muted" GUID="{4D12F6FF-B7BE-42A8-AE76-49832BECE1DA}">

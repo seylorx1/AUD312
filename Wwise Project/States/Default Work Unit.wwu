@@ -20,6 +20,12 @@
 								<State Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}"/>
 							</ChildrenList>
 						</StateGroup>
+						<StateGroup Name="HarpoonFired" ID="{73735AFF-F44D-45C6-97A0-D344484F219B}">
+							<ChildrenList>
+								<State Name="None" ID="{4B9FB557-3308-4BF4-9ECA-486659E8A285}"/>
+								<State Name="HasFired" ID="{47EC628F-C044-4F20-B62D-21B04E2A5BD3}"/>
+							</ChildrenList>
+						</StateGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Rooms" ID="{A8340EB3-479E-4F41-88C0-19FFA33E7D37}" ShortID="58868778">

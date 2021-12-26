@@ -6,6 +6,7 @@ Switch	ID	Name	Switch Group			Notes
 	4174102348	Enabled	VampFootstep			
 
 State Group	ID	Name			Wwise Object Path	Notes
+	379189110	HarpoonFired			\Default Work Unit\Interactions\HarpoonFired	
 	1038281861	BoxOpeningStingerState			\Default Work Unit\Music\BoxOpeningStingerState	
 	1363879777	HarpoonState			\Default Work Unit\Interactions\HarpoonState	
 	1941896134	Room_C			\Default Work Unit\Rooms\Room_C	
@@ -15,6 +16,8 @@ State Group	ID	Name			Wwise Object Path	Notes
 	3156432362	WorldKeysEnabled			\Default Work Unit\Interactions\WorldKeysEnabled	
 
 State	ID	Name	State Group			Notes
+	748895195	None	HarpoonFired			
+	2378879461	HasFired	HarpoonFired			
 	748895195	None	BoxOpeningStingerState			
 	3791155954	Muted	BoxOpeningStingerState			
 	515864255	HarpoonHeld	HarpoonState			
