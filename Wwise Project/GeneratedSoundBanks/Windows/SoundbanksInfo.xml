@@ -30,7 +30,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1003686892">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2596465150">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -293,9 +293,25 @@
 				</Event>
 				<Event Id="561183332" Name="HarpoonAmbiencePlay" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonAmbiencePlay" MaxAttenuation="20.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="195979884" Language="SFX">
-							<ShortName>music_boat_harpoon.wav</ShortName>
-							<Path>SFX\music_boat_harpoon_D79FB2B7.wem</Path>
+						<File Id="154507780" Language="SFX">
+							<ShortName>music_boat_intensebass_4.wav</ShortName>
+							<Path>SFX\music_boat_intensebass_4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="250696590" Language="SFX">
+							<ShortName>music_boat_distortbass.wav</ShortName>
+							<Path>SFX\music_boat_distortbass_D79FB2B7.wem</Path>
+						</File>
+						<File Id="268973021" Language="SFX">
+							<ShortName>music_boat_intensebass_3.wav</ShortName>
+							<Path>SFX\music_boat_intensebass_3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="718091025" Language="SFX">
+							<ShortName>music_boat_intensebass_1.wav</ShortName>
+							<Path>SFX\music_boat_intensebass_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="981262424" Language="SFX">
+							<ShortName>music_boat_intensebass_2.wav</ShortName>
+							<Path>SFX\music_boat_intensebass_2_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

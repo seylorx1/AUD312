@@ -12293,6 +12293,7 @@
 									</Playlist>
 								</MusicPlaylistContainer>
 								<MusicPlaylistContainer Name="music_boat_harpoon (Loop)" ID="{E6A48116-7459-493E-A232-AFEAB1546BC1}" ShortID="109665940">
+									<Comment>Ambience for the Harpoon object floating in the level.</Comment>
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
@@ -12311,9 +12312,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicSegment Name="music_boat_harpoon" ID="{D82E1474-CA41-4518-A348-2D247676768A}" ShortID="950445505">
+										<MusicSegment Name="music_boat_intensebass" ID="{D82E1474-CA41-4518-A348-2D247676768A}" ShortID="950445505">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="9600"/>
+												<Property Name="EndPosition" Type="Real64" Value="12456.2131519274"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -12324,23 +12325,52 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicTrack Name="music_boat_harpoon" ID="{B899727A-1B32-4AED-A9D0-91F6863B38EB}" ShortID="1037225869">
+												<MusicTrack Name="music_boat_intensebass" ID="{F5841618-982F-47D2-9B9C-0287CDC7A49D}" ShortID="769152797">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="music_boat_harpoon" ID="{801F397D-CAD6-4E74-974F-75F3436F59B9}">
+														<AudioFileSource Name="music_boat_intensebass_1" ID="{AF1CFCA6-6285-4176-BD6D-623FA79A35D3}">
 															<Language>SFX</Language>
-															<AudioFile>music_boat_harpoon.wav</AudioFile>
+															<AudioFile>music_boat_intensebass_1.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="195979884"/>
+																<MediaID ID="718091025"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="music_boat_intensebass_2" ID="{1CE48A57-6276-496D-B913-F40091ABA969}">
+															<Language>SFX</Language>
+															<AudioFile>music_boat_intensebass_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="981262424"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="music_boat_intensebass_3" ID="{DCC34F29-9385-4E00-8138-1E1F11310F74}">
+															<Language>SFX</Language>
+															<AudioFile>music_boat_intensebass_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="268973021"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="music_boat_intensebass_4" ID="{9A311E8F-0D76-4E0C-B4FC-5AF403805FAC}">
+															<Language>SFX</Language>
+															<AudioFile>music_boat_intensebass_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="154507780"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
-														<MusicTransition Name="Root" ID="{7C4A40AD-0158-40CB-B0BC-81CF2BB0689A}">
+														<MusicTransition Name="Root" ID="{9116932B-BF99-4A0D-AD7E-844631A17E79}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -12351,18 +12381,146 @@
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
-																	<MusicTrackSequence Name="" ID="{C348605B-0D97-4DC0-8B1B-E595B73FD7D6}">
+																	<MusicTrackSequence Name="" ID="{D156AD2F-4D33-4E81-A018-B244E61490A0}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="music_boat_harpoon" ID="{F05E1B52-1B50-4B80-8CAC-397C79634B1C}">
+																						<MusicClip Name="music_boat_intensebass_1" ID="{9C2F4CC7-78CE-4FDD-93C1-3106FA75E4D5}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="12456.2131519274"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="music_boat_intensebass_1" ID="{AF1CFCA6-6285-4176-BD6D-623FA79A35D3}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{3D880CE0-1C02-4753-A7E5-98FAA1616488}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="music_boat_intensebass_2" ID="{E1236CF9-7531-42B0-81E1-9FD373706925}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="12171.6326530612"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="music_boat_intensebass_2" ID="{1CE48A57-6276-496D-B913-F40091ABA969}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{52411661-6F32-4149-8335-F662D7E740F3}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="music_boat_intensebass_3" ID="{5BE5546F-3B36-4F07-B6A6-B4812B6ED178}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11237.1655328798"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="music_boat_intensebass_3" ID="{DCC34F29-9385-4E00-8138-1E1F11310F74}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{44CC47D6-54EC-4E10-95F0-ADE81C931812}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="music_boat_intensebass_4" ID="{B3B6B10C-FA6D-45A5-9F6D-ABD43646DDBF}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="11367.074829932"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="music_boat_intensebass_4" ID="{9A311E8F-0D76-4E0C-B4FC-5AF403805FAC}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="music_boat_distortbass" ID="{A708731D-7D50-4014-9869-438B919FA583}" ShortID="610843413">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>40</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="music_boat_distortbass" ID="{85EEA5A7-1942-457E-B172-A216D5C46C39}">
+															<Language>SFX</Language>
+															<AudioFile>music_boat_distortbass.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="250696590"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{898D2AF4-F935-463F-8F77-172F7E54FFED}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{DD1D55D1-A3C1-4307-96C5-27E8F08BB546}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="music_boat_distortbass" ID="{AEAAD9C5-28C3-4378-8836-E2BA4838AC45}">
 																							<PropertyList>
 																								<Property Name="EndTrimOffset" Type="Real64" Value="9600"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
 																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="music_boat_harpoon" ID="{801F397D-CAD6-4E74-974F-75F3436F59B9}"/>
+																							<AudioSourceRef Name="music_boat_distortbass" ID="{85EEA5A7-1942-457E-B172-A216D5C46C39}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -12420,7 +12578,7 @@
 													<PropertyList>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
-													<SegmentRef Name="music_boat_harpoon" ID="{D82E1474-CA41-4518-A348-2D247676768A}"/>
+													<SegmentRef Name="music_boat_intensebass" ID="{D82E1474-CA41-4518-A348-2D247676768A}"/>
 												</MusicPlaylistItem>
 											</ChildrenList>
 										</MusicPlaylistItem>
@@ -12530,7 +12688,7 @@
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
-										<TransitionObjectRef Name="music_boat_harpoon" ID="{D82E1474-CA41-4518-A348-2D247676768A}" WorkUnitID="{F25D41B2-87F8-4367-B70B-EA99533755FA}"/>
+										<TransitionObjectRef Name="music_boat_intensebass" ID="{D82E1474-CA41-4518-A348-2D247676768A}" WorkUnitID="{F25D41B2-87F8-4367-B70B-EA99533755FA}"/>
 									</TransitionInfo>
 								</MusicTransition>
 							</ChildrenList>
