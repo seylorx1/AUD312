@@ -629,7 +629,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585612271985817917
+    m_lastTime: -8585605439028552372
     List:
     - name: Box
       guid: b522a989009d6a4fa7920d2b12634e88
@@ -1042,7 +1042,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: a522c185f18d8a4bb9601d4f57bff71b
       Path: Events\Default Work Unit\SFX\Harpoon\HarpoonGrabSuccess
-      maxAttenuation: 0
+      maxAttenuation: 60
       maxDuration: 2.138458
       minDuration: 2.138458
     - name: HarpoonPickup

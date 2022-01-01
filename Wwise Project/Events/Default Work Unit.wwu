@@ -182,7 +182,7 @@
 										<Action Name="" ID="{D9ED3B48-0F24-442E-A7AE-4018BBCA05F0}" ShortID="238544720">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{9903308D-381E-436D-A181-12764D4DB6B2}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -223,7 +223,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{9903308D-381E-436D-A181-12764D4DB6B2}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -243,7 +243,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{1499F79B-1435-444E-8F62-691B4ED378FE}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{94A90C15-E7DC-4689-A5B3-E29CFA685765}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -277,7 +277,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{9903308D-381E-436D-A181-12764D4DB6B2}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -291,7 +291,7 @@
 										<Action Name="" ID="{112226F4-92E8-4102-8EA5-6E0BF0D5F5C5}" ShortID="884086851">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{1499F79B-1435-444E-8F62-691B4ED378FE}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{94A90C15-E7DC-4689-A5B3-E29CFA685765}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

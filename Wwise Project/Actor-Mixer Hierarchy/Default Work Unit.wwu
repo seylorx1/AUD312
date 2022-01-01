@@ -49,51 +49,6 @@
 								<ActiveSource Name="sfx_harpoon_shoot_reel_air" ID="{AC810C49-0D91-4C40-8BE9-8019B184250E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="sfx_harpoon_shoot_reel_chain" ID="{C604F23F-9087-4EDD-89E8-1BBD03A693E7}" ShortID="269107861">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="19"/>
-								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Harpoon" ID="{B9BA0CC9-22B2-4323-9A36-E007C7CE5A65}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_harpoon_shoot_reel_chain" ID="{3C6C5663-9C3F-4D6C-B3EA-7585EC3E6CFB}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_harpoon_shoot_reel_chain.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="570316296"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_harpoon_shoot_reel_chain" ID="{3C6C5663-9C3F-4D6C-B3EA-7585EC3E6CFB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="sfx_harpoon_shoot_reel_heavyair" ID="{B020BC20-422A-4327-AFDA-A10B5A9FB672}" ShortID="1069022913">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -136,51 +91,6 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_harpoon_shoot_reel_heavyair" ID="{036F17E7-0971-4744-9A4E-16BC6A747F00}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_harpoon_shoot_reel_heavychain" ID="{1499F79B-1435-444E-8F62-691B4ED378FE}" ShortID="933935352">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="19"/>
-								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Harpoon" ID="{B9BA0CC9-22B2-4323-9A36-E007C7CE5A65}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_harpoon_shoot_reel_heavychain" ID="{6543A0FE-4E86-4422-9783-BCE5EDB2199C}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_harpoon_shoot_reel_heavychain.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="128127013"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_harpoon_shoot_reel_heavychain" ID="{6543A0FE-4E86-4422-9783-BCE5EDB2199C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<SwitchContainer Name="Fire Once" ID="{A21134A1-CFDC-43D6-9665-9BB53D0E22DD}" ShortID="726211592">
@@ -317,6 +227,64 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<Sound Name="sfx_harpoon_shoot_reel_chain" ID="{9903308D-381E-436D-A181-12764D4DB6B2}" ShortID="436324891">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_harpoon_shoot_reel_chain" ID="{CD073C6E-70B2-4F1A-9611-9C5F894DE6A8}">
+									<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Harpoon\Air Loop\Harpoon Firing Loop.rpp"</Comment>
+									<Language>SFX</Language>
+									<AudioFile>sfx_harpoon_shoot_reel_chain.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="570316296"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_harpoon_shoot_reel_chain" ID="{CD073C6E-70B2-4F1A-9611-9C5F894DE6A8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_harpoon_shoot_reel_heavychain" ID="{94A90C15-E7DC-4689-A5B3-E29CFA685765}" ShortID="994345869">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_harpoon_shoot_reel_heavychain" ID="{B2B75AC3-C43F-47D2-848B-6CD64FADC546}">
+									<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Harpoon\Air Loop\Harpoon Firing Loop.rpp"</Comment>
+									<Language>SFX</Language>
+									<AudioFile>sfx_harpoon_shoot_reel_heavychain.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="128127013"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_harpoon_shoot_reel_heavychain" ID="{B2B75AC3-C43F-47D2-848B-6CD64FADC546}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Footsteps" ID="{CA78EC9D-CA92-478B-860E-3D11242515AD}" ShortID="1046173176">
@@ -351,6 +319,11 @@
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -363,6 +336,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="heel" ID="{2D82A24C-20E3-4998-9161-D0D1EF849B08}" ShortID="359441334">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
