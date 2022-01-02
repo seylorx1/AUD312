@@ -41,6 +41,7 @@
 					<ChildrenList>
 						<Switch Name="Concrete" ID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}"/>
 						<Switch Name="Gravel" ID="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}"/>
+						<Switch Name="Grass" ID="{05C16097-8E3C-4946-A103-D61957EBA3B4}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

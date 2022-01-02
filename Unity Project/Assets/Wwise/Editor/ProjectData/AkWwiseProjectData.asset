@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585610721030638229
+    m_lastTime: -8585605145148133772
     List:
     - name: Base Music
       guid: f8400540ecc8c44394331a34a8a64f68
@@ -629,7 +629,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585605439028552372
+    m_lastTime: -8585605145148757686
     List:
     - name: Box
       guid: b522a989009d6a4fa7920d2b12634e88
@@ -887,6 +887,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: FootstepChange_Grass
+      guid: 491b9ec9b026a8479d8b44d738693af4
+      id: 2265283292
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: 28e55eca8a6ad74789f4415d53397b3a
+      - ElementName: FootstepChange_Grass
+        ObjectType: 3
+        guid: 491b9ec9b026a8479d8b44d738693af4
+      Path: Events\Default Work Unit\SFX\Footstep\FootstepChange_Grass
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: FootstepChange_Gravel
       guid: 533a2a8ce52bb042927db2f47f12dcc9
       id: 1670615683
@@ -931,7 +954,7 @@ MonoBehaviour:
         guid: 09fd370eacf00c438ae2c527280491b3
       Path: Events\Default Work Unit\SFX\Footstep\FootstepPlay
       maxAttenuation: 0
-      maxDuration: 0.641615
+      maxDuration: 0.699433
       minDuration: 0.268956
     - name: Harpoon
       guid: 997ce0413219b84190889666ec7dfd20
@@ -1042,7 +1065,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: a522c185f18d8a4bb9601d4f57bff71b
       Path: Events\Default Work Unit\SFX\Harpoon\HarpoonGrabSuccess
-      maxAttenuation: 60
+      maxAttenuation: 0
       maxDuration: 2.138458
       minDuration: 2.138458
     - name: HarpoonPickup
@@ -2378,7 +2401,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6603d6ba8e055f4caa446aab326e99e9
     GuidInternal: 
-    m_lastTime: -8585613094940013252
+    m_lastTime: -8585605145148529558
     List:
     - name: FootstepType
       guid: 3af574822d433c4bb3b27b0dcfa58a47
@@ -2411,6 +2434,22 @@ MonoBehaviour:
         - ElementName: Concrete
           ObjectType: 10
           guid: 090905f6fcd30b4ab34bced6bb085408
+      - name: Grass
+        guid: 9760c1053c8e4649a103d61957eba3b4
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: FootstepType
+          ObjectType: 11
+          guid: 3af574822d433c4bb3b27b0dcfa58a47
+        - ElementName: Grass
+          ObjectType: 10
+          guid: 9760c1053c8e4649a103d61957eba3b4
       - name: Gravel
         guid: e4c6a10dc6917a46a8dc8c1509316fb7
         id: 2185786256

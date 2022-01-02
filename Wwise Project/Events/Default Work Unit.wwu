@@ -373,34 +373,6 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="FootstepChange_Concrete" ID="{3E048638-8FB4-4090-A260-C6EC5D385D27}">
-									<ChildrenList>
-										<Action Name="" ID="{E23271E5-0B7D-4CC9-92AB-7C06AB5DCBD4}" ShortID="259661425">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="23"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Concrete" ID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="FootstepChange_Gravel" ID="{8C2A3A53-2BE5-42B0-927D-B2F47F12DCC9}">
-									<ChildrenList>
-										<Action Name="" ID="{1515F30A-8684-4BB9-95F5-D0288F396658}" ShortID="279565199">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="23"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Gravel" ID="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Box" ID="{89A922B5-9D00-4F6A-A792-0D2B12634E88}" ShortID="213983789">

@@ -20,8 +20,6 @@ namespace AK
         static const AkUniqueID BOXPICKUPCUE = 4115829741U;
         static const AkUniqueID BOXSEGMENTDOWNCUE = 3547374172U;
         static const AkUniqueID BOXSEGMENTUPCUE = 1360996149U;
-        static const AkUniqueID FOOTSTEPCHANGE_CONCRETE = 963962511U;
-        static const AkUniqueID FOOTSTEPCHANGE_GRAVEL = 1670615683U;
         static const AkUniqueID FOOTSTEPPLAY = 4039405217U;
         static const AkUniqueID HARPOONAMBIENCEPLAY = 561183332U;
         static const AkUniqueID HARPOONAMBIENCESTOP = 3333733726U;
@@ -148,6 +146,7 @@ namespace AK
             namespace SWITCH
             {
                 static const AkUniqueID CONCRETE = 841620460U;
+                static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID GRAVEL = 2185786256U;
             } // namespace SWITCH
         } // namespace FOOTSTEPTYPE
