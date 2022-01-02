@@ -196,18 +196,20 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID BASE_MUSIC = 1315736911U;
-        static const AkUniqueID BOAT_VAMP_MUSIC = 2023061728U;
-        static const AkUniqueID BOX_AMBIENCE_MUSIC = 2544947825U;
-        static const AkUniqueID BOX_HOLDING_MUSIC = 628250272U;
+        static const AkUniqueID BASE = 1291433366U;
+        static const AkUniqueID BOX_AMBIENCE_BUS = 2758124570U;
+        static const AkUniqueID BOX_HOLDING_BUS = 2190619839U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID HARPOON = 302949338U;
-        static const AkUniqueID HARPOON_AMBIENCE_MUSIC = 1478843139U;
+        static const AkUniqueID HARPOON_AMBIENCE_BUS = 286173556U;
         static const AkUniqueID HARPOONAIR = 1174992302U;
-        static const AkUniqueID KICKSNAREEQ_BUS = 2916495418U;
+        static const AkUniqueID KICKSNARE_BUS = 831678660U;
+        static const AkUniqueID LEFT_FOOTSTEP = 1014522048U;
         static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
         static const AkUniqueID MUSIC_BUS = 3127962312U;
+        static const AkUniqueID RIGHT_FOOTSTEP = 854631381U;
         static const AkUniqueID SOUND_EFFECTS_BUS = 57144414U;
+        static const AkUniqueID VAMP_BUS = 3225388919U;
         static const AkUniqueID WORLDKEYS = 1310325127U;
     } // namespace BUSSES
 

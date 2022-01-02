@@ -3,35 +3,10 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="PROTO" ID="{F93B74FE-BB64-443E-BF5E-7F5F90F4E4E8}" ShortID="817489252">
-					<ChildrenList>
-						<Event Name="PROTO_music_generic" ID="{2CAC2604-9D89-4485-BF80-EDFBD7B45DB7}">
-							<ChildrenList>
-								<Action Name="" ID="{C119BE74-1E41-4B4D-9758-1D116DCF79E1}" ShortID="365425485">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="PROTO_music_generic_01" ID="{5F7E64BC-41D2-4595-8717-D2B13BE086B4}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="PROTO_music_dynamic" ID="{D8E429BE-BBB7-44D2-87AD-DC99071D2461}">
-							<ChildrenList>
-								<Action Name="" ID="{7D523CBB-12B8-4158-8664-1B3684278BE1}" ShortID="468052219">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="PROTO_music" ID="{65788AA7-08AC-4601-936F-2325AC5777CC}" WorkUnitID="{F25D41B2-87F8-4367-B70B-EA99533755FA}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="Music" ID="{7DC76BA7-CF76-4D36-9933-B7AC263E0790}" ShortID="232227215">
 					<ChildrenList>
 						<Event Name="MusicBoatPlay" ID="{F56B5F6D-980C-4666-A2BD-5C329DFEB6EE}">
+							<Comment>Starts the game's music, which is made up of parts of a song I made: 'Boat Ride Over A Paltry Chasm'.</Comment>
 							<ChildrenList>
 								<Action Name="" ID="{99336DC5-8E53-46C7-89CD-6643490CCAF6}" ShortID="1044329988">
 									<ReferenceList>
@@ -147,6 +122,7 @@
 						<Folder Name="Harpoon" ID="{41E07C99-1932-41B8-9088-9666EC7DFD20}" ShortID="721530848">
 							<ChildrenList>
 								<Event Name="HarpoonPickup" ID="{63F2F81C-20F3-4E27-901D-621BBCDD6AFE}">
+									<Comment>Called when the harpoon is picked up.</Comment>
 									<ChildrenList>
 										<Action Name="" ID="{D9ED6E64-8B98-4D29-A2B0-B42A69F071E4}" ShortID="319833822">
 											<PropertyList>
@@ -161,17 +137,13 @@
 									</ChildrenList>
 								</Event>
 								<Event Name="HarpoonFireReturn" ID="{DECE25C7-0139-4F72-9A70-8D27EF952A14}">
+									<Comment>Called once when the harpoon is fired, and again when it begins to retract. (cont.)
+
+This event does the following:
+- Plays the harpoon air and chain 3D positional noises.
+- Handles the harpoon's Fire Once behaviour.
+- Stops part B of sfx_harpoon_shoot from playing.</Comment>
 									<ChildrenList>
-										<Action Name="" ID="{9B9811D8-A0EB-4567-BB62-58306431B5A8}" ShortID="506031121">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_b" ID="{B4814B0F-9481-4E3F-A962-2914F0E062C5}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 										<Action Name="" ID="{08F3D848-2B7E-4423-8540-819210892F11}" ShortID="309122942">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -183,6 +155,16 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{9903308D-381E-436D-A181-12764D4DB6B2}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{9B9811D8-A0EB-4567-BB62-58306431B5A8}" ShortID="506031121">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_harpoon_shoot_b" ID="{B4814B0F-9481-4E3F-A962-2914F0E062C5}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -206,6 +188,7 @@
 									</ChildrenList>
 								</Event>
 								<Event Name="HarpoonReceived" ID="{5732953F-80B2-4781-B968-4E50EEC5C759}">
+									<Comment>Called when the harpoon is fully retracted. Resets harpoon state and stops related sounds.</Comment>
 									<ChildrenList>
 										<Action Name="" ID="{C9B09BE3-559F-4563-80C2-107D40206BF7}" ShortID="576005387">
 											<PropertyList>
@@ -260,6 +243,7 @@
 									</ChildrenList>
 								</Event>
 								<Event Name="HarpoonGrabSuccess" ID="{85C122A5-8DF1-4B8A-B960-1D4F57BFF71B}">
+									<Comment>Called when the harpoon successfully grabs something. Stops normal and start heavy chain noises.</Comment>
 									<ChildrenList>
 										<Action Name="" ID="{F144EBFC-632B-470A-86E6-714D1F735E3A}" ShortID="720835279">
 											<PropertyList>
@@ -326,8 +310,18 @@
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Footstep" ID="{CA5EE528-6A8A-47D7-89F4-415D53397B3A}" ShortID="282057399">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="26"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ChildrenList>
 								<Event Name="FootstepPlay" ID="{0E37FD09-F0AC-430C-8AE2-C527280491B3}">
+									<Comment>Called on every footstep. (cont.)
+
+This event does the following:
+- Plays the Footsteps switch container.
+- Resets the vamp cooldown.
+- Enables world keys.</Comment>
 									<ChildrenList>
 										<Action Name="" ID="{3CB983A9-C8D7-47F0-967B-C43547B68CB6}" ShortID="856770221">
 											<ReferenceList>
@@ -378,6 +372,7 @@
 						<Folder Name="Box" ID="{89A922B5-9D00-4F6A-A792-0D2B12634E88}" ShortID="213983789">
 							<ChildrenList>
 								<Event Name="BoxPickup" ID="{06857BE9-12C1-43AD-8233-59D8E87C3F90}">
+									<Comment>Called when a keycube is picked up.</Comment>
 									<ChildrenList>
 										<Action Name="" ID="{F7B9B358-C3FB-489C-950B-598247DAA7B5}" ShortID="917480513">
 											<PropertyList>
@@ -393,6 +388,7 @@
 									</ChildrenList>
 								</Event>
 								<Event Name="BoxDrop" ID="{C2FD5147-3990-4F1F-A576-87A4AE697A0A}">
+									<Comment>Called when a keycube is dropped.</Comment>
 									<ChildrenList>
 										<Action Name="" ID="{3933FF8C-6FE6-4DE2-B068-C97835999AAC}" ShortID="549507226">
 											<PropertyList>
@@ -408,6 +404,7 @@
 									</ChildrenList>
 								</Event>
 								<Event Name="BoxAmbiencePlay" ID="{F192BD75-CC9C-4940-8BA3-367206F95208}">
+									<Comment>Starts passive music on keycubes.</Comment>
 									<ChildrenList>
 										<Action Name="" ID="{A92D4835-02BB-426C-81DF-870608BBBB70}" ShortID="439033250">
 											<ReferenceList>
@@ -421,6 +418,12 @@
 							</ChildrenList>
 						</Folder>
 						<Folder Name="WorldKeys" ID="{398C8C9A-9058-4C7E-A335-7064B1A17648}" ShortID="846575601">
+							<Comment>Called from event triggers positioned at horizontal triggers at different heights placed universally across the whole map.
+</Comment>
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ChildrenList>
 								<Event Name="WorldKey_F4" ID="{4FD662FB-161E-428B-AC44-B82D7505BC9A}">
 									<ChildrenList>

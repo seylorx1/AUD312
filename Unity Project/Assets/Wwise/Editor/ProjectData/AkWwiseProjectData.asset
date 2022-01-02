@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585605145148133772
+    m_lastTime: -8585605089785803605
     List:
     - name: Base Music
       guid: f8400540ecc8c44394331a34a8a64f68
@@ -530,6 +530,27 @@ MonoBehaviour:
         ObjectType: 2
         guid: 22d7906c0b44b44891074f218307cba6
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Boat\KicksnareEQ Bus
+    - name: Left Footstep
+      guid: 91b72d5949b1ae40ae73f68624c18669
+      id: 1014522048
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Sound Effects Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Footsteps
+        ObjectType: 2
+        guid: c13f11b0aaeda240a557fe73afab7937
+      - ElementName: Left Footstep
+        ObjectType: 2
+        guid: 91b72d5949b1ae40ae73f68624c18669
+      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Footsteps\Left
+        Footstep
     - name: Motion Factory Bus
       guid: c6b9f92af16ee946b5f2e30c9e602c74
       id: 985987111
@@ -558,6 +579,27 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus
+    - name: Right Footstep
+      guid: e2a043da67a1f8469ed647ff2e023210
+      id: 854631381
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Sound Effects Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Footsteps
+        ObjectType: 2
+        guid: c13f11b0aaeda240a557fe73afab7937
+      - ElementName: Right Footstep
+        ObjectType: 2
+        guid: e2a043da67a1f8469ed647ff2e023210
+      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Footsteps\Right
+        Footstep
     - name: Sound Effects Bus
       guid: 300defa1ec929e44b8c16c3eeedc7a43
       id: 57144414
@@ -629,7 +671,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585605145148757686
+    m_lastTime: -8585605105820532096
     List:
     - name: Box
       guid: b522a989009d6a4fa7920d2b12634e88
@@ -864,75 +906,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: FootstepChange_Concrete
-      guid: 3886043eb48f9040a260c6ec5d385d27
-      id: 963962511
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: SFX
-        ObjectType: 4
-        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
-      - ElementName: Footstep
-        ObjectType: 4
-        guid: 28e55eca8a6ad74789f4415d53397b3a
-      - ElementName: FootstepChange_Concrete
-        ObjectType: 3
-        guid: 3886043eb48f9040a260c6ec5d385d27
-      Path: Events\Default Work Unit\SFX\Footstep\FootstepChange_Concrete
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: FootstepChange_Grass
-      guid: 491b9ec9b026a8479d8b44d738693af4
-      id: 2265283292
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: SFX
-        ObjectType: 4
-        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
-      - ElementName: Footstep
-        ObjectType: 4
-        guid: 28e55eca8a6ad74789f4415d53397b3a
-      - ElementName: FootstepChange_Grass
-        ObjectType: 3
-        guid: 491b9ec9b026a8479d8b44d738693af4
-      Path: Events\Default Work Unit\SFX\Footstep\FootstepChange_Grass
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: FootstepChange_Gravel
-      guid: 533a2a8ce52bb042927db2f47f12dcc9
-      id: 1670615683
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: SFX
-        ObjectType: 4
-        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
-      - ElementName: Footstep
-        ObjectType: 4
-        guid: 28e55eca8a6ad74789f4415d53397b3a
-      - ElementName: FootstepChange_Gravel
-        ObjectType: 3
-        guid: 533a2a8ce52bb042927db2f47f12dcc9
-      Path: Events\Default Work Unit\SFX\Footstep\FootstepChange_Gravel
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: FootstepPlay
       guid: 09fd370eacf00c438ae2c527280491b3
       id: 4039405217
@@ -1625,7 +1598,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: fe13d60f855213448d27601edd0d77e4
     GuidInternal: 
-    m_lastTime: -8585639220286649871
+    m_lastTime: -8585605087181094740
     List:
     - name: BoxSegment
       guid: 94d513563ed65e45983bc1fcd29df7d4
@@ -1861,7 +1834,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c226eeab13aa4f409e89c2a35c4216cc
     GuidInternal: 
-    m_lastTime: -8585613094940325159
+    m_lastTime: -8585605091684516135
     List:
     - name: BoxOpeningStingerState
       guid: 376292dcb3fa024c806a6cac862bb21f

@@ -4,7 +4,12 @@
 		<WorkUnit Name="Default Work Unit" ID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchGroup Name="VampFootstep" ID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}">
+					<Comment>Determines whether the player is walking by conforming VampCooldown data to a switch. (cont.)
+
+As far as this mapping is concerned, the player is walking right up until VampCooldown reaches 0. At which point, the switch disables. Otherwise, the switch is enabled.</Comment>
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="13"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameParameter" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
@@ -38,6 +43,10 @@
 					</SwitchOnRTPC>
 				</SwitchGroup>
 				<SwitchGroup Name="FootstepType" ID="{8274F53A-432D-4B3C-B3B2-7B0DCFA58A47}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="26"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Switch Name="Concrete" ID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}"/>
 						<Switch Name="Gravel" ID="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}"/>

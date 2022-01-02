@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2620557749">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2846230324">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -30,7 +30,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="654082896">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1029008252">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -296,18 +296,6 @@
 								<File Id="1068978669"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}">
-							<Media>
-								<File Id="39568453"/>
-								<File Id="75070834"/>
-								<File Id="472897795"/>
-								<File Id="562976292"/>
-								<File Id="690254642"/>
-								<File Id="755488523"/>
-								<File Id="780591092"/>
-								<File Id="943315901"/>
-							</Media>
-						</SwitchContainer>
 						<SwitchContainer SwitchValue="{05C16097-8E3C-4946-A103-D61957EBA3B4}">
 							<Media>
 								<File Id="16215833"/>
@@ -318,6 +306,18 @@
 								<File Id="791132644"/>
 								<File Id="924280309"/>
 								<File Id="974338589"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}">
+							<Media>
+								<File Id="39568453"/>
+								<File Id="75070834"/>
+								<File Id="472897795"/>
+								<File Id="562976292"/>
+								<File Id="690254642"/>
+								<File Id="755488523"/>
+								<File Id="780591092"/>
+								<File Id="943315901"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>

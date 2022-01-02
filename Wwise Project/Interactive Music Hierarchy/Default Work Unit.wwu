@@ -1499,7 +1499,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+							<ObjectRef Name="Base" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1526,7 +1526,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+											<ObjectRef Name="Box Holding Bus" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1734,7 +1734,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+											<ObjectRef Name="Box Holding Bus" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1847,7 +1847,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+											<ObjectRef Name="Base" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2602,7 +2602,7 @@
 															<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Boat Vamp Music" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Vamp Bus" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="VampFootstep" ID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -2880,7 +2880,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Box Holding Bus" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -3198,7 +3198,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="Base" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -3747,7 +3747,7 @@
 															<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Boat Vamp Music" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Vamp Bus" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="VampFootstep" ID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -4025,7 +4025,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Box Holding Bus" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4386,7 +4386,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+											<ObjectRef Name="Base" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -4413,7 +4413,7 @@
 															<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Boat Vamp Music" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Vamp Bus" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="VampFootstep" ID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -5091,7 +5091,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Box Holding Bus" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -5409,7 +5409,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="Base" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -5423,7 +5423,7 @@
 															<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Boat Vamp Music" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Vamp Bus" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="VampFootstep" ID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -5918,7 +5918,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Box Holding Bus" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -6279,7 +6279,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+											<ObjectRef Name="Base" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -7030,7 +7030,7 @@
 															<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Boat Vamp Music" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Vamp Bus" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="VampFootstep" ID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -7306,7 +7306,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Box Holding Bus" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -7597,7 +7597,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="KicksnareEQ Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="KickSnare Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -8082,7 +8082,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="Base" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -8631,7 +8631,7 @@
 															<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Boat Vamp Music" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Vamp Bus" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="VampFootstep" ID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -8909,7 +8909,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Box Holding Bus" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -9201,7 +9201,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="KicksnareEQ Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="KickSnare Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -9382,7 +9382,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+											<ObjectRef Name="Base" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -10027,7 +10027,7 @@
 															<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Boat Vamp Music" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Vamp Bus" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="VampFootstep" ID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -10303,7 +10303,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Box Holding Bus" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -10855,7 +10855,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="KicksnareEQ Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="KickSnare Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -11038,7 +11038,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="Base" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -11480,7 +11480,7 @@
 															<ObjectRef Name="Disabled" ID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Boat Vamp Music" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Vamp Bus" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="VampFootstep" ID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
@@ -11640,7 +11640,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Box Holding Bus" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -12037,7 +12037,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="KicksnareEQ Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="KickSnare Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -12168,7 +12168,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Box Ambience Music" ID="{5DF6543C-5507-4289-A3AE-62861DEEF030}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+											<ObjectRef Name="Box Ambience Bus" ID="{5DF6543C-5507-4289-A3AE-62861DEEF030}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -12186,7 +12186,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="Base" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -12308,7 +12308,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harpoon Ambience Music" ID="{297FCF62-3C75-49CA-8FA3-D705B6C0848C}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+											<ObjectRef Name="Harpoon Ambience Bus" ID="{297FCF62-3C75-49CA-8FA3-D705B6C0848C}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>

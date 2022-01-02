@@ -17,7 +17,13 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Base Music" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}">
+						<Bus Name="Base" ID="{400540F8-C8EC-43C4-9433-1A34A8A64F68}">
+							<Comment>The music bus which most tracks in the background music use, aside from percussion. (cont.)
+
+When this bus is turned down, it allows for more bandwidth for other music elements to be present. For instance, when a box is picked up, the music gets quieter which allows for the BoxPickupNoises to be much clearer.
+
+By keeping the percussion elements seperate from the bus, the rhythm (and by extension the song) perpetuates throughout new sonic conditions.
+</Comment>
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
@@ -47,45 +53,23 @@
 							</StateInfo>
 							<ObjectLists/>
 						</Bus>
-						<Folder Name="Boat" ID="{C32CD2D2-3AA1-4FFE-977F-7873B1DFBEE8}" ShortID="710346650">
-							<ChildrenList>
-								<Bus Name="Boat Vamp Music" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}">
-									<PropertyList>
-										<Property Name="BusVolume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ObjectLists/>
-								</Bus>
-								<Bus Name="KicksnareEQ Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}">
-									<ReferenceList>
-										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-											<ObjectRef Name="KicksnareEQ" ID="{60DBC306-4A10-41A6-89C9-3D479A0DCADA}" WorkUnitID="{F5841E83-69EA-445F-86D8-2C3991F90FE3}"/>
-										</Reference>
-									</ReferenceList>
-									<ObjectLists/>
-								</Bus>
-							</ChildrenList>
-						</Folder>
 						<Folder Name="Interactions" ID="{8E9D3ACB-D12C-4752-BA59-CAA62A044962}" ShortID="78413416">
 							<ChildrenList>
-								<Bus Name="Box Ambience Music" ID="{5DF6543C-5507-4289-A3AE-62861DEEF030}">
+								<Bus Name="Box Ambience Bus" ID="{5DF6543C-5507-4289-A3AE-62861DEEF030}">
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ObjectLists/>
 								</Bus>
-								<Bus Name="Box Holding Music" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}">
+								<Bus Name="Box Holding Bus" ID="{CBA07871-D203-4B1C-8C86-F221DDC3B242}">
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-96</Value>
+												<Value>-100</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RecoveryTime" Type="Real64" Value="0.5"/>
@@ -104,7 +88,7 @@
 												<StateRef Name="BoxHeld" ID="{DA60839B-344D-45C3-9134-81D0EECBFB60}"/>
 												<CustomState Name="" ID="{23E5AFDB-2697-4D07-B6AF-856270ABF5D7}" ShortID="683257782">
 													<PropertyList>
-														<Property Name="BusVolume" Type="Real64" Value="90"/>
+														<Property Name="BusVolume" Type="Real64" Value="105"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -112,7 +96,33 @@
 									</StateInfo>
 									<ObjectLists/>
 								</Bus>
-								<Bus Name="Harpoon Ambience Music" ID="{297FCF62-3C75-49CA-8FA3-D705B6C0848C}">
+								<Bus Name="Harpoon Ambience Bus" ID="{297FCF62-3C75-49CA-8FA3-D705B6C0848C}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Instruments" ID="{86510460-B62C-4B87-BBC5-9562F60A3C21}" ShortID="302816336">
+							<ChildrenList>
+								<Bus Name="KickSnare Bus" ID="{6C90D722-440B-48B4-9107-4F218307CBA6}">
+									<Comment>Kick/Snare Audio Bus, with EQ boosing lower frequencies in the mix. (See description for 'Base'.)</Comment>
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="KicksnareEQ" ID="{60DBC306-4A10-41A6-89C9-3D479A0DCADA}" WorkUnitID="{F5841E83-69EA-445F-86D8-2C3991F90FE3}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Vamp Bus" ID="{5AD44236-AB92-493C-BA14-79793C94F2C9}">
+									<Comment>Vamp / Alberti Bass Audio Bus</Comment>
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
@@ -124,7 +134,6 @@
 								</Bus>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Instruments" ID="{86510460-B62C-4B87-BBC5-9562F60A3C21}" ShortID="302816336"/>
 					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
@@ -159,12 +168,15 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}">
+							<Comment>With cool delay effect.</Comment>
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
 										<Value>-100</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
@@ -194,9 +206,49 @@
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="26"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Left Footstep" ID="{592DB791-B149-40AE-AE73-F68624C18669}">
+									<Comment>Panned ever-so-slightly to the left.</Comment>
+									<PropertyList>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<PositioningInfo>
+										<Panner Name="" ID="{F6501C6F-8878-4C37-8849-3B4387480BBB}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-20"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Right Footstep" ID="{DA43A0E2-A167-46F8-9ED6-47FF2E023210}">
+									<Comment>Panned ever-so-slightly to the right.</Comment>
+									<PropertyList>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<PositioningInfo>
+										<Panner Name="" ID="{5EB1B204-865E-4CCB-860C-B924358784AB}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="20"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="Harpoon" ID="{B9BA0CC9-22B2-4323-9A36-E007C7CE5A65}">
+							<Comment>Panned ever-so-slightly to the front-right.</Comment>
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+							</PropertyList>
 							<ChildrenList>
 								<Bus Name="HarpoonAir" ID="{482D20B5-9FD6-440E-8EED-E17BE5CCF386}">
 									<PropertyList>
@@ -209,6 +261,14 @@
 									<ObjectLists/>
 								</Bus>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{172D31FA-2C67-432A-9812-54CAF2703CDE}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="15"/>
+										<Property Name="PanY" Type="Real64" Value="25"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
 							<ObjectLists/>
 						</Bus>
 					</ChildrenList>
