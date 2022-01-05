@@ -9,10 +9,10 @@ State Group	ID	Name			Wwise Object Path	Notes
 	379189110	HarpoonFired			\Default Work Unit\Interactions\HarpoonFired	
 	1038281861	BoxOpeningStingerState			\Default Work Unit\Music\BoxOpeningStingerState	
 	1363879777	HarpoonState			\Default Work Unit\Interactions\HarpoonState	
+	1777631295	Room_Type			\Default Work Unit\Rooms\Room_Type	'None' is synonymous with 'Indoors'
 	1941896134	Room_C			\Default Work Unit\Rooms\Room_C	
 	1941896135	Room_B			\Default Work Unit\Rooms\Room_B	
 	2558423223	BoxState			\Default Work Unit\Music\BoxState	
-	2968376717	Room_Corridor			\Default Work Unit\Rooms\Room_Corridor	
 	3156432362	WorldKeysEnabled			\Default Work Unit\Interactions\WorldKeysEnabled	
 
 State	ID	Name	State Group			Notes
@@ -22,26 +22,30 @@ State	ID	Name	State Group			Notes
 	3791155954	Muted	BoxOpeningStingerState			
 	515864255	HarpoonHeld	HarpoonState			
 	748895195	None	HarpoonState			
+	748895195	None	Room_Type			
+	2730119150	Outdoors	Room_Type			
+	3059984139	Tunnel	Room_Type			
 	748895195	None	Room_C			
 	2764605217	Passed	Room_C			
 	748895195	None	Room_B			
 	2764605217	Passed	Room_B			
 	748895195	None	BoxState			
 	2060468149	BoxHeld	BoxState			
-	748895195	None	Room_Corridor			
-	2066668302	Entered	Room_Corridor			
 	748895195	None	WorldKeysEnabled			
 	4174102348	Enabled	WorldKeysEnabled			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	376481985	BoxHeld	BoxState	\Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base		
 	424739837	Enabled	WorldKeysEnabled	\Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\WorldKeys		
+	596799336	Outdoors	Room_Type	\Effects\Factory Effects\Wwise RoomVerb\Rooms\Room_Medium_High_Absorbtion		
 	683257782	BoxHeld	BoxState	\Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Holding Bus		
+	760965010	Tunnel	Room_Type	\Effects\Factory Effects\Wwise RoomVerb\Rooms\Room_Medium_High_Absorbtion		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
 	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	1042517418	WindIntensity			\Default Work Unit\WindIntensity	
 	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
 	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
 	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
@@ -54,6 +58,10 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
 	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
 
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	167128776	TreeWindHighFreqLFO (Custom)				
+	404131664	WindLFO			\Default Work Unit\WindLFO	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	57144414	Sound Effects Bus			\Default Work Unit\Sound Effects Bus	
 	286173556	Harpoon Ambience Bus			\Default Work Unit\Music Bus\Interactions\Harpoon Ambience Bus	
@@ -65,16 +73,22 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1174992302	HarpoonAir			\Default Work Unit\Sound Effects Bus\Harpoon\HarpoonAir	
 	1291433366	Base			\Default Work Unit\Music Bus\Base	The music bus which most tracks in the background music use, aside from percussion. (cont.)  When this bus is turned down, it allows for more bandwidth for other music elements to be present. For instance, when a box is picked up, the music gets quieter which allows for the BoxPickupNoises to be much clearer.  By keeping the percussion elements seperate from the bus, the rhythm (and by extension the song) perpetuates throughout new sonic conditions. 
 	1310325127	WorldKeys			\Default Work Unit\Sound Effects Bus\WorldKeys	With cool delay effect.
+	1537061107	Wind			\Default Work Unit\Sound Effects Bus\Ambience\Wind	
 	2190619839	Box Holding Bus			\Default Work Unit\Music Bus\Interactions\Box Holding Bus	
 	2385628198	Footsteps			\Default Work Unit\Sound Effects Bus\Footsteps	
+	2466686001	Tree Wind			\Default Work Unit\Sound Effects Bus\Ambience\Tree\Tree Wind	
 	2758124570	Box Ambience Bus			\Default Work Unit\Music Bus\Interactions\Box Ambience Bus	
 	3127962312	Music Bus			\Default Work Unit\Music Bus	
 	3225388919	Vamp Bus			\Default Work Unit\Music Bus\Instruments\Vamp Bus	Vamp / Alberti Bass Audio Bus
+	3322072369	Tree			\Default Work Unit\Sound Effects Bus\Ambience\Tree	
 
 Effect plug-ins	ID	Name	Type				Notes
+	587996968	TreeWindEQ (Custom)	Wwise Parametric EQ			
 	1588715066	Echoes_Linear	Wwise Delay			
+	2431122933	WindEQ	Wwise Parametric EQ			
 	2688083296	KicksnareEQ	Wwise Parametric EQ			
 	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
+	4202347640	Repeat_after_me	Wwise Harmonizer			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

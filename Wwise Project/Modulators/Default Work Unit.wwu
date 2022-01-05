@@ -10,6 +10,31 @@
 						<Property Name="TimeModInitialDelay" Type="Real64" Value="0.5"/>
 					</PropertyList>
 				</ModulatorTime>
+				<ModulatorLfo Name="WindLFO" ID="{1093DE05-D39F-465D-B2C9-7C007159AF73}" ShortID="404131664">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.25">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{DDFE0CC5-E423-45A1-AF79-BB88DF3C6DE7}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="0.4"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="LfoSmoothing" Type="Real64" Value="50"/>
+						<Property Name="LfoWaveform" Type="int32" Value="5"/>
+						<Property Name="ModulatorScope" Type="int32" Value="3"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="TreeWindHighFreqLFO" ID="{3F6F508C-6DC1-4D33-B073-F1CDCE5DFC5F}" ShortID="347345117">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.5"/>
+						<Property Name="LfoSmoothing" Type="Real64" Value="50"/>
+						<Property Name="LfoWaveform" Type="int32" Value="5"/>
+					</PropertyList>
+				</ModulatorLfo>
 			</ChildrenList>
 		</WorkUnit>
 	</Modulators>

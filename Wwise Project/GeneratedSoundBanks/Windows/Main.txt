@@ -3,13 +3,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	561183332	HarpoonAmbiencePlay			\Default Work Unit\SFX\Harpoon\HarpoonAmbiencePlay	
 	757170495	HarpoonReceived			\Default Work Unit\SFX\Harpoon\HarpoonReceived	Called when the harpoon is fully retracted. Resets harpoon state and stops related sounds.
 	829164566	BoxAmbiencePlay			\Default Work Unit\SFX\Box\BoxAmbiencePlay	Starts passive music on keycubes.
+	1113956849	EnterIndoorsTunnel			\Default Work Unit\SFX\Room\EnterIndoorsTunnel	
+	1122283870	MusicStart			\Default Work Unit\Music\MusicStart	Starts the game's music, which is made up of parts of a song I made: 'Boat Ride Over A Paltry Chasm'.
 	1360996149	BoxSegmentUpCue			\Default Work Unit\Music\Cue Events\Stingers\BoxSegmentUpCue	
+	1661560854	SFXStart			\Default Work Unit\SFX\SFXStart	Initialises the SFX. (cont.)  This event does the following: - Enables the WorldKeysEnabled state (This is done to prevent the WorldKeys from triggering when the player first loads into the level.) - Starts the sfx_wind sound effect.
+	1721219483	EnterIndoors			\Default Work Unit\SFX\Room\EnterIndoors	
+	1973723167	TreeAmbiencePlay			\Default Work Unit\SFX\TreeAmbiencePlay	
 	2421633396	HarpoonFireReturn			\Default Work Unit\SFX\Harpoon\HarpoonFireReturn	Called once when the harpoon is fired, and again when it begins to retract. (cont.)  This event does the following: - Plays the harpoon air and chain 3D positional noises. - Handles the harpoon's Fire Once behaviour. - Stops part B of sfx_harpoon_shoot from playing.
 	2671589300	BoxPickup			\Default Work Unit\SFX\Box\BoxPickup	Called when a keycube is picked up.
+	2811934447	EnterTunnel			\Default Work Unit\SFX\Room\EnterTunnel	
 	2837856117	HarpoonGrabSuccess			\Default Work Unit\SFX\Harpoon\HarpoonGrabSuccess	Called when the harpoon successfully grabs something. Stops normal and start heavy chain noises.
 	2867011390	HarpoonPickup			\Default Work Unit\SFX\Harpoon\HarpoonPickup	Called when the harpoon is picked up.
-	3164150550	MusicBoatPlay			\Default Work Unit\Music\MusicBoatPlay	Starts the game's music, which is made up of parts of a song I made: 'Boat Ride Over A Paltry Chasm'.
+	3070671186	EnterOutdoors			\Default Work Unit\SFX\Room\EnterOutdoors	
 	3333733726	HarpoonAmbienceStop			\Default Work Unit\SFX\Harpoon\HarpoonAmbienceStop	
+	3372421815	LevelStart			\Default Work Unit\LevelStart	Called at the beginning of the level. (cont.)  This event does the following: - Posts the MusicStart event, initialising the music for the level.  - Posts the SFXStart event, initialising the sound effects for the level.  
 	3547374172	BoxSegmentDownCue			\Default Work Unit\Music\Cue Events\Stingers\BoxSegmentDownCue	
 	3724088773	WorldKey_A5			\Default Work Unit\SFX\WorldKeys\WorldKey_A5	
 	3724088774	WorldKey_A6			\Default Work Unit\SFX\WorldKeys\WorldKey_A6	
@@ -27,7 +34,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3841532096	WorldKey_F5			\Default Work Unit\SFX\WorldKeys\WorldKey_F5	
 	3841532097	WorldKey_F4			\Default Work Unit\SFX\WorldKeys\WorldKey_F4	
 	3841532099	WorldKey_F6			\Default Work Unit\SFX\WorldKeys\WorldKey_F6	
-	4039405217	FootstepPlay			\Default Work Unit\SFX\Footstep\FootstepPlay	Called on every footstep. (cont.)  This event does the following: - Plays the Footsteps switch container. - Resets the vamp cooldown. - Enables world keys.
+	4039405217	FootstepPlay			\Default Work Unit\SFX\Footstep\FootstepPlay	Called on every footstep. (Cont.)  This event does the following: - Plays the Footsteps switch container. - Resets the vamp cooldown.
 	4115829741	BoxPickupCue			\Default Work Unit\Music\Cue Events\Stingers\BoxPickupCue	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -73,6 +80,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	16215833	sfx_footstep_heel_grass_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_grass_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\sfx_footstep_grass\Left Foot\heel\sfx_footstep_heel_grass_02		31636
 	39568453	sfx_footstep_toe_gravel_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_gravel_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\sfx_footstep_gravel\Left Foot\toe\sfx_footstep_toe_gravel_02		40234
 	40909859	sfx_footstep_heel_concrete_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\sfx_footstep_concrete\Left Foot\heel\sfx_footstep_heel_concrete_01		8884
+	43452734	sfx_treewind_rustle	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_treewind_rustle_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\sfx_treewind_rustle	Looping tree rustle sound, with random pitch and start delay.	2293264
 	47062023	music_boat_kicksnare_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_kicksnare_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\3 - Room_C (Loop)\Room_C\music_boat_kicksnare_1		882128
 	71636352	sfx_footstep_heel_concrete_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\sfx_footstep_concrete\Left Foot\heel\sfx_footstep_heel_concrete_03		8884
 	75070834	sfx_footstep_heel_gravel_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_gravel_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\sfx_footstep_gravel\Left Foot\heel\sfx_footstep_heel_gravel_02		18704
@@ -88,6 +96,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	149940528	sfx_footstep_heel_concrete_13	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\sfx_footstep_concrete\Left Foot\heel\sfx_footstep_heel_concrete_13		8884
 	152547260	sfx_footstep_toe_grass_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_grass_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\sfx_footstep_grass\Left Foot\toe\sfx_footstep_toe_grass_03		52934
 	154507780	music_boat_intensebass_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_intensebass_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\4 - Harpoon (Loop)\Harpoon\music_boat_intensebass_1		2005280
+	200076591	sfx_pinknoise	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_pinknoise_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\sfx_treewind (Loop)\sfx_pinknoise		1764064
 	229936893	music_boat_kicksnare_chorus	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_kicksnare_chorus_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\3 - Room_C (Loop)\Room_C Chorus\music_boat_kicksnare_chorus		1780664
 	231539839	sfx_footstep_toe_concrete_13	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footsteps\sfx_footstep_concrete\Left Foot\toe\sfx_footstep_toe_concrete_13		15852
 	238751466	sfx_worldkeys_fmaj_a5	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_worldkeys_fmaj_a5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\WorldKeys\sfx_worldkeys_fmaj_a5		26524

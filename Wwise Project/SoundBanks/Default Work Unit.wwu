@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{F8420254-3C05-45C1-8049-835C8ED6E27F}">
 					<ObjectInclusionList>
 						<ObjectRef Name="SFX" ID="{2F5C342C-D6B2-42A7-8F26-1EB6E1C6970A}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LevelStart" ID="{DAC13E18-1B9C-455A-959B-9D27765932F5}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{7DC76BA7-CF76-4D36-9933-B7AC263E0790}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

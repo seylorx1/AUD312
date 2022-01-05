@@ -4,6 +4,7 @@
 		<Plugin Name="Wwise Parametric EQ" ID="6881283" DLL="AkParametricEQ" StaticLib="AkParametricEQFX"/>
 		<Plugin Name="Wwise Delay" ID="6946819" DLL="AkDelay" StaticLib="AkDelayFX"/>
 		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb" StaticLib="AkRoomVerbFX"/>
+		<Plugin Name="Wwise Harmonizer" ID="9043971" DLL="AkHarmonizer" StaticLib="AkHarmonizerFX"/>
 		<Plugin Name="System" ID="11403271"/>
 		<Plugin Name="No Output" ID="11862023"/>
 		<Plugin Name="Wwise Motion" ID="33226759" DLL="AkMotion" StaticLib="AkMotionSink"/>

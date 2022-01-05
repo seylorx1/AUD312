@@ -303,11 +303,28 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585605089785803605
+    m_lastTime: -8585602644508037428
     List:
-    - name: Base Music
+    - name: Ambience
+      guid: 4bf007b3e95ba347893be1c6d236bd46
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Sound Effects Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 4bf007b3e95ba347893be1c6d236bd46
+      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Ambience
+    - name: Base
       guid: f8400540ecc8c44394331a34a8a64f68
-      id: 1315736911
+      id: 1291433366
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -318,50 +335,13 @@ MonoBehaviour:
       - ElementName: Music Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Base Music
+      - ElementName: Base
         ObjectType: 2
         guid: f8400540ecc8c44394331a34a8a64f68
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base Music
-    - name: Boat
-      guid: d2d22cc3a13afe4f977f7873b1dfbee8
-      id: 1795056175
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Music Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Boat
-        ObjectType: 4
-        guid: d2d22cc3a13afe4f977f7873b1dfbee8
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Boat
-    - name: Boat Vamp Music
-      guid: 3642d45a92ab3c49ba1479793c94f2c9
-      id: 2023061728
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Music Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Boat
-        ObjectType: 4
-        guid: d2d22cc3a13afe4f977f7873b1dfbee8
-      - ElementName: Boat Vamp Music
-        ObjectType: 2
-        guid: 3642d45a92ab3c49ba1479793c94f2c9
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Boat\Boat Vamp Music
-    - name: Box Ambience Music
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base
+    - name: Box Ambience Bus
       guid: 3c54f65d07558942a3ae62861deef030
-      id: 2544947825
+      id: 2758124570
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -375,14 +355,14 @@ MonoBehaviour:
       - ElementName: Interactions
         ObjectType: 4
         guid: cb3a9d8e2cd15247ba59caa62a044962
-      - ElementName: Box Ambience Music
+      - ElementName: Box Ambience Bus
         ObjectType: 2
         guid: 3c54f65d07558942a3ae62861deef030
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Ambience
-        Music
-    - name: Box Holding Music
+        Bus
+    - name: Box Holding Bus
       guid: 7178a0cb03d21c4b8c86f221ddc3b242
-      id: 628250272
+      id: 2190619839
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -396,11 +376,11 @@ MonoBehaviour:
       - ElementName: Interactions
         ObjectType: 4
         guid: cb3a9d8e2cd15247ba59caa62a044962
-      - ElementName: Box Holding Music
+      - ElementName: Box Holding Bus
         ObjectType: 2
         guid: 7178a0cb03d21c4b8c86f221ddc3b242
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Holding
-        Music
+        Bus
     - name: Footsteps
       guid: c13f11b0aaeda240a557fe73afab7937
       id: 2385628198
@@ -435,9 +415,9 @@ MonoBehaviour:
         ObjectType: 2
         guid: c90cbab9b22223439a36e007c7ce5a65
       Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Harpoon
-    - name: Harpoon Ambience Music
+    - name: Harpoon Ambience Bus
       guid: 62cf7f29753cca498fa3d705b6c0848c
-      id: 1478843139
+      id: 286173556
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -451,11 +431,11 @@ MonoBehaviour:
       - ElementName: Interactions
         ObjectType: 4
         guid: cb3a9d8e2cd15247ba59caa62a044962
-      - ElementName: Harpoon Ambience Music
+      - ElementName: Harpoon Ambience Bus
         ObjectType: 2
         guid: 62cf7f29753cca498fa3d705b6c0848c
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Harpoon
-        Ambience Music
+        Ambience Bus
     - name: HarpoonAir
       guid: b5202d48d69f0e448eede17be5ccf386
       id: 1174992302
@@ -510,9 +490,9 @@ MonoBehaviour:
         ObjectType: 4
         guid: cb3a9d8e2cd15247ba59caa62a044962
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions
-    - name: KicksnareEQ Bus
+    - name: KickSnare Bus
       guid: 22d7906c0b44b44891074f218307cba6
-      id: 2916495418
+      id: 831678660
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -523,13 +503,14 @@ MonoBehaviour:
       - ElementName: Music Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Boat
+      - ElementName: Instruments
         ObjectType: 4
-        guid: d2d22cc3a13afe4f977f7873b1dfbee8
-      - ElementName: KicksnareEQ Bus
+        guid: 600451862cb6874bbbc59562f60a3c21
+      - ElementName: KickSnare Bus
         ObjectType: 2
         guid: 22d7906c0b44b44891074f218307cba6
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Boat\KicksnareEQ Bus
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Instruments\KickSnare
+        Bus
     - name: Left Footstep
       guid: 91b72d5949b1ae40ae73f68624c18669
       id: 1014522048
@@ -614,6 +595,90 @@ MonoBehaviour:
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus
+    - name: Tree
+      guid: bc2626dd7d22e94b99e5768ff6e2a126
+      id: 3322072369
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Sound Effects Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 4bf007b3e95ba347893be1c6d236bd46
+      - ElementName: Tree
+        ObjectType: 2
+        guid: bc2626dd7d22e94b99e5768ff6e2a126
+      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Ambience\Tree
+    - name: Tree Wind
+      guid: c2ba53b896e72940b36b7ee4b920c5e2
+      id: 2466686001
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Sound Effects Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 4bf007b3e95ba347893be1c6d236bd46
+      - ElementName: Tree
+        ObjectType: 2
+        guid: bc2626dd7d22e94b99e5768ff6e2a126
+      - ElementName: Tree Wind
+        ObjectType: 2
+        guid: c2ba53b896e72940b36b7ee4b920c5e2
+      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Ambience\Tree\Tree
+        Wind
+    - name: Vamp Bus
+      guid: 3642d45a92ab3c49ba1479793c94f2c9
+      id: 3225388919
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Instruments
+        ObjectType: 4
+        guid: 600451862cb6874bbbc59562f60a3c21
+      - ElementName: Vamp Bus
+        ObjectType: 2
+        guid: 3642d45a92ab3c49ba1479793c94f2c9
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Instruments\Vamp Bus
+    - name: Wind
+      guid: 4505e1f36c4da84599c0a6bed624f17b
+      id: 1537061107
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Sound Effects Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 4bf007b3e95ba347893be1c6d236bd46
+      - ElementName: Wind
+        ObjectType: 2
+        guid: 4505e1f36c4da84599c0a6bed624f17b
+      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Ambience\Wind
     - name: WorldKeys
       guid: 10f5d4cef72269499f9954a15d3b71cd
       id: 1310325127
@@ -643,7 +708,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 894b37ce7fff6c44b0dcd4b894060495
     GuidInternal: 
-    m_lastTime: -8585616766033129226
+    m_lastTime: -8585603465179073145
     List:
     - name: Main
       guid: 540242f8053cc1458049835c8ed6e27f
@@ -671,7 +736,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585605105820532096
+    m_lastTime: -8585602645828844932
     List:
     - name: Box
       guid: b522a989009d6a4fa7920d2b12634e88
@@ -886,6 +951,98 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: EnterIndoors
+      guid: ade7bcdd26af89458dc70e2ece060636
+      id: 1721219483
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Room
+        ObjectType: 4
+        guid: f07d4e8df337534c90e737b790712cf1
+      - ElementName: EnterIndoors
+        ObjectType: 3
+        guid: ade7bcdd26af89458dc70e2ece060636
+      Path: Events\Default Work Unit\SFX\Room\EnterIndoors
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: EnterIndoorsTunnel
+      guid: 4fa9dec745fb2344a9518d6e8508a284
+      id: 1113956849
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Room
+        ObjectType: 4
+        guid: f07d4e8df337534c90e737b790712cf1
+      - ElementName: EnterIndoorsTunnel
+        ObjectType: 3
+        guid: 4fa9dec745fb2344a9518d6e8508a284
+      Path: Events\Default Work Unit\SFX\Room\EnterIndoorsTunnel
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: EnterOutdoors
+      guid: c7f62dd36e919946a0b3319c6024aa9a
+      id: 3070671186
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Room
+        ObjectType: 4
+        guid: f07d4e8df337534c90e737b790712cf1
+      - ElementName: EnterOutdoors
+        ObjectType: 3
+        guid: c7f62dd36e919946a0b3319c6024aa9a
+      Path: Events\Default Work Unit\SFX\Room\EnterOutdoors
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: EnterTunnel
+      guid: 2a6b23080a5e5b4195980c911b58412d
+      id: 2811934447
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Room
+        ObjectType: 4
+        guid: f07d4e8df337534c90e737b790712cf1
+      - ElementName: EnterTunnel
+        ObjectType: 3
+        guid: 2a6b23080a5e5b4195980c911b58412d
+      Path: Events\Default Work Unit\SFX\Room\EnterTunnel
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Footstep
       guid: 28e55eca8a6ad74789f4415d53397b3a
       id: 1866025847
@@ -1087,6 +1244,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: LevelStart
+      guid: 183ec1da9c1b5a45959b9d27765932f5
+      id: 3372421815
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: LevelStart
+        ObjectType: 3
+        guid: 183ec1da9c1b5a45959b9d27765932f5
+      Path: Events\Default Work Unit\LevelStart
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Music
       guid: a76bc77d76cf364d9933b7ac263e0790
       id: 3991942870
@@ -1104,9 +1278,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: MusicBoatPlay
+    - name: MusicStart
       guid: 6d5f6bf50c986646a2bd5c329dfeb6ee
-      id: 3164150550
+      id: 1122283870
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1117,16 +1291,16 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 4
         guid: a76bc77d76cf364d9933b7ac263e0790
-      - ElementName: MusicBoatPlay
+      - ElementName: MusicStart
         ObjectType: 3
         guid: 6d5f6bf50c986646a2bd5c329dfeb6ee
-      Path: Events\Default Work Unit\Music\MusicBoatPlay
+      Path: Events\Default Work Unit\Music\MusicStart
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: PROTO
-      guid: fe743bf964bb3e44bf5e7f5f90f4e4e8
-      id: 900899721
+    - name: Room
+      guid: f07d4e8df337534c90e737b790712cf1
+      id: 2077253480
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1134,50 +1308,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: PROTO
+      - ElementName: SFX
         ObjectType: 4
-        guid: fe743bf964bb3e44bf5e7f5f90f4e4e8
-      Path: Events\Default Work Unit\PROTO
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: PROTO_music_dynamic
-      guid: be29e4d8b7bbd24487addc99071d2461
-      id: 4238444291
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: PROTO
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Room
         ObjectType: 4
-        guid: fe743bf964bb3e44bf5e7f5f90f4e4e8
-      - ElementName: PROTO_music_dynamic
-        ObjectType: 3
-        guid: be29e4d8b7bbd24487addc99071d2461
-      Path: Events\Default Work Unit\PROTO\PROTO_music_dynamic
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: PROTO_music_generic
-      guid: 0426ac2c899d8544bf80edfbd7b45db7
-      id: 2902858375
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: PROTO
-        ObjectType: 4
-        guid: fe743bf964bb3e44bf5e7f5f90f4e4e8
-      - ElementName: PROTO_music_generic
-        ObjectType: 3
-        guid: 0426ac2c899d8544bf80edfbd7b45db7
-      Path: Events\Default Work Unit\PROTO\PROTO_music_generic
+        guid: f07d4e8df337534c90e737b790712cf1
+      Path: Events\Default Work Unit\SFX\Room
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1195,6 +1332,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: 2c345c2fb2d6a7428f261eb6e1c6970a
       Path: Events\Default Work Unit\SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFXStart
+      guid: 4ff9c2d9a2bec9458c5611976256a7fa
+      id: 1661560854
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: SFXStart
+        ObjectType: 3
+        guid: 4ff9c2d9a2bec9458c5611976256a7fa
+      Path: Events\Default Work Unit\SFX\SFXStart
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1219,6 +1376,26 @@ MonoBehaviour:
         guid: 8e09c0297be6b8418069ac2fe41f5cfa
       Path: Events\Default Work Unit\Music\Cue Events\Stingers
       maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TreeAmbiencePlay
+      guid: be51a982fe23164aae15a44bccbe2fae
+      id: 1973723167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: TreeAmbiencePlay
+        ObjectType: 3
+        guid: be51a982fe23164aae15a44bccbe2fae
+      Path: Events\Default Work Unit\SFX\TreeAmbiencePlay
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: WorldKey_A5
@@ -1598,7 +1775,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: fe13d60f855213448d27601edd0d77e4
     GuidInternal: 
-    m_lastTime: -8585605087181094740
+    m_lastTime: -8585603461892658628
     List:
     - name: BoxSegment
       guid: 94d513563ed65e45983bc1fcd29df7d4
@@ -1628,6 +1805,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: a368cd558d3535429001f46651ca0321
       Path: Game Parameters\Default Work Unit\VampCooldown
+    - name: WindIntensity
+      guid: 82c94e4cdc85de478fb33ece627c38d5
+      id: 1042517418
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fe13d60f855213448d27601edd0d77e4
+      - ElementName: WindIntensity
+        ObjectType: 13
+        guid: 82c94e4cdc85de478fb33ece627c38d5
+      Path: Game Parameters\Default Work Unit\WindIntensity
   - PhysicalPath: Game Parameters\Factory Motion.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -1834,7 +2025,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c226eeab13aa4f409e89c2a35c4216cc
     GuidInternal: 
-    m_lastTime: -8585605091684516135
+    m_lastTime: -8585603485031151122
     List:
     - name: BoxOpeningStingerState
       guid: 376292dcb3fa024c806a6cac862bb21f
@@ -2226,9 +2417,9 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: Room_Corridor
+    - name: Room_Type
       guid: 3e278aa3dc492341a82928f63c5ecb86
-      id: 2968376717
+      id: 1777631295
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
@@ -2239,30 +2430,11 @@ MonoBehaviour:
       - ElementName: Rooms
         ObjectType: 4
         guid: b30e34a89e47414f88c019ffa33e7d37
-      - ElementName: Room_Corridor
+      - ElementName: Room_Type
         ObjectType: 9
         guid: 3e278aa3dc492341a82928f63c5ecb86
-      Path: States\Default Work Unit\Rooms\Room_Corridor
+      Path: States\Default Work Unit\Rooms\Room_Type
       values:
-      - name: Entered
-        guid: 28f85cf6def97546b6e986bc56f7b96f
-        id: 2066668302
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: c226eeab13aa4f409e89c2a35c4216cc
-        - ElementName: Rooms
-          ObjectType: 4
-          guid: b30e34a89e47414f88c019ffa33e7d37
-        - ElementName: Room_Corridor
-          ObjectType: 9
-          guid: 3e278aa3dc492341a82928f63c5ecb86
-        - ElementName: Entered
-          ObjectType: 8
-          guid: 28f85cf6def97546b6e986bc56f7b96f
       - name: None
         guid: fe3bf9940710094d8f59b0a0253031db
         id: 748895195
@@ -2276,12 +2448,50 @@ MonoBehaviour:
         - ElementName: Rooms
           ObjectType: 4
           guid: b30e34a89e47414f88c019ffa33e7d37
-        - ElementName: Room_Corridor
+        - ElementName: Room_Type
           ObjectType: 9
           guid: 3e278aa3dc492341a82928f63c5ecb86
         - ElementName: None
           ObjectType: 8
           guid: fe3bf9940710094d8f59b0a0253031db
+      - name: Outdoors
+        guid: 5ace10eac8bce84a9177752cef2b8d12
+        id: 2730119150
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Room_Type
+          ObjectType: 9
+          guid: 3e278aa3dc492341a82928f63c5ecb86
+        - ElementName: Outdoors
+          ObjectType: 8
+          guid: 5ace10eac8bce84a9177752cef2b8d12
+      - name: Tunnel
+        guid: 28f85cf6def97546b6e986bc56f7b96f
+        id: 3059984139
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Room_Type
+          ObjectType: 9
+          guid: 3e278aa3dc492341a82928f63c5ecb86
+        - ElementName: Tunnel
+          ObjectType: 8
+          guid: 28f85cf6def97546b6e986bc56f7b96f
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -2374,7 +2584,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6603d6ba8e055f4caa446aab326e99e9
     GuidInternal: 
-    m_lastTime: -8585605145148529558
+    m_lastTime: -8585603485031529789
     List:
     - name: FootstepType
       guid: 3af574822d433c4bb3b27b0dcfa58a47
@@ -2535,7 +2745,7 @@ MonoBehaviour:
         guid: 38b4dd40b2e94b4c9c9bce1ac9f941c2
       Path: Triggers\Default Work Unit\BoxPickupStinger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e0000003100000032000000360000003a0000004900000051000000b60000002c0400002f040000320400003504000038040000
+  ExpandedWaapiItemIds: 010000000200000003000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e000000300000003100000032000000360000003a00000042000000490000005100000073000000b60000002c0400002f040000320400003504000038040000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

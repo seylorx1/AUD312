@@ -20,6 +20,10 @@ namespace AK
         static const AkUniqueID BOXPICKUPCUE = 4115829741U;
         static const AkUniqueID BOXSEGMENTDOWNCUE = 3547374172U;
         static const AkUniqueID BOXSEGMENTUPCUE = 1360996149U;
+        static const AkUniqueID ENTERINDOORS = 1721219483U;
+        static const AkUniqueID ENTERINDOORSTUNNEL = 1113956849U;
+        static const AkUniqueID ENTEROUTDOORS = 3070671186U;
+        static const AkUniqueID ENTERTUNNEL = 2811934447U;
         static const AkUniqueID FOOTSTEPPLAY = 4039405217U;
         static const AkUniqueID HARPOONAMBIENCEPLAY = 561183332U;
         static const AkUniqueID HARPOONAMBIENCESTOP = 3333733726U;
@@ -27,7 +31,10 @@ namespace AK
         static const AkUniqueID HARPOONGRABSUCCESS = 2837856117U;
         static const AkUniqueID HARPOONPICKUP = 2867011390U;
         static const AkUniqueID HARPOONRECEIVED = 757170495U;
-        static const AkUniqueID MUSICBOATPLAY = 3164150550U;
+        static const AkUniqueID LEVELSTART = 3372421815U;
+        static const AkUniqueID MUSICSTART = 1122283870U;
+        static const AkUniqueID SFXSTART = 1661560854U;
+        static const AkUniqueID TREEAMBIENCEPLAY = 1973723167U;
         static const AkUniqueID WORLDKEY_A5 = 3724088773U;
         static const AkUniqueID WORLDKEY_A6 = 3724088774U;
         static const AkUniqueID WORLDKEY_B5 = 3774421660U;
@@ -113,16 +120,17 @@ namespace AK
             } // namespace STATE
         } // namespace ROOM_C
 
-        namespace ROOM_CORRIDOR
+        namespace ROOM_TYPE
         {
-            static const AkUniqueID GROUP = 2968376717U;
+            static const AkUniqueID GROUP = 1777631295U;
 
             namespace STATE
             {
-                static const AkUniqueID ENTERED = 2066668302U;
                 static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUTDOORS = 2730119150U;
+                static const AkUniqueID TUNNEL = 3059984139U;
             } // namespace STATE
-        } // namespace ROOM_CORRIDOR
+        } // namespace ROOM_TYPE
 
         namespace WORLDKEYSENABLED
         {
@@ -180,6 +188,7 @@ namespace AK
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
         static const AkUniqueID VAMPCOOLDOWN = 244091178U;
+        static const AkUniqueID WINDINTENSITY = 1042517418U;
     } // namespace GAME_PARAMETERS
 
     namespace TRIGGERS
@@ -209,7 +218,10 @@ namespace AK
         static const AkUniqueID MUSIC_BUS = 3127962312U;
         static const AkUniqueID RIGHT_FOOTSTEP = 854631381U;
         static const AkUniqueID SOUND_EFFECTS_BUS = 57144414U;
+        static const AkUniqueID TREE = 3322072369U;
+        static const AkUniqueID TREE_WIND = 2466686001U;
         static const AkUniqueID VAMP_BUS = 3225388919U;
+        static const AkUniqueID WIND = 1537061107U;
         static const AkUniqueID WORLDKEYS = 1310325127U;
     } // namespace BUSSES
 

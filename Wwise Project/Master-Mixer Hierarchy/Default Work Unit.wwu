@@ -152,11 +152,6 @@ By keeping the percussion elements seperate from the bus, the rhythm (and by ext
 								<Value>3</Value>
 							</ValueList>
 						</Property>
-						<Property Name="BypassEffect0" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
@@ -271,6 +266,99 @@ By keeping the percussion elements seperate from the bus, the rhythm (and by ext
 							</PositioningInfo>
 							<ObjectLists/>
 						</Bus>
+						<Folder Name="Ambience" ID="{B307F04B-5BE9-47A3-893B-E1C6D236BD46}" ShortID="739629898">
+							<ChildrenList>
+								<Bus Name="Wind" ID="{F3E10545-4D6C-45A8-99C0-A6BED624F17B}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="3"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="WindEQ" ID="{50136997-B58E-4F9D-9352-2BA4E3F26F51}" WorkUnitID="{F5841E83-69EA-445F-86D8-2C3991F90FE3}"/>
+										</Reference>
+										<Reference Name="Effect1" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+											<ObjectRef Name="Repeat_after_me" ID="{7A0568D0-BE8B-4233-B3E8-200344DB7AE0}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Tree" ID="{DD2626BC-227D-4BE9-99E5-768FF6E2A126}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Color" Type="int16" Value="3"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Bus Name="Tree Wind" ID="{B853BAC2-E796-4029-B36B-7EE4B920C5E2}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="3"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{53784812-8D4C-4758-BCD7-1E924469FF3A}">
+														<Effect Name="TreeWindEQ (Custom)" ID="{6BA5ED83-F86A-4DC2-A820-74DB7A89221C}" ShortID="587996968" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="763"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="591"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="5665"/>
+																<Property Name="GainBand1" Type="Real32" Value="-24"/>
+																<Property Name="GainBand2" Type="Real32" Value="6.5"/>
+																<Property Name="GainBand3" Type="Real32" Value="-10">
+																	<RTPCList>
+																		<RTPC Name="" ID="{99088134-65A1-40A0-BBCB-EB85967310E6}" ShortID="173212499">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom CreatedFrom="{3F6F508C-6DC1-4D33-B073-F1CDCE5DFC5F}">
+																						<ModulatorLfo Name="TreeWindHighFreqLFO (Custom)" ID="{33D79999-A694-48DF-8D0F-088F0A4328F9}" ShortID="167128776">
+																							<PropertyList>
+																								<Property Name="LfoFrequency" Type="Real64" Value="0.5"/>
+																								<Property Name="LfoSmoothing" Type="Real64" Value="50"/>
+																								<Property Name="LfoWaveform" Type="int32" Value="5"/>
+																							</PropertyList>
+																						</ModulatorLfo>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{0AB4A872-7D8B-4E36-A40C-B4E9A233D5ED}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-48</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>1.65585</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="OnOffBand2" Type="bool" Value="False"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</Bus>
+									</ChildrenList>
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 					<ObjectLists/>
 				</Bus>

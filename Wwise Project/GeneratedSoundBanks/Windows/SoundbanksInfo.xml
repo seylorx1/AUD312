@@ -11,10 +11,13 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2846230324">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2641873587">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="1042517418" Name="WindIntensity" ObjectPath="\Game Parameters\Default Work Unit\WindIntensity"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="2558423223" Name="BoxState" ObjectPath="\States\Default Work Unit\Music\BoxState" GUID="{54C47F18-4243-4FC9-91BF-C729E3ADD7FB}">
 					<States>
@@ -30,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1029008252">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1018046369">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -71,6 +74,26 @@
 				<Event Id="1360996149" Name="BoxSegmentUpCue" ObjectPath="\Events\Default Work Unit\Music\Cue Events\Stingers\BoxSegmentUpCue" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\BoxOpeningStingerState\None"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1721219483" Name="EnterIndoors" ObjectPath="\Events\Default Work Unit\SFX\Room\EnterIndoors" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\None"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1113956849" Name="EnterIndoorsTunnel" ObjectPath="\Events\Default Work Unit\SFX\Room\EnterIndoorsTunnel" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3059984139" Name="Tunnel" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\Tunnel"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3070671186" Name="EnterOutdoors" ObjectPath="\Events\Default Work Unit\SFX\Room\EnterOutdoors" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2730119150" Name="Outdoors" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\Outdoors"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2811934447" Name="EnterTunnel" ObjectPath="\Events\Default Work Unit\SFX\Room\EnterTunnel" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3059984139" Name="Tunnel" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\Tunnel"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="4039405217" Name="FootstepPlay" ObjectPath="\Events\Default Work Unit\SFX\Footstep\FootstepPlay" DurationType="OneShot" DurationMin="0.268956" DurationMax="0.699433">
@@ -321,9 +344,6 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
-					<ActionSetState>
-						<ActionSetStateEntry Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\Interactions\WorldKeysEnabled\Enabled"/>
-					</ActionSetState>
 				</Event>
 				<Event Id="561183332" Name="HarpoonAmbiencePlay" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonAmbiencePlay" MaxAttenuation="20.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -408,7 +428,13 @@
 						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\None"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3164150550" Name="MusicBoatPlay" ObjectPath="\Events\Default Work Unit\Music\MusicBoatPlay" DurationType="Infinite">
+				<Event Id="3372421815" Name="LevelStart" ObjectPath="\Events\Default Work Unit\LevelStart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="1122283870" Name="MusicStart" ObjectPath="\Events\Default Work Unit\Music\MusicStart"/>
+						<ActionPostEventEntry Id="1661560854" Name="SFXStart" ObjectPath="\Events\Default Work Unit\SFX\SFXStart"/>
+					</ActionPostEvent>
+				</Event>
+				<Event Id="1122283870" Name="MusicStart" ObjectPath="\Events\Default Work Unit\Music\MusicStart" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="47062023" Language="SFX">
 							<ShortName>music_boat_kicksnare_1.wav</ShortName>
@@ -537,6 +563,29 @@
 						<File Id="1049002355" Language="SFX">
 							<ShortName>music_boat_fantasychords_1.wav</ShortName>
 							<Path>SFX\music_boat_fantasychords_1_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1661560854" Name="SFXStart" ObjectPath="\Events\Default Work Unit\SFX\SFXStart" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="200076591" Language="SFX">
+							<ShortName>sfx_pinknoise.wav</ShortName>
+							<Path>SFX\sfx_pinknoise_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\Interactions\WorldKeysEnabled\Enabled"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1973723167" Name="TreeAmbiencePlay" ObjectPath="\Events\Default Work Unit\SFX\TreeAmbiencePlay" MaxAttenuation="15.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="43452734" Language="SFX">
+							<ShortName>sfx_treewind_rustle.wav</ShortName>
+							<Path>SFX\sfx_treewind_rustle_D79FB2B7.wem</Path>
+						</File>
+						<File Id="200076591" Language="SFX">
+							<ShortName>sfx_pinknoise.wav</ShortName>
+							<Path>SFX\sfx_pinknoise_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -700,6 +749,12 @@
 					<States/>
 				</StateGroup>
 				<StateGroup Id="2378879461" Name="HasFired" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\HasFired" GUID="{47EC628F-C044-4F20-B62D-21B04E2A5BD3}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2730119150" Name="Outdoors" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\Outdoors" GUID="{EA10CE5A-BCC8-4AE8-9177-752CEF2B8D12}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3059984139" Name="Tunnel" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\Tunnel" GUID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="3791155954" Name="Muted" ObjectPath="\States\Default Work Unit\Music\BoxOpeningStingerState\Muted" GUID="{4D12F6FF-B7BE-42A8-AE76-49832BECE1DA}">

@@ -4,6 +4,10 @@
 		<WorkUnit Name="Default Work Unit" ID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}" PersistMode="Standalone">
 			<ChildrenList>
 				<Folder Name="Harpoon" ID="{756CA56F-9F6B-4049-BAD4-F27FBD89A9F8}" ShortID="416643311">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Sound Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" ShortID="588461897">
 							<Comment>Played from the harpoon's tip.</Comment>
@@ -3530,6 +3534,207 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_worldkeys_fmaj_f6" ID="{69EB1F5D-383A-4837-BBF9-5EE6D415EC0B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambience" ID="{5818745A-6125-459C-83FD-55F992E716BE}" ShortID="657096110">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="3"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="sfx_wind" ID="{9BFE3B8D-E870-431C-8FE9-3FE8ECC740C1}" ShortID="674839022">
+							<Comment>Procedural Wind using built-in Wwise Plugins</Comment>
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Wind" ID="{F3E10545-4D6C-45A8-99C0-A6BED624F17B}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_pinknoise" ID="{D63BEC76-01F2-44CC-9F13-30189EC2EBCD}" ShortID="746784633">
+									<PropertyList>
+										<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Sound Effects Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_pinknoise" ID="{0747CB78-2E22-484E-AFCC-121BC8C625B9}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Misc\Noise\Noise.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_pinknoise.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="200076591"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_pinknoise" ID="{0747CB78-2E22-484E-AFCC-121BC8C625B9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="sfx_pinknoise" ID="{D63BEC76-01F2-44CC-9F13-30189EC2EBCD}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="sfx_treewind (Loop)" ID="{D49F079A-D68A-4A75-934E-87FF3E9057D9}" ShortID="835344667">
+							<Comment>Procedural Tree Wind using built-in Wwise Plugins</Comment>
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>15</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="TreeAttentuation" ID="{52C3D7D0-A9D5-4513-A837-EE8CD0C7750A}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Tree Wind" ID="{B853BAC2-E796-4029-B36B-7EE4B920C5E2}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_pinknoise" ID="{D5DAF91A-7D0B-44BA-9B07-A9B293D39DF8}" ShortID="485371304">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Wind" ID="{F3E10545-4D6C-45A8-99C0-A6BED624F17B}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_pinknoise" ID="{56C2D321-9366-40A2-A0B0-4F24045D34DC}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Misc\Noise\Noise.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_pinknoise.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="200076591"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_pinknoise" ID="{56C2D321-9366-40A2-A0B0-4F24045D34DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="sfx_pinknoise" ID="{D5DAF91A-7D0B-44BA-9B07-A9B293D39DF8}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<Sound Name="sfx_treewind_rustle" ID="{C7A3F86C-E669-4EEB-986D-4399FB942F30}" ShortID="889920406">
+							<Comment>Looping tree rustle sound, with random pitch and start delay.</Comment>
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>37</Value>
+									</ValueList>
+								</Property>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{341BE4E6-5433-4242-A614-40ED6CE41933}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BEAE1F73-A000-487C-92A4-AFA4AF65B45F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="TreeAttentuation" ID="{52C3D7D0-A9D5-4513-A837-EE8CD0C7750A}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Tree" ID="{DD2626BC-227D-4BE9-99E5-768FF6E2A126}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_treewind_rustle" ID="{9580021A-FC49-4010-876E-8D20D0521EA6}">
+									<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Ambient\Tree Wind.rpp"</Comment>
+									<Language>SFX</Language>
+									<AudioFile>sfx_treewind_rustle.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="43452734"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_treewind_rustle" ID="{9580021A-FC49-4010-876E-8D20D0521EA6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

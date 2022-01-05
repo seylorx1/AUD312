@@ -53,10 +53,12 @@
 								<State Name="Passed" ID="{5B851545-24BC-4022-8588-F9946FE0E763}"/>
 							</ChildrenList>
 						</StateGroup>
-						<StateGroup Name="Room_Corridor" ID="{A38A273E-49DC-4123-A829-28F63C5ECB86}">
+						<StateGroup Name="Room_Type" ID="{A38A273E-49DC-4123-A829-28F63C5ECB86}">
+							<Comment>'None' is synonymous with 'Indoors'</Comment>
 							<ChildrenList>
 								<State Name="None" ID="{94F93BFE-1007-4D09-8F59-B0A0253031DB}"/>
-								<State Name="Entered" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}"/>
+								<State Name="Tunnel" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}"/>
+								<State Name="Outdoors" ID="{EA10CE5A-BCC8-4AE8-9177-752CEF2B8D12}"/>
 							</ChildrenList>
 						</StateGroup>
 					</ChildrenList>

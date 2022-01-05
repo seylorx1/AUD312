@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6a5e104a7f44340b43dbc9c913fdfc, type: 3}
   m_Name: A38A273E-49DC-4123-A829-28F63C5ECB86
   m_EditorClassIdentifier: 
-  objectName: Room_Corridor
-  id: 2968376717
+  objectName: Room_Type
+  id: 1777631295
   guid: A38A273E-49DC-4123-A829-28F63C5ECB86

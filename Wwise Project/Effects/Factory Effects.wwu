@@ -636,13 +636,17 @@
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
-												<StateGroupRef Name="Room_Corridor" ID="{A38A273E-49DC-4123-A829-28F63C5ECB86}"/>
+												<StateGroupRef Name="Room_Type" ID="{A38A273E-49DC-4123-A829-28F63C5ECB86}"/>
 											</StateGroupInfo>
 										</StateGroupList>
 										<CustomStateList>
 											<CustomState>
-												<StateRef Name="Entered" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}"/>
+												<StateRef Name="Tunnel" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}"/>
 												<CustomState Name="" ID="{8A6BACA5-9753-4AA2-B295-E04A0A1D0413}" ShortID="564322121"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Outdoors" ID="{EA10CE5A-BCC8-4AE8-9177-752CEF2B8D12}"/>
+												<CustomState Name="" ID="{967980F7-90C2-4BEA-A220-5DE7434DE6D6}" ShortID="821589880"/>
 											</CustomState>
 										</CustomStateList>
 									</StateInfo>
@@ -781,16 +785,25 @@
 								</StatePropertyList>
 								<StateGroupList>
 									<StateGroupInfo>
-										<StateGroupRef Name="Room_Corridor" ID="{A38A273E-49DC-4123-A829-28F63C5ECB86}"/>
+										<StateGroupRef Name="Room_Type" ID="{A38A273E-49DC-4123-A829-28F63C5ECB86}"/>
 									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
-										<StateRef Name="Entered" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}"/>
+										<StateRef Name="Tunnel" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}"/>
 										<CustomState Name="" ID="{2D5D5161-7D4B-401A-A183-92D227CF9155}" ShortID="215143249">
 											<PropertyList>
 												<Property Name="DryLevel" Type="Real32" Value="-15"/>
 												<Property Name="WetLevel" Type="Real32" Value="70"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Outdoors" ID="{EA10CE5A-BCC8-4AE8-9177-752CEF2B8D12}"/>
+										<CustomState Name="" ID="{DD0F2AAC-97BC-4C64-8A89-C5625B080633}" ShortID="728137669">
+											<PropertyList>
+												<Property Name="DryLevel" Type="Real32" Value="0"/>
+												<Property Name="WetLevel" Type="Real32" Value="0"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -1308,17 +1321,27 @@
 										</StatePropertyList>
 										<StateGroupList>
 											<StateGroupInfo>
-												<StateGroupRef Name="Room_Corridor" ID="{A38A273E-49DC-4123-A829-28F63C5ECB86}"/>
+												<StateGroupRef Name="Room_Type" ID="{A38A273E-49DC-4123-A829-28F63C5ECB86}"/>
 											</StateGroupInfo>
 										</StateGroupList>
 										<CustomStateList>
 											<CustomState>
-												<StateRef Name="Entered" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}"/>
+												<StateRef Name="Tunnel" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}"/>
 												<CustomState Name="" ID="{6E3B453D-6248-42C6-8F6F-FFA04FA60ACE}" ShortID="831146721">
 													<PropertyList>
 														<Property Name="DryLevel" Type="Real32" Value="-96"/>
 														<Property Name="ERLevel" Type="Real32" Value="0"/>
 														<Property Name="ReverbLevel" Type="Real32" Value="52"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Outdoors" ID="{EA10CE5A-BCC8-4AE8-9177-752CEF2B8D12}"/>
+												<CustomState Name="" ID="{CC6407E9-C1D2-44B8-A5B7-84D98FF80875}" ShortID="723210101">
+													<PropertyList>
+														<Property Name="DryLevel" Type="Real32" Value="0"/>
+														<Property Name="ERLevel" Type="Real32" Value="0"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="0"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -1347,15 +1370,23 @@
 										</StatePropertyList>
 										<StateGroupList>
 											<StateGroupInfo>
-												<StateGroupRef Name="Room_Corridor" ID="{A38A273E-49DC-4123-A829-28F63C5ECB86}"/>
+												<StateGroupRef Name="Room_Type" ID="{A38A273E-49DC-4123-A829-28F63C5ECB86}"/>
 											</StateGroupInfo>
 										</StateGroupList>
 										<CustomStateList>
 											<CustomState>
-												<StateRef Name="Entered" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}"/>
+												<StateRef Name="Tunnel" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}"/>
 												<CustomState Name="" ID="{1D8DAA79-636C-42EC-A80C-BA81C63723FF}" ShortID="206701398">
 													<PropertyList>
 														<Property Name="ReverbLevel" Type="Real32" Value="-96"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Outdoors" ID="{EA10CE5A-BCC8-4AE8-9177-752CEF2B8D12}"/>
+												<CustomState Name="" ID="{739B1E40-5034-469D-88D0-9D194A16DE72}" ShortID="678037906">
+													<PropertyList>
+														<Property Name="ReverbLevel" Type="Real32" Value="0"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -1401,25 +1432,59 @@
 								</Effect>
 								<Effect Name="Room_Medium_High_Absorbtion" ID="{E22DBBB6-7656-4B93-A28D-C003FD416889}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
-										<Property Name="DecayTime" Type="Real32" Value="0.5"/>
+										<Property Name="DecayTime" Type="Real32" Value="1"/>
 										<Property Name="Density" Type="Real32" Value="32"/>
-										<Property Name="Diffusion" Type="Real32" Value="52"/>
+										<Property Name="Diffusion" Type="Real32" Value="50"/>
 										<Property Name="DryLevel" Type="Real32" Value="-4.3"/>
 										<Property Name="ERLevel" Type="Real32" Value="-96"/>
-										<Property Name="ERPattern" Type="int32" Value="22"/>
+										<Property Name="ERPattern" Type="int32" Value="2"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="590"/>
 										<Property Name="Filter2Freq" Type="Real32" Value="10520"/>
 										<Property Name="Filter2Gain" Type="Real32" Value="-12"/>
 										<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
 										<Property Name="Filter3Gain" Type="Real32" Value="-12"/>
 										<Property Name="HFDamping" Type="Real32" Value="3.2"/>
+										<Property Name="PreDelay" Type="Real32" Value="0"/>
 										<Property Name="Quality" Type="int32" Value="10"/>
 										<Property Name="RearLevel" Type="Real32" Value="-33"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-27"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-40"/>
 										<Property Name="RoomShape" Type="Real32" Value="42"/>
-										<Property Name="RoomSize" Type="Real32" Value="11"/>
-										<Property Name="StereoWidth" Type="Real32" Value="115"/>
+										<Property Name="StereoWidth" Type="Real32" Value="100"/>
 									</PropertyList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="Diffusion"/>
+											<Property Name="ReverbLevel"/>
+											<Property Name="StereoWidth"/>
+										</StatePropertyList>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Room_Type" ID="{A38A273E-49DC-4123-A829-28F63C5ECB86}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Tunnel" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}"/>
+												<CustomState Name="" ID="{9F56ABAA-CDB5-4EDA-9676-83F66BC4AE2A}" ShortID="760965010">
+													<PropertyList>
+														<Property Name="Diffusion" Type="Real32" Value="-30"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="20"/>
+														<Property Name="StereoWidth" Type="Real32" Value="-80"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Outdoors" ID="{EA10CE5A-BCC8-4AE8-9177-752CEF2B8D12}"/>
+												<CustomState Name="" ID="{EBFBF1B4-DBBE-46ED-9470-ABB3CC44C031}" ShortID="596799336">
+													<PropertyList>
+														<Property Name="Diffusion" Type="Real32" Value="30"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-5"/>
+														<Property Name="StereoWidth" Type="Real32" Value="80"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</Effect>
 							</ChildrenList>
 						</Folder>
@@ -1811,14 +1876,16 @@
 						</Effect>
 						<Effect Name="Repeat_after_me" ID="{7A0568D0-BE8B-4233-B3E8-200344DB7AE0}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
 							<PropertyList>
-								<Property Name="Voice1FilterFrequency" Type="Real32" Value="3656"/>
+								<Property Name="Input" Type="int32" Value="2"/>
+								<Property Name="Voice1FilterFrequency" Type="Real32" Value="390"/>
+								<Property Name="Voice1FilterQFactor" Type="Real32" Value="0.1"/>
 								<Property Name="Voice1FilterType" Type="int32" Value="4"/>
-								<Property Name="Voice1Pitch" Type="Real32" Value="400"/>
-								<Property Name="Voice2Enable" Type="bool" Value="True"/>
+								<Property Name="Voice1Gain" Type="Real32" Value="-1"/>
+								<Property Name="Voice1Pitch" Type="Real32" Value="-1200"/>
 								<Property Name="Voice2FilterFrequency" Type="Real32" Value="361"/>
 								<Property Name="Voice2FilterType" Type="int32" Value="4"/>
-								<Property Name="Voice2Pitch" Type="Real32" Value="-1100"/>
-								<Property Name="WindowSize" Type="int32" Value="3840"/>
+								<Property Name="Voice2Pitch" Type="Real32" Value="-600"/>
+								<Property Name="WindowSize" Type="int32" Value="4096"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Three_Voices" ID="{71CA20BE-8C1D-4A0C-92AF-BFCE183D5651}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">

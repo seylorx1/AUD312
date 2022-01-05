@@ -8,6 +8,142 @@
 						<Property Name="GainBand1" Type="Real32" Value="4"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="WindEQ" ID="{50136997-B58E-4F9D-9352-2BA4E3F26F51}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand2" Type="int32" Value="2"/>
+						<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="600"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="706">
+							<RTPCList>
+								<RTPC Name="" ID="{8D7FAD0A-E08F-45DC-AD6C-D84393B4610E}" ShortID="350962727">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="WindLFO" ID="{1093DE05-D39F-465D-B2C9-7C007159AF73}" WorkUnitID="{AD1477EF-9B09-4D4A-8427-3C615EF0E314}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{B60B061A-7C16-4DFA-9853-7F5015A6AF6C}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="5"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>664.29743</YPos>
+												<Flags>21</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>1480.96987</YPos>
+												<Flags>53</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="FrequencyBand3" Type="Real32" Value="20000">
+							<RTPCList>
+								<RTPC Name="" ID="{55DD0ACD-91DB-4AD6-A9B3-D7D35A33C391}" ShortID="172445497">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="WindIntensity" ID="{4C4EC982-85DC-47DE-8FB3-3ECE627C38D5}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{E19D705C-A7AF-4F83-950A-24FA96660015}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="5"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>661.47056</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>20000</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="GainBand1" Type="Real32" Value="24"/>
+						<Property Name="GainBand3" Type="Real32" Value="4"/>
+						<Property Name="OutputLevel" Type="Real32" Value="6">
+							<RTPCList>
+								<RTPC Name="" ID="{28FDFD49-774F-4854-8386-0006F6F6F2BA}" ShortID="453399379">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="WindIntensity" ID="{4C4EC982-85DC-47DE-8FB3-3ECE627C38D5}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{F265D435-4D3F-4D4C-A32D-1A6E56BBEC93}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-15</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="17.3"/>
+						<Property Name="QFactorBand3" Type="Real32" Value="0.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="TreeWindEQ" ID="{53784812-8D4C-4758-BCD7-1E924469FF3A}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand1" Type="Real32" Value="763"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="591"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="5665"/>
+						<Property Name="GainBand1" Type="Real32" Value="-24"/>
+						<Property Name="GainBand2" Type="Real32" Value="6.5"/>
+						<Property Name="GainBand3" Type="Real32" Value="-10">
+							<RTPCList>
+								<RTPC Name="" ID="{AC3A5D2C-0C21-478C-B610-654FF010D6B8}" ShortID="424436524">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="TreeWindHighFreqLFO" ID="{3F6F508C-6DC1-4D33-B073-F1CDCE5DFC5F}" WorkUnitID="{AD1477EF-9B09-4D4A-8427-3C615EF0E314}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{85AA95DC-1C64-414D-9B06-91CFAF31B179}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-48</YPos>
+												<Flags>21</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>1.65585</YPos>
+												<Flags>53</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

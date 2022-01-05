@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Music" ID="{7DC76BA7-CF76-4D36-9933-B7AC263E0790}" ShortID="232227215">
 					<ChildrenList>
-						<Event Name="MusicBoatPlay" ID="{F56B5F6D-980C-4666-A2BD-5C329DFEB6EE}">
+						<Event Name="MusicStart" ID="{F56B5F6D-980C-4666-A2BD-5C329DFEB6EE}">
 							<Comment>Starts the game's music, which is made up of parts of a song I made: 'Boat Ride Over A Paltry Chasm'.</Comment>
 							<ChildrenList>
 								<Action Name="" ID="{99336DC5-8E53-46C7-89CD-6643490CCAF6}" ShortID="1044329988">
@@ -120,6 +120,10 @@
 				<Folder Name="SFX" ID="{2F5C342C-D6B2-42A7-8F26-1EB6E1C6970A}" ShortID="168930370">
 					<ChildrenList>
 						<Folder Name="Harpoon" ID="{41E07C99-1932-41B8-9088-9666EC7DFD20}" ShortID="721530848">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ChildrenList>
 								<Event Name="HarpoonPickup" ID="{63F2F81C-20F3-4E27-901D-621BBCDD6AFE}">
 									<Comment>Called when the harpoon is picked up.</Comment>
@@ -316,12 +320,11 @@ This event does the following:
 							</PropertyList>
 							<ChildrenList>
 								<Event Name="FootstepPlay" ID="{0E37FD09-F0AC-430C-8AE2-C527280491B3}">
-									<Comment>Called on every footstep. (cont.)
+									<Comment>Called on every footstep. (Cont.)
 
 This event does the following:
 - Plays the Footsteps switch container.
-- Resets the vamp cooldown.
-- Enables world keys.</Comment>
+- Resets the vamp cooldown.</Comment>
 									<ChildrenList>
 										<Action Name="" ID="{3CB983A9-C8D7-47F0-967B-C43547B68CB6}" ShortID="856770221">
 											<ReferenceList>
@@ -351,17 +354,6 @@ This event does the following:
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="VampCooldown" ID="{55CD68A3-358D-4235-9001-F46651CA0321}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{22ABD07F-17D0-4FED-8E03-4C583FC25E1E}" ShortID="606999547">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="22"/>
-												<Property Name="Delay" Type="Real64" Value="0.5"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -592,8 +584,194 @@ This event does the following:
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Room" ID="{8D4E7DF0-37F3-4C53-90E7-37B790712CF1}" ShortID="974836293">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="16"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Event Name="EnterTunnel" ID="{08236B2A-5E0A-415B-9598-0C911B58412D}">
+									<ChildrenList>
+										<Action Name="" ID="{23357134-D095-4E46-B778-A85B194C4760}" ShortID="232919539">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Tunnel" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{27D35FF2-A06F-4202-94CD-4347AE87445D}" ShortID="549945025">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="0.5"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="WindIntensity" ID="{4C4EC982-85DC-47DE-8FB3-3ECE627C38D5}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="EnterOutdoors" ID="{D32DF6C7-916E-4699-A0B3-319C6024AA9A}">
+									<ChildrenList>
+										<Action Name="" ID="{A1CC6F09-FA87-4896-BC0A-3EAC19054346}" ShortID="1067753607">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Outdoors" ID="{EA10CE5A-BCC8-4AE8-9177-752CEF2B8D12}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{DF3C76E9-4DC9-4646-BF13-73D8DD4CCA18}" ShortID="973207662">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="WindIntensity" ID="{4C4EC982-85DC-47DE-8FB3-3ECE627C38D5}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="EnterIndoors" ID="{DDBCE7AD-AF26-4589-8DC7-0E2ECE060636}">
+									<ChildrenList>
+										<Action Name="" ID="{44C1A58F-204F-474A-9312-B5BC133091F6}" ShortID="256240457">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="None" ID="{94F93BFE-1007-4D09-8F59-B0A0253031DB}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EE0A946E-0C3F-40AC-9EED-64F789964444}" ShortID="473625237">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="WindIntensity" ID="{4C4EC982-85DC-47DE-8FB3-3ECE627C38D5}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="EnterIndoorsTunnel" ID="{C7DEA94F-FB45-4423-A951-8D6E8508A284}">
+									<ChildrenList>
+										<Action Name="" ID="{84B74CEF-18F1-41FC-9370-52DB2D798EDF}" ShortID="234056250">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Tunnel" ID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A74FF1BB-F2EE-4832-AD13-9976F16D22C6}" ShortID="830472750">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="WindIntensity" ID="{4C4EC982-85DC-47DE-8FB3-3ECE627C38D5}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="SFXStart" ID="{D9C2F94F-BEA2-45C9-8C56-11976256A7FA}">
+							<Comment>Initialises the SFX. (cont.)
+
+This event does the following:
+- Enables the WorldKeysEnabled state (This is done to prevent the WorldKeys from triggering when the player first loads into the level.)
+- Starts the sfx_wind sound effect.</Comment>
+							<ChildrenList>
+								<Action Name="" ID="{22ABD07F-17D0-4FED-8E03-4C583FC25E1E}" ShortID="606999547">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B923411A-EF5B-45E3-AF5A-11B2C77035D3}" ShortID="921480094">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_wind" ID="{9BFE3B8D-E870-431C-8FE9-3FE8ECC740C1}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TreeAmbiencePlay" ID="{82A951BE-23FE-4A16-AE15-A44BCCBE2FAE}">
+							<ChildrenList>
+								<Action Name="" ID="{56180252-AF83-44CA-A54A-C13260026598}" ShortID="360791519">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_treewind (Loop)" ID="{D49F079A-D68A-4A75-934E-87FF3E9057D9}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E7B613BD-E4A3-4FFC-A12C-FE07160D64CF}" ShortID="347004700">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_treewind_rustle" ID="{C7A3F86C-E669-4EEB-986D-4399FB942F30}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="LevelStart" ID="{DAC13E18-1B9C-455A-959B-9D27765932F5}">
+					<Comment>Called at the beginning of the level. (cont.)
+
+This event does the following:
+- Posts the MusicStart event, initialising the music for the level. 
+- Posts the SFXStart event, initialising the sound effects for the level.
+
+</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{E3CA2A20-F71C-4D58-9135-63F1954EF60C}" ShortID="20308717">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicStart" ID="{F56B5F6D-980C-4666-A2BD-5C329DFEB6EE}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2CF37080-1806-47EF-8300-D9EAB9A9DDB4}" ShortID="41633126">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFXStart" ID="{D9C2F94F-BEA2-45C9-8C56-11976256A7FA}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
