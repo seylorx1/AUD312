@@ -36,7 +36,7 @@ State	ID	Name	State Group			Notes
 
 Custom State	ID	Name	State Group	Owner		Notes
 	376481985	BoxHeld	BoxState	\Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base		
-	424739837	Enabled	WorldKeysEnabled	\Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\WorldKeys		
+	424739837	Enabled	WorldKeysEnabled	\Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\WorldKeys		
 	596799336	Outdoors	Room_Type	\Effects\Factory Effects\Wwise RoomVerb\Rooms\Room_Medium_High_Absorbtion		
 	683257782	BoxHeld	BoxState	\Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Holding Bus		
 	760965010	Tunnel	Room_Type	\Effects\Factory Effects\Wwise RoomVerb\Rooms\Room_Medium_High_Absorbtion		
@@ -63,24 +63,24 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 	404131664	WindLFO			\Default Work Unit\WindLFO	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	57144414	Sound Effects Bus			\Default Work Unit\Sound Effects Bus	
 	286173556	Harpoon Ambience Bus			\Default Work Unit\Music Bus\Interactions\Harpoon Ambience Bus	
-	302949338	Harpoon			\Default Work Unit\Sound Effects Bus\Harpoon	Panned ever-so-slightly to the front-right.
+	302949338	Harpoon			\Default Work Unit\Diegetic SFX Bus\Harpoon	Panned ever-so-slightly to the front-right.
 	831678660	KickSnare Bus			\Default Work Unit\Music Bus\Instruments\KickSnare Bus	Kick/Snare Audio Bus, with EQ boosing lower frequencies in the mix. (See description for 'Base'.)
-	854631381	Right Footstep			\Default Work Unit\Sound Effects Bus\Footsteps\Right Footstep	Panned ever-so-slightly to the right.
+	854631381	Right Footstep			\Default Work Unit\Diegetic SFX Bus\Footsteps\Right Footstep	Panned ever-so-slightly to the right.
 	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
-	1014522048	Left Footstep			\Default Work Unit\Sound Effects Bus\Footsteps\Left Footstep	Panned ever-so-slightly to the left.
-	1174992302	HarpoonAir			\Default Work Unit\Sound Effects Bus\Harpoon\HarpoonAir	
+	1014522048	Left Footstep			\Default Work Unit\Diegetic SFX Bus\Footsteps\Left Footstep	Panned ever-so-slightly to the left.
+	1073713956	Diegetic SFX Bus			\Default Work Unit\Diegetic SFX Bus	
+	1174992302	HarpoonAir			\Default Work Unit\Diegetic SFX Bus\Harpoon\HarpoonAir	
 	1291433366	Base			\Default Work Unit\Music Bus\Base	The music bus which most tracks in the background music use, aside from percussion. (cont.)  When this bus is turned down, it allows for more bandwidth for other music elements to be present. For instance, when a box is picked up, the music gets quieter which allows for the BoxPickupNoises to be much clearer.  By keeping the percussion elements seperate from the bus, the rhythm (and by extension the song) perpetuates throughout new sonic conditions. 
-	1310325127	WorldKeys			\Default Work Unit\Sound Effects Bus\WorldKeys	With cool delay effect.
-	1537061107	Wind			\Default Work Unit\Sound Effects Bus\Ambience\Wind	
+	1310325127	WorldKeys			\Default Work Unit\Diegetic SFX Bus\WorldKeys	With cool delay effect.
+	1537061107	Wind			\Default Work Unit\Diegetic SFX Bus\Ambience\Wind	
 	2190619839	Box Holding Bus			\Default Work Unit\Music Bus\Interactions\Box Holding Bus	
-	2385628198	Footsteps			\Default Work Unit\Sound Effects Bus\Footsteps	
-	2466686001	Tree Wind			\Default Work Unit\Sound Effects Bus\Ambience\Tree\Tree Wind	
+	2385628198	Footsteps			\Default Work Unit\Diegetic SFX Bus\Footsteps	
+	2466686001	Tree Wind			\Default Work Unit\Diegetic SFX Bus\Ambience\Tree\Tree Wind	
 	2758124570	Box Ambience Bus			\Default Work Unit\Music Bus\Interactions\Box Ambience Bus	
 	3127962312	Music Bus			\Default Work Unit\Music Bus	
 	3225388919	Vamp Bus			\Default Work Unit\Music Bus\Instruments\Vamp Bus	Vamp / Alberti Bass Audio Bus
-	3322072369	Tree			\Default Work Unit\Sound Effects Bus\Ambience\Tree	
+	3322072369	Tree			\Default Work Unit\Diegetic SFX Bus\Ambience\Tree	
 
 Effect plug-ins	ID	Name	Type				Notes
 	587996968	TreeWindEQ (Custom)	Wwise Parametric EQ			

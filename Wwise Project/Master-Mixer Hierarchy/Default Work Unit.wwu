@@ -145,7 +145,7 @@ By keeping the percussion elements seperate from the bus, the rhythm (and by ext
 					</ReferenceList>
 					<ObjectLists/>
 				</Bus>
-				<Bus Name="Sound Effects Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}">
+				<Bus Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}">
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
@@ -291,6 +291,34 @@ By keeping the percussion elements seperate from the bus, the rhythm (and by ext
 											</ValueList>
 										</Property>
 										<Property Name="Color" Type="int16" Value="3"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{75F3DECC-B250-41E3-8998-279E14DE6A4A}" ShortID="828807476">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="WindIntensity" ID="{4C4EC982-85DC-47DE-8FB3-3ECE627C38D5}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{F2EAFC7C-67DF-4A4D-838D-896DDE45C42B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
 									<ChildrenList>

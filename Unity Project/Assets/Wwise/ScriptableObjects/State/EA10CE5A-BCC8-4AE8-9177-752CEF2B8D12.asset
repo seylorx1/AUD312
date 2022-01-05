@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c5d72555ddd7646a28d50964a697f8, type: 3}
+  m_Name: EA10CE5A-BCC8-4AE8-9177-752CEF2B8D12
+  m_EditorClassIdentifier: 
+  objectName: Outdoors
+  id: 2730119150
+  guid: EA10CE5A-BCC8-4AE8-9177-752CEF2B8D12
+  WwiseStateGroupReference: {fileID: 11400000, guid: 5ececea959b367140a97a8a3c126c285,
+    type: 2}

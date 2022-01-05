@@ -739,6 +739,32 @@ This event does the following:
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Bed" ID="{C18E6B74-B930-4D56-939F-6570EC1DF828}" ShortID="218117654">
+							<ChildrenList>
+								<Event Name="StepOnBed" ID="{0A72D6F1-ADA6-4E6B-B43E-3B2C205773F5}">
+									<ChildrenList>
+										<Action Name="" ID="{386A8B68-9EE0-41F0-A6A0-D4909D6718D4}" ShortID="327187774">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_bed_compress" ID="{62BAB470-955B-4F6F-B89A-E4AAE24C7FBC}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="StepOffBed" ID="{767836BA-8810-4D5C-9431-C8EB8B98A4B1}">
+									<ChildrenList>
+										<Action Name="" ID="{3E005F5C-259E-45B5-A1A1-CAC5C0298BF6}" ShortID="935084464">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_bed_creak" ID="{CC895611-0A8B-46A3-A3C0-49A4782B26F0}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Event Name="LevelStart" ID="{DAC13E18-1B9C-455A-959B-9D27765932F5}">

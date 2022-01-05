@@ -34,6 +34,8 @@ namespace AK
         static const AkUniqueID LEVELSTART = 3372421815U;
         static const AkUniqueID MUSICSTART = 1122283870U;
         static const AkUniqueID SFXSTART = 1661560854U;
+        static const AkUniqueID STEPOFFBED = 157353963U;
+        static const AkUniqueID STEPONBED = 135348085U;
         static const AkUniqueID TREEAMBIENCEPLAY = 1973723167U;
         static const AkUniqueID WORLDKEY_A5 = 3724088773U;
         static const AkUniqueID WORLDKEY_A6 = 3724088774U;
@@ -208,6 +210,7 @@ namespace AK
         static const AkUniqueID BASE = 1291433366U;
         static const AkUniqueID BOX_AMBIENCE_BUS = 2758124570U;
         static const AkUniqueID BOX_HOLDING_BUS = 2190619839U;
+        static const AkUniqueID DIEGETIC_SFX_BUS = 1073713956U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID HARPOON = 302949338U;
         static const AkUniqueID HARPOON_AMBIENCE_BUS = 286173556U;
@@ -217,7 +220,6 @@ namespace AK
         static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
         static const AkUniqueID MUSIC_BUS = 3127962312U;
         static const AkUniqueID RIGHT_FOOTSTEP = 854631381U;
-        static const AkUniqueID SOUND_EFFECTS_BUS = 57144414U;
         static const AkUniqueID TREE = 3322072369U;
         static const AkUniqueID TREE_WIND = 2466686001U;
         static const AkUniqueID VAMP_BUS = 3225388919U;

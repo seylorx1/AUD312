@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585602644508037428
+    m_lastTime: -8585601888706790154
     List:
     - name: Ambience
       guid: 4bf007b3e95ba347893be1c6d236bd46
@@ -315,13 +315,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Sound Effects Bus
+      - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       - ElementName: Ambience
         ObjectType: 4
         guid: 4bf007b3e95ba347893be1c6d236bd46
-      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Ambience
+      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Ambience
     - name: Base
       guid: f8400540ecc8c44394331a34a8a64f68
       id: 1291433366
@@ -381,6 +381,20 @@ MonoBehaviour:
         guid: 7178a0cb03d21c4b8c86f221ddc3b242
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Holding
         Bus
+    - name: Diegetic SFX Bus
+      guid: 300defa1ec929e44b8c16c3eeedc7a43
+      id: 1073713956
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Diegetic SFX Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus
     - name: Footsteps
       guid: c13f11b0aaeda240a557fe73afab7937
       id: 2385628198
@@ -391,13 +405,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Sound Effects Bus
+      - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       - ElementName: Footsteps
         ObjectType: 2
         guid: c13f11b0aaeda240a557fe73afab7937
-      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Footsteps
+      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Footsteps
     - name: Harpoon
       guid: c90cbab9b22223439a36e007c7ce5a65
       id: 302949338
@@ -408,13 +422,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Sound Effects Bus
+      - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       - ElementName: Harpoon
         ObjectType: 2
         guid: c90cbab9b22223439a36e007c7ce5a65
-      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Harpoon
+      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Harpoon
     - name: Harpoon Ambience Bus
       guid: 62cf7f29753cca498fa3d705b6c0848c
       id: 286173556
@@ -446,7 +460,7 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Sound Effects Bus
+      - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       - ElementName: Harpoon
@@ -455,7 +469,7 @@ MonoBehaviour:
       - ElementName: HarpoonAir
         ObjectType: 2
         guid: b5202d48d69f0e448eede17be5ccf386
-      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Harpoon\HarpoonAir
+      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Harpoon\HarpoonAir
     - name: Instruments
       guid: 600451862cb6874bbbc59562f60a3c21
       id: 559901361
@@ -521,7 +535,7 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Sound Effects Bus
+      - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       - ElementName: Footsteps
@@ -530,7 +544,7 @@ MonoBehaviour:
       - ElementName: Left Footstep
         ObjectType: 2
         guid: 91b72d5949b1ae40ae73f68624c18669
-      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Footsteps\Left
+      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Footsteps\Left
         Footstep
     - name: Motion Factory Bus
       guid: c6b9f92af16ee946b5f2e30c9e602c74
@@ -570,7 +584,7 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Sound Effects Bus
+      - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       - ElementName: Footsteps
@@ -579,22 +593,8 @@ MonoBehaviour:
       - ElementName: Right Footstep
         ObjectType: 2
         guid: e2a043da67a1f8469ed647ff2e023210
-      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Footsteps\Right
+      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Footsteps\Right
         Footstep
-    - name: Sound Effects Bus
-      guid: 300defa1ec929e44b8c16c3eeedc7a43
-      id: 57144414
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Sound Effects Bus
-        ObjectType: 2
-        guid: 300defa1ec929e44b8c16c3eeedc7a43
-      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus
     - name: Tree
       guid: bc2626dd7d22e94b99e5768ff6e2a126
       id: 3322072369
@@ -605,7 +605,7 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Sound Effects Bus
+      - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       - ElementName: Ambience
@@ -614,7 +614,7 @@ MonoBehaviour:
       - ElementName: Tree
         ObjectType: 2
         guid: bc2626dd7d22e94b99e5768ff6e2a126
-      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Ambience\Tree
+      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Ambience\Tree
     - name: Tree Wind
       guid: c2ba53b896e72940b36b7ee4b920c5e2
       id: 2466686001
@@ -625,7 +625,7 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Sound Effects Bus
+      - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       - ElementName: Ambience
@@ -637,7 +637,7 @@ MonoBehaviour:
       - ElementName: Tree Wind
         ObjectType: 2
         guid: c2ba53b896e72940b36b7ee4b920c5e2
-      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Ambience\Tree\Tree
+      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Ambience\Tree\Tree
         Wind
     - name: Vamp Bus
       guid: 3642d45a92ab3c49ba1479793c94f2c9
@@ -669,7 +669,7 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Sound Effects Bus
+      - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       - ElementName: Ambience
@@ -678,7 +678,7 @@ MonoBehaviour:
       - ElementName: Wind
         ObjectType: 2
         guid: 4505e1f36c4da84599c0a6bed624f17b
-      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\Ambience\Wind
+      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Ambience\Wind
     - name: WorldKeys
       guid: 10f5d4cef72269499f9954a15d3b71cd
       id: 1310325127
@@ -689,13 +689,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Sound Effects Bus
+      - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       - ElementName: WorldKeys
         ObjectType: 2
         guid: 10f5d4cef72269499f9954a15d3b71cd
-      Path: Master-Mixer Hierarchy\Default Work Unit\Sound Effects Bus\WorldKeys
+      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\WorldKeys
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -736,8 +736,28 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585602645828844932
+    m_lastTime: -8585601887633431069
     List:
+    - name: Bed
+      guid: 746b8ec130b9564d939f6570ec1df828
+      id: 446279778
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Bed
+        ObjectType: 4
+        guid: 746b8ec130b9564d939f6570ec1df828
+      Path: Events\Default Work Unit\SFX\Bed
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Box
       guid: b522a989009d6a4fa7920d2b12634e88
       id: 546945280
@@ -1355,6 +1375,52 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: StepOffBed
+      guid: ba36787610885c4d9431c8eb8b98a4b1
+      id: 157353963
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Bed
+        ObjectType: 4
+        guid: 746b8ec130b9564d939f6570ec1df828
+      - ElementName: StepOffBed
+        ObjectType: 3
+        guid: ba36787610885c4d9431c8eb8b98a4b1
+      Path: Events\Default Work Unit\SFX\Bed\StepOffBed
+      maxAttenuation: 10
+      maxDuration: 0.78
+      minDuration: 0.430544
+    - name: StepOnBed
+      guid: f1d6720aa6ad6b4eb43e3b2c205773f5
+      id: 135348085
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Bed
+        ObjectType: 4
+        guid: 746b8ec130b9564d939f6570ec1df828
+      - ElementName: StepOnBed
+        ObjectType: 3
+        guid: f1d6720aa6ad6b4eb43e3b2c205773f5
+      Path: Events\Default Work Unit\SFX\Bed\StepOnBed
+      maxAttenuation: 10
+      maxDuration: 1.384785
+      minDuration: 1.384785
     - name: Stingers
       guid: 8e09c0297be6b8418069ac2fe41f5cfa
       id: 2940432316
@@ -2745,7 +2811,7 @@ MonoBehaviour:
         guid: 38b4dd40b2e94b4c9c9bce1ac9f941c2
       Path: Triggers\Default Work Unit\BoxPickupStinger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e000000300000003100000032000000360000003a00000042000000490000005100000073000000b60000002c0400002f040000320400003504000038040000
+  ExpandedWaapiItemIds: 010000000200000003000000060000000700000008000000090000000b0000000c0000000d0000000e0000000f00000010000000110000001200000014000000150000001600000018000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e000000300000003100000032000000360000003a000000420000004600000049000000510000005f00000073000000b60000002c0400002f040000320400003504000038040000e9040000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

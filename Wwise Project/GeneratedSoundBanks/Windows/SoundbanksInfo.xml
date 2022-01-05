@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2641873587">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3150010330">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1018046369">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2182432141">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -374,11 +374,11 @@
 					<IncludedMemoryFiles>
 						<File Id="117884843" Language="SFX">
 							<ShortName>sfx_harpoon_shoot_reel_air.wav</ShortName>
-							<Path>SFX\sfx_harpoon_shoot_reel_air_BFB259A6.wem</Path>
+							<Path>SFX\sfx_harpoon_shoot_reel_air_10C4C929.wem</Path>
 						</File>
 						<File Id="570316296" Language="SFX">
 							<ShortName>sfx_harpoon_shoot_reel_chain.wav</ShortName>
-							<Path>SFX\sfx_harpoon_shoot_reel_chain_BFB259A6.wem</Path>
+							<Path>SFX\sfx_harpoon_shoot_reel_chain_10C4C929.wem</Path>
 						</File>
 						<File Id="604781409" Language="SFX">
 							<ShortName>sfx_harpoon_shoot_a.wav</ShortName>
@@ -410,11 +410,11 @@
 					<IncludedMemoryFiles>
 						<File Id="128127013" Language="SFX">
 							<ShortName>sfx_harpoon_shoot_reel_heavychain.wav</ShortName>
-							<Path>SFX\sfx_harpoon_shoot_reel_heavychain_BFB259A6.wem</Path>
+							<Path>SFX\sfx_harpoon_shoot_reel_heavychain_10C4C929.wem</Path>
 						</File>
 						<File Id="965794218" Language="SFX">
 							<ShortName>sfx_harpoon_shoot_reel_heavyair.wav</ShortName>
-							<Path>SFX\sfx_harpoon_shoot_reel_heavyair_BFB259A6.wem</Path>
+							<Path>SFX\sfx_harpoon_shoot_reel_heavyair_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -576,6 +576,34 @@
 					<ActionSetState>
 						<ActionSetStateEntry Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\Interactions\WorldKeysEnabled\Enabled"/>
 					</ActionSetState>
+				</Event>
+				<Event Id="157353963" Name="StepOffBed" ObjectPath="\Events\Default Work Unit\SFX\Bed\StepOffBed" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.430544" DurationMax="0.780000">
+					<IncludedMemoryFiles>
+						<File Id="46517041" Language="SFX">
+							<ShortName>sfx_bed_creak_02.wav</ShortName>
+							<Path>SFX\sfx_bed_creak_02_10C4C929.wem</Path>
+						</File>
+						<File Id="56865323" Language="SFX">
+							<ShortName>sfx_bed_creak_01.wav</ShortName>
+							<Path>SFX\sfx_bed_creak_01_10C4C929.wem</Path>
+						</File>
+						<File Id="619194132" Language="SFX">
+							<ShortName>sfx_bed_creak_03.wav</ShortName>
+							<Path>SFX\sfx_bed_creak_03_10C4C929.wem</Path>
+						</File>
+						<File Id="899593302" Language="SFX">
+							<ShortName>sfx_bed_creak_04.wav</ShortName>
+							<Path>SFX\sfx_bed_creak_04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="135348085" Name="StepOnBed" ObjectPath="\Events\Default Work Unit\SFX\Bed\StepOnBed" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.384785" DurationMax="1.384785">
+					<IncludedMemoryFiles>
+						<File Id="1002766583" Language="SFX">
+							<ShortName>sfx_bed_compress.wav</ShortName>
+							<Path>SFX\sfx_bed_compress_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1973723167" Name="TreeAmbiencePlay" ObjectPath="\Events\Default Work Unit\SFX\TreeAmbiencePlay" MaxAttenuation="15.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
