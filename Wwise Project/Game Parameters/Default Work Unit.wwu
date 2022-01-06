@@ -3,40 +3,63 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="VampCooldown" ID="{55CD68A3-358D-4235-9001-F46651CA0321}">
-					<Comment>This is used to detect if the player is walking or not. (cont.)
+				<Folder Name="Footstep" ID="{73B3C9DA-3409-4759-BBE6-D832C31A4E21}" ShortID="783444483">
+					<ChildrenList>
+						<GameParameter Name="FootstepWeight" ID="{3F312672-51D9-41E6-BA8D-E0719C6B558E}">
+							<Comment>This is used by some footstep sounds to deliver variety on RTPC parameters. (cont.)
+
+Set to a random value between 0 and 1 every time a footstep event is called.</Comment>
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="26"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="VampCooldown" ID="{55CD68A3-358D-4235-9001-F46651CA0321}">
+							<Comment>This is used to detect if the player is walking or not. (cont.)
 
 Set to 1 every time a footstep is called, and slowly resets to 0 again.</Comment>
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="13"/>
-						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="1"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-						<Property Name="RTPCRamping" Type="int16" Value="2"/>
-					</PropertyList>
-				</GameParameter>
-				<GameParameter Name="BoxSegment" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="11"/>
-						<Property Name="FilterTimeUp" Type="Real64" Value="2"/>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="1"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-						<Property Name="RTPCRamping" Type="int16" Value="2"/>
-					</PropertyList>
-				</GameParameter>
-				<GameParameter Name="WindIntensity" ID="{4C4EC982-85DC-47DE-8FB3-3ECE627C38D5}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="16"/>
-						<Property Name="FilterTimeDown" Type="Real64" Value="3"/>
-						<Property Name="FilterTimeUp" Type="Real64" Value="2"/>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="1"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-						<Property Name="RTPCRamping" Type="int16" Value="2"/>
-					</PropertyList>
-				</GameParameter>
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="13"/>
+								<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambience" ID="{B4613F7B-CC90-4249-AC4E-556C8A434729}" ShortID="26074552">
+					<ChildrenList>
+						<GameParameter Name="WindIntensity" ID="{4C4EC982-85DC-47DE-8FB3-3ECE627C38D5}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="16"/>
+								<Property Name="FilterTimeDown" Type="Real64" Value="3"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="2"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Interactions" ID="{EB3B0A57-ADE9-416C-A971-A94A95C9A907}" ShortID="552316399">
+					<ChildrenList>
+						<GameParameter Name="BoxSegment" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="11"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="2"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

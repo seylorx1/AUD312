@@ -4,6 +4,10 @@
 		<WorkUnit Name="Default Work Unit" ID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}" PersistMode="Standalone">
 			<ChildrenList>
 				<Folder Name="Music" ID="{7DC76BA7-CF76-4D36-9933-B7AC263E0790}" ShortID="232227215">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="22"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="MusicStart" ID="{F56B5F6D-980C-4666-A2BD-5C329DFEB6EE}">
 							<Comment>Starts the game's music, which is made up of parts of a song I made: 'Boat Ride Over A Paltry Chasm'.</Comment>
@@ -323,9 +327,33 @@ This event does the following:
 									<Comment>Called on every footstep. (Cont.)
 
 This event does the following:
+- Sets a random value [0..1] for footstep weight (used by some footstep sounds.)
 - Plays the Footsteps switch container.
-- Resets the vamp cooldown.</Comment>
+- Calls vamp cooldown event.</Comment>
 									<ChildrenList>
+										<Action Name="" ID="{2CA73BCD-42DC-4066-A79C-C9D31E301CFF}" ShortID="720576616">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9FAD1BF9-72AB-4C21-AE02-5FED0AECFA03}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FootstepWeight" ID="{3F312672-51D9-41E6-BA8D-E0719C6B558E}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{3CB983A9-C8D7-47F0-967B-C43547B68CB6}" ShortID="856770221">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -333,7 +361,22 @@ This event does the following:
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{36331A1B-CEB1-4ED8-8F18-7CAEAA1CC27C}" ShortID="690529339">
+										<Action Name="" ID="{FFECA2C6-370F-4C98-A2F1-EB9166167774}" ShortID="934282847">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="41"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FootstepVampCooldown" ID="{BB4295ED-E87C-42A1-9696-E2F5BE6B4859}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="FootstepVampCooldown" ID="{BB4295ED-E87C-42A1-9696-E2F5BE6B4859}">
+									<Comment>Handles vamp cooldown parameter sends.</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{CA83D679-14E2-4F94-8835-342CD6A7F51A}" ShortID="194131548">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
 												<Property Name="GameParameterValue" Type="Real64" Value="1"/>
@@ -345,7 +388,7 @@ This event does the following:
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{DD49337D-7E6C-4A84-8A45-22CBC3A5DB5D}" ShortID="860956073">
+										<Action Name="" ID="{685401A7-78AF-480B-808E-29D6617EB7DD}" ShortID="907415788">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
 												<Property Name="Delay" Type="Real64" Value="0.3"/>
@@ -584,6 +627,85 @@ This event does the following:
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="SFXStart" ID="{D9C2F94F-BEA2-45C9-8C56-11976256A7FA}">
+							<Comment>Initialises the SFX. (cont.)
+
+This event does the following:
+- Enables the WorldKeysEnabled state (This is done to prevent the WorldKeys from triggering when the player first loads into the level.)
+- Starts the sfx_wind sound effect.</Comment>
+							<ChildrenList>
+								<Action Name="" ID="{22ABD07F-17D0-4FED-8E03-4C583FC25E1E}" ShortID="606999547">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B923411A-EF5B-45E3-AF5A-11B2C77035D3}" ShortID="921480094">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_wind" ID="{9BFE3B8D-E870-431C-8FE9-3FE8ECC740C1}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TreeAmbiencePlay" ID="{82A951BE-23FE-4A16-AE15-A44BCCBE2FAE}">
+							<ChildrenList>
+								<Action Name="" ID="{56180252-AF83-44CA-A54A-C13260026598}" ShortID="360791519">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_treewind (Loop)" ID="{D49F079A-D68A-4A75-934E-87FF3E9057D9}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E7B613BD-E4A3-4FFC-A12C-FE07160D64CF}" ShortID="347004700">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_treewind_rustle" ID="{C7A3F86C-E669-4EEB-986D-4399FB942F30}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Bed" ID="{C18E6B74-B930-4D56-939F-6570EC1DF828}" ShortID="218117654">
+							<ChildrenList>
+								<Event Name="StepOnBed" ID="{0A72D6F1-ADA6-4E6B-B43E-3B2C205773F5}">
+									<ChildrenList>
+										<Action Name="" ID="{386A8B68-9EE0-41F0-A6A0-D4909D6718D4}" ShortID="327187774">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_bed_compress" ID="{62BAB470-955B-4F6F-B89A-E4AAE24C7FBC}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="StepOffBed" ID="{767836BA-8810-4D5C-9431-C8EB8B98A4B1}">
+									<ChildrenList>
+										<Action Name="" ID="{3E005F5C-259E-45B5-A1A1-CAC5C0298BF6}" ShortID="935084464">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_footstep_creak_bed" ID="{CC895611-0A8B-46A3-A3C0-49A4782B26F0}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Level" ID="{222EE93F-65BF-4823-BBDF-3FFFF96EB801}" ShortID="424487160">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="16"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
 						<Folder Name="Room" ID="{8D4E7DF0-37F3-4C53-90E7-37B790712CF1}" ShortID="974836293">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="16"/>
@@ -694,70 +816,48 @@ This event does the following:
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Event Name="SFXStart" ID="{D9C2F94F-BEA2-45C9-8C56-11976256A7FA}">
-							<Comment>Initialises the SFX. (cont.)
+						<Folder Name="Beats" ID="{0EB7ADD8-BF52-4027-BEA8-20418C48E598}" ShortID="403220153">
+							<ChildrenList>
+								<Event Name="LevelStart" ID="{DAC13E18-1B9C-455A-959B-9D27765932F5}">
+									<Comment>Called at the beginning of the level. (cont.)
 
 This event does the following:
-- Enables the WorldKeysEnabled state (This is done to prevent the WorldKeys from triggering when the player first loads into the level.)
-- Starts the sfx_wind sound effect.</Comment>
-							<ChildrenList>
-								<Action Name="" ID="{22ABD07F-17D0-4FED-8E03-4C583FC25E1E}" ShortID="606999547">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-										<Property Name="Delay" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{B923411A-EF5B-45E3-AF5A-11B2C77035D3}" ShortID="921480094">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_wind" ID="{9BFE3B8D-E870-431C-8FE9-3FE8ECC740C1}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="TreeAmbiencePlay" ID="{82A951BE-23FE-4A16-AE15-A44BCCBE2FAE}">
-							<ChildrenList>
-								<Action Name="" ID="{56180252-AF83-44CA-A54A-C13260026598}" ShortID="360791519">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_treewind (Loop)" ID="{D49F079A-D68A-4A75-934E-87FF3E9057D9}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{E7B613BD-E4A3-4FFC-A12C-FE07160D64CF}" ShortID="347004700">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_treewind_rustle" ID="{C7A3F86C-E669-4EEB-986D-4399FB942F30}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Folder Name="Bed" ID="{C18E6B74-B930-4D56-939F-6570EC1DF828}" ShortID="218117654">
-							<ChildrenList>
-								<Event Name="StepOnBed" ID="{0A72D6F1-ADA6-4E6B-B43E-3B2C205773F5}">
+- Posts the MusicStart event, initialising the music for the level. 
+- Posts the SFXStart event, initialising the sound effects for the level.
+
+</Comment>
 									<ChildrenList>
-										<Action Name="" ID="{386A8B68-9EE0-41F0-A6A0-D4909D6718D4}" ShortID="327187774">
+										<Action Name="" ID="{E3CA2A20-F71C-4D58-9135-63F1954EF60C}" ShortID="20308717">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="41"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_bed_compress" ID="{62BAB470-955B-4F6F-B89A-E4AAE24C7FBC}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="MusicStart" ID="{F56B5F6D-980C-4666-A2BD-5C329DFEB6EE}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{2CF37080-1806-47EF-8300-D9EAB9A9DDB4}" ShortID="41633126">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="41"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFXStart" ID="{D9C2F94F-BEA2-45C9-8C56-11976256A7FA}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="StepOffBed" ID="{767836BA-8810-4D5C-9431-C8EB8B98A4B1}">
+								<Event Name="LevelBigRoomReveal" ID="{7AB5329E-7008-4D92-9F76-B737E0F051C2}">
 									<ChildrenList>
-										<Action Name="" ID="{3E005F5C-259E-45B5-A1A1-CAC5C0298BF6}" ShortID="935084464">
+										<Action Name="" ID="{B710C2F3-7D42-45AC-9BE7-66F12DEE1BC4}" ShortID="73855956">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="41"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_footstep_bed_creak" ID="{CC895611-0A8B-46A3-A3C0-49A4782B26F0}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="EnterOutdoors" ID="{D32DF6C7-916E-4699-A0B3-319C6024AA9A}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -767,37 +867,6 @@ This event does the following:
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Event Name="LevelStart" ID="{DAC13E18-1B9C-455A-959B-9D27765932F5}">
-					<Comment>Called at the beginning of the level. (cont.)
-
-This event does the following:
-- Posts the MusicStart event, initialising the music for the level. 
-- Posts the SFXStart event, initialising the sound effects for the level.
-
-</Comment>
-					<ChildrenList>
-						<Action Name="" ID="{E3CA2A20-F71C-4D58-9135-63F1954EF60C}" ShortID="20308717">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="41"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MusicStart" ID="{F56B5F6D-980C-4666-A2BD-5C329DFEB6EE}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{2CF37080-1806-47EF-8300-D9EAB9A9DDB4}" ShortID="41633126">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="41"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFXStart" ID="{D9C2F94F-BEA2-45C9-8C56-11976256A7FA}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

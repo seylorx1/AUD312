@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3150010330">
+		<SoundBank Id="1355168291" Language="SFX" Hash="632156442">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<GameParameters>
-				<GameParameter Id="1042517418" Name="WindIntensity" ObjectPath="\Game Parameters\Default Work Unit\WindIntensity"/>
+				<GameParameter Id="1042517418" Name="WindIntensity" ObjectPath="\Game Parameters\Default Work Unit\Ambience\WindIntensity"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="2558423223" Name="BoxState" ObjectPath="\States\Default Work Unit\Music\BoxState" GUID="{54C47F18-4243-4FC9-91BF-C729E3ADD7FB}">
@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2881098795">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2872311477">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -76,27 +76,27 @@
 						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\BoxOpeningStingerState\None"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1721219483" Name="EnterIndoors" ObjectPath="\Events\Default Work Unit\SFX\Room\EnterIndoors" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="1721219483" Name="EnterIndoors" ObjectPath="\Events\Default Work Unit\Level\Room\EnterIndoors" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\None"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1113956849" Name="EnterIndoorsTunnel" ObjectPath="\Events\Default Work Unit\SFX\Room\EnterIndoorsTunnel" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="1113956849" Name="EnterIndoorsTunnel" ObjectPath="\Events\Default Work Unit\Level\Room\EnterIndoorsTunnel" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="3059984139" Name="Tunnel" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\Tunnel"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3070671186" Name="EnterOutdoors" ObjectPath="\Events\Default Work Unit\SFX\Room\EnterOutdoors" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="3070671186" Name="EnterOutdoors" ObjectPath="\Events\Default Work Unit\Level\Room\EnterOutdoors" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="2730119150" Name="Outdoors" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\Outdoors"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="2811934447" Name="EnterTunnel" ObjectPath="\Events\Default Work Unit\SFX\Room\EnterTunnel" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="2811934447" Name="EnterTunnel" ObjectPath="\Events\Default Work Unit\Level\Room\EnterTunnel" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="3059984139" Name="Tunnel" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\Tunnel"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="4039405217" Name="FootstepPlay" ObjectPath="\Events\Default Work Unit\SFX\Footstep\FootstepPlay" DurationType="OneShot" DurationMin="0.268956" DurationMax="0.850596">
+				<Event Id="4039405217" Name="FootstepPlay" ObjectPath="\Events\Default Work Unit\SFX\Footstep\FootstepPlay" DurationType="OneShot" DurationMin="0.164984" DurationMax="1.135410">
 					<IncludedMemoryFiles>
 						<File Id="3342881" Language="SFX">
 							<ShortName>sfx_footstep_toe_concrete_03.wav</ShortName>
@@ -117,10 +117,6 @@
 						<File Id="40909859" Language="SFX">
 							<ShortName>sfx_footstep_heel_concrete_01.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_01_10C4C929.wem</Path>
-						</File>
-						<File Id="46517041" Language="SFX">
-							<ShortName>sfx_bed_creak_02.wav</ShortName>
-							<Path>SFX\sfx_bed_creak_02_10C4C929.wem</Path>
 						</File>
 						<File Id="71636352" Language="SFX">
 							<ShortName>sfx_footstep_heel_concrete_03.wav</ShortName>
@@ -158,9 +154,25 @@
 							<ShortName>sfx_footstep_toe_grass_03.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_grass_03_10C4C929.wem</Path>
 						</File>
+						<File Id="172730326" Language="SFX">
+							<ShortName>sfx_footstep_heel_wood_03.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_wood_03_10C4C929.wem</Path>
+						</File>
+						<File Id="229562338" Language="SFX">
+							<ShortName>sfx_footstep_toe_wood_02.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_wood_02_10C4C929.wem</Path>
+						</File>
 						<File Id="231539839" Language="SFX">
 							<ShortName>sfx_footstep_toe_concrete_13.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_concrete_13_10C4C929.wem</Path>
+						</File>
+						<File Id="232315487" Language="SFX">
+							<ShortName>sfx_footstep_heel_wood_01.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_wood_01_10C4C929.wem</Path>
+						</File>
+						<File Id="244810268" Language="SFX">
+							<ShortName>sfx_creak_01.wav</ShortName>
+							<Path>SFX\sfx_creak_01_10C4C929.wem</Path>
 						</File>
 						<File Id="298171059" Language="SFX">
 							<ShortName>sfx_footstep_toe_concrete_10.wav</ShortName>
@@ -169,6 +181,10 @@
 						<File Id="307567616" Language="SFX">
 							<ShortName>sfx_footstep_heel_grass_03.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_grass_03_10C4C929.wem</Path>
+						</File>
+						<File Id="327118990" Language="SFX">
+							<ShortName>sfx_footstep_heel_wood_04.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_wood_04_10C4C929.wem</Path>
 						</File>
 						<File Id="360199625" Language="SFX">
 							<ShortName>sfx_footstep_toe_concrete_08.wav</ShortName>
@@ -182,6 +198,10 @@
 							<ShortName>sfx_footstep_heel_concrete_12.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_12_10C4C929.wem</Path>
 						</File>
+						<File Id="382858474" Language="SFX">
+							<ShortName>sfx_footstep_toe_wood_01.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_wood_01_10C4C929.wem</Path>
+						</File>
 						<File Id="387958526" Language="SFX">
 							<ShortName>sfx_footstep_heel_cloth_03.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_cloth_03_10C4C929.wem</Path>
@@ -194,13 +214,25 @@
 							<ShortName>sfx_footstep_toe_cloth_01.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_cloth_01_10C4C929.wem</Path>
 						</File>
+						<File Id="430779212" Language="SFX">
+							<ShortName>sfx_creak_03.wav</ShortName>
+							<Path>SFX\sfx_creak_03_10C4C929.wem</Path>
+						</File>
 						<File Id="433346874" Language="SFX">
 							<ShortName>sfx_footstep_heel_grass_01.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_grass_01_10C4C929.wem</Path>
 						</File>
+						<File Id="433560062" Language="SFX">
+							<ShortName>sfx_creak_02.wav</ShortName>
+							<Path>SFX\sfx_creak_02_10C4C929.wem</Path>
+						</File>
 						<File Id="472897795" Language="SFX">
 							<ShortName>sfx_footstep_toe_gravel_01.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_gravel_01_10C4C929.wem</Path>
+						</File>
+						<File Id="518684506" Language="SFX">
+							<ShortName>sfx_footstep_toe_wood_03.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_wood_03_10C4C929.wem</Path>
 						</File>
 						<File Id="541544103" Language="SFX">
 							<ShortName>sfx_footstep_heel_concrete_08.wav</ShortName>
@@ -222,6 +254,10 @@
 							<ShortName>sfx_footstep_toe_concrete_04.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_concrete_04_10C4C929.wem</Path>
 						</File>
+						<File Id="575773855" Language="SFX">
+							<ShortName>sfx_footstep_toe_wood_04.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_wood_04_10C4C929.wem</Path>
+						</File>
 						<File Id="578292259" Language="SFX">
 							<ShortName>sfx_footstep_toe_grass_01.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_grass_01_10C4C929.wem</Path>
@@ -234,13 +270,13 @@
 							<ShortName>sfx_footstep_heel_concrete_09.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_09_10C4C929.wem</Path>
 						</File>
-						<File Id="619194132" Language="SFX">
-							<ShortName>sfx_bed_creak_03.wav</ShortName>
-							<Path>SFX\sfx_bed_creak_03_10C4C929.wem</Path>
-						</File>
 						<File Id="624331642" Language="SFX">
 							<ShortName>sfx_footstep_heel_concrete_07.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_07_10C4C929.wem</Path>
+						</File>
+						<File Id="633135558" Language="SFX">
+							<ShortName>sfx_footstep_heel_wood_02.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_wood_02_10C4C929.wem</Path>
 						</File>
 						<File Id="684196659" Language="SFX">
 							<ShortName>sfx_footstep_toe_concrete_11.wav</ShortName>
@@ -277,10 +313,6 @@
 						<File Id="813972385" Language="SFX">
 							<ShortName>sfx_footstep_heel_concrete_10.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_10_10C4C929.wem</Path>
-						</File>
-						<File Id="899593302" Language="SFX">
-							<ShortName>sfx_bed_creak_04.wav</ShortName>
-							<Path>SFX\sfx_bed_creak_04_10C4C929.wem</Path>
 						</File>
 						<File Id="908824202" Language="SFX">
 							<ShortName>sfx_footstep_heel_cloth_01.wav</ShortName>
@@ -401,13 +433,36 @@
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{C9ED3BA4-F979-4932-8E3B-C493E6E05FEA}">
 							<Media>
-								<File Id="46517041"/>
-								<File Id="619194132"/>
-								<File Id="899593302"/>
+								<File Id="244810268"/>
+								<File Id="430779212"/>
+								<File Id="433560062"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1338EB15-8A56-4726-ACE6-2940071E11BB}">
+							<Media>
+								<File Id="172730326"/>
+								<File Id="229562338"/>
+								<File Id="232315487"/>
+								<File Id="327118990"/>
+								<File Id="382858474"/>
+								<File Id="518684506"/>
+								<File Id="575773855"/>
+								<File Id="633135558"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1338EB15-8A56-4726-ACE6-2940071E11BB}">
+							<Media>
+								<File Id="244810268"/>
+								<File Id="430779212"/>
+								<File Id="433560062"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="4288247056" Name="FootstepVampCooldown" ObjectPath="\Events\Default Work Unit\SFX\Footstep\FootstepVampCooldown"/>
+					</ActionPostEvent>
 				</Event>
+				<Event Id="4288247056" Name="FootstepVampCooldown" ObjectPath="\Events\Default Work Unit\SFX\Footstep\FootstepVampCooldown" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="561183332" Name="HarpoonAmbiencePlay" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonAmbiencePlay" MaxAttenuation="20.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="154507780" Language="SFX">
@@ -491,7 +546,12 @@
 						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\None"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3372421815" Name="LevelStart" ObjectPath="\Events\Default Work Unit\LevelStart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="3672941687" Name="LevelBigRoomReveal" ObjectPath="\Events\Default Work Unit\Level\Beats\LevelBigRoomReveal" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="3070671186" Name="EnterOutdoors" ObjectPath="\Events\Default Work Unit\Level\Room\EnterOutdoors"/>
+					</ActionPostEvent>
+				</Event>
+				<Event Id="3372421815" Name="LevelStart" ObjectPath="\Events\Default Work Unit\Level\Beats\LevelStart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="1122283870" Name="MusicStart" ObjectPath="\Events\Default Work Unit\Music\MusicStart"/>
 						<ActionPostEventEntry Id="1661560854" Name="SFXStart" ObjectPath="\Events\Default Work Unit\SFX\SFXStart"/>
@@ -640,19 +700,19 @@
 						<ActionSetStateEntry Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\Interactions\WorldKeysEnabled\Enabled"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="157353963" Name="StepOffBed" ObjectPath="\Events\Default Work Unit\SFX\Bed\StepOffBed" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.430544" DurationMax="0.850596">
+				<Event Id="157353963" Name="StepOffBed" ObjectPath="\Events\Default Work Unit\SFX\Bed\StepOffBed" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.341723" DurationMax="0.675119">
 					<IncludedMemoryFiles>
-						<File Id="46517041" Language="SFX">
-							<ShortName>sfx_bed_creak_02.wav</ShortName>
-							<Path>SFX\sfx_bed_creak_02_10C4C929.wem</Path>
+						<File Id="244810268" Language="SFX">
+							<ShortName>sfx_creak_01.wav</ShortName>
+							<Path>SFX\sfx_creak_01_10C4C929.wem</Path>
 						</File>
-						<File Id="619194132" Language="SFX">
-							<ShortName>sfx_bed_creak_03.wav</ShortName>
-							<Path>SFX\sfx_bed_creak_03_10C4C929.wem</Path>
+						<File Id="430779212" Language="SFX">
+							<ShortName>sfx_creak_03.wav</ShortName>
+							<Path>SFX\sfx_creak_03_10C4C929.wem</Path>
 						</File>
-						<File Id="899593302" Language="SFX">
-							<ShortName>sfx_bed_creak_04.wav</ShortName>
-							<Path>SFX\sfx_bed_creak_04_10C4C929.wem</Path>
+						<File Id="433560062" Language="SFX">
+							<ShortName>sfx_creak_02.wav</ShortName>
+							<Path>SFX\sfx_creak_02_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -798,8 +858,9 @@
 				</Event>
 			</IncludedEvents>
 			<GameParameters>
-				<GameParameter Id="244091178" Name="VampCooldown" ObjectPath="\Game Parameters\Default Work Unit\VampCooldown"/>
-				<GameParameter Id="3762319931" Name="BoxSegment" ObjectPath="\Game Parameters\Default Work Unit\BoxSegment"/>
+				<GameParameter Id="244091178" Name="VampCooldown" ObjectPath="\Game Parameters\Default Work Unit\Footstep\VampCooldown"/>
+				<GameParameter Id="3587782899" Name="FootstepWeight" ObjectPath="\Game Parameters\Default Work Unit\Footstep\FootstepWeight"/>
+				<GameParameter Id="3762319931" Name="BoxSegment" ObjectPath="\Game Parameters\Default Work Unit\Interactions\BoxSegment"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="379189110" Name="HarpoonFired" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired" GUID="{73735AFF-F44D-45C6-97A0-D344484F219B}">
@@ -858,6 +919,7 @@
 						<Switch Id="2185786256" Name="Gravel" ObjectPath="\Switches\Default Work Unit\FootstepType\Gravel" GUID="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}"/>
 						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\Default Work Unit\FootstepType\Grass" GUID="{05C16097-8E3C-4946-A103-D61957EBA3B4}"/>
 						<Switch Id="446279778" Name="Bed" ObjectPath="\Switches\Default Work Unit\FootstepType\Bed" GUID="{C9ED3BA4-F979-4932-8E3B-C493E6E05FEA}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\FootstepType\Wood" GUID="{1338EB15-8A56-4726-ACE6-2940071E11BB}"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="1468846155" Name="VampFootstep" ObjectPath="\Switches\Default Work Unit\VampFootstep" GUID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}">

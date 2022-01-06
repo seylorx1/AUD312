@@ -25,12 +25,14 @@ namespace AK
         static const AkUniqueID ENTEROUTDOORS = 3070671186U;
         static const AkUniqueID ENTERTUNNEL = 2811934447U;
         static const AkUniqueID FOOTSTEPPLAY = 4039405217U;
+        static const AkUniqueID FOOTSTEPVAMPCOOLDOWN = 4288247056U;
         static const AkUniqueID HARPOONAMBIENCEPLAY = 561183332U;
         static const AkUniqueID HARPOONAMBIENCESTOP = 3333733726U;
         static const AkUniqueID HARPOONFIRERETURN = 2421633396U;
         static const AkUniqueID HARPOONGRABSUCCESS = 2837856117U;
         static const AkUniqueID HARPOONPICKUP = 2867011390U;
         static const AkUniqueID HARPOONRECEIVED = 757170495U;
+        static const AkUniqueID LEVELBIGROOMREVEAL = 3672941687U;
         static const AkUniqueID LEVELSTART = 3372421815U;
         static const AkUniqueID MUSICSTART = 1122283870U;
         static const AkUniqueID SFXSTART = 1661560854U;
@@ -159,6 +161,7 @@ namespace AK
                 static const AkUniqueID CONCRETE = 841620460U;
                 static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID GRAVEL = 2185786256U;
+                static const AkUniqueID WOOD = 2058049674U;
             } // namespace SWITCH
         } // namespace FOOTSTEPTYPE
 
@@ -178,6 +181,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID BOXSEGMENT = 3762319931U;
+        static const AkUniqueID FOOTSTEPWEIGHT = 3587782899U;
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
         static const AkUniqueID RPM = 796049864U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;

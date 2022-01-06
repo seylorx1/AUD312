@@ -27,6 +27,7 @@
 				<Property Name="Event Action List\{6C44FDD9-BA78-411D-BDDB-AC893DBDC0CA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{767836BA-8810-4D5C-9431-C8EB8B98A4B1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{776F4C77-0FE1-4CB4-AB30-8F6E34E6652E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7AB5329E-7008-4D92-9F76-B737E0F051C2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7B51615A-BED5-4157-A851-0BC6E4532FAD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7EFB9376-AC08-4942-AA26-A5CE5562B1BC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{82A951BE-23FE-4A16-AE15-A44BCCBE2FAE}\x64_Expand States" Type="string" Value=""/>
@@ -39,6 +40,7 @@
 				<Property Name="Event Action List\{BA586DA8-E241-40E8-92C4-9AE8C6A9AF18}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{BAE27B9E-9DE2-4C85-BE02-BE99C45B789C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{BAE9A784-7298-471A-A22A-8129B3C48C7D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{BB4295ED-E87C-42A1-9696-E2F5BE6B4859}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C070A0A9-4897-418F-A09C-D195522EB360}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C2FD5147-3990-4F1F-A576-87A4AE697A0A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C7DEA94F-FB45-4423-A951-8D6E8508A284}\x64_Expand States" Type="string" Value=""/>
@@ -232,6 +234,7 @@
 				<Property Name="Music Transition List\{FB91D653-BAB0-4034-B668-D5EFBA0A9966}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{FF95BE5B-D1BE-4CB5-86D6-BA2BF98AF98E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="PluginUserAcknowledge\Motion" Type="bool" Value="True"/>
+				<Property Name="PluginUserAcknowledge\SoundSeedAir" Type="bool" Value="True"/>
 				<Property Name="PluginUserAcknowledge\iZotope Hybrid Reverb" Type="bool" Value="True"/>
 				<Property Name="PluginUserAcknowledge\iZotope Trash Distortion" Type="bool" Value="True"/>
 				<Property Name="PluginUserAcknowledge\iZotope Trash Filters" Type="bool" Value="True"/>

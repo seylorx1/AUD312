@@ -1492,6 +1492,8 @@
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="music_boat" ID="{9F8FEDCA-36D2-432E-9677-C72F9ADBB1AB}" ShortID="926792027">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="22"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Tempo" Type="Real64" Value="100"/>
 					</PropertyList>
 					<ReferenceList>

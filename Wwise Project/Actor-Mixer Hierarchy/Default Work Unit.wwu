@@ -4186,7 +4186,7 @@
 												<ItemRef Name="Right Foot" ID="{929A8B68-0118-4446-9EE6-81119C33B6C3}"/>
 											</Playlist>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="sfx_footstep_bed_creak" ID="{CC895611-0A8B-46A3-A3C0-49A4782B26F0}" ShortID="85735063">
+										<RandomSequenceContainer Name="sfx_footstep_creak_bed" ID="{CC895611-0A8B-46A3-A3C0-49A4782B26F0}" ShortID="85735063">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="MakeUpGain" Type="Real64">
@@ -4196,6 +4196,9 @@
 												</Property>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>400</Value>
+													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{3977D061-1790-4D7E-A65C-A216ED4CDDAD}">
@@ -4232,7 +4235,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="sfx_bed_creak_01" ID="{97B785B9-DF90-477A-8B24-A22A512A71A4}" ShortID="295828986">
+												<Sound Name="sfx_creak_01" ID="{97B785B9-DF90-477A-8B24-A22A512A71A4}" ShortID="295828986">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -4255,7 +4258,7 @@
 														<ActiveSource Name="sfx_creak_01" ID="{C68AD77F-2838-4338-8042-19363B84B7C5}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="sfx_bed_creak_02" ID="{EDD17AC6-3153-485E-9BC4-FB5B2CA8C035}" ShortID="461510461">
+												<Sound Name="sfx_creak_02" ID="{EDD17AC6-3153-485E-9BC4-FB5B2CA8C035}" ShortID="461510461">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -4278,7 +4281,7 @@
 														<ActiveSource Name="sfx_creak_02" ID="{F07D5BDB-86F7-4D32-A906-B93BDDD88D42}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="sfx_bed_creak_03" ID="{EB0AD196-921A-4D41-B59E-4023F04A6281}" ShortID="635941319">
+												<Sound Name="sfx_creak_03" ID="{EB0AD196-921A-4D41-B59E-4023F04A6281}" ShortID="635941319">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -4304,6 +4307,769 @@
 											</ChildrenList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="sfx_footstep_wood" ID="{540AA008-D545-4E56-87C3-DA774380DBF0}" ShortID="295385945">
+											<PropertyList>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Left Foot" ID="{AFA5FF5F-0825-484D-BB51-18F23AFBCDF6}" ShortID="572478120">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Left Footstep" ID="{592DB791-B149-40AE-AE73-F68624C18669}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="toe" ID="{AFEB5D9A-E4B7-4253-8645-D1024B285CBF}" ShortID="853449257">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{7AEBC780-D854-4FD7-BC75-469A8D7F9487}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="300"/>
+																					<Property Name="Min" Type="Real64" Value="-300"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="sfx_footstep_toe_wood_01" ID="{3D250798-2525-4592-B31D-B97E9511F7FA}" ShortID="783137885">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_wood_01" ID="{08E8C590-E92B-4301-9CFA-78C32A7CBEDD}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_wood_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="382858474"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_wood_01" ID="{08E8C590-E92B-4301-9CFA-78C32A7CBEDD}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_toe_wood_02" ID="{2DE64EC8-6BA1-4EA4-A9BA-BBC63A1B0573}" ShortID="837991856">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_wood_02" ID="{E77467E9-4596-4BB9-A20D-6F2894BFB5B4}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_wood_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="229562338"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_wood_02" ID="{E77467E9-4596-4BB9-A20D-6F2894BFB5B4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_toe_wood_03" ID="{D0E18D06-5C64-4806-B15D-F055A6B6EC37}" ShortID="198089858">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_wood_03" ID="{8A92683E-3678-4FAD-BB48-D03B07B212A4}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_wood_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="518684506"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_wood_03" ID="{8A92683E-3678-4FAD-BB48-D03B07B212A4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_toe_wood_04" ID="{87FC60E5-DBAA-4E62-B1EF-D73D89C6CA08}" ShortID="995184829">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_wood_04" ID="{8E16035C-F692-4DEB-99AB-5328C8D7F46B}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_wood_04.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="575773855"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_wood_04" ID="{8E16035C-F692-4DEB-99AB-5328C8D7F46B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="heel" ID="{D2DF2EC0-ECE8-4F77-97C2-EDBF808ACD4C}" ShortID="809725912">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{191E3735-98E8-4B37-9F46-C952B3C8D8D9}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="300"/>
+																					<Property Name="Min" Type="Real64" Value="-300"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="sfx_footstep_heel_wood_01" ID="{1115D24C-88C2-4682-86BB-25FC91B8D1F8}" ShortID="859737248">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_wood_01" ID="{592DC5A8-01DD-42CF-A169-B72E6F8006A0}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_wood_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="232315487"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_wood_01" ID="{592DC5A8-01DD-42CF-A169-B72E6F8006A0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_wood_02" ID="{07388051-DA5D-4AD3-B5D6-95B1F1B383FB}" ShortID="300011245">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_wood_02" ID="{95222056-6B41-4619-90E5-B6436D315789}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_wood_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="633135558"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_wood_02" ID="{95222056-6B41-4619-90E5-B6436D315789}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_wood_03" ID="{08A65EA2-8821-4144-9CC0-A16A4F81AE48}" ShortID="679686845">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_wood_03" ID="{D36B09B6-E78E-4324-ADC8-6D8149D8D1C8}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_wood_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="172730326"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_wood_03" ID="{D36B09B6-E78E-4324-ADC8-6D8149D8D1C8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_wood_04" ID="{98401D5B-4F3B-450C-8F11-DC41EB8A1E7C}" ShortID="191001681">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_wood_04" ID="{27F654F5-B305-47C2-A8F9-52B17CDEF8B3}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_wood_04.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="327118990"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_wood_04" ID="{27F654F5-B305-47C2-A8F9-52B17CDEF8B3}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{BCA8C400-654C-491B-A234-57DF2659F2D1}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-20"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<Playlist>
+														<ItemRef Name="heel" ID="{D2DF2EC0-ECE8-4F77-97C2-EDBF808ACD4C}"/>
+														<ItemRef Name="toe" ID="{AFEB5D9A-E4B7-4253-8645-D1024B285CBF}"/>
+													</Playlist>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Right Foot" ID="{C0BB8C0D-112D-489C-9EA1-CD63D80A2040}" ShortID="16675331">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Right Footstep" ID="{DA43A0E2-A167-46F8-9ED6-47FF2E023210}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="toe" ID="{DB4E859F-386A-4FB1-89B8-1B3552F010D1}" ShortID="5407829">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{EE0B0310-7CA3-4E39-9CA3-01FA1C69D015}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="300"/>
+																					<Property Name="Min" Type="Real64" Value="-300"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="sfx_footstep_toe_wood_01" ID="{650C7201-4126-4D2A-BC6F-912C35B9E620}" ShortID="4631067">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_wood_01" ID="{D366280D-8A43-4958-A362-021D5F4211CF}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_wood_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="382858474"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_wood_01" ID="{D366280D-8A43-4958-A362-021D5F4211CF}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_toe_wood_02" ID="{DDC291E1-0B55-4BB2-ABDF-B52E5469D910}" ShortID="871226846">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_wood_02" ID="{AA4099B5-E664-4470-A76B-A86941CA488D}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_wood_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="229562338"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_wood_02" ID="{AA4099B5-E664-4470-A76B-A86941CA488D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_toe_wood_03" ID="{E6231DBB-F91D-44BE-8F0A-E5D059388E75}" ShortID="1006102758">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_wood_03" ID="{ED760BD0-DE2A-41F8-83D0-3BDCB7CDBC64}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_wood_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="518684506"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_wood_03" ID="{ED760BD0-DE2A-41F8-83D0-3BDCB7CDBC64}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_toe_wood_04" ID="{190B4139-09F5-410F-97B8-4FEA021B6AD1}" ShortID="102056417">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_wood_04" ID="{D26B48EB-78D5-4D8E-A416-018E85F0F6DF}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_wood_04.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="575773855"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_wood_04" ID="{D26B48EB-78D5-4D8E-A416-018E85F0F6DF}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="heel" ID="{0F35CBD4-A904-4BA6-8898-666912CE5FF3}" ShortID="539233053">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{E744BBFE-CF47-45DF-9F6F-A493E84C2BBA}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="300"/>
+																					<Property Name="Min" Type="Real64" Value="-300"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="sfx_footstep_heel_wood_01" ID="{493654BB-6766-455F-87CD-28B2AAD28924}" ShortID="108636139">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_wood_01" ID="{CD29CFBB-1794-4BEF-8F2B-EA081FDC197F}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_wood_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="232315487"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_wood_01" ID="{CD29CFBB-1794-4BEF-8F2B-EA081FDC197F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_wood_02" ID="{8E020C4E-8EF8-4AB2-8C1B-899FF2D96AF9}" ShortID="256768388">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_wood_02" ID="{E3D2C69B-B2B9-4D44-8811-2C6467EAB56A}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_wood_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="633135558"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_wood_02" ID="{E3D2C69B-B2B9-4D44-8811-2C6467EAB56A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_wood_03" ID="{2B6DB8CA-2E9C-45BE-9328-C2BEA51E88F1}" ShortID="389809802">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_wood_03" ID="{78A9E7A7-9AC2-4C27-ADF3-B073CCBB4950}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_wood_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="172730326"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_wood_03" ID="{78A9E7A7-9AC2-4C27-ADF3-B073CCBB4950}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_wood_04" ID="{72F498A9-2B0B-4C59-AED4-256BD6A3C808}" ShortID="544815884">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_wood_04" ID="{875025F6-CC20-4CDA-B0E3-716C6D724424}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Wood\Wood Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_wood_04.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="327118990"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_wood_04" ID="{875025F6-CC20-4CDA-B0E3-716C6D724424}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+													</ChildrenList>
+													<ObjectLists/>
+													<Playlist>
+														<ItemRef Name="heel" ID="{0F35CBD4-A904-4BA6-8898-666912CE5FF3}"/>
+														<ItemRef Name="toe" ID="{DB4E859F-386A-4FB1-89B8-1B3552F010D1}"/>
+													</Playlist>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="Left Foot" ID="{AFA5FF5F-0825-484D-BB51-18F23AFBCDF6}"/>
+												<ItemRef Name="Right Foot" ID="{C0BB8C0D-112D-489C-9EA1-CD63D80A2040}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="sfx_footstep_creak_wood" ID="{15002D2C-CE86-43C1-B7DC-22D991199339}" ShortID="993256521">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>50</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-500</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{ABE81004-1056-4FD2-8A29-B15CEA32E714}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-150"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E3765787-E874-4D4A-A3FF-7BC8590ECD84}">
+																<PropertyList>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{A689F884-F305-4989-8C9E-DBEC7FCCE28B}" ShortID="785998980">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="FootstepWeight" ID="{3F312672-51D9-41E6-BA8D-E0719C6B558E}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{77A43B8F-89E8-46EE-8A28-59F03CFB27EC}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.75</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0.05442</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="BedAttentuation" ID="{42804BDB-0EA3-4EC5-BD4A-8108C9C60028}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_creak_01" ID="{2BF66CFE-1D04-4034-AEDC-A42677D7950B}" ShortID="279936913">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>25</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_creak_01" ID="{A71D7FFE-4282-48B1-8BEF-25FDF2C50EFB}">
+															<Language>SFX</Language>
+															<AudioFile>sfx_creak_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="244810268"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_creak_01" ID="{A71D7FFE-4282-48B1-8BEF-25FDF2C50EFB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_creak_02" ID="{C40C8A88-7114-42B2-A5B5-F7D6A5A85364}" ShortID="594022504">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>25</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_creak_02" ID="{B7B9A954-CA35-4B8C-BAF5-2B4B2B070266}">
+															<Language>SFX</Language>
+															<AudioFile>sfx_creak_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="433560062"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_creak_02" ID="{B7B9A954-CA35-4B8C-BAF5-2B4B2B070266}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_creak_03" ID="{725E617F-9281-4338-BC0B-9FEBD865D6FC}" ShortID="115965998">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>25</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_creak_03" ID="{906D93E5-2B12-45A0-87BC-063EBB1C7F34}">
+															<Language>SFX</Language>
+															<AudioFile>sfx_creak_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="430779212"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_creak_03" ID="{906D93E5-2B12-45A0-87BC-063EBB1C7F34}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<PositioningInfo>
 										<Panner Name="" ID="{A0481888-7B43-4BC5-9910-1529E1B34AF4}"/>
@@ -4312,7 +5078,13 @@
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="sfx_footstep_bed_creak" ID="{CC895611-0A8B-46A3-A3C0-49A4782B26F0}"/>
+												<ItemRef Name="sfx_footstep_wood" ID="{540AA008-D545-4E56-87C3-DA774380DBF0}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_footstep_creak_bed" ID="{CC895611-0A8B-46A3-A3C0-49A4782B26F0}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_footstep_creak_wood" ID="{15002D2C-CE86-43C1-B7DC-22D991199339}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="sfx_footstep_grass" ID="{60BA493C-392D-47D9-940D-8BB994E886F0}"/>
@@ -4335,6 +5107,13 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
+												<SwitchRef Name="Wood" ID="{1338EB15-8A56-4726-ACE6-2940071E11BB}"/>
+												<ItemList>
+													<ItemRef Name="sfx_footstep_creak_wood" ID="{15002D2C-CE86-43C1-B7DC-22D991199339}"/>
+													<ItemRef Name="sfx_footstep_wood" ID="{540AA008-D545-4E56-87C3-DA774380DBF0}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
 												<SwitchRef Name="Grass" ID="{05C16097-8E3C-4946-A103-D61957EBA3B4}"/>
 												<ItemList>
 													<ItemRef Name="sfx_footstep_grass" ID="{60BA493C-392D-47D9-940D-8BB994E886F0}"/>
@@ -4344,7 +5123,7 @@
 												<SwitchRef Name="Bed" ID="{C9ED3BA4-F979-4932-8E3B-C493E6E05FEA}"/>
 												<ItemList>
 													<ItemRef Name="sfx_footstep_cloth" ID="{860DF644-7525-45B0-98C7-11C12C7E086A}"/>
-													<ItemRef Name="sfx_footstep_bed_creak" ID="{CC895611-0A8B-46A3-A3C0-49A4782B26F0}"/>
+													<ItemRef Name="sfx_footstep_creak_bed" ID="{CC895611-0A8B-46A3-A3C0-49A4782B26F0}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>

@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585601888706790154
+    m_lastTime: -8585601724590327697
     List:
     - name: Ambience
       guid: 4bf007b3e95ba347893be1c6d236bd46
@@ -708,7 +708,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 894b37ce7fff6c44b0dcd4b894060495
     GuidInternal: 
-    m_lastTime: -8585603465179073145
+    m_lastTime: -8585601714637673883
     List:
     - name: Main
       guid: 540242f8053cc1458049835c8ed6e27f
@@ -736,8 +736,28 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585601836704630110
+    m_lastTime: -8585601710560505479
     List:
+    - name: Beats
+      guid: d8adb70e52bf2740bea820418c48e598
+      id: 4259886576
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Level
+        ObjectType: 4
+        guid: 3fe92e22bf652348bbdf3ffff96eb801
+      - ElementName: Beats
+        ObjectType: 4
+        guid: d8adb70e52bf2740bea820418c48e598
+      Path: Events\Default Work Unit\Level\Beats
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Bed
       guid: 746b8ec130b9564d939f6570ec1df828
       id: 446279778
@@ -981,16 +1001,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: SFX
+      - ElementName: Level
         ObjectType: 4
-        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+        guid: 3fe92e22bf652348bbdf3ffff96eb801
       - ElementName: Room
         ObjectType: 4
         guid: f07d4e8df337534c90e737b790712cf1
       - ElementName: EnterIndoors
         ObjectType: 3
         guid: ade7bcdd26af89458dc70e2ece060636
-      Path: Events\Default Work Unit\SFX\Room\EnterIndoors
+      Path: Events\Default Work Unit\Level\Room\EnterIndoors
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1004,16 +1024,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: SFX
+      - ElementName: Level
         ObjectType: 4
-        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+        guid: 3fe92e22bf652348bbdf3ffff96eb801
       - ElementName: Room
         ObjectType: 4
         guid: f07d4e8df337534c90e737b790712cf1
       - ElementName: EnterIndoorsTunnel
         ObjectType: 3
         guid: 4fa9dec745fb2344a9518d6e8508a284
-      Path: Events\Default Work Unit\SFX\Room\EnterIndoorsTunnel
+      Path: Events\Default Work Unit\Level\Room\EnterIndoorsTunnel
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1027,16 +1047,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: SFX
+      - ElementName: Level
         ObjectType: 4
-        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+        guid: 3fe92e22bf652348bbdf3ffff96eb801
       - ElementName: Room
         ObjectType: 4
         guid: f07d4e8df337534c90e737b790712cf1
       - ElementName: EnterOutdoors
         ObjectType: 3
         guid: c7f62dd36e919946a0b3319c6024aa9a
-      Path: Events\Default Work Unit\SFX\Room\EnterOutdoors
+      Path: Events\Default Work Unit\Level\Room\EnterOutdoors
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1050,16 +1070,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: SFX
+      - ElementName: Level
         ObjectType: 4
-        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+        guid: 3fe92e22bf652348bbdf3ffff96eb801
       - ElementName: Room
         ObjectType: 4
         guid: f07d4e8df337534c90e737b790712cf1
       - ElementName: EnterTunnel
         ObjectType: 3
         guid: 2a6b23080a5e5b4195980c911b58412d
-      Path: Events\Default Work Unit\SFX\Room\EnterTunnel
+      Path: Events\Default Work Unit\Level\Room\EnterTunnel
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1104,8 +1124,31 @@ MonoBehaviour:
         guid: 09fd370eacf00c438ae2c527280491b3
       Path: Events\Default Work Unit\SFX\Footstep\FootstepPlay
       maxAttenuation: 0
-      maxDuration: 0.850596
-      minDuration: 0.268956
+      maxDuration: 1.13541
+      minDuration: 0.164984
+    - name: FootstepVampCooldown
+      guid: ed9542bb7ce8a1429696e2f5be6b4859
+      id: 4288247056
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: 28e55eca8a6ad74789f4415d53397b3a
+      - ElementName: FootstepVampCooldown
+        ObjectType: 3
+        guid: ed9542bb7ce8a1429696e2f5be6b4859
+      Path: Events\Default Work Unit\SFX\Footstep\FootstepVampCooldown
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Harpoon
       guid: 997ce0413219b84190889666ec7dfd20
       id: 302949338
@@ -1264,6 +1307,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Level
+      guid: 3fe92e22bf652348bbdf3ffff96eb801
+      id: 2782712965
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Level
+        ObjectType: 4
+        guid: 3fe92e22bf652348bbdf3ffff96eb801
+      Path: Events\Default Work Unit\Level
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LevelBigRoomReveal
+      guid: 9e32b57a0870924d9f76b737e0f051c2
+      id: 3672941687
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Level
+        ObjectType: 4
+        guid: 3fe92e22bf652348bbdf3ffff96eb801
+      - ElementName: Beats
+        ObjectType: 4
+        guid: d8adb70e52bf2740bea820418c48e598
+      - ElementName: LevelBigRoomReveal
+        ObjectType: 3
+        guid: 9e32b57a0870924d9f76b737e0f051c2
+      Path: Events\Default Work Unit\Level\Beats\LevelBigRoomReveal
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: LevelStart
       guid: 183ec1da9c1b5a45959b9d27765932f5
       id: 3372421815
@@ -1274,10 +1357,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Level
+        ObjectType: 4
+        guid: 3fe92e22bf652348bbdf3ffff96eb801
+      - ElementName: Beats
+        ObjectType: 4
+        guid: d8adb70e52bf2740bea820418c48e598
       - ElementName: LevelStart
         ObjectType: 3
         guid: 183ec1da9c1b5a45959b9d27765932f5
-      Path: Events\Default Work Unit\LevelStart
+      Path: Events\Default Work Unit\Level\Beats\LevelStart
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1328,13 +1417,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: SFX
+      - ElementName: Level
         ObjectType: 4
-        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+        guid: 3fe92e22bf652348bbdf3ffff96eb801
       - ElementName: Room
         ObjectType: 4
         guid: f07d4e8df337534c90e737b790712cf1
-      Path: Events\Default Work Unit\SFX\Room
+      Path: Events\Default Work Unit\Level\Room
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1396,8 +1485,8 @@ MonoBehaviour:
         guid: ba36787610885c4d9431c8eb8b98a4b1
       Path: Events\Default Work Unit\SFX\Bed\StepOffBed
       maxAttenuation: 10
-      maxDuration: 0.850596
-      minDuration: 0.430544
+      maxDuration: 0.675119
+      minDuration: 0.341723
     - name: StepOnBed
       guid: f1d6720aa6ad6b4eb43e3b2c205773f5
       id: 135348085
@@ -1841,8 +1930,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: fe13d60f855213448d27601edd0d77e4
     GuidInternal: 
-    m_lastTime: -8585603461892658628
+    m_lastTime: -8585601719459686186
     List:
+    - name: Ambience
+      guid: 7b3f61b490cc4942ac4e556c8a434729
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fe13d60f855213448d27601edd0d77e4
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 7b3f61b490cc4942ac4e556c8a434729
+      Path: Game Parameters\Default Work Unit\Ambience
     - name: BoxSegment
       guid: 94d513563ed65e45983bc1fcd29df7d4
       id: 3762319931
@@ -1853,10 +1956,58 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fe13d60f855213448d27601edd0d77e4
+      - ElementName: Interactions
+        ObjectType: 4
+        guid: 570a3bebe9ad6c41a971a94a95c9a907
       - ElementName: BoxSegment
         ObjectType: 13
         guid: 94d513563ed65e45983bc1fcd29df7d4
-      Path: Game Parameters\Default Work Unit\BoxSegment
+      Path: Game Parameters\Default Work Unit\Interactions\BoxSegment
+    - name: Footstep
+      guid: dac9b37309345947bbe6d832c31a4e21
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fe13d60f855213448d27601edd0d77e4
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: dac9b37309345947bbe6d832c31a4e21
+      Path: Game Parameters\Default Work Unit\Footstep
+    - name: FootstepWeight
+      guid: 7226313fd951e641ba8de0719c6b558e
+      id: 3587782899
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fe13d60f855213448d27601edd0d77e4
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: dac9b37309345947bbe6d832c31a4e21
+      - ElementName: FootstepWeight
+        ObjectType: 13
+        guid: 7226313fd951e641ba8de0719c6b558e
+      Path: Game Parameters\Default Work Unit\Footstep\FootstepWeight
+    - name: Interactions
+      guid: 570a3bebe9ad6c41a971a94a95c9a907
+      id: 888201102
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fe13d60f855213448d27601edd0d77e4
+      - ElementName: Interactions
+        ObjectType: 4
+        guid: 570a3bebe9ad6c41a971a94a95c9a907
+      Path: Game Parameters\Default Work Unit\Interactions
     - name: VampCooldown
       guid: a368cd558d3535429001f46651ca0321
       id: 244091178
@@ -1867,10 +2018,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fe13d60f855213448d27601edd0d77e4
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: dac9b37309345947bbe6d832c31a4e21
       - ElementName: VampCooldown
         ObjectType: 13
         guid: a368cd558d3535429001f46651ca0321
-      Path: Game Parameters\Default Work Unit\VampCooldown
+      Path: Game Parameters\Default Work Unit\Footstep\VampCooldown
     - name: WindIntensity
       guid: 82c94e4cdc85de478fb33ece627c38d5
       id: 1042517418
@@ -1881,10 +2035,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fe13d60f855213448d27601edd0d77e4
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 7b3f61b490cc4942ac4e556c8a434729
       - ElementName: WindIntensity
         ObjectType: 13
         guid: 82c94e4cdc85de478fb33ece627c38d5
-      Path: Game Parameters\Default Work Unit\WindIntensity
+      Path: Game Parameters\Default Work Unit\Ambience\WindIntensity
   - PhysicalPath: Game Parameters\Factory Motion.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -2650,7 +2807,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6603d6ba8e055f4caa446aab326e99e9
     GuidInternal: 
-    m_lastTime: -8585601836704889726
+    m_lastTime: -8585601722811769824
     List:
     - name: FootstepType
       guid: 3af574822d433c4bb3b27b0dcfa58a47
@@ -2731,6 +2888,22 @@ MonoBehaviour:
         - ElementName: Gravel
           ObjectType: 10
           guid: e4c6a10dc6917a46a8dc8c1509316fb7
+      - name: Wood
+        guid: 15eb3813568a2647ace62940071e11bb
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: FootstepType
+          ObjectType: 11
+          guid: 3af574822d433c4bb3b27b0dcfa58a47
+        - ElementName: Wood
+          ObjectType: 10
+          guid: 15eb3813568a2647ace62940071e11bb
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -2827,7 +3000,7 @@ MonoBehaviour:
         guid: 38b4dd40b2e94b4c9c9bce1ac9f941c2
       Path: Triggers\Default Work Unit\BoxPickupStinger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000600000008000000090000000b0000000d0000000e0000000f0000001000000011000000120000001500000016000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e000000300000003100000032000000360000003a000000420000004600000049000000510000005f00000073000000b60000002c0400002f040000320400003504000038040000e9040000
+  ExpandedWaapiItemIds: 0100000002000000060000000700000008000000090000000b0000000d0000000e0000000f00000010000000110000001200000014000000150000001600000017000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e000000300000003100000032000000360000003a000000420000004600000049000000510000005f000000730000008f000000b60000002c0400002f040000320400003504000038040000e9040000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
