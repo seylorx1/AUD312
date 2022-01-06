@@ -53,6 +53,7 @@ As far as this mapping is concerned, the player is walking right up until VampCo
 						<Switch Name="Grass" ID="{05C16097-8E3C-4946-A103-D61957EBA3B4}"/>
 						<Switch Name="Bed" ID="{C9ED3BA4-F979-4932-8E3B-C493E6E05FEA}"/>
 						<Switch Name="Wood" ID="{1338EB15-8A56-4726-ACE6-2940071E11BB}"/>
+						<Switch Name="Metal" ID="{DAC7E030-D095-4C82-90E9-955164EC2CA0}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

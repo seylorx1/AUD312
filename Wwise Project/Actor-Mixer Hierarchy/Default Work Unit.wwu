@@ -5070,6 +5070,589 @@
 											</ChildrenList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="sfx_footstep_metal" ID="{17C639DE-FD88-4C4F-8FCE-C9303B1A0B5B}" ShortID="732106396">
+											<PropertyList>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Left Foot" ID="{2DCE611C-D0AD-461F-986F-3329D320CED5}" ShortID="990537948">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Left Footstep" ID="{592DB791-B149-40AE-AE73-F68624C18669}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="toe" ID="{52E28CD5-A7F0-4677-A03D-098A90D146E1}" ShortID="733939144">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{5F61FF01-D95C-4F90-865E-D20D2DE32BB7}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="50"/>
+																					<Property Name="Min" Type="Real64" Value="-50"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="sfx_footstep_toe_metal_01" ID="{03FF7A06-9090-42D4-82DB-04C1F8B6EEA7}" ShortID="958586441">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_metal_01" ID="{26A55084-EFE7-468E-8173-E8F2DA27B3F4}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_metal_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="469003920"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_metal_01" ID="{26A55084-EFE7-468E-8173-E8F2DA27B3F4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_toe_metal_02" ID="{F034D221-338D-4CE9-851B-3C014A68C71F}" ShortID="1014685418">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_metal_02" ID="{2D3A4EF9-A47F-4325-92F3-3D2183E7D58F}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_metal_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="740430124"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_metal_02" ID="{2D3A4EF9-A47F-4325-92F3-3D2183E7D58F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_toe_metal_03" ID="{918C4A1E-F6D0-4DEC-9131-1D484CB20AEC}" ShortID="190013390">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_metal_03" ID="{1F24DC32-04DE-4963-9504-509F80C2BCA3}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_metal_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="182318414"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_metal_03" ID="{1F24DC32-04DE-4963-9504-509F80C2BCA3}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_toe_metal_04" ID="{154237C7-3683-41D7-B9E2-2AE11E44AA5B}" ShortID="322709448">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_metal_04" ID="{7C1C9BE8-6CBC-412A-BF93-3C361CCE57B6}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_metal_04.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="159164666"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_metal_04" ID="{7C1C9BE8-6CBC-412A-BF93-3C361CCE57B6}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="heel" ID="{4B969339-2873-4430-854D-A58C23723B0B}" ShortID="243494946">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{9A18B581-B2C0-490D-80CC-52EF21F31BE1}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="50"/>
+																					<Property Name="Min" Type="Real64" Value="-50"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="sfx_footstep_heel_metal_02" ID="{DB4102CB-FF44-493C-B85E-719332B91EBF}" ShortID="536971762">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_metal_02" ID="{64E66C30-DBE4-41DF-B5C1-BD9E31EE20CB}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_metal_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="580354750"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_metal_02" ID="{64E66C30-DBE4-41DF-B5C1-BD9E31EE20CB}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_metal_01" ID="{74822CDE-2C2F-411D-AEA6-3A6B61337D6D}" ShortID="370924743">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_metal_01" ID="{07C6DC2D-C429-4296-87A7-C0DED428CAB8}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_metal_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="290479511"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_metal_01" ID="{07C6DC2D-C429-4296-87A7-C0DED428CAB8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_metal_03" ID="{15721437-CAA2-46BD-9A8C-7B15DAD51F37}" ShortID="688224172">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_metal_03" ID="{817D3BF0-1C23-4BDC-AADA-71CF432CA7C2}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_metal_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1067817721"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_metal_03" ID="{817D3BF0-1C23-4BDC-AADA-71CF432CA7C2}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_metal_04" ID="{958F531D-70F7-45A0-92B9-F962B6136BA2}" ShortID="845687347">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_metal_04" ID="{6E6BD2AF-A9B9-458C-83A7-CEADA9F4BBEA}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_metal_04.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="647506356"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_metal_04" ID="{6E6BD2AF-A9B9-458C-83A7-CEADA9F4BBEA}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{81360201-D4CC-4CBF-A2A2-10C1E3902EEA}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-20"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ObjectLists/>
+													<Playlist>
+														<ItemRef Name="heel" ID="{4B969339-2873-4430-854D-A58C23723B0B}"/>
+														<ItemRef Name="toe" ID="{52E28CD5-A7F0-4677-A03D-098A90D146E1}"/>
+													</Playlist>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Right Foot" ID="{8420B137-FF70-4F71-A10B-7AC29A9B9A11}" ShortID="89391742">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Right Footstep" ID="{DA43A0E2-A167-46F8-9ED6-47FF2E023210}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="toe" ID="{C821D10A-FC26-4C20-8EC0-55D0C35E7D60}" ShortID="884824050">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{0E722B69-16CA-4B94-BE91-1F02B68F3FD4}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="50"/>
+																					<Property Name="Min" Type="Real64" Value="-50"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="sfx_footstep_toe_metal_01" ID="{32CD77B8-A48A-4EFA-B3FF-CD5FB6D6C9F6}" ShortID="840013704">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_metal_01" ID="{64741D4C-F644-4BA4-8A32-3EC754393E9E}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_metal_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="469003920"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_metal_01" ID="{64741D4C-F644-4BA4-8A32-3EC754393E9E}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_toe_metal_02" ID="{294CEE4E-C1E1-4EC2-BC60-4D57359A1F8F}" ShortID="1002015124">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_metal_02" ID="{93DF9F7A-0DA8-4FCE-94FE-1F1493FCC7EA}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_metal_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="740430124"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_metal_02" ID="{93DF9F7A-0DA8-4FCE-94FE-1F1493FCC7EA}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_toe_metal_03" ID="{6980685E-AEDA-46AB-8EA7-8DB57A822995}" ShortID="688907815">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_metal_03" ID="{2AE4B4A2-B3FE-4181-B43C-A27CF565F088}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_metal_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="182318414"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_metal_03" ID="{2AE4B4A2-B3FE-4181-B43C-A27CF565F088}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_toe_metal_04" ID="{58EE9BB1-41AC-4400-9630-36C90DFCD157}" ShortID="491493064">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_toe_metal_04" ID="{4DBC4779-7E1F-49EA-A4BB-7ED2AFB0AAF9}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_toe_metal_04.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="159164666"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_toe_metal_04" ID="{4DBC4779-7E1F-49EA-A4BB-7ED2AFB0AAF9}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="heel" ID="{273D551E-6084-43E8-85DE-D56DF0631368}" ShortID="342910570">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{9778B3DC-1310-4047-A2F6-A5F1BE5DC8EF}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="50"/>
+																					<Property Name="Min" Type="Real64" Value="-50"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="sfx_footstep_heel_metal_02" ID="{83C6709F-070C-4D57-BE63-9CF033378D04}" ShortID="37092527">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_metal_02" ID="{0E0768C5-48DB-4997-AEBE-031766F59FE9}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_metal_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="580354750"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_metal_02" ID="{0E0768C5-48DB-4997-AEBE-031766F59FE9}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_metal_01" ID="{AA57C8FD-26C0-4119-892B-F8A417FEA308}" ShortID="1067586134">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_metal_01" ID="{BA2C156A-CF35-4F7F-8C86-4CB1DD1FF952}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_metal_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="290479511"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_metal_01" ID="{BA2C156A-CF35-4F7F-8C86-4CB1DD1FF952}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_metal_03" ID="{5E4047A6-D235-4804-9C31-7E6F2730A895}" ShortID="205510067">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_metal_03" ID="{80F671E9-9C8D-4259-B86D-25E8EA643EE4}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_metal_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1067817721"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_metal_03" ID="{80F671E9-9C8D-4259-B86D-25E8EA643EE4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_metal_04" ID="{BA7D9367-4FCB-46C1-A35C-3BE005B6AA42}" ShortID="486161908">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_metal_04" ID="{540F4CF0-97BF-40ED-B512-A78568DB0761}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_metal_04.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="647506356"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_metal_04" ID="{540F4CF0-97BF-40ED-B512-A78568DB0761}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+													</ChildrenList>
+													<ObjectLists/>
+													<Playlist>
+														<ItemRef Name="heel" ID="{273D551E-6084-43E8-85DE-D56DF0631368}"/>
+														<ItemRef Name="toe" ID="{C821D10A-FC26-4C20-8EC0-55D0C35E7D60}"/>
+													</Playlist>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="Left Foot" ID="{2DCE611C-D0AD-461F-986F-3329D320CED5}"/>
+												<ItemRef Name="Right Foot" ID="{8420B137-FF70-4F71-A10B-7AC29A9B9A11}"/>
+											</Playlist>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<PositioningInfo>
 										<Panner Name="" ID="{A0481888-7B43-4BC5-9910-1529E1B34AF4}"/>
@@ -5096,6 +5679,9 @@
 												<ItemRef Name="sfx_footstep_concrete" ID="{F6EB23A4-0DEC-4B0C-841A-137C20E0A42B}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
+												<ItemRef Name="sfx_footstep_metal" ID="{17C639DE-FD88-4C4F-8FCE-C9303B1A0B5B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
 												<ItemRef Name="sfx_footstep_gravel" ID="{EDEED9F0-3D86-46AB-939A-0545F42F4A1F}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
@@ -5111,6 +5697,12 @@
 												<ItemList>
 													<ItemRef Name="sfx_footstep_creak_wood" ID="{15002D2C-CE86-43C1-B7DC-22D991199339}"/>
 													<ItemRef Name="sfx_footstep_wood" ID="{540AA008-D545-4E56-87C3-DA774380DBF0}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Metal" ID="{DAC7E030-D095-4C82-90E9-955164EC2CA0}"/>
+												<ItemList>
+													<ItemRef Name="sfx_footstep_metal" ID="{17C639DE-FD88-4C4F-8FCE-C9303B1A0B5B}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
