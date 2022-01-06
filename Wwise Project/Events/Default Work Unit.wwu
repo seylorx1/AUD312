@@ -757,7 +757,7 @@ This event does the following:
 										<Action Name="" ID="{3E005F5C-259E-45B5-A1A1-CAC5C0298BF6}" ShortID="935084464">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_bed_creak" ID="{CC895611-0A8B-46A3-A3C0-49A4782B26F0}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_footstep_bed_creak" ID="{CC895611-0A8B-46A3-A3C0-49A4782B26F0}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

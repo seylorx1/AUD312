@@ -736,7 +736,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585601887633431069
+    m_lastTime: -8585601836704630110
     List:
     - name: Bed
       guid: 746b8ec130b9564d939f6570ec1df828
@@ -1104,7 +1104,7 @@ MonoBehaviour:
         guid: 09fd370eacf00c438ae2c527280491b3
       Path: Events\Default Work Unit\SFX\Footstep\FootstepPlay
       maxAttenuation: 0
-      maxDuration: 0.699433
+      maxDuration: 0.850596
       minDuration: 0.268956
     - name: Harpoon
       guid: 997ce0413219b84190889666ec7dfd20
@@ -1396,7 +1396,7 @@ MonoBehaviour:
         guid: ba36787610885c4d9431c8eb8b98a4b1
       Path: Events\Default Work Unit\SFX\Bed\StepOffBed
       maxAttenuation: 10
-      maxDuration: 0.78
+      maxDuration: 0.850596
       minDuration: 0.430544
     - name: StepOnBed
       guid: f1d6720aa6ad6b4eb43e3b2c205773f5
@@ -2650,7 +2650,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6603d6ba8e055f4caa446aab326e99e9
     GuidInternal: 
-    m_lastTime: -8585603485031529789
+    m_lastTime: -8585601836704889726
     List:
     - name: FootstepType
       guid: 3af574822d433c4bb3b27b0dcfa58a47
@@ -2667,6 +2667,22 @@ MonoBehaviour:
         guid: 3af574822d433c4bb3b27b0dcfa58a47
       Path: Switches\Default Work Unit\FootstepType
       values:
+      - name: Bed
+        guid: a43bedc979f932498e3bc493e6e05fea
+        id: 446279778
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: FootstepType
+          ObjectType: 11
+          guid: 3af574822d433c4bb3b27b0dcfa58a47
+        - ElementName: Bed
+          ObjectType: 10
+          guid: a43bedc979f932498e3bc493e6e05fea
       - name: Concrete
         guid: 090905f6fcd30b4ab34bced6bb085408
         id: 841620460
@@ -2811,7 +2827,7 @@ MonoBehaviour:
         guid: 38b4dd40b2e94b4c9c9bce1ac9f941c2
       Path: Triggers\Default Work Unit\BoxPickupStinger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000060000000700000008000000090000000b0000000c0000000d0000000e0000000f00000010000000110000001200000014000000150000001600000018000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e000000300000003100000032000000360000003a000000420000004600000049000000510000005f00000073000000b60000002c0400002f040000320400003504000038040000e9040000
+  ExpandedWaapiItemIds: 01000000020000000600000008000000090000000b0000000d0000000e0000000f0000001000000011000000120000001500000016000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e000000300000003100000032000000360000003a000000420000004600000049000000510000005f00000073000000b60000002c0400002f040000320400003504000038040000e9040000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

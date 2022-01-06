@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2182432141">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2881098795">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -96,11 +96,15 @@
 						<ActionSetStateEntry Id="3059984139" Name="Tunnel" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\Tunnel"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="4039405217" Name="FootstepPlay" ObjectPath="\Events\Default Work Unit\SFX\Footstep\FootstepPlay" DurationType="OneShot" DurationMin="0.268956" DurationMax="0.699433">
+				<Event Id="4039405217" Name="FootstepPlay" ObjectPath="\Events\Default Work Unit\SFX\Footstep\FootstepPlay" DurationType="OneShot" DurationMin="0.268956" DurationMax="0.850596">
 					<IncludedMemoryFiles>
 						<File Id="3342881" Language="SFX">
 							<ShortName>sfx_footstep_toe_concrete_03.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_concrete_03_10C4C929.wem</Path>
+						</File>
+						<File Id="13459026" Language="SFX">
+							<ShortName>sfx_footstep_toe_cloth_04.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_cloth_04_10C4C929.wem</Path>
 						</File>
 						<File Id="16215833" Language="SFX">
 							<ShortName>sfx_footstep_heel_grass_02.wav</ShortName>
@@ -113,6 +117,10 @@
 						<File Id="40909859" Language="SFX">
 							<ShortName>sfx_footstep_heel_concrete_01.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_01_10C4C929.wem</Path>
+						</File>
+						<File Id="46517041" Language="SFX">
+							<ShortName>sfx_bed_creak_02.wav</ShortName>
+							<Path>SFX\sfx_bed_creak_02_10C4C929.wem</Path>
 						</File>
 						<File Id="71636352" Language="SFX">
 							<ShortName>sfx_footstep_heel_concrete_03.wav</ShortName>
@@ -129,6 +137,10 @@
 						<File Id="95916828" Language="SFX">
 							<ShortName>sfx_footstep_heel_concrete_02.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_02_10C4C929.wem</Path>
+						</File>
+						<File Id="101588032" Language="SFX">
+							<ShortName>sfx_footstep_heel_cloth_02.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_cloth_02_10C4C929.wem</Path>
 						</File>
 						<File Id="106863624" Language="SFX">
 							<ShortName>sfx_footstep_toe_concrete_15.wav</ShortName>
@@ -170,6 +182,18 @@
 							<ShortName>sfx_footstep_heel_concrete_12.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_12_10C4C929.wem</Path>
 						</File>
+						<File Id="387958526" Language="SFX">
+							<ShortName>sfx_footstep_heel_cloth_03.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_cloth_03_10C4C929.wem</Path>
+						</File>
+						<File Id="411723609" Language="SFX">
+							<ShortName>sfx_footstep_heel_cloth_04.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_cloth_04_10C4C929.wem</Path>
+						</File>
+						<File Id="424800491" Language="SFX">
+							<ShortName>sfx_footstep_toe_cloth_01.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_cloth_01_10C4C929.wem</Path>
+						</File>
 						<File Id="433346874" Language="SFX">
 							<ShortName>sfx_footstep_heel_grass_01.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_grass_01_10C4C929.wem</Path>
@@ -202,9 +226,17 @@
 							<ShortName>sfx_footstep_toe_grass_01.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_grass_01_10C4C929.wem</Path>
 						</File>
+						<File Id="581596431" Language="SFX">
+							<ShortName>sfx_footstep_toe_cloth_03.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_cloth_03_10C4C929.wem</Path>
+						</File>
 						<File Id="600831764" Language="SFX">
 							<ShortName>sfx_footstep_heel_concrete_09.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_09_10C4C929.wem</Path>
+						</File>
+						<File Id="619194132" Language="SFX">
+							<ShortName>sfx_bed_creak_03.wav</ShortName>
+							<Path>SFX\sfx_bed_creak_03_10C4C929.wem</Path>
 						</File>
 						<File Id="624331642" Language="SFX">
 							<ShortName>sfx_footstep_heel_concrete_07.wav</ShortName>
@@ -246,6 +278,14 @@
 							<ShortName>sfx_footstep_heel_concrete_10.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_10_10C4C929.wem</Path>
 						</File>
+						<File Id="899593302" Language="SFX">
+							<ShortName>sfx_bed_creak_04.wav</ShortName>
+							<Path>SFX\sfx_bed_creak_04_10C4C929.wem</Path>
+						</File>
+						<File Id="908824202" Language="SFX">
+							<ShortName>sfx_footstep_heel_cloth_01.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_cloth_01_10C4C929.wem</Path>
+						</File>
 						<File Id="913829077" Language="SFX">
 							<ShortName>sfx_footstep_heel_concrete_11.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_11_10C4C929.wem</Path>
@@ -273,6 +313,10 @@
 						<File Id="974338589" Language="SFX">
 							<ShortName>sfx_footstep_toe_grass_02.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_grass_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1007454756" Language="SFX">
+							<ShortName>sfx_footstep_toe_cloth_02.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_cloth_02_10C4C929.wem</Path>
 						</File>
 						<File Id="1008776830" Language="SFX">
 							<ShortName>sfx_footstep_toe_concrete_02.wav</ShortName>
@@ -341,6 +385,25 @@
 								<File Id="755488523"/>
 								<File Id="780591092"/>
 								<File Id="943315901"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{C9ED3BA4-F979-4932-8E3B-C493E6E05FEA}">
+							<Media>
+								<File Id="13459026"/>
+								<File Id="101588032"/>
+								<File Id="387958526"/>
+								<File Id="411723609"/>
+								<File Id="424800491"/>
+								<File Id="581596431"/>
+								<File Id="908824202"/>
+								<File Id="1007454756"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{C9ED3BA4-F979-4932-8E3B-C493E6E05FEA}">
+							<Media>
+								<File Id="46517041"/>
+								<File Id="619194132"/>
+								<File Id="899593302"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -577,15 +640,11 @@
 						<ActionSetStateEntry Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\Interactions\WorldKeysEnabled\Enabled"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="157353963" Name="StepOffBed" ObjectPath="\Events\Default Work Unit\SFX\Bed\StepOffBed" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.430544" DurationMax="0.780000">
+				<Event Id="157353963" Name="StepOffBed" ObjectPath="\Events\Default Work Unit\SFX\Bed\StepOffBed" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.430544" DurationMax="0.850596">
 					<IncludedMemoryFiles>
 						<File Id="46517041" Language="SFX">
 							<ShortName>sfx_bed_creak_02.wav</ShortName>
 							<Path>SFX\sfx_bed_creak_02_10C4C929.wem</Path>
-						</File>
-						<File Id="56865323" Language="SFX">
-							<ShortName>sfx_bed_creak_01.wav</ShortName>
-							<Path>SFX\sfx_bed_creak_01_10C4C929.wem</Path>
 						</File>
 						<File Id="619194132" Language="SFX">
 							<ShortName>sfx_bed_creak_03.wav</ShortName>
@@ -798,6 +857,7 @@
 						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\FootstepType\Concrete" GUID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}"/>
 						<Switch Id="2185786256" Name="Gravel" ObjectPath="\Switches\Default Work Unit\FootstepType\Gravel" GUID="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}"/>
 						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\Default Work Unit\FootstepType\Grass" GUID="{05C16097-8E3C-4946-A103-D61957EBA3B4}"/>
+						<Switch Id="446279778" Name="Bed" ObjectPath="\Switches\Default Work Unit\FootstepType\Bed" GUID="{C9ED3BA4-F979-4932-8E3B-C493E6E05FEA}"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="1468846155" Name="VampFootstep" ObjectPath="\Switches\Default Work Unit\VampFootstep" GUID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}">
