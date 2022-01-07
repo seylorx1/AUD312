@@ -736,7 +736,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585601710560505479
+    m_lastTime: -8585600347240964977
     List:
     - name: Beats
       guid: d8adb70e52bf2740bea820418c48e598
@@ -1101,11 +1101,11 @@ MonoBehaviour:
         guid: 28e55eca8a6ad74789f4415d53397b3a
       Path: Events\Default Work Unit\SFX\Footstep
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: FootstepPlay
+      maxDuration: 1.13541
+      minDuration: 0.164984
+    - name: Footstep
       guid: 09fd370eacf00c438ae2c527280491b3
-      id: 4039405217
+      id: 1866025847
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1119,13 +1119,59 @@ MonoBehaviour:
       - ElementName: Footstep
         ObjectType: 4
         guid: 28e55eca8a6ad74789f4415d53397b3a
-      - ElementName: FootstepPlay
+      - ElementName: Footstep
         ObjectType: 3
         guid: 09fd370eacf00c438ae2c527280491b3
-      Path: Events\Default Work Unit\SFX\Footstep\FootstepPlay
+      Path: Events\Default Work Unit\SFX\Footstep\Footstep
       maxAttenuation: 0
-      maxDuration: 1.13541
-      minDuration: 0.164984
+      maxDuration: -1
+      minDuration: -1
+    - name: FootstepJump
+      guid: 3e135b1d64d4194e96469a9f9d4b0eaa
+      id: 4234937615
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: 28e55eca8a6ad74789f4415d53397b3a
+      - ElementName: FootstepJump
+        ObjectType: 3
+        guid: 3e135b1d64d4194e96469a9f9d4b0eaa
+      Path: Events\Default Work Unit\SFX\Footstep\FootstepJump
+      maxAttenuation: 0
+      maxDuration: 0.210771
+      minDuration: 0.085283
+    - name: FootstepLand
+      guid: 10358b59f9180447a1f7baf1196d9a2b
+      id: 1877319332
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: 28e55eca8a6ad74789f4415d53397b3a
+      - ElementName: FootstepLand
+        ObjectType: 3
+        guid: 10358b59f9180447a1f7baf1196d9a2b
+      Path: Events\Default Work Unit\SFX\Footstep\FootstepLand
+      maxAttenuation: 0
+      maxDuration: 0.422463
+      minDuration: 0.091224
     - name: FootstepVampCooldown
       guid: ed9542bb7ce8a1429696e2f5be6b4859
       id: 4288247056
@@ -3032,7 +3078,7 @@ MonoBehaviour:
         guid: 38b4dd40b2e94b4c9c9bce1ac9f941c2
       Path: Triggers\Default Work Unit\BoxPickupStinger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000060000000700000008000000090000000b0000000d0000000e0000000f00000010000000110000001200000014000000150000001600000017000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e000000300000003100000032000000360000003a000000420000004600000049000000510000005f000000730000008f000000b60000002c0400002f040000320400003504000038040000e9040000
+  ExpandedWaapiItemIds: 0100000002000000060000000700000008000000090000000b0000000d0000000e0000000f00000010000000110000001200000014000000150000001600000017000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e00000030000000310000003200000036000000370000003a000000420000004600000049000000510000005f000000730000008f000000b60000002c0400002f040000320400003504000038040000e9040000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

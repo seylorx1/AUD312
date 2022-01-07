@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3857155f990bfa43b3d23accebdd730, type: 3}
-  m_Name: 0E37FD09-F0AC-430C-8AE2-C527280491B3
+  m_Name: 1D5B133E-D464-4E19-9646-9A9F9D4B0EAA
   m_EditorClassIdentifier: 
-  objectName: Footstep
-  id: 1866025847
-  guid: 0E37FD09-F0AC-430C-8AE2-C527280491B3
+  objectName: FootstepJump
+  id: 4234937615
+  guid: 1D5B133E-D464-4E19-9646-9A9F9D4B0EAA

@@ -130,7 +130,6 @@
 						</Effect>
 						<Effect Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
-								<Property Name="DelayTime" Type="Real32" Value="0.25"/>
 								<Property Name="Feedback" Type="Real32" Value="30"/>
 							</PropertyList>
 						</Effect>

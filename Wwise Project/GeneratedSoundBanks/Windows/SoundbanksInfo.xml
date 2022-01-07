@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="632156442">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3585464205">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1385714969">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2799009205">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -96,7 +96,7 @@
 						<ActionSetStateEntry Id="3059984139" Name="Tunnel" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\Tunnel"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="4039405217" Name="FootstepPlay" ObjectPath="\Events\Default Work Unit\SFX\Footstep\FootstepPlay" DurationType="OneShot" DurationMin="0.164984" DurationMax="1.135410">
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\SFX\Footstep\Footstep" DurationType="OneShot" DurationMin="0.164984" DurationMax="1.135410">
 					<IncludedMemoryFiles>
 						<File Id="3342881" Language="SFX">
 							<ShortName>sfx_footstep_toe_concrete_03.wav</ShortName>
@@ -439,6 +439,74 @@
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="4288247056" Name="FootstepVampCooldown" ObjectPath="\Events\Default Work Unit\SFX\Footstep\FootstepVampCooldown"/>
 					</ActionPostEvent>
+				</Event>
+				<Event Id="4234937615" Name="FootstepJump" ObjectPath="\Events\Default Work Unit\SFX\Footstep\FootstepJump" DurationType="OneShot" DurationMin="0.085283" DurationMax="0.210771">
+					<IncludedMemoryFiles>
+						<File Id="52852936" Language="SFX">
+							<ShortName>sfx_footstep_jump_grass.wav</ShortName>
+							<Path>SFX\sfx_footstep_jump_grass_10C4C929.wem</Path>
+						</File>
+						<File Id="510363670" Language="SFX">
+							<ShortName>sfx_footstep_jump_concrete.wav</ShortName>
+							<Path>SFX\sfx_footstep_jump_concrete_10C4C929.wem</Path>
+						</File>
+						<File Id="1015709717" Language="SFX">
+							<ShortName>sfx_footstep_jump_gravel.wav</ShortName>
+							<Path>SFX\sfx_footstep_jump_gravel_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{F6050909-D3FC-4A0B-B34B-CED6BB085408}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{F6050909-D3FC-4A0B-B34B-CED6BB085408}">
+							<Media>
+								<File Id="510363670"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}">
+							<Media>
+								<File Id="1015709717"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{05C16097-8E3C-4946-A103-D61957EBA3B4}">
+							<Media>
+								<File Id="52852936"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="1877319332" Name="FootstepLand" ObjectPath="\Events\Default Work Unit\SFX\Footstep\FootstepLand" DurationType="OneShot" DurationMin="0.091224" DurationMax="0.422463">
+					<IncludedMemoryFiles>
+						<File Id="261681939" Language="SFX">
+							<ShortName>sfx_footstep_impact_grass.wav</ShortName>
+							<Path>SFX\sfx_footstep_impact_grass_10C4C929.wem</Path>
+						</File>
+						<File Id="323522779" Language="SFX">
+							<ShortName>sfx_footstep_impact_gravel.wav</ShortName>
+							<Path>SFX\sfx_footstep_impact_gravel_10C4C929.wem</Path>
+						</File>
+						<File Id="843464880" Language="SFX">
+							<ShortName>sfx_footstep_impact_concrete.wav</ShortName>
+							<Path>SFX\sfx_footstep_impact_concrete_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{F6050909-D3FC-4A0B-B34B-CED6BB085408}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{F6050909-D3FC-4A0B-B34B-CED6BB085408}">
+							<Media>
+								<File Id="843464880"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}">
+							<Media>
+								<File Id="323522779"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{05C16097-8E3C-4946-A103-D61957EBA3B4}">
+							<Media>
+								<File Id="261681939"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="4288247056" Name="FootstepVampCooldown" ObjectPath="\Events\Default Work Unit\SFX\Footstep\FootstepVampCooldown" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="561183332" Name="HarpoonAmbiencePlay" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonAmbiencePlay" MaxAttenuation="20.000000" DurationType="Infinite">

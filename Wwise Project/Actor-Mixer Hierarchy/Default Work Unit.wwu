@@ -734,7 +734,7 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
-								<SwitchContainer Name="Footsteps" ID="{D7D90EA6-372B-478E-8088-4DDC39B7F87B}" ShortID="274960405">
+								<SwitchContainer Name="Footstep" ID="{D7D90EA6-372B-478E-8088-4DDC39B7F87B}" ShortID="274960405">
 									<PropertyList>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
@@ -1931,12 +1931,14 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="sfx_footstep_gravel" ID="{EDEED9F0-3D86-46AB-939A-0545F42F4A1F}" ShortID="587890326">
 											<PropertyList>
-												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-3</Value>
-													</ValueList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4F8A1813-F5B9-4375-B5EC-405B7198F884}"/>
+														</ModifierInfo>
+													</ModifierList>
 												</Property>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1950,6 +1952,13 @@
 												<RandomSequenceContainer Name="Left Foot" ID="{7AC7F8CF-66C1-4AE3-897A-C1326330A6DE}" ShortID="452196703">
 													<PropertyList>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{00A08747-6E58-4298-8F8E-A19CEE59CBD7}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
@@ -1992,7 +2001,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="sfx_footstep_toe_gravel_01" ID="{EB44DE39-3594-4678-8181-2B2C4E6CA6F9}" ShortID="711671321">
+																<Sound Name="sfx_footstep_toe_gravel_01" ID="{7C2A63E3-8BE1-4792-B87C-32237B42A57F}" ShortID="1015469103">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -2002,7 +2011,8 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_toe_gravel_01" ID="{D04F4EFB-7C61-44C9-B5EF-CB9986535500}">
+																		<AudioFileSource Name="sfx_footstep_toe_gravel_01" ID="{79715BA4-0A05-4339-8302-4E303D24237D}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Gravel\Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_toe_gravel_01.wav</AudioFile>
 																			<MediaIDList>
@@ -2012,10 +2022,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_toe_gravel_01" ID="{D04F4EFB-7C61-44C9-B5EF-CB9986535500}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_toe_gravel_01" ID="{79715BA4-0A05-4339-8302-4E303D24237D}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_toe_gravel_02" ID="{3EDA15A9-5E01-4201-9BC6-5FA05D4E3B64}" ShortID="312891262">
+																<Sound Name="sfx_footstep_toe_gravel_02" ID="{A98CBA35-5934-475A-8F85-E3B6F8D69B4B}" ShortID="790430151">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -2025,7 +2035,8 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_toe_gravel_02" ID="{1CD6FBD0-52B1-4AC7-AF97-00E3E8A422C2}">
+																		<AudioFileSource Name="sfx_footstep_toe_gravel_02" ID="{B182642B-3553-4E8A-B3B8-E12CB3270F99}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Gravel\Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_toe_gravel_02.wav</AudioFile>
 																			<MediaIDList>
@@ -2035,10 +2046,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_toe_gravel_02" ID="{1CD6FBD0-52B1-4AC7-AF97-00E3E8A422C2}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_toe_gravel_02" ID="{B182642B-3553-4E8A-B3B8-E12CB3270F99}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_toe_gravel_03" ID="{8165057D-EA8B-4ED2-926E-7D4F15A7E871}" ShortID="196219463">
+																<Sound Name="sfx_footstep_toe_gravel_03" ID="{DC104198-0FF4-4475-96A4-4171D403F2D3}" ShortID="535009020">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -2048,7 +2059,8 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_toe_gravel_03" ID="{6AFE155E-62CD-41B5-B415-13ABFFD3A073}">
+																		<AudioFileSource Name="sfx_footstep_toe_gravel_03" ID="{E6414F6A-FE35-4740-B916-008C5953D9B1}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Gravel\Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_toe_gravel_03.wav</AudioFile>
 																			<MediaIDList>
@@ -2058,10 +2070,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_toe_gravel_03" ID="{6AFE155E-62CD-41B5-B415-13ABFFD3A073}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_toe_gravel_03" ID="{E6414F6A-FE35-4740-B916-008C5953D9B1}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_toe_gravel_04" ID="{52023F01-CC82-4E96-903E-052E2C2B1B4C}" ShortID="229310948">
+																<Sound Name="sfx_footstep_toe_gravel_04" ID="{0D4280E6-A244-4666-BD7B-6E572048D4D3}" ShortID="337823228">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -2071,7 +2083,8 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_toe_gravel_04" ID="{330ED02C-90CB-4ECA-8261-C0D967BB33E3}">
+																		<AudioFileSource Name="sfx_footstep_toe_gravel_04" ID="{717EFFB6-997D-4BFD-A86E-EAD22BA0D419}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Gravel\Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_toe_gravel_04.wav</AudioFile>
 																			<MediaIDList>
@@ -2081,7 +2094,7 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_toe_gravel_04" ID="{330ED02C-90CB-4ECA-8261-C0D967BB33E3}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_toe_gravel_04" ID="{717EFFB6-997D-4BFD-A86E-EAD22BA0D419}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -2113,7 +2126,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="sfx_footstep_heel_gravel_03" ID="{04904228-9D71-416A-99E1-C579D6920F47}" ShortID="877827288">
+																<Sound Name="sfx_footstep_heel_gravel_01" ID="{52F4F5D1-8DF8-4692-852C-36FE0FD40443}" ShortID="21699174">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -2123,7 +2136,55 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_heel_gravel_03" ID="{4CEF34F6-DDBC-44A8-AC83-A9D799CBCD73}">
+																		<AudioFileSource Name="sfx_footstep_heel_gravel_01" ID="{D4190B01-4E39-42B4-9882-470491CE6B18}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Gravel\Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_gravel_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="943315901"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_gravel_01" ID="{D4190B01-4E39-42B4-9882-470491CE6B18}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_gravel_02" ID="{32D12E83-B201-46BD-A31B-E4E25D28A7AE}" ShortID="727948948">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_gravel_02" ID="{2046CFD3-3918-4935-B5A6-75703C7CF964}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Gravel\Footsteps.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_footstep_heel_gravel_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="75070834"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_footstep_heel_gravel_02" ID="{2046CFD3-3918-4935-B5A6-75703C7CF964}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_footstep_heel_gravel_03" ID="{4C2D3C8C-B901-4ABA-B04A-C17A050B1610}" ShortID="45335743">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_footstep_heel_gravel_03" ID="{EB05A82A-7787-4DA1-AB3E-5714D2070DEA}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Gravel\Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_heel_gravel_03.wav</AudioFile>
@@ -2134,10 +2195,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_heel_gravel_03" ID="{4CEF34F6-DDBC-44A8-AC83-A9D799CBCD73}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_heel_gravel_03" ID="{EB05A82A-7787-4DA1-AB3E-5714D2070DEA}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_heel_gravel_04" ID="{816697C3-4F47-4B14-8BC1-BE47DA68A348}" ShortID="858739546">
+																<Sound Name="sfx_footstep_heel_gravel_04" ID="{B8F59DF6-60C2-487D-8237-BE09DFB0D29E}" ShortID="37893145">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -2147,7 +2208,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_heel_gravel_04" ID="{D4DCB163-4045-43FE-A05C-3525F2DFE554}">
+																		<AudioFileSource Name="sfx_footstep_heel_gravel_04" ID="{0233F36B-5413-48CB-8658-D681B1AB3877}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Gravel\Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_heel_gravel_04.wav</AudioFile>
@@ -2158,61 +2219,7 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_heel_gravel_04" ID="{D4DCB163-4045-43FE-A05C-3525F2DFE554}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="sfx_footstep_heel_gravel_02" ID="{F30E65FC-D727-49C1-B0BD-22E3D3BE62E9}" ShortID="475615069">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Left Footstep" ID="{592DB791-B149-40AE-AE73-F68624C18669}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_heel_gravel_02" ID="{4B520841-12DC-4EEF-AB0F-8D40E8E53D99}">
-																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Gravel\Footsteps.rpp"</Comment>
-																			<Language>SFX</Language>
-																			<AudioFile>sfx_footstep_heel_gravel_02.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="75070834"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<PositioningInfo>
-																		<Panner Name="" ID="{95879DE8-5D97-4C1C-8A1E-EB45B15FAFC1}"/>
-																	</PositioningInfo>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_heel_gravel_02" ID="{4B520841-12DC-4EEF-AB0F-8D40E8E53D99}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="sfx_footstep_heel_gravel_01" ID="{CD72CA9F-06BC-467F-B32A-46FFB03A23FA}" ShortID="698040460">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Left Footstep" ID="{592DB791-B149-40AE-AE73-F68624C18669}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_heel_gravel_01" ID="{28989974-373A-4B8F-8750-4CAC00C054D4}">
-																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Gravel\Footsteps.rpp"</Comment>
-																			<Language>SFX</Language>
-																			<AudioFile>sfx_footstep_heel_gravel_01.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="943315901"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<PositioningInfo>
-																		<Panner Name="" ID="{7C277F7C-41B9-447F-829C-308DB6683C1C}"/>
-																	</PositioningInfo>
-																	<ObjectLists/>
-																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_heel_gravel_01" ID="{28989974-373A-4B8F-8750-4CAC00C054D4}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_heel_gravel_04" ID="{0233F36B-5413-48CB-8658-D681B1AB3877}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -2235,6 +2242,13 @@
 												<RandomSequenceContainer Name="Right Foot" ID="{244A3842-745D-42B5-97FB-0C7161266478}" ShortID="212486211">
 													<PropertyList>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{32B328E8-A27C-416D-B03C-C25BAEC63CB9}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
@@ -5236,6 +5250,280 @@
 												<ItemList>
 													<ItemRef Name="sfx_footstep_glass_tone" ID="{39A691DE-9E0B-49F3-AC45-10C923853811}"/>
 													<ItemRef Name="sfx_footstep_metal" ID="{17C639DE-FD88-4C4F-8FCE-C9303B1A0B5B}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="FootstepJump" ID="{2271B4BC-F52F-44EA-8952-540AFED8A49E}" ShortID="778845476">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Concrete" ID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="FootstepType" ID="{8274F53A-432D-4B3C-B3B2-7B0DCFA58A47}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_footstep_jump_concrete" ID="{C49AF26B-BB25-4B8E-83EB-288547529926}" ShortID="499405396">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_jump_concrete" ID="{CE3DFF71-26E3-4367-8B35-AE72EDB627F8}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Concrete\Concrete Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_jump_concrete.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="510363670"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_jump_concrete" ID="{CE3DFF71-26E3-4367-8B35-AE72EDB627F8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_jump_gravel" ID="{66F633DD-6725-4F70-BB0C-F94661467CB6}" ShortID="483542025">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_jump_gravel" ID="{5E6AE277-7CFE-435D-96D7-D65B81AD194C}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Gravel\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_jump_gravel.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1015709717"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_jump_gravel" ID="{5E6AE277-7CFE-435D-96D7-D65B81AD194C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_jump_grass" ID="{EF8DB27F-3C44-4EA0-92AE-C7665BD01289}" ShortID="143556553">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_jump_grass" ID="{B4D3A6B3-9218-4512-8E17-BE70B633C0A8}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Grass\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_jump_grass.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="52852936"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_jump_grass" ID="{B4D3A6B3-9218-4512-8E17-BE70B633C0A8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_footstep_jump_concrete" ID="{C49AF26B-BB25-4B8E-83EB-288547529926}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_footstep_jump_grass" ID="{EF8DB27F-3C44-4EA0-92AE-C7665BD01289}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_footstep_jump_gravel" ID="{66F633DD-6725-4F70-BB0C-F94661467CB6}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Concrete" ID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}"/>
+												<ItemList>
+													<ItemRef Name="sfx_footstep_jump_concrete" ID="{C49AF26B-BB25-4B8E-83EB-288547529926}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Grass" ID="{05C16097-8E3C-4946-A103-D61957EBA3B4}"/>
+												<ItemList>
+													<ItemRef Name="sfx_footstep_jump_grass" ID="{EF8DB27F-3C44-4EA0-92AE-C7665BD01289}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Gravel" ID="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}"/>
+												<ItemList>
+													<ItemRef Name="sfx_footstep_jump_gravel" ID="{66F633DD-6725-4F70-BB0C-F94661467CB6}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="FootstepLand" ID="{D56BE593-0BED-4869-B5C2-5C9B0FC3D93D}" ShortID="1040634794">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1C52E360-2C56-4ACC-8669-D15DE2D6A8AE}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Concrete" ID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Footsteps" ID="{B0113FC1-EDAA-40A2-A557-FE73AFAB7937}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="FootstepType" ID="{8274F53A-432D-4B3C-B3B2-7B0DCFA58A47}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_footstep_impact_concrete" ID="{11FA7942-3929-46F0-ABF6-C7A6E6D84BA6}" ShortID="275161908">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_impact_concrete" ID="{D741494C-18A7-433B-93D1-EBBB110D60B9}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Concrete\Concrete Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_impact_concrete.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="843464880"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_impact_concrete" ID="{D741494C-18A7-433B-93D1-EBBB110D60B9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_impact_gravel" ID="{4EFF549B-C638-4132-AF60-F7F58A8179FD}" ShortID="702516566">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_impact_gravel" ID="{36E42A48-1E0F-4A74-94D7-EBE9A8D655CA}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Gravel\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_impact_gravel.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="323522779"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_impact_gravel" ID="{36E42A48-1E0F-4A74-94D7-EBE9A8D655CA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_impact_grass" ID="{D2D1C163-7316-4193-A0AA-28CD9A088B4E}" ShortID="613537790">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_impact_grass" ID="{41821B16-D168-48E8-9DE4-66768EE54177}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Grass\Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_impact_grass.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="261681939"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_impact_grass" ID="{41821B16-D168-48E8-9DE4-66768EE54177}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_footstep_impact_concrete" ID="{11FA7942-3929-46F0-ABF6-C7A6E6D84BA6}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_footstep_impact_grass" ID="{D2D1C163-7316-4193-A0AA-28CD9A088B4E}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_footstep_impact_gravel" ID="{4EFF549B-C638-4132-AF60-F7F58A8179FD}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Concrete" ID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}"/>
+												<ItemList>
+													<ItemRef Name="sfx_footstep_impact_concrete" ID="{11FA7942-3929-46F0-ABF6-C7A6E6D84BA6}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Grass" ID="{05C16097-8E3C-4946-A103-D61957EBA3B4}"/>
+												<ItemList>
+													<ItemRef Name="sfx_footstep_impact_grass" ID="{D2D1C163-7316-4193-A0AA-28CD9A088B4E}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Gravel" ID="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}"/>
+												<ItemList>
+													<ItemRef Name="sfx_footstep_impact_gravel" ID="{4EFF549B-C638-4132-AF60-F7F58A8179FD}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>

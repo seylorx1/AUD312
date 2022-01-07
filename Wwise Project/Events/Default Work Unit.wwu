@@ -323,12 +323,12 @@ This event does the following:
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
-								<Event Name="FootstepPlay" ID="{0E37FD09-F0AC-430C-8AE2-C527280491B3}">
+								<Event Name="Footstep" ID="{0E37FD09-F0AC-430C-8AE2-C527280491B3}">
 									<Comment>Called on every footstep. (Cont.)
 
 This event does the following:
 - Sets a random value [0..1] for footstep weight (used by some footstep sounds.)
-- Plays the Footsteps switch container.
+- Plays the Footstep switch container.
 - Calls vamp cooldown event.</Comment>
 									<ChildrenList>
 										<Action Name="" ID="{2CA73BCD-42DC-4066-A79C-C9D31E301CFF}" ShortID="720576616">
@@ -357,7 +357,7 @@ This event does the following:
 										<Action Name="" ID="{3CB983A9-C8D7-47F0-967B-C43547B68CB6}" ShortID="856770221">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Footsteps" ID="{D7D90EA6-372B-478E-8088-4DDC39B7F87B}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="Footstep" ID="{D7D90EA6-372B-478E-8088-4DDC39B7F87B}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -397,6 +397,84 @@ This event does the following:
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="VampCooldown" ID="{55CD68A3-358D-4235-9001-F46651CA0321}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="FootstepJump" ID="{1D5B133E-D464-4E19-9646-9A9F9D4B0EAA}">
+									<Comment>Called every time the player jumps. (Cont.)
+
+This event does the following:
+- Sets a random value [0..1] for footstep weight (used by some footstep sounds.)
+- Plays the FootstepJump switch container.</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{0DC7CAED-7A29-4707-97DC-F4776574EBE1}" ShortID="617793003">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8B247D30-A445-4AF2-A9F2-CD310EF55833}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FootstepWeight" ID="{3F312672-51D9-41E6-BA8D-E0719C6B558E}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F937EE1A-5E75-40D8-8E62-8EBF394CB492}" ShortID="456081833">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FootstepJump" ID="{2271B4BC-F52F-44EA-8952-540AFED8A49E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="FootstepLand" ID="{598B3510-18F9-4704-A1F7-BAF1196D9A2B}">
+									<Comment>Called every time the player lands. (Cont.)
+
+This event does the following:
+- Sets a random value [0..1] for footstep weight (used by some footstep sounds.)
+- Plays the FootstepLand switch container.</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{099B6551-466A-419E-8739-22DD1140776F}" ShortID="542965484">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{50587DBC-6D52-4AF6-BEC9-0CB466A4AFE5}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FootstepWeight" ID="{3F312672-51D9-41E6-BA8D-E0719C6B558E}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{9D5D9808-490E-43F2-A05D-5C9D098266CF}" ShortID="253346468">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FootstepLand" ID="{D56BE593-0BED-4869-B5C2-5C9B0FC3D93D}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

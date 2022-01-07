@@ -24,7 +24,9 @@ namespace AK
         static const AkUniqueID ENTERINDOORSTUNNEL = 1113956849U;
         static const AkUniqueID ENTEROUTDOORS = 3070671186U;
         static const AkUniqueID ENTERTUNNEL = 2811934447U;
-        static const AkUniqueID FOOTSTEPPLAY = 4039405217U;
+        static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID FOOTSTEPJUMP = 4234937615U;
+        static const AkUniqueID FOOTSTEPLAND = 1877319332U;
         static const AkUniqueID FOOTSTEPVAMPCOOLDOWN = 4288247056U;
         static const AkUniqueID HARPOONAMBIENCEPLAY = 561183332U;
         static const AkUniqueID HARPOONAMBIENCESTOP = 3333733726U;
