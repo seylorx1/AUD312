@@ -5653,12 +5653,12 @@
 												<ItemRef Name="Right Foot" ID="{8420B137-FF70-4F71-A10B-7AC29A9B9A11}"/>
 											</Playlist>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="sfx_footstep_glass" ID="{39A691DE-9E0B-49F3-AC45-10C923853811}" ShortID="924624122">
+										<RandomSequenceContainer Name="sfx_footstep_glass_tone" ID="{39A691DE-9E0B-49F3-AC45-10C923853811}" ShortID="924624122">
 											<PropertyList>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-6</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -5698,9 +5698,7 @@
 																		<ModifierInfo>
 																			<Modifier Name="" ID="{6D619B25-2F45-4BA5-9A60-7835C96969E8}">
 																				<PropertyList>
-																					<Property Name="Enabled" Type="bool" Value="True"/>
 																					<Property Name="Max" Type="Real64" Value="300"/>
-																					<Property Name="Min" Type="Real64" Value="-300"/>
 																				</PropertyList>
 																			</Modifier>
 																		</ModifierInfo>
@@ -5716,7 +5714,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="sfx_footstep_toe_glass_01" ID="{9287D0C8-2B85-49AA-99F8-C3EED2AAF205}" ShortID="889505766">
+																<Sound Name="sfx_footstep_toe_glass_01" ID="{41DFE1C7-672E-459E-9857-53F2DFC54948}" ShortID="511076593">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -5726,7 +5724,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_toe_glass_01" ID="{22318D06-8431-4A46-8DF3-A9052045A0F0}">
+																		<AudioFileSource Name="sfx_footstep_toe_glass_01" ID="{DA5D0BD0-B549-4A46-8045-050A3A577965}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_toe_glass_01.wav</AudioFile>
@@ -5737,10 +5735,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_toe_glass_01" ID="{22318D06-8431-4A46-8DF3-A9052045A0F0}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_toe_glass_01" ID="{DA5D0BD0-B549-4A46-8045-050A3A577965}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_toe_glass_02" ID="{FE784DFB-66C8-41AA-ABA7-7235F4AB2330}" ShortID="876907655">
+																<Sound Name="sfx_footstep_toe_glass_02" ID="{64A07908-64AE-4724-933B-8D29D87A4A34}" ShortID="926251596">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -5750,7 +5748,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_toe_glass_02" ID="{255ABD2E-B4B7-4E45-938F-8CB1CF0F054D}">
+																		<AudioFileSource Name="sfx_footstep_toe_glass_02" ID="{7BC61AD7-EC72-456A-AD6A-7EB0B21946B0}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_toe_glass_02.wav</AudioFile>
@@ -5761,10 +5759,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_toe_glass_02" ID="{255ABD2E-B4B7-4E45-938F-8CB1CF0F054D}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_toe_glass_02" ID="{7BC61AD7-EC72-456A-AD6A-7EB0B21946B0}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_toe_glass_03" ID="{9F06F519-5076-4D37-93A6-834FC1410FB9}" ShortID="744293855">
+																<Sound Name="sfx_footstep_toe_glass_03" ID="{5228220D-4429-4411-8DEC-CFD4907BAF51}" ShortID="246968523">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -5774,7 +5772,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_toe_glass_03" ID="{6D59023C-78B6-4C40-8A9E-086B404325C2}">
+																		<AudioFileSource Name="sfx_footstep_toe_glass_03" ID="{658B056E-7F8C-4C76-BFA0-A72F7AEB5553}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_toe_glass_03.wav</AudioFile>
@@ -5785,10 +5783,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_toe_glass_03" ID="{6D59023C-78B6-4C40-8A9E-086B404325C2}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_toe_glass_03" ID="{658B056E-7F8C-4C76-BFA0-A72F7AEB5553}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_toe_glass_04" ID="{59317860-59BF-4D34-A5E3-B47FCBF483C1}" ShortID="391630580">
+																<Sound Name="sfx_footstep_toe_glass_04" ID="{BA2C0915-7782-4EA0-B8CB-E388EE52CEA3}" ShortID="419451427">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -5798,7 +5796,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_toe_glass_04" ID="{046197AC-98A0-48C0-87C1-ABB7D67356EB}">
+																		<AudioFileSource Name="sfx_footstep_toe_glass_04" ID="{5ECF928D-06BE-44DA-9691-06B73D6D645B}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_toe_glass_04.wav</AudioFile>
@@ -5809,7 +5807,7 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_toe_glass_04" ID="{046197AC-98A0-48C0-87C1-ABB7D67356EB}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_toe_glass_04" ID="{5ECF928D-06BE-44DA-9691-06B73D6D645B}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -5823,9 +5821,7 @@
 																		<ModifierInfo>
 																			<Modifier Name="" ID="{63A4E96C-3DA7-4A75-837B-BE88B08EAA79}">
 																				<PropertyList>
-																					<Property Name="Enabled" Type="bool" Value="True"/>
 																					<Property Name="Max" Type="Real64" Value="300"/>
-																					<Property Name="Min" Type="Real64" Value="-300"/>
 																				</PropertyList>
 																			</Modifier>
 																		</ModifierInfo>
@@ -5841,7 +5837,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="sfx_footstep_heel_glass_01" ID="{C5E065EB-FB26-4142-B3E9-F661394F9E29}" ShortID="323443764">
+																<Sound Name="sfx_footstep_heel_glass_01" ID="{AA772061-1F72-493D-9BA1-DC4FD3574832}" ShortID="754174530">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -5851,7 +5847,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_heel_glass_01" ID="{38673934-BE4C-4539-9D11-D2D78CBCFEC1}">
+																		<AudioFileSource Name="sfx_footstep_heel_glass_01" ID="{983879C0-CEBA-446C-99E0-A021AC6EE87C}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_heel_glass_01.wav</AudioFile>
@@ -5862,10 +5858,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_heel_glass_01" ID="{38673934-BE4C-4539-9D11-D2D78CBCFEC1}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_heel_glass_01" ID="{983879C0-CEBA-446C-99E0-A021AC6EE87C}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_heel_glass_02" ID="{0811B4A7-C20A-4B5E-9192-5B7AE13C49F2}" ShortID="660629981">
+																<Sound Name="sfx_footstep_heel_glass_02" ID="{A1E263E1-F04E-4B9F-8CD1-EE7127F34DC8}" ShortID="13352736">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -5875,7 +5871,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_heel_glass_02" ID="{40AF7F30-EF64-49BF-A14C-AF00E1F729A2}">
+																		<AudioFileSource Name="sfx_footstep_heel_glass_02" ID="{112D8606-0B89-4F3A-B4B7-3558FD55B45B}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_heel_glass_02.wav</AudioFile>
@@ -5886,10 +5882,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_heel_glass_02" ID="{40AF7F30-EF64-49BF-A14C-AF00E1F729A2}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_heel_glass_02" ID="{112D8606-0B89-4F3A-B4B7-3558FD55B45B}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_heel_glass_03" ID="{7EC0D90D-2CDE-4700-88FB-6FF6F2F2A183}" ShortID="6696325">
+																<Sound Name="sfx_footstep_heel_glass_03" ID="{4F054A8B-8636-4322-80FD-0AFB061B6BC3}" ShortID="156345299">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -5899,7 +5895,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_heel_glass_03" ID="{B781722C-7A70-4FFC-846C-19E3C925C0B5}">
+																		<AudioFileSource Name="sfx_footstep_heel_glass_03" ID="{42EC8DF9-6C81-49F5-8038-0270A7A9BBE2}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_heel_glass_03.wav</AudioFile>
@@ -5910,10 +5906,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_heel_glass_03" ID="{B781722C-7A70-4FFC-846C-19E3C925C0B5}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_heel_glass_03" ID="{42EC8DF9-6C81-49F5-8038-0270A7A9BBE2}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_heel_glass_04" ID="{79371A6D-A7E4-45CA-9AC6-76F4E5B60D44}" ShortID="76266031">
+																<Sound Name="sfx_footstep_heel_glass_04" ID="{BED63A47-65F9-4AFD-9268-BA55BD59B5B3}" ShortID="297467683">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -5923,7 +5919,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_heel_glass_04" ID="{C88ECC8B-F0DF-4275-9919-AB6F1DCEC211}">
+																		<AudioFileSource Name="sfx_footstep_heel_glass_04" ID="{B43DE3DB-BB29-498B-BCDA-1BB205F97978}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_heel_glass_04.wav</AudioFile>
@@ -5934,7 +5930,7 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_heel_glass_04" ID="{C88ECC8B-F0DF-4275-9919-AB6F1DCEC211}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_heel_glass_04" ID="{B43DE3DB-BB29-498B-BCDA-1BB205F97978}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -5954,7 +5950,7 @@
 														<ItemRef Name="toe" ID="{A1AC4F51-4044-4415-B05C-0D4405413CCB}"/>
 													</Playlist>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Right Foot" ID="{E70EB413-0FF5-4740-BAA9-1AD7E431F4E6}" ShortID="186127441">
+												<RandomSequenceContainer Name="Right Foot" ID="{E93D580D-DEFA-4670-B82E-133511B78990}" ShortID="150379862">
 													<PropertyList>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -5972,17 +5968,15 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<RandomSequenceContainer Name="toe" ID="{772C76EE-EE2A-4F11-BC70-E17C7C36E780}" ShortID="333618777">
+														<RandomSequenceContainer Name="toe" ID="{A08F8F5E-39F4-4AC7-8750-5F3F3077746E}" ShortID="95139984">
 															<PropertyList>
 																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
 																		<ModifierInfo>
-																			<Modifier Name="" ID="{5986759C-576E-45C0-BBFF-26E1E81B9FC3}">
+																			<Modifier Name="" ID="{1FB19782-AB9A-4D0E-B21A-AF9F151B61CF}">
 																				<PropertyList>
-																					<Property Name="Enabled" Type="bool" Value="True"/>
 																					<Property Name="Max" Type="Real64" Value="300"/>
-																					<Property Name="Min" Type="Real64" Value="-300"/>
 																				</PropertyList>
 																			</Modifier>
 																		</ModifierInfo>
@@ -5998,7 +5992,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="sfx_footstep_toe_glass_01" ID="{5A710FBC-C6DD-4EB2-9447-1C51A63405D4}" ShortID="820647348">
+																<Sound Name="sfx_footstep_toe_glass_01" ID="{2843CDC8-51D7-4103-9802-0175F5A6771E}" ShortID="835977175">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -6008,7 +6002,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_toe_glass_01" ID="{1116F425-032B-4738-99B4-C3B412749267}">
+																		<AudioFileSource Name="sfx_footstep_toe_glass_01" ID="{6DBCD3EB-B8F7-4DC4-894A-1415FAFBD2DD}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_toe_glass_01.wav</AudioFile>
@@ -6019,10 +6013,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_toe_glass_01" ID="{1116F425-032B-4738-99B4-C3B412749267}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_toe_glass_01" ID="{6DBCD3EB-B8F7-4DC4-894A-1415FAFBD2DD}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_toe_glass_02" ID="{E9467D42-2F18-48FC-9DCC-6B8B87B03260}" ShortID="995987283">
+																<Sound Name="sfx_footstep_toe_glass_02" ID="{5676AA4C-C2A3-4F7F-9AD3-1216F7BF84B4}" ShortID="974502929">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -6032,7 +6026,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_toe_glass_02" ID="{64604C18-FE0C-4789-B05B-E769F84F1CCC}">
+																		<AudioFileSource Name="sfx_footstep_toe_glass_02" ID="{6063754F-4F9F-4680-BA6F-E4458DABD5D8}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_toe_glass_02.wav</AudioFile>
@@ -6043,10 +6037,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_toe_glass_02" ID="{64604C18-FE0C-4789-B05B-E769F84F1CCC}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_toe_glass_02" ID="{6063754F-4F9F-4680-BA6F-E4458DABD5D8}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_toe_glass_03" ID="{EB401484-6888-42D3-948C-58B330C3DEEE}" ShortID="529863120">
+																<Sound Name="sfx_footstep_toe_glass_03" ID="{8867B001-1219-4527-92F6-F3E11E416D54}" ShortID="210112662">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -6056,7 +6050,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_toe_glass_03" ID="{B25460FD-045A-4740-BC21-B74F0C8607C2}">
+																		<AudioFileSource Name="sfx_footstep_toe_glass_03" ID="{0D0ADB59-C357-487A-9F41-7F3D1B1924C0}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_toe_glass_03.wav</AudioFile>
@@ -6067,10 +6061,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_toe_glass_03" ID="{B25460FD-045A-4740-BC21-B74F0C8607C2}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_toe_glass_03" ID="{0D0ADB59-C357-487A-9F41-7F3D1B1924C0}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_toe_glass_04" ID="{57389C45-2F06-4F56-A014-0543C554D193}" ShortID="520105509">
+																<Sound Name="sfx_footstep_toe_glass_04" ID="{87B488C0-B9E1-4ABB-8254-6D7925C5E8AF}" ShortID="868901881">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -6080,7 +6074,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_toe_glass_04" ID="{3C0B455E-AACB-45F4-B827-D872C683C0B4}">
+																		<AudioFileSource Name="sfx_footstep_toe_glass_04" ID="{A117246E-C325-4C89-B18B-C831F923DD3B}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_toe_glass_04.wav</AudioFile>
@@ -6091,23 +6085,21 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_toe_glass_04" ID="{3C0B455E-AACB-45F4-B827-D872C683C0B4}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_toe_glass_04" ID="{A117246E-C325-4C89-B18B-C831F923DD3B}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
 															<ObjectLists/>
 														</RandomSequenceContainer>
-														<RandomSequenceContainer Name="heel" ID="{9268ACA1-BD3D-4E3A-AF74-F2C97A2B6C09}" ShortID="1005149176">
+														<RandomSequenceContainer Name="heel" ID="{955CE6FE-FFB6-4A2B-BC61-E244BA54F0AD}" ShortID="573773401">
 															<PropertyList>
 																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
 																		<ModifierInfo>
-																			<Modifier Name="" ID="{588927F8-1B22-4EBF-B9EF-697CB014E31C}">
+																			<Modifier Name="" ID="{2BAC946A-8880-4DE1-A7CE-9636FF53F0E5}">
 																				<PropertyList>
-																					<Property Name="Enabled" Type="bool" Value="True"/>
 																					<Property Name="Max" Type="Real64" Value="300"/>
-																					<Property Name="Min" Type="Real64" Value="-300"/>
 																				</PropertyList>
 																			</Modifier>
 																		</ModifierInfo>
@@ -6123,7 +6115,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="sfx_footstep_heel_glass_01" ID="{FC996F56-9248-48C7-A233-B406C0D9C786}" ShortID="329725102">
+																<Sound Name="sfx_footstep_heel_glass_01" ID="{0785E8D2-1480-4964-901D-E605546055D2}" ShortID="124504475">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -6133,7 +6125,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_heel_glass_01" ID="{57EC0FD6-A70C-45F5-BEF8-DC9360769B85}">
+																		<AudioFileSource Name="sfx_footstep_heel_glass_01" ID="{77BE8968-E333-4082-8287-5CA953212228}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_heel_glass_01.wav</AudioFile>
@@ -6144,10 +6136,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_heel_glass_01" ID="{57EC0FD6-A70C-45F5-BEF8-DC9360769B85}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_heel_glass_01" ID="{77BE8968-E333-4082-8287-5CA953212228}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_heel_glass_02" ID="{9E15C412-51B7-449E-94A9-094974C70401}" ShortID="706607209">
+																<Sound Name="sfx_footstep_heel_glass_02" ID="{E71FDFB6-F9C6-4285-AC65-96B216D453DF}" ShortID="482929072">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -6157,7 +6149,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_heel_glass_02" ID="{B7BA7AC8-FDB8-4DA0-B82B-F6326FB7BC46}">
+																		<AudioFileSource Name="sfx_footstep_heel_glass_02" ID="{42A53C4E-79F3-4D40-AD76-2349A37ACAA5}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_heel_glass_02.wav</AudioFile>
@@ -6168,10 +6160,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_heel_glass_02" ID="{B7BA7AC8-FDB8-4DA0-B82B-F6326FB7BC46}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_heel_glass_02" ID="{42A53C4E-79F3-4D40-AD76-2349A37ACAA5}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_heel_glass_03" ID="{F9163017-71C8-4562-8637-0AA4281C56FD}" ShortID="672041129">
+																<Sound Name="sfx_footstep_heel_glass_03" ID="{07F93AA4-7D7A-4BEA-8811-F909893EE7B2}" ShortID="941451461">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -6181,7 +6173,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_heel_glass_03" ID="{44036A74-7C8A-4086-8BF8-0DBCB5DBBE37}">
+																		<AudioFileSource Name="sfx_footstep_heel_glass_03" ID="{1BE83857-B8C5-4CC0-A4C0-92A24A08613F}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_heel_glass_03.wav</AudioFile>
@@ -6192,10 +6184,10 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_heel_glass_03" ID="{44036A74-7C8A-4086-8BF8-0DBCB5DBBE37}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_heel_glass_03" ID="{1BE83857-B8C5-4CC0-A4C0-92A24A08613F}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_footstep_heel_glass_04" ID="{B9D9B480-8630-4FC5-94FF-78164BC4F970}" ShortID="1029248027">
+																<Sound Name="sfx_footstep_heel_glass_04" ID="{A4F4BA2A-DFF1-417A-A6D2-9B6FDCC1EF07}" ShortID="534314963">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -6205,7 +6197,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="sfx_footstep_heel_glass_04" ID="{A42B2203-71FE-498B-AB58-5B53AAF5B833}">
+																		<AudioFileSource Name="sfx_footstep_heel_glass_04" ID="{49B8C148-6453-4A4F-9688-A09347FCAEA8}">
 																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass Footsteps.rpp"</Comment>
 																			<Language>SFX</Language>
 																			<AudioFile>sfx_footstep_heel_glass_04.wav</AudioFile>
@@ -6216,7 +6208,7 @@
 																	</ChildrenList>
 																	<ObjectLists/>
 																	<ActiveSourceList>
-																		<ActiveSource Name="sfx_footstep_heel_glass_04" ID="{A42B2203-71FE-498B-AB58-5B53AAF5B833}" Platform="Linked"/>
+																		<ActiveSource Name="sfx_footstep_heel_glass_04" ID="{49B8C148-6453-4A4F-9688-A09347FCAEA8}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -6225,15 +6217,15 @@
 													</ChildrenList>
 													<ObjectLists/>
 													<Playlist>
-														<ItemRef Name="heel" ID="{9268ACA1-BD3D-4E3A-AF74-F2C97A2B6C09}"/>
-														<ItemRef Name="toe" ID="{772C76EE-EE2A-4F11-BC70-E17C7C36E780}"/>
+														<ItemRef Name="heel" ID="{955CE6FE-FFB6-4A2B-BC61-E244BA54F0AD}"/>
+														<ItemRef Name="toe" ID="{A08F8F5E-39F4-4AC7-8750-5F3F3077746E}"/>
 													</Playlist>
 												</RandomSequenceContainer>
 											</ChildrenList>
 											<ObjectLists/>
 											<Playlist>
 												<ItemRef Name="Left Foot" ID="{249B0103-DBB0-4CB2-BA01-15A7E94481FB}"/>
-												<ItemRef Name="Right Foot" ID="{E70EB413-0FF5-4740-BAA9-1AD7E431F4E6}"/>
+												<ItemRef Name="Right Foot" ID="{E93D580D-DEFA-4670-B82E-133511B78990}"/>
 											</Playlist>
 										</RandomSequenceContainer>
 									</ChildrenList>
@@ -6265,7 +6257,7 @@
 												<ItemRef Name="sfx_footstep_metal" ID="{17C639DE-FD88-4C4F-8FCE-C9303B1A0B5B}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="sfx_footstep_glass" ID="{39A691DE-9E0B-49F3-AC45-10C923853811}"/>
+												<ItemRef Name="sfx_footstep_glass_tone" ID="{39A691DE-9E0B-49F3-AC45-10C923853811}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="sfx_footstep_gravel" ID="{EDEED9F0-3D86-46AB-939A-0545F42F4A1F}"/>
@@ -6313,7 +6305,8 @@
 											<Grouping>
 												<SwitchRef Name="Glass" ID="{6076D9FF-D4F2-4936-AD82-036303957D93}"/>
 												<ItemList>
-													<ItemRef Name="sfx_footstep_glass" ID="{39A691DE-9E0B-49F3-AC45-10C923853811}"/>
+													<ItemRef Name="sfx_footstep_glass_tone" ID="{39A691DE-9E0B-49F3-AC45-10C923853811}"/>
+													<ItemRef Name="sfx_footstep_metal" ID="{17C639DE-FD88-4C4F-8FCE-C9303B1A0B5B}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
