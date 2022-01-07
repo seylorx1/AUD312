@@ -5346,15 +5346,76 @@
 												<ActiveSource Name="sfx_footstep_jump_grass" ID="{B4D3A6B3-9218-4512-8E17-BE70B633C0A8}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="sfx_footstep_jump_metal" ID="{94B70D17-B14C-4DDF-946D-FA1EBFAA896C}" ShortID="923431200">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_jump_metal" ID="{596814DD-E5DA-4D4B-A438-2614E1F52427}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_jump_metal.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="559252460"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_jump_metal" ID="{596814DD-E5DA-4D4B-A438-2614E1F52427}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_jump_glass" ID="{27F1F393-00F8-4A50-9196-1A6623B92AEE}" ShortID="683437265">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_jump_glass" ID="{6C267519-2960-4DC7-9325-94E2F7FD8E86}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass JumpImpact Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_jump_glass.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="689048487"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_jump_glass" ID="{6C267519-2960-4DC7-9325-94E2F7FD8E86}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
+												<ItemRef Name="sfx_footstep_jump_metal" ID="{94B70D17-B14C-4DDF-946D-FA1EBFAA896C}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
 												<ItemRef Name="sfx_footstep_jump_concrete" ID="{C49AF26B-BB25-4B8E-83EB-288547529926}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="sfx_footstep_jump_grass" ID="{EF8DB27F-3C44-4EA0-92AE-C7665BD01289}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_footstep_jump_glass" ID="{27F1F393-00F8-4A50-9196-1A6623B92AEE}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="sfx_footstep_jump_gravel" ID="{66F633DD-6725-4F70-BB0C-F94661467CB6}"/>
@@ -5368,6 +5429,12 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
+												<SwitchRef Name="Metal" ID="{DAC7E030-D095-4C82-90E9-955164EC2CA0}"/>
+												<ItemList>
+													<ItemRef Name="sfx_footstep_jump_metal" ID="{94B70D17-B14C-4DDF-946D-FA1EBFAA896C}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
 												<SwitchRef Name="Grass" ID="{05C16097-8E3C-4946-A103-D61957EBA3B4}"/>
 												<ItemList>
 													<ItemRef Name="sfx_footstep_jump_grass" ID="{EF8DB27F-3C44-4EA0-92AE-C7665BD01289}"/>
@@ -5377,6 +5444,12 @@
 												<SwitchRef Name="Gravel" ID="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}"/>
 												<ItemList>
 													<ItemRef Name="sfx_footstep_jump_gravel" ID="{66F633DD-6725-4F70-BB0C-F94661467CB6}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Glass" ID="{6076D9FF-D4F2-4936-AD82-036303957D93}"/>
+												<ItemList>
+													<ItemRef Name="sfx_footstep_jump_glass" ID="{27F1F393-00F8-4A50-9196-1A6623B92AEE}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
@@ -5493,6 +5566,61 @@
 												<ActiveSource Name="sfx_footstep_impact_grass" ID="{41821B16-D168-48E8-9DE4-66768EE54177}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="sfx_footstep_impact_metal" ID="{CF2067D6-7570-43E9-A820-DA1CB6F1A744}" ShortID="655539413">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_impact_metal" ID="{F3EECFFA-6665-4CA0-BA48-DB7A2CC429E0}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Metal\Metal Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_impact_metal.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="738990231"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_impact_metal" ID="{F3EECFFA-6665-4CA0-BA48-DB7A2CC429E0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footstep_impact_glass" ID="{1BE029D8-5CCE-4B41-894A-A912EDBB7D92}" ShortID="766302111">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footstep_impact_glass" ID="{A5A44ACE-1786-4D93-84B5-91CF9DA17E0A}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Footsteps\Glass\Glass JumpImpact Footsteps.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_footstep_impact_glass.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="623682731"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footstep_impact_glass" ID="{A5A44ACE-1786-4D93-84B5-91CF9DA17E0A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
 									<GroupingInfo>
@@ -5506,12 +5634,24 @@
 											<GroupingBehavior>
 												<ItemRef Name="sfx_footstep_impact_gravel" ID="{4EFF549B-C638-4132-AF60-F7F58A8179FD}"/>
 											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_footstep_impact_metal" ID="{CF2067D6-7570-43E9-A820-DA1CB6F1A744}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_footstep_impact_glass" ID="{1BE029D8-5CCE-4B41-894A-A912EDBB7D92}"/>
+											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
 												<SwitchRef Name="Concrete" ID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}"/>
 												<ItemList>
 													<ItemRef Name="sfx_footstep_impact_concrete" ID="{11FA7942-3929-46F0-ABF6-C7A6E6D84BA6}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Metal" ID="{DAC7E030-D095-4C82-90E9-955164EC2CA0}"/>
+												<ItemList>
+													<ItemRef Name="sfx_footstep_impact_metal" ID="{CF2067D6-7570-43E9-A820-DA1CB6F1A744}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
@@ -5524,6 +5664,12 @@
 												<SwitchRef Name="Gravel" ID="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}"/>
 												<ItemList>
 													<ItemRef Name="sfx_footstep_impact_gravel" ID="{4EFF549B-C638-4132-AF60-F7F58A8179FD}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Glass" ID="{6076D9FF-D4F2-4936-AD82-036303957D93}"/>
+												<ItemList>
+													<ItemRef Name="sfx_footstep_impact_glass" ID="{1BE029D8-5CCE-4B41-894A-A912EDBB7D92}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>

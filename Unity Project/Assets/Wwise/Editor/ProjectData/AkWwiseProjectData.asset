@@ -1147,7 +1147,7 @@ MonoBehaviour:
         guid: 3e135b1d64d4194e96469a9f9d4b0eaa
       Path: Events\Default Work Unit\SFX\Footstep\FootstepJump
       maxAttenuation: 0
-      maxDuration: 0.210771
+      maxDuration: 0.289456
       minDuration: 0.085283
     - name: FootstepLand
       guid: 10358b59f9180447a1f7baf1196d9a2b
@@ -1170,7 +1170,7 @@ MonoBehaviour:
         guid: 10358b59f9180447a1f7baf1196d9a2b
       Path: Events\Default Work Unit\SFX\Footstep\FootstepLand
       maxAttenuation: 0
-      maxDuration: 0.422463
+      maxDuration: 0.586582
       minDuration: 0.091224
     - name: FootstepVampCooldown
       guid: ed9542bb7ce8a1429696e2f5be6b4859
