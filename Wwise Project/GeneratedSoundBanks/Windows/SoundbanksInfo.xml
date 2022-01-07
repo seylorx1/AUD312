@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1348286135">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1385714969">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -146,18 +146,6 @@
 							<ShortName>sfx_footstep_heel_cloth_02.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_cloth_02_10C4C929.wem</Path>
 						</File>
-						<File Id="106863624" Language="SFX">
-							<ShortName>sfx_footstep_toe_concrete_15.wav</ShortName>
-							<Path>SFX\sfx_footstep_toe_concrete_15_10C4C929.wem</Path>
-						</File>
-						<File Id="134429121" Language="SFX">
-							<ShortName>sfx_footstep_heel_concrete_14.wav</ShortName>
-							<Path>SFX\sfx_footstep_heel_concrete_14_10C4C929.wem</Path>
-						</File>
-						<File Id="149940528" Language="SFX">
-							<ShortName>sfx_footstep_heel_concrete_13.wav</ShortName>
-							<Path>SFX\sfx_footstep_heel_concrete_13_10C4C929.wem</Path>
-						</File>
 						<File Id="152547260" Language="SFX">
 							<ShortName>sfx_footstep_toe_grass_03.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_grass_03_10C4C929.wem</Path>
@@ -177,10 +165,6 @@
 						<File Id="229562338" Language="SFX">
 							<ShortName>sfx_footstep_toe_wood_02.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_wood_02_10C4C929.wem</Path>
-						</File>
-						<File Id="231539839" Language="SFX">
-							<ShortName>sfx_footstep_toe_concrete_13.wav</ShortName>
-							<Path>SFX\sfx_footstep_toe_concrete_13_10C4C929.wem</Path>
 						</File>
 						<File Id="232315487" Language="SFX">
 							<ShortName>sfx_footstep_heel_wood_01.wav</ShortName>
@@ -202,10 +186,6 @@
 							<ShortName>sfx_footstep_heel_metal_01.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_metal_01_10C4C929.wem</Path>
 						</File>
-						<File Id="298171059" Language="SFX">
-							<ShortName>sfx_footstep_toe_concrete_10.wav</ShortName>
-							<Path>SFX\sfx_footstep_toe_concrete_10_10C4C929.wem</Path>
-						</File>
 						<File Id="307567616" Language="SFX">
 							<ShortName>sfx_footstep_heel_grass_03.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_grass_03_10C4C929.wem</Path>
@@ -213,18 +193,6 @@
 						<File Id="327118990" Language="SFX">
 							<ShortName>sfx_footstep_heel_wood_04.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_wood_04_10C4C929.wem</Path>
-						</File>
-						<File Id="360199625" Language="SFX">
-							<ShortName>sfx_footstep_toe_concrete_08.wav</ShortName>
-							<Path>SFX\sfx_footstep_toe_concrete_08_10C4C929.wem</Path>
-						</File>
-						<File Id="373794033" Language="SFX">
-							<ShortName>sfx_footstep_toe_concrete_12.wav</ShortName>
-							<Path>SFX\sfx_footstep_toe_concrete_12_10C4C929.wem</Path>
-						</File>
-						<File Id="382745418" Language="SFX">
-							<ShortName>sfx_footstep_heel_concrete_12.wav</ShortName>
-							<Path>SFX\sfx_footstep_heel_concrete_12_10C4C929.wem</Path>
 						</File>
 						<File Id="382858474" Language="SFX">
 							<ShortName>sfx_footstep_toe_wood_01.wav</ShortName>
@@ -274,18 +242,6 @@
 							<ShortName>sfx_footstep_toe_wood_03.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_wood_03_10C4C929.wem</Path>
 						</File>
-						<File Id="541544103" Language="SFX">
-							<ShortName>sfx_footstep_heel_concrete_08.wav</ShortName>
-							<Path>SFX\sfx_footstep_heel_concrete_08_10C4C929.wem</Path>
-						</File>
-						<File Id="542275199" Language="SFX">
-							<ShortName>sfx_footstep_toe_concrete_06.wav</ShortName>
-							<Path>SFX\sfx_footstep_toe_concrete_06_10C4C929.wem</Path>
-						</File>
-						<File Id="560928270" Language="SFX">
-							<ShortName>sfx_footstep_toe_concrete_05.wav</ShortName>
-							<Path>SFX\sfx_footstep_toe_concrete_05_10C4C929.wem</Path>
-						</File>
 						<File Id="562976292" Language="SFX">
 							<ShortName>sfx_footstep_heel_gravel_04.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_gravel_04_10C4C929.wem</Path>
@@ -310,14 +266,6 @@
 							<ShortName>sfx_footstep_toe_cloth_03.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_cloth_03_10C4C929.wem</Path>
 						</File>
-						<File Id="600831764" Language="SFX">
-							<ShortName>sfx_footstep_heel_concrete_09.wav</ShortName>
-							<Path>SFX\sfx_footstep_heel_concrete_09_10C4C929.wem</Path>
-						</File>
-						<File Id="624331642" Language="SFX">
-							<ShortName>sfx_footstep_heel_concrete_07.wav</ShortName>
-							<Path>SFX\sfx_footstep_heel_concrete_07_10C4C929.wem</Path>
-						</File>
 						<File Id="633135558" Language="SFX">
 							<ShortName>sfx_footstep_heel_wood_02.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_wood_02_10C4C929.wem</Path>
@@ -325,10 +273,6 @@
 						<File Id="647506356" Language="SFX">
 							<ShortName>sfx_footstep_heel_metal_04.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_metal_04_10C4C929.wem</Path>
-						</File>
-						<File Id="684196659" Language="SFX">
-							<ShortName>sfx_footstep_toe_concrete_11.wav</ShortName>
-							<Path>SFX\sfx_footstep_toe_concrete_11_10C4C929.wem</Path>
 						</File>
 						<File Id="690254642" Language="SFX">
 							<ShortName>sfx_footstep_heel_gravel_03.wav</ShortName>
@@ -342,17 +286,9 @@
 							<ShortName>sfx_footstep_toe_metal_02.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_metal_02_10C4C929.wem</Path>
 						</File>
-						<File Id="743390839" Language="SFX">
-							<ShortName>sfx_footstep_toe_concrete_16.wav</ShortName>
-							<Path>SFX\sfx_footstep_toe_concrete_16_10C4C929.wem</Path>
-						</File>
 						<File Id="755488523" Language="SFX">
 							<ShortName>sfx_footstep_toe_gravel_04.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_gravel_04_10C4C929.wem</Path>
-						</File>
-						<File Id="766442040" Language="SFX">
-							<ShortName>sfx_footstep_toe_concrete_07.wav</ShortName>
-							<Path>SFX\sfx_footstep_toe_concrete_07_10C4C929.wem</Path>
 						</File>
 						<File Id="780591092" Language="SFX">
 							<ShortName>sfx_footstep_toe_gravel_03.wav</ShortName>
@@ -362,21 +298,9 @@
 							<ShortName>sfx_footstep_heel_grass_04.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_grass_04_10C4C929.wem</Path>
 						</File>
-						<File Id="813972385" Language="SFX">
-							<ShortName>sfx_footstep_heel_concrete_10.wav</ShortName>
-							<Path>SFX\sfx_footstep_heel_concrete_10_10C4C929.wem</Path>
-						</File>
 						<File Id="908824202" Language="SFX">
 							<ShortName>sfx_footstep_heel_cloth_01.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_cloth_01_10C4C929.wem</Path>
-						</File>
-						<File Id="913829077" Language="SFX">
-							<ShortName>sfx_footstep_heel_concrete_11.wav</ShortName>
-							<Path>SFX\sfx_footstep_heel_concrete_11_10C4C929.wem</Path>
-						</File>
-						<File Id="919058543" Language="SFX">
-							<ShortName>sfx_footstep_heel_concrete_06.wav</ShortName>
-							<Path>SFX\sfx_footstep_heel_concrete_06_10C4C929.wem</Path>
 						</File>
 						<File Id="921881356" Language="SFX">
 							<ShortName>sfx_footstep_toe_glass_04.wav</ShortName>
@@ -394,14 +318,6 @@
 							<ShortName>sfx_footstep_heel_gravel_01.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_gravel_01_10C4C929.wem</Path>
 						</File>
-						<File Id="946909325" Language="SFX">
-							<ShortName>sfx_footstep_toe_concrete_14.wav</ShortName>
-							<Path>SFX\sfx_footstep_toe_concrete_14_10C4C929.wem</Path>
-						</File>
-						<File Id="952155238" Language="SFX">
-							<ShortName>sfx_footstep_toe_concrete_09.wav</ShortName>
-							<Path>SFX\sfx_footstep_toe_concrete_09_10C4C929.wem</Path>
-						</File>
 						<File Id="974338589" Language="SFX">
 							<ShortName>sfx_footstep_toe_grass_02.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_grass_02_10C4C929.wem</Path>
@@ -418,10 +334,6 @@
 							<ShortName>sfx_footstep_heel_metal_03.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_metal_03_10C4C929.wem</Path>
 						</File>
-						<File Id="1068978669" Language="SFX">
-							<ShortName>sfx_footstep_heel_concrete_05.wav</ShortName>
-							<Path>SFX\sfx_footstep_heel_concrete_05_10C4C929.wem</Path>
-						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{F6050909-D3FC-4A0B-B34B-CED6BB085408}</DefaultSwitchValue>
 					<SwitchContainers>
@@ -432,31 +344,9 @@
 								<File Id="71636352"/>
 								<File Id="87916936"/>
 								<File Id="95916828"/>
-								<File Id="106863624"/>
-								<File Id="134429121"/>
-								<File Id="149940528"/>
-								<File Id="231539839"/>
-								<File Id="298171059"/>
-								<File Id="360199625"/>
-								<File Id="373794033"/>
-								<File Id="382745418"/>
-								<File Id="541544103"/>
-								<File Id="542275199"/>
-								<File Id="560928270"/>
 								<File Id="564781057"/>
-								<File Id="600831764"/>
-								<File Id="624331642"/>
-								<File Id="684196659"/>
 								<File Id="728214015"/>
-								<File Id="743390839"/>
-								<File Id="766442040"/>
-								<File Id="813972385"/>
-								<File Id="913829077"/>
-								<File Id="919058543"/>
-								<File Id="946909325"/>
-								<File Id="952155238"/>
 								<File Id="1008776830"/>
-								<File Id="1068978669"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{05C16097-8E3C-4946-A103-D61957EBA3B4}">

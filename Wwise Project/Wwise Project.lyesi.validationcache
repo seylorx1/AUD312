@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="103">
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Wwise Project.wproj" DateLow="1634746562" DateHigh="0"/>
-	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Wwise Project.lyesi.wsettings" DateLow="1641438104" DateHigh="0"/>
+	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Wwise Project.lyesi.wsettings" DateLow="1641525984" DateHigh="0"/>
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Virtual Acoustics\Factory Acoustic Textures.wwu" DateLow="1634548296" DateHigh="0"/>
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Virtual Acoustics\Default Work Unit.wwu" DateLow="1634745302" DateHigh="0"/>
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Triggers\Default Work Unit.wwu" DateLow="1636938770" DateHigh="0"/>
@@ -45,5 +45,5 @@
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1637142907" DateHigh="0"/>
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1637142907" DateHigh="0"/>
 	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Actor-Mixer Hierarchy\Factory Motion.wwu" DateLow="1637142907" DateHigh="0"/>
-	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1641524365" DateHigh="0"/>
+	<ValidationCacheItem File="X:\Coursework\AUD312\Assignment\Wwise Project\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1641571195" DateHigh="0"/>
 </ValidationCache>
