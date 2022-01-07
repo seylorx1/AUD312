@@ -736,7 +736,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585600347240964977
+    m_lastTime: -8585600138009110744
     List:
     - name: Beats
       guid: d8adb70e52bf2740bea820418c48e598
@@ -1490,9 +1490,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: SFXStart
+    - name: SFXInit_Global
       guid: 4ff9c2d9a2bec9458c5611976256a7fa
-      id: 1661560854
+      id: 1799863314
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1503,10 +1503,10 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: 2c345c2fb2d6a7428f261eb6e1c6970a
-      - ElementName: SFXStart
+      - ElementName: SFXInit_Global
         ObjectType: 3
         guid: 4ff9c2d9a2bec9458c5611976256a7fa
-      Path: Events\Default Work Unit\SFX\SFXStart
+      Path: Events\Default Work Unit\SFX\SFXInit_Global
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2853,8 +2853,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6603d6ba8e055f4caa446aab326e99e9
     GuidInternal: 
-    m_lastTime: -8585600861073703334
+    m_lastTime: -8585600171269193798
     List:
+    - name: FootstepImpact
+      guid: 6d6593fa9f32344fa004f633ae076769
+      id: 3037162653
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6603d6ba8e055f4caa446aab326e99e9
+      - ElementName: FootstepImpact
+        ObjectType: 11
+        guid: 6d6593fa9f32344fa004f633ae076769
+      Path: Switches\Default Work Unit\FootstepImpact
+      values:
+      - name: Disabled
+        guid: 98c4d97d94a4234aa451a72ada2dc246
+        id: 3248502869
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: FootstepImpact
+          ObjectType: 11
+          guid: 6d6593fa9f32344fa004f633ae076769
+        - ElementName: Disabled
+          ObjectType: 10
+          guid: 98c4d97d94a4234aa451a72ada2dc246
+      - name: Enabled
+        guid: 77770030ab4ad744833fb6d221baf3e6
+        id: 4174102348
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: FootstepImpact
+          ObjectType: 11
+          guid: 6d6593fa9f32344fa004f633ae076769
+        - ElementName: Enabled
+          ObjectType: 10
+          guid: 77770030ab4ad744833fb6d221baf3e6
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: FootstepType
       guid: 3af574822d433c4bb3b27b0dcfa58a47
       id: 1458816175
@@ -3078,7 +3128,7 @@ MonoBehaviour:
         guid: 38b4dd40b2e94b4c9c9bce1ac9f941c2
       Path: Triggers\Default Work Unit\BoxPickupStinger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000060000000700000008000000090000000b0000000d0000000e0000000f00000010000000110000001200000014000000150000001600000017000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e00000030000000310000003200000036000000370000003a000000420000004600000049000000510000005f000000730000008f000000b60000002c0400002f040000320400003504000038040000e9040000
+  ExpandedWaapiItemIds: 0100000002000000060000000700000008000000090000000b0000000c0000000d0000000e0000000f00000010000000110000001200000014000000150000001600000017000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e00000030000000310000003200000036000000370000003a000000420000004600000049000000510000005f000000730000008f000000b60000002c0400002f040000320400003504000038040000e904000012150000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

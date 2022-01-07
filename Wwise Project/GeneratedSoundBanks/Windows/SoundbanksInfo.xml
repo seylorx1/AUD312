@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1002603340">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3306844327">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -463,32 +463,40 @@
 							<Path>SFX\sfx_footstep_jump_gravel_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{F6050909-D3FC-4A0B-B34B-CED6BB085408}</DefaultSwitchValue>
+					<DefaultSwitchValue>{30007777-4AAB-44D7-833F-B6D221BAF3E6}</DefaultSwitchValue>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{F6050909-D3FC-4A0B-B34B-CED6BB085408}">
+						<SwitchContainer SwitchValue="{30007777-4AAB-44D7-833F-B6D221BAF3E6}">
+							<DefaultSwitchValue>{F6050909-D3FC-4A0B-B34B-CED6BB085408}</DefaultSwitchValue>
 							<Media>
-								<File Id="510363670"/>
+								<File Id="353138741"/>
 							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}">
-							<Media>
-								<File Id="1015709717"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{05C16097-8E3C-4946-A103-D61957EBA3B4}">
-							<Media>
-								<File Id="52852936"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{DAC7E030-D095-4C82-90E9-955164EC2CA0}">
-							<Media>
-								<File Id="559252460"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{6076D9FF-D4F2-4936-AD82-036303957D93}">
-							<Media>
-								<File Id="689048487"/>
-							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{F6050909-D3FC-4A0B-B34B-CED6BB085408}">
+									<Media>
+										<File Id="510363670"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}">
+									<Media>
+										<File Id="1015709717"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{05C16097-8E3C-4946-A103-D61957EBA3B4}">
+									<Media>
+										<File Id="52852936"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{DAC7E030-D095-4C82-90E9-955164EC2CA0}">
+									<Media>
+										<File Id="559252460"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{6076D9FF-D4F2-4936-AD82-036303957D93}">
+									<Media>
+										<File Id="689048487"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -515,32 +523,40 @@
 							<Path>SFX\sfx_footstep_impact_concrete_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{F6050909-D3FC-4A0B-B34B-CED6BB085408}</DefaultSwitchValue>
+					<DefaultSwitchValue>{30007777-4AAB-44D7-833F-B6D221BAF3E6}</DefaultSwitchValue>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{F6050909-D3FC-4A0B-B34B-CED6BB085408}">
+						<SwitchContainer SwitchValue="{30007777-4AAB-44D7-833F-B6D221BAF3E6}">
+							<DefaultSwitchValue>{F6050909-D3FC-4A0B-B34B-CED6BB085408}</DefaultSwitchValue>
 							<Media>
-								<File Id="843464880"/>
+								<File Id="422704203"/>
 							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}">
-							<Media>
-								<File Id="323522779"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{05C16097-8E3C-4946-A103-D61957EBA3B4}">
-							<Media>
-								<File Id="261681939"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{DAC7E030-D095-4C82-90E9-955164EC2CA0}">
-							<Media>
-								<File Id="738990231"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{6076D9FF-D4F2-4936-AD82-036303957D93}">
-							<Media>
-								<File Id="623682731"/>
-							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{F6050909-D3FC-4A0B-B34B-CED6BB085408}">
+									<Media>
+										<File Id="843464880"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{0DA1C6E4-91C6-467A-A8DC-8C1509316FB7}">
+									<Media>
+										<File Id="323522779"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{05C16097-8E3C-4946-A103-D61957EBA3B4}">
+									<Media>
+										<File Id="261681939"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{DAC7E030-D095-4C82-90E9-955164EC2CA0}">
+									<Media>
+										<File Id="738990231"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{6076D9FF-D4F2-4936-AD82-036303957D93}">
+									<Media>
+										<File Id="623682731"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -632,11 +648,14 @@
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="3070671186" Name="EnterOutdoors" ObjectPath="\Events\Default Work Unit\Level\Room\EnterOutdoors"/>
 					</ActionPostEvent>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="3248502869" Name="Disabled" ObjectPath="\Switches\Default Work Unit\FootstepImpact\Disabled"/>
+					</ActionSetSwitch>
 				</Event>
 				<Event Id="3372421815" Name="LevelStart" ObjectPath="\Events\Default Work Unit\Level\Beats\LevelStart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="1122283870" Name="MusicStart" ObjectPath="\Events\Default Work Unit\Music\MusicStart"/>
-						<ActionPostEventEntry Id="1661560854" Name="SFXStart" ObjectPath="\Events\Default Work Unit\SFX\SFXStart"/>
+						<ActionPostEventEntry Id="1799863314" Name="SFXInit_Global" ObjectPath="\Events\Default Work Unit\SFX\SFXInit_Global"/>
 					</ActionPostEvent>
 				</Event>
 				<Event Id="1122283870" Name="MusicStart" ObjectPath="\Events\Default Work Unit\Music\MusicStart" DurationType="Infinite">
@@ -771,7 +790,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1661560854" Name="SFXStart" ObjectPath="\Events\Default Work Unit\SFX\SFXStart" DurationType="Infinite">
+				<Event Id="1799863314" Name="SFXInit_Global" ObjectPath="\Events\Default Work Unit\SFX\SFXInit_Global" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="200076591" Language="SFX">
 							<ShortName>sfx_pinknoise.wav</ShortName>
@@ -1011,6 +1030,15 @@
 						<Switch Id="4174102348" Name="Enabled" ObjectPath="\Switches\Default Work Unit\VampFootstep\Enabled" GUID="{556C6E51-2F20-435E-9A52-BDDC2426B7A9}"/>
 						<Switch Id="3248502869" Name="Disabled" ObjectPath="\Switches\Default Work Unit\VampFootstep\Disabled" GUID="{BEAF7BB4-7668-4521-9DD2-723E4A509356}"/>
 					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3037162653" Name="FootstepImpact" ObjectPath="\Switches\Default Work Unit\FootstepImpact" GUID="{FA93656D-329F-4F34-A004-F633AE076769}">
+					<Switches>
+						<Switch Id="4174102348" Name="Enabled" ObjectPath="\Switches\Default Work Unit\FootstepImpact\Enabled" GUID="{30007777-4AAB-44D7-833F-B6D221BAF3E6}"/>
+						<Switch Id="3248502869" Name="Disabled" ObjectPath="\Switches\Default Work Unit\FootstepImpact\Disabled" GUID="{7DD9C498-A494-4A23-A451-A72ADA2DC246}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3248502869" Name="Disabled" ObjectPath="\Switches\Default Work Unit\FootstepImpact\Disabled" GUID="{7DD9C498-A494-4A23-A451-A72ADA2DC246}">
+					<Switches/>
 				</SwitchGroup>
 			</SwitchGroups>
 			<Triggers>

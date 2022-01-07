@@ -57,6 +57,16 @@ As far as this mapping is concerned, the player is walking right up until VampCo
 						<Switch Name="Glass" ID="{6076D9FF-D4F2-4936-AD82-036303957D93}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="FootstepImpact" ID="{FA93656D-329F-4F34-A004-F633AE076769}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="26"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Enabled" ID="{30007777-4AAB-44D7-833F-B6D221BAF3E6}"/>
+						<Switch Name="Disabled" ID="{7DD9C498-A494-4A23-A451-A72ADA2DC246}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

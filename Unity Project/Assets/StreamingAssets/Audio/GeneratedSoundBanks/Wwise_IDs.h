@@ -37,7 +37,7 @@ namespace AK
         static const AkUniqueID LEVELBIGROOMREVEAL = 3672941687U;
         static const AkUniqueID LEVELSTART = 3372421815U;
         static const AkUniqueID MUSICSTART = 1122283870U;
-        static const AkUniqueID SFXSTART = 1661560854U;
+        static const AkUniqueID SFXINIT_GLOBAL = 1799863314U;
         static const AkUniqueID STEPOFFBED = 157353963U;
         static const AkUniqueID STEPONBED = 135348085U;
         static const AkUniqueID TREEAMBIENCEPLAY = 1973723167U;
@@ -153,6 +153,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace FOOTSTEPIMPACT
+        {
+            static const AkUniqueID GROUP = 3037162653U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DISABLED = 3248502869U;
+                static const AkUniqueID ENABLED = 4174102348U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEPIMPACT
+
         namespace FOOTSTEPTYPE
         {
             static const AkUniqueID GROUP = 1458816175U;

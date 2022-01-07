@@ -435,7 +435,7 @@ This event does the following:
 										<Action Name="" ID="{F937EE1A-5E75-40D8-8E62-8EBF394CB492}" ShortID="456081833">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="FootstepJump" ID="{2271B4BC-F52F-44EA-8952-540AFED8A49E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="FootstepJump" ID="{B5DD9896-3264-4039-B4BC-23063C4B9C42}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -474,7 +474,7 @@ This event does the following:
 										<Action Name="" ID="{9D5D9808-490E-43F2-A05D-5C9D098266CF}" ShortID="253346468">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="FootstepLand" ID="{D56BE593-0BED-4869-B5C2-5C9B0FC3D93D}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="FootstepLand" ID="{FA36827E-9C70-4D86-B38A-E12488584390}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -705,33 +705,6 @@ This event does the following:
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Event Name="SFXStart" ID="{D9C2F94F-BEA2-45C9-8C56-11976256A7FA}">
-							<Comment>Initialises the SFX. (cont.)
-
-This event does the following:
-- Enables the WorldKeysEnabled state (This is done to prevent the WorldKeys from triggering when the player first loads into the level.)
-- Starts the sfx_wind sound effect.</Comment>
-							<ChildrenList>
-								<Action Name="" ID="{22ABD07F-17D0-4FED-8E03-4C583FC25E1E}" ShortID="606999547">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-										<Property Name="Delay" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{B923411A-EF5B-45E3-AF5A-11B2C77035D3}" ShortID="921480094">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_wind" ID="{9BFE3B8D-E870-431C-8FE9-3FE8ECC740C1}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="TreeAmbiencePlay" ID="{82A951BE-23FE-4A16-AE15-A44BCCBE2FAE}">
 							<ChildrenList>
 								<Action Name="" ID="{56180252-AF83-44CA-A54A-C13260026598}" ShortID="360791519">
@@ -776,6 +749,33 @@ This event does the following:
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="SFXInit_Global" ID="{D9C2F94F-BEA2-45C9-8C56-11976256A7FA}">
+							<Comment>Initialises the SFX. (cont.)
+
+This event does the following:
+- Enables the WorldKeysEnabled state (This is done to prevent the WorldKeys from triggering when the player first loads into the level.)
+- Starts the sfx_wind sound effect.</Comment>
+							<ChildrenList>
+								<Action Name="" ID="{22ABD07F-17D0-4FED-8E03-4C583FC25E1E}" ShortID="606999547">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B923411A-EF5B-45E3-AF5A-11B2C77035D3}" ShortID="921480094">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_wind" ID="{9BFE3B8D-E870-431C-8FE9-3FE8ECC740C1}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Level" ID="{222EE93F-65BF-4823-BBDF-3FFFF96EB801}" ShortID="424487160">
@@ -921,13 +921,16 @@ This event does the following:
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="SFXStart" ID="{D9C2F94F-BEA2-45C9-8C56-11976256A7FA}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}"/>
+													<ObjectRef Name="SFXInit_Global" ID="{D9C2F94F-BEA2-45C9-8C56-11976256A7FA}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="LevelBigRoomReveal" ID="{7AB5329E-7008-4D92-9F76-B737E0F051C2}">
+									<Comment>Called when the "BigRoomReveal" button is pressed. (cont.)
+
+- Calls 'EnterOutdoors' event.</Comment>
 									<ChildrenList>
 										<Action Name="" ID="{B710C2F3-7D42-45AC-9BE7-66F12DEE1BC4}" ShortID="73855956">
 											<PropertyList>
