@@ -159,6 +159,7 @@ namespace AK
             {
                 static const AkUniqueID BED = 446279778U;
                 static const AkUniqueID CONCRETE = 841620460U;
+                static const AkUniqueID GLASS = 2449969375U;
                 static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID GRAVEL = 2185786256U;
                 static const AkUniqueID METAL = 2473969246U;

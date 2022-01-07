@@ -2807,7 +2807,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6603d6ba8e055f4caa446aab326e99e9
     GuidInternal: 
-    m_lastTime: -8585601363829858174
+    m_lastTime: -8585600861073703334
     List:
     - name: FootstepType
       guid: 3af574822d433c4bb3b27b0dcfa58a47
@@ -2856,6 +2856,22 @@ MonoBehaviour:
         - ElementName: Concrete
           ObjectType: 10
           guid: 090905f6fcd30b4ab34bced6bb085408
+      - name: Glass
+        guid: ffd97660f2d43649ad82036303957d93
+        id: 2449969375
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: FootstepType
+          ObjectType: 11
+          guid: 3af574822d433c4bb3b27b0dcfa58a47
+        - ElementName: Glass
+          ObjectType: 10
+          guid: ffd97660f2d43649ad82036303957d93
       - name: Grass
         guid: 9760c1053c8e4649a103d61957eba3b4
         id: 4248645337

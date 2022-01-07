@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3391850419">
+		<SoundBank Id="3161908922" Language="SFX" Hash="189229629">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -118,6 +118,10 @@
 							<ShortName>sfx_footstep_heel_concrete_01.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_01_10C4C929.wem</Path>
 						</File>
+						<File Id="56514661" Language="SFX">
+							<ShortName>sfx_footstep_heel_glass_04.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_glass_04_10C4C929.wem</Path>
+						</File>
 						<File Id="71636352" Language="SFX">
 							<ShortName>sfx_footstep_heel_concrete_03.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_03_10C4C929.wem</Path>
@@ -125,6 +129,10 @@
 						<File Id="75070834" Language="SFX">
 							<ShortName>sfx_footstep_heel_gravel_02.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_gravel_02_10C4C929.wem</Path>
+						</File>
+						<File Id="86169055" Language="SFX">
+							<ShortName>sfx_footstep_toe_glass_01.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_glass_01_10C4C929.wem</Path>
 						</File>
 						<File Id="87916936" Language="SFX">
 							<ShortName>sfx_footstep_toe_concrete_01.wav</ShortName>
@@ -181,6 +189,14 @@
 						<File Id="244810268" Language="SFX">
 							<ShortName>sfx_creak_01.wav</ShortName>
 							<Path>SFX\sfx_creak_01_10C4C929.wem</Path>
+						</File>
+						<File Id="248964196" Language="SFX">
+							<ShortName>sfx_footstep_heel_glass_02.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_glass_02_10C4C929.wem</Path>
+						</File>
+						<File Id="259592201" Language="SFX">
+							<ShortName>sfx_footstep_toe_glass_03.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_glass_03_10C4C929.wem</Path>
 						</File>
 						<File Id="290479511" Language="SFX">
 							<ShortName>sfx_footstep_heel_metal_01.wav</ShortName>
@@ -245,6 +261,14 @@
 						<File Id="472897795" Language="SFX">
 							<ShortName>sfx_footstep_toe_gravel_01.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_gravel_01_10C4C929.wem</Path>
+						</File>
+						<File Id="489199625" Language="SFX">
+							<ShortName>sfx_footstep_heel_glass_01.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_glass_01_10C4C929.wem</Path>
+						</File>
+						<File Id="499273913" Language="SFX">
+							<ShortName>sfx_footstep_heel_glass_03.wav</ShortName>
+							<Path>SFX\sfx_footstep_heel_glass_03_10C4C929.wem</Path>
 						</File>
 						<File Id="518684506" Language="SFX">
 							<ShortName>sfx_footstep_toe_wood_03.wav</ShortName>
@@ -354,9 +378,17 @@
 							<ShortName>sfx_footstep_heel_concrete_06.wav</ShortName>
 							<Path>SFX\sfx_footstep_heel_concrete_06_10C4C929.wem</Path>
 						</File>
+						<File Id="921881356" Language="SFX">
+							<ShortName>sfx_footstep_toe_glass_04.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_glass_04_10C4C929.wem</Path>
+						</File>
 						<File Id="924280309" Language="SFX">
 							<ShortName>sfx_footstep_toe_grass_04.wav</ShortName>
 							<Path>SFX\sfx_footstep_toe_grass_04_10C4C929.wem</Path>
+						</File>
+						<File Id="924549011" Language="SFX">
+							<ShortName>sfx_footstep_toe_glass_02.wav</ShortName>
+							<Path>SFX\sfx_footstep_toe_glass_02_10C4C929.wem</Path>
 						</File>
 						<File Id="943315901" Language="SFX">
 							<ShortName>sfx_footstep_heel_gravel_01.wav</ShortName>
@@ -499,6 +531,18 @@
 								<File Id="647506356"/>
 								<File Id="740430124"/>
 								<File Id="1067817721"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{6076D9FF-D4F2-4936-AD82-036303957D93}">
+							<Media>
+								<File Id="56514661"/>
+								<File Id="86169055"/>
+								<File Id="248964196"/>
+								<File Id="259592201"/>
+								<File Id="489199625"/>
+								<File Id="499273913"/>
+								<File Id="921881356"/>
+								<File Id="924549011"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -965,6 +1009,7 @@
 						<Switch Id="446279778" Name="Bed" ObjectPath="\Switches\Default Work Unit\FootstepType\Bed" GUID="{C9ED3BA4-F979-4932-8E3B-C493E6E05FEA}"/>
 						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\FootstepType\Wood" GUID="{1338EB15-8A56-4726-ACE6-2940071E11BB}"/>
 						<Switch Id="2473969246" Name="Metal" ObjectPath="\Switches\Default Work Unit\FootstepType\Metal" GUID="{DAC7E030-D095-4C82-90E9-955164EC2CA0}"/>
+						<Switch Id="2449969375" Name="Glass" ObjectPath="\Switches\Default Work Unit\FootstepType\Glass" GUID="{6076D9FF-D4F2-4936-AD82-036303957D93}"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="1468846155" Name="VampFootstep" ObjectPath="\Switches\Default Work Unit\VampFootstep" GUID="{45A5B231-B4A0-422A-8F8A-9C8963BABA9F}">
