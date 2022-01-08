@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585600355743087256
+    m_lastTime: -8585599993573602129
     List:
     - name: Ambience
       guid: 4bf007b3e95ba347893be1c6d236bd46
@@ -315,13 +315,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
       - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 3a29cb5162b4b74dade541c8418c3894
       - ElementName: Ambience
         ObjectType: 4
         guid: 4bf007b3e95ba347893be1c6d236bd46
-      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Ambience
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Environment\Ambience
     - name: Base
       guid: f8400540ecc8c44394331a34a8a64f68
       id: 1291433366
@@ -391,10 +397,33 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
       - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
-      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus
+    - name: Environment
+      guid: 3a29cb5162b4b74dade541c8418c3894
+      id: 1229948536
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
+      - ElementName: Diegetic SFX Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 3a29cb5162b4b74dade541c8418c3894
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Environment
     - name: Footsteps
       guid: c13f11b0aaeda240a557fe73afab7937
       id: 2385628198
@@ -405,13 +434,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
       - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       - ElementName: Footsteps
         ObjectType: 2
         guid: c13f11b0aaeda240a557fe73afab7937
-      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Footsteps
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Footsteps
     - name: Harpoon
       guid: c90cbab9b22223439a36e007c7ce5a65
       id: 302949338
@@ -422,13 +454,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
       - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
       - ElementName: Harpoon
         ObjectType: 2
         guid: c90cbab9b22223439a36e007c7ce5a65
-      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Harpoon
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Harpoon
     - name: Harpoon Ambience Bus
       guid: 62cf7f29753cca498fa3d705b6c0848c
       id: 286173556
@@ -460,6 +495,9 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
       - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
@@ -469,7 +507,7 @@ MonoBehaviour:
       - ElementName: HarpoonAir
         ObjectType: 2
         guid: b5202d48d69f0e448eede17be5ccf386
-      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Harpoon\HarpoonAir
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Harpoon\HarpoonAir
     - name: Instruments
       guid: 600451862cb6874bbbc59562f60a3c21
       id: 559901361
@@ -535,6 +573,9 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
       - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
@@ -544,7 +585,7 @@ MonoBehaviour:
       - ElementName: Left Footstep
         ObjectType: 2
         guid: 91b72d5949b1ae40ae73f68624c18669
-      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Footsteps\Left
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Footsteps\Left
         Footstep
     - name: Motion Factory Bus
       guid: c6b9f92af16ee946b5f2e30c9e602c74
@@ -574,6 +615,46 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus
+    - name: Non-Diegetic SFX Bus
+      guid: b904a91ec97f0c4f8de251d780a55c4d
+      id: 391035146
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
+      - ElementName: Non-Diegetic SFX Bus
+        ObjectType: 2
+        guid: b904a91ec97f0c4f8de251d780a55c4d
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Non-Diegetic SFX Bus
+    - name: Platform
+      guid: 72984704427867499420866b43f93442
+      id: 4035573696
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
+      - ElementName: Diegetic SFX Bus
+        ObjectType: 2
+        guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 3a29cb5162b4b74dade541c8418c3894
+      - ElementName: Platform
+        ObjectType: 2
+        guid: 72984704427867499420866b43f93442
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Environment\Platform
     - name: Right Footstep
       guid: e2a043da67a1f8469ed647ff2e023210
       id: 854631381
@@ -584,6 +665,9 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
       - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
@@ -593,8 +677,22 @@ MonoBehaviour:
       - ElementName: Right Footstep
         ObjectType: 2
         guid: e2a043da67a1f8469ed647ff2e023210
-      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Footsteps\Right
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Footsteps\Right
         Footstep
+    - name: SFX
+      guid: 8e975426d403694b939b8ceb1b3f8c40
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX
     - name: Tree
       guid: bc2626dd7d22e94b99e5768ff6e2a126
       id: 3322072369
@@ -605,16 +703,22 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
       - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 3a29cb5162b4b74dade541c8418c3894
       - ElementName: Ambience
         ObjectType: 4
         guid: 4bf007b3e95ba347893be1c6d236bd46
       - ElementName: Tree
         ObjectType: 2
         guid: bc2626dd7d22e94b99e5768ff6e2a126
-      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Ambience\Tree
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Environment\Ambience\Tree
     - name: Tree Wind
       guid: c2ba53b896e72940b36b7ee4b920c5e2
       id: 2466686001
@@ -625,9 +729,15 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
       - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 3a29cb5162b4b74dade541c8418c3894
       - ElementName: Ambience
         ObjectType: 4
         guid: 4bf007b3e95ba347893be1c6d236bd46
@@ -637,7 +747,7 @@ MonoBehaviour:
       - ElementName: Tree Wind
         ObjectType: 2
         guid: c2ba53b896e72940b36b7ee4b920c5e2
-      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Ambience\Tree\Tree
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Environment\Ambience\Tree\Tree
         Wind
     - name: Vamp Bus
       guid: 3642d45a92ab3c49ba1479793c94f2c9
@@ -669,16 +779,22 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
       - ElementName: Diegetic SFX Bus
         ObjectType: 2
         guid: 300defa1ec929e44b8c16c3eeedc7a43
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 3a29cb5162b4b74dade541c8418c3894
       - ElementName: Ambience
         ObjectType: 4
         guid: 4bf007b3e95ba347893be1c6d236bd46
       - ElementName: Wind
         ObjectType: 2
         guid: 4505e1f36c4da84599c0a6bed624f17b
-      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\Ambience\Wind
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Environment\Ambience\Wind
     - name: WorldKeys
       guid: 10f5d4cef72269499f9954a15d3b71cd
       id: 1310325127
@@ -689,13 +805,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Diegetic SFX Bus
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 8e975426d403694b939b8ceb1b3f8c40
+      - ElementName: Non-Diegetic SFX Bus
         ObjectType: 2
-        guid: 300defa1ec929e44b8c16c3eeedc7a43
+        guid: b904a91ec97f0c4f8de251d780a55c4d
       - ElementName: WorldKeys
         ObjectType: 2
         guid: 10f5d4cef72269499f9954a15d3b71cd
-      Path: Master-Mixer Hierarchy\Default Work Unit\Diegetic SFX Bus\WorldKeys
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Non-Diegetic SFX Bus\WorldKeys
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -736,7 +855,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585600138009110744
+    m_lastTime: -8585600005041945011
     List:
     - name: Beats
       guid: d8adb70e52bf2740bea820418c48e598
@@ -1453,6 +1572,72 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Platform
+      guid: 4a69e406baeeb14c8de2a9043ed00745
+      id: 4035573696
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Platform
+        ObjectType: 4
+        guid: 4a69e406baeeb14c8de2a9043ed00745
+      Path: Events\Default Work Unit\SFX\Platform
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlatformStart
+      guid: 6eba59a6359d5149bba1d9099c23ccc2
+      id: 4276765652
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Platform
+        ObjectType: 4
+        guid: 4a69e406baeeb14c8de2a9043ed00745
+      - ElementName: PlatformStart
+        ObjectType: 3
+        guid: 6eba59a6359d5149bba1d9099c23ccc2
+      Path: Events\Default Work Unit\SFX\Platform\PlatformStart
+      maxAttenuation: 50
+      maxDuration: -1
+      minDuration: -1
+    - name: PlatformStop
+      guid: ce84982dd1b6544783974d89fadb8b50
+      id: 3914167496
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Platform
+        ObjectType: 4
+        guid: 4a69e406baeeb14c8de2a9043ed00745
+      - ElementName: PlatformStop
+        ObjectType: 3
+        guid: ce84982dd1b6544783974d89fadb8b50
+      Path: Events\Default Work Unit\SFX\Platform\PlatformStop
+      maxAttenuation: 50
+      maxDuration: 1.5
+      minDuration: 1.5
     - name: Room
       guid: f07d4e8df337534c90e737b790712cf1
       id: 2077253480
@@ -2853,7 +3038,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6603d6ba8e055f4caa446aab326e99e9
     GuidInternal: 
-    m_lastTime: -8585600171269193798
+    m_lastTime: -8585600005042044741
     List:
     - name: FootstepImpact
       guid: 6d6593fa9f32344fa004f633ae076769
@@ -3128,7 +3313,7 @@ MonoBehaviour:
         guid: 38b4dd40b2e94b4c9c9bce1ac9f941c2
       Path: Triggers\Default Work Unit\BoxPickupStinger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000060000000700000008000000090000000b0000000c0000000d0000000e0000000f00000010000000110000001200000014000000150000001600000017000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e00000030000000310000003200000036000000370000003a000000420000004600000049000000510000005f000000730000008f000000b60000002c0400002f040000320400003504000038040000e904000012150000
+  ExpandedWaapiItemIds: 0100000002000000060000000700000008000000090000000b0000000c0000000d0000000e0000000f00000010000000110000001200000014000000150000001600000017000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e00000030000000310000003200000036000000370000003a000000420000004600000049000000510000005f000000730000008f000000b60000002c0400002f040000320400003504000038040000e904000012150000b6580100
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

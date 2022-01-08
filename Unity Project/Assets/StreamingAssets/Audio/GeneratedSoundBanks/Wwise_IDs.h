@@ -37,6 +37,8 @@ namespace AK
         static const AkUniqueID LEVELBIGROOMREVEAL = 3672941687U;
         static const AkUniqueID LEVELSTART = 3372421815U;
         static const AkUniqueID MUSICSTART = 1122283870U;
+        static const AkUniqueID PLATFORMSTART = 4276765652U;
+        static const AkUniqueID PLATFORMSTOP = 3914167496U;
         static const AkUniqueID SFXINIT_GLOBAL = 1799863314U;
         static const AkUniqueID STEPOFFBED = 157353963U;
         static const AkUniqueID STEPONBED = 135348085U;
@@ -239,6 +241,8 @@ namespace AK
         static const AkUniqueID LEFT_FOOTSTEP = 1014522048U;
         static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
         static const AkUniqueID MUSIC_BUS = 3127962312U;
+        static const AkUniqueID NON_DIEGETIC_SFX_BUS = 391035146U;
+        static const AkUniqueID PLATFORM = 4035573696U;
         static const AkUniqueID RIGHT_FOOTSTEP = 854631381U;
         static const AkUniqueID TREE = 3322072369U;
         static const AkUniqueID TREE_WIND = 2466686001U;

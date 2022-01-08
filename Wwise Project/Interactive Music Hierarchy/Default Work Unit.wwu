@@ -12164,7 +12164,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="CubeAttentuation" ID="{15CBBA56-F406-44EA-9D9C-69E8FA3D043B}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+											<ObjectRef Name="BoxAttenuation" ID="{15CBBA56-F406-44EA-9D9C-69E8FA3D043B}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -12182,7 +12182,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
-													<ObjectRef Name="CubeAttentuation" ID="{15CBBA56-F406-44EA-9D9C-69E8FA3D043B}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+													<ObjectRef Name="BoxAttenuation" ID="{15CBBA56-F406-44EA-9D9C-69E8FA3D043B}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -12304,7 +12304,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="HarpoonAmbienceAttentuation" ID="{6A2A687F-C74D-4F97-ABA7-965770F21822}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+											<ObjectRef Name="HarpoonAmbienceAttenuation" ID="{6A2A687F-C74D-4F97-ABA7-965770F21822}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>

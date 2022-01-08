@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3585464205">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3613350067">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3306844327">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3643756851">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -648,9 +648,6 @@
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="3070671186" Name="EnterOutdoors" ObjectPath="\Events\Default Work Unit\Level\Room\EnterOutdoors"/>
 					</ActionPostEvent>
-					<ActionSetSwitch>
-						<ActionSetSwitchEntry Id="3248502869" Name="Disabled" ObjectPath="\Switches\Default Work Unit\FootstepImpact\Disabled"/>
-					</ActionSetSwitch>
 				</Event>
 				<Event Id="3372421815" Name="LevelStart" ObjectPath="\Events\Default Work Unit\Level\Beats\LevelStart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionPostEvent>
@@ -787,6 +784,26 @@
 						<File Id="1049002355" Language="SFX">
 							<ShortName>music_boat_fantasychords_1.wav</ShortName>
 							<Path>SFX\music_boat_fantasychords_1_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4276765652" Name="PlatformStart" ObjectPath="\Events\Default Work Unit\SFX\Platform\PlatformStart" MaxAttenuation="50.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="293910664" Language="SFX">
+							<ShortName>sfx_env_platform_loop.wav</ShortName>
+							<Path>SFX\sfx_env_platform_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="867479423" Language="SFX">
+							<ShortName>sfx_env_platform_start.wav</ShortName>
+							<Path>SFX\sfx_env_platform_start_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3914167496" Name="PlatformStop" ObjectPath="\Events\Default Work Unit\SFX\Platform\PlatformStop" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.500000" DurationMax="1.500000">
+					<IncludedMemoryFiles>
+						<File Id="76617765" Language="SFX">
+							<ShortName>sfx_env_platform_stop.wav</ShortName>
+							<Path>SFX\sfx_env_platform_stop_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1036,9 +1053,6 @@
 						<Switch Id="4174102348" Name="Enabled" ObjectPath="\Switches\Default Work Unit\FootstepImpact\Enabled" GUID="{30007777-4AAB-44D7-833F-B6D221BAF3E6}"/>
 						<Switch Id="3248502869" Name="Disabled" ObjectPath="\Switches\Default Work Unit\FootstepImpact\Disabled" GUID="{7DD9C498-A494-4A23-A451-A72ADA2DC246}"/>
 					</Switches>
-				</SwitchGroup>
-				<SwitchGroup Id="3248502869" Name="Disabled" ObjectPath="\Switches\Default Work Unit\FootstepImpact\Disabled" GUID="{7DD9C498-A494-4A23-A451-A72ADA2DC246}">
-					<Switches/>
 				</SwitchGroup>
 			</SwitchGroups>
 			<Triggers>

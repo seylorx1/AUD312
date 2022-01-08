@@ -43,7 +43,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="HarpoonAttentuation" ID="{13724D87-B25D-4061-9766-B41463305C86}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+											<ObjectRef Name="HarpoonAttenuation" ID="{13724D87-B25D-4061-9766-B41463305C86}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -89,7 +89,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="HarpoonAttentuation" ID="{13724D87-B25D-4061-9766-B41463305C86}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+											<ObjectRef Name="HarpoonAttenuation" ID="{13724D87-B25D-4061-9766-B41463305C86}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -311,419 +311,6 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="sfx_harpoon_shoot_reel_heavychain" ID="{B2B75AC3-C43F-47D2-848B-6CD64FADC546}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="WorldKeys" ID="{9B3ADFDD-19E6-49FD-8F1E-032C1371E628}" ShortID="54765397">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="17"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<Sound Name="sfx_worldkeys_fmaj_a5" ID="{BA4386E1-B27D-43A3-A443-67AB588794A7}" ShortID="754196951">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_a5" ID="{0F5D8F55-8563-48DA-8815-0AB97E26ADE0}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_a5.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="238751466"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_a5" ID="{0F5D8F55-8563-48DA-8815-0AB97E26ADE0}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_a6" ID="{7E25E32C-F927-488B-B321-45F64DA839FD}" ShortID="981017896">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_a6" ID="{6782FC03-5C4B-4893-8A7A-E40C69B9DAD2}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_a6.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="834793506"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_a6" ID="{6782FC03-5C4B-4893-8A7A-E40C69B9DAD2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_b5" ID="{2044D457-47FD-4CD6-BF45-B4226B6BFD02}" ShortID="628937951">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_b5" ID="{A62C3C47-39CF-484F-B6FB-E5E406C94C30}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_b5.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="729801942"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_b5" ID="{A62C3C47-39CF-484F-B6FB-E5E406C94C30}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_c5" ID="{7803F16F-DE4A-4C8A-AB4A-911B1D771970}" ShortID="48930315">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_c5" ID="{6BE8839C-BC84-48C6-B3CA-1B1699A7AA3B}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_c5.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="537943496"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_c5" ID="{6BE8839C-BC84-48C6-B3CA-1B1699A7AA3B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_d5" ID="{43554192-1D86-4A3F-B71E-03154ACA336C}" ShortID="307787585">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_d5" ID="{66ADDB63-5D48-4659-83E1-50E5C39244B2}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_d5.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="459803870"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_d5" ID="{66ADDB63-5D48-4659-83E1-50E5C39244B2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_e5" ID="{458D1484-89F3-48D7-8D79-46105E5B4FE7}" ShortID="582175970">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_e5" ID="{72B5122D-465D-43D6-8D38-A8598BA26681}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_e5.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="929290808"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_e5" ID="{72B5122D-465D-43D6-8D38-A8598BA26681}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_f4" ID="{B0039DDF-90D4-44B8-AD78-F5199386DABC}" ShortID="731472640">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_f4" ID="{C0344F50-5983-4BA2-8FA0-E38E8D86DD58}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_f4.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="626233591"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_f4" ID="{C0344F50-5983-4BA2-8FA0-E38E8D86DD58}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_f5" ID="{C4CD7296-D6D4-4722-9C54-1F5F63F8831E}" ShortID="414732977">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_f5" ID="{1AF133EE-8B94-40CE-ACBF-985A9A0ADAC3}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_f5.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="620271118"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_f5" ID="{1AF133EE-8B94-40CE-ACBF-985A9A0ADAC3}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_g4" ID="{BD881AB9-8F36-4E9E-A990-6FDA422B93E4}" ShortID="70936491">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_g4" ID="{9C1CD2EB-55EF-4DD1-AB2B-7F78468C248B}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_g4.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1043027253"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_g4" ID="{9C1CD2EB-55EF-4DD1-AB2B-7F78468C248B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_g5" ID="{4848B163-6B50-428E-A0C9-F5BAB69AD647}" ShortID="975563861">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_g5" ID="{4EE4EB36-F5CA-4E01-AC82-3A2BF2263283}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_g5.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="700459820"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_g5" ID="{4EE4EB36-F5CA-4E01-AC82-3A2BF2263283}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_b6" ID="{9449FC9F-D997-4AB5-8019-1CB50528DD13}" ShortID="660031686">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_b6" ID="{E8EC35E9-AF7A-4D97-B45E-6B044E9028A4}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_b6.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="357251596"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_b6" ID="{E8EC35E9-AF7A-4D97-B45E-6B044E9028A4}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_c6" ID="{EC29FB65-B272-4CFB-B084-0FDB0A192C7A}" ShortID="428554536">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_c6" ID="{8B09361E-E75B-4FFE-B432-E86D471D59FC}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_c6.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="290204500"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_c6" ID="{8B09361E-E75B-4FFE-B432-E86D471D59FC}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_d6" ID="{3BA7C23D-D795-473B-81C4-6C3F22F4E706}" ShortID="678230030">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_d6" ID="{A2FDDA6A-21AB-4ADD-A7D7-A118DC202DDD}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_d6.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="874895148"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_d6" ID="{A2FDDA6A-21AB-4ADD-A7D7-A118DC202DDD}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_e6" ID="{BA5AF36E-7AD2-4E73-A01F-C1B9AC76384A}" ShortID="618208417">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_e6" ID="{C78F6314-1615-4B62-96DC-E8E19629E382}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_e6.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="634912013"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_e6" ID="{C78F6314-1615-4B62-96DC-E8E19629E382}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_worldkeys_fmaj_f6" ID="{A5867A42-081A-440C-AA9C-65D7434E682D}" ShortID="930546297">
-									<PropertyList>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_worldkeys_fmaj_f6" ID="{69EB1F5D-383A-4837-BBF9-5EE6D415EC0B}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
-											<Language>SFX</Language>
-											<AudioFile>sfx_worldkeys_fmaj_f6.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="779589527"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_worldkeys_fmaj_f6" ID="{69EB1F5D-383A-4837-BBF9-5EE6D415EC0B}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -3173,7 +2760,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
-													<ObjectRef Name="BedAttentuation" ID="{42804BDB-0EA3-4EC5-BD4A-8108C9C60028}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+													<ObjectRef Name="BedAttenuation" ID="{42804BDB-0EA3-4EC5-BD4A-8108C9C60028}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -3915,7 +3502,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
-													<ObjectRef Name="BedAttentuation" ID="{42804BDB-0EA3-4EC5-BD4A-8108C9C60028}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+													<ObjectRef Name="BedAttenuation" ID="{42804BDB-0EA3-4EC5-BD4A-8108C9C60028}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -5806,16 +5393,16 @@
 								</SwitchContainer>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Bed" ID="{F99545D4-FA57-4D42-81D8-3E6EA40010E3}" ShortID="726617940">
+						<Folder Name="Environment" ID="{22763BD0-9AD2-4F61-84BD-9EC02A6029DC}" ShortID="644113347">
 							<ChildrenList>
-								<Sound Name="sfx_bed_compress" ID="{62BAB470-955B-4F6F-B89A-E4AAE24C7FBC}" ShortID="932167446">
+								<Sound Name="sfx_env_bed_compress" ID="{62BAB470-955B-4F6F-B89A-E4AAE24C7FBC}" ShortID="932167446">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="BedAttentuation" ID="{42804BDB-0EA3-4EC5-BD4A-8108C9C60028}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+											<ObjectRef Name="BedAttenuation" ID="{42804BDB-0EA3-4EC5-BD4A-8108C9C60028}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -5839,112 +5426,32 @@
 										<ActiveSource Name="sfx_bed_compress" ID="{F94904F6-55D6-433A-8F72-A55A98F4CB73}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Ambience" ID="{5818745A-6125-459C-83FD-55F992E716BE}" ShortID="657096110">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="3"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="sfx_wind" ID="{9BFE3B8D-E870-431C-8FE9-3FE8ECC740C1}" ShortID="674839022">
-									<Comment>Procedural Wind using built-in Wwise Plugins</Comment>
+								<Folder Name="Ambience" ID="{5818745A-6125-459C-83FD-55F992E716BE}" ShortID="657096110">
 									<PropertyList>
-										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
+										<Property Name="Color" Type="int16" Value="3"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Wind" ID="{F3E10545-4D6C-45A8-99C0-A6BED624F17B}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="sfx_pinknoise" ID="{D63BEC76-01F2-44CC-9F13-30189EC2EBCD}" ShortID="746784633">
-											<PropertyList>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_pinknoise" ID="{0747CB78-2E22-484E-AFCC-121BC8C625B9}">
-													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Misc\Noise\Noise.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>sfx_pinknoise.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="200076591"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_pinknoise" ID="{0747CB78-2E22-484E-AFCC-121BC8C625B9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-									<Playlist>
-										<ItemRef Name="sfx_pinknoise" ID="{D63BEC76-01F2-44CC-9F13-30189EC2EBCD}"/>
-									</Playlist>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="sfx_treewind (Loop)" ID="{D49F079A-D68A-4A75-934E-87FF3E9057D9}" ShortID="835344667">
-									<Comment>Procedural Tree Wind using built-in Wwise Plugins</Comment>
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>15</Value>
-											</ValueList>
-										</Property>
-										<Property Name="MakeUpGain" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="TreeAttentuation" ID="{52C3D7D0-A9D5-4513-A837-EE8CD0C7750A}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Tree Wind" ID="{B853BAC2-E796-4029-B36B-7EE4B920C5E2}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="sfx_pinknoise" ID="{D5DAF91A-7D0B-44BA-9B07-A9B293D39DF8}" ShortID="485371304">
+										<RandomSequenceContainer Name="sfx_env_wind" ID="{9BFE3B8D-E870-431C-8FE9-3FE8ECC740C1}" ShortID="674839022">
+											<Comment>Procedural Wind using built-in Wwise Plugins</Comment>
 											<PropertyList>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -5955,93 +5462,724 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_pinknoise" ID="{56C2D321-9366-40A2-A0B0-4F24045D34DC}">
-													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Misc\Noise\Noise.rpp"</Comment>
+												<Sound Name="sfx_pinknoise" ID="{D63BEC76-01F2-44CC-9F13-30189EC2EBCD}" ShortID="746784633">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_pinknoise" ID="{0747CB78-2E22-484E-AFCC-121BC8C625B9}">
+															<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Misc\Noise\Noise.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>sfx_pinknoise.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="200076591"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_pinknoise" ID="{0747CB78-2E22-484E-AFCC-121BC8C625B9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="sfx_pinknoise" ID="{D63BEC76-01F2-44CC-9F13-30189EC2EBCD}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="sfx_env_treewind (Loop)" ID="{D49F079A-D68A-4A75-934E-87FF3E9057D9}" ShortID="835344667">
+											<Comment>Procedural Tree Wind using built-in Wwise Plugins</Comment>
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>15</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="TreeAttenuation" ID="{52C3D7D0-A9D5-4513-A837-EE8CD0C7750A}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Tree Wind" ID="{B853BAC2-E796-4029-B36B-7EE4B920C5E2}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_pinknoise" ID="{D5DAF91A-7D0B-44BA-9B07-A9B293D39DF8}" ShortID="485371304">
+													<PropertyList>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Wind" ID="{F3E10545-4D6C-45A8-99C0-A6BED624F17B}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_pinknoise" ID="{56C2D321-9366-40A2-A0B0-4F24045D34DC}">
+															<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Misc\Noise\Noise.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>sfx_pinknoise.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="200076591"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_pinknoise" ID="{56C2D321-9366-40A2-A0B0-4F24045D34DC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="sfx_pinknoise" ID="{D5DAF91A-7D0B-44BA-9B07-A9B293D39DF8}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<Sound Name="sfx_env_treewind_rustle" ID="{C7A3F86C-E669-4EEB-986D-4399FB942F30}" ShortID="889920406">
+											<Comment>Looping tree rustle sound, with random pitch and start delay.</Comment>
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>35</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{341BE4E6-5433-4242-A614-40ED6CE41933}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>25</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{BEAE1F73-A000-487C-92A4-AFA4AF65B45F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="TreeAttenuation" ID="{52C3D7D0-A9D5-4513-A837-EE8CD0C7750A}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Tree" ID="{DD2626BC-227D-4BE9-99E5-768FF6E2A126}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_treewind_rustle" ID="{9580021A-FC49-4010-876E-8D20D0521EA6}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Ambient\Tree Wind.rpp"</Comment>
 													<Language>SFX</Language>
-													<AudioFile>sfx_pinknoise.wav</AudioFile>
+													<AudioFile>sfx_treewind_rustle.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="200076591"/>
+														<MediaID ID="43452734"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="sfx_pinknoise" ID="{56C2D321-9366-40A2-A0B0-4F24045D34DC}" Platform="Linked"/>
+												<ActiveSource Name="sfx_treewind_rustle" ID="{9580021A-FC49-4010-876E-8D20D0521EA6}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-									<ObjectLists/>
-									<Playlist>
-										<ItemRef Name="sfx_pinknoise" ID="{D5DAF91A-7D0B-44BA-9B07-A9B293D39DF8}"/>
-									</Playlist>
-								</RandomSequenceContainer>
-								<Sound Name="sfx_treewind_rustle" ID="{C7A3F86C-E669-4EEB-986D-4399FB942F30}" ShortID="889920406">
-									<Comment>Looping tree rustle sound, with random pitch and start delay.</Comment>
+								</Folder>
+								<Folder Name="Platform" ID="{0469CA08-9D2A-4234-B169-32AF60E45346}" ShortID="259682633">
+									<ChildrenList>
+										<Sound Name="sfx_env_platform_stop" ID="{F32F613D-A2D7-414D-BA8C-F43B2656887D}" ShortID="69347304">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="PlatformAttenuation" ID="{DBA6903F-C468-4707-8B43-91419BE37E05}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Platform" ID="{04479872-7842-4967-9420-866B43F93442}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_env_platform_stop" ID="{2088BF38-F168-4AAF-97B2-97D6D820003E}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Level\Platform\Lift Column.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_env_platform_stop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="76617765"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_env_platform_stop" ID="{2088BF38-F168-4AAF-97B2-97D6D820003E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="sfx_env_platform" ID="{8B17993E-32AA-46E6-A205-56B7616C8257}" ShortID="704835926">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="PlatformAttenuation" ID="{DBA6903F-C468-4707-8B43-91419BE37E05}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Platform" ID="{04479872-7842-4967-9420-866B43F93442}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_env_platform_start" ID="{26383E13-7D03-40DA-8AF7-51ED0299A0AE}" ShortID="274028871">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_env_platform_start" ID="{637F3CC9-F61D-4797-BAA3-7A360C8904BB}">
+															<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Level\Platform\Lift Column.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>sfx_env_platform_start.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="867479423"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_env_platform_start" ID="{637F3CC9-F61D-4797-BAA3-7A360C8904BB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_env_platform_loop" ID="{2F2F6446-99E6-4002-8440-DFD9D0126AAB}" ShortID="791788575">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_env_platform_loop" ID="{5BE5AB33-6D34-46C7-9DB8-C93E86972DD4}">
+															<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Level\Platform\Lift Column.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>sfx_env_platform_loop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="293910664"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_env_platform_loop" ID="{5BE5AB33-6D34-46C7-9DB8-C93E86972DD4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="sfx_env_platform_start" ID="{26383E13-7D03-40DA-8AF7-51ED0299A0AE}"/>
+												<ItemRef Name="sfx_env_platform_loop" ID="{2F2F6446-99E6-4002-8440-DFD9D0126AAB}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Non-diegetic SFX" ID="{AC1254A5-A176-484E-836D-56A6E4E51BC9}" ShortID="36652570">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Folder Name="WorldKeys" ID="{9B3ADFDD-19E6-49FD-8F1E-032C1371E628}" ShortID="54765397">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Sound Name="sfx_worldkeys_fmaj_a5" ID="{BA4386E1-B27D-43A3-A443-67AB588794A7}" ShortID="754196951">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>35</Value>
-											</ValueList>
-										</Property>
-										<Property Name="InitialDelay" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{341BE4E6-5433-4242-A614-40ED6CE41933}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="5"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="MakeUpGain" Type="Real64">
-											<ValueList>
-												<Value>25</Value>
-											</ValueList>
-										</Property>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{BEAE1F73-A000-487C-92A4-AFA4AF65B45F}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="200"/>
-															<Property Name="Min" Type="Real64" Value="-200"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="TreeAttentuation" ID="{52C3D7D0-A9D5-4513-A837-EE8CD0C7750A}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Tree" ID="{DD2626BC-227D-4BE9-99E5-768FF6E2A126}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="sfx_treewind_rustle" ID="{9580021A-FC49-4010-876E-8D20D0521EA6}">
-											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Ambient\Tree Wind.rpp"</Comment>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_a5" ID="{0F5D8F55-8563-48DA-8815-0AB97E26ADE0}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
 											<Language>SFX</Language>
-											<AudioFile>sfx_treewind_rustle.wav</AudioFile>
+											<AudioFile>sfx_worldkeys_fmaj_a5.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="43452734"/>
+												<MediaID ID="238751466"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="sfx_treewind_rustle" ID="{9580021A-FC49-4010-876E-8D20D0521EA6}" Platform="Linked"/>
+										<ActiveSource Name="sfx_worldkeys_fmaj_a5" ID="{0F5D8F55-8563-48DA-8815-0AB97E26ADE0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_a6" ID="{7E25E32C-F927-488B-B321-45F64DA839FD}" ShortID="981017896">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_a6" ID="{6782FC03-5C4B-4893-8A7A-E40C69B9DAD2}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_a6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="834793506"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_a6" ID="{6782FC03-5C4B-4893-8A7A-E40C69B9DAD2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_b5" ID="{2044D457-47FD-4CD6-BF45-B4226B6BFD02}" ShortID="628937951">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_b5" ID="{A62C3C47-39CF-484F-B6FB-E5E406C94C30}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_b5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="729801942"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_b5" ID="{A62C3C47-39CF-484F-B6FB-E5E406C94C30}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_c5" ID="{7803F16F-DE4A-4C8A-AB4A-911B1D771970}" ShortID="48930315">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_c5" ID="{6BE8839C-BC84-48C6-B3CA-1B1699A7AA3B}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_c5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="537943496"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_c5" ID="{6BE8839C-BC84-48C6-B3CA-1B1699A7AA3B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_d5" ID="{43554192-1D86-4A3F-B71E-03154ACA336C}" ShortID="307787585">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_d5" ID="{66ADDB63-5D48-4659-83E1-50E5C39244B2}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_d5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="459803870"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_d5" ID="{66ADDB63-5D48-4659-83E1-50E5C39244B2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_e5" ID="{458D1484-89F3-48D7-8D79-46105E5B4FE7}" ShortID="582175970">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_e5" ID="{72B5122D-465D-43D6-8D38-A8598BA26681}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_e5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="929290808"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_e5" ID="{72B5122D-465D-43D6-8D38-A8598BA26681}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_f4" ID="{B0039DDF-90D4-44B8-AD78-F5199386DABC}" ShortID="731472640">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_f4" ID="{C0344F50-5983-4BA2-8FA0-E38E8D86DD58}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_f4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="626233591"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_f4" ID="{C0344F50-5983-4BA2-8FA0-E38E8D86DD58}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_f5" ID="{C4CD7296-D6D4-4722-9C54-1F5F63F8831E}" ShortID="414732977">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_f5" ID="{1AF133EE-8B94-40CE-ACBF-985A9A0ADAC3}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_f5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="620271118"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_f5" ID="{1AF133EE-8B94-40CE-ACBF-985A9A0ADAC3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_g4" ID="{BD881AB9-8F36-4E9E-A990-6FDA422B93E4}" ShortID="70936491">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_g4" ID="{9C1CD2EB-55EF-4DD1-AB2B-7F78468C248B}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_g4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1043027253"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_g4" ID="{9C1CD2EB-55EF-4DD1-AB2B-7F78468C248B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_g5" ID="{4848B163-6B50-428E-A0C9-F5BAB69AD647}" ShortID="975563861">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_g5" ID="{4EE4EB36-F5CA-4E01-AC82-3A2BF2263283}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_g5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="700459820"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_g5" ID="{4EE4EB36-F5CA-4E01-AC82-3A2BF2263283}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_b6" ID="{9449FC9F-D997-4AB5-8019-1CB50528DD13}" ShortID="660031686">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_b6" ID="{E8EC35E9-AF7A-4D97-B45E-6B044E9028A4}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_b6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="357251596"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_b6" ID="{E8EC35E9-AF7A-4D97-B45E-6B044E9028A4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_c6" ID="{EC29FB65-B272-4CFB-B084-0FDB0A192C7A}" ShortID="428554536">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_c6" ID="{8B09361E-E75B-4FFE-B432-E86D471D59FC}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_c6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="290204500"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_c6" ID="{8B09361E-E75B-4FFE-B432-E86D471D59FC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_d6" ID="{3BA7C23D-D795-473B-81C4-6C3F22F4E706}" ShortID="678230030">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_d6" ID="{A2FDDA6A-21AB-4ADD-A7D7-A118DC202DDD}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_d6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="874895148"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_d6" ID="{A2FDDA6A-21AB-4ADD-A7D7-A118DC202DDD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_e6" ID="{BA5AF36E-7AD2-4E73-A01F-C1B9AC76384A}" ShortID="618208417">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_e6" ID="{C78F6314-1615-4B62-96DC-E8E19629E382}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_e6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="634912013"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_e6" ID="{C78F6314-1615-4B62-96DC-E8E19629E382}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_worldkeys_fmaj_f6" ID="{A5867A42-081A-440C-AA9C-65D7434E682D}" ShortID="930546297">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="WorldKeys" ID="{CED4F510-22F7-4969-9F99-54A15D3B71CD}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_worldkeys_fmaj_f6" ID="{69EB1F5D-383A-4837-BBF9-5EE6D415EC0B}">
+											<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\WorldKeys\WorldKeys.rpp"</Comment>
+											<Language>SFX</Language>
+											<AudioFile>sfx_worldkeys_fmaj_f6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="779589527"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_worldkeys_fmaj_f6" ID="{69EB1F5D-383A-4837-BBF9-5EE6D415EC0B}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

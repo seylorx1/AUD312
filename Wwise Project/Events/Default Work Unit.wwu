@@ -710,14 +710,14 @@ This event does the following:
 								<Action Name="" ID="{56180252-AF83-44CA-A54A-C13260026598}" ShortID="360791519">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="sfx_treewind (Loop)" ID="{D49F079A-D68A-4A75-934E-87FF3E9057D9}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+											<ObjectRef Name="sfx_env_treewind (Loop)" ID="{D49F079A-D68A-4A75-934E-87FF3E9057D9}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{E7B613BD-E4A3-4FFC-A12C-FE07160D64CF}" ShortID="347004700">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="sfx_treewind_rustle" ID="{C7A3F86C-E669-4EEB-986D-4399FB942F30}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+											<ObjectRef Name="sfx_env_treewind_rustle" ID="{C7A3F86C-E669-4EEB-986D-4399FB942F30}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -730,7 +730,7 @@ This event does the following:
 										<Action Name="" ID="{386A8B68-9EE0-41F0-A6A0-D4909D6718D4}" ShortID="327187774">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_bed_compress" ID="{62BAB470-955B-4F6F-B89A-E4AAE24C7FBC}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_env_bed_compress" ID="{62BAB470-955B-4F6F-B89A-E4AAE24C7FBC}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -770,12 +770,48 @@ This event does the following:
 								<Action Name="" ID="{B923411A-EF5B-45E3-AF5A-11B2C77035D3}" ShortID="921480094">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="sfx_wind" ID="{9BFE3B8D-E870-431C-8FE9-3FE8ECC740C1}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+											<ObjectRef Name="sfx_env_wind" ID="{9BFE3B8D-E870-431C-8FE9-3FE8ECC740C1}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Platform" ID="{06E4694A-EEBA-4CB1-8DE2-A9043ED00745}" ShortID="72804404">
+							<ChildrenList>
+								<Event Name="PlatformStart" ID="{A659BA6E-9D35-4951-BBA1-D9099C23CCC2}">
+									<ChildrenList>
+										<Action Name="" ID="{9FDAB8E9-BCFB-4C79-ABA1-65E787CB0F54}" ShortID="15417606">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_env_platform" ID="{8B17993E-32AA-46E6-A205-56B7616C8257}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="PlatformStop" ID="{2D9884CE-B6D1-4754-8397-4D89FADB8B50}">
+									<ChildrenList>
+										<Action Name="" ID="{3344DD91-09A5-49D2-BABE-7D8FDD8B8C56}" ShortID="172830328">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_env_platform" ID="{8B17993E-32AA-46E6-A205-56B7616C8257}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A8C214EF-61E7-43E6-B4DE-B5539BC5FB21}" ShortID="974564111">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_env_platform_stop" ID="{F32F613D-A2D7-414D-BA8C-F43B2656887D}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Level" ID="{222EE93F-65BF-4823-BBDF-3FFFF96EB801}" ShortID="424487160">
