@@ -74,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
 	{
 		Cursor.visible = false;
 
+		//Todo debug changes please remove
 		//LYES FIX - LOCKS MOUSE IN VIEWPORT
 		Cursor.lockState = CursorLockMode.Locked;
 	}

@@ -8,10 +8,15 @@
 		<ExternalSourcesOutputRoot>X:\Coursework\AUD312\Assignment\Wwise Project\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="574947097" Language="SFX">
+			<ShortName>sfx_env_bigroomreveal.wav</ShortName>
+			<Path>SFX\sfx_env_bigroomreveal_938762A3.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3613350067">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2323180337">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -33,7 +38,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3643756851">
+		<SoundBank Id="3161908922" Language="SFX" Hash="62520133">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -75,6 +80,39 @@
 					<ActionSetState>
 						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\BoxOpeningStingerState\None"/>
 					</ActionSetState>
+				</Event>
+				<Event Id="1035951551" Name="DoorInteract" ObjectPath="\Events\Default Work Unit\SFX\DoorInteract" DurationType="OneShot" DurationMin="1.980000" DurationMax="3.500000">
+					<IncludedMemoryFiles>
+						<File Id="83054363" Language="SFX">
+							<ShortName>sfx_door_wood_close.wav</ShortName>
+							<Path>SFX\sfx_door_wood_close_F0A9930B.wem</Path>
+						</File>
+						<File Id="615725178" Language="SFX">
+							<ShortName>sfx_door_wood_open_handle.wav</ShortName>
+							<Path>SFX\sfx_door_wood_open_handle_10C4C929.wem</Path>
+						</File>
+						<File Id="715230356" Language="SFX">
+							<ShortName>sfx_door_wood_open_swing.wav</ShortName>
+							<Path>SFX\sfx_door_wood_open_swing_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{20BD95DB-1912-4473-B621-57502B5D64B8}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{20BD95DB-1912-4473-B621-57502B5D64B8}">
+							<Media>
+								<File Id="615725178"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{378B3196-9A88-4B5E-8A15-4B6472494809}">
+							<Media>
+								<File Id="83054363"/>
+								<File Id="715230356"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="3299206614" Name="Opened" ObjectPath="\Switches\Default Work Unit\DoorHandle\Opened"/>
+					</ActionSetSwitch>
 				</Event>
 				<Event Id="1721219483" Name="EnterIndoors" ObjectPath="\Events\Default Work Unit\Level\Room\EnterIndoors" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
@@ -644,7 +682,20 @@
 						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\None"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3672941687" Name="LevelBigRoomReveal" ObjectPath="\Events\Default Work Unit\Level\Beats\LevelBigRoomReveal" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="3672941687" Name="LevelBigRoomReveal" ObjectPath="\Events\Default Work Unit\Level\Beats\LevelBigRoomReveal" DurationType="OneShot" DurationMin="7.522255" DurationMax="7.522255">
+					<ReferencedStreamedFiles>
+						<File Id="574947097" Language="SFX">
+							<ShortName>sfx_env_bigroomreveal.wav</ShortName>
+							<Path>SFX\sfx_env_bigroomreveal_938762A3.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+					<IncludedMemoryFiles>
+						<File Id="574947097" Language="SFX">
+							<ShortName>sfx_env_bigroomreveal.wav</ShortName>
+							<Path>SFX\sfx_env_bigroomreveal_938762A3.wem</Path>
+							<PrefetchSize>88264</PrefetchSize>
+						</File>
+					</IncludedMemoryFiles>
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="3070671186" Name="EnterOutdoors" ObjectPath="\Events\Default Work Unit\Level\Room\EnterOutdoors"/>
 					</ActionPostEvent>
@@ -1031,6 +1082,12 @@
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
+				<SwitchGroup Id="856450531" Name="DoorHandle" ObjectPath="\Switches\Default Work Unit\DoorHandle" GUID="{E3071565-75BF-441C-A826-0C0DCFBE09AA}">
+					<Switches>
+						<Switch Id="3299206614" Name="Opened" ObjectPath="\Switches\Default Work Unit\DoorHandle\Opened" GUID="{378B3196-9A88-4B5E-8A15-4B6472494809}"/>
+						<Switch Id="3012222945" Name="Closed" ObjectPath="\Switches\Default Work Unit\DoorHandle\Closed" GUID="{20BD95DB-1912-4473-B621-57502B5D64B8}"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="1458816175" Name="FootstepType" ObjectPath="\Switches\Default Work Unit\FootstepType" GUID="{8274F53A-432D-4B3C-B3B2-7B0DCFA58A47}">
 					<Switches>
 						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\FootstepType\Concrete" GUID="{F6050909-D3FC-4A0B-B34B-CED6BB085408}"/>
@@ -1053,6 +1110,9 @@
 						<Switch Id="4174102348" Name="Enabled" ObjectPath="\Switches\Default Work Unit\FootstepImpact\Enabled" GUID="{30007777-4AAB-44D7-833F-B6D221BAF3E6}"/>
 						<Switch Id="3248502869" Name="Disabled" ObjectPath="\Switches\Default Work Unit\FootstepImpact\Disabled" GUID="{7DD9C498-A494-4A23-A451-A72ADA2DC246}"/>
 					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3299206614" Name="Opened" ObjectPath="\Switches\Default Work Unit\DoorHandle\Opened" GUID="{378B3196-9A88-4B5E-8A15-4B6472494809}">
+					<Switches/>
 				</SwitchGroup>
 			</SwitchGroups>
 			<Triggers>

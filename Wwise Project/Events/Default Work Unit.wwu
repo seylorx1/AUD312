@@ -812,6 +812,32 @@ This event does the following:
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="DoorInteract" ID="{843DEFA4-F271-41FF-812C-F5909F83DB27}">
+							<Comment>Plays the door open sound and sets the DoorHandle switch to 'Opened'. (cont.)
+
+This means that the door will only play the handle sound effect the first time it is opened, as the sound only plays when DoorHandle is set to 'Closed'.
+
+The switch is reset by a trigger when the door closes.</Comment>
+							<ChildrenList>
+								<Action Name="" ID="{33B6AB92-9BC4-4C3F-B7CB-2D52AC6EFB46}" ShortID="632472614">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_door_wood" ID="{32AFDD71-2896-40E8-AAC1-D6B0EF70B35E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FAEEF456-07ED-41A4-A2A8-0C82AD7C57EF}" ShortID="672287441">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Opened" ID="{378B3196-9A88-4B5E-8A15-4B6472494809}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Level" ID="{222EE93F-65BF-4823-BBDF-3FFFF96EB801}" ShortID="424487160">
@@ -968,9 +994,17 @@ This event does the following:
 
 - Calls 'EnterOutdoors' event.</Comment>
 									<ChildrenList>
+										<Action Name="" ID="{E312A31F-F359-49A7-A762-54EDA3C9CE3F}" ShortID="169384561">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_env_bigroomreveal" ID="{96FAC01D-3AD2-4914-95D1-E8C1226AD8C7}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{B710C2F3-7D42-45AC-9BE7-66F12DEE1BC4}" ShortID="73855956">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="41"/>
+												<Property Name="Delay" Type="Real64" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">

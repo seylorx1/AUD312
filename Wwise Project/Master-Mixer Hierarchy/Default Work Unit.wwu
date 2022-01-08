@@ -23,6 +23,8 @@
 When this bus is turned down, it allows for more bandwidth for other music elements to be present. For instance, when a box is picked up, the music gets quieter which allows for the BoxPickupNoises to be much clearer.
 
 By keeping the percussion elements seperate from the bus, the rhythm (and by extension the song) perpetuates throughout new sonic conditions.
+
+Also ducks whenever a significant sound is played (via Level Event SFX Bus)
 </Comment>
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
@@ -410,6 +412,21 @@ By keeping the percussion elements seperate from the bus, the rhythm (and by ext
 												</Reference>
 											</ReferenceList>
 											<ObjectLists/>
+										</Bus>
+										<Bus Name="Level Effect SFX Bus" ID="{7341CC63-1B1A-4666-B97D-D44869C2FA53}">
+											<ObjectLists/>
+											<DuckingList>
+												<DuckItem>
+													<BusRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+													<DuckingParam>
+														<Volume>-12</Volume>
+														<FadeInTime>1</FadeInTime>
+														<FadeOutTime>0.5</FadeOutTime>
+														<FadeCurve>FadeLog2</FadeCurve>
+														<TargetProp>BusVolume</TargetProp>
+													</DuckingParam>
+												</DuckItem>
+											</DuckingList>
 										</Bus>
 									</ChildrenList>
 								</Folder>

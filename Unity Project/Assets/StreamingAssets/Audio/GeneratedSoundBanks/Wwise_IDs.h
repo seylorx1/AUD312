@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID BOXPICKUPCUE = 4115829741U;
         static const AkUniqueID BOXSEGMENTDOWNCUE = 3547374172U;
         static const AkUniqueID BOXSEGMENTUPCUE = 1360996149U;
+        static const AkUniqueID DOORINTERACT = 1035951551U;
         static const AkUniqueID ENTERINDOORS = 1721219483U;
         static const AkUniqueID ENTERINDOORSTUNNEL = 1113956849U;
         static const AkUniqueID ENTEROUTDOORS = 3070671186U;
@@ -155,6 +156,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace DOORHANDLE
+        {
+            static const AkUniqueID GROUP = 856450531U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CLOSED = 3012222945U;
+                static const AkUniqueID OPENED = 3299206614U;
+            } // namespace SWITCH
+        } // namespace DOORHANDLE
+
         namespace FOOTSTEPIMPACT
         {
             static const AkUniqueID GROUP = 3037162653U;
@@ -239,6 +251,7 @@ namespace AK
         static const AkUniqueID HARPOONAIR = 1174992302U;
         static const AkUniqueID KICKSNARE_BUS = 831678660U;
         static const AkUniqueID LEFT_FOOTSTEP = 1014522048U;
+        static const AkUniqueID LEVEL_EFFECT_SFX_BUS = 2398579647U;
         static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
         static const AkUniqueID MUSIC_BUS = 3127962312U;
         static const AkUniqueID NON_DIEGETIC_SFX_BUS = 391035146U;

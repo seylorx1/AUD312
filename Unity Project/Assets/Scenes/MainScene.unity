@@ -572,7 +572,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 3.5e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -2436,7 +2436,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 4e-45}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -10589,7 +10589,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 4e-45}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -11568,6 +11568,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 6400000, guid: e8492561f58019043a4a9d0dcece7891, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8492561f58019043a4a9d0dcece7891, type: 3}
 --- !u!1 &743750404
@@ -11963,6 +11967,67 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 778392265}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &782735300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 782735301}
+  - component: {fileID: 782735303}
+  - component: {fileID: 782735302}
+  m_Layer: 13
+  m_Name: Door Closed
+  m_TagString: Untagged
+  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &782735301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782735300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.65, y: 2.1, z: -2.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 888434407}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &782735302
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782735300}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &782735303
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782735300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &784761302
 GameObject:
   m_ObjectHideFlags: 0
@@ -13947,6 +14012,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 229588930}
+  - {fileID: 782735301}
   m_Father: {fileID: 617670068}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14913,6 +14979,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 954187124}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &957968041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f386f0bd67cbd394a94a29996c638e0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 971012646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &957968042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957968041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbe7d58239c120c43bf4f6904e2bc357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 34ffce396f269db449ba90333595eed0,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!65 &957968043
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957968041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Center: {x: -1.6, y: 2, z: 0.1}
 --- !u!1001 &960254845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15058,12 +15168,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f386f0bd67cbd394a94a29996c638e0a, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f386f0bd67cbd394a94a29996c638e0a, type: 3}
       propertyPath: m_Name
-      value: Door Model
+      value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f386f0bd67cbd394a94a29996c638e0a, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 100002, guid: f386f0bd67cbd394a94a29996c638e0a, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -15082,7 +15197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f386f0bd67cbd394a94a29996c638e0a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.5999985
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f386f0bd67cbd394a94a29996c638e0a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -15134,8 +15249,8 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 971012646}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &971012649
-MeshCollider:
+--- !u!65 &971012649
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15144,10 +15259,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: f386f0bd67cbd394a94a29996c638e0a, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 2.25, z: 0.2}
+  m_Center: {x: -0.75, y: 1.125, z: -0.1}
 --- !u!114 &971012653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15165,7 +15279,8 @@ MonoBehaviour:
   doorSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 4b899c80c7da8794ca43e291746b7730,
+      type: 2}
 --- !u!1 &975709207
 GameObject:
   m_ObjectHideFlags: 0
@@ -25918,7 +26033,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 5.091e-42, y: 1.02e-43, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -27054,7 +27169,7 @@ GameObject:
   m_Layer: 0
   m_Name: Metal / Concrete
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -28470,7 +28585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   columnTransform: {fileID: 2068579658}
-  columnSpeed: 0.01
+  columnSpeed: 0.05
   columnSound:
     idInternal: 0
     valueGuidInternal: 
@@ -29002,7 +29117,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 2.3509887e-38, z: -2.306054e+18, w: 2.1175824e-22}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -32871,7 +32986,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.8062688e+28, y: 7.871983e+31, z: 3.4957e-41, w: 0}
+  m_BoundingSphereOverride: {x: 5.971e-42, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -33857,7 +33972,7 @@ GameObject:
   - component: {fileID: 2140524717}
   - component: {fileID: 2140524718}
   m_Layer: 9
-  m_Name: End Game Volume
+  m_Name: Bed Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

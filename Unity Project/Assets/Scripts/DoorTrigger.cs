@@ -49,5 +49,7 @@ public class DoorTrigger : MonoBehaviour
 		open = !open;
 
 		doorSound.Post(doorTransform.gameObject);
+
+		Debug.Log("Open? " + open);
 	}
 }

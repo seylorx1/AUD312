@@ -46,6 +46,7 @@ public class BoxPicker : MonoBehaviour
 					{
 						if(hit.rigidbody != null)
 							PickupBox(hit.rigidbody);
+
 						else if(hit.collider.name == "Door")
 						{
 							DoorTrigger trigger = hit.collider.gameObject.GetComponent<DoorTrigger>();

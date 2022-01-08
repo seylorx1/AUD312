@@ -67,6 +67,12 @@ As far as this mapping is concerned, the player is walking right up until VampCo
 						<Switch Name="Disabled" ID="{7DD9C498-A494-4A23-A451-A72ADA2DC246}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="DoorHandle" ID="{E3071565-75BF-441C-A826-0C0DCFBE09AA}">
+					<ChildrenList>
+						<Switch Name="Opened" ID="{378B3196-9A88-4B5E-8A15-4B6472494809}"/>
+						<Switch Name="Closed" ID="{20BD95DB-1912-4473-B621-57502B5D64B8}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

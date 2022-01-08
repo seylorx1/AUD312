@@ -72,11 +72,12 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1014522048	Left Footstep			\Default Work Unit\SFX\Diegetic SFX Bus\Footsteps\Left Footstep	Panned ever-so-slightly to the left.
 	1073713956	Diegetic SFX Bus			\Default Work Unit\SFX\Diegetic SFX Bus	
 	1174992302	HarpoonAir			\Default Work Unit\SFX\Diegetic SFX Bus\Harpoon\HarpoonAir	
-	1291433366	Base			\Default Work Unit\Music Bus\Base	The music bus which most tracks in the background music use, aside from percussion. (cont.)  When this bus is turned down, it allows for more bandwidth for other music elements to be present. For instance, when a box is picked up, the music gets quieter which allows for the BoxPickupNoises to be much clearer.  By keeping the percussion elements seperate from the bus, the rhythm (and by extension the song) perpetuates throughout new sonic conditions. 
+	1291433366	Base			\Default Work Unit\Music Bus\Base	The music bus which most tracks in the background music use, aside from percussion. (cont.)  When this bus is turned down, it allows for more bandwidth for other music elements to be present. For instance, when a box is picked up, the music gets quieter which allows for the BoxPickupNoises to be much clearer.  By keeping the percussion elements seperate from the bus, the rhythm (and by extension the song) perpetuates throughout new sonic conditions.  Also ducks whenever a significant sound is played (via Level Event SFX Bus) 
 	1310325127	WorldKeys			\Default Work Unit\SFX\Non-Diegetic SFX Bus\WorldKeys	With cool delay effect.
 	1537061107	Wind			\Default Work Unit\SFX\Diegetic SFX Bus\Environment\Ambience\Wind	
 	2190619839	Box Holding Bus			\Default Work Unit\Music Bus\Interactions\Box Holding Bus	
 	2385628198	Footsteps			\Default Work Unit\SFX\Diegetic SFX Bus\Footsteps	
+	2398579647	Level Effect SFX Bus			\Default Work Unit\SFX\Diegetic SFX Bus\Environment\Level Effect SFX Bus	
 	2466686001	Tree Wind			\Default Work Unit\SFX\Diegetic SFX Bus\Environment\Ambience\Tree\Tree Wind	
 	2758124570	Box Ambience Bus			\Default Work Unit\Music Bus\Interactions\Box Ambience Bus	
 	3127962312	Music Bus			\Default Work Unit\Music Bus	
