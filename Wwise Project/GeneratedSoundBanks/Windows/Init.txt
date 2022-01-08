@@ -8,18 +8,20 @@ Switch	ID	Name	Switch Group			Notes
 State Group	ID	Name			Wwise Object Path	Notes
 	379189110	HarpoonFired			\Default Work Unit\Interactions\HarpoonFired	
 	1038281861	BoxOpeningStingerState			\Default Work Unit\Music\BoxOpeningStingerState	
+	1130916508	InitWait			\Default Work Unit\Util\InitWait	Waits for a second before passing. (Cont.)  This is to allow disable triggers that may automatically enable at the level start. 0.1s transition just to enable some sounds that use the parameter without risk of popping.
 	1363879777	HarpoonState			\Default Work Unit\Interactions\HarpoonState	
 	1777631295	Room_Type			\Default Work Unit\Rooms\Room_Type	'None' is synonymous with 'Indoors'
 	1941896134	Room_C			\Default Work Unit\Rooms\Room_C	
 	1941896135	Room_B			\Default Work Unit\Rooms\Room_B	
 	2558423223	BoxState			\Default Work Unit\Music\BoxState	
-	3156432362	WorldKeysEnabled			\Default Work Unit\Interactions\WorldKeysEnabled	
 
 State	ID	Name	State Group			Notes
 	748895195	None	HarpoonFired			
 	2378879461	HasFired	HarpoonFired			
 	748895195	None	BoxOpeningStingerState			
 	3791155954	Muted	BoxOpeningStingerState			
+	748895195	None	InitWait			
+	2764605217	Passed	InitWait			
 	515864255	HarpoonHeld	HarpoonState			
 	748895195	None	HarpoonState			
 	748895195	None	Room_Type			
@@ -31,12 +33,10 @@ State	ID	Name	State Group			Notes
 	2764605217	Passed	Room_B			
 	748895195	None	BoxState			
 	2060468149	BoxHeld	BoxState			
-	748895195	None	WorldKeysEnabled			
-	4174102348	Enabled	WorldKeysEnabled			
 
 Custom State	ID	Name	State Group	Owner		Notes
+	36342149	Passed	InitWait	\Master-Mixer Hierarchy\Default Work Unit\SFX\Non-Diegetic SFX Bus\WorldKeys		
 	376481985	BoxHeld	BoxState	\Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base		
-	424739837	Enabled	WorldKeysEnabled	\Master-Mixer Hierarchy\Default Work Unit\SFX\Non-Diegetic SFX Bus\WorldKeys		
 	596799336	Outdoors	Room_Type	\Effects\Factory Effects\Wwise RoomVerb\Rooms\Room_Medium_High_Absorbtion		
 	683257782	BoxHeld	BoxState	\Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Holding Bus		
 	760965010	Tunnel	Room_Type	\Effects\Factory Effects\Wwise RoomVerb\Rooms\Room_Medium_High_Absorbtion		

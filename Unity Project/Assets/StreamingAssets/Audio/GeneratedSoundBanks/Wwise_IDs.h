@@ -20,7 +20,6 @@ namespace AK
         static const AkUniqueID BOXPICKUPCUE = 4115829741U;
         static const AkUniqueID BOXSEGMENTDOWNCUE = 3547374172U;
         static const AkUniqueID BOXSEGMENTUPCUE = 1360996149U;
-        static const AkUniqueID DOORINTERACT = 1035951551U;
         static const AkUniqueID ENTERINDOORS = 1721219483U;
         static const AkUniqueID ENTERINDOORSTUNNEL = 1113956849U;
         static const AkUniqueID ENTEROUTDOORS = 3070671186U;
@@ -37,6 +36,8 @@ namespace AK
         static const AkUniqueID HARPOONRECEIVED = 757170495U;
         static const AkUniqueID LEVELBIGROOMREVEAL = 3672941687U;
         static const AkUniqueID LEVELSTART = 3372421815U;
+        static const AkUniqueID MECHANICALDOORSTART = 584382452U;
+        static const AkUniqueID MECHANICALDOORSTOP = 4239384168U;
         static const AkUniqueID MUSICSTART = 1122283870U;
         static const AkUniqueID PLATFORMSTART = 4276765652U;
         static const AkUniqueID PLATFORMSTOP = 3914167496U;
@@ -44,6 +45,7 @@ namespace AK
         static const AkUniqueID STEPOFFBED = 157353963U;
         static const AkUniqueID STEPONBED = 135348085U;
         static const AkUniqueID TREEAMBIENCEPLAY = 1973723167U;
+        static const AkUniqueID WOODDOORINTERACT = 670425516U;
         static const AkUniqueID WORLDKEY_A5 = 3724088773U;
         static const AkUniqueID WORLDKEY_A6 = 3724088774U;
         static const AkUniqueID WORLDKEY_B5 = 3774421660U;
@@ -107,6 +109,17 @@ namespace AK
             } // namespace STATE
         } // namespace HARPOONSTATE
 
+        namespace INITWAIT
+        {
+            static const AkUniqueID GROUP = 1130916508U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PASSED = 2764605217U;
+            } // namespace STATE
+        } // namespace INITWAIT
+
         namespace ROOM_B
         {
             static const AkUniqueID GROUP = 1941896135U;
@@ -140,17 +153,6 @@ namespace AK
                 static const AkUniqueID TUNNEL = 3059984139U;
             } // namespace STATE
         } // namespace ROOM_TYPE
-
-        namespace WORLDKEYSENABLED
-        {
-            static const AkUniqueID GROUP = 3156432362U;
-
-            namespace STATE
-            {
-                static const AkUniqueID ENABLED = 4174102348U;
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace WORLDKEYSENABLED
 
     } // namespace STATES
 

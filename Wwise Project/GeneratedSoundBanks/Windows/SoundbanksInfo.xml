@@ -16,7 +16,7 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2323180337">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2950208386">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -24,21 +24,21 @@
 				<GameParameter Id="1042517418" Name="WindIntensity" ObjectPath="\Game Parameters\Default Work Unit\Ambience\WindIntensity"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="1130916508" Name="InitWait" ObjectPath="\States\Default Work Unit\Util\InitWait" GUID="{166E4ADA-3EFC-406C-918B-1F008340C889}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Util\InitWait\None" GUID="{E7999C3E-6DE5-4EBC-ADF5-DC18EECD0D77}"/>
+						<State Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Util\InitWait\Passed" GUID="{BD2185D2-EE3A-45E7-A06D-89D8CD516538}"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="2558423223" Name="BoxState" ObjectPath="\States\Default Work Unit\Music\BoxState" GUID="{54C47F18-4243-4FC9-91BF-C729E3ADD7FB}">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\BoxState\None" GUID="{8717C20B-71BC-4F3A-81F3-657F374E86E2}"/>
 						<State Id="2060468149" Name="BoxHeld" ObjectPath="\States\Default Work Unit\Music\BoxState\BoxHeld" GUID="{DA60839B-344D-45C3-9134-81D0EECBFB60}"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="3156432362" Name="WorldKeysEnabled" ObjectPath="\States\Default Work Unit\Interactions\WorldKeysEnabled" GUID="{3D9DDB20-C64A-41E8-AB49-B2F23F8A3894}">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\WorldKeysEnabled\None" GUID="{736387CA-55D4-40F8-9E17-9A74C12A83DA}"/>
-						<State Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\Interactions\WorldKeysEnabled\Enabled" GUID="{878828F1-1468-4F40-A5E9-4D39491D6B11}"/>
-					</States>
-				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="62520133">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3562194072">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -80,39 +80,6 @@
 					<ActionSetState>
 						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\BoxOpeningStingerState\None"/>
 					</ActionSetState>
-				</Event>
-				<Event Id="1035951551" Name="DoorInteract" ObjectPath="\Events\Default Work Unit\SFX\DoorInteract" DurationType="OneShot" DurationMin="1.980000" DurationMax="3.500000">
-					<IncludedMemoryFiles>
-						<File Id="83054363" Language="SFX">
-							<ShortName>sfx_door_wood_close.wav</ShortName>
-							<Path>SFX\sfx_door_wood_close_F0A9930B.wem</Path>
-						</File>
-						<File Id="615725178" Language="SFX">
-							<ShortName>sfx_door_wood_open_handle.wav</ShortName>
-							<Path>SFX\sfx_door_wood_open_handle_10C4C929.wem</Path>
-						</File>
-						<File Id="715230356" Language="SFX">
-							<ShortName>sfx_door_wood_open_swing.wav</ShortName>
-							<Path>SFX\sfx_door_wood_open_swing_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{20BD95DB-1912-4473-B621-57502B5D64B8}</DefaultSwitchValue>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{20BD95DB-1912-4473-B621-57502B5D64B8}">
-							<Media>
-								<File Id="615725178"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{378B3196-9A88-4B5E-8A15-4B6472494809}">
-							<Media>
-								<File Id="83054363"/>
-								<File Id="715230356"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
-					<ActionSetSwitch>
-						<ActionSetSwitchEntry Id="3299206614" Name="Opened" ObjectPath="\Switches\Default Work Unit\DoorHandle\Opened"/>
-					</ActionSetSwitch>
 				</Event>
 				<Event Id="1721219483" Name="EnterIndoors" ObjectPath="\Events\Default Work Unit\Level\Room\EnterIndoors" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
@@ -706,6 +673,34 @@
 						<ActionPostEventEntry Id="1799863314" Name="SFXInit_Global" ObjectPath="\Events\Default Work Unit\SFX\SFXInit_Global"/>
 					</ActionPostEvent>
 				</Event>
+				<Event Id="584382452" Name="MechanicalDoorStart" ObjectPath="\Events\Default Work Unit\SFX\Doors\Mechanical\MechanicalDoorStart" MaxAttenuation="30.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="18772141" Language="SFX">
+							<ShortName>sfx_door_mechanical_start.wav</ShortName>
+							<Path>SFX\sfx_door_mechanical_start_10C4C929.wem</Path>
+						</File>
+						<File Id="951415945" Language="SFX">
+							<ShortName>sfx_door_mechanical_loop.wav</ShortName>
+							<Path>SFX\sfx_door_mechanical_loop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4239384168" Name="MechanicalDoorStop" ObjectPath="\Events\Default Work Unit\SFX\Doors\Mechanical\MechanicalDoorStop" DurationType="OneShot" DurationMin="2.250000" DurationMax="2.250000">
+					<IncludedMemoryFiles>
+						<File Id="968059735" Language="SFX">
+							<ShortName>sfx_door_mechanical_stop.wav</ShortName>
+							<Path>SFX\sfx_door_mechanical_stop_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{E7999C3E-6DE5-4EBC-ADF5-DC18EECD0D77}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{BD2185D2-EE3A-45E7-A06D-89D8CD516538}">
+							<Media>
+								<File Id="968059735"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="1122283870" Name="MusicStart" ObjectPath="\Events\Default Work Unit\Music\MusicStart" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="47062023" Language="SFX">
@@ -857,6 +852,14 @@
 							<Path>SFX\sfx_env_platform_stop_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{E7999C3E-6DE5-4EBC-ADF5-DC18EECD0D77}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{BD2185D2-EE3A-45E7-A06D-89D8CD516538}">
+							<Media>
+								<File Id="76617765"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="1799863314" Name="SFXInit_Global" ObjectPath="\Events\Default Work Unit\SFX\SFXInit_Global" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -866,7 +869,7 @@
 						</File>
 					</IncludedMemoryFiles>
 					<ActionSetState>
-						<ActionSetStateEntry Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\Interactions\WorldKeysEnabled\Enabled"/>
+						<ActionSetStateEntry Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Util\InitWait\Passed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="157353963" Name="StepOffBed" ObjectPath="\Events\Default Work Unit\SFX\Bed\StepOffBed" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.341723" DurationMax="0.675119">
@@ -904,6 +907,39 @@
 							<Path>SFX\sfx_pinknoise_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="670425516" Name="WoodDoorInteract" ObjectPath="\Events\Default Work Unit\SFX\Doors\WoodDoorInteract" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="1.980000" DurationMax="3.500000">
+					<IncludedMemoryFiles>
+						<File Id="83054363" Language="SFX">
+							<ShortName>sfx_door_wood_close.wav</ShortName>
+							<Path>SFX\sfx_door_wood_close_F0A9930B.wem</Path>
+						</File>
+						<File Id="615725178" Language="SFX">
+							<ShortName>sfx_door_wood_open_handle.wav</ShortName>
+							<Path>SFX\sfx_door_wood_open_handle_10C4C929.wem</Path>
+						</File>
+						<File Id="715230356" Language="SFX">
+							<ShortName>sfx_door_wood_open_swing.wav</ShortName>
+							<Path>SFX\sfx_door_wood_open_swing_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{20BD95DB-1912-4473-B621-57502B5D64B8}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{20BD95DB-1912-4473-B621-57502B5D64B8}">
+							<Media>
+								<File Id="615725178"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{378B3196-9A88-4B5E-8A15-4B6472494809}">
+							<Media>
+								<File Id="83054363"/>
+								<File Id="715230356"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="3299206614" Name="Opened" ObjectPath="\Switches\Default Work Unit\DoorHandle\Opened"/>
+					</ActionSetSwitch>
 				</Event>
 				<Event Id="3724088773" Name="WorldKey_A5" ObjectPath="\Events\Default Work Unit\SFX\WorldKeys\WorldKey_A5" DurationType="OneShot" DurationMin="0.150000" DurationMax="0.150000">
 					<IncludedMemoryFiles>
@@ -1044,6 +1080,12 @@
 				<StateGroup Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\None" GUID="{4B9FB557-3308-4BF4-9ECA-486659E8A285}">
 					<States/>
 				</StateGroup>
+				<StateGroup Id="1130916508" Name="InitWait" ObjectPath="\States\Default Work Unit\Util\InitWait" GUID="{166E4ADA-3EFC-406C-918B-1F008340C889}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Util\InitWait\None" GUID="{E7999C3E-6DE5-4EBC-ADF5-DC18EECD0D77}"/>
+						<State Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Util\InitWait\Passed" GUID="{BD2185D2-EE3A-45E7-A06D-89D8CD516538}"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="1363879777" Name="HarpoonState" ObjectPath="\States\Default Work Unit\Interactions\HarpoonState" GUID="{B3B48258-D25F-4931-8CC3-FC069EC03744}">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\HarpoonState\None" GUID="{C588DF7E-B70F-4E2A-9BBA-8BDBBAA976D1}"/>
@@ -1071,13 +1113,13 @@
 				<StateGroup Id="2730119150" Name="Outdoors" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\Outdoors" GUID="{EA10CE5A-BCC8-4AE8-9177-752CEF2B8D12}">
 					<States/>
 				</StateGroup>
+				<StateGroup Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Util\InitWait\Passed" GUID="{BD2185D2-EE3A-45E7-A06D-89D8CD516538}">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="3059984139" Name="Tunnel" ObjectPath="\States\Default Work Unit\Rooms\Room_Type\Tunnel" GUID="{F65CF828-F9DE-4675-B6E9-86BC56F7B96F}">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="3791155954" Name="Muted" ObjectPath="\States\Default Work Unit\Music\BoxOpeningStingerState\Muted" GUID="{4D12F6FF-B7BE-42A8-AE76-49832BECE1DA}">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="4174102348" Name="Enabled" ObjectPath="\States\Default Work Unit\Interactions\WorldKeysEnabled\Enabled" GUID="{878828F1-1468-4F40-A5E9-4D39491D6B11}">
 					<States/>
 				</StateGroup>
 			</StateGroups>

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3857155f990bfa43b3d23accebdd730, type: 3}
-  m_Name: 843DEFA4-F271-41FF-812C-F5909F83DB27
+  m_Name: 658D677B-21EF-4C53-875B-8C80F1990D5F
   m_EditorClassIdentifier: 
-  objectName: WoodDoorInteract
-  id: 670425516
-  guid: 843DEFA4-F271-41FF-812C-F5909F83DB27
+  objectName: MechanicalDoorStart
+  id: 584382452
+  guid: 658D677B-21EF-4C53-875B-8C80F1990D5F

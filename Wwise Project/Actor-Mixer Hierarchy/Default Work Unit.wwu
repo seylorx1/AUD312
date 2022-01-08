@@ -254,38 +254,6 @@
 								</Folder>
 								<Folder Name="Platform" ID="{0469CA08-9D2A-4234-B169-32AF60E45346}" ShortID="259682633">
 									<ChildrenList>
-										<Sound Name="sfx_env_platform_stop" ID="{F32F613D-A2D7-414D-BA8C-F43B2656887D}" ShortID="69347304">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
-												<Property Name="OverrideOutput" Type="bool" Value="True"/>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="PlatformAttenuation" ID="{DBA6903F-C468-4707-8B43-91419BE37E05}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Platform" ID="{04479872-7842-4967-9420-866B43F93442}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_env_platform_stop" ID="{2088BF38-F168-4AAF-97B2-97D6D820003E}">
-													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Level\Platform\Lift Column.rpp"</Comment>
-													<Language>SFX</Language>
-													<AudioFile>sfx_env_platform_stop.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="76617765"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_env_platform_stop" ID="{2088BF38-F168-4AAF-97B2-97D6D820003E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<RandomSequenceContainer Name="sfx_env_platform" ID="{8B17993E-32AA-46E6-A205-56B7616C8257}" ShortID="704835926">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -375,6 +343,72 @@
 												<ItemRef Name="sfx_env_platform_loop" ID="{2F2F6446-99E6-4002-8440-DFD9D0126AAB}"/>
 											</Playlist>
 										</RandomSequenceContainer>
+										<SwitchContainer Name="sfx_env_platform_stop (Init Handling)" ID="{D0D11BD5-A349-400B-910E-D650BA4D0351}" ShortID="1059169370">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="None" ID="{E7999C3E-6DE5-4EBC-ADF5-DC18EECD0D77}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="InitWait" ID="{166E4ADA-3EFC-406C-918B-1F008340C889}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_env_platform_stop" ID="{F32F613D-A2D7-414D-BA8C-F43B2656887D}" ShortID="69347304">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="PlatformAttenuation" ID="{DBA6903F-C468-4707-8B43-91419BE37E05}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Platform" ID="{04479872-7842-4967-9420-866B43F93442}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_env_platform_stop" ID="{2088BF38-F168-4AAF-97B2-97D6D820003E}">
+															<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Level\Platform\Lift Column.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>sfx_env_platform_stop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="76617765"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_env_platform_stop" ID="{2088BF38-F168-4AAF-97B2-97D6D820003E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="sfx_env_platform_stop" ID="{F32F613D-A2D7-414D-BA8C-F43B2656887D}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Passed" ID="{BD2185D2-EE3A-45E7-A06D-89D8CD516538}"/>
+														<ItemList>
+															<ItemRef Name="sfx_env_platform_stop" ID="{F32F613D-A2D7-414D-BA8C-F43B2656887D}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
 									</ChildrenList>
 								</Folder>
 								<Sound Name="sfx_env_bigroomreveal" ID="{96FAC01D-3AD2-4914-95D1-E8C1226AD8C7}" ShortID="597669320">
@@ -441,53 +475,184 @@
 								</Sound>
 								<Folder Name="Door" ID="{C324D01F-BB1F-41AB-AAF0-1A3B41BCDDB4}" ShortID="252209883">
 									<ChildrenList>
-										<SwitchContainer Name="sfx_door_wood" ID="{32AFDD71-2896-40E8-AAC1-D6B0EF70B35E}" ShortID="988375670">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
-												</Reference>
-												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="Closed" ID="{20BD95DB-1912-4473-B621-57502B5D64B8}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
-												</Reference>
-												<Reference Name="SwitchGroupOrStateGroup">
-													<ObjectRef Name="DoorHandle" ID="{E3071565-75BF-441C-A826-0C0DCFBE09AA}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
-												</Reference>
-											</ReferenceList>
+										<Folder Name="Wood" ID="{6CCD9317-5277-4827-AAD8-CEB0A0F1D031}" ShortID="296143987">
 											<ChildrenList>
-												<Sound Name="sfx_door_wood_open_handle" ID="{C1D0B750-105F-4045-BA2B-98EF2BA29B87}" ShortID="340781135">
+												<SwitchContainer Name="sfx_door_wood" ID="{32AFDD71-2896-40E8-AAC1-D6B0EF70B35E}" ShortID="988375670">
+													<PropertyList>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="WoodenDoorAttenuation" ID="{B786BE9F-DA72-4DE4-93E4-8E67E1159212}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="Closed" ID="{20BD95DB-1912-4473-B621-57502B5D64B8}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="DoorHandle" ID="{E3071565-75BF-441C-A826-0C0DCFBE09AA}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="sfx_door_wood_open_handle" ID="{BAE08046-52D9-455F-A984-5358ADD9F58C}">
-															<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Door\Wood\Wooden Door.rpp"</Comment>
-															<Language>SFX</Language>
-															<AudioFile>sfx_door_wood_open_handle.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="615725178"/>
-															</MediaIDList>
-														</AudioFileSource>
+														<Sound Name="sfx_door_wood_open_handle" ID="{C1D0B750-105F-4045-BA2B-98EF2BA29B87}" ShortID="340781135">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_door_wood_open_handle" ID="{BAE08046-52D9-455F-A984-5358ADD9F58C}">
+																	<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Door\Wood\Wooden Door.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_door_wood_open_handle.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="615725178"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_door_wood_open_handle" ID="{BAE08046-52D9-455F-A984-5358ADD9F58C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<RandomSequenceContainer Name="sfx_door_wood (Swing)" ID="{9E14374D-07DA-4B08-81F6-8459F3A2EDB1}" ShortID="292385033">
+															<PropertyList>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="sfx_door_wood_close_swing" ID="{5A1EDF8C-1452-4DD4-9EAC-EF54048A51C2}" ShortID="863190533">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_door_wood_close" ID="{3D59CB2E-13E3-4EA7-8378-3F021EA268F9}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Door\Wood\Wooden Door.rpp"</Comment>
+																			<PropertyList>
+																				<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_door_wood_close.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="83054363"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_door_wood_close" ID="{3D59CB2E-13E3-4EA7-8378-3F021EA268F9}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="sfx_door_wood_open_swing" ID="{6698DEB1-BEE5-4C08-804E-9D687D78DC1E}" ShortID="93413324">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="sfx_door_wood_open_swing" ID="{D1B20F63-F67D-4418-90E6-F1C4DB2BE867}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Door\Wood\Wooden Door.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>sfx_door_wood_open_swing.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="715230356"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="sfx_door_wood_open_swing" ID="{D1B20F63-F67D-4418-90E6-F1C4DB2BE867}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<ObjectLists/>
+															<Playlist>
+																<ItemRef Name="sfx_door_wood_open_swing" ID="{6698DEB1-BEE5-4C08-804E-9D687D78DC1E}"/>
+																<ItemRef Name="sfx_door_wood_close_swing" ID="{5A1EDF8C-1452-4DD4-9EAC-EF54048A51C2}"/>
+															</Playlist>
+														</RandomSequenceContainer>
 													</ChildrenList>
 													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="sfx_door_wood_open_handle" ID="{BAE08046-52D9-455F-A984-5358ADD9F58C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<RandomSequenceContainer Name="sfx_door_wood (Swing)" ID="{9E14374D-07DA-4B08-81F6-8459F3A2EDB1}" ShortID="292385033">
+													<GroupingInfo>
+														<GroupingBehaviorList>
+															<GroupingBehavior>
+																<ItemRef Name="sfx_door_wood (Swing)" ID="{9E14374D-07DA-4B08-81F6-8459F3A2EDB1}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="sfx_door_wood_open_handle" ID="{C1D0B750-105F-4045-BA2B-98EF2BA29B87}"/>
+															</GroupingBehavior>
+														</GroupingBehaviorList>
+														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="Opened" ID="{378B3196-9A88-4B5E-8A15-4B6472494809}"/>
+																<ItemList>
+																	<ItemRef Name="sfx_door_wood (Swing)" ID="{9E14374D-07DA-4B08-81F6-8459F3A2EDB1}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Closed" ID="{20BD95DB-1912-4473-B621-57502B5D64B8}"/>
+																<ItemList>
+																	<ItemRef Name="sfx_door_wood_open_handle" ID="{C1D0B750-105F-4045-BA2B-98EF2BA29B87}"/>
+																	<ItemRef Name="sfx_door_wood (Swing)" ID="{9E14374D-07DA-4B08-81F6-8459F3A2EDB1}"/>
+																</ItemList>
+															</Grouping>
+														</GroupingList>
+													</GroupingInfo>
+												</SwitchContainer>
+											</ChildrenList>
+										</Folder>
+										<Folder Name="Mechanical" ID="{02CA0A50-A084-47C7-B707-954CEFB17F1B}" ShortID="625376783">
+											<ChildrenList>
+												<RandomSequenceContainer Name="sfx_door_mechanical" ID="{F370F165-B3BE-4A03-BFE4-998BDBF5646C}" ShortID="627111657">
 													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
 																<Value>1</Value>
 															</ValueList>
 														</Property>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="UseMaxSoundPerInstance" Type="bool">
 															<ValueList>
@@ -496,15 +661,18 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="MechanicalDoorAttenuation" ID="{68E6F39A-CAFA-4C5C-8ED6-0CCEDE0F9758}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+															<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="sfx_door_wood_close_swing" ID="{5A1EDF8C-1452-4DD4-9EAC-EF54048A51C2}" ShortID="863190533">
+														<Sound Name="sfx_door_mechanical_start" ID="{884C993D-3B0A-4592-8E0A-DC31DB58674F}" ShortID="532329275">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -514,24 +682,24 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="sfx_door_wood_close" ID="{3D59CB2E-13E3-4EA7-8378-3F021EA268F9}">
-																	<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Door\Wood\Wooden Door.rpp"</Comment>
-																	<PropertyList>
-																		<Property Name="MarkerInputMode" Type="int16" Value="2"/>
-																	</PropertyList>
+																<AudioFileSource Name="sfx_door_mechanical_start" ID="{43CA847D-18BA-4AC7-8700-07EA9F14CAFD}">
+																	<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Door\Mechanical\Mechanical Door.rpp"</Comment>
 																	<Language>SFX</Language>
-																	<AudioFile>sfx_door_wood_close.wav</AudioFile>
+																	<AudioFile>sfx_door_mechanical_start.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="83054363"/>
+																		<MediaID ID="18772141"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ObjectLists/>
 															<ActiveSourceList>
-																<ActiveSource Name="sfx_door_wood_close" ID="{3D59CB2E-13E3-4EA7-8378-3F021EA268F9}" Platform="Linked"/>
+																<ActiveSource Name="sfx_door_mechanical_start" ID="{43CA847D-18BA-4AC7-8700-07EA9F14CAFD}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="sfx_door_wood_open_swing" ID="{6698DEB1-BEE5-4C08-804E-9D687D78DC1E}" ShortID="93413324">
+														<Sound Name="sfx_door_mechanical_loop" ID="{49C04F98-72BD-4AEC-A5D0-75D37212E674}" ShortID="350421368">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -541,55 +709,87 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="sfx_door_wood_open_swing" ID="{D1B20F63-F67D-4418-90E6-F1C4DB2BE867}">
-																	<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Door\Wood\Wooden Door.rpp"</Comment>
+																<AudioFileSource Name="sfx_door_mechanical_loop" ID="{E3C87E1A-CC82-4B58-B9D6-70275630D523}">
+																	<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Door\Mechanical\Mechanical Door.rpp"</Comment>
 																	<Language>SFX</Language>
-																	<AudioFile>sfx_door_wood_open_swing.wav</AudioFile>
+																	<AudioFile>sfx_door_mechanical_loop.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="715230356"/>
+																		<MediaID ID="951415945"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ObjectLists/>
 															<ActiveSourceList>
-																<ActiveSource Name="sfx_door_wood_open_swing" ID="{D1B20F63-F67D-4418-90E6-F1C4DB2BE867}" Platform="Linked"/>
+																<ActiveSource Name="sfx_door_mechanical_loop" ID="{E3C87E1A-CC82-4B58-B9D6-70275630D523}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
 													<ObjectLists/>
 													<Playlist>
-														<ItemRef Name="sfx_door_wood_open_swing" ID="{6698DEB1-BEE5-4C08-804E-9D687D78DC1E}"/>
-														<ItemRef Name="sfx_door_wood_close_swing" ID="{5A1EDF8C-1452-4DD4-9EAC-EF54048A51C2}"/>
+														<ItemRef Name="sfx_door_mechanical_start" ID="{884C993D-3B0A-4592-8E0A-DC31DB58674F}"/>
+														<ItemRef Name="sfx_door_mechanical_loop" ID="{49C04F98-72BD-4AEC-A5D0-75D37212E674}"/>
 													</Playlist>
 												</RandomSequenceContainer>
+												<SwitchContainer Name="sfx_door_mechanical_stop (Init Handling)" ID="{A1A7E684-B821-44BC-B19A-C842C7022343}" ShortID="390535316">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="None" ID="{E7999C3E-6DE5-4EBC-ADF5-DC18EECD0D77}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="InitWait" ID="{166E4ADA-3EFC-406C-918B-1F008340C889}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_door_mechanical_stop" ID="{E2B1D5AA-2988-4680-93B8-26982B95A104}" ShortID="641474256">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_door_mechanical_stop" ID="{56F40FDD-FC09-4BA8-B298-48FD552395E7}">
+																	<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Door\Mechanical\Mechanical Door.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_door_mechanical_stop.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="968059735"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_door_mechanical_stop" ID="{56F40FDD-FC09-4BA8-B298-48FD552395E7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<ObjectLists/>
+													<GroupingInfo>
+														<GroupingBehaviorList>
+															<GroupingBehavior>
+																<ItemRef Name="sfx_door_mechanical_stop" ID="{E2B1D5AA-2988-4680-93B8-26982B95A104}"/>
+															</GroupingBehavior>
+														</GroupingBehaviorList>
+														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="Passed" ID="{BD2185D2-EE3A-45E7-A06D-89D8CD516538}"/>
+																<ItemList>
+																	<ItemRef Name="sfx_door_mechanical_stop" ID="{E2B1D5AA-2988-4680-93B8-26982B95A104}"/>
+																</ItemList>
+															</Grouping>
+														</GroupingList>
+													</GroupingInfo>
+												</SwitchContainer>
 											</ChildrenList>
-											<ObjectLists/>
-											<GroupingInfo>
-												<GroupingBehaviorList>
-													<GroupingBehavior>
-														<ItemRef Name="sfx_door_wood (Swing)" ID="{9E14374D-07DA-4B08-81F6-8459F3A2EDB1}"/>
-													</GroupingBehavior>
-													<GroupingBehavior>
-														<ItemRef Name="sfx_door_wood_open_handle" ID="{C1D0B750-105F-4045-BA2B-98EF2BA29B87}"/>
-													</GroupingBehavior>
-												</GroupingBehaviorList>
-												<GroupingList>
-													<Grouping>
-														<SwitchRef Name="Opened" ID="{378B3196-9A88-4B5E-8A15-4B6472494809}"/>
-														<ItemList>
-															<ItemRef Name="sfx_door_wood (Swing)" ID="{9E14374D-07DA-4B08-81F6-8459F3A2EDB1}"/>
-														</ItemList>
-													</Grouping>
-													<Grouping>
-														<SwitchRef Name="Closed" ID="{20BD95DB-1912-4473-B621-57502B5D64B8}"/>
-														<ItemList>
-															<ItemRef Name="sfx_door_wood_open_handle" ID="{C1D0B750-105F-4045-BA2B-98EF2BA29B87}"/>
-															<ItemRef Name="sfx_door_wood (Swing)" ID="{9E14374D-07DA-4B08-81F6-8459F3A2EDB1}"/>
-														</ItemList>
-													</Grouping>
-												</GroupingList>
-											</GroupingInfo>
-										</SwitchContainer>
+										</Folder>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>

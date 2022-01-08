@@ -753,17 +753,17 @@ This event does the following:
 							<Comment>Initialises the SFX. (cont.)
 
 This event does the following:
-- Enables the WorldKeysEnabled state (This is done to prevent the WorldKeys from triggering when the player first loads into the level.)
+- Sets the InitWait 'Passed' state (This is done to prevent select enter-triggers from triggering when the player first loads into the level.)
 - Starts the sfx_wind sound effect.</Comment>
 							<ChildrenList>
-								<Action Name="" ID="{22ABD07F-17D0-4FED-8E03-4C583FC25E1E}" ShortID="606999547">
+								<Action Name="" ID="{C3473761-4707-44B8-9DC7-272B09ECDA2B}" ShortID="659761040">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="22"/>
-										<Property Name="Delay" Type="Real64" Value="0.5"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+											<ObjectRef Name="Passed" ID="{BD2185D2-EE3A-45E7-A06D-89D8CD516538}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -804,7 +804,7 @@ This event does the following:
 										<Action Name="" ID="{A8C214EF-61E7-43E6-B4DE-B5539BC5FB21}" ShortID="974564111">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_env_platform_stop" ID="{F32F613D-A2D7-414D-BA8C-F43B2656887D}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_env_platform_stop (Init Handling)" ID="{D0D11BD5-A349-400B-910E-D650BA4D0351}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -812,32 +812,72 @@ This event does the following:
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Event Name="DoorInteract" ID="{843DEFA4-F271-41FF-812C-F5909F83DB27}">
-							<Comment>Plays the door open sound and sets the DoorHandle switch to 'Opened'. (cont.)
+						<Folder Name="Doors" ID="{E1C8F88A-7455-4D34-A8EF-6F825558E6B1}" ShortID="232477644">
+							<ChildrenList>
+								<Event Name="WoodDoorInteract" ID="{843DEFA4-F271-41FF-812C-F5909F83DB27}">
+									<Comment>Plays the door open sound and sets the DoorHandle switch to 'Opened'. (cont.)
 
 This means that the door will only play the handle sound effect the first time it is opened, as the sound only plays when DoorHandle is set to 'Closed'.
 
 The switch is reset by a trigger when the door closes.</Comment>
-							<ChildrenList>
-								<Action Name="" ID="{33B6AB92-9BC4-4C3F-B7CB-2D52AC6EFB46}" ShortID="632472614">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_door_wood" ID="{32AFDD71-2896-40E8-AAC1-D6B0EF70B35E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{FAEEF456-07ED-41A4-A2A8-0C82AD7C57EF}" ShortID="672287441">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="23"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Opened" ID="{378B3196-9A88-4B5E-8A15-4B6472494809}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+									<ChildrenList>
+										<Action Name="" ID="{33B6AB92-9BC4-4C3F-B7CB-2D52AC6EFB46}" ShortID="632472614">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_door_wood" ID="{32AFDD71-2896-40E8-AAC1-D6B0EF70B35E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{FAEEF456-07ED-41A4-A2A8-0C82AD7C57EF}" ShortID="672287441">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Opened" ID="{378B3196-9A88-4B5E-8A15-4B6472494809}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Folder Name="Mechanical" ID="{FEF8ED15-41F1-4D6D-BEFE-C9F8E41D8950}" ShortID="54459110">
+									<ChildrenList>
+										<Event Name="MechanicalDoorStart" ID="{658D677B-21EF-4C53-875B-8C80F1990D5F}">
+											<ChildrenList>
+												<Action Name="" ID="{423E734F-8844-4E13-9C0B-F1BF186288B6}" ShortID="14018165">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="sfx_door_mechanical" ID="{F370F165-B3BE-4A03-BFE4-998BDBF5646C}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="MechanicalDoorStop" ID="{5794B370-A1B6-4EB6-852D-30B3208EE187}">
+											<ChildrenList>
+												<Action Name="" ID="{52346FB9-0A1E-4E97-B7CF-72AC6BE6F9C6}" ShortID="785065968">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="sfx_door_mechanical" ID="{F370F165-B3BE-4A03-BFE4-998BDBF5646C}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{E82C4F5E-9EFA-4625-BAF7-506C4ED00A8E}" ShortID="275525112">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="sfx_door_mechanical_stop (Init Handling)" ID="{A1A7E684-B821-44BC-B19A-C842C7022343}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Level" ID="{222EE93F-65BF-4823-BBDF-3FFFF96EB801}" ShortID="424487160">

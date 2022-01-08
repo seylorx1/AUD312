@@ -11,17 +11,6 @@
 								<State Name="HarpoonHeld" ID="{801A23EA-9585-4040-B632-EAA67C533806}"/>
 							</ChildrenList>
 						</StateGroup>
-						<StateGroup Name="WorldKeysEnabled" ID="{3D9DDB20-C64A-41E8-AB49-B2F23F8A3894}">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="17"/>
-								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<State Name="None" ID="{736387CA-55D4-40F8-9E17-9A74C12A83DA}"/>
-								<State Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}"/>
-							</ChildrenList>
-						</StateGroup>
 						<StateGroup Name="HarpoonFired" ID="{73735AFF-F44D-45C6-97A0-D344484F219B}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
@@ -90,6 +79,23 @@
 									<IsShared>false</IsShared>
 								</Transition>
 							</TransitionList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Util" ID="{826153D5-29BD-41BC-904F-F44FB14CDF76}" ShortID="940308298">
+					<ChildrenList>
+						<StateGroup Name="InitWait" ID="{166E4ADA-3EFC-406C-918B-1F008340C889}">
+							<Comment>Waits for a second before passing. (Cont.)
+
+This is to allow disable triggers that may automatically enable at the level start.
+0.1s transition just to enable some sounds that use the parameter without risk of popping.</Comment>
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{E7999C3E-6DE5-4EBC-ADF5-DC18EECD0D77}"/>
+								<State Name="Passed" ID="{BD2185D2-EE3A-45E7-A06D-89D8CD516538}"/>
+							</ChildrenList>
 						</StateGroup>
 					</ChildrenList>
 				</Folder>

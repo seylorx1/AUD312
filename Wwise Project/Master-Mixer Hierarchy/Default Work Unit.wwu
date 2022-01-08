@@ -462,13 +462,13 @@ Also ducks whenever a significant sound is played (via Level Event SFX Bus)
 										</StatePropertyList>
 										<StateGroupList>
 											<StateGroupInfo>
-												<StateGroupRef Name="WorldKeysEnabled" ID="{3D9DDB20-C64A-41E8-AB49-B2F23F8A3894}"/>
+												<StateGroupRef Name="InitWait" ID="{166E4ADA-3EFC-406C-918B-1F008340C889}"/>
 											</StateGroupInfo>
 										</StateGroupList>
 										<CustomStateList>
 											<CustomState>
-												<StateRef Name="Enabled" ID="{878828F1-1468-4F40-A5E9-4D39491D6B11}"/>
-												<CustomState Name="" ID="{B3DC4352-4D00-473C-B51E-8AFB444D9943}" ShortID="424739837">
+												<StateRef Name="Passed" ID="{BD2185D2-EE3A-45E7-A06D-89D8CD516538}"/>
+												<CustomState Name="" ID="{8B70EFDA-4394-43C5-8156-8A000CE0F5E2}" ShortID="36342149">
 													<PropertyList>
 														<Property Name="BusVolume" Type="Real64" Value="97"/>
 													</PropertyList>
