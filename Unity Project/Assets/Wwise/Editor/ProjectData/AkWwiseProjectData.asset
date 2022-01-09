@@ -879,8 +879,31 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585599246137056507
+    m_lastTime: -8585599192559646693
     List:
+    - name: Bars
+      guid: 56322a3b2ea5f447a85b249e2ec9aebf
+      id: 1274655763
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Level
+        ObjectType: 4
+        guid: 3fe92e22bf652348bbdf3ffff96eb801
+      - ElementName: Beats
+        ObjectType: 4
+        guid: d8adb70e52bf2740bea820418c48e598
+      - ElementName: Bars
+        ObjectType: 4
+        guid: 56322a3b2ea5f447a85b249e2ec9aebf
+      Path: Events\Default Work Unit\Level\Beats\Bars
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Beats
       guid: d8adb70e52bf2740bea820418c48e598
       id: 4259886576
@@ -1247,6 +1270,26 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: Footstep
+      guid: 28e55eca8a6ad74789f4415d53397b3a
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: 28e55eca8a6ad74789f4415d53397b3a
+      Path: Events\Default Work Unit\SFX\Footstep
+      maxAttenuation: 0
+      maxDuration: 1.13541
+      minDuration: 0.164984
+    - name: Footstep
       guid: 09fd370eacf00c438ae2c527280491b3
       id: 1866025847
       PathAndIcons:
@@ -1266,26 +1309,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: 09fd370eacf00c438ae2c527280491b3
       Path: Events\Default Work Unit\SFX\Footstep\Footstep
-      maxAttenuation: 0
-      maxDuration: 1.13541
-      minDuration: 0.164984
-    - name: Footstep
-      guid: 28e55eca8a6ad74789f4415d53397b3a
-      id: 1866025847
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: SFX
-        ObjectType: 4
-        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
-      - ElementName: Footstep
-        ObjectType: 4
-        guid: 28e55eca8a6ad74789f4415d53397b3a
-      Path: Events\Default Work Unit\SFX\Footstep
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1533,6 +1556,58 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: LevelBarsStart
+      guid: acd73f8e58bae147a39f27f812ad3657
+      id: 3575485577
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Level
+        ObjectType: 4
+        guid: 3fe92e22bf652348bbdf3ffff96eb801
+      - ElementName: Beats
+        ObjectType: 4
+        guid: d8adb70e52bf2740bea820418c48e598
+      - ElementName: Bars
+        ObjectType: 4
+        guid: 56322a3b2ea5f447a85b249e2ec9aebf
+      - ElementName: LevelBarsStart
+        ObjectType: 3
+        guid: acd73f8e58bae147a39f27f812ad3657
+      Path: Events\Default Work Unit\Level\Beats\Bars\LevelBarsStart
+      maxAttenuation: 50
+      maxDuration: -1
+      minDuration: -1
+    - name: LevelBarsStop
+      guid: 3b2e4e135a3d6e40a1bda322f189aa8b
+      id: 27808547
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Level
+        ObjectType: 4
+        guid: 3fe92e22bf652348bbdf3ffff96eb801
+      - ElementName: Beats
+        ObjectType: 4
+        guid: d8adb70e52bf2740bea820418c48e598
+      - ElementName: Bars
+        ObjectType: 4
+        guid: 56322a3b2ea5f447a85b249e2ec9aebf
+      - ElementName: LevelBarsStop
+        ObjectType: 3
+        guid: 3b2e4e135a3d6e40a1bda322f189aa8b
+      Path: Events\Default Work Unit\Level\Beats\Bars\LevelBarsStop
+      maxAttenuation: 50
+      maxDuration: 7
+      minDuration: 7
     - name: LevelBigRoomReveal
       guid: 9e32b57a0870924d9f76b737e0f051c2
       id: 3672941687
@@ -3523,7 +3598,7 @@ MonoBehaviour:
         guid: 38b4dd40b2e94b4c9c9bce1ac9f941c2
       Path: Triggers\Default Work Unit\BoxPickupStinger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000060000000700000008000000090000000b0000000c0000000d0000000e0000000f00000010000000110000001200000014000000150000001600000017000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e00000030000000310000003200000033000000360000003700000038000000390000003a0000003b0000003c0000003f000000420000004600000049000000510000005b0000005c0000005f00000067000000730000008f000000b60000000f0100002c0400002f040000320400003504000038040000e90400003d0a0000ac0a00001215000034fe0000b6580100
+  ExpandedWaapiItemIds: 0100000002000000060000000700000008000000090000000b0000000c0000000d0000000e0000000f00000010000000110000001200000014000000150000001600000017000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e0000003000000031000000320000003300000034000000360000003700000038000000390000003a0000003b0000003c0000003f000000420000004600000049000000510000005b0000005c0000005f000000670000006800000069000000730000008f000000b60000000f0100002c0400002f040000320400003504000038040000e90400003d0a0000ac0a000012150000611c000034fe0000b6580100
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

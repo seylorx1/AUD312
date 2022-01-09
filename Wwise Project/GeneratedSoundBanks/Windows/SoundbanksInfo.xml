@@ -38,7 +38,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3562194072">
+		<SoundBank Id="3161908922" Language="SFX" Hash="727891748">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -648,6 +648,34 @@
 					<ActionSetState>
 						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\None"/>
 					</ActionSetState>
+				</Event>
+				<Event Id="3575485577" Name="LevelBarsStart" ObjectPath="\Events\Default Work Unit\Level\Beats\Bars\LevelBarsStart" MaxAttenuation="50.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="296373577" Language="SFX">
+							<ShortName>sfx_env_bars_start.wav</ShortName>
+							<Path>SFX\sfx_env_bars_start_10C4C929.wem</Path>
+						</File>
+						<File Id="693063745" Language="SFX">
+							<ShortName>sfx_env_bars_loop.wav</ShortName>
+							<Path>SFX\sfx_env_bars_loop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="27808547" Name="LevelBarsStop" ObjectPath="\Events\Default Work Unit\Level\Beats\Bars\LevelBarsStop" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="7.000000" DurationMax="7.000000">
+					<IncludedMemoryFiles>
+						<File Id="371255371" Language="SFX">
+							<ShortName>sfx_env_bars_stop.wav</ShortName>
+							<Path>SFX\sfx_env_bars_stop_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{E7999C3E-6DE5-4EBC-ADF5-DC18EECD0D77}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{BD2185D2-EE3A-45E7-A06D-89D8CD516538}">
+							<Media>
+								<File Id="371255371"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="3672941687" Name="LevelBigRoomReveal" ObjectPath="\Events\Default Work Unit\Level\Beats\LevelBigRoomReveal" DurationType="OneShot" DurationMin="7.522255" DurationMax="7.522255">
 					<ReferencedStreamedFiles>

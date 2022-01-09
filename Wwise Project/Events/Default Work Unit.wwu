@@ -1054,6 +1054,42 @@ This event does the following:
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Folder Name="Bars" ID="{3B2A3256-A52E-47F4-A85B-249E2EC9AEBF}" ShortID="82656821">
+									<ChildrenList>
+										<Event Name="LevelBarsStart" ID="{8E3FD7AC-BA58-47E1-A39F-27F812AD3657}">
+											<ChildrenList>
+												<Action Name="" ID="{61C19BEF-B7F9-4C85-8642-163A04B97A95}" ShortID="985151132">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="sfx_env_bars" ID="{E311F1C7-4DD5-49DB-B416-487B18CC897C}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="LevelBarsStop" ID="{134E2E3B-3D5A-406E-A1BD-A322F189AA8B}">
+											<ChildrenList>
+												<Action Name="" ID="{6BB1CB9B-0CE8-434E-BB66-8B8DD9DB8DB4}" ShortID="758706513">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="sfx_env_bars" ID="{E311F1C7-4DD5-49DB-B416-487B18CC897C}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{5B6B51E4-5ED2-4295-B2C7-8EDC6CB3C6F8}" ShortID="639639513">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="sfx_env_bar_stop (Init Handling)" ID="{CFC3988E-3472-437A-B82E-7F266230FF60}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

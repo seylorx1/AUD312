@@ -34,6 +34,8 @@ namespace AK
         static const AkUniqueID HARPOONGRABSUCCESS = 2837856117U;
         static const AkUniqueID HARPOONPICKUP = 2867011390U;
         static const AkUniqueID HARPOONRECEIVED = 757170495U;
+        static const AkUniqueID LEVELBARSSTART = 3575485577U;
+        static const AkUniqueID LEVELBARSSTOP = 27808547U;
         static const AkUniqueID LEVELBIGROOMREVEAL = 3672941687U;
         static const AkUniqueID LEVELSTART = 3372421815U;
         static const AkUniqueID MECHANICALDOORSTART = 584382452U;

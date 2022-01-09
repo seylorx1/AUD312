@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3857155f990bfa43b3d23accebdd730, type: 3}
+  m_Name: 8E3FD7AC-BA58-47E1-A39F-27F812AD3657
+  m_EditorClassIdentifier: 
+  objectName: LevelBarsStart
+  id: 3575485577
+  guid: 8E3FD7AC-BA58-47E1-A39F-27F812AD3657

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3857155f990bfa43b3d23accebdd730, type: 3}
+  m_Name: 134E2E3B-3D5A-406E-A1BD-A322F189AA8B
+  m_EditorClassIdentifier: 
+  objectName: LevelBarsStop
+  id: 27808547
+  guid: 134E2E3B-3D5A-406E-A1BD-A322F189AA8B

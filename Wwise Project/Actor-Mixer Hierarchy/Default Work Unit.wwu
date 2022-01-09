@@ -792,6 +792,167 @@
 										</Folder>
 									</ChildrenList>
 								</Folder>
+								<Folder Name="Bars" ID="{F34BAB1C-5009-4EA5-9B5C-CF220ACF8E45}" ShortID="833997269">
+									<ChildrenList>
+										<RandomSequenceContainer Name="sfx_env_bars" ID="{E311F1C7-4DD5-49DB-B416-487B18CC897C}" ShortID="658852619">
+											<PropertyList>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="2"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="BarsAttenuation" ID="{14F29B73-706C-4809-B733-06856C19A1D0}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_env_bars_start" ID="{24161630-A3FB-43E7-BC01-872448DFC9A5}" ShortID="224143738">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_env_bars_start" ID="{F00A1A05-F57D-44F5-800D-623BCE764A3E}">
+															<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Level\Bars\Bars.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>sfx_env_bars_start.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="296373577"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_env_bars_start" ID="{F00A1A05-F57D-44F5-800D-623BCE764A3E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_env_bars_loop" ID="{7C44EE9B-817D-486E-85BE-09A5BB334D0A}" ShortID="136959253">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_env_bars_loop" ID="{D146E76C-F355-40BC-8433-EECE1AD49D5C}">
+															<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Level\Bars\Bars.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>sfx_env_bars_loop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="693063745"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_env_bars_loop" ID="{D146E76C-F355-40BC-8433-EECE1AD49D5C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="sfx_env_bars_start" ID="{24161630-A3FB-43E7-BC01-872448DFC9A5}"/>
+												<ItemRef Name="sfx_env_bars_loop" ID="{7C44EE9B-817D-486E-85BE-09A5BB334D0A}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<SwitchContainer Name="sfx_env_bar_stop (Init Handling)" ID="{CFC3988E-3472-437A-B82E-7F266230FF60}" ShortID="819624894">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="BarsAttenuation" ID="{14F29B73-706C-4809-B733-06856C19A1D0}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="None" ID="{E7999C3E-6DE5-4EBC-ADF5-DC18EECD0D77}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="InitWait" ID="{166E4ADA-3EFC-406C-918B-1F008340C889}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_env_bars_stop" ID="{16DDBD98-C645-41B8-B30E-907F75C2D8F8}" ShortID="863632719">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_env_bars_stop" ID="{ED424203-4BD5-49E5-9B54-8A54C9824142}">
+															<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Level\Bars\Bars.rpp"</Comment>
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_env_bars_stop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="371255371"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_env_bars_stop" ID="{ED424203-4BD5-49E5-9B54-8A54C9824142}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="sfx_env_bars_stop" ID="{16DDBD98-C645-41B8-B30E-907F75C2D8F8}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Passed" ID="{BD2185D2-EE3A-45E7-A06D-89D8CD516538}"/>
+														<ItemList>
+															<ItemRef Name="sfx_env_bars_stop" ID="{16DDBD98-C645-41B8-B30E-907F75C2D8F8}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Player" ID="{2D9A17C4-B58A-4DED-9D9F-1BBA28EFFDA3}" ShortID="400610942">
