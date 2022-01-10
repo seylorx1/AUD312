@@ -94,6 +94,17 @@ namespace AK
             } // namespace STATE
         } // namespace BOXSTATE
 
+        namespace END
+        {
+            static const AkUniqueID GROUP = 529726532U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PASSED = 2764605217U;
+            } // namespace STATE
+        } // namespace END
+
         namespace HARPOONFIRED
         {
             static const AkUniqueID GROUP = 379189110U;
@@ -138,6 +149,17 @@ namespace AK
             } // namespace STATE
         } // namespace ROOM_B
 
+        namespace ROOM_BIG
+        {
+            static const AkUniqueID GROUP = 3856659235U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PASSED = 2764605217U;
+            } // namespace STATE
+        } // namespace ROOM_BIG
+
         namespace ROOM_C
         {
             static const AkUniqueID GROUP = 1941896134U;
@@ -148,6 +170,28 @@ namespace AK
                 static const AkUniqueID PASSED = 2764605217U;
             } // namespace STATE
         } // namespace ROOM_C
+
+        namespace ROOM_HOUSE
+        {
+            static const AkUniqueID GROUP = 1858149433U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PASSED = 2764605217U;
+            } // namespace STATE
+        } // namespace ROOM_HOUSE
+
+        namespace ROOM_REVEAL
+        {
+            static const AkUniqueID GROUP = 424481936U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PASSED = 2764605217U;
+            } // namespace STATE
+        } // namespace ROOM_REVEAL
 
         namespace ROOM_TYPE
         {
@@ -253,7 +297,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID BOXSEGMENT = 3762319931U;
+        static const AkUniqueID BOXHOLDINGLOOPENABLED = 626958542U;
         static const AkUniqueID FOOTSTEPWEIGHT = 3587782899U;
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
         static const AkUniqueID RPM = 796049864U;
@@ -285,19 +329,30 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AGGRESSIVE_KICKSNARE_BUS = 488761070U;
         static const AkUniqueID BASE = 1291433366U;
+        static const AkUniqueID BASS_BUS = 3610069850U;
+        static const AkUniqueID BLOB_BUS = 175431986U;
         static const AkUniqueID BOX_AMBIENCE_BUS = 2758124570U;
         static const AkUniqueID BOX_HOLDING_BUS = 2190619839U;
+        static const AkUniqueID BOX_STINGER_BUS = 1727025408U;
+        static const AkUniqueID COUNTERBLOB_BUS = 234154300U;
+        static const AkUniqueID COUNTERMELODY_BUS = 1453750477U;
+        static const AkUniqueID DIALOGUE_BUS = 3714968413U;
         static const AkUniqueID DIEGETIC_SFX_BUS = 1073713956U;
+        static const AkUniqueID FANTASYCHIRPS_BUS = 1221108976U;
+        static const AkUniqueID FANTASYCHORDS_BUS = 799078070U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID HARPOON = 302949338U;
         static const AkUniqueID HARPOON_AMBIENCE_BUS = 286173556U;
         static const AkUniqueID HARPOONAIR = 1174992302U;
+        static const AkUniqueID HATS_BUS = 943133409U;
         static const AkUniqueID KICKSNARE_BUS = 831678660U;
         static const AkUniqueID LEFT_FOOTSTEP = 1014522048U;
         static const AkUniqueID LEVEL_EFFECT_SFX_BUS = 2398579647U;
-        static const AkUniqueID MOTION_FACTORY_BUS = 985987111U;
+        static const AkUniqueID MELODY_BUS = 1512839339U;
         static const AkUniqueID MUSIC_BUS = 3127962312U;
+        static const AkUniqueID NARRATOR = 3272864290U;
         static const AkUniqueID NON_DIEGETIC_SFX_BUS = 391035146U;
         static const AkUniqueID PLATFORM = 4035573696U;
         static const AkUniqueID RIGHT_FOOTSTEP = 854631381U;

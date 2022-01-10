@@ -16,14 +16,21 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1498791793">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1329941052">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<GameParameters>
+				<GameParameter Id="626958542" Name="BoxHoldingLoopEnabled" ObjectPath="\Game Parameters\Default Work Unit\Interactions\BoxHoldingLoopEnabled"/>
 				<GameParameter Id="1042517418" Name="WindIntensity" ObjectPath="\Game Parameters\Default Work Unit\Ambience\WindIntensity"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="529726532" Name="End" ObjectPath="\States\Default Work Unit\Rooms\Sections\End" GUID="{2A0A63EB-7DEB-4A4D-BEBE-1E0FCED51417}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Rooms\Sections\End\None" GUID="{4781AD41-593D-4963-A783-3B4618D86A1D}"/>
+						<State Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Rooms\Sections\End\Passed" GUID="{EAFF9EF4-A098-4988-BBF7-6DF3C93E0443}"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="1130916508" Name="InitWait" ObjectPath="\States\Default Work Unit\Util\InitWait" GUID="{166E4ADA-3EFC-406C-918B-1F008340C889}">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Util\InitWait\None" GUID="{E7999C3E-6DE5-4EBC-ADF5-DC18EECD0D77}"/>
@@ -38,7 +45,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2782193391">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1751390621">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -647,23 +654,19 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3333733726" Name="HarpoonAmbienceStop" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonAmbienceStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2421633396" Name="HarpoonFireReturn" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonFireReturn" DurationType="OneShot" DurationMin="3.700000" DurationMax="3.700000">
+				<Event Id="2421633396" Name="HarpoonFireReturn" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonFireReturn" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="117884843" Language="SFX">
 							<ShortName>sfx_harpoon_shoot_reel_air.wav</ShortName>
-							<Path>SFX\sfx_harpoon_shoot_reel_air_10C4C929.wem</Path>
+							<Path>SFX\sfx_harpoon_shoot_reel_air_D79FB2B7.wem</Path>
 						</File>
 						<File Id="570316296" Language="SFX">
 							<ShortName>sfx_harpoon_shoot_reel_chain.wav</ShortName>
-							<Path>SFX\sfx_harpoon_shoot_reel_chain_10C4C929.wem</Path>
+							<Path>SFX\sfx_harpoon_shoot_reel_chain_D79FB2B7.wem</Path>
 						</File>
 						<File Id="604781409" Language="SFX">
 							<ShortName>sfx_harpoon_shoot_a.wav</ShortName>
 							<Path>SFX\sfx_harpoon_shoot_a_10C4C929.wem</Path>
-						</File>
-						<File Id="845357093" Language="SFX">
-							<ShortName>sfx_harpoon_shoot_b.wav</ShortName>
-							<Path>SFX\sfx_harpoon_shoot_b_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{4B9FB557-3308-4BF4-9ECA-486659E8A285}</DefaultSwitchValue>
@@ -673,17 +676,12 @@
 								<File Id="604781409"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{4B9FB557-3308-4BF4-9ECA-486659E8A285}">
-							<Media>
-								<File Id="845357093"/>
-							</Media>
-						</SwitchContainer>
 					</SwitchContainers>
 					<ActionSetState>
 						<ActionSetStateEntry Id="2378879461" Name="HasFired" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\HasFired"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="2837856117" Name="HarpoonGrabSuccess" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonGrabSuccess" DurationType="OneShot" DurationMin="2.138458" DurationMax="2.138458">
+				<Event Id="2837856117" Name="HarpoonGrabSuccess" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonGrabSuccess" DurationType="OneShot" DurationMin="2.107211" DurationMax="2.107211">
 					<IncludedMemoryFiles>
 						<File Id="128127013" Language="SFX">
 							<ShortName>sfx_harpoon_shoot_reel_heavychain.wav</ShortName>
@@ -695,7 +693,13 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2867011390" Name="HarpoonPickup" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonPickup" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="2867011390" Name="HarpoonPickup" ObjectPath="\Events\Default Work Unit\SFX\Harpoon\HarpoonPickup" DurationType="OneShot" DurationMin="4.000000" DurationMax="4.000000">
+					<IncludedMemoryFiles>
+						<File Id="938046817" Language="SFX">
+							<ShortName>sfx_ux_box_pickup.wav</ShortName>
+							<Path>SFX\sfx_ux_box_pickup_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 					<ActionSetState>
 						<ActionSetStateEntry Id="515864255" Name="HarpoonHeld" ObjectPath="\States\Default Work Unit\Interactions\HarpoonState\HarpoonHeld"/>
 					</ActionSetState>
@@ -750,78 +754,17 @@
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="3070671186" Name="EnterOutdoors" ObjectPath="\Events\Default Work Unit\Level\Room\EnterOutdoors"/>
 					</ActionPostEvent>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_Reveal\Passed"/>
+					</ActionSetState>
 				</Event>
-				<Event Id="2134511225" Name="LevelFadeOut" ObjectPath="\Events\Default Work Unit\Level\Beats\LevelFadeOut" DurationType="OneShot" DurationMin="6.776757" DurationMax="9.883446">
-					<IncludedMemoryFiles>
-						<File Id="8754654" Language="SFX">
-							<ShortName>sfx_narrator_open.wav</ShortName>
-							<Path>SFX\sfx_narrator_open_10C4C929.wem</Path>
-						</File>
-						<File Id="48822515" Language="SFX">
-							<ShortName>vx_narrator_trigger_11.wav</ShortName>
-							<Path>SFX\vx_narrator_trigger_11_10C4C929.wem</Path>
-						</File>
-						<File Id="63339553" Language="SFX">
-							<ShortName>vx_narrator_trigger_12.wav</ShortName>
-							<Path>SFX\vx_narrator_trigger_12_10C4C929.wem</Path>
-						</File>
-						<File Id="70195472" Language="SFX">
-							<ShortName>vx_narrator_trigger_07.wav</ShortName>
-							<Path>SFX\vx_narrator_trigger_07_10C4C929.wem</Path>
-						</File>
-						<File Id="118143263" Language="SFX">
-							<ShortName>vx_narrator_trigger_05.wav</ShortName>
-							<Path>SFX\vx_narrator_trigger_05_10C4C929.wem</Path>
-						</File>
-						<File Id="274609004" Language="SFX">
-							<ShortName>vx_narrator_trigger_06.wav</ShortName>
-							<Path>SFX\vx_narrator_trigger_06_10C4C929.wem</Path>
-						</File>
-						<File Id="318942664" Language="SFX">
-							<ShortName>vx_narrator_trigger_09.wav</ShortName>
-							<Path>SFX\vx_narrator_trigger_09_10C4C929.wem</Path>
-						</File>
-						<File Id="403143043" Language="SFX">
-							<ShortName>vx_narrator_trigger_02.wav</ShortName>
-							<Path>SFX\vx_narrator_trigger_02_10C4C929.wem</Path>
-						</File>
-						<File Id="426936030" Language="SFX">
-							<ShortName>vx_narrator_fadeout.wav</ShortName>
-							<Path>SFX\vx_narrator_fadeout_10C4C929.wem</Path>
-						</File>
-						<File Id="468315385" Language="SFX">
-							<ShortName>vx_narrator_trigger_08.wav</ShortName>
-							<Path>SFX\vx_narrator_trigger_08_10C4C929.wem</Path>
-						</File>
-						<File Id="470829197" Language="SFX">
-							<ShortName>sfx_narrator_close.wav</ShortName>
-							<Path>SFX\sfx_narrator_close_10C4C929.wem</Path>
-						</File>
-						<File Id="512523175" Language="SFX">
-							<ShortName>vx_narrator_trigger_03.wav</ShortName>
-							<Path>SFX\vx_narrator_trigger_03_10C4C929.wem</Path>
-						</File>
-						<File Id="532869110" Language="SFX">
-							<ShortName>vx_narrator_trigger_13.wav</ShortName>
-							<Path>SFX\vx_narrator_trigger_13_10C4C929.wem</Path>
-						</File>
-						<File Id="660941783" Language="SFX">
-							<ShortName>vx_narrator_checkpoint.wav</ShortName>
-							<Path>SFX\vx_narrator_checkpoint_10C4C929.wem</Path>
-						</File>
-						<File Id="854068518" Language="SFX">
-							<ShortName>vx_narrator_trigger_04.wav</ShortName>
-							<Path>SFX\vx_narrator_trigger_04_10C4C929.wem</Path>
-						</File>
-						<File Id="959469471" Language="SFX">
-							<ShortName>vx_narrator_trigger_01.wav</ShortName>
-							<Path>SFX\vx_narrator_trigger_01_10C4C929.wem</Path>
-						</File>
-						<File Id="1060928635" Language="SFX">
-							<ShortName>vx_narrator_trigger_10.wav</ShortName>
-							<Path>SFX\vx_narrator_trigger_10_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2134511225" Name="LevelFadeOut" ObjectPath="\Events\Default Work Unit\Level\Beats\LevelFadeOut" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="983946156" Name="NarratorDialogue" ObjectPath="\Events\Default Work Unit\Dialogue\NarratorDialogue"/>
+					</ActionPostEvent>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Rooms\Sections\End\Passed"/>
+					</ActionSetState>
 					<ActionSetSwitch>
 						<ActionSetSwitchEntry Id="3903560121" Name="Fadeout" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Fadeout"/>
 					</ActionSetSwitch>
@@ -885,6 +828,10 @@
 							<ShortName>music_boat_kicksnare_chorus.wav</ShortName>
 							<Path>SFX\music_boat_kicksnare_chorus_D79FB2B7.wem</Path>
 						</File>
+						<File Id="250696590" Language="SFX">
+							<ShortName>music_boat_distortbass.wav</ShortName>
+							<Path>SFX\music_boat_distortbass_D79FB2B7.wem</Path>
+						</File>
 						<File Id="268973021" Language="SFX">
 							<ShortName>music_boat_intensebass_3.wav</ShortName>
 							<Path>SFX\music_boat_intensebass_3_D79FB2B7.wem</Path>
@@ -917,6 +864,14 @@
 							<ShortName>music_boat_aggressivekicksnare_2.wav</ShortName>
 							<Path>SFX\music_boat_aggressivekicksnare_2_D79FB2B7.wem</Path>
 						</File>
+						<File Id="637518809" Language="SFX">
+							<ShortName>music_boat_fantasychirps_1.wav</ShortName>
+							<Path>SFX\music_boat_fantasychirps_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="660892659" Language="SFX">
+							<ShortName>music_boat_fantasychirps_chorus.wav</ShortName>
+							<Path>SFX\music_boat_fantasychirps_chorus_D79FB2B7.wem</Path>
+						</File>
 						<File Id="664813967" Language="SFX">
 							<ShortName>music_boat_intensebass_chorus.wav</ShortName>
 							<Path>SFX\music_boat_intensebass_chorus_D79FB2B7.wem</Path>
@@ -932,10 +887,6 @@
 						<File Id="718091025" Language="SFX">
 							<ShortName>music_boat_intensebass_1.wav</ShortName>
 							<Path>SFX\music_boat_intensebass_1_D79FB2B7.wem</Path>
-						</File>
-						<File Id="727411136" Language="SFX">
-							<ShortName>music_boat_intensevamp_chorus_1.wav</ShortName>
-							<Path>SFX\music_boat_intensevamp_chorus_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="791546088" Language="SFX">
 							<ShortName>music_boat_boxholding_2.wav</ShortName>
@@ -961,13 +912,13 @@
 							<ShortName>music_boat_countermelody_2.wav</ShortName>
 							<Path>SFX\music_boat_countermelody_2_D79FB2B7.wem</Path>
 						</File>
+						<File Id="901093851" Language="SFX">
+							<ShortName>music_boat_fantasychirps _2.wav</ShortName>
+							<Path>SFX\music_boat_fantasychirps _2_D79FB2B7.wem</Path>
+						</File>
 						<File Id="913142023" Language="SFX">
 							<ShortName>music_boat_vamp_chorus_1.wav</ShortName>
 							<Path>SFX\music_boat_vamp_chorus_1_D79FB2B7.wem</Path>
-						</File>
-						<File Id="931555717" Language="SFX">
-							<ShortName>music_boat_intensealberti_chorus_1.wav</ShortName>
-							<Path>SFX\music_boat_intensealberti_chorus_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="966247712" Language="SFX">
 							<ShortName>music_boat_hats_chorus.wav</ShortName>
@@ -1389,13 +1340,18 @@
 			<GameParameters>
 				<GameParameter Id="244091178" Name="VampCooldown" ObjectPath="\Game Parameters\Default Work Unit\Footstep\VampCooldown"/>
 				<GameParameter Id="3587782899" Name="FootstepWeight" ObjectPath="\Game Parameters\Default Work Unit\Footstep\FootstepWeight"/>
-				<GameParameter Id="3762319931" Name="BoxSegment" ObjectPath="\Game Parameters\Default Work Unit\Interactions\BoxSegment"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="379189110" Name="HarpoonFired" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired" GUID="{73735AFF-F44D-45C6-97A0-D344484F219B}">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\None" GUID="{4B9FB557-3308-4BF4-9ECA-486659E8A285}"/>
 						<State Id="2378879461" Name="HasFired" ObjectPath="\States\Default Work Unit\Interactions\HarpoonFired\HasFired" GUID="{47EC628F-C044-4F20-B62D-21B04E2A5BD3}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="424481936" Name="Room_Reveal" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_Reveal" GUID="{4E053E3F-68F5-4A82-96CA-2A35BF116C05}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_Reveal\None" GUID="{8E0D3822-69E7-4FC4-AE02-72EDCDBFFEC1}"/>
+						<State Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_Reveal\Passed" GUID="{609A1639-28B6-47FA-8E74-753C2CE690FF}"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="515864255" Name="HarpoonHeld" ObjectPath="\States\Default Work Unit\Interactions\HarpoonState\HarpoonHeld" GUID="{801A23EA-9585-4040-B632-EAA67C533806}">
@@ -1416,16 +1372,22 @@
 						<State Id="515864255" Name="HarpoonHeld" ObjectPath="\States\Default Work Unit\Interactions\HarpoonState\HarpoonHeld" GUID="{801A23EA-9585-4040-B632-EAA67C533806}"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="1941896134" Name="Room_C" ObjectPath="\States\Default Work Unit\Rooms\Room_C" GUID="{0F51F7A7-DA4E-491F-97F6-EE94B00CB2F9}">
+				<StateGroup Id="1858149433" Name="Room_House" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_House" GUID="{F0EC8EF8-7DD9-4427-A547-FFD726B7A40A}">
 					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Rooms\Room_C\None" GUID="{19496866-5461-430E-A457-14160955E205}"/>
-						<State Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Rooms\Room_C\Passed" GUID="{D06C60D8-9FF5-4474-897E-D7DD6F79A673}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_House\None" GUID="{E1C7A735-F8A0-42B9-B406-851841F4D0BD}"/>
+						<State Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_House\Passed" GUID="{6177321D-9576-462B-9632-78AA5257822F}"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="1941896135" Name="Room_B" ObjectPath="\States\Default Work Unit\Rooms\Room_B" GUID="{0F28CB9D-8E69-4152-BC69-50EE91E39FC8}">
+				<StateGroup Id="1941896134" Name="Room_C" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_C" GUID="{0F51F7A7-DA4E-491F-97F6-EE94B00CB2F9}">
 					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Rooms\Room_B\None" GUID="{E604430D-8069-4F71-9B77-F5EA3F936052}"/>
-						<State Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Rooms\Room_B\Passed" GUID="{5B851545-24BC-4022-8588-F9946FE0E763}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_C\None" GUID="{19496866-5461-430E-A457-14160955E205}"/>
+						<State Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_C\Passed" GUID="{D06C60D8-9FF5-4474-897E-D7DD6F79A673}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="1941896135" Name="Room_B" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_B" GUID="{0F28CB9D-8E69-4152-BC69-50EE91E39FC8}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_B\None" GUID="{E604430D-8069-4F71-9B77-F5EA3F936052}"/>
+						<State Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_B\Passed" GUID="{5B851545-24BC-4022-8588-F9946FE0E763}"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="2060468149" Name="BoxHeld" ObjectPath="\States\Default Work Unit\Music\BoxState\BoxHeld" GUID="{DA60839B-344D-45C3-9134-81D0EECBFB60}">
@@ -1445,6 +1407,12 @@
 				</StateGroup>
 				<StateGroup Id="3791155954" Name="Muted" ObjectPath="\States\Default Work Unit\Music\BoxOpeningStingerState\Muted" GUID="{4D12F6FF-B7BE-42A8-AE76-49832BECE1DA}">
 					<States/>
+				</StateGroup>
+				<StateGroup Id="3856659235" Name="Room_Big" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_Big" GUID="{670D71D5-6F78-4559-8138-BA2F12C30791}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_Big\None" GUID="{DF1C7777-2D93-44E7-8A07-AA98FBFCA650}"/>
+						<State Id="2764605217" Name="Passed" ObjectPath="\States\Default Work Unit\Rooms\Sections\Room_Big\Passed" GUID="{8516DA25-094C-418F-BD50-92C86EE5D0EA}"/>
+					</States>
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>

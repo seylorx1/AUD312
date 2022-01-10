@@ -7823,7 +7823,7 @@ PrefabInstance:
     - target: {fileID: 4222257435259091298, guid: 6f77f5551d1e34f44b66f57e391bfce3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.513
+      value: 1.513
       objectReference: {fileID: 0}
     - target: {fileID: 4222257435259091298, guid: 6f77f5551d1e34f44b66f57e391bfce3,
         type: 3}
@@ -10309,6 +10309,7 @@ GameObject:
   - component: {fileID: 621638337}
   - component: {fileID: 621638340}
   - component: {fileID: 621638339}
+  - component: {fileID: 621638341}
   m_Layer: 13
   m_Name: Bars Down
   m_TagString: Untagged
@@ -10411,6 +10412,31 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &621638341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621638335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 283e61991cd43934b93b39ce55e55e66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5d20f4bab60b73a4095c20b29a13bbee,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &625756112
 GameObject:
   m_ObjectHideFlags: 0
@@ -23303,6 +23329,7 @@ GameObject:
   - component: {fileID: 1387189501}
   - component: {fileID: 1387189504}
   - component: {fileID: 1387189503}
+  - component: {fileID: 1387189505}
   m_Layer: 12
   m_Name: Outdoors
   m_TagString: Untagged
@@ -23414,6 +23441,31 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &1387189505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387189499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 283e61991cd43934b93b39ce55e55e66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 09766001145669649b5ad6f08c8b19cf,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &1390885071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30981,6 +31033,7 @@ GameObject:
   - component: {fileID: 1788606719}
   - component: {fileID: 1788606718}
   - component: {fileID: 1788606717}
+  - component: {fileID: 1788606721}
   m_Layer: 12
   m_Name: Indoors
   m_TagString: Untagged
@@ -31092,6 +31145,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2.5, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1788606721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788606715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 283e61991cd43934b93b39ce55e55e66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d29fdf0bf166bf04aaa0fbe0c72bd8a9,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &1790831335
 PrefabInstance:
   m_ObjectHideFlags: 0

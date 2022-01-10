@@ -48,10 +48,10 @@ Set to 1 every time a footstep is called, and slowly resets to 0 again.</Comment
 				</Folder>
 				<Folder Name="Interactions" ID="{EB3B0A57-ADE9-416C-A971-A94A95C9A907}" ShortID="552316399">
 					<ChildrenList>
-						<GameParameter Name="BoxSegment" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}">
+						<GameParameter Name="BoxHoldingLoopEnabled" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="11"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="2"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="2.3"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>

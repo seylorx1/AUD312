@@ -62,7 +62,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="BoxSegment" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+															<ObjectRef Name="BoxHoldingLoopEnabled" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -97,7 +97,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="BoxSegment" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+															<ObjectRef Name="BoxHoldingLoopEnabled" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -109,7 +109,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="BoxSegment" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
+															<ObjectRef Name="BoxHoldingLoopEnabled" ID="{5613D594-D63E-455E-983B-C1FCD29DF7D4}" WorkUnitID="{0FD613FE-5285-4413-8D27-601EDD0D77E4}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -142,6 +142,13 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{97A8014D-614F-4838-8ADD-9164BE9C9B71}" ShortID="571467456">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_ux_box_pickup" ID="{FCDE5ACC-F2EE-4EAD-83D9-E0492894B313}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="HarpoonFireReturn" ID="{DECE25C7-0139-4F72-9A70-8D27EF952A14}">
@@ -155,14 +162,14 @@ This event does the following:
 										<Action Name="" ID="{08F3D848-2B7E-4423-8540-819210892F11}" ShortID="309122942">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{51E6B93F-34E9-41D4-BC0C-87C6BA49000F}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 										<Action Name="" ID="{D9ED3B48-0F24-442E-A7AE-4018BBCA05F0}" ShortID="238544720">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{9903308D-381E-436D-A181-12764D4DB6B2}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{E49B6DC4-FF62-4729-B619-F122211EC25D}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -172,7 +179,7 @@ This event does the following:
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_b" ID="{B4814B0F-9481-4E3F-A962-2914F0E062C5}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_b" ID="{15772544-6DDE-4DF9-8F0E-C8777FEB805F}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -204,7 +211,7 @@ This event does the following:
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{51E6B93F-34E9-41D4-BC0C-87C6BA49000F}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -214,7 +221,7 @@ This event does the following:
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{9903308D-381E-436D-A181-12764D4DB6B2}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{E49B6DC4-FF62-4729-B619-F122211EC25D}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -224,7 +231,7 @@ This event does the following:
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_heavyair" ID="{B020BC20-422A-4327-AFDA-A10B5A9FB672}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_heavyair" ID="{BC86916E-5C2E-4A62-9A11-FB5E517E896E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -234,7 +241,7 @@ This event does the following:
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{94A90C15-E7DC-4689-A5B3-E29CFA685765}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{8BBB72E5-6442-4B57-9DC8-3CD83B8CB230}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -259,7 +266,7 @@ This event does the following:
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{863A9B0B-14B9-4473-8FC9-5AF3839C944E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_air" ID="{51E6B93F-34E9-41D4-BC0C-87C6BA49000F}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -269,21 +276,21 @@ This event does the following:
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{9903308D-381E-436D-A181-12764D4DB6B2}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_chain" ID="{E49B6DC4-FF62-4729-B619-F122211EC25D}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 										<Action Name="" ID="{D00B95FD-7500-42BE-8317-9B1D4BC46850}" ShortID="369946007">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_heavyair" ID="{B020BC20-422A-4327-AFDA-A10B5A9FB672}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_heavyair" ID="{BC86916E-5C2E-4A62-9A11-FB5E517E896E}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 										<Action Name="" ID="{112226F4-92E8-4102-8EA5-6E0BF0D5F5C5}" ShortID="884086851">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{94A90C15-E7DC-4689-A5B3-E29CFA685765}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="sfx_harpoon_shoot_reel_heavychain" ID="{8BBB72E5-6442-4B57-9DC8-3CD83B8CB230}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1119,6 +1126,17 @@ This event does the following:
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{F17017BF-C2FE-4329-A9A4-7296B3272339}" ShortID="978601094">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+												<Property Name="Delay" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Passed" ID="{609A1639-28B6-47FA-8E74-753C2CE690FF}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Folder Name="Bars" ID="{3B2A3256-A52E-47F4-A85B-249E2EC9AEBF}" ShortID="82656821">
@@ -1169,13 +1187,23 @@ This event does the following:
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{65767935-846F-43F9-AFE2-0F91258FF151}" ShortID="331202300">
+										<Action Name="" ID="{0D2A0500-ADAF-47E8-890D-DA3276E0FBCC}" ShortID="606138869">
 											<PropertyList>
-												<Property Name="Delay" Type="Real64" Value="2"/>
+												<Property Name="ActionType" Type="int16" Value="41"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="vx_narrator (Enabled)" ID="{F50F878C-0D1C-4108-826F-2F5DC5D47ADB}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+													<ObjectRef Name="NarratorDialogue" ID="{35665977-F672-4D22-B458-AC8C257EAC33}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A1729BB6-FF6B-416C-B312-088D5B0371D6}" ShortID="410210599">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Passed" ID="{EAFF9EF4-A098-4988-BBF7-6DF3C93E0443}" WorkUnitID="{ABEE26C2-AA13-404F-9E89-C2A35C4216CC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

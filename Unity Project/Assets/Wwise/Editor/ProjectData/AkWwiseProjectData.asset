@@ -303,8 +303,32 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585598540364874318
+    m_lastTime: -8585598169993281408
     List:
+    - name: Aggressive Kicksnare Bus
+      guid: 8a881f69b733e6479cff2bb2b0009c6b
+      id: 488761070
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Seperated Instruments
+        ObjectType: 4
+        guid: 600451862cb6874bbbc59562f60a3c21
+      - ElementName: Kicksnare Bus
+        ObjectType: 2
+        guid: 22d7906c0b44b44891074f218307cba6
+      - ElementName: Aggressive Kicksnare Bus
+        ObjectType: 2
+        guid: 8a881f69b733e6479cff2bb2b0009c6b
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Seperated Instruments\Kicksnare
+        Bus\Aggressive Kicksnare Bus
     - name: Ambience
       guid: 4bf007b3e95ba347893be1c6d236bd46
       id: 85412153
@@ -345,6 +369,46 @@ MonoBehaviour:
         ObjectType: 2
         guid: f8400540ecc8c44394331a34a8a64f68
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base
+    - name: Bass Bus
+      guid: 473ef5d8ffbf6a49a39e24e7367d21ed
+      id: 3610069850
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Base
+        ObjectType: 2
+        guid: f8400540ecc8c44394331a34a8a64f68
+      - ElementName: Bass Bus
+        ObjectType: 2
+        guid: 473ef5d8ffbf6a49a39e24e7367d21ed
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base\Bass Bus
+    - name: Blob Bus
+      guid: 2f9a06144ffde145aa73b8eaa799d9c7
+      id: 175431986
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Base
+        ObjectType: 2
+        guid: f8400540ecc8c44394331a34a8a64f68
+      - ElementName: Blob Bus
+        ObjectType: 2
+        guid: 2f9a06144ffde145aa73b8eaa799d9c7
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base\Blob Bus
     - name: Box Ambience Bus
       guid: 3c54f65d07558942a3ae62861deef030
       id: 2758124570
@@ -387,6 +451,82 @@ MonoBehaviour:
         guid: 7178a0cb03d21c4b8c86f221ddc3b242
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Holding
         Bus
+    - name: Box Stinger Bus
+      guid: c810ff2974434f4487a93ec1a4db2e72
+      id: 1727025408
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Interactions
+        ObjectType: 4
+        guid: cb3a9d8e2cd15247ba59caa62a044962
+      - ElementName: Box Stinger Bus
+        ObjectType: 2
+        guid: c810ff2974434f4487a93ec1a4db2e72
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions\Box Stinger
+        Bus
+    - name: Counterblob Bus
+      guid: f306fb44e4961f4e8a5ac3206be37182
+      id: 234154300
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Base
+        ObjectType: 2
+        guid: f8400540ecc8c44394331a34a8a64f68
+      - ElementName: Counterblob Bus
+        ObjectType: 2
+        guid: f306fb44e4961f4e8a5ac3206be37182
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base\Counterblob Bus
+    - name: Countermelody Bus
+      guid: d8a88707ce2a1f42acaf74ed7e45f6ed
+      id: 1453750477
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Base
+        ObjectType: 2
+        guid: f8400540ecc8c44394331a34a8a64f68
+      - ElementName: Countermelody Bus
+        ObjectType: 2
+        guid: d8a88707ce2a1f42acaf74ed7e45f6ed
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base\Countermelody
+        Bus
+    - name: Dialogue Bus
+      guid: 8b3fc66099210f43882a131a00b45f09
+      id: 3714968413
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Dialogue Bus
+        ObjectType: 2
+        guid: 8b3fc66099210f43882a131a00b45f09
+      Path: Master-Mixer Hierarchy\Default Work Unit\Dialogue Bus
     - name: Diegetic SFX Bus
       guid: 300defa1ec929e44b8c16c3eeedc7a43
       id: 1073713956
@@ -424,6 +564,48 @@ MonoBehaviour:
         ObjectType: 4
         guid: 3a29cb5162b4b74dade541c8418c3894
       Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Environment
+    - name: Fantasychirps Bus
+      guid: df9c123d04d6a3478c54a50715f66ab8
+      id: 1221108976
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Base
+        ObjectType: 2
+        guid: f8400540ecc8c44394331a34a8a64f68
+      - ElementName: Fantasychirps Bus
+        ObjectType: 2
+        guid: df9c123d04d6a3478c54a50715f66ab8
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base\Fantasychirps
+        Bus
+    - name: Fantasychords Bus
+      guid: 6ae881cf3e91c745bd1c15e70f415b38
+      id: 799078070
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Base
+        ObjectType: 2
+        guid: f8400540ecc8c44394331a34a8a64f68
+      - ElementName: Fantasychords Bus
+        ObjectType: 2
+        guid: 6ae881cf3e91c745bd1c15e70f415b38
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base\Fantasychords
+        Bus
     - name: Footsteps
       guid: c13f11b0aaeda240a557fe73afab7937
       id: 2385628198
@@ -508,9 +690,9 @@ MonoBehaviour:
         ObjectType: 2
         guid: b5202d48d69f0e448eede17be5ccf386
       Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Harpoon\HarpoonAir
-    - name: Instruments
-      guid: 600451862cb6874bbbc59562f60a3c21
-      id: 559901361
+    - name: Hats Bus
+      guid: e041305009d08c49891acb41635b01e6
+      id: 943133409
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -521,10 +703,13 @@ MonoBehaviour:
       - ElementName: Music Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Instruments
-        ObjectType: 4
-        guid: 600451862cb6874bbbc59562f60a3c21
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Instruments
+      - ElementName: Base
+        ObjectType: 2
+        guid: f8400540ecc8c44394331a34a8a64f68
+      - ElementName: Hats Bus
+        ObjectType: 2
+        guid: e041305009d08c49891acb41635b01e6
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base\Hats Bus
     - name: Interactions
       guid: cb3a9d8e2cd15247ba59caa62a044962
       id: 888201102
@@ -542,7 +727,7 @@ MonoBehaviour:
         ObjectType: 4
         guid: cb3a9d8e2cd15247ba59caa62a044962
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Interactions
-    - name: KickSnare Bus
+    - name: Kicksnare Bus
       guid: 22d7906c0b44b44891074f218307cba6
       id: 831678660
       PathAndIcons:
@@ -555,13 +740,13 @@ MonoBehaviour:
       - ElementName: Music Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Instruments
+      - ElementName: Seperated Instruments
         ObjectType: 4
         guid: 600451862cb6874bbbc59562f60a3c21
-      - ElementName: KickSnare Bus
+      - ElementName: Kicksnare Bus
         ObjectType: 2
         guid: 22d7906c0b44b44891074f218307cba6
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Instruments\KickSnare
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Seperated Instruments\Kicksnare
         Bus
     - name: Left Footstep
       guid: 91b72d5949b1ae40ae73f68624c18669
@@ -600,20 +785,17 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: 8e975426d403694b939b8ceb1b3f8c40
-      - ElementName: Diegetic SFX Bus
+      - ElementName: Non-Diegetic SFX Bus
         ObjectType: 2
-        guid: 300defa1ec929e44b8c16c3eeedc7a43
-      - ElementName: Environment
-        ObjectType: 4
-        guid: 3a29cb5162b4b74dade541c8418c3894
+        guid: b904a91ec97f0c4f8de251d780a55c4d
       - ElementName: Level Effect SFX Bus
         ObjectType: 2
         guid: 63cc41731a1b6646b97dd44869c2fa53
-      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Environment\Level
+      Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Non-Diegetic SFX Bus\Level
         Effect SFX Bus
-    - name: Motion Factory Bus
-      guid: c6b9f92af16ee946b5f2e30c9e602c74
-      id: 985987111
+    - name: Melody Bus
+      guid: e475510c62f71f43a39f3b824f098747
+      id: 1512839339
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -621,10 +803,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 290eb1d07f8a304b98e3d421983690c7
-      - ElementName: Motion Factory Bus
+      - ElementName: Music Bus
         ObjectType: 2
-        guid: c6b9f92af16ee946b5f2e30c9e602c74
-      Path: Master-Mixer Hierarchy\Default Work Unit\Motion Factory Bus
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Base
+        ObjectType: 2
+        guid: f8400540ecc8c44394331a34a8a64f68
+      - ElementName: Melody Bus
+        ObjectType: 2
+        guid: e475510c62f71f43a39f3b824f098747
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Base\Melody Bus
     - name: Music Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3127962312
@@ -639,6 +827,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus
+    - name: Narrator
+      guid: f8ca666d2bd88f43918a32674f4a8cad
+      id: 3272864290
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Dialogue Bus
+        ObjectType: 2
+        guid: 8b3fc66099210f43882a131a00b45f09
+      - ElementName: Narrator
+        ObjectType: 2
+        guid: f8ca666d2bd88f43918a32674f4a8cad
+      Path: Master-Mixer Hierarchy\Default Work Unit\Dialogue Bus\Narrator
     - name: Non-Diegetic SFX Bus
       guid: b904a91ec97f0c4f8de251d780a55c4d
       id: 391035146
@@ -703,6 +908,23 @@ MonoBehaviour:
         guid: e2a043da67a1f8469ed647ff2e023210
       Path: Master-Mixer Hierarchy\Default Work Unit\SFX\Diegetic SFX Bus\Footsteps\Right
         Footstep
+    - name: Seperated Instruments
+      guid: 600451862cb6874bbbc59562f60a3c21
+      id: 2323373704
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 290eb1d07f8a304b98e3d421983690c7
+      - ElementName: Music Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Seperated Instruments
+        ObjectType: 4
+        guid: 600451862cb6874bbbc59562f60a3c21
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Seperated Instruments
     - name: SFX
       guid: 8e975426d403694b939b8ceb1b3f8c40
       id: 393239870
@@ -786,13 +1008,14 @@ MonoBehaviour:
       - ElementName: Music Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Instruments
+      - ElementName: Seperated Instruments
         ObjectType: 4
         guid: 600451862cb6874bbbc59562f60a3c21
       - ElementName: Vamp Bus
         ObjectType: 2
         guid: 3642d45a92ab3c49ba1479793c94f2c9
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Instruments\Vamp Bus
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music Bus\Seperated Instruments\Vamp
+        Bus
     - name: Wind
       guid: 4505e1f36c4da84599c0a6bed624f17b
       id: 1537061107
@@ -879,7 +1102,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585598325501635376
+    m_lastTime: -8585598185002008888
     List:
     - name: Bars
       guid: 56322a3b2ea5f447a85b249e2ec9aebf
@@ -1554,8 +1777,8 @@ MonoBehaviour:
         guid: c725cede3901724f9a708d27ef952a14
       Path: Events\Default Work Unit\SFX\Harpoon\HarpoonFireReturn
       maxAttenuation: 0
-      maxDuration: 3.7
-      minDuration: 3.7
+      maxDuration: -1
+      minDuration: -1
     - name: HarpoonGrabSuccess
       guid: a522c185f18d8a4bb9601d4f57bff71b
       id: 2837856117
@@ -1577,8 +1800,8 @@ MonoBehaviour:
         guid: a522c185f18d8a4bb9601d4f57bff71b
       Path: Events\Default Work Unit\SFX\Harpoon\HarpoonGrabSuccess
       maxAttenuation: 0
-      maxDuration: 2.138458
-      minDuration: 2.138458
+      maxDuration: 2.107211
+      minDuration: 2.107211
     - name: HarpoonPickup
       guid: 1cf8f263f320274e901d621bbcdd6afe
       id: 2867011390
@@ -1600,8 +1823,8 @@ MonoBehaviour:
         guid: 1cf8f263f320274e901d621bbcdd6afe
       Path: Events\Default Work Unit\SFX\Harpoon\HarpoonPickup
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 4
+      minDuration: 4
     - name: HarpoonReceived
       guid: 3f953257b2808147b9684e50eec5c759
       id: 757170495
@@ -1738,8 +1961,8 @@ MonoBehaviour:
         guid: 4845b99aba00f347a08ba3580ccec03f
       Path: Events\Default Work Unit\Level\Beats\LevelFadeOut
       maxAttenuation: 0
-      maxDuration: 9.883446
-      minDuration: 6.776757
+      maxDuration: 0
+      minDuration: 0
     - name: LevelStart
       guid: 183ec1da9c1b5a45959b9d27765932f5
       id: 3372421815
@@ -2527,7 +2750,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: fe13d60f855213448d27601edd0d77e4
     GuidInternal: 
-    m_lastTime: -8585601719459686186
+    m_lastTime: -8585598222477191645
     List:
     - name: Ambience
       guid: 7b3f61b490cc4942ac4e556c8a434729
@@ -2543,9 +2766,9 @@ MonoBehaviour:
         ObjectType: 4
         guid: 7b3f61b490cc4942ac4e556c8a434729
       Path: Game Parameters\Default Work Unit\Ambience
-    - name: BoxSegment
+    - name: BoxHoldingLoopEnabled
       guid: 94d513563ed65e45983bc1fcd29df7d4
-      id: 3762319931
+      id: 626958542
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -2556,10 +2779,10 @@ MonoBehaviour:
       - ElementName: Interactions
         ObjectType: 4
         guid: 570a3bebe9ad6c41a971a94a95c9a907
-      - ElementName: BoxSegment
+      - ElementName: BoxHoldingLoopEnabled
         ObjectType: 13
         guid: 94d513563ed65e45983bc1fcd29df7d4
-      Path: Game Parameters\Default Work Unit\Interactions\BoxSegment
+      Path: Game Parameters\Default Work Unit\Interactions\BoxHoldingLoopEnabled
     - name: Footstep
       guid: dac9b37309345947bbe6d832c31a4e21
       id: 1866025847
@@ -2845,7 +3068,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c226eeab13aa4f409e89c2a35c4216cc
     GuidInternal: 
-    m_lastTime: -8585599248602065096
+    m_lastTime: -8585598176064556803
     List:
     - name: BoxOpeningStingerState
       guid: 376292dcb3fa024c806a6cac862bb21f
@@ -2962,6 +3185,74 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: 0bc21787bc713a4f81f3657f374e86e2
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: End
+      guid: eb630a2aeb7d4d4abebe1e0fced51417
+      id: 529726532
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Rooms
+        ObjectType: 4
+        guid: b30e34a89e47414f88c019ffa33e7d37
+      - ElementName: Sections
+        ObjectType: 4
+        guid: b1b2c40ba642e2479c06839c9991c444
+      - ElementName: End
+        ObjectType: 9
+        guid: eb630a2aeb7d4d4abebe1e0fced51417
+      Path: States\Default Work Unit\Rooms\Sections\End
+      values:
+      - name: None
+        guid: 41ad81473d596349a7833b4618d86a1d
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Sections
+          ObjectType: 4
+          guid: b1b2c40ba642e2479c06839c9991c444
+        - ElementName: End
+          ObjectType: 9
+          guid: eb630a2aeb7d4d4abebe1e0fced51417
+        - ElementName: None
+          ObjectType: 8
+          guid: 41ad81473d596349a7833b4618d86a1d
+      - name: Passed
+        guid: f49effea98a08849bbf76df3c93e0443
+        id: 2764605217
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Sections
+          ObjectType: 4
+          guid: b1b2c40ba642e2479c06839c9991c444
+        - ElementName: End
+          ObjectType: 9
+          guid: eb630a2aeb7d4d4abebe1e0fced51417
+        - ElementName: Passed
+          ObjectType: 8
+          guid: f49effea98a08849bbf76df3c93e0443
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -3191,10 +3482,13 @@ MonoBehaviour:
       - ElementName: Rooms
         ObjectType: 4
         guid: b30e34a89e47414f88c019ffa33e7d37
+      - ElementName: Sections
+        ObjectType: 4
+        guid: b1b2c40ba642e2479c06839c9991c444
       - ElementName: Room_B
         ObjectType: 9
         guid: 9dcb280f698e5241bc6950ee91e39fc8
-      Path: States\Default Work Unit\Rooms\Room_B
+      Path: States\Default Work Unit\Rooms\Sections\Room_B
       values:
       - name: None
         guid: 0d4304e66980714f9b77f5ea3f936052
@@ -3209,6 +3503,9 @@ MonoBehaviour:
         - ElementName: Rooms
           ObjectType: 4
           guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Sections
+          ObjectType: 4
+          guid: b1b2c40ba642e2479c06839c9991c444
         - ElementName: Room_B
           ObjectType: 9
           guid: 9dcb280f698e5241bc6950ee91e39fc8
@@ -3228,12 +3525,83 @@ MonoBehaviour:
         - ElementName: Rooms
           ObjectType: 4
           guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Sections
+          ObjectType: 4
+          guid: b1b2c40ba642e2479c06839c9991c444
         - ElementName: Room_B
           ObjectType: 9
           guid: 9dcb280f698e5241bc6950ee91e39fc8
         - ElementName: Passed
           ObjectType: 8
           guid: 4515855bbc2422408588f9946fe0e763
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Room_Big
+      guid: d5710d67786f59458138ba2f12c30791
+      id: 3856659235
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Rooms
+        ObjectType: 4
+        guid: b30e34a89e47414f88c019ffa33e7d37
+      - ElementName: Sections
+        ObjectType: 4
+        guid: b1b2c40ba642e2479c06839c9991c444
+      - ElementName: Room_Big
+        ObjectType: 9
+        guid: d5710d67786f59458138ba2f12c30791
+      Path: States\Default Work Unit\Rooms\Sections\Room_Big
+      values:
+      - name: None
+        guid: 77771cdf932de7448a07aa98fbfca650
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Sections
+          ObjectType: 4
+          guid: b1b2c40ba642e2479c06839c9991c444
+        - ElementName: Room_Big
+          ObjectType: 9
+          guid: d5710d67786f59458138ba2f12c30791
+        - ElementName: None
+          ObjectType: 8
+          guid: 77771cdf932de7448a07aa98fbfca650
+      - name: Passed
+        guid: 25da16854c098f41bd5092c86ee5d0ea
+        id: 2764605217
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Sections
+          ObjectType: 4
+          guid: b1b2c40ba642e2479c06839c9991c444
+        - ElementName: Room_Big
+          ObjectType: 9
+          guid: d5710d67786f59458138ba2f12c30791
+        - ElementName: Passed
+          ObjectType: 8
+          guid: 25da16854c098f41bd5092c86ee5d0ea
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -3250,10 +3618,13 @@ MonoBehaviour:
       - ElementName: Rooms
         ObjectType: 4
         guid: b30e34a89e47414f88c019ffa33e7d37
+      - ElementName: Sections
+        ObjectType: 4
+        guid: b1b2c40ba642e2479c06839c9991c444
       - ElementName: Room_C
         ObjectType: 9
         guid: a7f7510f4eda1f4997f6ee94b00cb2f9
-      Path: States\Default Work Unit\Rooms\Room_C
+      Path: States\Default Work Unit\Rooms\Sections\Room_C
       values:
       - name: None
         guid: 6668491961540e43a45714160955e205
@@ -3268,6 +3639,9 @@ MonoBehaviour:
         - ElementName: Rooms
           ObjectType: 4
           guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Sections
+          ObjectType: 4
+          guid: b1b2c40ba642e2479c06839c9991c444
         - ElementName: Room_C
           ObjectType: 9
           guid: a7f7510f4eda1f4997f6ee94b00cb2f9
@@ -3287,12 +3661,151 @@ MonoBehaviour:
         - ElementName: Rooms
           ObjectType: 4
           guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Sections
+          ObjectType: 4
+          guid: b1b2c40ba642e2479c06839c9991c444
         - ElementName: Room_C
           ObjectType: 9
           guid: a7f7510f4eda1f4997f6ee94b00cb2f9
         - ElementName: Passed
           ObjectType: 8
           guid: d8606cd0f59f7444897ed7dd6f79a673
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Room_House
+      guid: f88eecf0d97d2744a547ffd726b7a40a
+      id: 1858149433
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Rooms
+        ObjectType: 4
+        guid: b30e34a89e47414f88c019ffa33e7d37
+      - ElementName: Sections
+        ObjectType: 4
+        guid: b1b2c40ba642e2479c06839c9991c444
+      - ElementName: Room_House
+        ObjectType: 9
+        guid: f88eecf0d97d2744a547ffd726b7a40a
+      Path: States\Default Work Unit\Rooms\Sections\Room_House
+      values:
+      - name: None
+        guid: 35a7c7e1a0f8b942b406851841f4d0bd
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Sections
+          ObjectType: 4
+          guid: b1b2c40ba642e2479c06839c9991c444
+        - ElementName: Room_House
+          ObjectType: 9
+          guid: f88eecf0d97d2744a547ffd726b7a40a
+        - ElementName: None
+          ObjectType: 8
+          guid: 35a7c7e1a0f8b942b406851841f4d0bd
+      - name: Passed
+        guid: 1d32776176952b46963278aa5257822f
+        id: 2764605217
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Sections
+          ObjectType: 4
+          guid: b1b2c40ba642e2479c06839c9991c444
+        - ElementName: Room_House
+          ObjectType: 9
+          guid: f88eecf0d97d2744a547ffd726b7a40a
+        - ElementName: Passed
+          ObjectType: 8
+          guid: 1d32776176952b46963278aa5257822f
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Room_Reveal
+      guid: 3f3e054ef568824a96ca2a35bf116c05
+      id: 424481936
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Rooms
+        ObjectType: 4
+        guid: b30e34a89e47414f88c019ffa33e7d37
+      - ElementName: Sections
+        ObjectType: 4
+        guid: b1b2c40ba642e2479c06839c9991c444
+      - ElementName: Room_Reveal
+        ObjectType: 9
+        guid: 3f3e054ef568824a96ca2a35bf116c05
+      Path: States\Default Work Unit\Rooms\Sections\Room_Reveal
+      values:
+      - name: None
+        guid: 22380d8ee769c44fae0272edcdbffec1
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Sections
+          ObjectType: 4
+          guid: b1b2c40ba642e2479c06839c9991c444
+        - ElementName: Room_Reveal
+          ObjectType: 9
+          guid: 3f3e054ef568824a96ca2a35bf116c05
+        - ElementName: None
+          ObjectType: 8
+          guid: 22380d8ee769c44fae0272edcdbffec1
+      - name: Passed
+        guid: 39169a60b628fa478e74753c2ce690ff
+        id: 2764605217
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c226eeab13aa4f409e89c2a35c4216cc
+        - ElementName: Rooms
+          ObjectType: 4
+          guid: b30e34a89e47414f88c019ffa33e7d37
+        - ElementName: Sections
+          ObjectType: 4
+          guid: b1b2c40ba642e2479c06839c9991c444
+        - ElementName: Room_Reveal
+          ObjectType: 9
+          guid: 3f3e054ef568824a96ca2a35bf116c05
+        - ElementName: Passed
+          ObjectType: 8
+          guid: 39169a60b628fa478e74753c2ce690ff
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -3388,6 +3901,27 @@ MonoBehaviour:
         ObjectType: 4
         guid: b30e34a89e47414f88c019ffa33e7d37
       Path: States\Default Work Unit\Rooms
+      values: []
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Sections
+      guid: b1b2c40ba642e2479c06839c9991c444
+      id: 3524678601
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c226eeab13aa4f409e89c2a35c4216cc
+      - ElementName: Rooms
+        ObjectType: 4
+        guid: b30e34a89e47414f88c019ffa33e7d37
+      - ElementName: Sections
+        ObjectType: 4
+        guid: b1b2c40ba642e2479c06839c9991c444
+      Path: States\Default Work Unit\Rooms\Sections
       values: []
       ValueGuids: []
       ValueIcons: []
@@ -4130,7 +4664,7 @@ MonoBehaviour:
         guid: 38b4dd40b2e94b4c9c9bce1ac9f941c2
       Path: Triggers\Default Work Unit\BoxPickupStinger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000600000007000000080000000a0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e000000300000003100000032000000330000003400000037000000390000004200000046000000490000004d0000004e00000051000000570000005b0000005c0000005f000000610000006700000068000000690000006f000000730000008f000000b60000000f0100002c0400002f040000320400003504000038040000e90400003d0a0000ac0a000012150000611c0000561d000034fe0000b6580100
+  ExpandedWaapiItemIds: 01000000020000000600000007000000080000000a0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e000000300000003100000032000000330000003400000037000000390000004200000046000000490000004d0000004e0000005100000055000000570000005b0000005c0000005f000000610000006700000068000000690000006f000000730000008f000000b6000000d30000000f0100002c0400002f040000320400003504000038040000e90400003d0a0000ac0a000012150000611c0000561d000034fe0000b658010051ea0200
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
