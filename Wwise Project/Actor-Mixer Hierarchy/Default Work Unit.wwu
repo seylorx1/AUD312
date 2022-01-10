@@ -6338,6 +6338,143 @@
 								</Folder>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Entities" ID="{2E71D144-0D46-42B0-8383-EA9E1608659F}" ShortID="812730870">
+							<ChildrenList>
+								<RandomSequenceContainer Name="sfx_ent_box_collide" ID="{3A8D9B75-61EB-4BFC-BA7A-DECFEADD7BEF}" ShortID="60936358">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1E2D1D4C-AD18-4408-89EF-B2CC09E69C13}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="500"/>
+															<Property Name="Min" Type="Real64" Value="-500"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="BoxAttenuation" ID="{15CBBA56-F406-44EA-9D9C-69E8FA3D043B}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_env_box_collide_01" ID="{EED72601-28DB-4915-AE9E-558ACE29741F}" ShortID="993952613">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_env_box_collide_01" ID="{FDF5EFD5-7B74-4CB7-8EFD-754EE0E91417}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Box\Box SFX.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_env_box_collide_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="110016742"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_env_box_collide_01" ID="{FDF5EFD5-7B74-4CB7-8EFD-754EE0E91417}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_env_box_collide_02" ID="{A425EF86-ED9B-4A46-9F84-8EB94E006048}" ShortID="960814017">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_env_box_collide_02" ID="{C3AFB606-A21C-42B0-96FC-39E7D88B0F54}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Box\Box SFX.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_env_box_collide_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="457803619"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_env_box_collide_02" ID="{C3AFB606-A21C-42B0-96FC-39E7D88B0F54}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_env_box_collide_03" ID="{091D909E-7A39-4CF1-B083-B8978386D4DC}" ShortID="307089688">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_env_box_collide_03" ID="{4378A91E-A70B-45C9-8A3F-7B07A87A0B4F}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Box\Box SFX.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_env_box_collide_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="815353574"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_env_box_collide_03" ID="{4378A91E-A70B-45C9-8A3F-7B07A87A0B4F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_env_box_collide_04" ID="{DF7F4658-BC62-4E77-A82D-E5074AE27E74}" ShortID="508543855">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_env_box_collide_04" ID="{3D5D1BD1-62C3-46C9-982E-A91428BA2FB5}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Box\Box SFX.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_env_box_collide_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="551057089"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_env_box_collide_04" ID="{3D5D1BD1-62C3-46C9-982E-A91428BA2FB5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
@@ -6762,6 +6899,966 @@
 										<ActiveSource Name="sfx_worldkeys_fmaj_f6" ID="{69EB1F5D-383A-4837-BBF9-5EE6D415EC0B}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="UX" ID="{B2A3687B-8F77-4FB4-8D8E-EF1198B5E2F0}" ShortID="525688150">
+							<ChildrenList>
+								<RandomSequenceContainer Name="sfx_ux_button" ID="{7DBF778B-1357-4A7C-AEC2-100040EB04FB}" ShortID="879216138">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Non-Diegetic SFX Bus" ID="{1EA904B9-7FC9-4F0C-8DE2-51D780A55C4D}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_ux_button_activate" ID="{131E215C-E011-4BE5-8EAF-A263D4F4658E}" ShortID="68324086">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_ux_button_activate" ID="{6BDA055F-7F5D-463A-8543-4EF77E71B8D0}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\UX Feedback\Button\Button UX Feedback.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_ux_button_activate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="117697571"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_ux_button_activate" ID="{6BDA055F-7F5D-463A-8543-4EF77E71B8D0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_ux_button_deactivate" ID="{9996774B-AB32-4081-9FC4-E37E64E9F5D2}" ShortID="531544006">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_ux_button_deactivate" ID="{F94A4974-B78F-4A1A-BDEE-AAF240DCD21C}">
+													<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\UX Feedback\Button\Button UX Feedback.rpp"</Comment>
+													<Language>SFX</Language>
+													<AudioFile>sfx_ux_button_deactivate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="487622940"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_ux_button_deactivate" ID="{F94A4974-B78F-4A1A-BDEE-AAF240DCD21C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="sfx_ux_button_activate" ID="{131E215C-E011-4BE5-8EAF-A263D4F4658E}"/>
+										<ItemRef Name="sfx_ux_button_deactivate" ID="{9996774B-AB32-4081-9FC4-E37E64E9F5D2}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<Folder Name="Box" ID="{AB24E425-8037-4C9E-8506-8432953F53B7}" ShortID="886854478">
+									<ChildrenList>
+										<RandomSequenceContainer Name="sfx_ux_box" ID="{8CE97F97-87B7-4162-A1F5-2514DC76CB07}" ShortID="937357911">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Non-Diegetic SFX Bus" ID="{1EA904B9-7FC9-4F0C-8DE2-51D780A55C4D}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_ux_box_deactivate" ID="{167EA1E5-EABB-412A-9096-DA7EE6CC2F15}" ShortID="280454464">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_ux_box_deactivate" ID="{5396921C-952F-4CAB-A4E6-1738F3F4952C}">
+															<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\UX Feedback\Box\Box UX Feedback.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>sfx_ux_box_deactivate.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="769886126"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_ux_box_deactivate" ID="{5396921C-952F-4CAB-A4E6-1738F3F4952C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_ux_box_activate" ID="{0FD75C7B-9748-443B-8B4D-73F9BE8AF1CA}" ShortID="444507092">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_ux_box_activate" ID="{BFD9BB28-C63E-47EE-8D37-80911B0151E2}">
+															<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\UX Feedback\Box\Box UX Feedback.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>sfx_ux_box_activate.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="528226358"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_ux_box_activate" ID="{BFD9BB28-C63E-47EE-8D37-80911B0151E2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="sfx_ux_box_activate" ID="{0FD75C7B-9748-443B-8B4D-73F9BE8AF1CA}"/>
+												<ItemRef Name="sfx_ux_box_deactivate" ID="{167EA1E5-EABB-412A-9096-DA7EE6CC2F15}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<ActorMixer Name="Box Pickup Mixer" ID="{C7B093A9-7905-4B5A-AAD2-C4BE397A2B2B}" ShortID="374627231">
+											<Comment>Limits children to only have one instance of sound on game object.</Comment>
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_ux_box_pickup" ID="{FCDE5ACC-F2EE-4EAD-83D9-E0492894B313}" ShortID="407606525">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_ux_box_pickup" ID="{0AE88A3F-7473-4DDA-8651-16B4BDCB55BB}">
+															<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\UX Feedback\Box\Box UX Feedback.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>sfx_ux_box_pickup.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="938046817"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_ux_box_pickup" ID="{0AE88A3F-7473-4DDA-8651-16B4BDCB55BB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_ux_box_drop" ID="{E2B80BBB-C00C-4B23-B5CD-D2AE6FC8465F}" ShortID="780135479">
+													<Comment>Drop sound is not in sequence container due to permitted code change. (cont.)
+
+The reason for seperation is not for this sound, but to allow for stingers. See note on the 'BoxDrop' event for more information.</Comment>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_ux_box_drop" ID="{1261D50E-7B26-4E6F-90A8-929A2DD4669D}">
+															<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\UX Feedback\Box\Box UX Feedback.rpp"</Comment>
+															<Language>SFX</Language>
+															<AudioFile>sfx_ux_box_drop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1065081122"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_ux_box_drop" ID="{1261D50E-7B26-4E6F-90A8-929A2DD4669D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</ActorMixer>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="NPC" ID="{23A3697D-DC16-4D74-8CD5-4A7B6C7EBA1B}" ShortID="748857724">
+							<ChildrenList>
+								<Folder Name="Narrator" ID="{ABFBD2DB-78A1-41DD-86B0-10CBE95A41B9}" ShortID="409102428">
+									<ChildrenList>
+										<SwitchContainer Name="vx_narrator (Enabled)" ID="{F50F878C-0D1C-4108-826F-2F5DC5D47ADB}" ShortID="1066503947">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Enabled" ID="{891F59F9-4F24-40DF-BB71-1AB453962B46}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="NarratorDialogueEnabled" ID="{4DCC4270-8883-47D1-8A39-0E3085EFDD50}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="vx_narrator" ID="{82AE5E4F-A211-4FA8-8118-BABF16E0A0E9}" ShortID="760295146">
+													<PropertyList>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Non-Diegetic SFX Bus" ID="{1EA904B9-7FC9-4F0C-8DE2-51D780A55C4D}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_narrator_open" ID="{667526A5-1A08-46BE-8EC8-7085B9292B27}" ShortID="479732602">
+															<PropertyList>
+																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{AED4852C-1AA6-4BA1-A9F0-6726216A0136}">
+																				<PropertyList>
+																					<Property Name="Max" Type="Real64" Value="50"/>
+																					<Property Name="Min" Type="Real64" Value="-50"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-10</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_narrator_open" ID="{A03B1DBA-3335-4407-9BF6-CE5C0AF16566}">
+																	<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																	<PropertyList>
+																		<Property Name="LoopEnd" Type="Real64" Value="0.710085716307325"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_narrator_open.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="8754654"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_narrator_open" ID="{A03B1DBA-3335-4407-9BF6-CE5C0AF16566}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_narrator_close" ID="{03988B17-52D4-4D68-9205-9BE82488BDE7}" ShortID="1054836566">
+															<PropertyList>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ValueList>
+																		<Value>0.1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{C779253F-4694-4161-8D7C-BF51DED32BFB}">
+																				<PropertyList>
+																					<Property Name="Max" Type="Real64" Value="50"/>
+																					<Property Name="Min" Type="Real64" Value="-50"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-10</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_narrator_close" ID="{BC0FF613-477A-440E-B3A9-E2529AB72C71}">
+																	<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_narrator_close.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="470829197"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_narrator_close" ID="{BC0FF613-477A-440E-B3A9-E2529AB72C71}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<SwitchContainer Name="Voice Line" ID="{B50F41D4-E522-4870-ABBB-27E5B92E5723}" ShortID="949468336">
+															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+																<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+																<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																</Reference>
+																<Reference Name="DefaultSwitchOrState">
+																	<ObjectRef Name="Checkpoint" ID="{3F6694C4-7380-4EA1-989F-CDF32E8A9D2F}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																</Reference>
+																<Reference Name="SwitchGroupOrStateGroup">
+																	<ObjectRef Name="NarratorDialogueType" ID="{5613406C-03AE-468F-98F1-B263DEDB2F1A}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="vx_narrator_fadeout" ID="{EFCA56FB-FCE7-4895-A495-4C341BDE1747}" ShortID="934596589">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_fadeout" ID="{FA349A37-4D44-4DCF-A510-B576679C8466}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_fadeout.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="426936030"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_fadeout" ID="{FA349A37-4D44-4DCF-A510-B576679C8466}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_checkpoint" ID="{FE4A7A89-C64E-42B8-8947-13C425DB8117}" ShortID="1062441039">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Diegetic SFX Bus" ID="{A1EF0D30-92EC-449E-B8C1-6C3EEEDC7A43}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_checkpoint" ID="{38AE94A5-1087-4DFF-9A8F-5741382265CB}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_checkpoint.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="660941783"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_checkpoint" ID="{38AE94A5-1087-4DFF-9A8F-5741382265CB}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_trigger_01" ID="{D6CF1764-52ED-4A70-AD80-B44865F233DA}" ShortID="1047948630">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_trigger_01" ID="{BF1758D9-EA4B-43F6-89F8-BDF4E8A5A188}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_trigger_01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="959469471"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_trigger_01" ID="{BF1758D9-EA4B-43F6-89F8-BDF4E8A5A188}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_trigger_02" ID="{CF81CE37-48C7-4BC3-9826-019E25ACD2C9}" ShortID="695123061">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_trigger_02" ID="{F30EAC68-C7BB-40F1-89B6-EF36ECC4B568}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_trigger_02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="403143043"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_trigger_02" ID="{F30EAC68-C7BB-40F1-89B6-EF36ECC4B568}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_trigger_03" ID="{B2B6A53A-167E-4641-BDC1-862AAE894484}" ShortID="369009771">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_trigger_03" ID="{5D96C200-5B64-444E-A6ED-98ADC5E73D87}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_trigger_03.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="512523175"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_trigger_03" ID="{5D96C200-5B64-444E-A6ED-98ADC5E73D87}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_trigger_04" ID="{4824A3D8-F5CA-4274-9C55-1C98ACDEC5C4}" ShortID="72521896">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_trigger_04" ID="{89F7A9A1-FF62-4D56-9E46-298EBA7E186D}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_trigger_04.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="854068518"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_trigger_04" ID="{89F7A9A1-FF62-4D56-9E46-298EBA7E186D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_trigger_05" ID="{806B80F6-581A-4C84-B765-0320A615A907}" ShortID="257287523">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_trigger_05" ID="{26A71FE0-EB40-4F97-B3E8-6BBA7C6BDFD6}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_trigger_05.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="118143263"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_trigger_05" ID="{26A71FE0-EB40-4F97-B3E8-6BBA7C6BDFD6}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_trigger_06" ID="{B9C25E75-24CB-420C-AC24-46733CB9109A}" ShortID="565769526">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_trigger_06" ID="{544685D3-48B4-473C-A112-B99309167628}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_trigger_06.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="274609004"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_trigger_06" ID="{544685D3-48B4-473C-A112-B99309167628}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_trigger_07" ID="{ED4D66AE-F490-417C-981F-BD0C73816CB5}" ShortID="847332790">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_trigger_07" ID="{C09F974C-6A94-4E3D-BD3B-35510B7F923B}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_trigger_07.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="70195472"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_trigger_07" ID="{C09F974C-6A94-4E3D-BD3B-35510B7F923B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_trigger_08" ID="{482275B8-AF1A-439E-9C57-356FE1354E05}" ShortID="242085236">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_trigger_08" ID="{AB849C9D-0937-463A-9A1C-D0BE8E9C2799}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_trigger_08.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="468315385"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_trigger_08" ID="{AB849C9D-0937-463A-9A1C-D0BE8E9C2799}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_trigger_09" ID="{0A7AFF04-33E7-470A-9CD1-1F373AC067AE}" ShortID="814251952">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_trigger_09" ID="{D1D77895-2FE8-4C64-9CE4-88C16EFA9EFC}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_trigger_09.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="318942664"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_trigger_09" ID="{D1D77895-2FE8-4C64-9CE4-88C16EFA9EFC}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_trigger_10" ID="{C844FD94-DFD9-47D2-89B8-54EB7FDB2893}" ShortID="735417817">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_trigger_10" ID="{7579D354-A929-49E5-B44F-3B6257B63942}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_trigger_10.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1060928635"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_trigger_10" ID="{7579D354-A929-49E5-B44F-3B6257B63942}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_trigger_11" ID="{CAE14BC5-A0B4-4B3C-85A9-FFA0CBFD6974}" ShortID="289674713">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_trigger_11" ID="{97852368-D74A-43DC-893C-AB341083976A}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_trigger_11.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="48822515"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_trigger_11" ID="{97852368-D74A-43DC-893C-AB341083976A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_trigger_12" ID="{14C76880-0C5B-449F-AEFD-DBAFDAB24B4B}" ShortID="83709645">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_trigger_12" ID="{1BDD132D-0FB9-41ED-986F-7012C6FF3D6E}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_trigger_12.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="63339553"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_trigger_12" ID="{1BDD132D-0FB9-41ED-986F-7012C6FF3D6E}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="vx_narrator_trigger_13" ID="{95682021-B2B6-45DC-A27A-A1C3217247F1}" ShortID="766193087">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Music Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="vx_narrator_trigger_13" ID="{42099A69-11F2-4CC1-9B8C-12F257AE3008}">
+																			<Comment>REAPROJ:"X:\Coursework\AUD312\Assignment\Audio Files\Dialogue\Dialogue.rpp"</Comment>
+																			<Language>SFX</Language>
+																			<AudioFile>vx_narrator_trigger_13.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="532869110"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ObjectLists/>
+																	<ActiveSourceList>
+																		<ActiveSource Name="vx_narrator_trigger_13" ID="{42099A69-11F2-4CC1-9B8C-12F257AE3008}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<ObjectLists/>
+															<GroupingInfo>
+																<GroupingBehaviorList>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_trigger_09" ID="{0A7AFF04-33E7-470A-9CD1-1F373AC067AE}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_trigger_13" ID="{95682021-B2B6-45DC-A27A-A1C3217247F1}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_trigger_02" ID="{CF81CE37-48C7-4BC3-9826-019E25ACD2C9}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_trigger_03" ID="{B2B6A53A-167E-4641-BDC1-862AAE894484}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_trigger_01" ID="{D6CF1764-52ED-4A70-AD80-B44865F233DA}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_trigger_06" ID="{B9C25E75-24CB-420C-AC24-46733CB9109A}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_trigger_12" ID="{14C76880-0C5B-449F-AEFD-DBAFDAB24B4B}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_checkpoint" ID="{FE4A7A89-C64E-42B8-8947-13C425DB8117}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_trigger_10" ID="{C844FD94-DFD9-47D2-89B8-54EB7FDB2893}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_trigger_07" ID="{ED4D66AE-F490-417C-981F-BD0C73816CB5}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_trigger_08" ID="{482275B8-AF1A-439E-9C57-356FE1354E05}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_trigger_11" ID="{CAE14BC5-A0B4-4B3C-85A9-FFA0CBFD6974}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_trigger_04" ID="{4824A3D8-F5CA-4274-9C55-1C98ACDEC5C4}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_trigger_05" ID="{806B80F6-581A-4C84-B765-0320A615A907}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="vx_narrator_fadeout" ID="{EFCA56FB-FCE7-4895-A495-4C341BDE1747}"/>
+																	</GroupingBehavior>
+																</GroupingBehaviorList>
+																<GroupingList>
+																	<Grouping>
+																		<SwitchRef Name="Trigger_03" ID="{3287B204-0C53-4679-99E3-9009AFB9E798}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_trigger_03" ID="{B2B6A53A-167E-4641-BDC1-862AAE894484}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Trigger_07" ID="{09135223-C59C-4D38-A33A-86BBC2940084}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_trigger_07" ID="{ED4D66AE-F490-417C-981F-BD0C73816CB5}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Trigger_01" ID="{13DBF933-B367-415D-AE21-3DEE2305A424}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_trigger_01" ID="{D6CF1764-52ED-4A70-AD80-B44865F233DA}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Trigger_11" ID="{8C1AAC5D-8425-4F10-9361-D8EE067CE887}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_trigger_11" ID="{CAE14BC5-A0B4-4B3C-85A9-FFA0CBFD6974}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Trigger_10" ID="{51BCF860-4611-445A-8292-52C27D5D0063}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_trigger_10" ID="{C844FD94-DFD9-47D2-89B8-54EB7FDB2893}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Trigger_05" ID="{571C8865-9FD2-4A89-829C-06AEE68C5B1E}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_trigger_05" ID="{806B80F6-581A-4C84-B765-0320A615A907}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Trigger_06" ID="{67D8FE69-6BA8-49D3-83BF-41180C28D149}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_trigger_06" ID="{B9C25E75-24CB-420C-AC24-46733CB9109A}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Trigger_09" ID="{DCB9C67F-055E-4C8F-91C3-19327E2F0507}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_trigger_09" ID="{0A7AFF04-33E7-470A-9CD1-1F373AC067AE}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Trigger_12" ID="{5E0C2A84-C6E5-4434-971F-DF6059145B4C}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_trigger_12" ID="{14C76880-0C5B-449F-AEFD-DBAFDAB24B4B}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Fadeout" ID="{10063E9A-F8E5-43AE-810B-DDA630F3684C}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_fadeout" ID="{EFCA56FB-FCE7-4895-A495-4C341BDE1747}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Trigger_08" ID="{A85008AF-9B92-4D1E-A81A-9B68565B60FA}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_trigger_08" ID="{482275B8-AF1A-439E-9C57-356FE1354E05}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Trigger_04" ID="{FD4110B3-A714-49A4-8868-2EF2C2154610}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_trigger_04" ID="{4824A3D8-F5CA-4274-9C55-1C98ACDEC5C4}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Checkpoint" ID="{3F6694C4-7380-4EA1-989F-CDF32E8A9D2F}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_checkpoint" ID="{FE4A7A89-C64E-42B8-8947-13C425DB8117}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Trigger_13" ID="{9238B9C4-2663-43B6-884C-9D7FA7823727}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_trigger_13" ID="{95682021-B2B6-45DC-A27A-A1C3217247F1}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Trigger_02" ID="{157B6FDF-2BAC-41B4-A9C8-1B83770F0490}"/>
+																		<ItemList>
+																			<ItemRef Name="vx_narrator_trigger_02" ID="{CF81CE37-48C7-4BC3-9826-019E25ACD2C9}"/>
+																		</ItemList>
+																	</Grouping>
+																</GroupingList>
+															</GroupingInfo>
+														</SwitchContainer>
+													</ChildrenList>
+													<ObjectLists/>
+													<Playlist>
+														<ItemRef Name="sfx_narrator_open" ID="{667526A5-1A08-46BE-8EC8-7085B9292B27}"/>
+														<ItemRef Name="Voice Line" ID="{B50F41D4-E522-4870-ABBB-27E5B92E5723}"/>
+														<ItemRef Name="sfx_narrator_close" ID="{03988B17-52D4-4D68-9205-9BE82488BDE7}"/>
+													</Playlist>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<ObjectLists/>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="vx_narrator" ID="{82AE5E4F-A211-4FA8-8118-BABF16E0A0E9}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Enabled" ID="{891F59F9-4F24-40DF-BB71-1AB453962B46}"/>
+														<ItemList>
+															<ItemRef Name="vx_narrator" ID="{82AE5E4F-A211-4FA8-8118-BABF16E0A0E9}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

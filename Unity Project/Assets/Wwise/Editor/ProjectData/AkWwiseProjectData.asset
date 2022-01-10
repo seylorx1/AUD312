@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 290eb1d07f8a304b98e3d421983690c7
     GuidInternal: 
-    m_lastTime: -8585599249362033671
+    m_lastTime: -8585598540364874318
     List:
     - name: Ambience
       guid: 4bf007b3e95ba347893be1c6d236bd46
@@ -851,7 +851,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 894b37ce7fff6c44b0dcd4b894060495
     GuidInternal: 
-    m_lastTime: -8585601714637673883
+    m_lastTime: -8585598398536867496
     List:
     - name: Main
       guid: 540242f8053cc1458049835c8ed6e27f
@@ -879,7 +879,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
     GuidInternal: 
-    m_lastTime: -8585599192559646693
+    m_lastTime: -8585598325501635376
     List:
     - name: Bars
       guid: 56322a3b2ea5f447a85b249e2ec9aebf
@@ -964,9 +964,32 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: BoxAmbiencePlay
+    - name: BoxActivate
+      guid: 8fee5d275fe8cb46930d408a3ae1bf6a
+      id: 3612343067
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: UX
+        ObjectType: 4
+        guid: 797552ee269b884c87492581c69eca32
+      - ElementName: BoxActivate
+        ObjectType: 3
+        guid: 8fee5d275fe8cb46930d408a3ae1bf6a
+      Path: Events\Default Work Unit\SFX\UX\BoxActivate
+      maxAttenuation: 0
+      maxDuration: 3.502789
+      minDuration: 1.502494
+    - name: BoxAmbience
       guid: 75bd92f19ccc40498ba3367206f95208
-      id: 829164566
+      id: 3524448416
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -980,10 +1003,10 @@ MonoBehaviour:
       - ElementName: Box
         ObjectType: 4
         guid: b522a989009d6a4fa7920d2b12634e88
-      - ElementName: BoxAmbiencePlay
+      - ElementName: BoxAmbience
         ObjectType: 3
         guid: 75bd92f19ccc40498ba3367206f95208
-      Path: Events\Default Work Unit\SFX\Box\BoxAmbiencePlay
+      Path: Events\Default Work Unit\SFX\Box\BoxAmbience
       maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
@@ -1008,8 +1031,8 @@ MonoBehaviour:
         guid: 4751fdc290391f4fa57687a4ae697a0a
       Path: Events\Default Work Unit\SFX\Box\BoxDrop
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 3.5
+      minDuration: 3.5
     - name: BoxDropCue
       guid: c69d2011ecf0fa4b9f32c505cddd5960
       id: 241339208
@@ -1036,6 +1059,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: BoxGroundCollide
+      guid: 668e150528e73f4387dffad5aa211b68
+      id: 3048376677
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Box
+        ObjectType: 4
+        guid: b522a989009d6a4fa7920d2b12634e88
+      - ElementName: BoxGroundCollide
+        ObjectType: 3
+        guid: 668e150528e73f4387dffad5aa211b68
+      Path: Events\Default Work Unit\SFX\Box\BoxGroundCollide
+      maxAttenuation: 20
+      maxDuration: 0.760859
+      minDuration: 0.239729
     - name: BoxPickup
       guid: e97b8506c112ad43823359d8e87c3f90
       id: 2671589300
@@ -1057,8 +1103,8 @@ MonoBehaviour:
         guid: e97b8506c112ad43823359d8e87c3f90
       Path: Events\Default Work Unit\SFX\Box\BoxPickup
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 4
+      minDuration: 4
     - name: BoxPickupCue
       guid: ec831f31e088b745a0e7266e951b7c50
       id: 4115829741
@@ -1137,6 +1183,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: ButtonActivate
+      guid: 8b2b2963b3505d429311b49ca4c18473
+      id: 3612051246
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: UX
+        ObjectType: 4
+        guid: 797552ee269b884c87492581c69eca32
+      - ElementName: ButtonActivate
+        ObjectType: 3
+        guid: 8b2b2963b3505d429311b49ca4c18473
+      Path: Events\Default Work Unit\SFX\UX\ButtonActivate
+      maxAttenuation: 0
+      maxDuration: 5.5
+      minDuration: 5.5
     - name: Cue Events
       guid: 71304b28e3413343811bbee75e4d5fd4
       id: 753433889
@@ -1154,6 +1223,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: 71304b28e3413343811bbee75e4d5fd4
       Path: Events\Default Work Unit\Music\Cue Events
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Dialogue
+      guid: ededbe932d68f6498c7eb89cb1601630
+      id: 3930136735
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: ededbe932d68f6498c7eb89cb1601630
+      Path: Events\Default Work Unit\Dialogue
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1270,26 +1356,6 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: Footstep
-      guid: 28e55eca8a6ad74789f4415d53397b3a
-      id: 1866025847
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
-      - ElementName: SFX
-        ObjectType: 4
-        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
-      - ElementName: Footstep
-        ObjectType: 4
-        guid: 28e55eca8a6ad74789f4415d53397b3a
-      Path: Events\Default Work Unit\SFX\Footstep
-      maxAttenuation: 0
-      maxDuration: 1.13541
-      minDuration: 0.164984
-    - name: Footstep
       guid: 09fd370eacf00c438ae2c527280491b3
       id: 1866025847
       PathAndIcons:
@@ -1309,6 +1375,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 09fd370eacf00c438ae2c527280491b3
       Path: Events\Default Work Unit\SFX\Footstep\Footstep
+      maxAttenuation: 0
+      maxDuration: 1.13541
+      minDuration: 0.164984
+    - name: Footstep
+      guid: 28e55eca8a6ad74789f4415d53397b3a
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: Footstep
+        ObjectType: 4
+        guid: 28e55eca8a6ad74789f4415d53397b3a
+      Path: Events\Default Work Unit\SFX\Footstep
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1631,6 +1717,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 7.522255
       minDuration: 7.522255
+    - name: LevelFadeOut
+      guid: 4845b99aba00f347a08ba3580ccec03f
+      id: 2134511225
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Level
+        ObjectType: 4
+        guid: 3fe92e22bf652348bbdf3ffff96eb801
+      - ElementName: Beats
+        ObjectType: 4
+        guid: d8adb70e52bf2740bea820418c48e598
+      - ElementName: LevelFadeOut
+        ObjectType: 3
+        guid: 4845b99aba00f347a08ba3580ccec03f
+      Path: Events\Default Work Unit\Level\Beats\LevelFadeOut
+      maxAttenuation: 0
+      maxDuration: 9.883446
+      minDuration: 6.776757
     - name: LevelStart
       guid: 183ec1da9c1b5a45959b9d27765932f5
       id: 3372421815
@@ -1766,6 +1875,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: NarratorDialogue
+      guid: 7759663572f6224db458ac8c257eac33
+      id: 983946156
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: ededbe932d68f6498c7eb89cb1601630
+      - ElementName: NarratorDialogue
+        ObjectType: 3
+        guid: 7759663572f6224db458ac8c257eac33
+      Path: Events\Default Work Unit\Dialogue\NarratorDialogue
+      maxAttenuation: 0
+      maxDuration: 6.883446
+      minDuration: 3.776757
     - name: Platform
       guid: 4a69e406baeeb14c8de2a9043ed00745
       id: 4035573696
@@ -1976,6 +2105,26 @@ MonoBehaviour:
         guid: be51a982fe23164aae15a44bccbe2fae
       Path: Events\Default Work Unit\SFX\TreeAmbiencePlay
       maxAttenuation: 15
+      maxDuration: -1
+      minDuration: -1
+    - name: UX
+      guid: 797552ee269b884c87492581c69eca32
+      id: 1551306150
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1da1b8c7ee6f23409fc3f5bd756c3f5c
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 2c345c2fb2d6a7428f261eb6e1c6970a
+      - ElementName: UX
+        ObjectType: 4
+        guid: 797552ee269b884c87492581c69eca32
+      Path: Events\Default Work Unit\SFX\UX
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: WoodDoorInteract
@@ -3273,8 +3422,26 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6603d6ba8e055f4caa446aab326e99e9
     GuidInternal: 
-    m_lastTime: -8585599376162186080
+    m_lastTime: -8585598325501306190
     List:
+    - name: Dialogue
+      guid: 45540e10e72e3f40af0bd80e63b60127
+      id: 3930136735
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6603d6ba8e055f4caa446aab326e99e9
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 45540e10e72e3f40af0bd80e63b60127
+      Path: Switches\Default Work Unit\Dialogue
+      values: []
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: DoorHandle
       guid: 651507e3bf751c44a8260c0dcfbe09aa
       id: 856450531
@@ -3505,6 +3672,371 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: NarratorDialogueEnabled
+      guid: 7042cc4d8388d1478a390e3085efdd50
+      id: 224814215
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6603d6ba8e055f4caa446aab326e99e9
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 45540e10e72e3f40af0bd80e63b60127
+      - ElementName: NarratorDialogueEnabled
+        ObjectType: 11
+        guid: 7042cc4d8388d1478a390e3085efdd50
+      Path: Switches\Default Work Unit\Dialogue\NarratorDialogueEnabled
+      values:
+      - name: Disabled
+        guid: 6fe4e4662458254e808db456cc5c4312
+        id: 3248502869
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueEnabled
+          ObjectType: 11
+          guid: 7042cc4d8388d1478a390e3085efdd50
+        - ElementName: Disabled
+          ObjectType: 10
+          guid: 6fe4e4662458254e808db456cc5c4312
+      - name: Enabled
+        guid: f9591f89244fdf40bb711ab453962b46
+        id: 4174102348
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueEnabled
+          ObjectType: 11
+          guid: 7042cc4d8388d1478a390e3085efdd50
+        - ElementName: Enabled
+          ObjectType: 10
+          guid: f9591f89244fdf40bb711ab453962b46
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: NarratorDialogueType
+      guid: 6c401356ae038f4698f1b263dedb2f1a
+      id: 310433156
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6603d6ba8e055f4caa446aab326e99e9
+      - ElementName: Dialogue
+        ObjectType: 4
+        guid: 45540e10e72e3f40af0bd80e63b60127
+      - ElementName: NarratorDialogueType
+        ObjectType: 11
+        guid: 6c401356ae038f4698f1b263dedb2f1a
+      Path: Switches\Default Work Unit\Dialogue\NarratorDialogueType
+      values:
+      - name: Checkpoint
+        guid: c494663f8073a14e989fcdf32e8a9d2f
+        id: 612075679
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Checkpoint
+          ObjectType: 10
+          guid: c494663f8073a14e989fcdf32e8a9d2f
+      - name: Fadeout
+        guid: 9a3e0610e5f8ae43810bdda630f3684c
+        id: 3903560121
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Fadeout
+          ObjectType: 10
+          guid: 9a3e0610e5f8ae43810bdda630f3684c
+      - name: Trigger_01
+        guid: 33f9db1367b35d41ae213dee2305a424
+        id: 4269712495
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Trigger_01
+          ObjectType: 10
+          guid: 33f9db1367b35d41ae213dee2305a424
+      - name: Trigger_02
+        guid: df6f7b15ac2bb441a9c81b83770f0490
+        id: 4269712492
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Trigger_02
+          ObjectType: 10
+          guid: df6f7b15ac2bb441a9c81b83770f0490
+      - name: Trigger_03
+        guid: 04b28732530c794699e39009afb9e798
+        id: 4269712493
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Trigger_03
+          ObjectType: 10
+          guid: 04b28732530c794699e39009afb9e798
+      - name: Trigger_04
+        guid: b31041fd14a7a44988682ef2c2154610
+        id: 4269712490
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Trigger_04
+          ObjectType: 10
+          guid: b31041fd14a7a44988682ef2c2154610
+      - name: Trigger_05
+        guid: 65881c57d29f894a829c06aee68c5b1e
+        id: 4269712491
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Trigger_05
+          ObjectType: 10
+          guid: 65881c57d29f894a829c06aee68c5b1e
+      - name: Trigger_06
+        guid: 69fed867a86bd34983bf41180c28d149
+        id: 4269712488
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Trigger_06
+          ObjectType: 10
+          guid: 69fed867a86bd34983bf41180c28d149
+      - name: Trigger_07
+        guid: 235213099cc5384da33a86bbc2940084
+        id: 4269712489
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Trigger_07
+          ObjectType: 10
+          guid: 235213099cc5384da33a86bbc2940084
+      - name: Trigger_08
+        guid: af0850a8929b1e4da81a9b68565b60fa
+        id: 4269712486
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Trigger_08
+          ObjectType: 10
+          guid: af0850a8929b1e4da81a9b68565b60fa
+      - name: Trigger_09
+        guid: 7fc6b9dc5e058f4c91c319327e2f0507
+        id: 4269712487
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Trigger_09
+          ObjectType: 10
+          guid: 7fc6b9dc5e058f4c91c319327e2f0507
+      - name: Trigger_10
+        guid: 60f8bc5111465a44829252c27d5d0063
+        id: 4286490049
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Trigger_10
+          ObjectType: 10
+          guid: 60f8bc5111465a44829252c27d5d0063
+      - name: Trigger_11
+        guid: 5dac1a8c2584104f9361d8ee067ce887
+        id: 4286490048
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Trigger_11
+          ObjectType: 10
+          guid: 5dac1a8c2584104f9361d8ee067ce887
+      - name: Trigger_12
+        guid: 842a0c5ee5c63444971fdf6059145b4c
+        id: 4286490051
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Trigger_12
+          ObjectType: 10
+          guid: 842a0c5ee5c63444971fdf6059145b4c
+      - name: Trigger_13
+        guid: c4b938926326b643884c9d7fa7823727
+        id: 4286490050
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6603d6ba8e055f4caa446aab326e99e9
+        - ElementName: Dialogue
+          ObjectType: 4
+          guid: 45540e10e72e3f40af0bd80e63b60127
+        - ElementName: NarratorDialogueType
+          ObjectType: 11
+          guid: 6c401356ae038f4698f1b263dedb2f1a
+        - ElementName: Trigger_13
+          ObjectType: 10
+          guid: c4b938926326b643884c9d7fa7823727
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: VampFootstep
       guid: 31b2a545a0b42a428f8a9c8963baba9f
       id: 1468846155
@@ -3598,7 +4130,7 @@ MonoBehaviour:
         guid: 38b4dd40b2e94b4c9c9bce1ac9f941c2
       Path: Triggers\Default Work Unit\BoxPickupStinger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000060000000700000008000000090000000b0000000c0000000d0000000e0000000f00000010000000110000001200000014000000150000001600000017000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e0000003000000031000000320000003300000034000000360000003700000038000000390000003a0000003b0000003c0000003f000000420000004600000049000000510000005b0000005c0000005f000000670000006800000069000000730000008f000000b60000000f0100002c0400002f040000320400003504000038040000e90400003d0a0000ac0a000012150000611c000034fe0000b6580100
+  ExpandedWaapiItemIds: 01000000020000000600000007000000080000000a0000000d0000000e0000000f0000001000000011000000120000001400000015000000160000001700000018000000220000002300000025000000260000002700000028000000290000002a0000002d0000002e000000300000003100000032000000330000003400000037000000390000004200000046000000490000004d0000004e00000051000000570000005b0000005c0000005f000000610000006700000068000000690000006f000000730000008f000000b60000000f0100002c0400002f040000320400003504000038040000e90400003d0a0000ac0a000012150000611c0000561d000034fe0000b6580100
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -498,10 +498,19 @@ This event does the following:
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{CCFBF928-9252-46AB-822B-D3368FDB3B05}" ShortID="819263446">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_ux_box_pickup" ID="{FCDE5ACC-F2EE-4EAD-83D9-E0492894B313}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="BoxDrop" ID="{C2FD5147-3990-4F1F-A576-87A4AE697A0A}">
-									<Comment>Called when a keycube is dropped.</Comment>
+									<Comment>Called when a keycube is dropped. (cont.)
+
+This event only can be called from the altered line of code in the BoxSoundTrigger.cs Unity script. This code change is to allow for distinct music stingers to be called when the box is picked up and when it is dropped. The change was made as it appears that it is currently not possible to apply logic to Stingers from within Wwise in the same way that you can with SFX or music tracks using sequence containers.</Comment>
 									<ChildrenList>
 										<Action Name="" ID="{3933FF8C-6FE6-4DE2-B068-C97835999AAC}" ShortID="549507226">
 											<PropertyList>
@@ -514,15 +523,33 @@ This event does the following:
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{8B4F85B6-FE10-400D-9A32-CC16EBBF9859}" ShortID="898906089">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_ux_box_drop" ID="{E2B80BBB-C00C-4B23-B5CD-D2AE6FC8465F}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="BoxAmbiencePlay" ID="{F192BD75-CC9C-4940-8BA3-367206F95208}">
+								<Event Name="BoxAmbience" ID="{F192BD75-CC9C-4940-8BA3-367206F95208}">
 									<Comment>Starts passive music on keycubes.</Comment>
 									<ChildrenList>
 										<Action Name="" ID="{A92D4835-02BB-426C-81DF-870608BBBB70}" ShortID="439033250">
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="music_boat_cube (Loop)" ID="{726A473F-F8FC-4D8B-9644-812599B48325}" WorkUnitID="{F25D41B2-87F8-4367-B70B-EA99533755FA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="BoxGroundCollide" ID="{05158E66-E728-433F-87DF-FAD5AA211B68}">
+									<ChildrenList>
+										<Action Name="" ID="{1B288A85-E2B1-41B0-B674-34F5F3C611BD}" ShortID="715466940">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_ent_box_collide" ID="{3A8D9B75-61EB-4BFC-BA7A-DECFEADD7BEF}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -843,11 +870,25 @@ The switch is reset by a trigger when the door closes.</Comment>
 								<Folder Name="Mechanical" ID="{FEF8ED15-41F1-4D6D-BEFE-C9F8E41D8950}" ShortID="54459110">
 									<ChildrenList>
 										<Event Name="MechanicalDoorStart" ID="{658D677B-21EF-4C53-875B-8C80F1990D5F}">
+											<Comment>Plays whenever a mechanical door is opened. (cont.)
+
+- Plays the mechanical door sound.
+- Posts the 'NarratorDialogue' event to play the 'checkpoint' dialogue narration. (This works with this current level layout.)</Comment>
 											<ChildrenList>
 												<Action Name="" ID="{423E734F-8844-4E13-9C0B-F1BF186288B6}" ShortID="14018165">
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="sfx_door_mechanical" ID="{F370F165-B3BE-4A03-BFE4-998BDBF5646C}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{1CFBBBED-CD83-40EB-AFA2-D507E83EF681}" ShortID="200627394">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="41"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="NarratorDialogue" ID="{35665977-F672-4D22-B458-AC8C257EAC33}" WorkUnitID="{C7B8A11D-6FEE-4023-9FC3-F5BD756C3F5C}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -876,6 +917,32 @@ The switch is reset by a trigger when the door closes.</Comment>
 										</Event>
 									</ChildrenList>
 								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="UX" ID="{EE527579-9B26-4C88-8749-2581C69ECA32}" ShortID="735397299">
+							<ChildrenList>
+								<Event Name="BoxActivate" ID="{275DEE8F-E85F-46CB-930D-408A3AE1BF6A}">
+									<ChildrenList>
+										<Action Name="" ID="{19E454DA-F772-41F5-A464-E54C2DA69E9E}" ShortID="623841305">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_ux_box" ID="{8CE97F97-87B7-4162-A1F5-2514DC76CB07}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="ButtonActivate" ID="{63292B8B-50B3-425D-9311-B49CA4C18473}">
+									<ChildrenList>
+										<Action Name="" ID="{AE8786DC-8BE1-401D-B96D-6A1BA8841335}" ShortID="56885536">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_ux_button" ID="{7DBF778B-1357-4A7C-AEC2-100040EB04FB}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -1090,8 +1157,57 @@ This event does the following:
 										</Event>
 									</ChildrenList>
 								</Folder>
+								<Event Name="LevelFadeOut" ID="{9AB94548-00BA-47F3-A08B-A3580CCEC03F}">
+									<ChildrenList>
+										<Action Name="" ID="{E2053E92-3333-4617-8596-AE5A87693591}" ShortID="14730954">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Fadeout" ID="{10063E9A-F8E5-43AE-810B-DDA630F3684C}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{65767935-846F-43F9-AFE2-0F91258FF151}" ShortID="331202300">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="vx_narrator (Enabled)" ID="{F50F878C-0D1C-4108-826F-2F5DC5D47ADB}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Dialogue" ID="{93BEEDED-682D-49F6-8C7E-B89CB1601630}" ShortID="264059825">
+					<ChildrenList>
+						<Event Name="NarratorDialogue" ID="{35665977-F672-4D22-B458-AC8C257EAC33}">
+							<ChildrenList>
+								<Action Name="" ID="{AC26760C-9047-4249-838B-F6EE51BE6CC0}" ShortID="886359594">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="vx_narrator (Enabled)" ID="{F50F878C-0D1C-4108-826F-2F5DC5D47ADB}" WorkUnitID="{AF4E4E3A-353D-4CBD-AA7E-6A6A1830BD9F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E0552315-2472-40E7-9119-7C2481494048}" ShortID="86153127">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Disabled" ID="{66E4E46F-5824-4E25-808D-B456CC5C4312}" WorkUnitID="{BAD60366-058E-4C5F-AA44-6AAB326E99E9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

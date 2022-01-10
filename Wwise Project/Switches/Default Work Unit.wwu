@@ -73,6 +73,38 @@ As far as this mapping is concerned, the player is walking right up until VampCo
 						<Switch Name="Closed" ID="{20BD95DB-1912-4473-B621-57502B5D64B8}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<Folder Name="Dialogue" ID="{100E5445-2EE7-403F-AF0B-D80E63B60127}" ShortID="71378404">
+					<ChildrenList>
+						<SwitchGroup Name="NarratorDialogueType" ID="{5613406C-03AE-468F-98F1-B263DEDB2F1A}">
+							<PropertyList>
+								<Property Name="UseGameParameter" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Switch Name="Checkpoint" ID="{3F6694C4-7380-4EA1-989F-CDF32E8A9D2F}"/>
+								<Switch Name="Fadeout" ID="{10063E9A-F8E5-43AE-810B-DDA630F3684C}"/>
+								<Switch Name="Trigger_01" ID="{13DBF933-B367-415D-AE21-3DEE2305A424}"/>
+								<Switch Name="Trigger_02" ID="{157B6FDF-2BAC-41B4-A9C8-1B83770F0490}"/>
+								<Switch Name="Trigger_03" ID="{3287B204-0C53-4679-99E3-9009AFB9E798}"/>
+								<Switch Name="Trigger_04" ID="{FD4110B3-A714-49A4-8868-2EF2C2154610}"/>
+								<Switch Name="Trigger_05" ID="{571C8865-9FD2-4A89-829C-06AEE68C5B1E}"/>
+								<Switch Name="Trigger_06" ID="{67D8FE69-6BA8-49D3-83BF-41180C28D149}"/>
+								<Switch Name="Trigger_07" ID="{09135223-C59C-4D38-A33A-86BBC2940084}"/>
+								<Switch Name="Trigger_08" ID="{A85008AF-9B92-4D1E-A81A-9B68565B60FA}"/>
+								<Switch Name="Trigger_09" ID="{DCB9C67F-055E-4C8F-91C3-19327E2F0507}"/>
+								<Switch Name="Trigger_10" ID="{51BCF860-4611-445A-8292-52C27D5D0063}"/>
+								<Switch Name="Trigger_11" ID="{8C1AAC5D-8425-4F10-9361-D8EE067CE887}"/>
+								<Switch Name="Trigger_12" ID="{5E0C2A84-C6E5-4434-971F-DF6059145B4C}"/>
+								<Switch Name="Trigger_13" ID="{9238B9C4-2663-43B6-884C-9D7FA7823727}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="NarratorDialogueEnabled" ID="{4DCC4270-8883-47D1-8A39-0E3085EFDD50}">
+							<ChildrenList>
+								<Switch Name="Enabled" ID="{891F59F9-4F24-40DF-BB71-1AB453962B46}"/>
+								<Switch Name="Disabled" ID="{66E4E46F-5824-4E25-808D-B456CC5C4312}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

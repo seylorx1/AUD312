@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3857155f990bfa43b3d23accebdd730, type: 3}
   m_Name: F192BD75-CC9C-4940-8BA3-367206F95208
   m_EditorClassIdentifier: 
-  objectName: BoxAmbiencePlay
-  id: 829164566
+  objectName: BoxAmbience
+  id: 3524448416
   guid: F192BD75-CC9C-4940-8BA3-367206F95208

@@ -13,13 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID BOXAMBIENCEPLAY = 829164566U;
+        static const AkUniqueID BOXACTIVATE = 3612343067U;
+        static const AkUniqueID BOXAMBIENCE = 3524448416U;
         static const AkUniqueID BOXDROP = 3810078911U;
         static const AkUniqueID BOXDROPCUE = 241339208U;
+        static const AkUniqueID BOXGROUNDCOLLIDE = 3048376677U;
         static const AkUniqueID BOXPICKUP = 2671589300U;
         static const AkUniqueID BOXPICKUPCUE = 4115829741U;
         static const AkUniqueID BOXSEGMENTDOWNCUE = 3547374172U;
         static const AkUniqueID BOXSEGMENTUPCUE = 1360996149U;
+        static const AkUniqueID BUTTONACTIVATE = 3612051246U;
         static const AkUniqueID ENTERINDOORS = 1721219483U;
         static const AkUniqueID ENTERINDOORSTUNNEL = 1113956849U;
         static const AkUniqueID ENTEROUTDOORS = 3070671186U;
@@ -37,10 +40,12 @@ namespace AK
         static const AkUniqueID LEVELBARSSTART = 3575485577U;
         static const AkUniqueID LEVELBARSSTOP = 27808547U;
         static const AkUniqueID LEVELBIGROOMREVEAL = 3672941687U;
+        static const AkUniqueID LEVELFADEOUT = 2134511225U;
         static const AkUniqueID LEVELSTART = 3372421815U;
         static const AkUniqueID MECHANICALDOORSTART = 584382452U;
         static const AkUniqueID MECHANICALDOORSTOP = 4239384168U;
         static const AkUniqueID MUSICSTART = 1122283870U;
+        static const AkUniqueID NARRATORDIALOGUE = 983946156U;
         static const AkUniqueID PLATFORMSTART = 4276765652U;
         static const AkUniqueID PLATFORMSTOP = 3914167496U;
         static const AkUniqueID SFXINIT_GLOBAL = 1799863314U;
@@ -197,6 +202,41 @@ namespace AK
                 static const AkUniqueID WOOD = 2058049674U;
             } // namespace SWITCH
         } // namespace FOOTSTEPTYPE
+
+        namespace NARRATORDIALOGUEENABLED
+        {
+            static const AkUniqueID GROUP = 224814215U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DISABLED = 3248502869U;
+                static const AkUniqueID ENABLED = 4174102348U;
+            } // namespace SWITCH
+        } // namespace NARRATORDIALOGUEENABLED
+
+        namespace NARRATORDIALOGUETYPE
+        {
+            static const AkUniqueID GROUP = 310433156U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CHECKPOINT = 612075679U;
+                static const AkUniqueID FADEOUT = 3903560121U;
+                static const AkUniqueID TRIGGER_01 = 4269712495U;
+                static const AkUniqueID TRIGGER_02 = 4269712492U;
+                static const AkUniqueID TRIGGER_03 = 4269712493U;
+                static const AkUniqueID TRIGGER_04 = 4269712490U;
+                static const AkUniqueID TRIGGER_05 = 4269712491U;
+                static const AkUniqueID TRIGGER_06 = 4269712488U;
+                static const AkUniqueID TRIGGER_07 = 4269712489U;
+                static const AkUniqueID TRIGGER_08 = 4269712486U;
+                static const AkUniqueID TRIGGER_09 = 4269712487U;
+                static const AkUniqueID TRIGGER_10 = 4286490049U;
+                static const AkUniqueID TRIGGER_11 = 4286490048U;
+                static const AkUniqueID TRIGGER_12 = 4286490051U;
+                static const AkUniqueID TRIGGER_13 = 4286490050U;
+            } // namespace SWITCH
+        } // namespace NARRATORDIALOGUETYPE
 
         namespace VAMPFOOTSTEP
         {

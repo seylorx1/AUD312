@@ -593,7 +593,8 @@ MonoBehaviour:
   activateSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 675515a6167a5f246be58c412b48de57,
+      type: 2}
   boxDropped:
     m_PersistentCalls:
       m_Calls:

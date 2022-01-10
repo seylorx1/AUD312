@@ -16,7 +16,7 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2950208386">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1498791793">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -38,12 +38,24 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="727891748">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2782193391">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="829164566" Name="BoxAmbiencePlay" ObjectPath="\Events\Default Work Unit\SFX\Box\BoxAmbiencePlay" MaxAttenuation="20.000000" DurationType="Infinite">
+				<Event Id="3612343067" Name="BoxActivate" ObjectPath="\Events\Default Work Unit\SFX\UX\BoxActivate" DurationType="OneShot" DurationMin="1.502494" DurationMax="3.502789">
+					<IncludedMemoryFiles>
+						<File Id="528226358" Language="SFX">
+							<ShortName>sfx_ux_box_activate.wav</ShortName>
+							<Path>SFX\sfx_ux_box_activate_10C4C929.wem</Path>
+						</File>
+						<File Id="769886126" Language="SFX">
+							<ShortName>sfx_ux_box_deactivate.wav</ShortName>
+							<Path>SFX\sfx_ux_box_deactivate_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3524448416" Name="BoxAmbience" ObjectPath="\Events\Default Work Unit\SFX\Box\BoxAmbience" MaxAttenuation="20.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="117760886" Language="SFX">
 							<ShortName>music_boat_cube.wav</ShortName>
@@ -51,7 +63,13 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3810078911" Name="BoxDrop" ObjectPath="\Events\Default Work Unit\SFX\Box\BoxDrop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="3810078911" Name="BoxDrop" ObjectPath="\Events\Default Work Unit\SFX\Box\BoxDrop" DurationType="OneShot" DurationMin="3.500000" DurationMax="3.500000">
+					<IncludedMemoryFiles>
+						<File Id="1065081122" Language="SFX">
+							<ShortName>sfx_ux_box_drop.wav</ShortName>
+							<Path>SFX\sfx_ux_box_drop_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 					<ActionTrigger>
 						<ActionTriggerEntry Id="556308635" Name="BoxDropStinger" ObjectPath="\Triggers\Default Work Unit\BoxDropStinger"/>
 					</ActionTrigger>
@@ -61,7 +79,33 @@
 						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\BoxState\None"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="2671589300" Name="BoxPickup" ObjectPath="\Events\Default Work Unit\SFX\Box\BoxPickup" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="3048376677" Name="BoxGroundCollide" ObjectPath="\Events\Default Work Unit\SFX\Box\BoxGroundCollide" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.239729" DurationMax="0.760859">
+					<IncludedMemoryFiles>
+						<File Id="110016742" Language="SFX">
+							<ShortName>sfx_env_box_collide_01.wav</ShortName>
+							<Path>SFX\sfx_env_box_collide_01_10C4C929.wem</Path>
+						</File>
+						<File Id="457803619" Language="SFX">
+							<ShortName>sfx_env_box_collide_02.wav</ShortName>
+							<Path>SFX\sfx_env_box_collide_02_10C4C929.wem</Path>
+						</File>
+						<File Id="551057089" Language="SFX">
+							<ShortName>sfx_env_box_collide_04.wav</ShortName>
+							<Path>SFX\sfx_env_box_collide_04_10C4C929.wem</Path>
+						</File>
+						<File Id="815353574" Language="SFX">
+							<ShortName>sfx_env_box_collide_03.wav</ShortName>
+							<Path>SFX\sfx_env_box_collide_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2671589300" Name="BoxPickup" ObjectPath="\Events\Default Work Unit\SFX\Box\BoxPickup" DurationType="OneShot" DurationMin="4.000000" DurationMax="4.000000">
+					<IncludedMemoryFiles>
+						<File Id="938046817" Language="SFX">
+							<ShortName>sfx_ux_box_pickup.wav</ShortName>
+							<Path>SFX\sfx_ux_box_pickup_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 					<ActionTrigger>
 						<ActionTriggerEntry Id="3525814506" Name="BoxPickupStinger" ObjectPath="\Triggers\Default Work Unit\BoxPickupStinger"/>
 					</ActionTrigger>
@@ -80,6 +124,18 @@
 					<ActionSetState>
 						<ActionSetStateEntry Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\BoxOpeningStingerState\None"/>
 					</ActionSetState>
+				</Event>
+				<Event Id="3612051246" Name="ButtonActivate" ObjectPath="\Events\Default Work Unit\SFX\UX\ButtonActivate" DurationType="OneShot" DurationMin="5.500000" DurationMax="5.500000">
+					<IncludedMemoryFiles>
+						<File Id="117697571" Language="SFX">
+							<ShortName>sfx_ux_button_activate.wav</ShortName>
+							<Path>SFX\sfx_ux_button_activate_10C4C929.wem</Path>
+						</File>
+						<File Id="487622940" Language="SFX">
+							<ShortName>sfx_ux_button_deactivate.wav</ShortName>
+							<Path>SFX\sfx_ux_button_deactivate_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1721219483" Name="EnterIndoors" ObjectPath="\Events\Default Work Unit\Level\Room\EnterIndoors" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
@@ -695,6 +751,81 @@
 						<ActionPostEventEntry Id="3070671186" Name="EnterOutdoors" ObjectPath="\Events\Default Work Unit\Level\Room\EnterOutdoors"/>
 					</ActionPostEvent>
 				</Event>
+				<Event Id="2134511225" Name="LevelFadeOut" ObjectPath="\Events\Default Work Unit\Level\Beats\LevelFadeOut" DurationType="OneShot" DurationMin="6.776757" DurationMax="9.883446">
+					<IncludedMemoryFiles>
+						<File Id="8754654" Language="SFX">
+							<ShortName>sfx_narrator_open.wav</ShortName>
+							<Path>SFX\sfx_narrator_open_10C4C929.wem</Path>
+						</File>
+						<File Id="48822515" Language="SFX">
+							<ShortName>vx_narrator_trigger_11.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_11_10C4C929.wem</Path>
+						</File>
+						<File Id="63339553" Language="SFX">
+							<ShortName>vx_narrator_trigger_12.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_12_10C4C929.wem</Path>
+						</File>
+						<File Id="70195472" Language="SFX">
+							<ShortName>vx_narrator_trigger_07.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_07_10C4C929.wem</Path>
+						</File>
+						<File Id="118143263" Language="SFX">
+							<ShortName>vx_narrator_trigger_05.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_05_10C4C929.wem</Path>
+						</File>
+						<File Id="274609004" Language="SFX">
+							<ShortName>vx_narrator_trigger_06.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_06_10C4C929.wem</Path>
+						</File>
+						<File Id="318942664" Language="SFX">
+							<ShortName>vx_narrator_trigger_09.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_09_10C4C929.wem</Path>
+						</File>
+						<File Id="403143043" Language="SFX">
+							<ShortName>vx_narrator_trigger_02.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_02_10C4C929.wem</Path>
+						</File>
+						<File Id="426936030" Language="SFX">
+							<ShortName>vx_narrator_fadeout.wav</ShortName>
+							<Path>SFX\vx_narrator_fadeout_10C4C929.wem</Path>
+						</File>
+						<File Id="468315385" Language="SFX">
+							<ShortName>vx_narrator_trigger_08.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_08_10C4C929.wem</Path>
+						</File>
+						<File Id="470829197" Language="SFX">
+							<ShortName>sfx_narrator_close.wav</ShortName>
+							<Path>SFX\sfx_narrator_close_10C4C929.wem</Path>
+						</File>
+						<File Id="512523175" Language="SFX">
+							<ShortName>vx_narrator_trigger_03.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_03_10C4C929.wem</Path>
+						</File>
+						<File Id="532869110" Language="SFX">
+							<ShortName>vx_narrator_trigger_13.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_13_10C4C929.wem</Path>
+						</File>
+						<File Id="660941783" Language="SFX">
+							<ShortName>vx_narrator_checkpoint.wav</ShortName>
+							<Path>SFX\vx_narrator_checkpoint_10C4C929.wem</Path>
+						</File>
+						<File Id="854068518" Language="SFX">
+							<ShortName>vx_narrator_trigger_04.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_04_10C4C929.wem</Path>
+						</File>
+						<File Id="959469471" Language="SFX">
+							<ShortName>vx_narrator_trigger_01.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_01_10C4C929.wem</Path>
+						</File>
+						<File Id="1060928635" Language="SFX">
+							<ShortName>vx_narrator_trigger_10.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_10_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="3903560121" Name="Fadeout" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Fadeout"/>
+					</ActionSetSwitch>
+				</Event>
 				<Event Id="3372421815" Name="LevelStart" ObjectPath="\Events\Default Work Unit\Level\Beats\LevelStart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="1122283870" Name="MusicStart" ObjectPath="\Events\Default Work Unit\Music\MusicStart"/>
@@ -712,6 +843,9 @@
 							<Path>SFX\sfx_door_mechanical_loop_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="983946156" Name="NarratorDialogue" ObjectPath="\Events\Default Work Unit\Dialogue\NarratorDialogue"/>
+					</ActionPostEvent>
 				</Event>
 				<Event Id="4239384168" Name="MechanicalDoorStop" ObjectPath="\Events\Default Work Unit\SFX\Doors\Mechanical\MechanicalDoorStop" DurationType="OneShot" DurationMin="2.250000" DurationMax="2.250000">
 					<IncludedMemoryFiles>
@@ -860,6 +994,168 @@
 							<Path>SFX\music_boat_fantasychords_1_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="983946156" Name="NarratorDialogue" ObjectPath="\Events\Default Work Unit\Dialogue\NarratorDialogue" DurationType="OneShot" DurationMin="3.776757" DurationMax="6.883446">
+					<IncludedMemoryFiles>
+						<File Id="8754654" Language="SFX">
+							<ShortName>sfx_narrator_open.wav</ShortName>
+							<Path>SFX\sfx_narrator_open_10C4C929.wem</Path>
+						</File>
+						<File Id="48822515" Language="SFX">
+							<ShortName>vx_narrator_trigger_11.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_11_10C4C929.wem</Path>
+						</File>
+						<File Id="63339553" Language="SFX">
+							<ShortName>vx_narrator_trigger_12.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_12_10C4C929.wem</Path>
+						</File>
+						<File Id="70195472" Language="SFX">
+							<ShortName>vx_narrator_trigger_07.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_07_10C4C929.wem</Path>
+						</File>
+						<File Id="118143263" Language="SFX">
+							<ShortName>vx_narrator_trigger_05.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_05_10C4C929.wem</Path>
+						</File>
+						<File Id="274609004" Language="SFX">
+							<ShortName>vx_narrator_trigger_06.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_06_10C4C929.wem</Path>
+						</File>
+						<File Id="318942664" Language="SFX">
+							<ShortName>vx_narrator_trigger_09.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_09_10C4C929.wem</Path>
+						</File>
+						<File Id="403143043" Language="SFX">
+							<ShortName>vx_narrator_trigger_02.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_02_10C4C929.wem</Path>
+						</File>
+						<File Id="426936030" Language="SFX">
+							<ShortName>vx_narrator_fadeout.wav</ShortName>
+							<Path>SFX\vx_narrator_fadeout_10C4C929.wem</Path>
+						</File>
+						<File Id="468315385" Language="SFX">
+							<ShortName>vx_narrator_trigger_08.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_08_10C4C929.wem</Path>
+						</File>
+						<File Id="470829197" Language="SFX">
+							<ShortName>sfx_narrator_close.wav</ShortName>
+							<Path>SFX\sfx_narrator_close_10C4C929.wem</Path>
+						</File>
+						<File Id="512523175" Language="SFX">
+							<ShortName>vx_narrator_trigger_03.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_03_10C4C929.wem</Path>
+						</File>
+						<File Id="532869110" Language="SFX">
+							<ShortName>vx_narrator_trigger_13.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_13_10C4C929.wem</Path>
+						</File>
+						<File Id="660941783" Language="SFX">
+							<ShortName>vx_narrator_checkpoint.wav</ShortName>
+							<Path>SFX\vx_narrator_checkpoint_10C4C929.wem</Path>
+						</File>
+						<File Id="854068518" Language="SFX">
+							<ShortName>vx_narrator_trigger_04.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_04_10C4C929.wem</Path>
+						</File>
+						<File Id="959469471" Language="SFX">
+							<ShortName>vx_narrator_trigger_01.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_01_10C4C929.wem</Path>
+						</File>
+						<File Id="1060928635" Language="SFX">
+							<ShortName>vx_narrator_trigger_10.wav</ShortName>
+							<Path>SFX\vx_narrator_trigger_10_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{891F59F9-4F24-40DF-BB71-1AB453962B46}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{891F59F9-4F24-40DF-BB71-1AB453962B46}">
+							<DefaultSwitchValue>{3F6694C4-7380-4EA1-989F-CDF32E8A9D2F}</DefaultSwitchValue>
+							<Media>
+								<File Id="8754654"/>
+								<File Id="470829197"/>
+							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{10063E9A-F8E5-43AE-810B-DDA630F3684C}">
+									<Media>
+										<File Id="426936030"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{3F6694C4-7380-4EA1-989F-CDF32E8A9D2F}">
+									<Media>
+										<File Id="660941783"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{13DBF933-B367-415D-AE21-3DEE2305A424}">
+									<Media>
+										<File Id="959469471"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{157B6FDF-2BAC-41B4-A9C8-1B83770F0490}">
+									<Media>
+										<File Id="403143043"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{3287B204-0C53-4679-99E3-9009AFB9E798}">
+									<Media>
+										<File Id="512523175"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{FD4110B3-A714-49A4-8868-2EF2C2154610}">
+									<Media>
+										<File Id="854068518"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{571C8865-9FD2-4A89-829C-06AEE68C5B1E}">
+									<Media>
+										<File Id="118143263"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{67D8FE69-6BA8-49D3-83BF-41180C28D149}">
+									<Media>
+										<File Id="274609004"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{09135223-C59C-4D38-A33A-86BBC2940084}">
+									<Media>
+										<File Id="70195472"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{A85008AF-9B92-4D1E-A81A-9B68565B60FA}">
+									<Media>
+										<File Id="468315385"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{DCB9C67F-055E-4C8F-91C3-19327E2F0507}">
+									<Media>
+										<File Id="318942664"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{51BCF860-4611-445A-8292-52C27D5D0063}">
+									<Media>
+										<File Id="1060928635"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{8C1AAC5D-8425-4F10-9361-D8EE067CE887}">
+									<Media>
+										<File Id="48822515"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{5E0C2A84-C6E5-4434-971F-DF6059145B4C}">
+									<Media>
+										<File Id="63339553"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9238B9C4-2663-43B6-884C-9D7FA7823727}">
+									<Media>
+										<File Id="532869110"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="3248502869" Name="Disabled" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueEnabled\Disabled"/>
+					</ActionSetSwitch>
 				</Event>
 				<Event Id="4276765652" Name="PlatformStart" ObjectPath="\Events\Default Work Unit\SFX\Platform\PlatformStart" MaxAttenuation="50.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -1152,6 +1448,31 @@
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
+				<SwitchGroup Id="224814215" Name="NarratorDialogueEnabled" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueEnabled" GUID="{4DCC4270-8883-47D1-8A39-0E3085EFDD50}">
+					<Switches>
+						<Switch Id="4174102348" Name="Enabled" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueEnabled\Enabled" GUID="{891F59F9-4F24-40DF-BB71-1AB453962B46}"/>
+						<Switch Id="3248502869" Name="Disabled" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueEnabled\Disabled" GUID="{66E4E46F-5824-4E25-808D-B456CC5C4312}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="310433156" Name="NarratorDialogueType" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType" GUID="{5613406C-03AE-468F-98F1-B263DEDB2F1A}">
+					<Switches>
+						<Switch Id="612075679" Name="Checkpoint" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Checkpoint" GUID="{3F6694C4-7380-4EA1-989F-CDF32E8A9D2F}"/>
+						<Switch Id="3903560121" Name="Fadeout" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Fadeout" GUID="{10063E9A-F8E5-43AE-810B-DDA630F3684C}"/>
+						<Switch Id="4269712495" Name="Trigger_01" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Trigger_01" GUID="{13DBF933-B367-415D-AE21-3DEE2305A424}"/>
+						<Switch Id="4269712492" Name="Trigger_02" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Trigger_02" GUID="{157B6FDF-2BAC-41B4-A9C8-1B83770F0490}"/>
+						<Switch Id="4269712493" Name="Trigger_03" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Trigger_03" GUID="{3287B204-0C53-4679-99E3-9009AFB9E798}"/>
+						<Switch Id="4269712490" Name="Trigger_04" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Trigger_04" GUID="{FD4110B3-A714-49A4-8868-2EF2C2154610}"/>
+						<Switch Id="4269712491" Name="Trigger_05" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Trigger_05" GUID="{571C8865-9FD2-4A89-829C-06AEE68C5B1E}"/>
+						<Switch Id="4269712488" Name="Trigger_06" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Trigger_06" GUID="{67D8FE69-6BA8-49D3-83BF-41180C28D149}"/>
+						<Switch Id="4269712489" Name="Trigger_07" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Trigger_07" GUID="{09135223-C59C-4D38-A33A-86BBC2940084}"/>
+						<Switch Id="4269712486" Name="Trigger_08" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Trigger_08" GUID="{A85008AF-9B92-4D1E-A81A-9B68565B60FA}"/>
+						<Switch Id="4269712487" Name="Trigger_09" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Trigger_09" GUID="{DCB9C67F-055E-4C8F-91C3-19327E2F0507}"/>
+						<Switch Id="4286490049" Name="Trigger_10" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Trigger_10" GUID="{51BCF860-4611-445A-8292-52C27D5D0063}"/>
+						<Switch Id="4286490048" Name="Trigger_11" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Trigger_11" GUID="{8C1AAC5D-8425-4F10-9361-D8EE067CE887}"/>
+						<Switch Id="4286490051" Name="Trigger_12" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Trigger_12" GUID="{5E0C2A84-C6E5-4434-971F-DF6059145B4C}"/>
+						<Switch Id="4286490050" Name="Trigger_13" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Trigger_13" GUID="{9238B9C4-2663-43B6-884C-9D7FA7823727}"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="856450531" Name="DoorHandle" ObjectPath="\Switches\Default Work Unit\DoorHandle" GUID="{E3071565-75BF-441C-A826-0C0DCFBE09AA}">
 					<Switches>
 						<Switch Id="3299206614" Name="Opened" ObjectPath="\Switches\Default Work Unit\DoorHandle\Opened" GUID="{378B3196-9A88-4B5E-8A15-4B6472494809}"/>
@@ -1181,7 +1502,13 @@
 						<Switch Id="3248502869" Name="Disabled" ObjectPath="\Switches\Default Work Unit\FootstepImpact\Disabled" GUID="{7DD9C498-A494-4A23-A451-A72ADA2DC246}"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="3248502869" Name="Disabled" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueEnabled\Disabled" GUID="{66E4E46F-5824-4E25-808D-B456CC5C4312}">
+					<Switches/>
+				</SwitchGroup>
 				<SwitchGroup Id="3299206614" Name="Opened" ObjectPath="\Switches\Default Work Unit\DoorHandle\Opened" GUID="{378B3196-9A88-4B5E-8A15-4B6472494809}">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="3903560121" Name="Fadeout" ObjectPath="\Switches\Default Work Unit\Dialogue\NarratorDialogueType\Fadeout" GUID="{10063E9A-F8E5-43AE-810B-DDA630F3684C}">
 					<Switches/>
 				</SwitchGroup>
 			</SwitchGroups>

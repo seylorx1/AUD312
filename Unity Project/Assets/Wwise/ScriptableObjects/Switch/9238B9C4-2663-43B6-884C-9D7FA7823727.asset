@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c653f6b9ace147147aee9f33daa6582e, type: 3}
+  m_Name: 9238B9C4-2663-43B6-884C-9D7FA7823727
+  m_EditorClassIdentifier: 
+  objectName: Trigger_13
+  id: 4286490050
+  guid: 9238B9C4-2663-43B6-884C-9D7FA7823727
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: e03558d1fbb4c3e4e9c67b614d270449,
+    type: 2}

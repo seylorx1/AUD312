@@ -4,10 +4,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	157353963	StepOffBed			\Default Work Unit\SFX\Bed\StepOffBed	
 	241339208	BoxDropCue			\Default Work Unit\Music\Cue Events\Stingers\BoxDropCue	
 	561183332	HarpoonAmbiencePlay			\Default Work Unit\SFX\Harpoon\HarpoonAmbiencePlay	
-	584382452	MechanicalDoorStart			\Default Work Unit\SFX\Doors\Mechanical\MechanicalDoorStart	
+	584382452	MechanicalDoorStart			\Default Work Unit\SFX\Doors\Mechanical\MechanicalDoorStart	Plays whenever a mechanical door is opened. (cont.)  - Plays the mechanical door sound. - Posts the 'NarratorDialogue' event to play the 'checkpoint' dialogue narration. (This works with this current level layout.)
 	670425516	WoodDoorInteract			\Default Work Unit\SFX\Doors\WoodDoorInteract	Plays the door open sound and sets the DoorHandle switch to 'Opened'. (cont.)  This means that the door will only play the handle sound effect the first time it is opened, as the sound only plays when DoorHandle is set to 'Closed'.  The switch is reset by a trigger when the door closes.
 	757170495	HarpoonReceived			\Default Work Unit\SFX\Harpoon\HarpoonReceived	Called when the harpoon is fully retracted. Resets harpoon state and stops related sounds.
-	829164566	BoxAmbiencePlay			\Default Work Unit\SFX\Box\BoxAmbiencePlay	Starts passive music on keycubes.
+	983946156	NarratorDialogue			\Default Work Unit\Dialogue\NarratorDialogue	
 	1113956849	EnterIndoorsTunnel			\Default Work Unit\Level\Room\EnterIndoorsTunnel	
 	1122283870	MusicStart			\Default Work Unit\Music\MusicStart	Starts the game's music, which is made up of parts of a song I made: 'Boat Ride Over A Paltry Chasm'.
 	1360996149	BoxSegmentUpCue			\Default Work Unit\Music\Cue Events\Stingers\BoxSegmentUpCue	
@@ -16,16 +16,21 @@ Event	ID	Name			Wwise Object Path	Notes
 	1866025847	Footstep			\Default Work Unit\SFX\Footstep\Footstep	Called on every footstep. (Cont.)  This event does the following: - Sets a random value [0..1] for footstep weight (used by some footstep sounds.) - Plays the Footstep switch container. - Calls vamp cooldown event.
 	1877319332	FootstepLand			\Default Work Unit\SFX\Footstep\FootstepLand	Called every time the player lands. (Cont.)  This event does the following: - Sets a random value [0..1] for footstep weight (used by some footstep sounds.) - Plays the FootstepLand switch container.
 	1973723167	TreeAmbiencePlay			\Default Work Unit\SFX\TreeAmbiencePlay	
+	2134511225	LevelFadeOut			\Default Work Unit\Level\Beats\LevelFadeOut	
 	2421633396	HarpoonFireReturn			\Default Work Unit\SFX\Harpoon\HarpoonFireReturn	Called once when the harpoon is fired, and again when it begins to retract. (cont.)  This event does the following: - Plays the harpoon air and chain 3D positional noises. - Handles the harpoon's Fire Once behaviour. - Stops part B of sfx_harpoon_shoot from playing.
 	2671589300	BoxPickup			\Default Work Unit\SFX\Box\BoxPickup	Called when a keycube is picked up.
 	2811934447	EnterTunnel			\Default Work Unit\Level\Room\EnterTunnel	
 	2837856117	HarpoonGrabSuccess			\Default Work Unit\SFX\Harpoon\HarpoonGrabSuccess	Called when the harpoon successfully grabs something. Stops normal and start heavy chain noises.
 	2867011390	HarpoonPickup			\Default Work Unit\SFX\Harpoon\HarpoonPickup	Called when the harpoon is picked up.
+	3048376677	BoxGroundCollide			\Default Work Unit\SFX\Box\BoxGroundCollide	
 	3070671186	EnterOutdoors			\Default Work Unit\Level\Room\EnterOutdoors	
 	3333733726	HarpoonAmbienceStop			\Default Work Unit\SFX\Harpoon\HarpoonAmbienceStop	
 	3372421815	LevelStart			\Default Work Unit\Level\Beats\LevelStart	Called at the beginning of the level. (cont.)  This event does the following: - Posts the MusicStart event, initialising the music for the level.  - Posts the SFXStart event, initialising the sound effects for the level.  
+	3524448416	BoxAmbience			\Default Work Unit\SFX\Box\BoxAmbience	Starts passive music on keycubes.
 	3547374172	BoxSegmentDownCue			\Default Work Unit\Music\Cue Events\Stingers\BoxSegmentDownCue	
 	3575485577	LevelBarsStart			\Default Work Unit\Level\Beats\Bars\LevelBarsStart	
+	3612051246	ButtonActivate			\Default Work Unit\SFX\UX\ButtonActivate	
+	3612343067	BoxActivate			\Default Work Unit\SFX\UX\BoxActivate	
 	3672941687	LevelBigRoomReveal			\Default Work Unit\Level\Beats\LevelBigRoomReveal	Called when the "BigRoomReveal" button is pressed. (cont.)  - Calls 'EnterOutdoors' event.
 	3724088773	WorldKey_A5			\Default Work Unit\SFX\WorldKeys\WorldKey_A5	
 	3724088774	WorldKey_A6			\Default Work Unit\SFX\WorldKeys\WorldKey_A6	
@@ -37,7 +42,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3791199242	WorldKey_E6			\Default Work Unit\SFX\WorldKeys\WorldKey_E6	
 	3807976953	WorldKey_D6			\Default Work Unit\SFX\WorldKeys\WorldKey_D6	
 	3807976954	WorldKey_D5			\Default Work Unit\SFX\WorldKeys\WorldKey_D5	
-	3810078911	BoxDrop			\Default Work Unit\SFX\Box\BoxDrop	Called when a keycube is dropped.
+	3810078911	BoxDrop			\Default Work Unit\SFX\Box\BoxDrop	Called when a keycube is dropped. (cont.)  This event only can be called from the altered line of code in the BoxSoundTrigger.cs Unity script. This code change is to allow for distinct music stingers to be called when the box is picked up and when it is dropped. The change was made as it appears that it is currently not possible to apply logic to Stingers from within Wwise in the same way that you can with SFX or music tracks using sequence containers.
 	3824754518	WorldKey_G4			\Default Work Unit\SFX\WorldKeys\WorldKey_G4	
 	3824754519	WorldKey_G5			\Default Work Unit\SFX\WorldKeys\WorldKey_G5	
 	3841532096	WorldKey_F5			\Default Work Unit\SFX\WorldKeys\WorldKey_F5	
@@ -51,11 +56,30 @@ Event	ID	Name			Wwise Object Path	Notes
 	4288247056	FootstepVampCooldown			\Default Work Unit\SFX\Footstep\FootstepVampCooldown	Handles vamp cooldown parameter sends.
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	224814215	NarratorDialogueEnabled			\Default Work Unit\Dialogue\NarratorDialogueEnabled	
+	310433156	NarratorDialogueType			\Default Work Unit\Dialogue\NarratorDialogueType	
 	856450531	DoorHandle			\Default Work Unit\DoorHandle	
 	1458816175	FootstepType			\Default Work Unit\FootstepType	
 	3037162653	FootstepImpact			\Default Work Unit\FootstepImpact	
 
 Switch	ID	Name	Switch Group			Notes
+	3248502869	Disabled	NarratorDialogueEnabled			
+	4174102348	Enabled	NarratorDialogueEnabled			
+	612075679	Checkpoint	NarratorDialogueType			
+	3903560121	Fadeout	NarratorDialogueType			
+	4269712486	Trigger_08	NarratorDialogueType			
+	4269712487	Trigger_09	NarratorDialogueType			
+	4269712488	Trigger_06	NarratorDialogueType			
+	4269712489	Trigger_07	NarratorDialogueType			
+	4269712490	Trigger_04	NarratorDialogueType			
+	4269712491	Trigger_05	NarratorDialogueType			
+	4269712492	Trigger_02	NarratorDialogueType			
+	4269712493	Trigger_03	NarratorDialogueType			
+	4269712495	Trigger_01	NarratorDialogueType			
+	4286490048	Trigger_11	NarratorDialogueType			
+	4286490049	Trigger_10	NarratorDialogueType			
+	4286490050	Trigger_13	NarratorDialogueType			
+	4286490051	Trigger_12	NarratorDialogueType			
 	3012222945	Closed	DoorHandle			
 	3299206614	Opened	DoorHandle			
 	446279778	Bed	FootstepType			
@@ -104,6 +128,7 @@ Trigger	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	3342881	sfx_footstep_toe_concrete_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_concrete\Left Foot\toe\sfx_footstep_toe_concrete_03		19760
+	8754654	sfx_narrator_open	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_narrator_open_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\sfx_narrator_open		205172
 	13459026	sfx_footstep_toe_cloth_04	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_cloth_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_cloth\Left Foot\toe\sfx_footstep_toe_cloth_04		56004
 	16215833	sfx_footstep_heel_grass_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_grass_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_grass\Left Foot\heel\sfx_footstep_heel_grass_02		31636
 	18772141	sfx_door_mechanical_start	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_door_mechanical_start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Environment\Door\Mechanical\sfx_door_mechanical\sfx_door_mechanical_start		44164
@@ -111,8 +136,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	40909859	sfx_footstep_heel_concrete_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_concrete\Left Foot\heel\sfx_footstep_heel_concrete_01		21188
 	43452734	sfx_env_treewind_rustle	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_treewind_rustle_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Environment\Ambience\sfx_env_treewind_rustle	Looping tree rustle sound, with random pitch and start delay.	2293264
 	47062023	music_boat_kicksnare_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_kicksnare_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\3 - Room_C (Loop)\Room_C\music_boat_kicksnare_1		882128
+	48822515	vx_narrator_trigger_11	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_trigger_11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_trigger_11		787432
 	52852936	sfx_footstep_jump_grass	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_jump_grass_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\FootstepJump\FootstepJump Type\sfx_footstep_jump_grass		18654
 	56514661	sfx_footstep_heel_glass_04	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_glass_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_glass_tone\Left Foot\heel\sfx_footstep_heel_glass_04		59164
+	63339553	vx_narrator_trigger_12	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_trigger_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_trigger_12		553960
+	70195472	vx_narrator_trigger_07	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_trigger_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_trigger_07		353108
 	71636352	sfx_footstep_heel_concrete_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_concrete\Left Foot\heel\sfx_footstep_heel_concrete_03		25232
 	75070834	sfx_footstep_heel_gravel_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_gravel_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_gravel\Left Foot\heel\sfx_footstep_heel_gravel_02		12354
 	76617765	sfx_env_platform_stop	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_env_platform_stop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Environment\Platform\sfx_env_platform_stop (Init Handling)\sfx_env_platform_stop		132364
@@ -123,15 +151,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	87916936	sfx_footstep_toe_concrete_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_concrete_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_concrete\Left Foot\toe\sfx_footstep_toe_concrete_01		25680
 	95916828	sfx_footstep_heel_concrete_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_concrete_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_concrete\Left Foot\heel\sfx_footstep_heel_concrete_02		24780
 	101588032	sfx_footstep_heel_cloth_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_cloth_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_cloth\Left Foot\heel\sfx_footstep_heel_cloth_02		36120
+	110016742	sfx_env_box_collide_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_env_box_collide_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Entities\sfx_ent_box_collide\sfx_env_box_collide_01		98848
+	117697571	sfx_ux_button_activate	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_ux_button_activate_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\UX\sfx_ux_button\sfx_ux_button_activate		970264
 	117760886	music_boat_cube	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_cube_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Non-Playlist\music_boat_cube (Loop)\music_boat_cube\music_boat_cube		3386944
 	117884843	sfx_harpoon_shoot_reel_air	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_harpoon_shoot_reel_air_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Harpoon\sfx_harpoon_shoot_reel_air	Played from the harpoon's tip.	652744
+	118143263	vx_narrator_trigger_05	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_trigger_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_trigger_05		554828
 	128127013	sfx_harpoon_shoot_reel_heavychain	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_harpoon_shoot_reel_heavychain_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Harpoon\sfx_harpoon_shoot_reel_heavychain		371776
 	152547260	sfx_footstep_toe_grass_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_grass_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_grass\Left Foot\toe\sfx_footstep_toe_grass_03		52934
 	154507780	music_boat_intensebass_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_intensebass_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\4 - Harpoon (Loop)\Harpoon\music_boat_intensebass_1		2005280
 	159164666	sfx_footstep_toe_metal_04	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_metal_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_metal\Left Foot\toe\sfx_footstep_toe_metal_04		23752
 	172730326	sfx_footstep_heel_wood_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_wood_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_wood\Left Foot\heel\sfx_footstep_heel_wood_03		18120
 	182318414	sfx_footstep_toe_metal_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_metal_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_metal\Left Foot\toe\sfx_footstep_toe_metal_03		27460
-	200076591	sfx_pinknoise	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_pinknoise_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Environment\Ambience\sfx_env_treewind (Loop)\sfx_pinknoise		1764064
+	200076591	sfx_pinknoise	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_pinknoise_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Environment\Ambience\sfx_env_wind\sfx_pinknoise		1764064
 	229562338	sfx_footstep_toe_wood_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_wood_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_wood\Left Foot\toe\sfx_footstep_toe_wood_02		19108
 	229936893	music_boat_kicksnare_chorus	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_kicksnare_chorus_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\3 - Room_C (Loop)\Room_C Chorus\music_boat_kicksnare_chorus		1780664
 	232315487	sfx_footstep_heel_wood_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_wood_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_wood\Left Foot\heel\sfx_footstep_heel_wood_01		13440
@@ -142,11 +173,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	259592201	sfx_footstep_toe_glass_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_glass_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_glass_tone\Left Foot\toe\sfx_footstep_toe_glass_03		67604
 	261681939	sfx_footstep_impact_grass	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_impact_grass_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\FootstepLand\FootstepLand Type\sfx_footstep_impact_grass		32694
 	268973021	music_boat_intensebass_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_intensebass_3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\4 - Harpoon (Loop)\Harpoon\music_boat_intensebass_1		1982364
+	274609004	vx_narrator_trigger_06	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_trigger_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_trigger_06		264032
 	290204500	sfx_worldkeys_fmaj_c6	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_worldkeys_fmaj_c6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\WorldKeys\sfx_worldkeys_fmaj_c6		26524
 	290479511	sfx_footstep_heel_metal_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_metal_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_metal\Left Foot\heel\sfx_footstep_heel_metal_01		23268
 	293910664	sfx_env_platform_loop	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_env_platform_loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Environment\Platform\sfx_env_platform\sfx_env_platform_loop		220564
 	296373577	sfx_env_bars_start	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_env_bars_start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Environment\Bars\sfx_env_bars\sfx_env_bars_start		176464
 	307567616	sfx_footstep_heel_grass_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_grass_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_grass\Left Foot\heel\sfx_footstep_heel_grass_03		33620
+	318942664	vx_narrator_trigger_09	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_trigger_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_trigger_09		481280
 	323522779	sfx_footstep_impact_gravel	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_impact_gravel_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\FootstepLand\FootstepLand Type\sfx_footstep_impact_gravel		33260
 	327118990	sfx_footstep_heel_wood_04	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_wood_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_wood\Left Foot\heel\sfx_footstep_heel_wood_04		22272
 	348634579	music_boat_blob_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_blob_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\1 - Room_A (Loop)\Room_A\music_boat_blob_1		2116464
@@ -154,23 +187,33 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	371255371	sfx_env_bars_stop	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_env_bars_stop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Environment\Bars\sfx_env_bar_stop (Init Handling)\sfx_env_bars_stop		1234864
 	382858474	sfx_footstep_toe_wood_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_wood_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_wood\Left Foot\toe\sfx_footstep_toe_wood_01		22132
 	387958526	sfx_footstep_heel_cloth_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_cloth_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_cloth\Left Foot\heel\sfx_footstep_heel_cloth_03		36120
+	403143043	vx_narrator_trigger_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_trigger_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_trigger_02		326404
 	411723609	sfx_footstep_heel_cloth_04	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_cloth_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_cloth\Left Foot\heel\sfx_footstep_heel_cloth_04		44976
 	421281352	music_boat_vamp_chorus_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_alberti_chorus_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\1 - Room_A (Loop)\Room_A Chorus\music_boat_vamp_chorus_1		1957036
 	424800491	sfx_footstep_toe_cloth_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_cloth_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_cloth\Left Foot\toe\sfx_footstep_toe_cloth_01		66872
+	426936030	vx_narrator_fadeout	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_fadeout_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_fadeout		269956
 	430779212	sfx_creak_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_creak_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_creak_bed\sfx_creak_03		76012
 	433346874	sfx_footstep_heel_grass_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_grass_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_grass\Left Foot\heel\sfx_footstep_heel_grass_01		35592
 	433560062	sfx_creak_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_creak_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_creak_bed\sfx_creak_02		137656
 	441135101	music_boat_bassline_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_bassline_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\2 - Room_B (Loop)\Room_B\music_boat_bassline_1		1901764
+	457803619	sfx_env_box_collide_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_env_box_collide_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Entities\sfx_ent_box_collide\sfx_env_box_collide_02		97084
 	459803870	sfx_worldkeys_fmaj_d5	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_worldkeys_fmaj_d5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\WorldKeys\sfx_worldkeys_fmaj_d5		26524
+	468315385	vx_narrator_trigger_08	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_trigger_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_trigger_08		239412
 	469003920	sfx_footstep_toe_metal_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_metal_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_metal\Left Foot\toe\sfx_footstep_toe_metal_01		37128
+	470829197	sfx_narrator_close	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_narrator_close_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\sfx_narrator_close		204188
 	472897795	sfx_footstep_toe_gravel_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_gravel_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_gravel\Left Foot\toe\sfx_footstep_toe_gravel_01		37120
+	487622940	sfx_ux_button_deactivate	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_ux_button_deactivate_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\UX\sfx_ux_button\sfx_ux_button_deactivate		970264
 	489199625	sfx_footstep_heel_glass_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_glass_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_glass_tone\Left Foot\heel\sfx_footstep_heel_glass_01		54320
 	499273913	sfx_footstep_heel_glass_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_glass_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_glass_tone\Left Foot\heel\sfx_footstep_heel_glass_03		54952
 	500195945	music_boat_aggressivekicksnare_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_aggressivekicksnare_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\4 - Harpoon (Loop)\Harpoon\music_boat_aggressivekicksnare_1		846784
 	510363670	sfx_footstep_jump_concrete	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_jump_concrete_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\FootstepJump\FootstepJump Type\sfx_footstep_jump_concrete		15108
+	512523175	vx_narrator_trigger_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_trigger_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_trigger_03		347572
 	518684506	sfx_footstep_toe_wood_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_wood_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_wood\Left Foot\toe\sfx_footstep_toe_wood_03		13696
+	528226358	sfx_ux_box_activate	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_ux_box_activate_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\UX\Box\sfx_ux_box\sfx_ux_box_activate		617956
+	532869110	vx_narrator_trigger_13	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_trigger_13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_trigger_13		714484
 	537943496	sfx_worldkeys_fmaj_c5	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_worldkeys_fmaj_c5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\WorldKeys\sfx_worldkeys_fmaj_c5		26524
 	544473361	music_boat_vamp_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_vamp_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\1 - Room_A (Loop)\Room_A\music_boat_vamp_1		1875268
+	551057089	sfx_env_box_collide_04	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_env_box_collide_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Entities\sfx_ent_box_collide\sfx_env_box_collide_04		100612
 	552614302	music_boat_kicksnare_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_kicksnare_2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\3 - Room_C (Loop)\Room_C\music_boat_kicksnare_1		931972
 	559252460	sfx_footstep_jump_metal	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_jump_metal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\FootstepJump\FootstepJump Type\sfx_footstep_jump_metal		8172
 	562976292	sfx_footstep_heel_gravel_04	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_gravel_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_gravel\Left Foot\heel\sfx_footstep_heel_gravel_04		18704
@@ -190,6 +233,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	633135558	sfx_footstep_heel_wood_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_wood_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_wood\Left Foot\heel\sfx_footstep_heel_wood_02		25528
 	634912013	sfx_worldkeys_fmaj_e6	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_worldkeys_fmaj_e6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\WorldKeys\sfx_worldkeys_fmaj_e6		26524
 	647506356	sfx_footstep_heel_metal_04	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_metal_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_metal\Left Foot\heel\sfx_footstep_heel_metal_04		26784
+	660941783	vx_narrator_checkpoint	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_checkpoint_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_checkpoint		335732
 	664813967	music_boat_intensebass_chorus	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_intensebass_chorus_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\4 - Harpoon (Loop)\Harpoon Chorus\music_boat_intensebass_chorus		1996788
 	670314713	music_boat_boxpickup_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_boxpickup_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Stingers\music_boat_boxpickup_1\music_boat_boxpickup_1		966716
 	683807433	music_boat_boxholding_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_boxholding_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\1 - Room_A (Loop)\Room_A\music_boat_boxholding_1		2038316
@@ -205,11 +249,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	738990231	sfx_footstep_impact_metal	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_impact_metal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\FootstepLand\FootstepLand Type\sfx_footstep_impact_metal		11378
 	740430124	sfx_footstep_toe_metal_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_metal_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_metal\Left Foot\toe\sfx_footstep_toe_metal_02		35344
 	755488523	sfx_footstep_toe_gravel_04	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_gravel_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_gravel\Left Foot\toe\sfx_footstep_toe_gravel_04		40234
+	769886126	sfx_ux_box_deactivate	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_ux_box_deactivate_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\UX\Box\sfx_ux_box\sfx_ux_box_deactivate		265104
 	779589527	sfx_worldkeys_fmaj_f6	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_worldkeys_fmaj_f6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\WorldKeys\sfx_worldkeys_fmaj_f6		26524
 	780591092	sfx_footstep_toe_gravel_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_gravel_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_gravel\Left Foot\toe\sfx_footstep_toe_gravel_03		38440
 	791132644	sfx_footstep_heel_grass_04	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_grass_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_grass\Left Foot\heel\sfx_footstep_heel_grass_04		32920
 	791546088	music_boat_boxholding_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_boxholding_2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\1 - Room_A (Loop)\Room_A\music_boat_boxholding_1		2213684
 	813604374	music_boat_boxholding_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_boxholding_3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\1 - Room_A (Loop)\Room_A\music_boat_boxholding_1		2210988
+	815353574	sfx_env_box_collide_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_env_box_collide_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Entities\sfx_ent_box_collide\sfx_env_box_collide_03		56512
 	834793506	sfx_worldkeys_fmaj_a6	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_worldkeys_fmaj_a6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\WorldKeys\sfx_worldkeys_fmaj_a6		26524
 	837806047	music_boat_aggressivekicksnare_chorus	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_aggressivekicksnare_chorus_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\4 - Harpoon (Loop)\Harpoon Chorus\music_boat_aggressivekicksnare_chorus		1693504
 	843464880	sfx_footstep_impact_concrete	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_impact_concrete_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\FootstepLand\FootstepLand Type\sfx_footstep_impact_concrete		16156
@@ -217,6 +263,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	845357093	sfx_harpoon_shoot_b	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_harpoon_shoot_b_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Harpoon\Fire Once\sfx_harpoon_shoot_b	This sound is cut short at the beginning of the harpoon's retraction. 	123684
 	847061519	music_boat_vamp_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_alberti_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\1 - Room_A (Loop)\Room_A\music_boat_vamp_1		1860648
 	853425278	music_boat_countermelody_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_countermelody_2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\2 - Room_B (Loop)\Room_B\music_boat_countermelody_1		1610516
+	854068518	vx_narrator_trigger_04	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_trigger_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_trigger_04		647720
 	867479423	sfx_env_platform_start	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_env_platform_start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Environment\Platform\sfx_env_platform\sfx_env_platform_start		44164
 	874895148	sfx_worldkeys_fmaj_d6	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_worldkeys_fmaj_d6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\WorldKeys\sfx_worldkeys_fmaj_d6		26524
 	908824202	sfx_footstep_heel_cloth_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_cloth_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_cloth\Left Foot\heel\sfx_footstep_heel_cloth_01		42444
@@ -226,8 +273,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	924549011	sfx_footstep_toe_glass_02	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_toe_glass_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_glass_tone\Left Foot\toe\sfx_footstep_toe_glass_02		75148
 	929290808	sfx_worldkeys_fmaj_e5	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_worldkeys_fmaj_e5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\WorldKeys\sfx_worldkeys_fmaj_e5		26524
 	931555717	music_boat_vamp_chorus_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_intensealberti_chorus_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\4 - Harpoon (Loop)\Harpoon Chorus\music_boat_vamp_chorus_1		2004472
+	938046817	sfx_ux_box_pickup	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_ux_box_pickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\UX\Box\Box Pickup Mixer\sfx_ux_box_pickup		705664
 	943315901	sfx_footstep_heel_gravel_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_gravel_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_gravel\Left Foot\heel\sfx_footstep_heel_gravel_01		11524
 	951415945	sfx_door_mechanical_loop	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_door_mechanical_loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Environment\Door\Mechanical\sfx_door_mechanical\sfx_door_mechanical_loop		110314
+	959469471	vx_narrator_trigger_01	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_trigger_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_trigger_01		257608
 	965794218	sfx_harpoon_shoot_reel_heavyair	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_harpoon_shoot_reel_heavyair_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Harpoon\sfx_harpoon_shoot_reel_heavyair	Played from the harpoon's tip.	377288
 	966247712	music_boat_hats_chorus	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_hats_chorus_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\1 - Room_A (Loop)\Room_A Chorus\music_boat_hats_chorus		1975808
 	968059735	sfx_door_mechanical_stop	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_door_mechanical_stop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Environment\Door\Mechanical\sfx_door_mechanical_stop (Init Handling)\sfx_door_mechanical_stop		198514
@@ -242,6 +291,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1046767504	music_boat_counterblob_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_counterblob_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\1 - Room_A (Loop)\Room_A\music_boat_counterblob_1		2281836
 	1048122433	music_boat_melody_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_melody_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\3 - Room_C (Loop)\Room_C\music_boat_melody_1		1297772
 	1049002355	music_boat_fantasychords_1	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\music_boat_fantasychords_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\music_boat\Segments\4 - Harpoon (Loop)\Harpoon\music_boat_fantasychords_1		1718924
+	1060928635	vx_narrator_trigger_10	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\vx_narrator_trigger_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\NPC\Narrator\vx_narrator (Enabled)\vx_narrator\Voice Line\vx_narrator_trigger_10		316520
+	1065081122	sfx_ux_box_drop	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_ux_box_drop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-diegetic SFX\UX\Box\Box Pickup Mixer\sfx_ux_box_drop	Drop sound is not in sequence container due to permitted code change. (cont.)  The reason for seperation is not for this sound, but to allow for stingers. See note on the 'BoxDrop' event for more information.	617464
 	1067817721	sfx_footstep_heel_metal_03	X:\Coursework\AUD312\Assignment\Wwise Project\.cache\Windows\SFX\sfx_footstep_heel_metal_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diegetic SFX\Player\Footsteps\Footstep\sfx_footstep_metal\Left Foot\heel\sfx_footstep_heel_metal_03		25200
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes

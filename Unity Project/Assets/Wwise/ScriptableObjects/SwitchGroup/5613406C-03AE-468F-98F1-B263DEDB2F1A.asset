@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4da3dfa2e19d2e64eac7bf2e6e43704a, type: 3}
+  m_Name: 5613406C-03AE-468F-98F1-B263DEDB2F1A
+  m_EditorClassIdentifier: 
+  objectName: NarratorDialogueType
+  id: 310433156
+  guid: 5613406C-03AE-468F-98F1-B263DEDB2F1A
