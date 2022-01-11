@@ -101,7 +101,7 @@ Also ducks whenever a significant sound is played (via Level Event SFX Bus)
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -173,7 +173,7 @@ Also ducks whenever a significant sound is played (via Level Event SFX Bus)
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Color" Type="int16" Value="19"/>

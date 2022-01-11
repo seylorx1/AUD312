@@ -1298,6 +1298,11 @@
 												<RandomSequenceContainer Name="sfx_footstep_concrete" ID="{F6EB23A4-0DEC-4B0C-841A-137C20E0A42B}" ShortID="386879098">
 													<PropertyList>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -3085,9 +3090,6 @@
 													<PropertyList>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-3</Value>
-															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{99300E43-A3AF-436F-9AD6-3A99AA965DD6}"/>
@@ -6346,6 +6348,7 @@
 						<Folder Name="Entities" ID="{2E71D144-0D46-42B0-8383-EA9E1608659F}" ShortID="812730870">
 							<ChildrenList>
 								<RandomSequenceContainer Name="sfx_ent_box_collide" ID="{3A8D9B75-61EB-4BFC-BA7A-DECFEADD7BEF}" ShortID="60936358">
+									<Comment>This has a bug where the 3D position is not tracked when moving boxes, although I believe the bug is on the Unity project.</Comment>
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class BoxSoundTrigger : MonoBehaviour
 {
-	/// The Wwise Event to trigger when the box is picked up and dropped (use a SequenceContainer).
+	/// The Wwise Event to trigger when the box is picked up.
 	public AK.Wwise.Event pickupSound = new AK.Wwise.Event();
 
-	//TODO speak to Christos about this!
+	/// The Wwise Event to trigger when the box is dropped.
+	/// Spoke to Christos about this. (See AUD311 ADD submission...)
 	public AK.Wwise.Event dropSound = new AK.Wwise.Event();
 
 	/// The Wwise Event to trigger when the box collides with the ground.
