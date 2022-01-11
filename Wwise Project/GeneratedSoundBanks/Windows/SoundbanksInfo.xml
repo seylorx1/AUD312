@@ -45,7 +45,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1751390621">
+		<SoundBank Id="3161908922" Language="SFX" Hash="517473290">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -668,12 +668,21 @@
 							<ShortName>sfx_harpoon_shoot_a.wav</ShortName>
 							<Path>SFX\sfx_harpoon_shoot_a_10C4C929.wem</Path>
 						</File>
+						<File Id="845357093" Language="SFX">
+							<ShortName>sfx_harpoon_shoot_b.wav</ShortName>
+							<Path>SFX\sfx_harpoon_shoot_b_10C4C929.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{4B9FB557-3308-4BF4-9ECA-486659E8A285}</DefaultSwitchValue>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{4B9FB557-3308-4BF4-9ECA-486659E8A285}">
 							<Media>
 								<File Id="604781409"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4B9FB557-3308-4BF4-9ECA-486659E8A285}">
+							<Media>
+								<File Id="845357093"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>

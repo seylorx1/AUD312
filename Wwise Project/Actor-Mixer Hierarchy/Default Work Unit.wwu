@@ -504,7 +504,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="sfx_door_wood_open_handle" ID="{C1D0B750-105F-4045-BA2B-98EF2BA29B87}" ShortID="340781135">
+														<Sound Name="sfx_door_wood_handle" ID="{C1D0B750-105F-4045-BA2B-98EF2BA29B87}" ShortID="340781135">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -551,7 +551,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="sfx_door_wood_close_swing" ID="{5A1EDF8C-1452-4DD4-9EAC-EF54048A51C2}" ShortID="863190533">
+																<Sound Name="sfx_door_wood_close" ID="{5A1EDF8C-1452-4DD4-9EAC-EF54048A51C2}" ShortID="863190533">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -578,7 +578,7 @@
 																		<ActiveSource Name="sfx_door_wood_close" ID="{3D59CB2E-13E3-4EA7-8378-3F021EA268F9}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="sfx_door_wood_open_swing" ID="{6698DEB1-BEE5-4C08-804E-9D687D78DC1E}" ShortID="93413324">
+																<Sound Name="sfx_door_wood_open" ID="{6698DEB1-BEE5-4C08-804E-9D687D78DC1E}" ShortID="93413324">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
@@ -605,8 +605,8 @@
 															</ChildrenList>
 															<ObjectLists/>
 															<Playlist>
-																<ItemRef Name="sfx_door_wood_open_swing" ID="{6698DEB1-BEE5-4C08-804E-9D687D78DC1E}"/>
-																<ItemRef Name="sfx_door_wood_close_swing" ID="{5A1EDF8C-1452-4DD4-9EAC-EF54048A51C2}"/>
+																<ItemRef Name="sfx_door_wood_open" ID="{6698DEB1-BEE5-4C08-804E-9D687D78DC1E}"/>
+																<ItemRef Name="sfx_door_wood_close" ID="{5A1EDF8C-1452-4DD4-9EAC-EF54048A51C2}"/>
 															</Playlist>
 														</RandomSequenceContainer>
 													</ChildrenList>
@@ -617,7 +617,7 @@
 																<ItemRef Name="sfx_door_wood (Swing)" ID="{9E14374D-07DA-4B08-81F6-8459F3A2EDB1}"/>
 															</GroupingBehavior>
 															<GroupingBehavior>
-																<ItemRef Name="sfx_door_wood_open_handle" ID="{C1D0B750-105F-4045-BA2B-98EF2BA29B87}"/>
+																<ItemRef Name="sfx_door_wood_handle" ID="{C1D0B750-105F-4045-BA2B-98EF2BA29B87}"/>
 															</GroupingBehavior>
 														</GroupingBehaviorList>
 														<GroupingList>
@@ -630,7 +630,7 @@
 															<Grouping>
 																<SwitchRef Name="Closed" ID="{20BD95DB-1912-4473-B621-57502B5D64B8}"/>
 																<ItemList>
-																	<ItemRef Name="sfx_door_wood_open_handle" ID="{C1D0B750-105F-4045-BA2B-98EF2BA29B87}"/>
+																	<ItemRef Name="sfx_door_wood_handle" ID="{C1D0B750-105F-4045-BA2B-98EF2BA29B87}"/>
 																	<ItemRef Name="sfx_door_wood (Swing)" ID="{9E14374D-07DA-4B08-81F6-8459F3A2EDB1}"/>
 																</ItemList>
 															</Grouping>
@@ -1073,6 +1073,7 @@
 														<SwitchRef Name="None" ID="{4B9FB557-3308-4BF4-9ECA-486659E8A285}"/>
 														<ItemList>
 															<ItemRef Name="sfx_harpoon_shoot_a" ID="{CA8BE2D7-9055-4F26-920B-008B88069347}"/>
+															<ItemRef Name="sfx_harpoon_shoot_b" ID="{15772544-6DDE-4DF9-8F0E-C8777FEB805F}"/>
 														</ItemList>
 													</Grouping>
 												</GroupingList>
@@ -1080,6 +1081,7 @@
 										</SwitchContainer>
 										<Sound Name="sfx_harpoon_shoot_reel_air" ID="{51E6B93F-34E9-41D4-BC0C-87C6BA49000F}" ShortID="770014644">
 											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -1090,6 +1092,7 @@
 													</ValueList>
 												</Property>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
 														<Value>True</Value>
@@ -1097,11 +1100,14 @@
 												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="HarpoonAttenuation" ID="{13724D87-B25D-4061-9766-B41463305C86}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Harpoon" ID="{B9BA0CC9-22B2-4323-9A36-E007C7CE5A65}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="HarpoonAir" ID="{482D20B5-9FD6-440E-8EED-E17BE5CCF386}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -1167,6 +1173,7 @@
 										</Sound>
 										<Sound Name="sfx_harpoon_shoot_reel_heavyair" ID="{BC86916E-5C2E-4A62-9A11-FB5E517E896E}" ShortID="1070550978">
 											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
@@ -1176,6 +1183,7 @@
 													</ValueList>
 												</Property>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
 														<Value>True</Value>
@@ -1183,11 +1191,14 @@
 												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="HarpoonAttenuation" ID="{13724D87-B25D-4061-9766-B41463305C86}" WorkUnitID="{097E3AD6-76E2-4565-92D5-6EE63138613E}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CEFA6CB1-E460-4288-9DE7-18108DAE74A7}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Harpoon" ID="{B9BA0CC9-22B2-4323-9A36-E007C7CE5A65}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
+													<ObjectRef Name="HarpoonAir" ID="{482D20B5-9FD6-440E-8EED-E17BE5CCF386}" WorkUnitID="{D0B10E29-8A7F-4B30-98E3-D421983690C7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
